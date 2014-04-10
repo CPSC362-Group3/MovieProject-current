@@ -65,7 +65,7 @@ namespace MovieTheater.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap pictureBox1_Image {
             get {
-                object obj = ResourceManager.GetObject("pictureBox1.Image", resourceCulture);
+                object obj = ResourceManager.GetObject("pictureBox1_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

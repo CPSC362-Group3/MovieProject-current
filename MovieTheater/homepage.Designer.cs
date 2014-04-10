@@ -34,34 +34,35 @@
             System.Windows.Forms.PictureBox pictureBox9;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.SearchBar = new System.Windows.Forms.PictureBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.HomeTab = new System.Windows.Forms.TabPage();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.poster1 = new System.Windows.Forms.PictureBox();
+            this.now5 = new System.Windows.Forms.PictureBox();
+            this.now4 = new System.Windows.Forms.PictureBox();
+            this.now3 = new System.Windows.Forms.PictureBox();
+            this.now2 = new System.Windows.Forms.PictureBox();
+            this.now1 = new System.Windows.Forms.PictureBox();
+            this.new5 = new System.Windows.Forms.PictureBox();
+            this.new4 = new System.Windows.Forms.PictureBox();
+            this.new3 = new System.Windows.Forms.PictureBox();
+            this.new2 = new System.Windows.Forms.PictureBox();
+            this.new1 = new System.Windows.Forms.PictureBox();
             this.SearchTab = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.search6 = new System.Windows.Forms.PictureBox();
+            this.search4 = new System.Windows.Forms.PictureBox();
+            this.search5 = new System.Windows.Forms.PictureBox();
+            this.search3 = new System.Windows.Forms.PictureBox();
+            this.search2 = new System.Windows.Forms.PictureBox();
+            this.search1 = new System.Windows.Forms.PictureBox();
             this.MovieDetailsTab = new System.Windows.Forms.TabPage();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.movDetails = new System.Windows.Forms.PictureBox();
             this.LoginTab = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.passwordTxt = new System.Windows.Forms.TextBox();
+            this.usernameTxt = new System.Windows.Forms.TextBox();
+            this.loginbutton = new System.Windows.Forms.Button();
+            this.makeAccount = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -86,12 +87,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.secCode = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.crdNum = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.crdlName = new System.Windows.Forms.TextBox();
+            this.crdfName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -101,11 +102,11 @@
             this.Ticket = new System.Windows.Forms.TabPage();
             this.Contact = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.homeBtn = new System.Windows.Forms.Label();
+            this.logBtn = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.movieBtn = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
             this.InfoBar = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -121,32 +122,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.HomeTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.poster1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new1)).BeginInit();
             this.SearchTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search1)).BeginInit();
             this.MovieDetailsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movDetails)).BeginInit();
             this.LoginTab.SuspendLayout();
             this.AccountTab.SuspendLayout();
             this.PaymentInfoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
             this.SuspendLayout();
@@ -193,14 +194,15 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.SearchBar);
             this.tabPage1.Controls.Add(this.tabControl2);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.homeBtn);
+            this.tabPage1.Controls.Add(this.logBtn);
             this.tabPage1.Controls.Add(this.pictureBox7);
             this.tabPage1.Controls.Add(this.pictureBox4);
-            this.tabPage1.Controls.Add(this.pictureBox5);
+            this.tabPage1.Controls.Add(this.movieBtn);
             this.tabPage1.Controls.Add(this.Header);
             this.tabPage1.Controls.Add(this.InfoBar);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -210,6 +212,20 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Silver;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(316, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(160, 32);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Search Movies";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // SearchBar
             // 
@@ -243,16 +259,16 @@
             // HomeTab
             // 
             this.HomeTab.BackColor = System.Drawing.Color.Silver;
-            this.HomeTab.Controls.Add(this.pictureBox18);
-            this.HomeTab.Controls.Add(this.pictureBox19);
-            this.HomeTab.Controls.Add(this.pictureBox20);
-            this.HomeTab.Controls.Add(this.pictureBox21);
-            this.HomeTab.Controls.Add(this.pictureBox22);
-            this.HomeTab.Controls.Add(this.pictureBox17);
-            this.HomeTab.Controls.Add(this.pictureBox15);
-            this.HomeTab.Controls.Add(this.pictureBox16);
-            this.HomeTab.Controls.Add(this.pictureBox14);
-            this.HomeTab.Controls.Add(this.poster1);
+            this.HomeTab.Controls.Add(this.now5);
+            this.HomeTab.Controls.Add(this.now4);
+            this.HomeTab.Controls.Add(this.now3);
+            this.HomeTab.Controls.Add(this.now2);
+            this.HomeTab.Controls.Add(this.now1);
+            this.HomeTab.Controls.Add(this.new5);
+            this.HomeTab.Controls.Add(this.new4);
+            this.HomeTab.Controls.Add(this.new3);
+            this.HomeTab.Controls.Add(this.new2);
+            this.HomeTab.Controls.Add(this.new1);
             this.HomeTab.Controls.Add(pictureBox12);
             this.HomeTab.Controls.Add(pictureBox11);
             this.HomeTab.Location = new System.Drawing.Point(4, 22);
@@ -262,127 +278,137 @@
             this.HomeTab.TabIndex = 0;
             this.HomeTab.Text = "HomePage";
             // 
-            // pictureBox18
+            // now5
             // 
-            this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox18.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox18.Location = new System.Drawing.Point(667, 347);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 60;
-            this.pictureBox18.TabStop = false;
+            this.now5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.now5.Image = ((System.Drawing.Image)(resources.GetObject("now5.Image")));
+            this.now5.Location = new System.Drawing.Point(667, 347);
+            this.now5.Name = "now5";
+            this.now5.Size = new System.Drawing.Size(128, 160);
+            this.now5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.now5.TabIndex = 60;
+            this.now5.TabStop = false;
+            this.now5.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
-            // pictureBox19
+            // now4
             // 
-            this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox19.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox19.Location = new System.Drawing.Point(507, 347);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 59;
-            this.pictureBox19.TabStop = false;
+            this.now4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.now4.Image = ((System.Drawing.Image)(resources.GetObject("now4.Image")));
+            this.now4.Location = new System.Drawing.Point(507, 347);
+            this.now4.Name = "now4";
+            this.now4.Size = new System.Drawing.Size(128, 160);
+            this.now4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.now4.TabIndex = 59;
+            this.now4.TabStop = false;
+            this.now4.Click += new System.EventHandler(this.pictureBox19_Click);
             // 
-            // pictureBox20
+            // now3
             // 
-            this.pictureBox20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox20.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox20.Location = new System.Drawing.Point(347, 347);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 58;
-            this.pictureBox20.TabStop = false;
+            this.now3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.now3.Image = ((System.Drawing.Image)(resources.GetObject("now3.Image")));
+            this.now3.Location = new System.Drawing.Point(347, 347);
+            this.now3.Name = "now3";
+            this.now3.Size = new System.Drawing.Size(128, 160);
+            this.now3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.now3.TabIndex = 58;
+            this.now3.TabStop = false;
+            this.now3.Click += new System.EventHandler(this.pictureBox20_Click);
             // 
-            // pictureBox21
+            // now2
             // 
-            this.pictureBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox21.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox21.Location = new System.Drawing.Point(187, 347);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 57;
-            this.pictureBox21.TabStop = false;
+            this.now2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.now2.Image = ((System.Drawing.Image)(resources.GetObject("now2.Image")));
+            this.now2.Location = new System.Drawing.Point(187, 347);
+            this.now2.Name = "now2";
+            this.now2.Size = new System.Drawing.Size(128, 160);
+            this.now2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.now2.TabIndex = 57;
+            this.now2.TabStop = false;
+            this.now2.Click += new System.EventHandler(this.pictureBox21_Click);
             // 
-            // pictureBox22
+            // now1
             // 
-            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox22.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox22.Location = new System.Drawing.Point(27, 347);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 56;
-            this.pictureBox22.TabStop = false;
+            this.now1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.now1.Image = ((System.Drawing.Image)(resources.GetObject("now1.Image")));
+            this.now1.Location = new System.Drawing.Point(27, 347);
+            this.now1.Name = "now1";
+            this.now1.Size = new System.Drawing.Size(128, 160);
+            this.now1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.now1.TabIndex = 56;
+            this.now1.TabStop = false;
+            this.now1.Click += new System.EventHandler(this.pictureBox22_Click);
             // 
-            // pictureBox17
+            // new5
             // 
-            this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox17.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox17.Location = new System.Drawing.Point(667, 83);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 55;
-            this.pictureBox17.TabStop = false;
+            this.new5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.new5.Image = ((System.Drawing.Image)(resources.GetObject("new5.Image")));
+            this.new5.Location = new System.Drawing.Point(667, 83);
+            this.new5.Name = "new5";
+            this.new5.Size = new System.Drawing.Size(128, 160);
+            this.new5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.new5.TabIndex = 55;
+            this.new5.TabStop = false;
+            this.new5.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
-            // pictureBox15
+            // new4
             // 
-            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox15.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox15.Location = new System.Drawing.Point(507, 83);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 54;
-            this.pictureBox15.TabStop = false;
+            this.new4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.new4.Image = ((System.Drawing.Image)(resources.GetObject("new4.Image")));
+            this.new4.Location = new System.Drawing.Point(507, 83);
+            this.new4.Name = "new4";
+            this.new4.Size = new System.Drawing.Size(128, 160);
+            this.new4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.new4.TabIndex = 54;
+            this.new4.TabStop = false;
+            this.new4.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
-            // pictureBox16
+            // new3
             // 
-            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox16.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox16.Location = new System.Drawing.Point(347, 83);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 53;
-            this.pictureBox16.TabStop = false;
+            this.new3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.new3.Image = ((System.Drawing.Image)(resources.GetObject("new3.Image")));
+            this.new3.Location = new System.Drawing.Point(347, 83);
+            this.new3.Name = "new3";
+            this.new3.Size = new System.Drawing.Size(128, 160);
+            this.new3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.new3.TabIndex = 53;
+            this.new3.TabStop = false;
+            this.new3.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
-            // pictureBox14
+            // new2
             // 
-            this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox14.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox14.Location = new System.Drawing.Point(187, 83);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 52;
-            this.pictureBox14.TabStop = false;
+            this.new2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.new2.Image = ((System.Drawing.Image)(resources.GetObject("new2.Image")));
+            this.new2.Location = new System.Drawing.Point(187, 83);
+            this.new2.Name = "new2";
+            this.new2.Size = new System.Drawing.Size(128, 160);
+            this.new2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.new2.TabIndex = 52;
+            this.new2.TabStop = false;
+            this.new2.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // poster1
+            // new1
             // 
-            this.poster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.poster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.poster1.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.poster1.Location = new System.Drawing.Point(27, 83);
-            this.poster1.Name = "poster1";
-            this.poster1.Size = new System.Drawing.Size(128, 160);
-            this.poster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.poster1.TabIndex = 51;
-            this.poster1.TabStop = false;
-            this.poster1.Click += new System.EventHandler(this.poster1_Click);
+            this.new1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.new1.BackColor = System.Drawing.Color.Transparent;
+            this.new1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.new1.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.new1.Location = new System.Drawing.Point(27, 83);
+            this.new1.Name = "new1";
+            this.new1.Size = new System.Drawing.Size(128, 160);
+            this.new1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.new1.TabIndex = 51;
+            this.new1.TabStop = false;
+            this.new1.Click += new System.EventHandler(this.new1_Click);
             // 
             // SearchTab
             // 
             this.SearchTab.BackColor = System.Drawing.Color.Silver;
-            this.SearchTab.Controls.Add(this.pictureBox1);
-            this.SearchTab.Controls.Add(this.pictureBox2);
-            this.SearchTab.Controls.Add(this.pictureBox3);
-            this.SearchTab.Controls.Add(this.pictureBox6);
-            this.SearchTab.Controls.Add(this.pictureBox8);
-            this.SearchTab.Controls.Add(this.pictureBox13);
+            this.SearchTab.Controls.Add(this.search6);
+            this.SearchTab.Controls.Add(this.search4);
+            this.SearchTab.Controls.Add(this.search5);
+            this.SearchTab.Controls.Add(this.search3);
+            this.SearchTab.Controls.Add(this.search2);
+            this.SearchTab.Controls.Add(this.search1);
             this.SearchTab.Controls.Add(pictureBox9);
             this.SearchTab.Location = new System.Drawing.Point(4, 22);
             this.SearchTab.Name = "SearchTab";
@@ -391,75 +417,75 @@
             this.SearchTab.TabIndex = 1;
             this.SearchTab.Text = "Search\'";
             // 
-            // pictureBox1
+            // search6
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(420, 477);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox1.TabIndex = 57;
-            this.pictureBox1.TabStop = false;
+            this.search6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.search6.Image = ((System.Drawing.Image)(resources.GetObject("search6.Image")));
+            this.search6.Location = new System.Drawing.Point(420, 477);
+            this.search6.Name = "search6";
+            this.search6.Size = new System.Drawing.Size(128, 160);
+            this.search6.TabIndex = 57;
+            this.search6.TabStop = false;
             // 
-            // pictureBox2
+            // search4
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(420, 285);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 56;
-            this.pictureBox2.TabStop = false;
+            this.search4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.search4.Image = ((System.Drawing.Image)(resources.GetObject("search4.Image")));
+            this.search4.Location = new System.Drawing.Point(420, 285);
+            this.search4.Name = "search4";
+            this.search4.Size = new System.Drawing.Size(128, 160);
+            this.search4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.search4.TabIndex = 56;
+            this.search4.TabStop = false;
             // 
-            // pictureBox3
+            // search5
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(36, 477);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox3.TabIndex = 55;
-            this.pictureBox3.TabStop = false;
+            this.search5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.search5.Image = ((System.Drawing.Image)(resources.GetObject("search5.Image")));
+            this.search5.Location = new System.Drawing.Point(36, 477);
+            this.search5.Name = "search5";
+            this.search5.Size = new System.Drawing.Size(128, 160);
+            this.search5.TabIndex = 55;
+            this.search5.TabStop = false;
             // 
-            // pictureBox6
+            // search3
             // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(36, 285);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 54;
-            this.pictureBox6.TabStop = false;
+            this.search3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.search3.Image = ((System.Drawing.Image)(resources.GetObject("search3.Image")));
+            this.search3.Location = new System.Drawing.Point(36, 285);
+            this.search3.Name = "search3";
+            this.search3.Size = new System.Drawing.Size(128, 160);
+            this.search3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.search3.TabIndex = 54;
+            this.search3.TabStop = false;
             // 
-            // pictureBox8
+            // search2
             // 
-            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(420, 93);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 53;
-            this.pictureBox8.TabStop = false;
+            this.search2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.search2.Image = ((System.Drawing.Image)(resources.GetObject("search2.Image")));
+            this.search2.Location = new System.Drawing.Point(420, 93);
+            this.search2.Name = "search2";
+            this.search2.Size = new System.Drawing.Size(128, 160);
+            this.search2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.search2.TabIndex = 53;
+            this.search2.TabStop = false;
             // 
-            // pictureBox13
+            // search1
             // 
-            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(36, 93);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 52;
-            this.pictureBox13.TabStop = false;
+            this.search1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.search1.Image = ((System.Drawing.Image)(resources.GetObject("search1.Image")));
+            this.search1.Location = new System.Drawing.Point(36, 93);
+            this.search1.Name = "search1";
+            this.search1.Size = new System.Drawing.Size(128, 160);
+            this.search1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.search1.TabIndex = 52;
+            this.search1.TabStop = false;
             // 
             // MovieDetailsTab
             // 
             this.MovieDetailsTab.BackColor = System.Drawing.Color.Silver;
             this.MovieDetailsTab.Controls.Add(this.pictureBox10);
-            this.MovieDetailsTab.Controls.Add(this.pictureBox23);
+            this.MovieDetailsTab.Controls.Add(this.movDetails);
             this.MovieDetailsTab.Location = new System.Drawing.Point(4, 22);
             this.MovieDetailsTab.Name = "MovieDetailsTab";
             this.MovieDetailsTab.Padding = new System.Windows.Forms.Padding(3);
@@ -477,24 +503,23 @@
             this.pictureBox10.TabIndex = 44;
             this.pictureBox10.TabStop = false;
             // 
-            // pictureBox23
+            // movDetails
             // 
-            this.pictureBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(10, 91);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(256, 320);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 43;
-            this.pictureBox23.TabStop = false;
+            this.movDetails.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.movDetails.Location = new System.Drawing.Point(10, 91);
+            this.movDetails.Name = "movDetails";
+            this.movDetails.Size = new System.Drawing.Size(256, 320);
+            this.movDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.movDetails.TabIndex = 43;
+            this.movDetails.TabStop = false;
             // 
             // LoginTab
             // 
             this.LoginTab.BackColor = System.Drawing.Color.Silver;
-            this.LoginTab.Controls.Add(this.textBox2);
-            this.LoginTab.Controls.Add(this.textBox1);
-            this.LoginTab.Controls.Add(this.button1);
-            this.LoginTab.Controls.Add(this.label4);
+            this.LoginTab.Controls.Add(this.passwordTxt);
+            this.LoginTab.Controls.Add(this.usernameTxt);
+            this.LoginTab.Controls.Add(this.loginbutton);
+            this.LoginTab.Controls.Add(this.makeAccount);
             this.LoginTab.Controls.Add(this.label5);
             this.LoginTab.Controls.Add(this.label6);
             this.LoginTab.Controls.Add(this.label7);
@@ -505,42 +530,45 @@
             this.LoginTab.TabIndex = 3;
             this.LoginTab.Text = "Login";
             // 
-            // textBox2
+            // passwordTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(332, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 20);
-            this.textBox2.TabIndex = 59;
+            this.passwordTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTxt.Location = new System.Drawing.Point(332, 175);
+            this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.PasswordChar = '*';
+            this.passwordTxt.Size = new System.Drawing.Size(185, 22);
+            this.passwordTxt.TabIndex = 59;
             // 
-            // textBox1
+            // usernameTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(333, 132);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 20);
-            this.textBox1.TabIndex = 58;
+            this.usernameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTxt.Location = new System.Drawing.Point(333, 132);
+            this.usernameTxt.Name = "usernameTxt";
+            this.usernameTxt.Size = new System.Drawing.Size(183, 22);
+            this.usernameTxt.TabIndex = 58;
             // 
-            // button1
+            // loginbutton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(344, 269);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 26);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.loginbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginbutton.Location = new System.Drawing.Point(344, 269);
+            this.loginbutton.Name = "loginbutton";
+            this.loginbutton.Size = new System.Drawing.Size(111, 26);
+            this.loginbutton.TabIndex = 57;
+            this.loginbutton.Text = "Login";
+            this.loginbutton.UseVisualStyleBackColor = true;
+            this.loginbutton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label4
+            // makeAccount
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(366, 217);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 13);
-            this.label4.TabIndex = 56;
-            this.label4.Text = "Click here to make one!";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.makeAccount.AutoSize = true;
+            this.makeAccount.BackColor = System.Drawing.Color.Transparent;
+            this.makeAccount.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.makeAccount.Location = new System.Drawing.Point(366, 217);
+            this.makeAccount.Name = "makeAccount";
+            this.makeAccount.Size = new System.Drawing.Size(119, 13);
+            this.makeAccount.TabIndex = 56;
+            this.makeAccount.Text = "Click here to make one!";
+            this.makeAccount.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -745,12 +773,12 @@
             this.PaymentInfoTab.Controls.Add(this.button2);
             this.PaymentInfoTab.Controls.Add(this.monthCalendar1);
             this.PaymentInfoTab.Controls.Add(this.label10);
-            this.PaymentInfoTab.Controls.Add(this.textBox4);
+            this.PaymentInfoTab.Controls.Add(this.secCode);
             this.PaymentInfoTab.Controls.Add(this.label9);
-            this.PaymentInfoTab.Controls.Add(this.textBox3);
+            this.PaymentInfoTab.Controls.Add(this.crdNum);
             this.PaymentInfoTab.Controls.Add(this.label8);
-            this.PaymentInfoTab.Controls.Add(this.textBox5);
-            this.PaymentInfoTab.Controls.Add(this.textBox6);
+            this.PaymentInfoTab.Controls.Add(this.crdlName);
+            this.PaymentInfoTab.Controls.Add(this.crdfName);
             this.PaymentInfoTab.Controls.Add(this.label11);
             this.PaymentInfoTab.Controls.Add(this.label12);
             this.PaymentInfoTab.Controls.Add(this.label13);
@@ -790,12 +818,12 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "Expiration Date:";
             // 
-            // textBox4
+            // secCode
             // 
-            this.textBox4.Location = new System.Drawing.Point(266, 316);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(73, 20);
-            this.textBox4.TabIndex = 22;
+            this.secCode.Location = new System.Drawing.Point(266, 316);
+            this.secCode.Name = "secCode";
+            this.secCode.Size = new System.Drawing.Size(73, 20);
+            this.secCode.TabIndex = 22;
             // 
             // label9
             // 
@@ -807,12 +835,12 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Security Code:";
             // 
-            // textBox3
+            // crdNum
             // 
-            this.textBox3.Location = new System.Drawing.Point(266, 258);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 20);
-            this.textBox3.TabIndex = 20;
+            this.crdNum.Location = new System.Drawing.Point(266, 258);
+            this.crdNum.Name = "crdNum";
+            this.crdNum.Size = new System.Drawing.Size(193, 20);
+            this.crdNum.TabIndex = 20;
             // 
             // label8
             // 
@@ -824,19 +852,19 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Credit Card Number:";
             // 
-            // textBox5
+            // crdlName
             // 
-            this.textBox5.Location = new System.Drawing.Point(266, 196);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(193, 20);
-            this.textBox5.TabIndex = 18;
+            this.crdlName.Location = new System.Drawing.Point(266, 196);
+            this.crdlName.Name = "crdlName";
+            this.crdlName.Size = new System.Drawing.Size(193, 20);
+            this.crdlName.TabIndex = 18;
             // 
-            // textBox6
+            // crdfName
             // 
-            this.textBox6.Location = new System.Drawing.Point(266, 142);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(194, 20);
-            this.textBox6.TabIndex = 17;
+            this.crdfName.Location = new System.Drawing.Point(266, 142);
+            this.crdfName.Name = "crdfName";
+            this.crdfName.Size = new System.Drawing.Size(194, 20);
+            this.crdfName.TabIndex = 17;
             // 
             // label11
             // 
@@ -931,34 +959,34 @@
             this.label3.Text = "Contact Us";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // homeBtn
             // 
-            this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(156, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 32);
-            this.label2.TabIndex = 64;
-            this.label2.Text = "Movies";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.homeBtn.BackColor = System.Drawing.Color.Silver;
+            this.homeBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.homeBtn.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.homeBtn.Location = new System.Drawing.Point(156, 128);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(160, 32);
+            this.homeBtn.TabIndex = 64;
+            this.homeBtn.Text = "Home Page";
+            this.homeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.homeBtn.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // logBtn
             // 
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(-4, 128);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 32);
-            this.label1.TabIndex = 63;
-            this.label1.Text = "Login";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.logBtn.BackColor = System.Drawing.Color.Silver;
+            this.logBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.logBtn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.logBtn.Font = new System.Drawing.Font("Lucida Sans Typewriter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logBtn.Location = new System.Drawing.Point(-4, 128);
+            this.logBtn.Name = "logBtn";
+            this.logBtn.Size = new System.Drawing.Size(160, 32);
+            this.logBtn.TabIndex = 63;
+            this.logBtn.Text = "Login";
+            this.logBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.logBtn.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox7
             // 
@@ -980,15 +1008,15 @@
             this.pictureBox4.TabIndex = 59;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox5
+            // movieBtn
             // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(316, 128);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox5.TabIndex = 58;
-            this.pictureBox5.TabStop = false;
+            this.movieBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.movieBtn.Image = ((System.Drawing.Image)(resources.GetObject("movieBtn.Image")));
+            this.movieBtn.Location = new System.Drawing.Point(316, 128);
+            this.movieBtn.Name = "movieBtn";
+            this.movieBtn.Size = new System.Drawing.Size(160, 32);
+            this.movieBtn.TabIndex = 58;
+            this.movieBtn.TabStop = false;
             // 
             // Header
             // 
@@ -1041,26 +1069,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.HomeTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.poster1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.now1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.new1)).EndInit();
             this.SearchTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search1)).EndInit();
             this.MovieDetailsTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movDetails)).EndInit();
             this.LoginTab.ResumeLayout(false);
             this.LoginTab.PerformLayout();
             this.AccountTab.ResumeLayout(false);
@@ -1069,7 +1097,7 @@
             this.PaymentInfoTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).EndInit();
             this.ResumeLayout(false);
@@ -1084,39 +1112,39 @@
         private System.Windows.Forms.TabPage HomeTab;
         private System.Windows.Forms.TabPage SearchTab;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label homeBtn;
+        private System.Windows.Forms.Label logBtn;
         private System.Windows.Forms.PictureBox SearchBar;
         private System.Windows.Forms.PictureBox InfoBar;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox movieBtn;
         private System.Windows.Forms.PictureBox Header;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage MovieDetailsTab;
         private System.Windows.Forms.TabPage LoginTab;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox poster1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox now5;
+        private System.Windows.Forms.PictureBox now4;
+        private System.Windows.Forms.PictureBox now3;
+        private System.Windows.Forms.PictureBox now2;
+        private System.Windows.Forms.PictureBox now1;
+        private System.Windows.Forms.PictureBox new5;
+        private System.Windows.Forms.PictureBox new4;
+        private System.Windows.Forms.PictureBox new3;
+        private System.Windows.Forms.PictureBox new2;
+        private System.Windows.Forms.PictureBox new1;
+        private System.Windows.Forms.PictureBox search6;
+        private System.Windows.Forms.PictureBox search4;
+        private System.Windows.Forms.PictureBox search5;
+        private System.Windows.Forms.PictureBox search3;
+        private System.Windows.Forms.PictureBox search2;
+        private System.Windows.Forms.PictureBox search1;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox movDetails;
+        private System.Windows.Forms.TextBox passwordTxt;
+        private System.Windows.Forms.TextBox usernameTxt;
+        private System.Windows.Forms.Button loginbutton;
+        private System.Windows.Forms.Label makeAccount;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -1141,12 +1169,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox secCode;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox crdNum;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox crdlName;
+        private System.Windows.Forms.TextBox crdfName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -1156,6 +1184,7 @@
         private System.Windows.Forms.TabPage Ticket;
         private System.Windows.Forms.TabPage Contact;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label2;
 
     }
 }
