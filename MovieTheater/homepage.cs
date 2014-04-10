@@ -28,6 +28,34 @@ namespace MovieTheater
             tabControl2.Appearance = TabAppearance.FlatButtons;
             tabControl2.ItemSize = new Size(0, 1);
             tabControl2.SizeMode = TabSizeMode.Fixed;
+
+            if (File.Exists("movieInfo.xml"))
+            {
+                int iter = 0;
+                XDocument movie = XDocument.Load("movieInfo.xml");
+                var movInfo = from m in movie.Descendants("Movies")
+                select new 
+                {
+                    pos = m.Element("Poster").Value,
+                };
+                
+                foreach (var m in movInfo)
+                {
+                    switch (iter)
+                    {
+                        case 0:
+                            poster1.ImageLocation = m.pos;
+                            break;
+                        case 1:
+                            pictureBox14.ImageLocation = m.pos;
+                            break;
+                        case 2:
+                            pictureBox16.ImageLocation = m.pos;
+                            break;
+                    }
+                    iter++;
+                }
+            }
         }
 
         private void button3_Click(object sender, EventArgs e) //Next button
@@ -184,14 +212,63 @@ namespace MovieTheater
                         logged = true;
                         label1.Text = "Home";
                         tabControl2.SelectedTab = HomeTab;
+                        break;
                     }
                     else
-                        MessageBox.Show("Username/Password entry incorrect.");
-
+                        continue;
                 }
+                if (logged == false)
+                    MessageBox.Show("Incorrect username/password. Please try again.");
             }
             else
                 MessageBox.Show("Login in system temporarily unavailable, check back later.");
+        }
+
+        public void savePoster(string Filename)
+        {
+            string PATH = "movieInfo.xml";
+            XmlDocument doc = new XmlDocument();
+
+            //If there is no current file, then create a new one
+            if (!System.IO.File.Exists(PATH))
+            {
+                //Create neccessary nodes
+                XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                XmlComment comment = doc.CreateComment("Movie Info");
+                XmlElement root = doc.CreateElement("Movies");
+                XmlElement pos = doc.CreateElement("Poster");
+
+                //Add the values for each nodes
+                pos.InnerText = Filename;
+
+                //Construct the document
+                doc.AppendChild(declaration);
+                doc.AppendChild(comment);
+                doc.AppendChild(root);
+                root.AppendChild(pos);
+
+                doc.Save(PATH);
+            }
+            else //If there is already a file
+            {
+                //Load the XML File
+                doc.Load(PATH);
+
+                //Get the root element
+                XmlElement root = doc.DocumentElement;
+
+                XmlElement pos = doc.CreateElement("Poster");
+
+                //Add the values for each nodes
+                pos.InnerText = Filename;
+
+
+                //Add the New person element to the end of the root element
+                root.AppendChild(pos);
+
+                //Save the document
+                doc.Save(PATH);
+            }
         }
 
         private void poster1_Click(object sender, EventArgs e)
@@ -200,6 +277,13 @@ namespace MovieTheater
             {
                 openFileDialog1.ShowDialog();
                 poster1.ImageLocation = openFileDialog1.FileName;
+                savePoster(poster1.ImageLocation);
+            }
+
+            else if (adminLogged == false)
+            {
+                tabControl2.SelectedTab = MovieDetailsTab;
+                pictureBox23.ImageLocation = poster1.ImageLocation;
             }
         }
     }
