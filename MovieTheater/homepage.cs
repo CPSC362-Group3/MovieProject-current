@@ -15,6 +15,9 @@ namespace MovieTheater
 {
     public partial class homepage : Form
     {
+        bool adminLogged = false;
+        bool logged = false;
+
         public homepage()
         {
             InitializeComponent();
@@ -29,10 +32,10 @@ namespace MovieTheater
 
         private void button3_Click(object sender, EventArgs e) //Next button
         {
-            if ((string.IsNullOrEmpty(textBox7.Text)) || (string.IsNullOrEmpty(textBox8.Text))
-                || (string.IsNullOrEmpty(textBox9.Text)) || (string.IsNullOrEmpty(textBox10.Text))
-                || (string.IsNullOrEmpty(textBox11.Text)) || (string.IsNullOrEmpty(textBox12.Text))
-                || (string.IsNullOrEmpty(textBox13.Text)))
+            if ((string.IsNullOrEmpty(AddrTxt.Text)) || (string.IsNullOrEmpty(CityTxt.Text))
+                || (string.IsNullOrEmpty(StateTxt.Text)) || (string.IsNullOrEmpty(UserTxt.Text))
+                || (string.IsNullOrEmpty(passTxt.Text)) || (string.IsNullOrEmpty(lNameTxt.Text))
+                || (string.IsNullOrEmpty(fNameTxt.Text)))
                 MessageBox.Show("Required Fields Missing, please enter data.");
 
             else
@@ -44,7 +47,13 @@ namespace MovieTheater
 
         private void label1_Click(object sender, EventArgs e) //Login Button
         {
-            tabControl2.SelectedTab = LoginTab;
+            if (logged == false)
+                tabControl2.SelectedTab = LoginTab;
+            else
+            {
+                label1.Text = "Home";
+                tabControl2.SelectedTab = HomeTab;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)//Movie Button
@@ -76,13 +85,13 @@ namespace MovieTheater
                 XmlElement password = doc.CreateElement("Password");
 
                 //Add the values for each nodes
-                fName.Value = textBox5.Text;
-                lName.Value = textBox6.Text;
-                address.InnerText = textBox7.Text;
-                city.InnerText = textBox8.Text;
-                state.InnerText = textBox9.Text;
-                username.InnerText = textBox10.Text;
-                password.InnerText = textBox11.Text;
+                fName.Value = fNameTxt.Text;
+                lName.Value = lNameTxt.Text;
+                address.InnerText = AddrTxt.Text;
+                city.InnerText = CityTxt.Text;
+                state.InnerText = StateTxt.Text;
+                username.InnerText = UserTxt.Text;
+                password.InnerText = passTxt.Text;
 
 
 
@@ -120,13 +129,13 @@ namespace MovieTheater
                 XmlElement password = doc.CreateElement("Password");
 
                 //Add the values for each nodes
-                fName.Value = textBox5.Text;
-                lName.Value = textBox6.Text;
-                address.InnerText = textBox7.Text;
-                city.InnerText = textBox8.Text;
-                state.InnerText = textBox9.Text;
-                username.InnerText = textBox10.Text;
-                password.InnerText = textBox11.Text;
+                fName.Value = fNameTxt.Text;
+                lName.Value = lNameTxt.Text;
+                address.InnerText = AddrTxt.Text;
+                city.InnerText = CityTxt.Text;
+                state.InnerText = StateTxt.Text;
+                username.InnerText = UserTxt.Text;
+                password.InnerText = passTxt.Text;
 
                 //Construct the Person element
                 acc.Attributes.Append(fName);
@@ -169,7 +178,12 @@ namespace MovieTheater
                 {
                     if (textBox1.Text == acc.Username && textBox2.Text == acc.Password)
                     {
+                        if (textBox1.Text == "Admin")
+                            adminLogged = true;
                         MessageBox.Show("Successfully signed in!");
+                        logged = true;
+                        label1.Text = "Home";
+                        tabControl2.SelectedTab = HomeTab;
                     }
                     else
                         MessageBox.Show("Username/Password entry incorrect.");
@@ -178,6 +192,15 @@ namespace MovieTheater
             }
             else
                 MessageBox.Show("Login in system temporarily unavailable, check back later.");
+        }
+
+        private void poster1_Click(object sender, EventArgs e)
+        {
+            if (adminLogged == true)
+            {
+                openFileDialog1.ShowDialog();
+                poster1.ImageLocation = openFileDialog1.FileName;
+            }
         }
     }
 }

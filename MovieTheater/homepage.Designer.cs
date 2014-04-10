@@ -34,6 +34,7 @@
             System.Windows.Forms.PictureBox pictureBox9;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.SearchBar = new System.Windows.Forms.PictureBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.HomeTab = new System.Windows.Forms.TabPage();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
@@ -66,13 +67,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.AccountTab = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.passTxt = new System.Windows.Forms.TextBox();
+            this.UserTxt = new System.Windows.Forms.TextBox();
+            this.StateTxt = new System.Windows.Forms.TextBox();
+            this.CityTxt = new System.Windows.Forms.TextBox();
+            this.AddrTxt = new System.Windows.Forms.TextBox();
+            this.lNameTxt = new System.Windows.Forms.TextBox();
+            this.fNameTxt = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -102,13 +103,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.SearchBar = new System.Windows.Forms.PictureBox();
-            this.InfoBar = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
+            this.InfoBar = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -117,6 +118,7 @@
             ((System.ComponentModel.ISupportInitialize)(pictureBox9)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.HomeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -142,12 +144,11 @@
             this.LoginTab.SuspendLayout();
             this.AccountTab.SuspendLayout();
             this.PaymentInfoTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -210,6 +211,17 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // SearchBar
+            // 
+            this.SearchBar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.SearchBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.SearchBar.Image = ((System.Drawing.Image)(resources.GetObject("SearchBar.Image")));
+            this.SearchBar.Location = new System.Drawing.Point(-4, 224);
+            this.SearchBar.Name = "SearchBar";
+            this.SearchBar.Size = new System.Drawing.Size(128, 800);
+            this.SearchBar.TabIndex = 62;
+            this.SearchBar.TabStop = false;
+            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.HomeTab);
@@ -253,7 +265,7 @@
             // pictureBox18
             // 
             this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox18.Location = new System.Drawing.Point(667, 347);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(128, 160);
@@ -263,7 +275,7 @@
             // pictureBox19
             // 
             this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox19.Location = new System.Drawing.Point(507, 347);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(128, 160);
@@ -273,7 +285,7 @@
             // pictureBox20
             // 
             this.pictureBox20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox20.Location = new System.Drawing.Point(347, 347);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(128, 160);
@@ -283,7 +295,7 @@
             // pictureBox21
             // 
             this.pictureBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox21.Location = new System.Drawing.Point(187, 347);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(128, 160);
@@ -293,7 +305,7 @@
             // pictureBox22
             // 
             this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
+            this.pictureBox22.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox22.Location = new System.Drawing.Point(27, 347);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(128, 160);
@@ -303,7 +315,7 @@
             // pictureBox17
             // 
             this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox17.Location = new System.Drawing.Point(667, 83);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(128, 160);
@@ -313,7 +325,7 @@
             // pictureBox15
             // 
             this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox15.Location = new System.Drawing.Point(507, 83);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(128, 160);
@@ -323,7 +335,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox16.Location = new System.Drawing.Point(347, 83);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(128, 160);
@@ -333,7 +345,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.pictureBox14.Location = new System.Drawing.Point(187, 83);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(128, 160);
@@ -343,12 +355,15 @@
             // poster1
             // 
             this.poster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.poster1.Image = ((System.Drawing.Image)(resources.GetObject("poster1.Image")));
+            this.poster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.poster1.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.poster1.Location = new System.Drawing.Point(27, 83);
             this.poster1.Name = "poster1";
             this.poster1.Size = new System.Drawing.Size(128, 160);
+            this.poster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.poster1.TabIndex = 51;
             this.poster1.TabStop = false;
+            this.poster1.Click += new System.EventHandler(this.poster1_Click);
             // 
             // SearchTab
             // 
@@ -549,13 +564,13 @@
             // 
             this.AccountTab.BackColor = System.Drawing.Color.Silver;
             this.AccountTab.Controls.Add(this.button3);
-            this.AccountTab.Controls.Add(this.textBox11);
-            this.AccountTab.Controls.Add(this.textBox10);
-            this.AccountTab.Controls.Add(this.textBox9);
-            this.AccountTab.Controls.Add(this.textBox8);
-            this.AccountTab.Controls.Add(this.textBox7);
-            this.AccountTab.Controls.Add(this.textBox12);
-            this.AccountTab.Controls.Add(this.textBox13);
+            this.AccountTab.Controls.Add(this.passTxt);
+            this.AccountTab.Controls.Add(this.UserTxt);
+            this.AccountTab.Controls.Add(this.StateTxt);
+            this.AccountTab.Controls.Add(this.CityTxt);
+            this.AccountTab.Controls.Add(this.AddrTxt);
+            this.AccountTab.Controls.Add(this.lNameTxt);
+            this.AccountTab.Controls.Add(this.fNameTxt);
             this.AccountTab.Controls.Add(this.label18);
             this.AccountTab.Controls.Add(this.label17);
             this.AccountTab.Controls.Add(this.label16);
@@ -581,54 +596,54 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox11
+            // passTxt
             // 
-            this.textBox11.Location = new System.Drawing.Point(561, 251);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(171, 20);
-            this.textBox11.TabIndex = 30;
+            this.passTxt.Location = new System.Drawing.Point(561, 251);
+            this.passTxt.Name = "passTxt";
+            this.passTxt.Size = new System.Drawing.Size(171, 20);
+            this.passTxt.TabIndex = 30;
             // 
-            // textBox10
+            // UserTxt
             // 
-            this.textBox10.Location = new System.Drawing.Point(561, 154);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(171, 20);
-            this.textBox10.TabIndex = 29;
+            this.UserTxt.Location = new System.Drawing.Point(561, 154);
+            this.UserTxt.Name = "UserTxt";
+            this.UserTxt.Size = new System.Drawing.Size(171, 20);
+            this.UserTxt.TabIndex = 29;
             // 
-            // textBox9
+            // StateTxt
             // 
-            this.textBox9.Location = new System.Drawing.Point(245, 374);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(171, 20);
-            this.textBox9.TabIndex = 28;
+            this.StateTxt.Location = new System.Drawing.Point(245, 374);
+            this.StateTxt.Name = "StateTxt";
+            this.StateTxt.Size = new System.Drawing.Size(171, 20);
+            this.StateTxt.TabIndex = 28;
             // 
-            // textBox8
+            // CityTxt
             // 
-            this.textBox8.Location = new System.Drawing.Point(244, 312);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(171, 20);
-            this.textBox8.TabIndex = 27;
+            this.CityTxt.Location = new System.Drawing.Point(244, 312);
+            this.CityTxt.Name = "CityTxt";
+            this.CityTxt.Size = new System.Drawing.Size(171, 20);
+            this.CityTxt.TabIndex = 27;
             // 
-            // textBox7
+            // AddrTxt
             // 
-            this.textBox7.Location = new System.Drawing.Point(244, 250);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(171, 20);
-            this.textBox7.TabIndex = 26;
+            this.AddrTxt.Location = new System.Drawing.Point(244, 250);
+            this.AddrTxt.Name = "AddrTxt";
+            this.AddrTxt.Size = new System.Drawing.Size(171, 20);
+            this.AddrTxt.TabIndex = 26;
             // 
-            // textBox12
+            // lNameTxt
             // 
-            this.textBox12.Location = new System.Drawing.Point(244, 188);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(171, 20);
-            this.textBox12.TabIndex = 25;
+            this.lNameTxt.Location = new System.Drawing.Point(244, 188);
+            this.lNameTxt.Name = "lNameTxt";
+            this.lNameTxt.Size = new System.Drawing.Size(171, 20);
+            this.lNameTxt.TabIndex = 25;
             // 
-            // textBox13
+            // fNameTxt
             // 
-            this.textBox13.Location = new System.Drawing.Point(244, 134);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(171, 20);
-            this.textBox13.TabIndex = 24;
+            this.fNameTxt.Location = new System.Drawing.Point(244, 134);
+            this.fNameTxt.Name = "fNameTxt";
+            this.fNameTxt.Size = new System.Drawing.Size(171, 20);
+            this.fNameTxt.TabIndex = 24;
             // 
             // label18
             // 
@@ -931,27 +946,6 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // SearchBar
-            // 
-            this.SearchBar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.SearchBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.SearchBar.Image = ((System.Drawing.Image)(resources.GetObject("SearchBar.Image")));
-            this.SearchBar.Location = new System.Drawing.Point(-4, 224);
-            this.SearchBar.Name = "SearchBar";
-            this.SearchBar.Size = new System.Drawing.Size(128, 800);
-            this.SearchBar.TabIndex = 62;
-            this.SearchBar.TabStop = false;
-            // 
-            // InfoBar
-            // 
-            this.InfoBar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.InfoBar.Image = ((System.Drawing.Image)(resources.GetObject("InfoBar.Image")));
-            this.InfoBar.Location = new System.Drawing.Point(-4, 160);
-            this.InfoBar.Name = "InfoBar";
-            this.InfoBar.Size = new System.Drawing.Size(960, 64);
-            this.InfoBar.TabIndex = 61;
-            this.InfoBar.TabStop = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -993,6 +987,16 @@
             this.Header.TabIndex = 57;
             this.Header.TabStop = false;
             // 
+            // InfoBar
+            // 
+            this.InfoBar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.InfoBar.Image = ((System.Drawing.Image)(resources.GetObject("InfoBar.Image")));
+            this.InfoBar.Location = new System.Drawing.Point(-4, 160);
+            this.InfoBar.Name = "InfoBar";
+            this.InfoBar.Size = new System.Drawing.Size(960, 64);
+            this.InfoBar.TabIndex = 61;
+            this.InfoBar.TabStop = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -1002,6 +1006,10 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // homepage
             // 
@@ -1016,6 +1024,7 @@
             ((System.ComponentModel.ISupportInitialize)(pictureBox9)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.HomeTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
@@ -1044,12 +1053,11 @@
             this.AccountTab.PerformLayout();
             this.PaymentInfoTab.ResumeLayout(false);
             this.PaymentInfoTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1100,13 +1108,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabPage AccountTab;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox passTxt;
+        private System.Windows.Forms.TextBox UserTxt;
+        private System.Windows.Forms.TextBox StateTxt;
+        private System.Windows.Forms.TextBox CityTxt;
+        private System.Windows.Forms.TextBox AddrTxt;
+        private System.Windows.Forms.TextBox lNameTxt;
+        private System.Windows.Forms.TextBox fNameTxt;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -1133,6 +1141,7 @@
         private System.Windows.Forms.TabPage Purchase;
         private System.Windows.Forms.TabPage Ticket;
         private System.Windows.Forms.TabPage Contact;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
 
     }
 }
