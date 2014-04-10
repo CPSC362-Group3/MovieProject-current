@@ -341,7 +341,7 @@
             // new5
             // 
             this.new5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new5.Image = ((System.Drawing.Image)(resources.GetObject("new5.Image")));
+            this.new5.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.new5.Location = new System.Drawing.Point(667, 83);
             this.new5.Name = "new5";
             this.new5.Size = new System.Drawing.Size(128, 160);
@@ -353,7 +353,7 @@
             // new4
             // 
             this.new4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new4.Image = ((System.Drawing.Image)(resources.GetObject("new4.Image")));
+            this.new4.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.new4.Location = new System.Drawing.Point(507, 83);
             this.new4.Name = "new4";
             this.new4.Size = new System.Drawing.Size(128, 160);
@@ -365,7 +365,7 @@
             // new3
             // 
             this.new3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new3.Image = ((System.Drawing.Image)(resources.GetObject("new3.Image")));
+            this.new3.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.new3.Location = new System.Drawing.Point(347, 83);
             this.new3.Name = "new3";
             this.new3.Size = new System.Drawing.Size(128, 160);
@@ -377,7 +377,7 @@
             // new2
             // 
             this.new2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new2.Image = ((System.Drawing.Image)(resources.GetObject("new2.Image")));
+            this.new2.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
             this.new2.Location = new System.Drawing.Point(187, 83);
             this.new2.Name = "new2";
             this.new2.Size = new System.Drawing.Size(128, 160);
@@ -390,8 +390,8 @@
             // 
             this.new1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.new1.BackColor = System.Drawing.Color.Transparent;
-            this.new1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.new1.Image = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.new1.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.new1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.new1.Location = new System.Drawing.Point(27, 83);
             this.new1.Name = "new1";
             this.new1.Size = new System.Drawing.Size(128, 160);

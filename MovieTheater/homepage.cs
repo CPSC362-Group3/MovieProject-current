@@ -31,6 +31,11 @@ namespace MovieTheater
             tabControl2.ItemSize = new Size(0, 1);
             tabControl2.SizeMode = TabSizeMode.Fixed;
 
+            checkVisPos(new1);
+            checkVisPos(new2);
+            checkVisPos(new3);
+            checkVisPos(new4);
+            checkVisPos(new5);
             changeMovie();
 
             InfoBar.BringToFront();
@@ -73,20 +78,19 @@ namespace MovieTheater
             }
         }
 
-     /*   //Make posters visible only when added by admin
+        //Make posters visible only when added by admin
         public void checkVisPos(PictureBox pos)
         {
             if (pos.Image == null)
             {
                 if (adminLogged == true)
-                    newbtn1.Visible = true;
+                    pos.Visible = true;
                 else
-                    newbtn1.Visible = false;
-                pos.Visible = false;
+                    pos.Visible = false;
             }
             else
                 pos.Visible = true;
-        }*/
+        }
 
         //Save Poster location to file, loads file for use next time.
         public void savePoster(string Filename)
@@ -95,47 +99,50 @@ namespace MovieTheater
             XmlDocument doc = new XmlDocument();
 
             //If there is no current file, then create a new one
-            if (!System.IO.File.Exists(PATH))
+            if (Filename != null || Filename != "openFileDialog1")
             {
-                //Create neccessary nodes
-                XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
-                XmlComment comment = doc.CreateComment("Movie Info");
-                XmlElement root = doc.CreateElement("Movies");
-                XmlElement mov = doc.CreateElement("Movie");
-                XmlElement pos = doc.CreateElement("Poster");
+                if (!System.IO.File.Exists(PATH))
+                {
+                    //Create neccessary nodes
+                    XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                    XmlComment comment = doc.CreateComment("Movie Info");
+                    XmlElement root = doc.CreateElement("Movies");
+                    XmlElement mov = doc.CreateElement("Movie");
+                    XmlElement pos = doc.CreateElement("Poster");
 
-                //Add the values for each nodes
-                pos.InnerText = Filename;
+                    //Add the values for each nodes
+                    pos.InnerText = Filename;
 
-                //Construct the document
-                doc.AppendChild(declaration);
-                doc.AppendChild(comment);
-                doc.AppendChild(root);
-                root.AppendChild(mov);
-                mov.AppendChild(pos);
+                    //Construct the document
+                    doc.AppendChild(declaration);
+                    doc.AppendChild(comment);
+                    doc.AppendChild(root);
+                    root.AppendChild(mov);
+                    mov.AppendChild(pos);
 
-                doc.Save(PATH);
-            }
-            else //If there is already a file
-            {
-                //Load the XML File
-                doc.Load(PATH);
+                    doc.Save(PATH);
+                }
+                else //If there is already a file
+                {
+                    //Load the XML File
+                    doc.Load(PATH);
 
-                //Get the root element
-                XmlElement root = doc.DocumentElement;
-                XmlElement mov = doc.CreateElement("Movie");
-                XmlElement pos = doc.CreateElement("Poster");
+                    //Get the root element
+                    XmlElement root = doc.DocumentElement;
+                    XmlElement mov = doc.CreateElement("Movie");
+                    XmlElement pos = doc.CreateElement("Poster");
 
-                //Add the values for each nodes
-                pos.InnerText = Filename;
+                    //Add the values for each nodes
+                    pos.InnerText = Filename;
 
 
-                //Add the New person element to the end of the root element
-                root.AppendChild(mov);
-                mov.AppendChild(pos);
+                    //Add the New person element to the end of the root element
+                    root.AppendChild(mov);
+                    mov.AppendChild(pos);
 
-                //Save the document
-                doc.Save(PATH);
+                    //Save the document
+                    doc.Save(PATH);
+                }
             }
         }
 
@@ -145,7 +152,10 @@ namespace MovieTheater
             if (adminLogged == true)
             {
                 openFileDialog1.ShowDialog();
-                pos.ImageLocation = openFileDialog1.FileName;
+                if (openFileDialog1.FileName == "openFileDialog1")
+                    pos.ImageLocation = null;
+                else
+                    pos.ImageLocation = openFileDialog1.FileName;
                 savePoster(pos.ImageLocation);
             }
 
@@ -285,6 +295,11 @@ namespace MovieTheater
                 usernameTxt.Clear();
                 passwordTxt.Clear();
                 changeMovie();
+                checkVisPos(new1);
+                checkVisPos(new2);
+                checkVisPos(new3);
+                checkVisPos(new4);
+                checkVisPos(new5);
 
 
             }
@@ -320,7 +335,11 @@ namespace MovieTheater
                         logged = true;
                         logBtn.Text = "Log Out";
                         tabControl2.SelectedTab = HomeTab;
-                        //checkVisPos(new1);
+                        checkVisPos(new1);
+                        checkVisPos(new2);
+                        checkVisPos(new3);
+                        checkVisPos(new4);
+                        checkVisPos(new5);
 
                         break;
                     }
