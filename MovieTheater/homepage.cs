@@ -416,6 +416,90 @@ namespace MovieTheater
             changePoster(now5);
         }
 
+        //----------------------------------------------------------------------------------------------------
+        // MOVIE DETAILS
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl2.SelectedTab = Seating;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl2.SelectedTab = Seating;
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl2.SelectedTab = Seating;
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl2.SelectedTab = Seating;
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl2.SelectedTab = Seating;
+        }
+
+
+        //-----------------------------------------------------------------------------------------------------
+        //BUY SEATING PAGE
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
+            tabControl2.SelectedTab = Ticket;
+        }
+
+        private void Ticket_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+            //ADULT LABEL
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //ADULT LABEL
+            double adultTickets;
+            double totalPrice;
+            adultTickets = Convert.ToDouble(comboBox1.Text);
+            totalPrice = 10 * adultTickets;
+            label28.Text = totalPrice.ToString("$0.00");
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //SENIOR LABEL
+            double seniorTickets;
+            double totalPrice;
+            seniorTickets = Convert.ToDouble(comboBox2.Text);
+            totalPrice = 10 * seniorTickets;
+            label29.Text = totalPrice.ToString("$0.00");
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //CHILD LABEL
+            double childTickets;
+            double totalPrice;
+            childTickets = Convert.ToDouble(comboBox3.Text);
+            totalPrice = 10 * childTickets;
+            label30.Text = totalPrice.ToString("$0.00");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //BUY TICKETS OFFICIALLY
+            //TAKES YOUR TO PAYMENT PAGE
+            tabControl2.SelectedTab = Purchase;
+        }
+
         //-----------------------------------------------------------------------------------------------------
     }
 }
