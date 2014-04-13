@@ -369,6 +369,13 @@ namespace MovieTheater
         private void new1_Click(object sender, EventArgs e)
         {
             changePoster(new1);
+            linkLabel1.Text = "9:00AM";
+            linkLabel2.Text = "12:00PM";
+            linkLabel3.Text = "2:00PM";
+            linkLabel4.Text = "5:30PM";
+            linkLabel5.Text = "9:00PM";
+            linkLabel6.Text = "9:30PM";
+            linkLabel7.Text = "10:00PM";
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
@@ -443,6 +450,15 @@ namespace MovieTheater
             tabControl2.SelectedTab = Seating;
         }
 
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl2.SelectedTab = Seating;
+        }
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            tabControl2.SelectedTab = Seating;
+        }
+
 
         //-----------------------------------------------------------------------------------------------------
         //BUY SEATING PAGE
@@ -450,17 +466,6 @@ namespace MovieTheater
         {
             //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
             tabControl2.SelectedTab = Ticket;
-        }
-
-        private void Ticket_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label28_Click(object sender, EventArgs e)
-        {
-            //ADULT LABEL
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -499,6 +504,10 @@ namespace MovieTheater
             //TAKES YOUR TO PAYMENT PAGE
             tabControl2.SelectedTab = Purchase;
         }
+
+
+
+
 
         //-----------------------------------------------------------------------------------------------------
     }

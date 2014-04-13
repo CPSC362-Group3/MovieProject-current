@@ -134,6 +134,8 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -509,6 +511,8 @@
             // MovieDetailsTab
             // 
             this.MovieDetailsTab.BackColor = System.Drawing.Color.Silver;
+            this.MovieDetailsTab.Controls.Add(this.linkLabel7);
+            this.MovieDetailsTab.Controls.Add(this.linkLabel6);
             this.MovieDetailsTab.Controls.Add(this.label1);
             this.MovieDetailsTab.Controls.Add(this.richTextBox1);
             this.MovieDetailsTab.Controls.Add(this.linkLabel5);
@@ -983,7 +987,6 @@
             this.Ticket.Size = new System.Drawing.Size(819, 488);
             this.Ticket.TabIndex = 8;
             this.Ticket.Text = "Ticket";
-            this.Ticket.Click += new System.EventHandler(this.Ticket_Click);
             // 
             // Contact
             // 
@@ -1105,7 +1108,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(413, 329);
+            this.linkLabel1.Location = new System.Drawing.Point(353, 329);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(55, 13);
             this.linkLabel1.TabIndex = 45;
@@ -1116,7 +1119,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(535, 329);
+            this.linkLabel2.Location = new System.Drawing.Point(475, 329);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(55, 13);
             this.linkLabel2.TabIndex = 46;
@@ -1127,7 +1130,7 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(655, 329);
+            this.linkLabel3.Location = new System.Drawing.Point(597, 329);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(55, 13);
             this.linkLabel3.TabIndex = 47;
@@ -1138,7 +1141,7 @@
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(472, 361);
+            this.linkLabel4.Location = new System.Drawing.Point(719, 329);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(55, 13);
             this.linkLabel4.TabIndex = 48;
@@ -1149,7 +1152,7 @@
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(599, 361);
+            this.linkLabel5.Location = new System.Drawing.Point(409, 358);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(55, 13);
             this.linkLabel5.TabIndex = 49;
@@ -1159,6 +1162,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Enabled = false;
             this.richTextBox1.Location = new System.Drawing.Point(310, 91);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(490, 185);
@@ -1169,7 +1173,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(512, 290);
+            this.label1.Location = new System.Drawing.Point(494, 290);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 20);
             this.label1.TabIndex = 51;
@@ -1317,7 +1321,6 @@
             this.label28.Size = new System.Drawing.Size(49, 20);
             this.label28.TabIndex = 9;
             this.label28.Text = "$0.00";
-            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // label29
             // 
@@ -1362,13 +1365,35 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(425, 332);
+            this.button4.Location = new System.Drawing.Point(370, 325);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 38);
             this.button4.TabIndex = 14;
             this.button4.Text = "BUY TICKETS";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // linkLabel6
+            // 
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.Location = new System.Drawing.Point(535, 358);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel6.TabIndex = 52;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "linkLabel6";
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Location = new System.Drawing.Point(658, 358);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel7.TabIndex = 53;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "linkLabel7";
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
             // homepage
             // 
@@ -1529,6 +1554,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.LinkLabel linkLabel6;
 
     }
 }
