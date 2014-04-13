@@ -473,9 +473,13 @@ namespace MovieTheater
             //ADULT LABEL
             double adultTickets;
             double totalPrice;
+            int ticketA;
             adultTickets = Convert.ToDouble(comboBox1.Text);
+            ticketA = Convert.ToInt32(comboBox1.Text);
             totalPrice = 10 * adultTickets;
             label28.Text = totalPrice.ToString("$0.00");
+            label38.Text = totalPrice.ToString("0.00");
+            label55.Text = ticketA.ToString();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -483,26 +487,55 @@ namespace MovieTheater
             //SENIOR LABEL
             double seniorTickets;
             double totalPrice;
+            int ticketS;
             seniorTickets = Convert.ToDouble(comboBox2.Text);
-            totalPrice = 10 * seniorTickets;
+            ticketS = Convert.ToInt32(comboBox2.Text);
+            totalPrice = 9 * seniorTickets;
             label29.Text = totalPrice.ToString("$0.00");
+            label39.Text = totalPrice.ToString("0.00");
+            label54.Text = ticketS.ToString();
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             //CHILD LABEL
             double childTickets;
-            double totalPrice;
+            double totalPriceChild;
+            int ticketC;
             childTickets = Convert.ToDouble(comboBox3.Text);
-            totalPrice = 10 * childTickets;
-            label30.Text = totalPrice.ToString("$0.00");
+            ticketC = Convert.ToInt32(comboBox3.Text);
+            totalPriceChild = 9 * childTickets;
+            label30.Text = totalPriceChild.ToString("$0.00");
+            label40.Text = totalPriceChild.ToString("0.00");
+            label53.Text = ticketC.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             //BUY TICKETS OFFICIALLY
-            //TAKES YOUR TO PAYMENT PAGE
+            //TAKES YOU TO PAYMENT PAGE
             tabControl2.SelectedTab = Purchase;
+            
+            //SETS UP EVERYTHING ON THE NEXT PAGE
+            double subtotal, child, senior, adult;
+            child = Convert.ToDouble(label40.Text);
+            senior = Convert.ToDouble(label39.Text);
+            adult = Convert.ToDouble(label38.Text);
+            subtotal = child + senior + adult;
+            label34.Text = subtotal.ToString("$0.00");
+        }
+
+
+        //------------------------------------------------------------------------------------------------------
+        //  PURCHASE PAGE
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Officially buys tickets
+            MessageBox.Show("You have purchased tickets!");
+            tabControl2.SelectedTab = HomeTab;
+            comboBox1.ResetText();
+            comboBox2.ResetText();
+            comboBox3.ResetText();
         }
 
 

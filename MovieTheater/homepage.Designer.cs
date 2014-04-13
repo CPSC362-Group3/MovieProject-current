@@ -56,6 +56,15 @@
             this.search2 = new System.Windows.Forms.PictureBox();
             this.search1 = new System.Windows.Forms.PictureBox();
             this.MovieDetailsTab = new System.Windows.Forms.TabPage();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.movDetails = new System.Windows.Forms.PictureBox();
             this.LoginTab = new System.Windows.Forms.TabPage();
@@ -98,8 +107,32 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.Seating = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.Purchase = new System.Windows.Forms.TabPage();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.Ticket = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.Contact = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.homeBtn = new System.Windows.Forms.Label();
@@ -111,31 +144,26 @@
             this.InfoBar = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -171,6 +199,7 @@
             this.AccountTab.SuspendLayout();
             this.PaymentInfoTab.SuspendLayout();
             this.Seating.SuspendLayout();
+            this.Purchase.SuspendLayout();
             this.Ticket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -528,6 +557,102 @@
             this.MovieDetailsTab.Size = new System.Drawing.Size(819, 488);
             this.MovieDetailsTab.TabIndex = 2;
             this.MovieDetailsTab.Text = "Movie Details";
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Location = new System.Drawing.Point(658, 358);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel7.TabIndex = 53;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "linkLabel7";
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
+            // 
+            // linkLabel6
+            // 
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.Location = new System.Drawing.Point(535, 358);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel6.TabIndex = 52;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "linkLabel6";
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(494, 290);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Movie Times";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Enabled = false;
+            this.richTextBox1.Location = new System.Drawing.Point(310, 91);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(490, 185);
+            this.richTextBox1.TabIndex = 50;
+            this.richTextBox1.Text = "";
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Location = new System.Drawing.Point(409, 358);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel5.TabIndex = 49;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "linkLabel5";
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(719, 329);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel4.TabIndex = 48;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "linkLabel4";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(597, 329);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel3.TabIndex = 47;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "linkLabel3";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(475, 329);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel2.TabIndex = 46;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "linkLabel2";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(353, 329);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel1.TabIndex = 45;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureBox10
             // 
@@ -945,6 +1070,7 @@
             // Seating
             // 
             this.Seating.BackColor = System.Drawing.Color.Silver;
+            this.Seating.Controls.Add(this.label48);
             this.Seating.Controls.Add(this.button1);
             this.Seating.Location = new System.Drawing.Point(4, 22);
             this.Seating.Name = "Seating";
@@ -953,15 +1079,132 @@
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(656, 453);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Purchase Tickets";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Purchase
             // 
             this.Purchase.BackColor = System.Drawing.Color.Silver;
+            this.Purchase.Controls.Add(this.label53);
+            this.Purchase.Controls.Add(this.label54);
+            this.Purchase.Controls.Add(this.label55);
+            this.Purchase.Controls.Add(this.label52);
+            this.Purchase.Controls.Add(this.label51);
+            this.Purchase.Controls.Add(this.label50);
+            this.Purchase.Controls.Add(this.label49);
+            this.Purchase.Controls.Add(this.button5);
+            this.Purchase.Controls.Add(this.textBox4);
+            this.Purchase.Controls.Add(this.label47);
+            this.Purchase.Controls.Add(this.textBox3);
+            this.Purchase.Controls.Add(this.label46);
+            this.Purchase.Controls.Add(this.textBox2);
+            this.Purchase.Controls.Add(this.label45);
+            this.Purchase.Controls.Add(this.textBox1);
+            this.Purchase.Controls.Add(this.label44);
+            this.Purchase.Controls.Add(this.label43);
+            this.Purchase.Controls.Add(this.label42);
+            this.Purchase.Controls.Add(this.label41);
+            this.Purchase.Controls.Add(this.label40);
+            this.Purchase.Controls.Add(this.label39);
+            this.Purchase.Controls.Add(this.label38);
+            this.Purchase.Controls.Add(this.label37);
+            this.Purchase.Controls.Add(this.label36);
+            this.Purchase.Controls.Add(this.label35);
+            this.Purchase.Controls.Add(this.label34);
+            this.Purchase.Controls.Add(this.label33);
             this.Purchase.Location = new System.Drawing.Point(4, 22);
             this.Purchase.Name = "Purchase";
             this.Purchase.Padding = new System.Windows.Forms.Padding(3);
             this.Purchase.Size = new System.Drawing.Size(819, 488);
             this.Purchase.TabIndex = 7;
             this.Purchase.Text = "Purchase";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(276, 196);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(14, 13);
+            this.label40.TabIndex = 7;
+            this.label40.Text = "0";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(276, 146);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(14, 13);
+            this.label39.TabIndex = 6;
+            this.label39.Text = "0";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(276, 96);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(14, 13);
+            this.label38.TabIndex = 5;
+            this.label38.Text = "0";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(35, 191);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(44, 20);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "Child";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(35, 141);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(55, 20);
+            this.label36.TabIndex = 3;
+            this.label36.Text = "Senior";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(35, 91);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(107, 20);
+            this.label35.TabIndex = 2;
+            this.label35.Text = "Adult Manitee";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(254, 240);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(54, 20);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "$0.00";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(35, 240);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(82, 20);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Subtotal:";
             // 
             // Ticket
             // 
@@ -987,6 +1230,190 @@
             this.Ticket.Size = new System.Drawing.Size(819, 488);
             this.Ticket.TabIndex = 8;
             this.Ticket.Text = "Ticket";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(370, 325);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(136, 38);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "BUY TICKETS";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(32, 96);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(163, 20);
+            this.label32.TabIndex = 13;
+            this.label32.Text = "How Many Tickets?";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Maroon;
+            this.label31.Location = new System.Drawing.Point(32, 49);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(105, 20);
+            this.label31.TabIndex = 12;
+            this.label31.Text = "CHECKOUT";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(512, 250);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(49, 20);
+            this.label30.TabIndex = 11;
+            this.label30.Text = "$0.00";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(512, 196);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(49, 20);
+            this.label29.TabIndex = 10;
+            this.label29.Text = "$0.00";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(512, 141);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(49, 20);
+            this.label28.TabIndex = 9;
+            this.label28.Text = "$0.00";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(366, 250);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(121, 20);
+            this.label25.TabIndex = 8;
+            this.label25.Text = "x $9.00             =";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(366, 196);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(121, 20);
+            this.label26.TabIndex = 7;
+            this.label26.Text = "x $9.00             =";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(366, 141);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(118, 20);
+            this.label27.TabIndex = 6;
+            this.label27.Text = "x $10.00          =";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(92, 250);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(44, 20);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Child";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(92, 141);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Adult Manitee";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBox3.Location = new System.Drawing.Point(239, 249);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(91, 21);
+            this.comboBox3.TabIndex = 2;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBox2.Location = new System.Drawing.Point(239, 195);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(91, 21);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBox1.Location = new System.Drawing.Point(239, 143);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(91, 21);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(92, 196);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(55, 20);
+            this.label23.TabIndex = 4;
+            this.label23.Text = "Senior";
             // 
             // Contact
             // 
@@ -1105,295 +1532,187 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // linkLabel1
+            // label41
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(353, 329);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel1.TabIndex = 45;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Maroon;
+            this.label41.Location = new System.Drawing.Point(32, 43);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(84, 20);
+            this.label41.TabIndex = 8;
+            this.label41.Text = "Purchase";
             // 
-            // linkLabel2
+            // label42
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(475, 329);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel2.TabIndex = 46;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.Maroon;
+            this.label42.Location = new System.Drawing.Point(413, 43);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(197, 20);
+            this.label42.TabIndex = 9;
+            this.label42.Text = "Credit Card Information";
             // 
-            // linkLabel3
+            // label43
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(597, 329);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel3.TabIndex = 47;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "linkLabel3";
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(414, 63);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(131, 13);
+            this.label43.TabIndex = 10;
+            this.label43.Text = "*Please review information";
             // 
-            // linkLabel4
+            // label44
             // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(719, 329);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel4.TabIndex = 48;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "linkLabel4";
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(437, 96);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(118, 13);
+            this.label44.TabIndex = 11;
+            this.label44.Text = "Cardholder\'s First Name";
             // 
-            // linkLabel5
+            // textBox1
             // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(409, 358);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel5.TabIndex = 49;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "linkLabel5";
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            this.textBox1.Location = new System.Drawing.Point(573, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(209, 20);
+            this.textBox1.TabIndex = 12;
             // 
-            // richTextBox1
+            // textBox2
             // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(310, 91);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(490, 185);
-            this.richTextBox1.TabIndex = 50;
-            this.richTextBox1.Text = "";
+            this.textBox2.Location = new System.Drawing.Point(573, 141);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(209, 20);
+            this.textBox2.TabIndex = 14;
             // 
-            // label1
+            // label45
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(494, 290);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Movie Times";
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(437, 144);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(117, 13);
+            this.label45.TabIndex = 13;
+            this.label45.Text = "Cardholders Last Name";
             // 
-            // button1
+            // textBox3
             // 
-            this.button1.Location = new System.Drawing.Point(676, 459);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Buy Tickets";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.textBox3.Location = new System.Drawing.Point(573, 188);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(209, 20);
+            this.textBox3.TabIndex = 16;
             // 
-            // comboBox1
+            // label46
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.comboBox1.Location = new System.Drawing.Point(239, 143);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(91, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(437, 191);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(99, 13);
+            this.label46.TabIndex = 15;
+            this.label46.Text = "Credit Card Number";
             // 
-            // comboBox2
+            // textBox4
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.comboBox2.Location = new System.Drawing.Point(239, 195);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(91, 21);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.textBox4.Location = new System.Drawing.Point(573, 237);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(209, 20);
+            this.textBox4.TabIndex = 18;
             // 
-            // comboBox3
+            // label47
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.comboBox3.Location = new System.Drawing.Point(239, 249);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(91, 21);
-            this.comboBox3.TabIndex = 2;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(437, 240);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(73, 13);
+            this.label47.TabIndex = 17;
+            this.label47.Text = "Security Code";
             // 
-            // label4
+            // button5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(92, 141);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Adult Manitee";
+            this.button5.Location = new System.Drawing.Point(573, 310);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(95, 23);
+            this.button5.TabIndex = 19;
+            this.button5.Text = "Buy Tickets";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // label23
+            // label48
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(92, 196);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(55, 20);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "Senior";
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Maroon;
+            this.label48.Location = new System.Drawing.Point(32, 39);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(127, 20);
+            this.label48.TabIndex = 1;
+            this.label48.Text = "Select Seating";
             // 
-            // label24
+            // label49
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(92, 250);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 20);
-            this.label24.TabIndex = 5;
-            this.label24.Text = "Child";
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(33, 63);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(131, 13);
+            this.label49.TabIndex = 20;
+            this.label49.Text = "*Review number of tickets";
             // 
-            // label25
+            // label50
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(366, 250);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(121, 20);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "x $9.00             =";
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(148, 96);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(33, 13);
+            this.label50.TabIndex = 21;
+            this.label50.Text = "x $10";
             // 
-            // label26
+            // label51
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(366, 196);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(121, 20);
-            this.label26.TabIndex = 7;
-            this.label26.Text = "x $9.00             =";
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(148, 141);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(24, 13);
+            this.label51.TabIndex = 22;
+            this.label51.Text = "x$9";
             // 
-            // label27
+            // label52
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(366, 141);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(118, 20);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "x $10.00          =";
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(148, 195);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(24, 13);
+            this.label52.TabIndex = 23;
+            this.label52.Text = "x$9";
             // 
-            // label28
+            // label53
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(512, 141);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(49, 20);
-            this.label28.TabIndex = 9;
-            this.label28.Text = "$0.00";
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(209, 195);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(14, 13);
+            this.label53.TabIndex = 26;
+            this.label53.Text = "0";
             // 
-            // label29
+            // label54
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(512, 196);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(49, 20);
-            this.label29.TabIndex = 10;
-            this.label29.Text = "$0.00";
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(209, 141);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(14, 13);
+            this.label54.TabIndex = 25;
+            this.label54.Text = "0";
             // 
-            // label30
+            // label55
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(512, 250);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(49, 20);
-            this.label30.TabIndex = 11;
-            this.label30.Text = "$0.00";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Maroon;
-            this.label31.Location = new System.Drawing.Point(32, 49);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(105, 20);
-            this.label31.TabIndex = 12;
-            this.label31.Text = "CHECKOUT";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(32, 96);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(163, 20);
-            this.label32.TabIndex = 13;
-            this.label32.Text = "How Many Tickets?";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(370, 325);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 38);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "BUY TICKETS";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // linkLabel6
-            // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.Location = new System.Drawing.Point(535, 358);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel6.TabIndex = 52;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "linkLabel6";
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
-            // 
-            // linkLabel7
-            // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Location = new System.Drawing.Point(658, 358);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel7.TabIndex = 53;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "linkLabel7";
-            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(209, 96);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(14, 13);
+            this.label55.TabIndex = 24;
+            this.label55.Text = "0";
             // 
             // homepage
             // 
@@ -1439,6 +1758,9 @@
             this.PaymentInfoTab.ResumeLayout(false);
             this.PaymentInfoTab.PerformLayout();
             this.Seating.ResumeLayout(false);
+            this.Seating.PerformLayout();
+            this.Purchase.ResumeLayout(false);
+            this.Purchase.PerformLayout();
             this.Ticket.ResumeLayout(false);
             this.Ticket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1556,6 +1878,34 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.LinkLabel linkLabel6;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
 
     }
 }
