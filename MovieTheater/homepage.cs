@@ -21,10 +21,8 @@ namespace MovieTheater
         bool addBtns = false;
         //bool
 
-        string NewReleasesPath = "NewReleases.xml";
-        string NowShowingPath = "NowShowing.xml";
-        XmlDocument NewReleasesDocument = new XmlDocument();
-        XmlDocument NowShowingDocument = new XmlDocument();
+        string MoviesPath = "Movies.xml";
+        XmlDocument MoviesDocument = new XmlDocument();
 
         public homepage()
         {
@@ -70,26 +68,37 @@ namespace MovieTheater
             NSReleaseDateLabel8.Parent = BackgroundHome;
             NSReleaseDateLabel9.Parent = BackgroundHome;
             NSReleaseDateLabel10.Parent = BackgroundHome;
-            
-            //InitHomeTab();
+
+            // Movie details page.
+            MDSReleaseDate.Parent = backgroundMD;
+            MDReleaseLabel.Parent = backgroundMD;
+            MDSLength.Parent = backgroundMD;
+            MDLengthLabel.Parent = backgroundMD;
+            MDSRating.Parent = backgroundMD;
+            MDRatingLabel.Parent = backgroundMD;
+            MDSGenre.Parent = backgroundMD;
+            MDGenreLabel.Parent = backgroundMD;
+            MDSActors.Parent = backgroundMD;
+            MDSDirector.Parent = backgroundMD;
+            MDActorsLabel.Parent = backgroundMD;
+            MDDirectorLabel.Parent = backgroundMD;
+            MDSSynopsis.Parent = backgroundMD;
+            MDSynopsisLabel.Parent = backgroundMD;
 
             updateHomePage();
-
-
-
-            //checkVisPos(new1);
-            //checkVisPos(new2);
-            //checkVisPos(new3);
-            //checkVisPos(new4);
-            //checkVisPos(new5);
-            //changeMovie();
-
-            //InfoBar.BringToFront();
 
         }
 
         // GLOBAL FUNCTIONS ---------------------------------------------------
 
+        // get movie title from a label with a rating on it. utility function.
+        public string GetMovieTitle(string title)
+        {
+            int end = title.IndexOf(" (");
+            return title.Substring(0, end);
+        }
+
+        /* Admin label click */
         private void AdminLabel_Click(object sender, EventArgs e)
         {
             BodyTabControl.SelectedTab = AdminTab;
@@ -114,7 +123,6 @@ namespace MovieTheater
             homeBtn.Image = new Bitmap("../../Resources/home_button.jpg");
         }
 
-
         /* Login button click */
         private void LoginBtn_Click(object sender, EventArgs e)
         {
@@ -136,7 +144,7 @@ namespace MovieTheater
         /* browse button click */
         private void browseBtn_Click(object sender, EventArgs e)
         {
-
+            BodyTabControl.SelectedTab = ContactUsTab;
         }
 
         /* browse button enter */
@@ -154,7 +162,7 @@ namespace MovieTheater
         /* Contact Us button click */
         private void contactUsBtn_Click(object sender, EventArgs e)
         {
-
+            BodyTabControl.SelectedTab = ContactUsTab;
         }
 
         /* Contact Us button enter */
@@ -168,135 +176,104 @@ namespace MovieTheater
         {
             contactUsBtn.Image = new Bitmap("../../Resources/contactus_button.jpg");
         }
-        // --------------------------------------------------------------------
 
+        /* Poster Clicks */
+        private void NRPoster1_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel1.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NRPoster2_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel2.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NRPoster3_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel3.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NRPoster4_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel4.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NRPoster5_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel5.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster1_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel1.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster2_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel2.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster3_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel3.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster4_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel4.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster5_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel5.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster6_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel6.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster7_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel7.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster8_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel8.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster9_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel9.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void NSPoster10_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel10.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+        // --------------------------------------------------------------------
         // HOME TAB -----------------------------------------------------------
 
         public void updateHomePage()
         {
             RefreshNewReleases();
             RefreshNowShowing();
-        }
-
-        public void InitHomeTab()
-        {
-            //If there is no current file, then create a new one
-            if (!System.IO.File.Exists(NewReleasesPath))
-            {
-                // Populate the document.
-                XmlDeclaration Declaration = NewReleasesDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
-                NewReleasesDocument.AppendChild(Declaration);
-
-                XmlComment Comment = NewReleasesDocument.CreateComment("MovieInfo");
-                NewReleasesDocument.AppendChild(Comment);
-
-                XmlElement Root = NewReleasesDocument.CreateElement("Movies");
-                NewReleasesDocument.AppendChild(Root);
-
-                XmlElement Movie = NewReleasesDocument.CreateElement("Movie");
-                Root.AppendChild(Movie);
-
-                XmlElement Title = NewReleasesDocument.CreateElement("Title");
-                Movie.AppendChild(Title);
-                Title.InnerText = "Movie Title";
-
-                XmlElement Length = NewReleasesDocument.CreateElement("Length");
-                Movie.AppendChild(Length);
-                Length.InnerText = "1 hours 23 minutes";
-
-                XmlElement Synopsis = NewReleasesDocument.CreateElement("Synopsis");
-                Movie.AppendChild(Synopsis);
-                Synopsis.InnerText = "A short summary of what the movie is about";
-
-                XmlElement Description = NewReleasesDocument.CreateElement("Description");
-                Movie.AppendChild(Description);
-                Description.InnerText = "A long description of what the movie is about";
-
-                XmlElement Genre = NewReleasesDocument.CreateElement("Genre");
-                Movie.AppendChild(Genre);
-                Genre.InnerText = "Movie Genre";
-
-                XmlElement Rating = NewReleasesDocument.CreateElement("Rating");
-                Movie.AppendChild(Rating);
-                Rating.InnerText = "PG-13.";
-
-                XmlElement Actor = NewReleasesDocument.CreateElement("Actor");
-                Movie.AppendChild(Actor);
-                Actor.InnerText = "An actor";
-
-                XmlElement Director = NewReleasesDocument.CreateElement("Director");
-                Movie.AppendChild(Director);
-                Director.InnerText = "Director";
-
-                XmlElement ReleaseDate = NewReleasesDocument.CreateElement("ReleaseDate");
-                Movie.AppendChild(ReleaseDate);
-                ReleaseDate.InnerText = "Release Date";
-
-                XmlElement PosterPath = NewReleasesDocument.CreateElement("PosterPath");
-                Movie.AppendChild(PosterPath);
-                PosterPath.InnerText = "Poster Path";
-
-                NewReleasesDocument.Save(NewReleasesPath);
-            }
-            else
-            {
-                // load the document
-                NewReleasesDocument.Load(NewReleasesPath);
-
-                XmlNodeList elementList = NewReleasesDocument.GetElementsByTagName("Movie");
-
-                if (elementList.Count < 4)
-                {
-                    Console.WriteLine(elementList.Count);
-                    XmlElement Root = NewReleasesDocument.DocumentElement;
-
-                    XmlElement Movie = NewReleasesDocument.CreateElement("Movie");
-                    Root.AppendChild(Movie);
-
-                    XmlElement Title = NewReleasesDocument.CreateElement("Title");
-                    Movie.AppendChild(Title);
-                    Title.InnerText = "Movie Title";
-
-                    XmlElement Length = NewReleasesDocument.CreateElement("Length");
-                    Movie.AppendChild(Length);
-                    Length.InnerText = "1 hours 23 minutes";
-
-                    XmlElement Synopsis = NewReleasesDocument.CreateElement("Synopsis");
-                    Movie.AppendChild(Synopsis);
-                    Synopsis.InnerText = "A short summary of what the movie is about";
-
-                    XmlElement Description = NewReleasesDocument.CreateElement("Description");
-                    Movie.AppendChild(Description);
-                    Description.InnerText = "A long description of what the movie is about";
-
-                    XmlElement Genre = NewReleasesDocument.CreateElement("Genre");
-                    Movie.AppendChild(Genre);
-                    Genre.InnerText = "Movie Genre";
-
-                    XmlElement Rating = NewReleasesDocument.CreateElement("Rating");
-                    Movie.AppendChild(Rating);
-                    Rating.InnerText = "PG-13.";
-
-                    XmlElement Actor = NewReleasesDocument.CreateElement("Actor");
-                    Movie.AppendChild(Actor);
-                    Actor.InnerText = "An actor";
-
-                    XmlElement Director = NewReleasesDocument.CreateElement("Director");
-                    Movie.AppendChild(Director);
-                    Director.InnerText = "Director";
-
-                    XmlElement ReleaseDate = NewReleasesDocument.CreateElement("ReleaseDate");
-                    Movie.AppendChild(ReleaseDate);
-                    ReleaseDate.InnerText = "Release Date";
-
-                    XmlElement PosterPath = NewReleasesDocument.CreateElement("PosterPath");
-                    Movie.AppendChild(PosterPath);
-                    PosterPath.InnerText = "Poster Path";
-
-                    NewReleasesDocument.Save(NewReleasesPath);
-                }
-            }
-            NewReleasesDocument.Load(NewReleasesPath);
         }
 
         public void RefreshNewReleases () 
@@ -320,9 +297,9 @@ namespace MovieTheater
 
             // Load the document. 
             // Load every time in case its modified while the program is running.
-            if (System.IO.File.Exists(NewReleasesPath))
+            if (System.IO.File.Exists(MoviesPath))
             {
-                NewReleasesDocument.Load(NewReleasesPath);
+                MoviesDocument.Load(MoviesPath);
             }
             else
             {
@@ -331,54 +308,135 @@ namespace MovieTheater
                 return;
             }
 
+            int index = 0;
+            bool addMovie = false;
             // get the needed element lists for displaying the posters
-            int numMovies = NewReleasesDocument.GetElementsByTagName("Movie").Count;
-            XmlNodeList titleElemList = NewReleasesDocument.GetElementsByTagName("Title");
-            XmlNodeList RatingElemList = NewReleasesDocument.GetElementsByTagName("Rating");
-            XmlNodeList ReleaseDateElemList = NewReleasesDocument.GetElementsByTagName("ReleaseDate");
+            int numMovies = MoviesDocument.GetElementsByTagName("Movie").Count;
+            XmlNodeList titleElemList = MoviesDocument.GetElementsByTagName("Title");
+            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
+            XmlNodeList ReleaseDateElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime;
 
             // depending on how many movies we have, fill out the posters information.
             // Make each movie visible after setting the posters information
-            if (numMovies >= 1)
+
+            // ----------------------------------------------------------------
+            // this for loop checks if a movie has came out or not based on
+            // the current date and the movies date.
+            // index is the index of the first movie that has not came out yet.
+            for (int i = index; i < numMovies; i++)
             {
-                NRReleaseDateLabel1.Text = ReleaseDateElemList[0].InnerText; // release date label
-                NRTitleLabel1.Text = titleElemList[0].InnerText + " (" + RatingElemList[0].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) > 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            // We use index here to make the poster visible.
+            // We also set the posters information based on this movie.
+            if (addMovie) // 1
+            {
+                NRReleaseDateLabel1.Text = ReleaseDateElemList[index].InnerText; // release date label
+                NRTitleLabel1.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NRReleaseDateLabel1.Visible = true; // release date label visible
                 NRTitleLabel1.Visible = true; // title label visible
                 NRPoster1.Visible = true; // poster visible
             }
-            if (numMovies >= 2)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            // The next for loop starts with the next element in the lists,
+            // so we increment index and continue the foor loop from there.
+            // these for loops go until i < numMovies.
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NRReleaseDateLabel2.Text = ReleaseDateElemList[1].InnerText;
-                NRTitleLabel2.Text = titleElemList[1].InnerText + " (" + RatingElemList[1].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) > 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 2
+            {
+                NRReleaseDateLabel2.Text = ReleaseDateElemList[index].InnerText;
+                NRTitleLabel2.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NRReleaseDateLabel2.Visible = true;
                 NRTitleLabel2.Visible = true;
                 NRPoster2.Visible = true;
             }
-            if (numMovies >= 3)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NRReleaseDateLabel3.Text = ReleaseDateElemList[2].InnerText;
-                NRTitleLabel3.Text = titleElemList[2].InnerText + " (" + RatingElemList[2].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) > 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 3
+            {
+                NRReleaseDateLabel3.Text = ReleaseDateElemList[index].InnerText;
+                NRTitleLabel3.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NRReleaseDateLabel3.Visible = true;
                 NRTitleLabel3.Visible = true;
                 NRPoster3.Visible = true;
             }
-            if (numMovies >= 4)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NRReleaseDateLabel4.Text = ReleaseDateElemList[3].InnerText;
-                NRTitleLabel4.Text = titleElemList[3].InnerText + " (" + RatingElemList[3].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) > 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 4
+            {
+                NRReleaseDateLabel4.Text = ReleaseDateElemList[index].InnerText;
+                NRTitleLabel4.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NRReleaseDateLabel4.Visible = true;
                 NRTitleLabel4.Visible = true;
                 NRPoster4.Visible = true;
             }
-            if (numMovies >= 5)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NRReleaseDateLabel5.Text = ReleaseDateElemList[4].InnerText;
-                NRTitleLabel5.Text = titleElemList[4].InnerText + " (" + RatingElemList[4].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) > 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 5
+            {
+                NRReleaseDateLabel5.Text = ReleaseDateElemList[index].InnerText;
+                NRTitleLabel5.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NRReleaseDateLabel5.Visible = true;
                 NRTitleLabel5.Visible = true;
                 NRPoster5.Visible = true;
             }
+            // ----------------------------------------------------------------
 
         }
 
@@ -418,9 +476,9 @@ namespace MovieTheater
 
             // Load the document. 
             // Load every time in case its modified while the program is running.
-            if (System.IO.File.Exists(NowShowingPath))
+            if (System.IO.File.Exists(MoviesPath))
             {
-                NowShowingDocument.Load(NowShowingPath);
+                MoviesDocument.Load(MoviesPath);
             }
             else
             {
@@ -429,191 +487,290 @@ namespace MovieTheater
                 return;
             }
 
+            int index = 0;
+            bool addMovie = false;
+
             // get the needed element lists for displaying the posters
-            int numMovies = NowShowingDocument.GetElementsByTagName("Movie").Count;
-            XmlNodeList titleElemList = NowShowingDocument.GetElementsByTagName("Title");
-            XmlNodeList RatingElemList = NowShowingDocument.GetElementsByTagName("Rating");
-            XmlNodeList ReleaseDateElemList = NowShowingDocument.GetElementsByTagName("ReleaseDate");
+            int numMovies = MoviesDocument.GetElementsByTagName("Movie").Count;
+            XmlNodeList titleElemList = MoviesDocument.GetElementsByTagName("Title");
+            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
+            XmlNodeList ReleaseDateElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime;
 
             // depending on how many movies we have, fill out the posters information.
             // Make each movie visible after setting the posters information
-            if (numMovies >= 1)
+            // ----------------------------------------------------------------
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel1.Text = ReleaseDateElemList[0].InnerText;
-                NSTitleLabel1.Text = titleElemList[0].InnerText + " (" + RatingElemList[0].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 1
+            {
+                NSTitleLabel1.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel1.Visible = true;
                 NSTitleLabel1.Visible = true;
                 NSPoster1.Visible = true;
             }
-            if (numMovies >= 2)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel2.Text = ReleaseDateElemList[1].InnerText;
-                NSTitleLabel2.Text = titleElemList[1].InnerText + " (" + RatingElemList[1].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 2
+            {
+                NSTitleLabel2.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel2.Visible = true;
                 NSTitleLabel2.Visible = true;
                 NSPoster2.Visible = true;
             }
-            if (numMovies >= 3)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel3.Text = ReleaseDateElemList[2].InnerText;
-                NSTitleLabel3.Text = titleElemList[2].InnerText + " (" + RatingElemList[2].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 3
+            {
+                NSTitleLabel3.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel3.Visible = true;
                 NSTitleLabel3.Visible = true;
                 NSPoster3.Visible = true;
             }
-            if (numMovies >= 4)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel4.Text = ReleaseDateElemList[3].InnerText;
-                NSTitleLabel4.Text = titleElemList[3].InnerText + " (" + RatingElemList[3].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 4
+            {
+                NSTitleLabel4.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel4.Visible = true;
                 NSTitleLabel4.Visible = true;
                 NSPoster4.Visible = true;
             }
-            if (numMovies >= 5)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel5.Text = ReleaseDateElemList[4].InnerText;
-                NSTitleLabel5.Text = titleElemList[4].InnerText + " (" + RatingElemList[4].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 5
+            {
+                NSTitleLabel5.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel5.Visible = true;
                 NSTitleLabel5.Visible = true;
                 NSPoster5.Visible = true;
             }
-            if (numMovies >= 6)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel6.Text = ReleaseDateElemList[5].InnerText;
-                NSTitleLabel6.Text = titleElemList[5].InnerText + " (" + RatingElemList[5].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 6
+            {
+                NSTitleLabel6.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel1.Visible = true;
                 NSTitleLabel1.Visible = true;
                 NSPoster1.Visible = true;
             }
-            if (numMovies >= 7)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel7.Text = ReleaseDateElemList[6].InnerText;
-                NSTitleLabel7.Text = titleElemList[6].InnerText + " (" + RatingElemList[6].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 7
+            {
+                NSTitleLabel7.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel2.Visible = true;
                 NSTitleLabel2.Visible = true;
                 NSPoster2.Visible = true;
             }
-            if (numMovies >= 8)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel8.Text = ReleaseDateElemList[7].InnerText;
-                NSTitleLabel8.Text = titleElemList[7].InnerText + " (" + RatingElemList[7].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 8
+            {
+                NSTitleLabel8.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel3.Visible = true;
                 NSTitleLabel3.Visible = true;
                 NSPoster3.Visible = true;
             }
-            if (numMovies >= 9)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel9.Text = ReleaseDateElemList[8].InnerText;
-                NSTitleLabel9.Text = titleElemList[8].InnerText + " (" + RatingElemList[8].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 9
+            {
+                NSTitleLabel9.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel4.Visible = true;
                 NSTitleLabel4.Visible = true;
                 NSPoster4.Visible = true;
             }
-            if (numMovies >= 10)
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
             {
-                NSReleaseDateLabel10.Text = ReleaseDateElemList[9].InnerText;
-                NSTitleLabel10.Text = titleElemList[9].InnerText + " (" + RatingElemList[9].InnerText + ")";
+                ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[i].InnerText);
+                if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 10
+            {
+                NSTitleLabel10.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
                 NSReleaseDateLabel5.Visible = true;
                 NSTitleLabel5.Visible = true;
                 NSPoster5.Visible = true;
             }
+            // ----------------------------------------------------------------
         }
 
         // --------------------------------------------------------------------
-
         // ADMIN TAB ----------------------------------------------------------
 
         /* Add Movie button click */
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            if (!System.IO.File.Exists(NowShowingPath))
+            XmlElement Root;
+
+            if (!System.IO.File.Exists(MoviesPath))
             {
-                XmlDeclaration Declaration = NowShowingDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
-                XmlComment Comment = NowShowingDocument.CreateComment("MovieInfo");
-                XmlElement Root = NowShowingDocument.CreateElement("Movies");
+                XmlDeclaration Declaration = MoviesDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                XmlComment Comment = MoviesDocument.CreateComment("MovieInfo");
+                Root = MoviesDocument.CreateElement("Movies");
 
-                XmlElement Movie = NowShowingDocument.CreateElement("Movie");
-                XmlElement Title = NowShowingDocument.CreateElement("Title");
-                XmlElement Length = NowShowingDocument.CreateElement("Length");
-                XmlElement Synopsis = NowShowingDocument.CreateElement("Synopsis");
-                XmlElement Description = NowShowingDocument.CreateElement("Description");
-                XmlElement Genre = NowShowingDocument.CreateElement("Genre");
-                XmlElement Rating = NowShowingDocument.CreateElement("Rating");
-                XmlElement Actor = NowShowingDocument.CreateElement("Actor");
-                XmlElement Director = NowShowingDocument.CreateElement("Director");
-                XmlElement ReleaseDate = NowShowingDocument.CreateElement("ReleaseDate");
-                XmlElement PosterPath = NowShowingDocument.CreateElement("PosterPath");
-
-                NowShowingDocument.AppendChild(Declaration);
-                NowShowingDocument.AppendChild(Comment);
-                NowShowingDocument.AppendChild(Root);
-                Root.AppendChild(Movie);
-                Movie.AppendChild(Title);
-                Movie.AppendChild(Length);
-                Movie.AppendChild(Synopsis);
-                Movie.AppendChild(Description);
-                Movie.AppendChild(Genre);
-                Movie.AppendChild(Rating);
-                Movie.AppendChild(Actor);
-                Movie.AppendChild(Director);
-                Movie.AppendChild(ReleaseDate);
-                Movie.AppendChild(PosterPath);
-                
-                Title.InnerText = TitleBox.Text;
-                Length.InnerText = LengthBox.Text;
-                Synopsis.InnerText = SynopsisBox.Text;
-                Description.InnerText = DescriptionBox.Text;
-                Genre.InnerText = GenreBox.Text;
-                Rating.InnerText = RatingBox.Text;
-                Actor.InnerText = ActorBox.Text;
-                Director.InnerText = DirectorBox.Text;
-                ReleaseDate.InnerText = ReleaseDateBox.Text;
-                PosterPath.InnerText = PosterPathBox.Text;
-
-                NowShowingDocument.Save(NowShowingPath);
+                MoviesDocument.AppendChild(Declaration);
+                MoviesDocument.AppendChild(Comment);
+                MoviesDocument.AppendChild(Root);
             }
             else
             {
-                NowShowingDocument.Load(NowShowingPath);
+                MoviesDocument.Load(MoviesPath);
+                Root = MoviesDocument.DocumentElement;
 
-                XmlElement Root = NowShowingDocument.DocumentElement;
-                XmlElement Movie = NowShowingDocument.CreateElement("Movie");
-                XmlElement Title = NowShowingDocument.CreateElement("Title");
-                XmlElement Length = NowShowingDocument.CreateElement("Length");
-                XmlElement Synopsis = NowShowingDocument.CreateElement("Synopsis");
-                XmlElement Description = NowShowingDocument.CreateElement("Description");
-                XmlElement Genre = NowShowingDocument.CreateElement("Genre");
-                XmlElement Rating = NowShowingDocument.CreateElement("Rating");
-                XmlElement Actor = NowShowingDocument.CreateElement("Actor");
-                XmlElement Director = NowShowingDocument.CreateElement("Director");
-                XmlElement ReleaseDate = NowShowingDocument.CreateElement("ReleaseDate");
-                XmlElement PosterPath = NowShowingDocument.CreateElement("PosterPath");
-
-                Root.AppendChild(Movie);
-                Movie.AppendChild(Title);
-                Movie.AppendChild(Length);
-                Movie.AppendChild(Synopsis);
-                Movie.AppendChild(Description);
-                Movie.AppendChild(Genre);
-                Movie.AppendChild(Rating);
-                Movie.AppendChild(Actor);
-                Movie.AppendChild(Director);
-                Movie.AppendChild(ReleaseDate);
-                Movie.AppendChild(PosterPath);
-
-                Title.InnerText = TitleBox.Text;
-                Length.InnerText = LengthBox.Text;
-                Synopsis.InnerText = SynopsisBox.Text;
-                Description.InnerText = DescriptionBox.Text;
-                Genre.InnerText = GenreBox.Text;
-                Rating.InnerText = RatingBox.Text;
-                Actor.InnerText = ActorBox.Text;
-                Director.InnerText = DirectorBox.Text;
-                ReleaseDate.InnerText = ReleaseDateBox.Text;
-                PosterPath.InnerText = PosterPathBox.Text;
-
-                NowShowingDocument.Save(NowShowingPath);
             }
+
+            XmlElement Movie = MoviesDocument.CreateElement("Movie");
+            XmlElement Title = MoviesDocument.CreateElement("Title");
+            XmlElement Length = MoviesDocument.CreateElement("Length");
+            XmlElement Synopsis = MoviesDocument.CreateElement("Synopsis");
+            XmlElement Description = MoviesDocument.CreateElement("Description");
+            XmlElement Genre = MoviesDocument.CreateElement("Genre");
+            XmlElement Rating = MoviesDocument.CreateElement("Rating");
+            XmlElement Actor = MoviesDocument.CreateElement("Actor");
+            XmlElement Director = MoviesDocument.CreateElement("Director");
+            XmlElement ReleaseDate = MoviesDocument.CreateElement("ReleaseDate");
+            XmlElement PosterPath = MoviesDocument.CreateElement("PosterPath");
+
+            Root.AppendChild(Movie);
+            Movie.AppendChild(Title);
+            Movie.AppendChild(Length);
+            Movie.AppendChild(Synopsis);
+            Movie.AppendChild(Description);
+            Movie.AppendChild(Genre);
+            Movie.AppendChild(Rating);
+            Movie.AppendChild(Actor);
+            Movie.AppendChild(Director);
+            Movie.AppendChild(ReleaseDate);
+            Movie.AppendChild(PosterPath);
+
+            Title.InnerText = TitleBox.Text;
+            Length.InnerText = LengthBox.Text;
+            Synopsis.InnerText = SynopsisBox.Text;
+            Description.InnerText = DescriptionBox.Text;
+            Genre.InnerText = GenreBox.Text;
+            Rating.InnerText = RatingBox.Text;
+            Actor.InnerText = ActorBox.Text;
+            Director.InnerText = DirectorBox.Text;
+            ReleaseDate.InnerText = ReleaseDTPicker.Value.ToString("MM/dd/yyyy");
+            PosterPath.InnerText = PosterPathBox.Text;
+
+            MoviesDocument.Save(MoviesPath);
 
             TitleBox.Clear();
             LengthBox.Clear();
@@ -623,12 +780,58 @@ namespace MovieTheater
             RatingBox.ResetText();
             ActorBox.Clear();
             DirectorBox.Clear();
-            ReleaseDateBox.Clear();
+            ReleaseDTPicker.ResetText();
             PosterPathBox.Clear();
 
         }
-        // --------------------------------------------------------------------
 
+        // --------------------------------------------------------------------
+        // MOVIE DETAILS TAB --------------------------------------------------
+
+        public void updateMovieDetailsPage(string title)
+        {
+            int index = 0;
+            bool MovieIsValid = false;
+            // dont have to check if there is a movie file since you clicked on
+            // a movie poster to get here. load the movie xml file.
+            MoviesDocument.Load(MoviesPath);
+
+            XmlNodeList TitleElemList = MoviesDocument.GetElementsByTagName("Title");
+            XmlNodeList LengthElemList = MoviesDocument.GetElementsByTagName("Length");
+            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
+            XmlNodeList GenreElemList = MoviesDocument.GetElementsByTagName("Genre");
+            XmlNodeList ReleaseElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            XmlNodeList ActorsElemList = MoviesDocument.GetElementsByTagName("Actor");
+            XmlNodeList DirectorElemList = MoviesDocument.GetElementsByTagName("Director");
+            XmlNodeList SynopsisElemList = MoviesDocument.GetElementsByTagName("Synopsis");
+
+            for (int i = 0; i < TitleElemList.Count; i++)
+            {
+                if (title == TitleElemList[i].InnerText)
+                {
+                    index = i;
+                    MovieIsValid = true;
+                    break;
+                }
+            }
+            if (MovieIsValid)
+            {
+                MDTitleLabel.Text = title;
+                MDReleaseLabel.Text = ReleaseElemList[index].InnerText;
+                MDLengthLabel.Text = LengthElemList[index].InnerText;
+                MDRatingLabel.Text = RatingElemList[index].InnerText;
+                MDGenreLabel.Text = GenreElemList[index].InnerText;
+                MDActorsLabel.Text = ActorsElemList[index].InnerText;
+                MDDirectorLabel.Text = DirectorElemList[index].InnerText;
+                MDSynopsisLabel.Text = SynopsisElemList[index].InnerText;
+            }
+            else
+            {
+                Console.WriteLine("Error in Movie Details. Cant find selected movie.");
+            }
+
+        }
+        // --------------------------------------------------------------------
 
 
         //Changes the movie poster
