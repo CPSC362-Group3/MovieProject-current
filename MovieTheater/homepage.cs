@@ -19,6 +19,12 @@ namespace MovieTheater
         bool adminLogged = false;
         bool logged = false;
         bool addBtns = false;
+        //bool
+
+        string NewReleasesPath = "NewReleases.xml";
+        string NowShowingPath = "NowShowing.xml";
+        XmlDocument NewReleasesDocument = new XmlDocument();
+        XmlDocument NowShowingDocument = new XmlDocument();
 
         public homepage()
         {
@@ -27,22 +33,603 @@ namespace MovieTheater
             tabControl1.ItemSize = new Size(0, 1);
             tabControl1.SizeMode = TabSizeMode.Fixed;
 
-            tabControl2.Appearance = TabAppearance.FlatButtons;
-            tabControl2.ItemSize = new Size(0, 1);
-            tabControl2.SizeMode = TabSizeMode.Fixed;
+            BodyTabControl.Appearance = TabAppearance.FlatButtons;
+            BodyTabControl.ItemSize = new Size(0, 1);
+            BodyTabControl.SizeMode = TabSizeMode.Fixed;
 
-            checkVisPos(new1);
-            checkVisPos(new2);
-            checkVisPos(new3);
-            checkVisPos(new4);
-            checkVisPos(new5);
-            changeMovie();
+            // New Release posters
+            NRTitleLabel1.Parent = BackgroundHome;
+            NRTitleLabel2.Parent = BackgroundHome;
+            NRTitleLabel3.Parent = BackgroundHome;
+            NRTitleLabel4.Parent = BackgroundHome;
+            NRTitleLabel5.Parent = BackgroundHome;
+            NRReleaseDateLabel1.Parent = BackgroundHome;
+            NRReleaseDateLabel2.Parent = BackgroundHome;
+            NRReleaseDateLabel3.Parent = BackgroundHome;
+            NRReleaseDateLabel4.Parent = BackgroundHome;
+            NRReleaseDateLabel5.Parent = BackgroundHome;
 
-            InfoBar.BringToFront();
+            // Now Showing posters
+            NSTitleLabel1.Parent = BackgroundHome;
+            NSTitleLabel2.Parent = BackgroundHome;
+            NSTitleLabel3.Parent = BackgroundHome;
+            NSTitleLabel4.Parent = BackgroundHome;
+            NSTitleLabel5.Parent = BackgroundHome;
+            NSTitleLabel6.Parent = BackgroundHome;
+            NSTitleLabel7.Parent = BackgroundHome;
+            NSTitleLabel8.Parent = BackgroundHome;
+            NSTitleLabel9.Parent = BackgroundHome;
+            NSTitleLabel10.Parent = BackgroundHome;
+            NSReleaseDateLabel1.Parent = BackgroundHome;
+            NSReleaseDateLabel2.Parent = BackgroundHome;
+            NSReleaseDateLabel3.Parent = BackgroundHome;
+            NSReleaseDateLabel4.Parent = BackgroundHome;
+            NSReleaseDateLabel5.Parent = BackgroundHome;
+            NSReleaseDateLabel6.Parent = BackgroundHome;
+            NSReleaseDateLabel7.Parent = BackgroundHome;
+            NSReleaseDateLabel8.Parent = BackgroundHome;
+            NSReleaseDateLabel9.Parent = BackgroundHome;
+            NSReleaseDateLabel10.Parent = BackgroundHome;
+            
+            //InitHomeTab();
+
+            updateHomePage();
+
+
+
+            //checkVisPos(new1);
+            //checkVisPos(new2);
+            //checkVisPos(new3);
+            //checkVisPos(new4);
+            //checkVisPos(new5);
+            //changeMovie();
+
+            //InfoBar.BringToFront();
 
         }
 
-        //Helper Functions---------------------------------------------------------------------------------
+        // GLOBAL FUNCTIONS ---------------------------------------------------
+
+        private void AdminLabel_Click(object sender, EventArgs e)
+        {
+            BodyTabControl.SelectedTab = AdminTab;
+        }
+
+        /* Home button click */
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            updateHomePage();
+            BodyTabControl.SelectedTab = HomeTab;
+        }
+
+        /* Home button enter */
+        private void homeBtn_MouseEnter(object sender, EventArgs e)
+        {
+            homeBtn.Image = new Bitmap("../../Resources/home_button_hover.jpg");
+        }
+
+        /* Home button exit */
+        private void homeBtn_MouseLeave(object sender, EventArgs e)
+        {
+            homeBtn.Image = new Bitmap("../../Resources/home_button.jpg");
+        }
+
+
+        /* Login button click */
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            BodyTabControl.SelectedTab = LoginTab;
+        }
+
+        /* Login button enter */
+        private void LoginBtn_MouseEnter(object sender, EventArgs e)
+        {
+            LoginBtn.Image = new Bitmap("../../Resources/login_button_hover.jpg");
+        }
+
+        /* Login button exit */
+        private void LoginBtn_MouseLeave(object sender, EventArgs e)
+        {
+            LoginBtn.Image = new Bitmap("../../Resources/login_button.jpg");
+        }
+
+        /* browse button click */
+        private void browseBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /* browse button enter */
+        private void browseBtn_MouseEnter(object sender, EventArgs e)
+        {
+            browseBtn.Image = new Bitmap("../../Resources/browse_button_hover.jpg");
+        }
+
+        /* browse button exit */
+        private void browseBtn_MouseLeave(object sender, EventArgs e)
+        {
+            browseBtn.Image = new Bitmap("../../Resources/browse_button.jpg");
+        }
+
+        /* Contact Us button click */
+        private void contactUsBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /* Contact Us button enter */
+        private void contactUsBtn_MouseEnter(object sender, EventArgs e)
+        {
+            contactUsBtn.Image = new Bitmap("../../Resources/contactus_button_hover.jpg");
+        }
+
+        /* Contact Us button exit */
+        private void contactUsBtn_MouseLeave(object sender, EventArgs e)
+        {
+            contactUsBtn.Image = new Bitmap("../../Resources/contactus_button.jpg");
+        }
+        // --------------------------------------------------------------------
+
+        // HOME TAB -----------------------------------------------------------
+
+        public void updateHomePage()
+        {
+            RefreshNewReleases();
+            RefreshNowShowing();
+        }
+
+        public void InitHomeTab()
+        {
+            //If there is no current file, then create a new one
+            if (!System.IO.File.Exists(NewReleasesPath))
+            {
+                // Populate the document.
+                XmlDeclaration Declaration = NewReleasesDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                NewReleasesDocument.AppendChild(Declaration);
+
+                XmlComment Comment = NewReleasesDocument.CreateComment("MovieInfo");
+                NewReleasesDocument.AppendChild(Comment);
+
+                XmlElement Root = NewReleasesDocument.CreateElement("Movies");
+                NewReleasesDocument.AppendChild(Root);
+
+                XmlElement Movie = NewReleasesDocument.CreateElement("Movie");
+                Root.AppendChild(Movie);
+
+                XmlElement Title = NewReleasesDocument.CreateElement("Title");
+                Movie.AppendChild(Title);
+                Title.InnerText = "Movie Title";
+
+                XmlElement Length = NewReleasesDocument.CreateElement("Length");
+                Movie.AppendChild(Length);
+                Length.InnerText = "1 hours 23 minutes";
+
+                XmlElement Synopsis = NewReleasesDocument.CreateElement("Synopsis");
+                Movie.AppendChild(Synopsis);
+                Synopsis.InnerText = "A short summary of what the movie is about";
+
+                XmlElement Description = NewReleasesDocument.CreateElement("Description");
+                Movie.AppendChild(Description);
+                Description.InnerText = "A long description of what the movie is about";
+
+                XmlElement Genre = NewReleasesDocument.CreateElement("Genre");
+                Movie.AppendChild(Genre);
+                Genre.InnerText = "Movie Genre";
+
+                XmlElement Rating = NewReleasesDocument.CreateElement("Rating");
+                Movie.AppendChild(Rating);
+                Rating.InnerText = "PG-13.";
+
+                XmlElement Actor = NewReleasesDocument.CreateElement("Actor");
+                Movie.AppendChild(Actor);
+                Actor.InnerText = "An actor";
+
+                XmlElement Director = NewReleasesDocument.CreateElement("Director");
+                Movie.AppendChild(Director);
+                Director.InnerText = "Director";
+
+                XmlElement ReleaseDate = NewReleasesDocument.CreateElement("ReleaseDate");
+                Movie.AppendChild(ReleaseDate);
+                ReleaseDate.InnerText = "Release Date";
+
+                XmlElement PosterPath = NewReleasesDocument.CreateElement("PosterPath");
+                Movie.AppendChild(PosterPath);
+                PosterPath.InnerText = "Poster Path";
+
+                NewReleasesDocument.Save(NewReleasesPath);
+            }
+            else
+            {
+                // load the document
+                NewReleasesDocument.Load(NewReleasesPath);
+
+                XmlNodeList elementList = NewReleasesDocument.GetElementsByTagName("Movie");
+
+                if (elementList.Count < 4)
+                {
+                    Console.WriteLine(elementList.Count);
+                    XmlElement Root = NewReleasesDocument.DocumentElement;
+
+                    XmlElement Movie = NewReleasesDocument.CreateElement("Movie");
+                    Root.AppendChild(Movie);
+
+                    XmlElement Title = NewReleasesDocument.CreateElement("Title");
+                    Movie.AppendChild(Title);
+                    Title.InnerText = "Movie Title";
+
+                    XmlElement Length = NewReleasesDocument.CreateElement("Length");
+                    Movie.AppendChild(Length);
+                    Length.InnerText = "1 hours 23 minutes";
+
+                    XmlElement Synopsis = NewReleasesDocument.CreateElement("Synopsis");
+                    Movie.AppendChild(Synopsis);
+                    Synopsis.InnerText = "A short summary of what the movie is about";
+
+                    XmlElement Description = NewReleasesDocument.CreateElement("Description");
+                    Movie.AppendChild(Description);
+                    Description.InnerText = "A long description of what the movie is about";
+
+                    XmlElement Genre = NewReleasesDocument.CreateElement("Genre");
+                    Movie.AppendChild(Genre);
+                    Genre.InnerText = "Movie Genre";
+
+                    XmlElement Rating = NewReleasesDocument.CreateElement("Rating");
+                    Movie.AppendChild(Rating);
+                    Rating.InnerText = "PG-13.";
+
+                    XmlElement Actor = NewReleasesDocument.CreateElement("Actor");
+                    Movie.AppendChild(Actor);
+                    Actor.InnerText = "An actor";
+
+                    XmlElement Director = NewReleasesDocument.CreateElement("Director");
+                    Movie.AppendChild(Director);
+                    Director.InnerText = "Director";
+
+                    XmlElement ReleaseDate = NewReleasesDocument.CreateElement("ReleaseDate");
+                    Movie.AppendChild(ReleaseDate);
+                    ReleaseDate.InnerText = "Release Date";
+
+                    XmlElement PosterPath = NewReleasesDocument.CreateElement("PosterPath");
+                    Movie.AppendChild(PosterPath);
+                    PosterPath.InnerText = "Poster Path";
+
+                    NewReleasesDocument.Save(NewReleasesPath);
+                }
+            }
+            NewReleasesDocument.Load(NewReleasesPath);
+        }
+
+        public void RefreshNewReleases () 
+        {
+            /* make all posters and labels invisible */
+            NRReleaseDateLabel1.Visible = false;
+            NRReleaseDateLabel2.Visible = false;
+            NRReleaseDateLabel3.Visible = false;
+            NRReleaseDateLabel4.Visible = false;
+            NRReleaseDateLabel5.Visible = false;
+            NRTitleLabel1.Visible = false;
+            NRTitleLabel2.Visible = false;
+            NRTitleLabel3.Visible = false;
+            NRTitleLabel4.Visible = false;
+            NRTitleLabel5.Visible = false;
+            NRPoster1.Visible = false;
+            NRPoster2.Visible = false;
+            NRPoster3.Visible = false;
+            NRPoster4.Visible = false;
+            NRPoster5.Visible = false;
+
+            // Load the document. 
+            // Load every time in case its modified while the program is running.
+            if (System.IO.File.Exists(NewReleasesPath))
+            {
+                NewReleasesDocument.Load(NewReleasesPath);
+            }
+            else
+            {
+                // if there is no file, then all elements are invisible.
+                // no reason to continue from here.
+                return;
+            }
+
+            // get the needed element lists for displaying the posters
+            int numMovies = NewReleasesDocument.GetElementsByTagName("Movie").Count;
+            XmlNodeList titleElemList = NewReleasesDocument.GetElementsByTagName("Title");
+            XmlNodeList RatingElemList = NewReleasesDocument.GetElementsByTagName("Rating");
+            XmlNodeList ReleaseDateElemList = NewReleasesDocument.GetElementsByTagName("ReleaseDate");
+
+            // depending on how many movies we have, fill out the posters information.
+            // Make each movie visible after setting the posters information
+            if (numMovies >= 1)
+            {
+                NRReleaseDateLabel1.Text = ReleaseDateElemList[0].InnerText; // release date label
+                NRTitleLabel1.Text = titleElemList[0].InnerText + " (" + RatingElemList[0].InnerText + ")";
+                NRReleaseDateLabel1.Visible = true; // release date label visible
+                NRTitleLabel1.Visible = true; // title label visible
+                NRPoster1.Visible = true; // poster visible
+            }
+            if (numMovies >= 2)
+            {
+                NRReleaseDateLabel2.Text = ReleaseDateElemList[1].InnerText;
+                NRTitleLabel2.Text = titleElemList[1].InnerText + " (" + RatingElemList[1].InnerText + ")";
+                NRReleaseDateLabel2.Visible = true;
+                NRTitleLabel2.Visible = true;
+                NRPoster2.Visible = true;
+            }
+            if (numMovies >= 3)
+            {
+                NRReleaseDateLabel3.Text = ReleaseDateElemList[2].InnerText;
+                NRTitleLabel3.Text = titleElemList[2].InnerText + " (" + RatingElemList[2].InnerText + ")";
+                NRReleaseDateLabel3.Visible = true;
+                NRTitleLabel3.Visible = true;
+                NRPoster3.Visible = true;
+            }
+            if (numMovies >= 4)
+            {
+                NRReleaseDateLabel4.Text = ReleaseDateElemList[3].InnerText;
+                NRTitleLabel4.Text = titleElemList[3].InnerText + " (" + RatingElemList[3].InnerText + ")";
+                NRReleaseDateLabel4.Visible = true;
+                NRTitleLabel4.Visible = true;
+                NRPoster4.Visible = true;
+            }
+            if (numMovies >= 5)
+            {
+                NRReleaseDateLabel5.Text = ReleaseDateElemList[4].InnerText;
+                NRTitleLabel5.Text = titleElemList[4].InnerText + " (" + RatingElemList[4].InnerText + ")";
+                NRReleaseDateLabel5.Visible = true;
+                NRTitleLabel5.Visible = true;
+                NRPoster5.Visible = true;
+            }
+
+        }
+
+        public void RefreshNowShowing ()
+        {
+            /* make all posters and labels invisible */
+            NSReleaseDateLabel1.Visible = false;
+            NSReleaseDateLabel2.Visible = false;
+            NSReleaseDateLabel3.Visible = false;
+            NSReleaseDateLabel4.Visible = false;
+            NSReleaseDateLabel5.Visible = false;
+            NSReleaseDateLabel6.Visible = false;
+            NSReleaseDateLabel7.Visible = false;
+            NSReleaseDateLabel8.Visible = false;
+            NSReleaseDateLabel9.Visible = false;
+            NSReleaseDateLabel10.Visible = false;
+            NSTitleLabel1.Visible = false;
+            NSTitleLabel2.Visible = false;
+            NSTitleLabel3.Visible = false;
+            NSTitleLabel4.Visible = false;
+            NSTitleLabel5.Visible = false;
+            NSTitleLabel6.Visible = false;
+            NSTitleLabel7.Visible = false;
+            NSTitleLabel8.Visible = false;
+            NSTitleLabel9.Visible = false;
+            NSTitleLabel10.Visible = false;
+            NSPoster1.Visible = false;
+            NSPoster2.Visible = false;
+            NSPoster3.Visible = false;
+            NSPoster4.Visible = false;
+            NSPoster5.Visible = false;
+            NSPoster6.Visible = false;
+            NSPoster7.Visible = false;
+            NSPoster8.Visible = false;
+            NSPoster9.Visible = false;
+            NSPoster10.Visible = false;
+
+            // Load the document. 
+            // Load every time in case its modified while the program is running.
+            if (System.IO.File.Exists(NowShowingPath))
+            {
+                NowShowingDocument.Load(NowShowingPath);
+            }
+            else
+            {
+                // if there is no file, then all elements are invisible.
+                // no reason to continue from here.
+                return;
+            }
+
+            // get the needed element lists for displaying the posters
+            int numMovies = NowShowingDocument.GetElementsByTagName("Movie").Count;
+            XmlNodeList titleElemList = NowShowingDocument.GetElementsByTagName("Title");
+            XmlNodeList RatingElemList = NowShowingDocument.GetElementsByTagName("Rating");
+            XmlNodeList ReleaseDateElemList = NowShowingDocument.GetElementsByTagName("ReleaseDate");
+
+            // depending on how many movies we have, fill out the posters information.
+            // Make each movie visible after setting the posters information
+            if (numMovies >= 1)
+            {
+                NSReleaseDateLabel1.Text = ReleaseDateElemList[0].InnerText;
+                NSTitleLabel1.Text = titleElemList[0].InnerText + " (" + RatingElemList[0].InnerText + ")";
+                NSReleaseDateLabel1.Visible = true;
+                NSTitleLabel1.Visible = true;
+                NSPoster1.Visible = true;
+            }
+            if (numMovies >= 2)
+            {
+                NSReleaseDateLabel2.Text = ReleaseDateElemList[1].InnerText;
+                NSTitleLabel2.Text = titleElemList[1].InnerText + " (" + RatingElemList[1].InnerText + ")";
+                NSReleaseDateLabel2.Visible = true;
+                NSTitleLabel2.Visible = true;
+                NSPoster2.Visible = true;
+            }
+            if (numMovies >= 3)
+            {
+                NSReleaseDateLabel3.Text = ReleaseDateElemList[2].InnerText;
+                NSTitleLabel3.Text = titleElemList[2].InnerText + " (" + RatingElemList[2].InnerText + ")";
+                NSReleaseDateLabel3.Visible = true;
+                NSTitleLabel3.Visible = true;
+                NSPoster3.Visible = true;
+            }
+            if (numMovies >= 4)
+            {
+                NSReleaseDateLabel4.Text = ReleaseDateElemList[3].InnerText;
+                NSTitleLabel4.Text = titleElemList[3].InnerText + " (" + RatingElemList[3].InnerText + ")";
+                NSReleaseDateLabel4.Visible = true;
+                NSTitleLabel4.Visible = true;
+                NSPoster4.Visible = true;
+            }
+            if (numMovies >= 5)
+            {
+                NSReleaseDateLabel5.Text = ReleaseDateElemList[4].InnerText;
+                NSTitleLabel5.Text = titleElemList[4].InnerText + " (" + RatingElemList[4].InnerText + ")";
+                NSReleaseDateLabel5.Visible = true;
+                NSTitleLabel5.Visible = true;
+                NSPoster5.Visible = true;
+            }
+            if (numMovies >= 6)
+            {
+                NSReleaseDateLabel6.Text = ReleaseDateElemList[5].InnerText;
+                NSTitleLabel6.Text = titleElemList[5].InnerText + " (" + RatingElemList[5].InnerText + ")";
+                NSReleaseDateLabel1.Visible = true;
+                NSTitleLabel1.Visible = true;
+                NSPoster1.Visible = true;
+            }
+            if (numMovies >= 7)
+            {
+                NSReleaseDateLabel7.Text = ReleaseDateElemList[6].InnerText;
+                NSTitleLabel7.Text = titleElemList[6].InnerText + " (" + RatingElemList[6].InnerText + ")";
+                NSReleaseDateLabel2.Visible = true;
+                NSTitleLabel2.Visible = true;
+                NSPoster2.Visible = true;
+            }
+            if (numMovies >= 8)
+            {
+                NSReleaseDateLabel8.Text = ReleaseDateElemList[7].InnerText;
+                NSTitleLabel8.Text = titleElemList[7].InnerText + " (" + RatingElemList[7].InnerText + ")";
+                NSReleaseDateLabel3.Visible = true;
+                NSTitleLabel3.Visible = true;
+                NSPoster3.Visible = true;
+            }
+            if (numMovies >= 9)
+            {
+                NSReleaseDateLabel9.Text = ReleaseDateElemList[8].InnerText;
+                NSTitleLabel9.Text = titleElemList[8].InnerText + " (" + RatingElemList[8].InnerText + ")";
+                NSReleaseDateLabel4.Visible = true;
+                NSTitleLabel4.Visible = true;
+                NSPoster4.Visible = true;
+            }
+            if (numMovies >= 10)
+            {
+                NSReleaseDateLabel10.Text = ReleaseDateElemList[9].InnerText;
+                NSTitleLabel10.Text = titleElemList[9].InnerText + " (" + RatingElemList[9].InnerText + ")";
+                NSReleaseDateLabel5.Visible = true;
+                NSTitleLabel5.Visible = true;
+                NSPoster5.Visible = true;
+            }
+        }
+
+        // --------------------------------------------------------------------
+
+        // ADMIN TAB ----------------------------------------------------------
+
+        /* Add Movie button click */
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            if (!System.IO.File.Exists(NowShowingPath))
+            {
+                XmlDeclaration Declaration = NowShowingDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                XmlComment Comment = NowShowingDocument.CreateComment("MovieInfo");
+                XmlElement Root = NowShowingDocument.CreateElement("Movies");
+
+                XmlElement Movie = NowShowingDocument.CreateElement("Movie");
+                XmlElement Title = NowShowingDocument.CreateElement("Title");
+                XmlElement Length = NowShowingDocument.CreateElement("Length");
+                XmlElement Synopsis = NowShowingDocument.CreateElement("Synopsis");
+                XmlElement Description = NowShowingDocument.CreateElement("Description");
+                XmlElement Genre = NowShowingDocument.CreateElement("Genre");
+                XmlElement Rating = NowShowingDocument.CreateElement("Rating");
+                XmlElement Actor = NowShowingDocument.CreateElement("Actor");
+                XmlElement Director = NowShowingDocument.CreateElement("Director");
+                XmlElement ReleaseDate = NowShowingDocument.CreateElement("ReleaseDate");
+                XmlElement PosterPath = NowShowingDocument.CreateElement("PosterPath");
+
+                NowShowingDocument.AppendChild(Declaration);
+                NowShowingDocument.AppendChild(Comment);
+                NowShowingDocument.AppendChild(Root);
+                Root.AppendChild(Movie);
+                Movie.AppendChild(Title);
+                Movie.AppendChild(Length);
+                Movie.AppendChild(Synopsis);
+                Movie.AppendChild(Description);
+                Movie.AppendChild(Genre);
+                Movie.AppendChild(Rating);
+                Movie.AppendChild(Actor);
+                Movie.AppendChild(Director);
+                Movie.AppendChild(ReleaseDate);
+                Movie.AppendChild(PosterPath);
+                
+                Title.InnerText = TitleBox.Text;
+                Length.InnerText = LengthBox.Text;
+                Synopsis.InnerText = SynopsisBox.Text;
+                Description.InnerText = DescriptionBox.Text;
+                Genre.InnerText = GenreBox.Text;
+                Rating.InnerText = RatingBox.Text;
+                Actor.InnerText = ActorBox.Text;
+                Director.InnerText = DirectorBox.Text;
+                ReleaseDate.InnerText = ReleaseDateBox.Text;
+                PosterPath.InnerText = PosterPathBox.Text;
+
+                NowShowingDocument.Save(NowShowingPath);
+            }
+            else
+            {
+                NowShowingDocument.Load(NowShowingPath);
+
+                XmlElement Root = NowShowingDocument.DocumentElement;
+                XmlElement Movie = NowShowingDocument.CreateElement("Movie");
+                XmlElement Title = NowShowingDocument.CreateElement("Title");
+                XmlElement Length = NowShowingDocument.CreateElement("Length");
+                XmlElement Synopsis = NowShowingDocument.CreateElement("Synopsis");
+                XmlElement Description = NowShowingDocument.CreateElement("Description");
+                XmlElement Genre = NowShowingDocument.CreateElement("Genre");
+                XmlElement Rating = NowShowingDocument.CreateElement("Rating");
+                XmlElement Actor = NowShowingDocument.CreateElement("Actor");
+                XmlElement Director = NowShowingDocument.CreateElement("Director");
+                XmlElement ReleaseDate = NowShowingDocument.CreateElement("ReleaseDate");
+                XmlElement PosterPath = NowShowingDocument.CreateElement("PosterPath");
+
+                Root.AppendChild(Movie);
+                Movie.AppendChild(Title);
+                Movie.AppendChild(Length);
+                Movie.AppendChild(Synopsis);
+                Movie.AppendChild(Description);
+                Movie.AppendChild(Genre);
+                Movie.AppendChild(Rating);
+                Movie.AppendChild(Actor);
+                Movie.AppendChild(Director);
+                Movie.AppendChild(ReleaseDate);
+                Movie.AppendChild(PosterPath);
+
+                Title.InnerText = TitleBox.Text;
+                Length.InnerText = LengthBox.Text;
+                Synopsis.InnerText = SynopsisBox.Text;
+                Description.InnerText = DescriptionBox.Text;
+                Genre.InnerText = GenreBox.Text;
+                Rating.InnerText = RatingBox.Text;
+                Actor.InnerText = ActorBox.Text;
+                Director.InnerText = DirectorBox.Text;
+                ReleaseDate.InnerText = ReleaseDateBox.Text;
+                PosterPath.InnerText = PosterPathBox.Text;
+
+                NowShowingDocument.Save(NowShowingPath);
+            }
+
+            TitleBox.Clear();
+            LengthBox.Clear();
+            SynopsisBox.Clear();
+            DescriptionBox.Clear();
+            GenreBox.ResetText();
+            RatingBox.ResetText();
+            ActorBox.Clear();
+            DirectorBox.Clear();
+            ReleaseDateBox.Clear();
+            PosterPathBox.Clear();
+
+        }
+        // --------------------------------------------------------------------
+
+
 
         //Changes the movie poster
         public void changeMovie()
@@ -62,15 +649,15 @@ namespace MovieTheater
                     switch (iter)
                     {
                         case 0:
-                            new1.ImageLocation = m.pos;
-                            new1.Visible = true;
+                            NRPoster1.ImageLocation = m.pos;
+                            NRPoster1.Visible = true;
                             break;
                         case 1:
-                            new2.ImageLocation = m.pos;
-                            new2.Visible = true;
+                            NRPoster2.ImageLocation = m.pos;
+                            NRPoster2.Visible = true;
                             break;
                         case 2:
-                            new3.ImageLocation = m.pos;
+                            NRPoster3.ImageLocation = m.pos;
                             break;
                     }
                     iter++;
@@ -161,8 +748,8 @@ namespace MovieTheater
 
             else if (adminLogged == false)
             {
-                tabControl2.SelectedTab = MovieDetailsTab;
-                movDetails.ImageLocation = pos.ImageLocation;
+                BodyTabControl.SelectedTab = MovieDetailsTab;
+                //movDetails.ImageLocation = pos.ImageLocation;
             }
         }
 
@@ -178,7 +765,7 @@ namespace MovieTheater
 
             else
             {
-                tabControl2.SelectedTab = PaymentInfoTab;
+                BodyTabControl.SelectedTab = PaymentInfoTab;
             }
 
         }
@@ -204,7 +791,7 @@ namespace MovieTheater
                 XmlElement state = doc.CreateElement("State");
 
                 XmlElement username = doc.CreateElement("Username");
-                XmlElement password = doc.CreateElement("Password");
+                XmlElement password = doc.CreateElement("Password"); 
 
                 //Add the values for each nodes
                 fName.Value = fNameTxt.Text;
@@ -276,15 +863,15 @@ namespace MovieTheater
             }
             MessageBox.Show("Successfully created account!");
 
-            tabControl2.SelectedTab = LoginTab; //Return to login screen
+            BodyTabControl.SelectedTab = LoginTab; //Return to login screen
 
         }
         //----------------------------------------------------------------------------------------------------
         //Login Page
-        private void label1_Click(object sender, EventArgs e) //Login Button
+       /* private void label1_Click(object sender, EventArgs e) //Login Button
         {
             if (logged == false)
-                tabControl2.SelectedTab = LoginTab;
+                BodyTabControl.SelectedTab = LoginTab;
             else
             {
                 logBtn.Text = "Log Out";
@@ -303,11 +890,11 @@ namespace MovieTheater
 
 
             }
-        }
+        }*/
 
         private void label4_Click(object sender, EventArgs e) //Clicked Create Account label
         {
-            tabControl2.SelectedTab = AccountTab;
+            BodyTabControl.SelectedTab = AccountTab;
         }
 
         //Log into system with a created account
@@ -333,13 +920,13 @@ namespace MovieTheater
                         }
                         MessageBox.Show("Successfully signed in!");
                         logged = true;
-                        logBtn.Text = "Log Out";
-                        tabControl2.SelectedTab = HomeTab;
-                        checkVisPos(new1);
-                        checkVisPos(new2);
-                        checkVisPos(new3);
-                        checkVisPos(new4);
-                        checkVisPos(new5);
+                        //logBtn.Text = "Log Out";
+                        BodyTabControl.SelectedTab = HomeTab;
+                        checkVisPos(NRPoster1);
+                        checkVisPos(NRPoster2);
+                        checkVisPos(NRPoster3);
+                        checkVisPos(NRPoster4);
+                        checkVisPos(NRPoster5);
 
                         break;
                     }
@@ -354,109 +941,43 @@ namespace MovieTheater
         }
         //-----------------------------------------------------------------------------------------------------
         //Movie button always up, access from any page.
-        private void label2_Click(object sender, EventArgs e)//Movie Button
-        {
-            tabControl2.SelectedTab = HomeTab;
-        }
 
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-            tabControl2.SelectedTab = SearchTab;
-        }
-
-        //----------------------------------------------------------------------------------------------------------------
-        //Admin clicks on poster to change it.
-        private void new1_Click(object sender, EventArgs e)
-        {
-            changePoster(new1);
-            linkLabel1.Text = "9:00AM";
-            linkLabel2.Text = "12:00PM";
-            linkLabel3.Text = "2:00PM";
-            linkLabel4.Text = "5:30PM";
-            linkLabel5.Text = "9:00PM";
-            linkLabel6.Text = "9:30PM";
-            linkLabel7.Text = "10:00PM";
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            changePoster(new2);
-        }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-            changePoster(new3);
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-            changePoster(new4);
-        }
-
-        private void pictureBox17_Click(object sender, EventArgs e)
-        {
-            changePoster(new5);
-        }
-
-        private void pictureBox22_Click(object sender, EventArgs e)
-        {
-            changePoster(now1);
-        }
-
-        private void pictureBox21_Click(object sender, EventArgs e)
-        {
-            changePoster(now2);
-        }
-
-        private void pictureBox20_Click(object sender, EventArgs e)
-        {
-            changePoster(now3);
-        }
-
-        private void pictureBox19_Click(object sender, EventArgs e)
-        {
-            changePoster(now4);
-        }
-
-        private void pictureBox18_Click(object sender, EventArgs e)
-        {
-            changePoster(now5);
-        }
 
         //----------------------------------------------------------------------------------------------------
         // MOVIE DETAILS
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tabControl2.SelectedTab = Seating;
+            BodyTabControl.SelectedTab = Seating;
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tabControl2.SelectedTab = Seating;
+            BodyTabControl.SelectedTab = Seating;
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tabControl2.SelectedTab = Seating;
+            BodyTabControl.SelectedTab = Seating;
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tabControl2.SelectedTab = Seating;
+            BodyTabControl.SelectedTab = Seating;
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tabControl2.SelectedTab = Seating;
+            BodyTabControl.SelectedTab = Seating;
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tabControl2.SelectedTab = Seating;
+            BodyTabControl.SelectedTab = Seating;
         }
+
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            tabControl2.SelectedTab = Seating;
+            BodyTabControl.SelectedTab = Seating;
         }
 
 
@@ -465,7 +986,7 @@ namespace MovieTheater
         private void button1_Click_1(object sender, EventArgs e)
         {
             //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
-            tabControl2.SelectedTab = Ticket;
+            BodyTabControl.SelectedTab = Ticket;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -514,7 +1035,7 @@ namespace MovieTheater
         {
             //BUY TICKETS OFFICIALLY
             //TAKES YOU TO PAYMENT PAGE
-            tabControl2.SelectedTab = Purchase;
+            BodyTabControl.SelectedTab = Purchase;
             
             //SETS UP EVERYTHING ON THE NEXT PAGE
             double subtotal, child, senior, adult;
@@ -532,15 +1053,11 @@ namespace MovieTheater
         {
             //Officially buys tickets
             MessageBox.Show("You have purchased tickets!");
-            tabControl2.SelectedTab = HomeTab;
+            BodyTabControl.SelectedTab = HomeTab;
             comboBox1.ResetText();
             comboBox2.ResetText();
             comboBox3.ResetText();
         }
-
-
-
-
 
         //-----------------------------------------------------------------------------------------------------
     }

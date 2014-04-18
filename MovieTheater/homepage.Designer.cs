@@ -34,9 +34,61 @@
             System.Windows.Forms.PictureBox pictureBox12;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.SearchBar = new System.Windows.Forms.PictureBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.AdminLabel = new System.Windows.Forms.Label();
+            this.InfoBar = new System.Windows.Forms.PictureBox();
+            this.LoginBtn = new System.Windows.Forms.PictureBox();
+            this.homeBtn = new System.Windows.Forms.PictureBox();
+            this.browseBtn = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.BodyTabControl = new System.Windows.Forms.TabControl();
+            this.HomeTab = new System.Windows.Forms.TabPage();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.NSReleaseDateLabel10 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel9 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel8 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel7 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel6 = new System.Windows.Forms.Label();
+            this.NSTitleLabel10 = new System.Windows.Forms.Label();
+            this.NSTitleLabel9 = new System.Windows.Forms.Label();
+            this.NSTitleLabel8 = new System.Windows.Forms.Label();
+            this.NSTitleLabel7 = new System.Windows.Forms.Label();
+            this.NSTitleLabel6 = new System.Windows.Forms.Label();
+            this.NSPoster10 = new System.Windows.Forms.PictureBox();
+            this.NSPoster9 = new System.Windows.Forms.PictureBox();
+            this.NSPoster8 = new System.Windows.Forms.PictureBox();
+            this.NSPoster7 = new System.Windows.Forms.PictureBox();
+            this.NSPoster6 = new System.Windows.Forms.PictureBox();
+            this.NSReleaseDateLabel5 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel4 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel3 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel2 = new System.Windows.Forms.Label();
+            this.NSReleaseDateLabel1 = new System.Windows.Forms.Label();
+            this.NSTitleLabel5 = new System.Windows.Forms.Label();
+            this.NSTitleLabel4 = new System.Windows.Forms.Label();
+            this.NSTitleLabel3 = new System.Windows.Forms.Label();
+            this.NSTitleLabel2 = new System.Windows.Forms.Label();
+            this.NSTitleLabel1 = new System.Windows.Forms.Label();
+            this.NRReleaseDateLabel5 = new System.Windows.Forms.Label();
+            this.NRReleaseDateLabel4 = new System.Windows.Forms.Label();
+            this.NRReleaseDateLabel3 = new System.Windows.Forms.Label();
+            this.NRReleaseDateLabel2 = new System.Windows.Forms.Label();
+            this.NRReleaseDateLabel1 = new System.Windows.Forms.Label();
+            this.NRTitleLabel5 = new System.Windows.Forms.Label();
+            this.NRTitleLabel4 = new System.Windows.Forms.Label();
+            this.NRTitleLabel3 = new System.Windows.Forms.Label();
+            this.NRTitleLabel2 = new System.Windows.Forms.Label();
+            this.NRTitleLabel1 = new System.Windows.Forms.Label();
+            this.NSPoster5 = new System.Windows.Forms.PictureBox();
+            this.NSPoster4 = new System.Windows.Forms.PictureBox();
+            this.NSPoster3 = new System.Windows.Forms.PictureBox();
+            this.NSPoster2 = new System.Windows.Forms.PictureBox();
+            this.NSPoster1 = new System.Windows.Forms.PictureBox();
+            this.NRPoster5 = new System.Windows.Forms.PictureBox();
+            this.NRPoster4 = new System.Windows.Forms.PictureBox();
+            this.NRPoster3 = new System.Windows.Forms.PictureBox();
+            this.NRPoster2 = new System.Windows.Forms.PictureBox();
+            this.NRPoster1 = new System.Windows.Forms.PictureBox();
+            this.BackgroundHome = new System.Windows.Forms.PictureBox();
             this.SearchTab = new System.Windows.Forms.TabPage();
             this.search6 = new System.Windows.Forms.PictureBox();
             this.search4 = new System.Windows.Forms.PictureBox();
@@ -44,18 +96,10 @@
             this.search3 = new System.Windows.Forms.PictureBox();
             this.search2 = new System.Windows.Forms.PictureBox();
             this.search1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MovieDetailsTab = new System.Windows.Forms.TabPage();
-            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.movDetails = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.LoginTab = new System.Windows.Forms.TabPage();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.usernameTxt = new System.Windows.Forms.TextBox();
@@ -143,39 +187,67 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.Contact = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.homeBtn = new System.Windows.Forms.Label();
-            this.logBtn = new System.Windows.Forms.Label();
+            this.AdminTab = new System.Windows.Forms.TabPage();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.PosterPathBox = new System.Windows.Forms.TextBox();
+            this.ReleaseDateBox = new System.Windows.Forms.TextBox();
+            this.DirectorBox = new System.Windows.Forms.TextBox();
+            this.ActorBox = new System.Windows.Forms.TextBox();
+            this.GenreBox = new System.Windows.Forms.ComboBox();
+            this.SynopsisBox = new System.Windows.Forms.TextBox();
+            this.DescriptionBox = new System.Windows.Forms.TextBox();
+            this.LengthBox = new System.Windows.Forms.TextBox();
+            this.RatingBox = new System.Windows.Forms.ComboBox();
+            this.AddBtn = new System.Windows.Forms.Button();
+            this.TitleBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.contactUsBtn = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
-            this.InfoBar = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.new1 = new System.Windows.Forms.PictureBox();
-            this.new2 = new System.Windows.Forms.PictureBox();
-            this.new3 = new System.Windows.Forms.PictureBox();
-            this.new4 = new System.Windows.Forms.PictureBox();
-            this.new5 = new System.Windows.Forms.PictureBox();
-            this.now1 = new System.Windows.Forms.PictureBox();
-            this.now2 = new System.Windows.Forms.PictureBox();
-            this.now3 = new System.Windows.Forms.PictureBox();
-            this.now4 = new System.Windows.Forms.PictureBox();
-            this.now5 = new System.Windows.Forms.PictureBox();
-            this.HomeTab = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.movieBtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.MDBigPoster = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).BeginInit();
-            this.tabControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.browseBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.BodyTabControl.SuspendLayout();
+            this.HomeTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).BeginInit();
             this.SearchTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.search6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.search4)).BeginInit();
@@ -183,54 +255,61 @@
             ((System.ComponentModel.ISupportInitialize)(this.search3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.search2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.search1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.MovieDetailsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.LoginTab.SuspendLayout();
             this.AccountTab.SuspendLayout();
             this.PaymentInfoTab.SuspendLayout();
             this.Seating.SuspendLayout();
             this.Purchase.SuspendLayout();
             this.Ticket.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now5)).BeginInit();
-            this.HomeTab.SuspendLayout();
+            this.AdminTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movieBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MDBigPoster)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox9
             // 
             pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            pictureBox9.Location = new System.Drawing.Point(36, 29);
+            pictureBox9.Location = new System.Drawing.Point(107, 29);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new System.Drawing.Size(768, 33);
             pictureBox9.TabIndex = 51;
             pictureBox9.TabStop = false;
             // 
+            // pictureBox11
+            // 
+            pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            pictureBox11.Location = new System.Drawing.Point(159, 16);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new System.Drawing.Size(768, 33);
+            pictureBox11.TabIndex = 49;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            pictureBox12.Location = new System.Drawing.Point(159, 272);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new System.Drawing.Size(768, 33);
+            pictureBox12.TabIndex = 50;
+            pictureBox12.TabStop = false;
+            // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(-4, -13);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
@@ -239,20 +318,16 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.pictureBox5);
-            this.tabPage1.Controls.Add(this.pictureBox3);
-            this.tabPage1.Controls.Add(this.pictureBox2);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.SearchBar);
-            this.tabPage1.Controls.Add(this.tabControl2);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.homeBtn);
-            this.tabPage1.Controls.Add(this.logBtn);
-            this.tabPage1.Controls.Add(this.pictureBox7);
-            this.tabPage1.Controls.Add(this.pictureBox4);
-            this.tabPage1.Controls.Add(this.movieBtn);
-            this.tabPage1.Controls.Add(this.Header);
+            this.tabPage1.Controls.Add(this.AdminLabel);
             this.tabPage1.Controls.Add(this.InfoBar);
+            this.tabPage1.Controls.Add(this.LoginBtn);
+            this.tabPage1.Controls.Add(this.homeBtn);
+            this.tabPage1.Controls.Add(this.browseBtn);
+            this.tabPage1.Controls.Add(this.pictureBox3);
+            this.tabPage1.Controls.Add(this.BodyTabControl);
+            this.tabPage1.Controls.Add(this.contactUsBtn);
+            this.tabPage1.Controls.Add(this.pictureBox4);
+            this.tabPage1.Controls.Add(this.Header);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -261,49 +336,706 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // AdminLabel
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(320, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(160, 32);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Search Movies";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.AdminLabel.AutoSize = true;
+            this.AdminLabel.Location = new System.Drawing.Point(893, 27);
+            this.AdminLabel.Name = "AdminLabel";
+            this.AdminLabel.Size = new System.Drawing.Size(36, 13);
+            this.AdminLabel.TabIndex = 74;
+            this.AdminLabel.Text = "Admin";
+            this.AdminLabel.Click += new System.EventHandler(this.AdminLabel_Click);
             // 
-            // SearchBar
+            // InfoBar
             // 
-            this.SearchBar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.SearchBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.SearchBar.Image = ((System.Drawing.Image)(resources.GetObject("SearchBar.Image")));
-            this.SearchBar.Location = new System.Drawing.Point(0, 224);
-            this.SearchBar.Name = "SearchBar";
-            this.SearchBar.Size = new System.Drawing.Size(128, 800);
-            this.SearchBar.TabIndex = 62;
-            this.SearchBar.TabStop = false;
+            this.InfoBar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.InfoBar.Image = ((System.Drawing.Image)(resources.GetObject("InfoBar.Image")));
+            this.InfoBar.Location = new System.Drawing.Point(0, 160);
+            this.InfoBar.Name = "InfoBar";
+            this.InfoBar.Size = new System.Drawing.Size(960, 64);
+            this.InfoBar.TabIndex = 61;
+            this.InfoBar.TabStop = false;
             // 
-            // tabControl2
+            // LoginBtn
             // 
-            this.tabControl2.Controls.Add(this.HomeTab);
-            this.tabControl2.Controls.Add(this.SearchTab);
-            this.tabControl2.Controls.Add(this.MovieDetailsTab);
-            this.tabControl2.Controls.Add(this.LoginTab);
-            this.tabControl2.Controls.Add(this.AccountTab);
-            this.tabControl2.Controls.Add(this.PaymentInfoTab);
-            this.tabControl2.Controls.Add(this.Seating);
-            this.tabControl2.Controls.Add(this.Purchase);
-            this.tabControl2.Controls.Add(this.Ticket);
-            this.tabControl2.Controls.Add(this.Contact);
-            this.tabControl2.Location = new System.Drawing.Point(125, 227);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(839, 799);
-            this.tabControl2.TabIndex = 66;
+            this.LoginBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.LoginBtn.Image = ((System.Drawing.Image)(resources.GetObject("LoginBtn.Image")));
+            this.LoginBtn.Location = new System.Drawing.Point(800, 128);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(160, 32);
+            this.LoginBtn.TabIndex = 73;
+            this.LoginBtn.TabStop = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
+            this.LoginBtn.MouseEnter += new System.EventHandler(this.LoginBtn_MouseEnter);
+            this.LoginBtn.MouseLeave += new System.EventHandler(this.LoginBtn_MouseLeave);
+            // 
+            // homeBtn
+            // 
+            this.homeBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
+            this.homeBtn.Location = new System.Drawing.Point(0, 128);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(160, 32);
+            this.homeBtn.TabIndex = 72;
+            this.homeBtn.TabStop = false;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            this.homeBtn.MouseEnter += new System.EventHandler(this.homeBtn_MouseEnter);
+            this.homeBtn.MouseLeave += new System.EventHandler(this.homeBtn_MouseLeave);
+            // 
+            // browseBtn
+            // 
+            this.browseBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.browseBtn.Image = ((System.Drawing.Image)(resources.GetObject("browseBtn.Image")));
+            this.browseBtn.Location = new System.Drawing.Point(160, 128);
+            this.browseBtn.Name = "browseBtn";
+            this.browseBtn.Size = new System.Drawing.Size(160, 32);
+            this.browseBtn.TabIndex = 71;
+            this.browseBtn.TabStop = false;
+            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
+            this.browseBtn.MouseEnter += new System.EventHandler(this.browseBtn_MouseEnter);
+            this.browseBtn.MouseLeave += new System.EventHandler(this.browseBtn_MouseLeave);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(320, 128);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(160, 32);
+            this.pictureBox3.TabIndex = 70;
+            this.pictureBox3.TabStop = false;
+            // 
+            // BodyTabControl
+            // 
+            this.BodyTabControl.Controls.Add(this.HomeTab);
+            this.BodyTabControl.Controls.Add(this.SearchTab);
+            this.BodyTabControl.Controls.Add(this.MovieDetailsTab);
+            this.BodyTabControl.Controls.Add(this.LoginTab);
+            this.BodyTabControl.Controls.Add(this.AccountTab);
+            this.BodyTabControl.Controls.Add(this.PaymentInfoTab);
+            this.BodyTabControl.Controls.Add(this.Seating);
+            this.BodyTabControl.Controls.Add(this.Purchase);
+            this.BodyTabControl.Controls.Add(this.Ticket);
+            this.BodyTabControl.Controls.Add(this.Contact);
+            this.BodyTabControl.Controls.Add(this.AdminTab);
+            this.BodyTabControl.Location = new System.Drawing.Point(-4, 218);
+            this.BodyTabControl.Name = "BodyTabControl";
+            this.BodyTabControl.SelectedIndex = 0;
+            this.BodyTabControl.Size = new System.Drawing.Size(968, 799);
+            this.BodyTabControl.TabIndex = 66;
+            // 
+            // HomeTab
+            // 
+            this.HomeTab.BackColor = System.Drawing.Color.Silver;
+            this.HomeTab.Controls.Add(this.pictureBox6);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel10);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel9);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel8);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel7);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel6);
+            this.HomeTab.Controls.Add(this.NSTitleLabel10);
+            this.HomeTab.Controls.Add(this.NSTitleLabel9);
+            this.HomeTab.Controls.Add(this.NSTitleLabel8);
+            this.HomeTab.Controls.Add(this.NSTitleLabel7);
+            this.HomeTab.Controls.Add(this.NSTitleLabel6);
+            this.HomeTab.Controls.Add(this.NSPoster10);
+            this.HomeTab.Controls.Add(this.NSPoster9);
+            this.HomeTab.Controls.Add(this.NSPoster8);
+            this.HomeTab.Controls.Add(this.NSPoster7);
+            this.HomeTab.Controls.Add(this.NSPoster6);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel5);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel4);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel3);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel2);
+            this.HomeTab.Controls.Add(this.NSReleaseDateLabel1);
+            this.HomeTab.Controls.Add(this.NSTitleLabel5);
+            this.HomeTab.Controls.Add(this.NSTitleLabel4);
+            this.HomeTab.Controls.Add(this.NSTitleLabel3);
+            this.HomeTab.Controls.Add(this.NSTitleLabel2);
+            this.HomeTab.Controls.Add(this.NSTitleLabel1);
+            this.HomeTab.Controls.Add(this.NRReleaseDateLabel5);
+            this.HomeTab.Controls.Add(this.NRReleaseDateLabel4);
+            this.HomeTab.Controls.Add(this.NRReleaseDateLabel3);
+            this.HomeTab.Controls.Add(this.NRReleaseDateLabel2);
+            this.HomeTab.Controls.Add(this.NRReleaseDateLabel1);
+            this.HomeTab.Controls.Add(this.NRTitleLabel5);
+            this.HomeTab.Controls.Add(this.NRTitleLabel4);
+            this.HomeTab.Controls.Add(this.NRTitleLabel3);
+            this.HomeTab.Controls.Add(this.NRTitleLabel2);
+            this.HomeTab.Controls.Add(this.NRTitleLabel1);
+            this.HomeTab.Controls.Add(this.NSPoster5);
+            this.HomeTab.Controls.Add(this.NSPoster4);
+            this.HomeTab.Controls.Add(this.NSPoster3);
+            this.HomeTab.Controls.Add(this.NSPoster2);
+            this.HomeTab.Controls.Add(this.NSPoster1);
+            this.HomeTab.Controls.Add(this.NRPoster5);
+            this.HomeTab.Controls.Add(this.NRPoster4);
+            this.HomeTab.Controls.Add(this.NRPoster3);
+            this.HomeTab.Controls.Add(this.NRPoster2);
+            this.HomeTab.Controls.Add(this.NRPoster1);
+            this.HomeTab.Controls.Add(pictureBox12);
+            this.HomeTab.Controls.Add(pictureBox11);
+            this.HomeTab.Controls.Add(this.BackgroundHome);
+            this.HomeTab.Location = new System.Drawing.Point(4, 22);
+            this.HomeTab.Name = "HomeTab";
+            this.HomeTab.Padding = new System.Windows.Forms.Padding(3);
+            this.HomeTab.Size = new System.Drawing.Size(960, 773);
+            this.HomeTab.TabIndex = 0;
+            this.HomeTab.Text = "Home";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(128, 800);
+            this.pictureBox6.TabIndex = 105;
+            this.pictureBox6.TabStop = false;
+            // 
+            // NSReleaseDateLabel10
+            // 
+            this.NSReleaseDateLabel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel10.Location = new System.Drawing.Point(783, 722);
+            this.NSReleaseDateLabel10.Name = "NSReleaseDateLabel10";
+            this.NSReleaseDateLabel10.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel10.TabIndex = 104;
+            this.NSReleaseDateLabel10.Text = "Release Date 10";
+            this.NSReleaseDateLabel10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel9
+            // 
+            this.NSReleaseDateLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel9.Location = new System.Drawing.Point(623, 722);
+            this.NSReleaseDateLabel9.Name = "NSReleaseDateLabel9";
+            this.NSReleaseDateLabel9.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel9.TabIndex = 103;
+            this.NSReleaseDateLabel9.Text = "Release Date 9";
+            this.NSReleaseDateLabel9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel8
+            // 
+            this.NSReleaseDateLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel8.Location = new System.Drawing.Point(463, 722);
+            this.NSReleaseDateLabel8.Name = "NSReleaseDateLabel8";
+            this.NSReleaseDateLabel8.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel8.TabIndex = 102;
+            this.NSReleaseDateLabel8.Text = "Release Date 8";
+            this.NSReleaseDateLabel8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel7
+            // 
+            this.NSReleaseDateLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel7.Location = new System.Drawing.Point(303, 722);
+            this.NSReleaseDateLabel7.Name = "NSReleaseDateLabel7";
+            this.NSReleaseDateLabel7.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel7.TabIndex = 101;
+            this.NSReleaseDateLabel7.Text = "Release Date 7";
+            this.NSReleaseDateLabel7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel6
+            // 
+            this.NSReleaseDateLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel6.Location = new System.Drawing.Point(143, 722);
+            this.NSReleaseDateLabel6.Name = "NSReleaseDateLabel6";
+            this.NSReleaseDateLabel6.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel6.TabIndex = 100;
+            this.NSReleaseDateLabel6.Text = "Release Date 6";
+            this.NSReleaseDateLabel6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSTitleLabel10
+            // 
+            this.NSTitleLabel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel10.Location = new System.Drawing.Point(783, 540);
+            this.NSTitleLabel10.Name = "NSTitleLabel10";
+            this.NSTitleLabel10.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel10.TabIndex = 99;
+            this.NSTitleLabel10.Text = "Movie Title 10";
+            this.NSTitleLabel10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel9
+            // 
+            this.NSTitleLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel9.Location = new System.Drawing.Point(623, 540);
+            this.NSTitleLabel9.Name = "NSTitleLabel9";
+            this.NSTitleLabel9.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel9.TabIndex = 98;
+            this.NSTitleLabel9.Text = "Movie Title 9";
+            this.NSTitleLabel9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel8
+            // 
+            this.NSTitleLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel8.Location = new System.Drawing.Point(463, 540);
+            this.NSTitleLabel8.Name = "NSTitleLabel8";
+            this.NSTitleLabel8.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel8.TabIndex = 97;
+            this.NSTitleLabel8.Text = "Movie Title 8";
+            this.NSTitleLabel8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel7
+            // 
+            this.NSTitleLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel7.Location = new System.Drawing.Point(303, 540);
+            this.NSTitleLabel7.Name = "NSTitleLabel7";
+            this.NSTitleLabel7.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel7.TabIndex = 96;
+            this.NSTitleLabel7.Text = "Movie Title 7";
+            this.NSTitleLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel6
+            // 
+            this.NSTitleLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel6.Location = new System.Drawing.Point(143, 540);
+            this.NSTitleLabel6.Name = "NSTitleLabel6";
+            this.NSTitleLabel6.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel6.TabIndex = 95;
+            this.NSTitleLabel6.Text = "Movie Title 6";
+            this.NSTitleLabel6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSPoster10
+            // 
+            this.NSPoster10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster10.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster10.Image")));
+            this.NSPoster10.Location = new System.Drawing.Point(799, 560);
+            this.NSPoster10.Name = "NSPoster10";
+            this.NSPoster10.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster10.TabIndex = 94;
+            this.NSPoster10.TabStop = false;
+            // 
+            // NSPoster9
+            // 
+            this.NSPoster9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster9.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster9.Image")));
+            this.NSPoster9.Location = new System.Drawing.Point(639, 560);
+            this.NSPoster9.Name = "NSPoster9";
+            this.NSPoster9.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster9.TabIndex = 93;
+            this.NSPoster9.TabStop = false;
+            // 
+            // NSPoster8
+            // 
+            this.NSPoster8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster8.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster8.Image")));
+            this.NSPoster8.Location = new System.Drawing.Point(479, 560);
+            this.NSPoster8.Name = "NSPoster8";
+            this.NSPoster8.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster8.TabIndex = 92;
+            this.NSPoster8.TabStop = false;
+            // 
+            // NSPoster7
+            // 
+            this.NSPoster7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster7.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster7.Image")));
+            this.NSPoster7.Location = new System.Drawing.Point(323, 560);
+            this.NSPoster7.Name = "NSPoster7";
+            this.NSPoster7.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster7.TabIndex = 91;
+            this.NSPoster7.TabStop = false;
+            // 
+            // NSPoster6
+            // 
+            this.NSPoster6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster6.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster6.Image")));
+            this.NSPoster6.Location = new System.Drawing.Point(159, 560);
+            this.NSPoster6.Name = "NSPoster6";
+            this.NSPoster6.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster6.TabIndex = 90;
+            this.NSPoster6.TabStop = false;
+            // 
+            // NSReleaseDateLabel5
+            // 
+            this.NSReleaseDateLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel5.Location = new System.Drawing.Point(783, 498);
+            this.NSReleaseDateLabel5.Name = "NSReleaseDateLabel5";
+            this.NSReleaseDateLabel5.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel5.TabIndex = 89;
+            this.NSReleaseDateLabel5.Text = "Release Date 5";
+            this.NSReleaseDateLabel5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel4
+            // 
+            this.NSReleaseDateLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel4.Location = new System.Drawing.Point(623, 498);
+            this.NSReleaseDateLabel4.Name = "NSReleaseDateLabel4";
+            this.NSReleaseDateLabel4.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel4.TabIndex = 88;
+            this.NSReleaseDateLabel4.Text = "Release Date 4";
+            this.NSReleaseDateLabel4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel3
+            // 
+            this.NSReleaseDateLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel3.Location = new System.Drawing.Point(463, 498);
+            this.NSReleaseDateLabel3.Name = "NSReleaseDateLabel3";
+            this.NSReleaseDateLabel3.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel3.TabIndex = 87;
+            this.NSReleaseDateLabel3.Text = "Release Date 3";
+            this.NSReleaseDateLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel2
+            // 
+            this.NSReleaseDateLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel2.Location = new System.Drawing.Point(303, 498);
+            this.NSReleaseDateLabel2.Name = "NSReleaseDateLabel2";
+            this.NSReleaseDateLabel2.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel2.TabIndex = 86;
+            this.NSReleaseDateLabel2.Text = "Release Date 2";
+            this.NSReleaseDateLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSReleaseDateLabel1
+            // 
+            this.NSReleaseDateLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSReleaseDateLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.NSReleaseDateLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSReleaseDateLabel1.Location = new System.Drawing.Point(143, 498);
+            this.NSReleaseDateLabel1.Name = "NSReleaseDateLabel1";
+            this.NSReleaseDateLabel1.Size = new System.Drawing.Size(160, 20);
+            this.NSReleaseDateLabel1.TabIndex = 85;
+            this.NSReleaseDateLabel1.Text = "Release Date 1";
+            this.NSReleaseDateLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NSTitleLabel5
+            // 
+            this.NSTitleLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel5.Location = new System.Drawing.Point(783, 316);
+            this.NSTitleLabel5.Name = "NSTitleLabel5";
+            this.NSTitleLabel5.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel5.TabIndex = 84;
+            this.NSTitleLabel5.Text = "Movie Title 5";
+            this.NSTitleLabel5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel4
+            // 
+            this.NSTitleLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel4.Location = new System.Drawing.Point(623, 316);
+            this.NSTitleLabel4.Name = "NSTitleLabel4";
+            this.NSTitleLabel4.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel4.TabIndex = 83;
+            this.NSTitleLabel4.Text = "Movie Title 4";
+            this.NSTitleLabel4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel3
+            // 
+            this.NSTitleLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel3.Location = new System.Drawing.Point(463, 316);
+            this.NSTitleLabel3.Name = "NSTitleLabel3";
+            this.NSTitleLabel3.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel3.TabIndex = 82;
+            this.NSTitleLabel3.Text = "Movie Title 3";
+            this.NSTitleLabel3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel2
+            // 
+            this.NSTitleLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel2.Location = new System.Drawing.Point(303, 316);
+            this.NSTitleLabel2.Name = "NSTitleLabel2";
+            this.NSTitleLabel2.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel2.TabIndex = 81;
+            this.NSTitleLabel2.Text = "Movie Title 2";
+            this.NSTitleLabel2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSTitleLabel1
+            // 
+            this.NSTitleLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSTitleLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.NSTitleLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NSTitleLabel1.Location = new System.Drawing.Point(143, 316);
+            this.NSTitleLabel1.Name = "NSTitleLabel1";
+            this.NSTitleLabel1.Size = new System.Drawing.Size(160, 20);
+            this.NSTitleLabel1.TabIndex = 80;
+            this.NSTitleLabel1.Text = "Movie Title 1";
+            this.NSTitleLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NRReleaseDateLabel5
+            // 
+            this.NRReleaseDateLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRReleaseDateLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.NRReleaseDateLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRReleaseDateLabel5.Location = new System.Drawing.Point(783, 243);
+            this.NRReleaseDateLabel5.Name = "NRReleaseDateLabel5";
+            this.NRReleaseDateLabel5.Size = new System.Drawing.Size(160, 20);
+            this.NRReleaseDateLabel5.TabIndex = 79;
+            this.NRReleaseDateLabel5.Text = "Release Date 5";
+            this.NRReleaseDateLabel5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NRReleaseDateLabel4
+            // 
+            this.NRReleaseDateLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRReleaseDateLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.NRReleaseDateLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRReleaseDateLabel4.Location = new System.Drawing.Point(623, 243);
+            this.NRReleaseDateLabel4.Name = "NRReleaseDateLabel4";
+            this.NRReleaseDateLabel4.Size = new System.Drawing.Size(160, 20);
+            this.NRReleaseDateLabel4.TabIndex = 78;
+            this.NRReleaseDateLabel4.Text = "Release Date 4";
+            this.NRReleaseDateLabel4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NRReleaseDateLabel3
+            // 
+            this.NRReleaseDateLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRReleaseDateLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.NRReleaseDateLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRReleaseDateLabel3.Location = new System.Drawing.Point(463, 243);
+            this.NRReleaseDateLabel3.Name = "NRReleaseDateLabel3";
+            this.NRReleaseDateLabel3.Size = new System.Drawing.Size(160, 20);
+            this.NRReleaseDateLabel3.TabIndex = 77;
+            this.NRReleaseDateLabel3.Text = "Release Date 3";
+            this.NRReleaseDateLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NRReleaseDateLabel2
+            // 
+            this.NRReleaseDateLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRReleaseDateLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.NRReleaseDateLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRReleaseDateLabel2.Location = new System.Drawing.Point(303, 243);
+            this.NRReleaseDateLabel2.Name = "NRReleaseDateLabel2";
+            this.NRReleaseDateLabel2.Size = new System.Drawing.Size(160, 20);
+            this.NRReleaseDateLabel2.TabIndex = 76;
+            this.NRReleaseDateLabel2.Text = "Release Date 2";
+            this.NRReleaseDateLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NRReleaseDateLabel1
+            // 
+            this.NRReleaseDateLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRReleaseDateLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.NRReleaseDateLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRReleaseDateLabel1.Location = new System.Drawing.Point(143, 243);
+            this.NRReleaseDateLabel1.Name = "NRReleaseDateLabel1";
+            this.NRReleaseDateLabel1.Size = new System.Drawing.Size(160, 20);
+            this.NRReleaseDateLabel1.TabIndex = 75;
+            this.NRReleaseDateLabel1.Text = "Release Date 1";
+            this.NRReleaseDateLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NRTitleLabel5
+            // 
+            this.NRTitleLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRTitleLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.NRTitleLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRTitleLabel5.Location = new System.Drawing.Point(783, 60);
+            this.NRTitleLabel5.Name = "NRTitleLabel5";
+            this.NRTitleLabel5.Size = new System.Drawing.Size(160, 20);
+            this.NRTitleLabel5.TabIndex = 74;
+            this.NRTitleLabel5.Text = "Movie Title 5";
+            this.NRTitleLabel5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NRTitleLabel4
+            // 
+            this.NRTitleLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRTitleLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.NRTitleLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRTitleLabel4.Location = new System.Drawing.Point(623, 60);
+            this.NRTitleLabel4.Name = "NRTitleLabel4";
+            this.NRTitleLabel4.Size = new System.Drawing.Size(160, 20);
+            this.NRTitleLabel4.TabIndex = 73;
+            this.NRTitleLabel4.Text = "Movie Title 4";
+            this.NRTitleLabel4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NRTitleLabel3
+            // 
+            this.NRTitleLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRTitleLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.NRTitleLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRTitleLabel3.Location = new System.Drawing.Point(463, 60);
+            this.NRTitleLabel3.Name = "NRTitleLabel3";
+            this.NRTitleLabel3.Size = new System.Drawing.Size(160, 20);
+            this.NRTitleLabel3.TabIndex = 72;
+            this.NRTitleLabel3.Text = "Movie Title 3";
+            this.NRTitleLabel3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NRTitleLabel2
+            // 
+            this.NRTitleLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRTitleLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.NRTitleLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRTitleLabel2.Location = new System.Drawing.Point(303, 60);
+            this.NRTitleLabel2.Name = "NRTitleLabel2";
+            this.NRTitleLabel2.Size = new System.Drawing.Size(160, 20);
+            this.NRTitleLabel2.TabIndex = 71;
+            this.NRTitleLabel2.Text = "Movie Title 2";
+            this.NRTitleLabel2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NRTitleLabel1
+            // 
+            this.NRTitleLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRTitleLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.NRTitleLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NRTitleLabel1.Location = new System.Drawing.Point(143, 60);
+            this.NRTitleLabel1.Name = "NRTitleLabel1";
+            this.NRTitleLabel1.Size = new System.Drawing.Size(160, 20);
+            this.NRTitleLabel1.TabIndex = 70;
+            this.NRTitleLabel1.Text = "Movie Title 1";
+            this.NRTitleLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // NSPoster5
+            // 
+            this.NSPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster5.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster5.Image")));
+            this.NSPoster5.Location = new System.Drawing.Point(799, 336);
+            this.NSPoster5.Name = "NSPoster5";
+            this.NSPoster5.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster5.TabIndex = 60;
+            this.NSPoster5.TabStop = false;
+            // 
+            // NSPoster4
+            // 
+            this.NSPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster4.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster4.Image")));
+            this.NSPoster4.Location = new System.Drawing.Point(639, 336);
+            this.NSPoster4.Name = "NSPoster4";
+            this.NSPoster4.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster4.TabIndex = 59;
+            this.NSPoster4.TabStop = false;
+            // 
+            // NSPoster3
+            // 
+            this.NSPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster3.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster3.Image")));
+            this.NSPoster3.Location = new System.Drawing.Point(479, 336);
+            this.NSPoster3.Name = "NSPoster3";
+            this.NSPoster3.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster3.TabIndex = 58;
+            this.NSPoster3.TabStop = false;
+            // 
+            // NSPoster2
+            // 
+            this.NSPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster2.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster2.Image")));
+            this.NSPoster2.Location = new System.Drawing.Point(323, 336);
+            this.NSPoster2.Name = "NSPoster2";
+            this.NSPoster2.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster2.TabIndex = 57;
+            this.NSPoster2.TabStop = false;
+            // 
+            // NSPoster1
+            // 
+            this.NSPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster1.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster1.Image")));
+            this.NSPoster1.Location = new System.Drawing.Point(159, 336);
+            this.NSPoster1.Name = "NSPoster1";
+            this.NSPoster1.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster1.TabIndex = 56;
+            this.NSPoster1.TabStop = false;
+            // 
+            // NRPoster5
+            // 
+            this.NRPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster5.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster5.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster5.Image")));
+            this.NRPoster5.Location = new System.Drawing.Point(799, 80);
+            this.NRPoster5.Name = "NRPoster5";
+            this.NRPoster5.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster5.TabIndex = 55;
+            this.NRPoster5.TabStop = false;
+            // 
+            // NRPoster4
+            // 
+            this.NRPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster4.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster4.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster4.Image")));
+            this.NRPoster4.Location = new System.Drawing.Point(639, 80);
+            this.NRPoster4.Name = "NRPoster4";
+            this.NRPoster4.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster4.TabIndex = 54;
+            this.NRPoster4.TabStop = false;
+            // 
+            // NRPoster3
+            // 
+            this.NRPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster3.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster3.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster3.Image")));
+            this.NRPoster3.Location = new System.Drawing.Point(479, 80);
+            this.NRPoster3.Name = "NRPoster3";
+            this.NRPoster3.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster3.TabIndex = 53;
+            this.NRPoster3.TabStop = false;
+            // 
+            // NRPoster2
+            // 
+            this.NRPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster2.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster2.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster2.Image")));
+            this.NRPoster2.Location = new System.Drawing.Point(323, 80);
+            this.NRPoster2.Name = "NRPoster2";
+            this.NRPoster2.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster2.TabIndex = 52;
+            this.NRPoster2.TabStop = false;
+            // 
+            // NRPoster1
+            // 
+            this.NRPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster1.BackColor = System.Drawing.Color.Transparent;
+            this.NRPoster1.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NRPoster1.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster1.Image")));
+            this.NRPoster1.Location = new System.Drawing.Point(159, 80);
+            this.NRPoster1.Name = "NRPoster1";
+            this.NRPoster1.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster1.TabIndex = 51;
+            this.NRPoster1.TabStop = false;
+            // 
+            // BackgroundHome
+            // 
+            this.BackgroundHome.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BackgroundHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.BackgroundHome.Image = ((System.Drawing.Image)(resources.GetObject("BackgroundHome.Image")));
+            this.BackgroundHome.Location = new System.Drawing.Point(-1, 0);
+            this.BackgroundHome.Name = "BackgroundHome";
+            this.BackgroundHome.Size = new System.Drawing.Size(960, 773);
+            this.BackgroundHome.TabIndex = 69;
+            this.BackgroundHome.TabStop = false;
             // 
             // SearchTab
             // 
@@ -315,18 +1047,19 @@
             this.SearchTab.Controls.Add(this.search2);
             this.SearchTab.Controls.Add(this.search1);
             this.SearchTab.Controls.Add(pictureBox9);
+            this.SearchTab.Controls.Add(this.pictureBox2);
             this.SearchTab.Location = new System.Drawing.Point(4, 22);
             this.SearchTab.Name = "SearchTab";
             this.SearchTab.Padding = new System.Windows.Forms.Padding(3);
-            this.SearchTab.Size = new System.Drawing.Size(819, 773);
+            this.SearchTab.Size = new System.Drawing.Size(960, 773);
             this.SearchTab.TabIndex = 1;
-            this.SearchTab.Text = "Search\'";
+            this.SearchTab.Text = "Search";
             // 
             // search6
             // 
             this.search6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.search6.Image = ((System.Drawing.Image)(resources.GetObject("search6.Image")));
-            this.search6.Location = new System.Drawing.Point(420, 477);
+            this.search6.Location = new System.Drawing.Point(491, 477);
             this.search6.Name = "search6";
             this.search6.Size = new System.Drawing.Size(128, 160);
             this.search6.TabIndex = 57;
@@ -336,7 +1069,7 @@
             // 
             this.search4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.search4.Image = ((System.Drawing.Image)(resources.GetObject("search4.Image")));
-            this.search4.Location = new System.Drawing.Point(420, 285);
+            this.search4.Location = new System.Drawing.Point(491, 285);
             this.search4.Name = "search4";
             this.search4.Size = new System.Drawing.Size(128, 160);
             this.search4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,7 +1080,7 @@
             // 
             this.search5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.search5.Image = ((System.Drawing.Image)(resources.GetObject("search5.Image")));
-            this.search5.Location = new System.Drawing.Point(36, 477);
+            this.search5.Location = new System.Drawing.Point(107, 477);
             this.search5.Name = "search5";
             this.search5.Size = new System.Drawing.Size(128, 160);
             this.search5.TabIndex = 55;
@@ -357,7 +1090,7 @@
             // 
             this.search3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.search3.Image = ((System.Drawing.Image)(resources.GetObject("search3.Image")));
-            this.search3.Location = new System.Drawing.Point(36, 285);
+            this.search3.Location = new System.Drawing.Point(107, 285);
             this.search3.Name = "search3";
             this.search3.Size = new System.Drawing.Size(128, 160);
             this.search3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -368,7 +1101,7 @@
             // 
             this.search2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.search2.Image = ((System.Drawing.Image)(resources.GetObject("search2.Image")));
-            this.search2.Location = new System.Drawing.Point(420, 93);
+            this.search2.Location = new System.Drawing.Point(491, 93);
             this.search2.Name = "search2";
             this.search2.Size = new System.Drawing.Size(128, 160);
             this.search2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -379,149 +1112,57 @@
             // 
             this.search1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.search1.Image = ((System.Drawing.Image)(resources.GetObject("search1.Image")));
-            this.search1.Location = new System.Drawing.Point(36, 93);
+            this.search1.Location = new System.Drawing.Point(107, 93);
             this.search1.Name = "search1";
             this.search1.Size = new System.Drawing.Size(128, 160);
             this.search1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.search1.TabIndex = 52;
             this.search1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(65, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(831, 773);
+            this.pictureBox2.TabIndex = 70;
+            this.pictureBox2.TabStop = false;
+            // 
             // MovieDetailsTab
             // 
             this.MovieDetailsTab.BackColor = System.Drawing.Color.Silver;
-            this.MovieDetailsTab.Controls.Add(this.linkLabel7);
-            this.MovieDetailsTab.Controls.Add(this.linkLabel6);
-            this.MovieDetailsTab.Controls.Add(this.label1);
-            this.MovieDetailsTab.Controls.Add(this.richTextBox1);
-            this.MovieDetailsTab.Controls.Add(this.linkLabel5);
-            this.MovieDetailsTab.Controls.Add(this.linkLabel4);
-            this.MovieDetailsTab.Controls.Add(this.linkLabel3);
-            this.MovieDetailsTab.Controls.Add(this.linkLabel2);
-            this.MovieDetailsTab.Controls.Add(this.linkLabel1);
+            this.MovieDetailsTab.Controls.Add(this.MDBigPoster);
             this.MovieDetailsTab.Controls.Add(this.pictureBox10);
-            this.MovieDetailsTab.Controls.Add(this.movDetails);
+            this.MovieDetailsTab.Controls.Add(this.pictureBox5);
             this.MovieDetailsTab.Location = new System.Drawing.Point(4, 22);
             this.MovieDetailsTab.Name = "MovieDetailsTab";
             this.MovieDetailsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MovieDetailsTab.Size = new System.Drawing.Size(819, 773);
+            this.MovieDetailsTab.Size = new System.Drawing.Size(960, 773);
             this.MovieDetailsTab.TabIndex = 2;
             this.MovieDetailsTab.Text = "Movie Details";
-            // 
-            // linkLabel7
-            // 
-            this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Location = new System.Drawing.Point(658, 358);
-            this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel7.TabIndex = 53;
-            this.linkLabel7.TabStop = true;
-            this.linkLabel7.Text = "linkLabel7";
-            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
-            // 
-            // linkLabel6
-            // 
-            this.linkLabel6.AutoSize = true;
-            this.linkLabel6.Location = new System.Drawing.Point(535, 358);
-            this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel6.TabIndex = 52;
-            this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "linkLabel6";
-            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(494, 290);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Movie Times";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(310, 91);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(490, 185);
-            this.richTextBox1.TabIndex = 50;
-            this.richTextBox1.Text = "";
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(409, 358);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel5.TabIndex = 49;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "linkLabel5";
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(719, 329);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel4.TabIndex = 48;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "linkLabel4";
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(597, 329);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel3.TabIndex = 47;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "linkLabel3";
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(475, 329);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel2.TabIndex = 46;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(353, 329);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
-            this.linkLabel1.TabIndex = 45;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureBox10
             // 
             this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(10, 27);
+            this.pictureBox10.Location = new System.Drawing.Point(32, 16);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(790, 33);
+            this.pictureBox10.Size = new System.Drawing.Size(897, 33);
             this.pictureBox10.TabIndex = 44;
             this.pictureBox10.TabStop = false;
             // 
-            // movDetails
+            // pictureBox5
             // 
-            this.movDetails.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.movDetails.Location = new System.Drawing.Point(10, 91);
-            this.movDetails.Name = "movDetails";
-            this.movDetails.Size = new System.Drawing.Size(256, 320);
-            this.movDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.movDetails.TabIndex = 43;
-            this.movDetails.TabStop = false;
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(960, 773);
+            this.pictureBox5.TabIndex = 70;
+            this.pictureBox5.TabStop = false;
             // 
             // LoginTab
             // 
@@ -536,7 +1177,7 @@
             this.LoginTab.Location = new System.Drawing.Point(4, 22);
             this.LoginTab.Name = "LoginTab";
             this.LoginTab.Padding = new System.Windows.Forms.Padding(3);
-            this.LoginTab.Size = new System.Drawing.Size(819, 773);
+            this.LoginTab.Size = new System.Drawing.Size(960, 773);
             this.LoginTab.TabIndex = 3;
             this.LoginTab.Text = "Login";
             // 
@@ -634,7 +1275,7 @@
             this.AccountTab.Location = new System.Drawing.Point(4, 22);
             this.AccountTab.Name = "AccountTab";
             this.AccountTab.Padding = new System.Windows.Forms.Padding(3);
-            this.AccountTab.Size = new System.Drawing.Size(819, 773);
+            this.AccountTab.Size = new System.Drawing.Size(960, 773);
             this.AccountTab.TabIndex = 4;
             this.AccountTab.Text = "Account";
             // 
@@ -796,7 +1437,7 @@
             this.PaymentInfoTab.Location = new System.Drawing.Point(4, 22);
             this.PaymentInfoTab.Name = "PaymentInfoTab";
             this.PaymentInfoTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PaymentInfoTab.Size = new System.Drawing.Size(819, 773);
+            this.PaymentInfoTab.Size = new System.Drawing.Size(960, 773);
             this.PaymentInfoTab.TabIndex = 5;
             this.PaymentInfoTab.Text = "PaymentInfoTab";
             // 
@@ -924,7 +1565,7 @@
             this.Seating.Location = new System.Drawing.Point(4, 22);
             this.Seating.Name = "Seating";
             this.Seating.Padding = new System.Windows.Forms.Padding(3);
-            this.Seating.Size = new System.Drawing.Size(819, 773);
+            this.Seating.Size = new System.Drawing.Size(960, 773);
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
             // 
@@ -982,7 +1623,7 @@
             this.Purchase.Location = new System.Drawing.Point(4, 22);
             this.Purchase.Name = "Purchase";
             this.Purchase.Padding = new System.Windows.Forms.Padding(3);
-            this.Purchase.Size = new System.Drawing.Size(819, 773);
+            this.Purchase.Size = new System.Drawing.Size(960, 773);
             this.Purchase.TabIndex = 7;
             this.Purchase.Text = "Purchase";
             // 
@@ -1258,7 +1899,7 @@
             this.Ticket.Location = new System.Drawing.Point(4, 22);
             this.Ticket.Name = "Ticket";
             this.Ticket.Padding = new System.Windows.Forms.Padding(3);
-            this.Ticket.Size = new System.Drawing.Size(819, 773);
+            this.Ticket.Size = new System.Drawing.Size(960, 773);
             this.Ticket.TabIndex = 8;
             this.Ticket.Text = "Ticket";
             // 
@@ -1452,54 +2093,255 @@
             this.Contact.Location = new System.Drawing.Point(4, 22);
             this.Contact.Name = "Contact";
             this.Contact.Padding = new System.Windows.Forms.Padding(3);
-            this.Contact.Size = new System.Drawing.Size(819, 773);
+            this.Contact.Size = new System.Drawing.Size(960, 773);
             this.Contact.TabIndex = 9;
             this.Contact.Text = "Contact";
             // 
-            // label3
+            // AdminTab
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(800, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 32);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "Contact Us";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AdminTab.Controls.Add(this.label65);
+            this.AdminTab.Controls.Add(this.label64);
+            this.AdminTab.Controls.Add(this.label63);
+            this.AdminTab.Controls.Add(this.label62);
+            this.AdminTab.Controls.Add(this.label61);
+            this.AdminTab.Controls.Add(this.label60);
+            this.AdminTab.Controls.Add(this.label59);
+            this.AdminTab.Controls.Add(this.label58);
+            this.AdminTab.Controls.Add(this.label57);
+            this.AdminTab.Controls.Add(this.label56);
+            this.AdminTab.Controls.Add(this.PosterPathBox);
+            this.AdminTab.Controls.Add(this.ReleaseDateBox);
+            this.AdminTab.Controls.Add(this.DirectorBox);
+            this.AdminTab.Controls.Add(this.ActorBox);
+            this.AdminTab.Controls.Add(this.GenreBox);
+            this.AdminTab.Controls.Add(this.SynopsisBox);
+            this.AdminTab.Controls.Add(this.DescriptionBox);
+            this.AdminTab.Controls.Add(this.LengthBox);
+            this.AdminTab.Controls.Add(this.RatingBox);
+            this.AdminTab.Controls.Add(this.AddBtn);
+            this.AdminTab.Controls.Add(this.TitleBox);
+            this.AdminTab.Controls.Add(this.pictureBox1);
+            this.AdminTab.Location = new System.Drawing.Point(4, 22);
+            this.AdminTab.Name = "AdminTab";
+            this.AdminTab.Size = new System.Drawing.Size(960, 773);
+            this.AdminTab.TabIndex = 10;
+            this.AdminTab.Text = "Admin";
+            this.AdminTab.UseVisualStyleBackColor = true;
             // 
-            // homeBtn
+            // label65
             // 
-            this.homeBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.homeBtn.BackColor = System.Drawing.Color.Silver;
-            this.homeBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.homeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.homeBtn.Location = new System.Drawing.Point(160, 93);
-            this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(160, 32);
-            this.homeBtn.TabIndex = 64;
-            this.homeBtn.Text = "Home Page";
-            this.homeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.homeBtn.Click += new System.EventHandler(this.label2_Click);
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(34, 439);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(59, 13);
+            this.label65.TabIndex = 91;
+            this.label65.Text = "PosterPath";
             // 
-            // logBtn
+            // label64
             // 
-            this.logBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.logBtn.BackColor = System.Drawing.Color.Silver;
-            this.logBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.logBtn.Cursor = System.Windows.Forms.Cursors.Default;
-            this.logBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logBtn.Location = new System.Drawing.Point(0, 93);
-            this.logBtn.Name = "logBtn";
-            this.logBtn.Size = new System.Drawing.Size(160, 32);
-            this.logBtn.TabIndex = 63;
-            this.logBtn.Text = "Login";
-            this.logBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.logBtn.Click += new System.EventHandler(this.label1_Click);
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(34, 399);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(72, 13);
+            this.label64.TabIndex = 90;
+            this.label64.Text = "Release Date";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(34, 351);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(44, 13);
+            this.label63.TabIndex = 89;
+            this.label63.Text = "Director";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(34, 306);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(32, 13);
+            this.label62.TabIndex = 88;
+            this.label62.Text = "Actor";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(34, 265);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(38, 13);
+            this.label61.TabIndex = 87;
+            this.label61.Text = "Rating";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(34, 227);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(36, 13);
+            this.label60.TabIndex = 86;
+            this.label60.Text = "Genre";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(34, 187);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(60, 13);
+            this.label59.TabIndex = 85;
+            this.label59.Text = "Description";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(34, 144);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(49, 13);
+            this.label58.TabIndex = 84;
+            this.label58.Text = "Synopsis";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(34, 104);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(40, 13);
+            this.label57.TabIndex = 83;
+            this.label57.Text = "Length";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(34, 62);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(27, 13);
+            this.label56.TabIndex = 82;
+            this.label56.Text = "Title";
+            // 
+            // PosterPathBox
+            // 
+            this.PosterPathBox.Location = new System.Drawing.Point(112, 436);
+            this.PosterPathBox.Name = "PosterPathBox";
+            this.PosterPathBox.Size = new System.Drawing.Size(153, 20);
+            this.PosterPathBox.TabIndex = 81;
+            // 
+            // ReleaseDateBox
+            // 
+            this.ReleaseDateBox.Location = new System.Drawing.Point(112, 396);
+            this.ReleaseDateBox.Name = "ReleaseDateBox";
+            this.ReleaseDateBox.Size = new System.Drawing.Size(153, 20);
+            this.ReleaseDateBox.TabIndex = 80;
+            // 
+            // DirectorBox
+            // 
+            this.DirectorBox.Location = new System.Drawing.Point(112, 348);
+            this.DirectorBox.Name = "DirectorBox";
+            this.DirectorBox.Size = new System.Drawing.Size(153, 20);
+            this.DirectorBox.TabIndex = 79;
+            // 
+            // ActorBox
+            // 
+            this.ActorBox.Location = new System.Drawing.Point(112, 303);
+            this.ActorBox.Name = "ActorBox";
+            this.ActorBox.Size = new System.Drawing.Size(153, 20);
+            this.ActorBox.TabIndex = 78;
+            // 
+            // GenreBox
+            // 
+            this.GenreBox.FormattingEnabled = true;
+            this.GenreBox.Items.AddRange(new object[] {
+            "Adventure"});
+            this.GenreBox.Location = new System.Drawing.Point(112, 224);
+            this.GenreBox.Name = "GenreBox";
+            this.GenreBox.Size = new System.Drawing.Size(121, 21);
+            this.GenreBox.TabIndex = 77;
+            // 
+            // SynopsisBox
+            // 
+            this.SynopsisBox.Location = new System.Drawing.Point(112, 141);
+            this.SynopsisBox.Name = "SynopsisBox";
+            this.SynopsisBox.Size = new System.Drawing.Size(153, 20);
+            this.SynopsisBox.TabIndex = 76;
+            // 
+            // DescriptionBox
+            // 
+            this.DescriptionBox.Location = new System.Drawing.Point(112, 184);
+            this.DescriptionBox.Name = "DescriptionBox";
+            this.DescriptionBox.Size = new System.Drawing.Size(153, 20);
+            this.DescriptionBox.TabIndex = 75;
+            // 
+            // LengthBox
+            // 
+            this.LengthBox.Location = new System.Drawing.Point(112, 101);
+            this.LengthBox.Name = "LengthBox";
+            this.LengthBox.Size = new System.Drawing.Size(153, 20);
+            this.LengthBox.TabIndex = 74;
+            // 
+            // RatingBox
+            // 
+            this.RatingBox.FormattingEnabled = true;
+            this.RatingBox.Items.AddRange(new object[] {
+            "G",
+            "PG",
+            "PG-13",
+            "R",
+            "NC-17",
+            "Not Rated"});
+            this.RatingBox.Location = new System.Drawing.Point(112, 262);
+            this.RatingBox.Name = "RatingBox";
+            this.RatingBox.Size = new System.Drawing.Size(121, 21);
+            this.RatingBox.TabIndex = 73;
+            // 
+            // AddBtn
+            // 
+            this.AddBtn.Location = new System.Drawing.Point(112, 472);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(75, 23);
+            this.AddBtn.TabIndex = 72;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
+            // 
+            // TitleBox
+            // 
+            this.TitleBox.Location = new System.Drawing.Point(112, 59);
+            this.TitleBox.Name = "TitleBox";
+            this.TitleBox.Size = new System.Drawing.Size(153, 20);
+            this.TitleBox.TabIndex = 71;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(65, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(831, 773);
+            this.pictureBox1.TabIndex = 70;
+            this.pictureBox1.TabStop = false;
+            // 
+            // contactUsBtn
+            // 
+            this.contactUsBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.contactUsBtn.Image = ((System.Drawing.Image)(resources.GetObject("contactUsBtn.Image")));
+            this.contactUsBtn.Location = new System.Drawing.Point(640, 128);
+            this.contactUsBtn.Name = "contactUsBtn";
+            this.contactUsBtn.Size = new System.Drawing.Size(160, 32);
+            this.contactUsBtn.TabIndex = 60;
+            this.contactUsBtn.TabStop = false;
+            this.contactUsBtn.Click += new System.EventHandler(this.contactUsBtn_Click);
+            this.contactUsBtn.MouseEnter += new System.EventHandler(this.contactUsBtn_MouseEnter);
+            this.contactUsBtn.MouseLeave += new System.EventHandler(this.contactUsBtn_MouseLeave);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(480, 128);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(160, 32);
+            this.pictureBox4.TabIndex = 59;
+            this.pictureBox4.TabStop = false;
             // 
             // Header
             // 
@@ -1512,22 +2354,12 @@
             this.Header.TabIndex = 57;
             this.Header.TabStop = false;
             // 
-            // InfoBar
-            // 
-            this.InfoBar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.InfoBar.Image = ((System.Drawing.Image)(resources.GetObject("InfoBar.Image")));
-            this.InfoBar.Location = new System.Drawing.Point(0, 160);
-            this.InfoBar.Name = "InfoBar";
-            this.InfoBar.Size = new System.Drawing.Size(960, 64);
-            this.InfoBar.TabIndex = 61;
-            this.InfoBar.TabStop = false;
-            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(980, 1018);
+            this.tabPage2.Size = new System.Drawing.Size(1003, 1018);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1536,255 +2368,54 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // pictureBox11
+            // MDBigPoster
             // 
-            pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            pictureBox11.Location = new System.Drawing.Point(32, 32);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new System.Drawing.Size(768, 33);
-            pictureBox11.TabIndex = 49;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            pictureBox12.Location = new System.Drawing.Point(33, 283);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new System.Drawing.Size(768, 33);
-            pictureBox12.TabIndex = 50;
-            pictureBox12.TabStop = false;
-            // 
-            // new1
-            // 
-            this.new1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new1.BackColor = System.Drawing.Color.Transparent;
-            this.new1.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.new1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.new1.Location = new System.Drawing.Point(33, 83);
-            this.new1.Name = "new1";
-            this.new1.Size = new System.Drawing.Size(128, 160);
-            this.new1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.new1.TabIndex = 51;
-            this.new1.TabStop = false;
-            this.new1.Click += new System.EventHandler(this.new1_Click);
-            // 
-            // new2
-            // 
-            this.new2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new2.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.new2.Location = new System.Drawing.Point(193, 83);
-            this.new2.Name = "new2";
-            this.new2.Size = new System.Drawing.Size(128, 160);
-            this.new2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.new2.TabIndex = 52;
-            this.new2.TabStop = false;
-            this.new2.Click += new System.EventHandler(this.pictureBox14_Click);
-            // 
-            // new3
-            // 
-            this.new3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new3.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.new3.Location = new System.Drawing.Point(353, 83);
-            this.new3.Name = "new3";
-            this.new3.Size = new System.Drawing.Size(128, 160);
-            this.new3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.new3.TabIndex = 53;
-            this.new3.TabStop = false;
-            this.new3.Click += new System.EventHandler(this.pictureBox16_Click);
-            // 
-            // new4
-            // 
-            this.new4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new4.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.new4.Location = new System.Drawing.Point(513, 83);
-            this.new4.Name = "new4";
-            this.new4.Size = new System.Drawing.Size(128, 160);
-            this.new4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.new4.TabIndex = 54;
-            this.new4.TabStop = false;
-            this.new4.Click += new System.EventHandler(this.pictureBox15_Click);
-            // 
-            // new5
-            // 
-            this.new5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.new5.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.new5.Location = new System.Drawing.Point(673, 83);
-            this.new5.Name = "new5";
-            this.new5.Size = new System.Drawing.Size(128, 160);
-            this.new5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.new5.TabIndex = 55;
-            this.new5.TabStop = false;
-            this.new5.Click += new System.EventHandler(this.pictureBox17_Click);
-            // 
-            // now1
-            // 
-            this.now1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.now1.Image = ((System.Drawing.Image)(resources.GetObject("now1.Image")));
-            this.now1.Location = new System.Drawing.Point(33, 347);
-            this.now1.Name = "now1";
-            this.now1.Size = new System.Drawing.Size(128, 160);
-            this.now1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.now1.TabIndex = 56;
-            this.now1.TabStop = false;
-            this.now1.Click += new System.EventHandler(this.pictureBox22_Click);
-            // 
-            // now2
-            // 
-            this.now2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.now2.Image = ((System.Drawing.Image)(resources.GetObject("now2.Image")));
-            this.now2.Location = new System.Drawing.Point(193, 347);
-            this.now2.Name = "now2";
-            this.now2.Size = new System.Drawing.Size(128, 160);
-            this.now2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.now2.TabIndex = 57;
-            this.now2.TabStop = false;
-            this.now2.Click += new System.EventHandler(this.pictureBox21_Click);
-            // 
-            // now3
-            // 
-            this.now3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.now3.Image = ((System.Drawing.Image)(resources.GetObject("now3.Image")));
-            this.now3.Location = new System.Drawing.Point(353, 347);
-            this.now3.Name = "now3";
-            this.now3.Size = new System.Drawing.Size(128, 160);
-            this.now3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.now3.TabIndex = 58;
-            this.now3.TabStop = false;
-            this.now3.Click += new System.EventHandler(this.pictureBox20_Click);
-            // 
-            // now4
-            // 
-            this.now4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.now4.Image = ((System.Drawing.Image)(resources.GetObject("now4.Image")));
-            this.now4.Location = new System.Drawing.Point(513, 347);
-            this.now4.Name = "now4";
-            this.now4.Size = new System.Drawing.Size(128, 160);
-            this.now4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.now4.TabIndex = 59;
-            this.now4.TabStop = false;
-            this.now4.Click += new System.EventHandler(this.pictureBox19_Click);
-            // 
-            // now5
-            // 
-            this.now5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.now5.Image = ((System.Drawing.Image)(resources.GetObject("now5.Image")));
-            this.now5.Location = new System.Drawing.Point(673, 347);
-            this.now5.Name = "now5";
-            this.now5.Size = new System.Drawing.Size(128, 160);
-            this.now5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.now5.TabIndex = 60;
-            this.now5.TabStop = false;
-            this.now5.Click += new System.EventHandler(this.pictureBox18_Click);
-            // 
-            // HomeTab
-            // 
-            this.HomeTab.BackColor = System.Drawing.Color.Silver;
-            this.HomeTab.Controls.Add(this.now5);
-            this.HomeTab.Controls.Add(this.now4);
-            this.HomeTab.Controls.Add(this.now3);
-            this.HomeTab.Controls.Add(this.now2);
-            this.HomeTab.Controls.Add(this.now1);
-            this.HomeTab.Controls.Add(this.new5);
-            this.HomeTab.Controls.Add(this.new4);
-            this.HomeTab.Controls.Add(this.new3);
-            this.HomeTab.Controls.Add(this.new2);
-            this.HomeTab.Controls.Add(this.new1);
-            this.HomeTab.Controls.Add(pictureBox12);
-            this.HomeTab.Controls.Add(pictureBox11);
-            this.HomeTab.Controls.Add(this.pictureBox1);
-            this.HomeTab.Location = new System.Drawing.Point(4, 22);
-            this.HomeTab.Name = "HomeTab";
-            this.HomeTab.Padding = new System.Windows.Forms.Padding(3);
-            this.HomeTab.Size = new System.Drawing.Size(831, 773);
-            this.HomeTab.TabIndex = 0;
-            this.HomeTab.Text = "HomePage";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(831, 773);
-            this.pictureBox1.TabIndex = 69;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(640, 128);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox7.TabIndex = 60;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(480, 128);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox4.TabIndex = 59;
-            this.pictureBox4.TabStop = false;
-            // 
-            // movieBtn
-            // 
-            this.movieBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.movieBtn.Image = ((System.Drawing.Image)(resources.GetObject("movieBtn.Image")));
-            this.movieBtn.Location = new System.Drawing.Point(0, 128);
-            this.movieBtn.Name = "movieBtn";
-            this.movieBtn.Size = new System.Drawing.Size(160, 32);
-            this.movieBtn.TabIndex = 58;
-            this.movieBtn.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(160, 128);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox2.TabIndex = 69;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(320, 128);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox3.TabIndex = 70;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(800, 128);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox5.TabIndex = 71;
-            this.pictureBox5.TabStop = false;
+            this.MDBigPoster.Image = ((System.Drawing.Image)(resources.GetObject("MDBigPoster.Image")));
+            this.MDBigPoster.Location = new System.Drawing.Point(32, 80);
+            this.MDBigPoster.Name = "MDBigPoster";
+            this.MDBigPoster.Size = new System.Drawing.Size(256, 320);
+            this.MDBigPoster.TabIndex = 71;
+            this.MDBigPoster.TabStop = false;
             // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 962);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(960, 1012);
             this.Controls.Add(this.tabControl1);
             this.Name = "homepage";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.SearchBar)).EndInit();
-            this.tabControl2.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.browseBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.BodyTabControl.ResumeLayout(false);
+            this.HomeTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NSPoster1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NRPoster1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).EndInit();
             this.SearchTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.search6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.search4)).EndInit();
@@ -1792,10 +2423,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.search3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.search2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.search1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.MovieDetailsTab.ResumeLayout(false);
-            this.MovieDetailsTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.LoginTab.ResumeLayout(false);
             this.LoginTab.PerformLayout();
             this.AccountTab.ResumeLayout(false);
@@ -1808,28 +2439,13 @@
             this.Purchase.PerformLayout();
             this.Ticket.ResumeLayout(false);
             this.Ticket.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.now5)).EndInit();
-            this.HomeTab.ResumeLayout(false);
+            this.AdminTab.ResumeLayout(false);
+            this.AdminTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movieBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MDBigPoster)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1838,12 +2454,8 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl BodyTabControl;
         private System.Windows.Forms.TabPage SearchTab;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label homeBtn;
-        private System.Windows.Forms.Label logBtn;
-        private System.Windows.Forms.PictureBox SearchBar;
         private System.Windows.Forms.PictureBox InfoBar;
         private System.Windows.Forms.PictureBox Header;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1856,7 +2468,6 @@
         private System.Windows.Forms.PictureBox search2;
         private System.Windows.Forms.PictureBox search1;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox movDetails;
         private System.Windows.Forms.TextBox passwordTxt;
         private System.Windows.Forms.TextBox usernameTxt;
         private System.Windows.Forms.Button loginbutton;
@@ -1900,14 +2511,6 @@
         private System.Windows.Forms.TabPage Ticket;
         private System.Windows.Forms.TabPage Contact;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
@@ -1924,8 +2527,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.LinkLabel linkLabel7;
-        private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
@@ -1955,23 +2556,86 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TabPage HomeTab;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox now5;
-        private System.Windows.Forms.PictureBox now4;
-        private System.Windows.Forms.PictureBox now3;
-        private System.Windows.Forms.PictureBox now2;
-        private System.Windows.Forms.PictureBox now1;
-        private System.Windows.Forms.PictureBox new5;
-        private System.Windows.Forms.PictureBox new4;
-        private System.Windows.Forms.PictureBox new3;
-        private System.Windows.Forms.PictureBox new2;
-        private System.Windows.Forms.PictureBox new1;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox BackgroundHome;
+        private System.Windows.Forms.PictureBox NSPoster5;
+        private System.Windows.Forms.PictureBox NSPoster4;
+        private System.Windows.Forms.PictureBox NSPoster3;
+        private System.Windows.Forms.PictureBox NSPoster2;
+        private System.Windows.Forms.PictureBox NSPoster1;
+        private System.Windows.Forms.PictureBox NRPoster5;
+        private System.Windows.Forms.PictureBox NRPoster4;
+        private System.Windows.Forms.PictureBox NRPoster3;
+        private System.Windows.Forms.PictureBox NRPoster2;
+        private System.Windows.Forms.PictureBox NRPoster1;
+        private System.Windows.Forms.PictureBox contactUsBtn;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox movieBtn;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox browseBtn;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox homeBtn;
+        private System.Windows.Forms.PictureBox LoginBtn;
+        private System.Windows.Forms.TabPage AdminTab;
+        private System.Windows.Forms.Label NRTitleLabel1;
+        private System.Windows.Forms.Label NRTitleLabel5;
+        private System.Windows.Forms.Label NRTitleLabel4;
+        private System.Windows.Forms.Label NRTitleLabel3;
+        private System.Windows.Forms.Label NRTitleLabel2;
+        private System.Windows.Forms.Label NRReleaseDateLabel5;
+        private System.Windows.Forms.Label NRReleaseDateLabel4;
+        private System.Windows.Forms.Label NRReleaseDateLabel3;
+        private System.Windows.Forms.Label NRReleaseDateLabel2;
+        private System.Windows.Forms.Label NRReleaseDateLabel1;
+        private System.Windows.Forms.Label NSReleaseDateLabel5;
+        private System.Windows.Forms.Label NSReleaseDateLabel4;
+        private System.Windows.Forms.Label NSReleaseDateLabel3;
+        private System.Windows.Forms.Label NSReleaseDateLabel2;
+        private System.Windows.Forms.Label NSReleaseDateLabel1;
+        private System.Windows.Forms.Label NSTitleLabel5;
+        private System.Windows.Forms.Label NSTitleLabel4;
+        private System.Windows.Forms.Label NSTitleLabel3;
+        private System.Windows.Forms.Label NSTitleLabel2;
+        private System.Windows.Forms.Label NSTitleLabel1;
+        private System.Windows.Forms.Label NSReleaseDateLabel10;
+        private System.Windows.Forms.Label NSReleaseDateLabel9;
+        private System.Windows.Forms.Label NSReleaseDateLabel8;
+        private System.Windows.Forms.Label NSReleaseDateLabel7;
+        private System.Windows.Forms.Label NSReleaseDateLabel6;
+        private System.Windows.Forms.Label NSTitleLabel10;
+        private System.Windows.Forms.Label NSTitleLabel9;
+        private System.Windows.Forms.Label NSTitleLabel8;
+        private System.Windows.Forms.Label NSTitleLabel7;
+        private System.Windows.Forms.Label NSTitleLabel6;
+        private System.Windows.Forms.PictureBox NSPoster10;
+        private System.Windows.Forms.PictureBox NSPoster9;
+        private System.Windows.Forms.PictureBox NSPoster8;
+        private System.Windows.Forms.PictureBox NSPoster7;
+        private System.Windows.Forms.PictureBox NSPoster6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label AdminLabel;
+        private System.Windows.Forms.TextBox TitleBox;
+        private System.Windows.Forms.ComboBox RatingBox;
+        private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.TextBox PosterPathBox;
+        private System.Windows.Forms.TextBox ReleaseDateBox;
+        private System.Windows.Forms.TextBox DirectorBox;
+        private System.Windows.Forms.TextBox ActorBox;
+        private System.Windows.Forms.ComboBox GenreBox;
+        private System.Windows.Forms.TextBox SynopsisBox;
+        private System.Windows.Forms.TextBox DescriptionBox;
+        private System.Windows.Forms.TextBox LengthBox;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox MDBigPoster;
 
     }
 }
