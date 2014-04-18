@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--MovieInfo-->
+<Movies>
+  <Movie>
+    <Title>Ealier 1</Title>
+    <Length>112 minutes</Length>
+    <Synopsis>A really cool movie that is earlier then the current time. It is already out!</Synopsis>
+    <Description>Description</Description>
+    <Genre>Adventure</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Slim Shady</Actor>
+    <Director>asd</Director>
+    <ReleaseDate>04/10/2014</ReleaseDate>
+    <PosterPath>None</PosterPath>
+  </Movie>
+  <Movie>
+    <Title>Later 1</Title>
+    <Length>115 minutes</Length>
+    <Synopsis>A really cool movie that comes after the current date.</Synopsis>
+    <Description>asd</Description>
+    <Genre>Adventure</Genre>
+    <Rating>NC-17</Rating>
+    <Actor>asd</Actor>
+    <Director>asd</Director>
+    <ReleaseDate>04/26/2014</ReleaseDate>
+    <PosterPath>asd</PosterPath>
+  </Movie>
+  <Movie>
+    <Title>Later 2</Title>
+    <Length>100 minutes</Length>
+    <Synopsis>asd</Synopsis>
+    <Description>asd</Description>
+    <Genre>Adventure</Genre>
+    <Rating>G</Rating>
+    <Actor>asd</Actor>
+    <Director>asd</Director>
+    <ReleaseDate>04/30/2014</ReleaseDate>
+    <PosterPath>asd</PosterPath>
+  </Movie>
+  <Movie>
+    <Title>Earlier 2</Title>
+    <Length>99 minutes</Length>
+    <Synopsis>A really funny movie for kids.</Synopsis>
+    <Description>asd</Description>
+    <Genre>Adventure</Genre>
+    <Rating>PG</Rating>
+    <Actor>asd</Actor>
+    <Director>asd</Director>
+    <ReleaseDate>04/02/2014</ReleaseDate>
+    <PosterPath>asd</PosterPath>
+  </Movie>
+  <Movie>
+    <Title>Later 3</Title>
+    <Length>162 minutes</Length>
+    <Synopsis>A fun Movie!</Synopsis>
+    <Description>asd</Description>
+    <Genre>Adventure</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>abc123</Actor>
+    <Director>aassdd</Director>
+    <ReleaseDate>04/30/2014</ReleaseDate>
+    <PosterPath>asd</PosterPath>
+  </Movie>
+  <Movie>
+    <Title>Mr. Peabody &amp; Sherman</Title>
+    <Length>96 min</Length>
+    <Synopsis>Mr. Peabody, the most accomplished dog in the world, and his mischievous boy Sherman, use their time machine - The WABAC - to go on the most outrageous adventures known to man or dog. But when Sherman takes The WABAC out for a joyride to impress his friend Penny, they accidentally rip a hole in the universe, wreaking havoc on the most important events in world history. Before they forever alter the past, present and future, Mr. Peabody must come to their rescue, ultimately facing the most daunting challenge of any era: figuring out how to be a parent. Together, the time traveling trio will make their mark on history.</Synopsis>
+    <Description>asd</Description>
+    <Genre>Adventure</Genre>
+    <Rating>PG</Rating>
+    <Actor>Ty Burrell, Max Charles, Ariel Winter, Allison Janney, Max Brook, </Actor>
+    <Director>Rob Minkoff</Director>
+    <ReleaseDate>03/17/2014</ReleaseDate>
+    <PosterPath>
+    </PosterPath>
+  </Movie>
+</Movies>

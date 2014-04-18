@@ -21,7 +21,7 @@ namespace MovieTheater
         bool addBtns = false;
         //bool
 
-        string MoviesPath = "Movies.xml";
+        string MoviesPath = "../../xml/Movies.xml";
         XmlDocument MoviesDocument = new XmlDocument();
 
         public homepage()
