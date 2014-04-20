@@ -18,7 +18,6 @@ namespace MovieTheater
     {
         bool adminLogged = false;
         bool logged = false;
-        bool addBtns = false;
         //bool
 
         string MoviesPath = "../../xml/Movies.xml";
@@ -87,6 +86,10 @@ namespace MovieTheater
 
             updateHomePage();
 
+
+            if (st1txt.Text != "")
+                st2txt.Visible = true;
+
         }
 
         // GLOBAL FUNCTIONS ---------------------------------------------------
@@ -101,7 +104,10 @@ namespace MovieTheater
         /* Admin label click */
         private void AdminLabel_Click(object sender, EventArgs e)
         {
-            BodyTabControl.SelectedTab = AdminTab;
+            if (adminLogged == true)
+                BodyTabControl.SelectedTab = AdminTab;
+            else
+                BodyTabControl.SelectedTab = LoginTab;
         }
 
         /* Home button click */
@@ -315,6 +321,7 @@ namespace MovieTheater
             XmlNodeList titleElemList = MoviesDocument.GetElementsByTagName("Title");
             XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
             XmlNodeList ReleaseDateElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            XmlNodeList PosterElemList = MoviesDocument.GetElementsByTagName("PosterPath");
             DateTime CurrentTime = DateTime.Now;
             DateTime ReleaseTime;
 
@@ -344,6 +351,7 @@ namespace MovieTheater
                 NRReleaseDateLabel1.Visible = true; // release date label visible
                 NRTitleLabel1.Visible = true; // title label visible
                 NRPoster1.Visible = true; // poster visible
+                NRPoster1.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -369,6 +377,7 @@ namespace MovieTheater
                 NRReleaseDateLabel2.Visible = true;
                 NRTitleLabel2.Visible = true;
                 NRPoster2.Visible = true;
+                NRPoster2.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -391,6 +400,7 @@ namespace MovieTheater
                 NRReleaseDateLabel3.Visible = true;
                 NRTitleLabel3.Visible = true;
                 NRPoster3.Visible = true;
+                NRPoster3.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -413,6 +423,7 @@ namespace MovieTheater
                 NRReleaseDateLabel4.Visible = true;
                 NRTitleLabel4.Visible = true;
                 NRPoster4.Visible = true;
+                NRPoster4.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -435,6 +446,7 @@ namespace MovieTheater
                 NRReleaseDateLabel5.Visible = true;
                 NRTitleLabel5.Visible = true;
                 NRPoster5.Visible = true;
+                NRPoster5.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
 
@@ -495,6 +507,7 @@ namespace MovieTheater
             XmlNodeList titleElemList = MoviesDocument.GetElementsByTagName("Title");
             XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
             XmlNodeList ReleaseDateElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            XmlNodeList PosterElemList = MoviesDocument.GetElementsByTagName("PosterPath");
             DateTime CurrentTime = DateTime.Now;
             DateTime ReleaseTime;
 
@@ -517,6 +530,8 @@ namespace MovieTheater
                 NSReleaseDateLabel1.Visible = true;
                 NSTitleLabel1.Visible = true;
                 NSPoster1.Visible = true;
+                NSPoster1.ImageLocation = PosterElemList[index].InnerText;
+                NSPoster1.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -538,6 +553,7 @@ namespace MovieTheater
                 NSReleaseDateLabel2.Visible = true;
                 NSTitleLabel2.Visible = true;
                 NSPoster2.Visible = true;
+                NSPoster2.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -559,6 +575,7 @@ namespace MovieTheater
                 NSReleaseDateLabel3.Visible = true;
                 NSTitleLabel3.Visible = true;
                 NSPoster3.Visible = true;
+                NSPoster3.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -580,6 +597,7 @@ namespace MovieTheater
                 NSReleaseDateLabel4.Visible = true;
                 NSTitleLabel4.Visible = true;
                 NSPoster4.Visible = true;
+                NSPoster4.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -601,6 +619,7 @@ namespace MovieTheater
                 NSReleaseDateLabel5.Visible = true;
                 NSTitleLabel5.Visible = true;
                 NSPoster5.Visible = true;
+                NSPoster5.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -622,6 +641,7 @@ namespace MovieTheater
                 NSReleaseDateLabel1.Visible = true;
                 NSTitleLabel1.Visible = true;
                 NSPoster1.Visible = true;
+                NSPoster6.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -643,6 +663,7 @@ namespace MovieTheater
                 NSReleaseDateLabel2.Visible = true;
                 NSTitleLabel2.Visible = true;
                 NSPoster2.Visible = true;
+                NSPoster7.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -664,6 +685,7 @@ namespace MovieTheater
                 NSReleaseDateLabel3.Visible = true;
                 NSTitleLabel3.Visible = true;
                 NSPoster3.Visible = true;
+                NSPoster8.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -685,6 +707,7 @@ namespace MovieTheater
                 NSReleaseDateLabel4.Visible = true;
                 NSTitleLabel4.Visible = true;
                 NSPoster4.Visible = true;
+                NSPoster9.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -706,6 +729,7 @@ namespace MovieTheater
                 NSReleaseDateLabel5.Visible = true;
                 NSTitleLabel5.Visible = true;
                 NSPoster5.Visible = true;
+                NSPoster10.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
         }
@@ -746,6 +770,15 @@ namespace MovieTheater
             XmlElement Director = MoviesDocument.CreateElement("Director");
             XmlElement ReleaseDate = MoviesDocument.CreateElement("ReleaseDate");
             XmlElement PosterPath = MoviesDocument.CreateElement("PosterPath");
+            XmlElement Showtime1 = MoviesDocument.CreateElement("Showtime1");
+            XmlElement Showtime2 = MoviesDocument.CreateElement("Showtime2");
+            XmlElement Showtime3 = MoviesDocument.CreateElement("Showtime3");
+            XmlElement Showtime4 = MoviesDocument.CreateElement("Showtime4");
+            XmlElement Showtime5 = MoviesDocument.CreateElement("Showtime5");
+            XmlElement Showtime6 = MoviesDocument.CreateElement("Showtime6");
+            XmlElement Showtime7 = MoviesDocument.CreateElement("Showtime7");
+            XmlElement Showtime8 = MoviesDocument.CreateElement("Showtime8");
+            XmlElement Showtime9 = MoviesDocument.CreateElement("Showtime9");
 
             Root.AppendChild(Movie);
             Movie.AppendChild(Title);
@@ -758,6 +791,15 @@ namespace MovieTheater
             Movie.AppendChild(Director);
             Movie.AppendChild(ReleaseDate);
             Movie.AppendChild(PosterPath);
+            Movie.AppendChild(Showtime1);
+            Movie.AppendChild(Showtime2);
+            Movie.AppendChild(Showtime3);
+            Movie.AppendChild(Showtime4);
+            Movie.AppendChild(Showtime5);
+            Movie.AppendChild(Showtime6);
+            Movie.AppendChild(Showtime7);
+            Movie.AppendChild(Showtime8);
+            Movie.AppendChild(Showtime9);
 
             Title.InnerText = TitleBox.Text;
             Length.InnerText = LengthBox.Text;
@@ -768,7 +810,7 @@ namespace MovieTheater
             Actor.InnerText = ActorBox.Text;
             Director.InnerText = DirectorBox.Text;
             ReleaseDate.InnerText = ReleaseDTPicker.Value.ToString("MM/dd/yyyy");
-            PosterPath.InnerText = PosterPathBox.Text;
+            PosterPath.InnerText = openFileDialog1.FileName;
 
             MoviesDocument.Save(MoviesPath);
 
@@ -781,7 +823,7 @@ namespace MovieTheater
             ActorBox.Clear();
             DirectorBox.Clear();
             ReleaseDTPicker.ResetText();
-            PosterPathBox.Clear();
+            posterPathtxt.Clear();
 
         }
 
@@ -804,6 +846,7 @@ namespace MovieTheater
             XmlNodeList ActorsElemList = MoviesDocument.GetElementsByTagName("Actor");
             XmlNodeList DirectorElemList = MoviesDocument.GetElementsByTagName("Director");
             XmlNodeList SynopsisElemList = MoviesDocument.GetElementsByTagName("Synopsis");
+            XmlNodeList PosterPath = MoviesDocument.GetElementsByTagName("PosterPath");
 
             for (int i = 0; i < TitleElemList.Count; i++)
             {
@@ -824,6 +867,7 @@ namespace MovieTheater
                 MDActorsLabel.Text = ActorsElemList[index].InnerText;
                 MDDirectorLabel.Text = DirectorElemList[index].InnerText;
                 MDSynopsisLabel.Text = SynopsisElemList[index].InnerText;
+                MDBigPoster.ImageLocation = PosterPath[index].InnerText;
             }
             else
             {
@@ -1069,31 +1113,6 @@ namespace MovieTheater
             BodyTabControl.SelectedTab = LoginTab; //Return to login screen
 
         }
-        //----------------------------------------------------------------------------------------------------
-        //Login Page
-       /* private void label1_Click(object sender, EventArgs e) //Login Button
-        {
-            if (logged == false)
-                BodyTabControl.SelectedTab = LoginTab;
-            else
-            {
-                logBtn.Text = "Log Out";
-                logged = false;
-                adminLogged = false;
-                MessageBox.Show("Successfully logged out");
-                logBtn.Text = "Log in";
-                usernameTxt.Clear();
-                passwordTxt.Clear();
-                changeMovie();
-                checkVisPos(new1);
-                checkVisPos(new2);
-                checkVisPos(new3);
-                checkVisPos(new4);
-                checkVisPos(new5);
-
-
-            }
-        }*/
 
         private void label4_Click(object sender, EventArgs e) //Clicked Create Account label
         {
@@ -1119,7 +1138,6 @@ namespace MovieTheater
                         if (usernameTxt.Text == "Admin")
                         {
                             adminLogged = true;
-                            addBtns = true;
                         }
                         MessageBox.Show("Successfully signed in!");
                         logged = true;
@@ -1262,6 +1280,22 @@ namespace MovieTheater
             comboBox3.ResetText();
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string loc;
+            openFileDialog1.ShowDialog();
+            if (openFileDialog1.FileName == "openFileDialog1")
+                loc = null;
+            else
+                loc = openFileDialog1.FileName;
+
+            posterPathtxt.Text = loc;
+        }
+
+        private void showtime1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+        }
         //-----------------------------------------------------------------------------------------------------
     }
 }
