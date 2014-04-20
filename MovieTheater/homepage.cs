@@ -18,7 +18,10 @@ namespace MovieTheater
     {
         bool adminLogged = false;
         bool logged = false;
-        //bool
+
+        int showtimes = 1;
+
+        string movie, length, time;
 
         string MoviesPath = "../../xml/Movies.xml";
         XmlDocument MoviesDocument = new XmlDocument();
@@ -85,10 +88,6 @@ namespace MovieTheater
             MDSynopsisLabel.Parent = backgroundMD;
 
             updateHomePage();
-
-
-            if (st1txt.Text != "")
-                st2txt.Visible = true;
 
         }
 
@@ -811,6 +810,16 @@ namespace MovieTheater
             Director.InnerText = DirectorBox.Text;
             ReleaseDate.InnerText = ReleaseDTPicker.Value.ToString("MM/dd/yyyy");
             PosterPath.InnerText = openFileDialog1.FileName;
+            Showtime1.InnerText = st1txt.Text;
+            Showtime2.InnerText = st2txt.Text;
+            Showtime3.InnerText = st3txt.Text;
+            Showtime4.InnerText = st4txt.Text;
+            Showtime5.InnerText = st5txt.Text;
+            Showtime6.InnerText = st6txt.Text;
+            Showtime7.InnerText = st7txt.Text;
+            Showtime8.InnerText = st8txt.Text;
+            Showtime9.InnerText = st9txt.Text;
+
 
             MoviesDocument.Save(MoviesPath);
 
@@ -824,7 +833,47 @@ namespace MovieTheater
             DirectorBox.Clear();
             ReleaseDTPicker.ResetText();
             posterPathtxt.Clear();
+            resetShowtimes();
 
+        }
+
+        public void resetShowtimes()
+        {
+            showtimes = 1;
+
+            st1txt.Clear();
+            st2txt.Clear();
+            st3txt.Clear();
+            st4txt.Clear();
+            st5txt.Clear();
+            st6txt.Clear();
+            st7txt.Clear();
+            st8txt.Clear();
+            st9txt.Clear();
+
+            st2lbl.Visible = false;
+            st2txt.Visible = false;
+
+            st3lbl.Visible = false;
+            st3txt.Visible = false;
+
+            st4lbl.Visible = false;
+            st4txt.Visible = false;
+
+            st5lbl.Visible = false;
+            st5txt.Visible = false;
+
+            st6lbl.Visible = false;
+            st6txt.Visible = false;
+
+            st7lbl.Visible = false;
+            st7txt.Visible = false;
+
+            st8lbl.Visible = false;
+            st8txt.Visible = false;
+
+            st9lbl.Visible = false;
+            st9txt.Visible = false;
         }
 
         // --------------------------------------------------------------------
@@ -847,6 +896,17 @@ namespace MovieTheater
             XmlNodeList DirectorElemList = MoviesDocument.GetElementsByTagName("Director");
             XmlNodeList SynopsisElemList = MoviesDocument.GetElementsByTagName("Synopsis");
             XmlNodeList PosterPath = MoviesDocument.GetElementsByTagName("PosterPath");
+            XmlNodeList Showtime1 = MoviesDocument.GetElementsByTagName("Showtime1");
+            XmlNodeList Showtime2 = MoviesDocument.GetElementsByTagName("Showtime2");
+            XmlNodeList Showtime3 = MoviesDocument.GetElementsByTagName("Showtime3");
+            XmlNodeList Showtime4 = MoviesDocument.GetElementsByTagName("Showtime4");
+            XmlNodeList Showtime5 = MoviesDocument.GetElementsByTagName("Showtime5");
+            XmlNodeList Showtime6 = MoviesDocument.GetElementsByTagName("Showtime6");
+            XmlNodeList Showtime7 = MoviesDocument.GetElementsByTagName("Showtime7");
+            XmlNodeList Showtime8 = MoviesDocument.GetElementsByTagName("Showtime8");
+            XmlNodeList Showtime9 = MoviesDocument.GetElementsByTagName("Showtime9");
+
+
 
             for (int i = 0; i < TitleElemList.Count; i++)
             {
@@ -868,6 +928,15 @@ namespace MovieTheater
                 MDDirectorLabel.Text = DirectorElemList[index].InnerText;
                 MDSynopsisLabel.Text = SynopsisElemList[index].InnerText;
                 MDBigPoster.ImageLocation = PosterPath[index].InnerText;
+                showtime1.Text = Showtime1[index].InnerText;
+                showtime2.Text = Showtime2[index].InnerText;
+                showtime3.Text = Showtime3[index].InnerText;
+                showtime4.Text = Showtime4[index].InnerText;
+                showtime5.Text = Showtime5[index].InnerText;
+                showtime6.Text = Showtime6[index].InnerText;
+                showtime7.Text = Showtime7[index].InnerText;
+                showtime8.Text = Showtime8[index].InnerText;
+                showtime9.Text = Showtime9[index].InnerText;
             }
             else
             {
@@ -876,41 +945,6 @@ namespace MovieTheater
 
         }
         // --------------------------------------------------------------------
-
-
-        //Changes the movie poster
-        public void changeMovie()
-        {
-            if (File.Exists("movieInfo.xml"))
-            {
-                int iter = 0;
-                XDocument movie = XDocument.Load("movieInfo.xml");
-                var movInfo = from m in movie.Descendants("Movie")
-                select new
-                {
-                   pos = m.Element("Poster").Value,
-                };
-
-                foreach (var m in movInfo)
-                {
-                    switch (iter)
-                    {
-                        case 0:
-                            NRPoster1.ImageLocation = m.pos;
-                            NRPoster1.Visible = true;
-                            break;
-                        case 1:
-                            NRPoster2.ImageLocation = m.pos;
-                            NRPoster2.Visible = true;
-                            break;
-                        case 2:
-                            NRPoster3.ImageLocation = m.pos;
-                            break;
-                    }
-                    iter++;
-                }
-            }
-        }
 
         //Make posters visible only when added by admin
         public void checkVisPos(PictureBox pos)
@@ -1292,9 +1326,144 @@ namespace MovieTheater
             posterPathtxt.Text = loc;
         }
 
+        public void showMovieInfo()
+        {
+            movieSeattxt.Text = MDTitleLabel.Text;
+            lengthSeattxt.Text = MDLengthLabel.Text;
+        }
+
         private void showtime1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime1.Text;
+        }
+
+        private void showtime2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime2.Text;
+        }
+
+        private void showtime3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime3.Text;
+        }
+
+        private void showtime4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime4.Text;
+        }
+
+        private void showtime5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime5.Text;
+        }
+
+        private void showtime6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime6.Text;
+        }
+
+        private void showtime7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime7.Text;
+        }
+
+        private void showtime8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime8.Text;
+        }
+
+        private void showtime9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime9.Text;
+        }
+
+
+
+        private void moreShowingsbtn_Click(object sender, EventArgs e)
+        {
+            switch (showtimes)
+            {
+                case 1:
+                    {
+                        showtimes++;
+                        break;
+                    }
+                case 2:
+                    {
+                        st2lbl.Visible = true;
+                        st2txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 3:
+                    {
+                        st3lbl.Visible = true;
+                        st3txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 4:
+                    {
+                        st4lbl.Visible = true;
+                        st4txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 5:
+                    {
+                        st5lbl.Visible = true;
+                        st5txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 6:
+                    {
+                        st6lbl.Visible = true;
+                        st6txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 7:
+                    {
+                        st7lbl.Visible = true;
+                        st7txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 8:
+                    {
+                        st8lbl.Visible = true;
+                        st8txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 9:
+                    {
+                        st9lbl.Visible = true;
+                        st9txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+            }
+
         }
         //-----------------------------------------------------------------------------------------------------
     }
