@@ -107,7 +107,7 @@
             this.showtime3 = new System.Windows.Forms.LinkLabel();
             this.showtime2 = new System.Windows.Forms.LinkLabel();
             this.showtime1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.mainShowtimelbl = new System.Windows.Forms.Label();
             this.MDSSynopsis = new System.Windows.Forms.Label();
             this.MDSynopsisLabel = new System.Windows.Forms.Label();
             this.MDDirectorLabel = new System.Windows.Forms.Label();
@@ -166,6 +166,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.Seating = new System.Windows.Forms.TabPage();
+            this.ShowtimeSeattxt = new System.Windows.Forms.Label();
+            this.lengthSeattxt = new System.Windows.Forms.Label();
+            this.movieSeattxt = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Purchase = new System.Windows.Forms.TabPage();
@@ -214,6 +220,15 @@
             this.label23 = new System.Windows.Forms.Label();
             this.ContactUsTab = new System.Windows.Forms.TabPage();
             this.AdminTab = new System.Windows.Forms.TabPage();
+            this.st9lbl = new System.Windows.Forms.Label();
+            this.st8lbl = new System.Windows.Forms.Label();
+            this.st7lbl = new System.Windows.Forms.Label();
+            this.st6lbl = new System.Windows.Forms.Label();
+            this.st5lbl = new System.Windows.Forms.Label();
+            this.st4lbl = new System.Windows.Forms.Label();
+            this.st3lbl = new System.Windows.Forms.Label();
+            this.st2lbl = new System.Windows.Forms.Label();
+            this.moreShowingsbtn = new System.Windows.Forms.Button();
             this.st9txt = new System.Windows.Forms.TextBox();
             this.st8txt = new System.Windows.Forms.TextBox();
             this.st7txt = new System.Windows.Forms.TextBox();
@@ -249,26 +264,17 @@
             this.RatingBox = new System.Windows.Forms.ComboBox();
             this.AddBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AdminCtrl = new System.Windows.Forms.TabPage();
+            this.adminRemove = new System.Windows.Forms.Button();
+            this.adminEdit = new System.Windows.Forms.Button();
+            this.adminAdd = new System.Windows.Forms.Button();
+            this.adminctrllbl = new System.Windows.Forms.Label();
             this.contactUsBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.moreShowingsbtn = new System.Windows.Forms.Button();
-            this.st2lbl = new System.Windows.Forms.Label();
-            this.st3lbl = new System.Windows.Forms.Label();
-            this.st4lbl = new System.Windows.Forms.Label();
-            this.st5lbl = new System.Windows.Forms.Label();
-            this.st6lbl = new System.Windows.Forms.Label();
-            this.st7lbl = new System.Windows.Forms.Label();
-            this.st8lbl = new System.Windows.Forms.Label();
-            this.st9lbl = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.movieSeattxt = new System.Windows.Forms.Label();
-            this.lengthSeattxt = new System.Windows.Forms.Label();
-            this.ShowtimeSeattxt = new System.Windows.Forms.Label();
+            this.editMovielbl = new System.Windows.Forms.Label();
             pictureBox9 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -321,6 +327,7 @@
             this.Ticket.SuspendLayout();
             this.AdminTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.AdminCtrl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
@@ -361,7 +368,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-12, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-13, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -471,6 +478,7 @@
             this.BodyTabControl.Controls.Add(this.Ticket);
             this.BodyTabControl.Controls.Add(this.ContactUsTab);
             this.BodyTabControl.Controls.Add(this.AdminTab);
+            this.BodyTabControl.Controls.Add(this.AdminCtrl);
             this.BodyTabControl.Location = new System.Drawing.Point(-4, 218);
             this.BodyTabControl.Name = "BodyTabControl";
             this.BodyTabControl.SelectedIndex = 0;
@@ -480,6 +488,7 @@
             // HomeTab
             // 
             this.HomeTab.BackColor = System.Drawing.Color.Silver;
+            this.HomeTab.Controls.Add(this.editMovielbl);
             this.HomeTab.Controls.Add(this.pictureBox6);
             this.HomeTab.Controls.Add(this.NSReleaseDateLabel10);
             this.HomeTab.Controls.Add(this.NSReleaseDateLabel9);
@@ -1210,7 +1219,7 @@
             this.MovieDetailsTab.Controls.Add(this.showtime3);
             this.MovieDetailsTab.Controls.Add(this.showtime2);
             this.MovieDetailsTab.Controls.Add(this.showtime1);
-            this.MovieDetailsTab.Controls.Add(this.label1);
+            this.MovieDetailsTab.Controls.Add(this.mainShowtimelbl);
             this.MovieDetailsTab.Controls.Add(this.MDSSynopsis);
             this.MovieDetailsTab.Controls.Add(this.MDSynopsisLabel);
             this.MovieDetailsTab.Controls.Add(this.MDDirectorLabel);
@@ -1344,15 +1353,15 @@
             this.showtime1.Text = "showtime1";
             this.showtime1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime1_LinkClicked);
             // 
-            // label1
+            // mainShowtimelbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(413, 441);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 25);
-            this.label1.TabIndex = 88;
-            this.label1.Text = "Showtimes";
+            this.mainShowtimelbl.AutoSize = true;
+            this.mainShowtimelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainShowtimelbl.Location = new System.Drawing.Point(413, 441);
+            this.mainShowtimelbl.Name = "mainShowtimelbl";
+            this.mainShowtimelbl.Size = new System.Drawing.Size(116, 25);
+            this.mainShowtimelbl.TabIndex = 88;
+            this.mainShowtimelbl.Text = "Showtimes";
             // 
             // MDSSynopsis
             // 
@@ -1945,6 +1954,67 @@
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
             // 
+            // ShowtimeSeattxt
+            // 
+            this.ShowtimeSeattxt.AutoSize = true;
+            this.ShowtimeSeattxt.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowtimeSeattxt.Location = new System.Drawing.Point(121, 158);
+            this.ShowtimeSeattxt.Name = "ShowtimeSeattxt";
+            this.ShowtimeSeattxt.Size = new System.Drawing.Size(53, 18);
+            this.ShowtimeSeattxt.TabIndex = 7;
+            this.ShowtimeSeattxt.Text = "label71";
+            // 
+            // lengthSeattxt
+            // 
+            this.lengthSeattxt.AutoSize = true;
+            this.lengthSeattxt.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lengthSeattxt.Location = new System.Drawing.Point(106, 121);
+            this.lengthSeattxt.Name = "lengthSeattxt";
+            this.lengthSeattxt.Size = new System.Drawing.Size(53, 18);
+            this.lengthSeattxt.TabIndex = 6;
+            this.lengthSeattxt.Text = "label70";
+            // 
+            // movieSeattxt
+            // 
+            this.movieSeattxt.AutoSize = true;
+            this.movieSeattxt.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movieSeattxt.Location = new System.Drawing.Point(108, 85);
+            this.movieSeattxt.Name = "movieSeattxt";
+            this.movieSeattxt.Size = new System.Drawing.Size(53, 18);
+            this.movieSeattxt.TabIndex = 5;
+            this.movieSeattxt.Text = "label69";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(32, 158);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(83, 20);
+            this.label68.TabIndex = 4;
+            this.label68.Text = "Showtime:";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(32, 120);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(63, 20);
+            this.label67.TabIndex = 3;
+            this.label67.Text = "Length:";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label66.Location = new System.Drawing.Point(32, 85);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(54, 20);
+            this.label66.TabIndex = 2;
+            this.label66.Text = "Movie:";
+            // 
             // label48
             // 
             this.label48.AutoSize = true;
@@ -2526,6 +2596,96 @@
             this.AdminTab.Text = "Admin";
             this.AdminTab.UseVisualStyleBackColor = true;
             // 
+            // st9lbl
+            // 
+            this.st9lbl.AutoSize = true;
+            this.st9lbl.Location = new System.Drawing.Point(563, 309);
+            this.st9lbl.Name = "st9lbl";
+            this.st9lbl.Size = new System.Drawing.Size(62, 13);
+            this.st9lbl.TabIndex = 115;
+            this.st9lbl.Text = "Showtime 9";
+            this.st9lbl.Visible = false;
+            // 
+            // st8lbl
+            // 
+            this.st8lbl.AutoSize = true;
+            this.st8lbl.Location = new System.Drawing.Point(563, 283);
+            this.st8lbl.Name = "st8lbl";
+            this.st8lbl.Size = new System.Drawing.Size(62, 13);
+            this.st8lbl.TabIndex = 114;
+            this.st8lbl.Text = "Showtime 8";
+            this.st8lbl.Visible = false;
+            // 
+            // st7lbl
+            // 
+            this.st7lbl.AutoSize = true;
+            this.st7lbl.Location = new System.Drawing.Point(563, 257);
+            this.st7lbl.Name = "st7lbl";
+            this.st7lbl.Size = new System.Drawing.Size(62, 13);
+            this.st7lbl.TabIndex = 113;
+            this.st7lbl.Text = "Showtime 7";
+            this.st7lbl.Visible = false;
+            // 
+            // st6lbl
+            // 
+            this.st6lbl.AutoSize = true;
+            this.st6lbl.Location = new System.Drawing.Point(563, 232);
+            this.st6lbl.Name = "st6lbl";
+            this.st6lbl.Size = new System.Drawing.Size(62, 13);
+            this.st6lbl.TabIndex = 112;
+            this.st6lbl.Text = "Showtime 6";
+            this.st6lbl.Visible = false;
+            // 
+            // st5lbl
+            // 
+            this.st5lbl.AutoSize = true;
+            this.st5lbl.Location = new System.Drawing.Point(563, 205);
+            this.st5lbl.Name = "st5lbl";
+            this.st5lbl.Size = new System.Drawing.Size(62, 13);
+            this.st5lbl.TabIndex = 111;
+            this.st5lbl.Text = "Showtime 5";
+            this.st5lbl.Visible = false;
+            // 
+            // st4lbl
+            // 
+            this.st4lbl.AutoSize = true;
+            this.st4lbl.Location = new System.Drawing.Point(563, 179);
+            this.st4lbl.Name = "st4lbl";
+            this.st4lbl.Size = new System.Drawing.Size(62, 13);
+            this.st4lbl.TabIndex = 110;
+            this.st4lbl.Text = "Showtime 4";
+            this.st4lbl.Visible = false;
+            // 
+            // st3lbl
+            // 
+            this.st3lbl.AutoSize = true;
+            this.st3lbl.Location = new System.Drawing.Point(563, 153);
+            this.st3lbl.Name = "st3lbl";
+            this.st3lbl.Size = new System.Drawing.Size(62, 13);
+            this.st3lbl.TabIndex = 109;
+            this.st3lbl.Text = "Showtime 3";
+            this.st3lbl.Visible = false;
+            // 
+            // st2lbl
+            // 
+            this.st2lbl.AutoSize = true;
+            this.st2lbl.Location = new System.Drawing.Point(563, 127);
+            this.st2lbl.Name = "st2lbl";
+            this.st2lbl.Size = new System.Drawing.Size(62, 13);
+            this.st2lbl.TabIndex = 108;
+            this.st2lbl.Text = "Showtime 2";
+            this.st2lbl.Visible = false;
+            // 
+            // moreShowingsbtn
+            // 
+            this.moreShowingsbtn.Location = new System.Drawing.Point(651, 335);
+            this.moreShowingsbtn.Name = "moreShowingsbtn";
+            this.moreShowingsbtn.Size = new System.Drawing.Size(114, 45);
+            this.moreShowingsbtn.TabIndex = 107;
+            this.moreShowingsbtn.Text = "Add Another Showtime";
+            this.moreShowingsbtn.UseVisualStyleBackColor = true;
+            this.moreShowingsbtn.Click += new System.EventHandler(this.moreShowingsbtn_Click);
+            // 
             // st9txt
             // 
             this.st9txt.Location = new System.Drawing.Point(658, 309);
@@ -2786,7 +2946,24 @@
             // 
             this.GenreBox.FormattingEnabled = true;
             this.GenreBox.Items.AddRange(new object[] {
-            "Adventure"});
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Crime",
+            "Documentary",
+            "Drama",
+            "Family",
+            "Fantasy",
+            "History",
+            "Horror",
+            "Musical",
+            "Mystery",
+            "Romance",
+            "Sci-Fi",
+            "Sport",
+            "Thriller",
+            "War",
+            "Western"});
             this.GenreBox.Location = new System.Drawing.Point(112, 224);
             this.GenreBox.Name = "GenreBox";
             this.GenreBox.Size = new System.Drawing.Size(121, 21);
@@ -2827,6 +3004,62 @@
             this.pictureBox1.Size = new System.Drawing.Size(964, 773);
             this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
+            // 
+            // AdminCtrl
+            // 
+            this.AdminCtrl.BackColor = System.Drawing.Color.Silver;
+            this.AdminCtrl.Controls.Add(this.adminRemove);
+            this.AdminCtrl.Controls.Add(this.adminEdit);
+            this.AdminCtrl.Controls.Add(this.adminAdd);
+            this.AdminCtrl.Controls.Add(this.adminctrllbl);
+            this.AdminCtrl.Location = new System.Drawing.Point(4, 22);
+            this.AdminCtrl.Name = "AdminCtrl";
+            this.AdminCtrl.Padding = new System.Windows.Forms.Padding(3);
+            this.AdminCtrl.Size = new System.Drawing.Size(960, 773);
+            this.AdminCtrl.TabIndex = 11;
+            this.AdminCtrl.Text = "AdminCntrl";
+            // 
+            // adminRemove
+            // 
+            this.adminRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminRemove.Location = new System.Drawing.Point(383, 283);
+            this.adminRemove.Name = "adminRemove";
+            this.adminRemove.Size = new System.Drawing.Size(189, 40);
+            this.adminRemove.TabIndex = 3;
+            this.adminRemove.Text = "Remove a Movie";
+            this.adminRemove.UseVisualStyleBackColor = true;
+            // 
+            // adminEdit
+            // 
+            this.adminEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminEdit.Location = new System.Drawing.Point(383, 187);
+            this.adminEdit.Name = "adminEdit";
+            this.adminEdit.Size = new System.Drawing.Size(189, 41);
+            this.adminEdit.TabIndex = 2;
+            this.adminEdit.Text = "Edit a Movie";
+            this.adminEdit.UseVisualStyleBackColor = true;
+            this.adminEdit.Click += new System.EventHandler(this.adminEdit_Click);
+            // 
+            // adminAdd
+            // 
+            this.adminAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAdd.Location = new System.Drawing.Point(383, 104);
+            this.adminAdd.Name = "adminAdd";
+            this.adminAdd.Size = new System.Drawing.Size(189, 37);
+            this.adminAdd.TabIndex = 1;
+            this.adminAdd.Text = "Add a Movie";
+            this.adminAdd.UseVisualStyleBackColor = true;
+            this.adminAdd.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // adminctrllbl
+            // 
+            this.adminctrllbl.AutoSize = true;
+            this.adminctrllbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminctrllbl.Location = new System.Drawing.Point(366, 40);
+            this.adminctrllbl.Name = "adminctrllbl";
+            this.adminctrllbl.Size = new System.Drawing.Size(224, 25);
+            this.adminctrllbl.TabIndex = 0;
+            this.adminctrllbl.Text = "Administrator Controls";
             // 
             // contactUsBtn
             // 
@@ -2876,156 +3109,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // moreShowingsbtn
+            // editMovielbl
             // 
-            this.moreShowingsbtn.Location = new System.Drawing.Point(651, 335);
-            this.moreShowingsbtn.Name = "moreShowingsbtn";
-            this.moreShowingsbtn.Size = new System.Drawing.Size(114, 45);
-            this.moreShowingsbtn.TabIndex = 107;
-            this.moreShowingsbtn.Text = "Add Another Showtime";
-            this.moreShowingsbtn.UseVisualStyleBackColor = true;
-            this.moreShowingsbtn.Click += new System.EventHandler(this.moreShowingsbtn_Click);
-            // 
-            // st2lbl
-            // 
-            this.st2lbl.AutoSize = true;
-            this.st2lbl.Location = new System.Drawing.Point(563, 127);
-            this.st2lbl.Name = "st2lbl";
-            this.st2lbl.Size = new System.Drawing.Size(62, 13);
-            this.st2lbl.TabIndex = 108;
-            this.st2lbl.Text = "Showtime 2";
-            this.st2lbl.Visible = false;
-            // 
-            // st3lbl
-            // 
-            this.st3lbl.AutoSize = true;
-            this.st3lbl.Location = new System.Drawing.Point(563, 153);
-            this.st3lbl.Name = "st3lbl";
-            this.st3lbl.Size = new System.Drawing.Size(62, 13);
-            this.st3lbl.TabIndex = 109;
-            this.st3lbl.Text = "Showtime 3";
-            this.st3lbl.Visible = false;
-            // 
-            // st4lbl
-            // 
-            this.st4lbl.AutoSize = true;
-            this.st4lbl.Location = new System.Drawing.Point(563, 179);
-            this.st4lbl.Name = "st4lbl";
-            this.st4lbl.Size = new System.Drawing.Size(62, 13);
-            this.st4lbl.TabIndex = 110;
-            this.st4lbl.Text = "Showtime 4";
-            this.st4lbl.Visible = false;
-            // 
-            // st5lbl
-            // 
-            this.st5lbl.AutoSize = true;
-            this.st5lbl.Location = new System.Drawing.Point(563, 205);
-            this.st5lbl.Name = "st5lbl";
-            this.st5lbl.Size = new System.Drawing.Size(62, 13);
-            this.st5lbl.TabIndex = 111;
-            this.st5lbl.Text = "Showtime 5";
-            this.st5lbl.Visible = false;
-            // 
-            // st6lbl
-            // 
-            this.st6lbl.AutoSize = true;
-            this.st6lbl.Location = new System.Drawing.Point(563, 232);
-            this.st6lbl.Name = "st6lbl";
-            this.st6lbl.Size = new System.Drawing.Size(62, 13);
-            this.st6lbl.TabIndex = 112;
-            this.st6lbl.Text = "Showtime 6";
-            this.st6lbl.Visible = false;
-            // 
-            // st7lbl
-            // 
-            this.st7lbl.AutoSize = true;
-            this.st7lbl.Location = new System.Drawing.Point(563, 257);
-            this.st7lbl.Name = "st7lbl";
-            this.st7lbl.Size = new System.Drawing.Size(62, 13);
-            this.st7lbl.TabIndex = 113;
-            this.st7lbl.Text = "Showtime 7";
-            this.st7lbl.Visible = false;
-            // 
-            // st8lbl
-            // 
-            this.st8lbl.AutoSize = true;
-            this.st8lbl.Location = new System.Drawing.Point(563, 283);
-            this.st8lbl.Name = "st8lbl";
-            this.st8lbl.Size = new System.Drawing.Size(62, 13);
-            this.st8lbl.TabIndex = 114;
-            this.st8lbl.Text = "Showtime 8";
-            this.st8lbl.Visible = false;
-            // 
-            // st9lbl
-            // 
-            this.st9lbl.AutoSize = true;
-            this.st9lbl.Location = new System.Drawing.Point(563, 309);
-            this.st9lbl.Name = "st9lbl";
-            this.st9lbl.Size = new System.Drawing.Size(62, 13);
-            this.st9lbl.TabIndex = 115;
-            this.st9lbl.Text = "Showtime 9";
-            this.st9lbl.Visible = false;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label66.Location = new System.Drawing.Point(32, 85);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(54, 20);
-            this.label66.TabIndex = 2;
-            this.label66.Text = "Movie:";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(32, 120);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(63, 20);
-            this.label67.TabIndex = 3;
-            this.label67.Text = "Length:";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(32, 158);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(83, 20);
-            this.label68.TabIndex = 4;
-            this.label68.Text = "Showtime:";
-            // 
-            // movieSeattxt
-            // 
-            this.movieSeattxt.AutoSize = true;
-            this.movieSeattxt.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movieSeattxt.Location = new System.Drawing.Point(108, 85);
-            this.movieSeattxt.Name = "movieSeattxt";
-            this.movieSeattxt.Size = new System.Drawing.Size(53, 18);
-            this.movieSeattxt.TabIndex = 5;
-            this.movieSeattxt.Text = "label69";
-            // 
-            // lengthSeattxt
-            // 
-            this.lengthSeattxt.AutoSize = true;
-            this.lengthSeattxt.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lengthSeattxt.Location = new System.Drawing.Point(106, 121);
-            this.lengthSeattxt.Name = "lengthSeattxt";
-            this.lengthSeattxt.Size = new System.Drawing.Size(53, 18);
-            this.lengthSeattxt.TabIndex = 6;
-            this.lengthSeattxt.Text = "label70";
-            // 
-            // ShowtimeSeattxt
-            // 
-            this.ShowtimeSeattxt.AutoSize = true;
-            this.ShowtimeSeattxt.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowtimeSeattxt.Location = new System.Drawing.Point(121, 158);
-            this.ShowtimeSeattxt.Name = "ShowtimeSeattxt";
-            this.ShowtimeSeattxt.Size = new System.Drawing.Size(53, 18);
-            this.ShowtimeSeattxt.TabIndex = 7;
-            this.ShowtimeSeattxt.Text = "label71";
+            this.editMovielbl.AutoSize = true;
+            this.editMovielbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editMovielbl.Location = new System.Drawing.Point(445, 16);
+            this.editMovielbl.Name = "editMovielbl";
+            this.editMovielbl.Size = new System.Drawing.Size(162, 20);
+            this.editMovielbl.TabIndex = 118;
+            this.editMovielbl.Text = "Select a Movie to Edit";
+            this.editMovielbl.Visible = false;
             // 
             // homepage
             // 
@@ -3050,6 +3143,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.BodyTabControl.ResumeLayout(false);
             this.HomeTab.ResumeLayout(false);
+            this.HomeTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster9)).EndInit();
@@ -3095,6 +3189,8 @@
             this.AdminTab.ResumeLayout(false);
             this.AdminTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.AdminCtrl.ResumeLayout(false);
+            this.AdminCtrl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
@@ -3304,7 +3400,7 @@
         private System.Windows.Forms.Label MDSSynopsis;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox posterPathtxt;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label mainShowtimelbl;
         private System.Windows.Forms.LinkLabel showtime9;
         private System.Windows.Forms.LinkLabel showtime8;
         private System.Windows.Forms.LinkLabel showtime7;
@@ -3341,6 +3437,12 @@
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.TabPage AdminCtrl;
+        private System.Windows.Forms.Button adminRemove;
+        private System.Windows.Forms.Button adminEdit;
+        private System.Windows.Forms.Button adminAdd;
+        private System.Windows.Forms.Label adminctrllbl;
+        private System.Windows.Forms.Label editMovielbl;
 
     }
 }
