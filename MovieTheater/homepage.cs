@@ -1534,6 +1534,356 @@ namespace MovieTheater
         {
             selected_Seats(a2, 1);
         }
+
+        private void a3_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a3, 2);
+        }
+
+        private void a4_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a4, 3);
+        }
+
+        private void a5_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a5, 4);
+        }
+
+        private void a6_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a6, 5);
+        }
+
+        private void a7_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a7, 6);
+        }
+
+        private void a8_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a8, 7);
+        }
+
+        private void b1_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b1, 8);
+        }
+
+        private void b2_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b2, 9);
+        }
+
+        private void b3_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b3, 10);
+        }
+
+        private void b4_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b4, 11);
+        }
+
+        private void b5_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b5, 12);
+        }
+
+        private void b6_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b6, 13);
+        }
+
+        private void b7_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b7, 14);
+        }
+
+        private void b8_Click(object sender, EventArgs e)
+        {
+            selected_Seats(b8, 15);
+        }
+        
+        private void c1_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c1, 16);
+        }
+        private void c2_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c2, 17);
+        }
+
+        private void c3_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c3, 18);
+        }
+
+        private void c4_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c4, 19);
+        }
+
+        private void c5_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c5, 20);
+        }
+
+        private void c6_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c6, 21);
+        }
+
+        private void c7_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c7, 22);
+        }
+
+        private void c8_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c8, 23);
+        }
+
+        private void c9_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c9, 24);
+        }
+
+        private void c10_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c10, 25);
+        }
+
+        private void c11_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c11, 26);
+        }
+
+        private void c12_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c12, 27);
+        }
+
+        private void c13_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c13, 28);
+        }
+
+        private void c14_Click(object sender, EventArgs e)
+        {
+            selected_Seats(c14, 29);
+        }
+
+        private void d1_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d1, 30);
+        }
+
+        private void d2_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d2, 31);
+        }
+
+        private void d3_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d3, 32);
+        }
+
+        private void d4_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d4, 33);
+        }
+
+        private void d5_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d5, 34);
+        }
+
+        private void d6_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d6, 35);
+        }
+
+        private void d7_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d7, 36);
+        }
+
+        private void d8_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d8, 37);
+        }
+
+        private void d9_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d9, 38);
+        }
+
+        private void d10_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d10, 39);
+        }
+
+        private void d11_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d11, 40);
+        }
+
+        private void d12_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d12, 41);
+        }
+
+        private void d13_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d13, 42);
+        }
+
+        private void d14_Click(object sender, EventArgs e)
+        {
+            selected_Seats(d14, 43);
+        }
+
+        private void e1_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e1, 44);
+        }
+
+        private void e2_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e2, 45);
+        }
+
+        private void e3_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e3, 46);
+        }
+
+        private void e4_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e4, 47);
+        }
+
+        private void e5_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e5, 48);
+        }
+
+        private void e6_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e6, 49);
+        }
+
+        private void e7_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e7, 50);
+        }
+
+        private void e8_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e8, 51);
+        }
+
+        private void e9_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e9, 52);
+        }
+
+        private void e10_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e10, 53);
+        }
+
+        private void e11_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e11, 54);
+        }
+
+        private void e12_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e12, 55);
+        }
+
+        private void e13_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e13, 56);
+        }
+
+        private void e14_Click(object sender, EventArgs e)
+        {
+            selected_Seats(e14, 57);
+        }
+
+        private void f1_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f1, 58);
+        }
+
+        private void f2_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f2, 59);
+        }
+
+        private void f3_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f3, 60);
+        }
+
+        private void f4_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f4, 61);
+        }
+
+        private void f5_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f5, 62);
+        }
+
+        private void f6_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f6, 63);
+        }
+
+        private void f7_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f7, 64);
+        }
+
+        private void f8_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f8, 65);
+        }
+
+        private void f9_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f9, 66);
+        }
+
+        private void f10_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f10, 67);
+        }
+
+        private void f11_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f11, 68);
+        }
+
+        private void f12_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f12, 69);
+        }
+
+        private void f13_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f13, 70);
+        }
+
+        private void f14_Click(object sender, EventArgs e)
+        {
+            selected_Seats(f14, 71);
+        }
+
         //-----------------------------------------------------------------------------------------------------
     }
 }
