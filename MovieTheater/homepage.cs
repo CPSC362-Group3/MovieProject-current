@@ -22,6 +22,7 @@ namespace MovieTheater
         int currentInd = 0;
 
         int showtimes = 2;
+        int[] track = new int[72];
 
         string MoviesPath = "../../xml/Movies.xml";
         XmlDocument MoviesDocument = new XmlDocument();
@@ -1506,6 +1507,32 @@ namespace MovieTheater
             AddBtn.Text = "Update Info";
             resetShowtimes();
             BodyTabControl.SelectedTab = HomeTab;
+        }
+
+        private void selected_Seats(Button select, int i)
+        {
+            if (track[i] % 2 == 0)
+            {
+                select.BackColor = Color.Yellow;
+                selectedSeatstxt.AppendText(select.Name + "\n");
+            }
+            else
+            {
+                select.BackColor = SystemColors.Control;
+                selectedSeatstxt.Lines = selectedSeatstxt.Lines.Where(line => !line.Contains(select.Name)).ToArray();
+            }
+
+            track[i]++;
+        }
+
+        private void a1_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a1, 0);
+        }
+
+        private void a2_Click(object sender, EventArgs e)
+        {
+            selected_Seats(a2, 1);
         }
         //-----------------------------------------------------------------------------------------------------
     }
