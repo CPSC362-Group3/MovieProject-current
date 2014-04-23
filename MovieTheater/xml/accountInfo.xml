@@ -1,53 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Account Info-->
 <Accounts>
-  <Account First_Name="chris" Last_Name="gilbert">
-    <Address>123 ave</Address>
-    <City>asd</City>
-    <State>ca</State>
-    <Username>adsd</Username>
-    <Password>aqsd</Password>
+  <Account First_Name="Dan" Last_Name="Dan">
+    <Address>123 Cherry Ave</Address>
+    <City>Chino</City>
+    <State>CA</State>
+    <Username>Admin</Username>
+    <Password>password</Password>
   </Account>
-  <Account First_Name="chris" Last_Name="gilbert">
-    <Address>123 ave</Address>
-    <City>asd</City>
-    <State>ca</State>
-    <Username>adsd</Username>
-    <Password>aqsd</Password>
-  </Account>
-  <Account First_Name="chris" Last_Name="gilbert">
-    <Address>123 ave</Address>
-    <City>asd</City>
-    <State>ca</State>
-    <Username>adsd</Username>
-    <Password>aqsd</Password>
-  </Account>
-  <Account First_Name="chris" Last_Name="gilbert">
-    <Address>123 ave</Address>
-    <City>asd</City>
-    <State>ca</State>
-    <Username>adsd</Username>
-    <Password>aqsd</Password>
-  </Account>
-  <Account First_Name="chri" Last_Name="gilbert">
-    <Address>123 ave</Address>
-    <City>asd</City>
-    <State>ca</State>
-    <Username>adsd</Username>
-    <Password>aqsd</Password>
-  </Account>
-  <Account First_Name="chri" Last_Name="gilbert">
-    <Address>123 ave</Address>
-    <City>asd</City>
-    <State>ca</State>
-    <Username>adsd</Username>
-    <Password>aqsd</Password>
-  </Account>
-  <Account First_Name="asd" Last_Name="asd">
-    <Address>asd</Address>
-    <City>asd</City>
-    <State>asd</State>
-    <Username>asd</Username>
-    <Password>asd</Password>
+  <Account First_Name="Nick" Last_Name="Diller">
+    <Address>12213 Smith Street</Address>
+    <City>Chino</City>
+    <State>CA</State>
+    <Username>redwedding</Username>
+    <Password>gameofthrones</Password>
   </Account>
 </Accounts>

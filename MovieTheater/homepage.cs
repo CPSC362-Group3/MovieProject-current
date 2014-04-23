@@ -16,16 +16,21 @@ namespace MovieTheater
 {
     public partial class homepage : Form
     {
+        //Boolean Flags
         bool adminLogged = false;
         bool logged = false;
         bool editInfo = false;
+        
+        //Int counters
         int currentInd = 0;
-
         int showtimes = 2;
         int[] track = new int[72];
 
+        //String file paths, xml related
         string MoviesPath = "../../xml/Movies.xml";
+        string AccountsPath = "../../xml/accountInfo.xml";
         XmlDocument MoviesDocument = new XmlDocument();
+
         private TabPage PrintTix;
 
         public homepage()
@@ -92,8 +97,9 @@ namespace MovieTheater
             updateHomePage();
 
         }
-
-        // GLOBAL FUNCTIONS ---------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
+// GLOBAL FUNCTIONS, Main button controls ///////////////////////////////////////////////////////////////////////////////
+//------------------------------------------------------------------------------------------------------------------------
 
         // get movie title from a label with a rating on it. utility function.
         public string GetMovieTitle(string title)
@@ -184,119 +190,10 @@ namespace MovieTheater
             contactUsBtn.Image = new Bitmap("../../Resources/contactus_button.jpg");
         }
 
-        private void updateMI()
-        {
-            if (editInfo == true)
-                BodyTabControl.SelectedTab = AdminTab;
-            else
-                BodyTabControl.SelectedTab = MovieDetailsTab;
 
-            MoviesDocument.Load(MoviesPath);
-
-            XmlNodeList TitleElemList = MoviesDocument.GetElementsByTagName("Title");
-
-            for (int i = 0; i < TitleElemList.Count; i++)
-            {
-                if (TitleBox.Text == TitleElemList[i].InnerText)
-                {
-                    currentInd = i;
-                    break;
-                }
-            }
-        }
-
-        /* Poster Clicks */
-        private void NRPoster1_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel1.Text));
-            updateMI();
-        }
-
-        private void NRPoster2_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel2.Text));
-            updateMI();
-        }
-
-        private void NRPoster3_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel3.Text));
-            updateMI();
-        }
-
-        private void NRPoster4_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel4.Text));
-            updateMI();
-        }
-
-        private void NRPoster5_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel5.Text));
-            updateMI();
-        }
-
-        private void NSPoster1_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel1.Text));
-            updateMI();
-        }
-
-        private void NSPoster2_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel2.Text));
-            updateMI();
-        }
-
-        private void NSPoster3_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel3.Text));
-            updateMI();
-        }
-
-        private void NSPoster4_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel4.Text));
-            updateMI();
-        }
-
-        private void NSPoster5_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel5.Text));
-            updateMI();
-        }
-
-        private void NSPoster6_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel6.Text));
-            updateMI();
-        }
-
-        private void NSPoster7_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel7.Text));
-            updateMI();
-        }
-
-        private void NSPoster8_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel8.Text));
-            updateMI();
-        }
-
-        private void NSPoster9_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel9.Text));
-            updateMI();
-        }
-
-        private void NSPoster10_Click(object sender, EventArgs e)
-        {
-            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel10.Text));
-            updateMI();
-        }
-        // --------------------------------------------------------------------
-        // HOME TAB -----------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
+//Update and refresh movie info////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------------------------------
 
         public void updateHomePage()
         {
@@ -758,11 +655,583 @@ namespace MovieTheater
                 NSPoster5.Visible = true;
                 NSPoster10.ImageLocation = PosterElemList[index].InnerText;
             }
-            // ----------------------------------------------------------------
+        }
+//---------------------------------------------------------------------------------------------------------------------------
+//Movie Details/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//--------------------------------------------------------------------------------------------------------------------------
+
+        public void updateMovieDetailsPage(string title)
+        {
+            int index = 0;
+            bool MovieIsValid = false;
+            // dont have to check if there is a movie file since you clicked on
+            // a movie poster to get here. load the movie xml file.
+            MoviesDocument.Load(MoviesPath);
+
+            XmlNodeList TitleElemList = MoviesDocument.GetElementsByTagName("Title");
+            XmlNodeList LengthElemList = MoviesDocument.GetElementsByTagName("Length");
+            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
+            XmlNodeList GenreElemList = MoviesDocument.GetElementsByTagName("Genre");
+            XmlNodeList ReleaseElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            XmlNodeList ActorsElemList = MoviesDocument.GetElementsByTagName("Actor");
+            XmlNodeList DirectorElemList = MoviesDocument.GetElementsByTagName("Director");
+            XmlNodeList SynopsisElemList = MoviesDocument.GetElementsByTagName("Synopsis");
+            XmlNodeList PosterPath = MoviesDocument.GetElementsByTagName("PosterPath");
+            XmlNodeList Showtime1 = MoviesDocument.GetElementsByTagName("Showtime1");
+            XmlNodeList Showtime2 = MoviesDocument.GetElementsByTagName("Showtime2");
+            XmlNodeList Showtime3 = MoviesDocument.GetElementsByTagName("Showtime3");
+            XmlNodeList Showtime4 = MoviesDocument.GetElementsByTagName("Showtime4");
+            XmlNodeList Showtime5 = MoviesDocument.GetElementsByTagName("Showtime5");
+            XmlNodeList Showtime6 = MoviesDocument.GetElementsByTagName("Showtime6");
+            XmlNodeList Showtime7 = MoviesDocument.GetElementsByTagName("Showtime7");
+            XmlNodeList Showtime8 = MoviesDocument.GetElementsByTagName("Showtime8");
+            XmlNodeList Showtime9 = MoviesDocument.GetElementsByTagName("Showtime9");
+
+
+
+            for (int i = 0; i < TitleElemList.Count; i++)
+            {
+                if (title == TitleElemList[i].InnerText)
+                {
+                    index = i;
+                    MovieIsValid = true;
+                    break;
+                }
+            }
+            if (MovieIsValid && editInfo == false)
+            {
+                MDTitleLabel.Text = title;
+                MDReleaseLabel.Text = ReleaseElemList[index].InnerText;
+                MDLengthLabel.Text = LengthElemList[index].InnerText;
+                MDRatingLabel.Text = RatingElemList[index].InnerText;
+                MDGenreLabel.Text = GenreElemList[index].InnerText;
+                MDActorsLabel.Text = ActorsElemList[index].InnerText;
+                MDDirectorLabel.Text = DirectorElemList[index].InnerText;
+                MDSynopsisLabel.Text = SynopsisElemList[index].InnerText;
+                MDBigPoster.ImageLocation = PosterPath[index].InnerText;
+                showtime1.Text = Showtime1[index].InnerText;
+                showtime2.Text = Showtime2[index].InnerText;
+                showtime3.Text = Showtime3[index].InnerText;
+                showtime4.Text = Showtime4[index].InnerText;
+                showtime5.Text = Showtime5[index].InnerText;
+                showtime6.Text = Showtime6[index].InnerText;
+                showtime7.Text = Showtime7[index].InnerText;
+                showtime8.Text = Showtime8[index].InnerText;
+                showtime9.Text = Showtime9[index].InnerText;
+            }
+            else if (editInfo == true)
+            {
+                TitleBox.Text = TitleElemList[index].InnerText;
+                LengthBox.Text = LengthElemList[index].InnerText;
+                SynopsisBox.Text = SynopsisElemList[index].InnerText;
+                GenreBox.Text = GenreElemList[index].InnerText;
+                RatingBox.Text = RatingElemList[index].InnerText;
+                ActorBox.Text = ActorsElemList[index].InnerText;
+                DirectorBox.Text = DirectorElemList[index].InnerText;
+                ReleaseDTPicker.Text = ReleaseElemList[index].InnerText;
+                posterPathtxt.Text = PosterPath[index].InnerText;
+                st1txt.Text = Showtime1[index].InnerText;
+                st2txt.Text = Showtime2[index].InnerText;
+                st3txt.Text = Showtime3[index].InnerText;
+                st4txt.Text = Showtime4[index].InnerText;
+                st5txt.Text = Showtime5[index].InnerText;
+                st6txt.Text = Showtime6[index].InnerText;
+                st7txt.Text = Showtime7[index].InnerText;
+                st8txt.Text = Showtime8[index].InnerText;
+                st9txt.Text = Showtime9[index].InnerText;
+            }
+            else
+            {
+                Console.WriteLine("Error in Movie Details. Cant find selected movie.");
+            }
+
         }
 
-        // --------------------------------------------------------------------
-        // ADMIN TAB ----------------------------------------------------------
+        private void updateMI()//Updates the movie info according to admin edits
+        {
+            if (editInfo == true)
+                BodyTabControl.SelectedTab = AdminTab;
+            else
+                BodyTabControl.SelectedTab = MovieDetailsTab;
+
+            MoviesDocument.Load(MoviesPath);
+
+            XmlNodeList TitleElemList = MoviesDocument.GetElementsByTagName("Title");
+
+            for (int i = 0; i < TitleElemList.Count; i++)
+            {
+                if (TitleBox.Text == TitleElemList[i].InnerText)
+                {
+                    currentInd = i;
+                    break;
+                }
+            }
+        }
+
+        /* Poster Clicks */
+        private void NRPoster1_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel1.Text));
+            updateMI();
+        }
+
+        private void NRPoster2_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel2.Text));
+            updateMI();
+        }
+
+        private void NRPoster3_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel3.Text));
+            updateMI();
+        }
+
+        private void NRPoster4_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel4.Text));
+            updateMI();
+        }
+
+        private void NRPoster5_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NRTitleLabel5.Text));
+            updateMI();
+        }
+
+        private void NSPoster1_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel1.Text));
+            updateMI();
+        }
+
+        private void NSPoster2_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel2.Text));
+            updateMI();
+        }
+
+        private void NSPoster3_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel3.Text));
+            updateMI();
+        }
+
+        private void NSPoster4_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel4.Text));
+            updateMI();
+        }
+
+        private void NSPoster5_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel5.Text));
+            updateMI();
+        }
+
+        private void NSPoster6_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel6.Text));
+            updateMI();
+        }
+
+        private void NSPoster7_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel7.Text));
+            updateMI();
+        }
+
+        private void NSPoster8_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel8.Text));
+            updateMI();
+        }
+
+        private void NSPoster9_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel9.Text));
+            updateMI();
+        }
+
+        private void NSPoster10_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(NSTitleLabel10.Text));
+            updateMI();
+        }
+//-------------------------------------------------------------------------------------------------------------------------
+//Create Account Page//////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
+        private void button3_Click(object sender, EventArgs e) //Next button
+        {
+            if ((string.IsNullOrEmpty(AddrTxt.Text)) || (string.IsNullOrEmpty(CityTxt.Text))
+                || (string.IsNullOrEmpty(StateTxt.Text)) || (string.IsNullOrEmpty(UserTxt.Text))
+                || (string.IsNullOrEmpty(passTxt.Text)) || (string.IsNullOrEmpty(lNameTxt.Text))
+                || (string.IsNullOrEmpty(fNameTxt.Text)))
+                MessageBox.Show("Required Fields Missing, please enter data.");
+
+            else
+            {
+                BodyTabControl.SelectedTab = PaymentInfoTab;
+            }
+
+        }
+
+        //Enter Payment information to finish create account. Page inaccessible unless previous account info filled.
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string PATH = "accountInfo.xml";
+            XmlDocument doc = new XmlDocument();
+
+            //If there is no current file, then create a new one
+            if (!System.IO.File.Exists(PATH))
+            {
+                //Create neccessary nodes
+                XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                XmlComment comment = doc.CreateComment("Account Info");
+                XmlElement root = doc.CreateElement("Accounts");
+                XmlElement acc = doc.CreateElement("Account");
+                XmlAttribute fName = doc.CreateAttribute("First_Name");
+                XmlAttribute lName = doc.CreateAttribute("Last_Name");
+                XmlElement address = doc.CreateElement("Address");
+                XmlElement city = doc.CreateElement("City");
+                XmlElement state = doc.CreateElement("State");
+
+                XmlElement username = doc.CreateElement("Username");
+                XmlElement password = doc.CreateElement("Password"); 
+
+                //Add the values for each nodes
+                fName.Value = fNameTxt.Text;
+                lName.Value = lNameTxt.Text;
+                address.InnerText = AddrTxt.Text;
+                city.InnerText = CityTxt.Text;
+                state.InnerText = StateTxt.Text;
+                username.InnerText = UserTxt.Text;
+                password.InnerText = passTxt.Text;
+
+                //Construct the document
+                doc.AppendChild(declaration);
+                doc.AppendChild(comment);
+                doc.AppendChild(root);
+                root.AppendChild(acc);
+                acc.Attributes.Append(fName);
+                acc.Attributes.Append(lName);
+                acc.AppendChild(address);
+                acc.AppendChild(city);
+                acc.AppendChild(state);
+                acc.AppendChild(username);
+                acc.AppendChild(password);
+
+                doc.Save(PATH);
+            }
+            else //If there is already a file
+            {
+                //Load the XML File
+                doc.Load(PATH);
+
+                //Get the root element
+                XmlElement root = doc.DocumentElement;
+
+                XmlElement acc = doc.CreateElement("Account");
+                XmlAttribute fName = doc.CreateAttribute("First_Name");
+                XmlAttribute lName = doc.CreateAttribute("Last_Name");
+                XmlElement address = doc.CreateElement("Address");
+                XmlElement city = doc.CreateElement("City");
+                XmlElement state = doc.CreateElement("State");
+
+                XmlElement username = doc.CreateElement("Username");
+                XmlElement password = doc.CreateElement("Password");
+
+                //Add the values for each nodes
+                fName.Value = fNameTxt.Text;
+                lName.Value = lNameTxt.Text;
+                address.InnerText = AddrTxt.Text;
+                city.InnerText = CityTxt.Text;
+                state.InnerText = StateTxt.Text;
+                username.InnerText = UserTxt.Text;
+                password.InnerText = passTxt.Text;
+
+                //Construct the Person element
+                acc.Attributes.Append(fName);
+                acc.Attributes.Append(lName);
+                acc.AppendChild(address);
+                acc.AppendChild(city);
+                acc.AppendChild(state);
+                acc.AppendChild(username);
+                acc.AppendChild(password);
+
+                //Add the New person element to the end of the root element
+                root.AppendChild(acc);
+
+                //Save the document
+                doc.Save(PATH);
+            }
+            MessageBox.Show("Successfully created account!");
+
+            BodyTabControl.SelectedTab = LoginTab; //Return to login screen
+
+        }
+
+        
+//-------------------------------------------------------------------------------------------------------------------------
+//Login Page///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
+        
+        private void label4_Click(object sender, EventArgs e) //Clicked Create Account label
+        {
+            BodyTabControl.SelectedTab = AccountTab;
+        }
+
+        //Log into system with a created account
+        private void button1_Click(object sender, EventArgs e) //Clicked Login Button
+        {
+            if (File.Exists(AccountsPath))
+            {
+                XDocument accounts = XDocument.Load(AccountsPath);
+                var accInfo = from acc in accounts.Descendants("Account")
+                select new
+                {
+                     Username = acc.Element("Username").Value,
+                     Password = acc.Element("Password").Value,
+                };
+                foreach (var acc in accInfo)
+                {
+                    if (usernameTxt.Text == acc.Username && passwordTxt.Text == acc.Password)
+                    {
+                        if (usernameTxt.Text == "Admin")
+                        {
+                            adminLogged = true;
+                        }
+                        MessageBox.Show("Successfully signed in!");
+                        logged = true;
+                        //logBtn.Text = "Log Out";
+                        BodyTabControl.SelectedTab = AdminCtrl;
+                        break;
+                    }
+                    else
+                        continue;
+                }
+                if (logged == false)
+                    MessageBox.Show("Incorrect username/password. Please try again.");
+            }
+            else
+                MessageBox.Show("Login in system temporarily unavailable, check back later.");
+        }
+//------------------------------------------------------------------------------------------------------------------------
+//Movie Info and Showtimes Page//////////////////////////////////////////////////////////////////////////////////////////
+//------------------------------------------------------------------------------------------------------------------------
+        public void showMovieInfo()
+        {
+            movieSeattxt.Text = MDTitleLabel.Text;
+            lengthSeattxt.Text = MDLengthLabel.Text;
+        }
+
+        private void showtime1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime1.Text;
+        }
+
+        private void showtime2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime2.Text;
+        }
+
+        private void showtime3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime3.Text;
+        }
+
+        private void showtime4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime4.Text;
+        }
+
+        private void showtime5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime5.Text;
+        }
+
+        private void showtime6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime6.Text;
+        }
+
+        private void showtime7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime7.Text;
+        }
+
+        private void showtime8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime8.Text;
+        }
+
+        private void showtime9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BodyTabControl.SelectedTab = Seating;
+            showMovieInfo();
+            ShowtimeSeattxt.Text = showtime9.Text;
+        }
+
+//--------------------------------------------------------------------------------------------------------------------------
+//Admin Controls////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//--------------------------------------------------------------------------------------------------------------------------
+//Provides admin ability to add more showtimes 1 at a time
+        private void moreShowingsbtn_Click(object sender, EventArgs e)
+        {
+            switch (showtimes)
+            {
+                case 2:
+                    {
+                        st2lbl.Visible = true;
+                        st2txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 3:
+                    {
+                        st3lbl.Visible = true;
+                        st3txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 4:
+                    {
+                        st4lbl.Visible = true;
+                        st4txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 5:
+                    {
+                        st5lbl.Visible = true;
+                        st5txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 6:
+                    {
+                        st6lbl.Visible = true;
+                        st6txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 7:
+                    {
+                        st7lbl.Visible = true;
+                        st7txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 8:
+                    {
+                        st8lbl.Visible = true;
+                        st8txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+                case 9:
+                    {
+                        st9lbl.Visible = true;
+                        st9txt.Visible = true;
+                        showtimes++;
+                        break;
+                    }
+            }
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            editInfo = false;
+            BodyTabControl.SelectedTab = AdminTab;
+        }
+
+        public void resetShowtimes()
+        {
+            showtimes = 1;
+
+            st1txt.Clear();
+            st2txt.Clear();
+            st3txt.Clear();
+            st4txt.Clear();
+            st5txt.Clear();
+            st6txt.Clear();
+            st7txt.Clear();
+            st8txt.Clear();
+            st9txt.Clear();
+
+            if (editInfo == false)
+            {
+                st2lbl.Visible = false;
+                st2txt.Visible = false;
+
+                st3lbl.Visible = false;
+                st3txt.Visible = false;
+
+                st4lbl.Visible = false;
+                st4txt.Visible = false;
+
+                st5lbl.Visible = false;
+                st5txt.Visible = false;
+
+                st6lbl.Visible = false;
+                st6txt.Visible = false;
+
+                st7lbl.Visible = false;
+                st7txt.Visible = false;
+
+                st8lbl.Visible = false;
+                st8txt.Visible = false;
+
+                st9lbl.Visible = false;
+                st9txt.Visible = false;
+            }
+
+            else
+            {
+                st2lbl.Visible = true;
+                st2txt.Visible = true;
+
+                st3lbl.Visible = true;
+                st3txt.Visible = true;
+
+                st4lbl.Visible = true;
+                st4txt.Visible = true;
+
+                st5lbl.Visible = true;
+                st5txt.Visible = true;
+
+                st6lbl.Visible = true;
+                st6txt.Visible = true;
+
+                st7lbl.Visible = true;
+                st7txt.Visible = true;
+
+                st8lbl.Visible = true;
+                st8txt.Visible = true;
+
+                st9lbl.Visible = true;
+                st9txt.Visible = true;
+
+                moreShowingsbtn.Visible = false;
+            }
+        }
 
         /* Add Movie button click */
         private void AddBtn_Click(object sender, EventArgs e)
@@ -917,440 +1386,17 @@ namespace MovieTheater
 
         }
 
-        public void resetShowtimes()
+        //Admin Clicks edit a movie
+        private void adminEdit_Click(object sender, EventArgs e)
         {
-            showtimes = 1;
-
-            st1txt.Clear();
-            st2txt.Clear();
-            st3txt.Clear();
-            st4txt.Clear();
-            st5txt.Clear();
-            st6txt.Clear();
-            st7txt.Clear();
-            st8txt.Clear();
-            st9txt.Clear();
-
-            if (editInfo == false)
-            {
-                st2lbl.Visible = false;
-                st2txt.Visible = false;
-
-                st3lbl.Visible = false;
-                st3txt.Visible = false;
-
-                st4lbl.Visible = false;
-                st4txt.Visible = false;
-
-                st5lbl.Visible = false;
-                st5txt.Visible = false;
-
-                st6lbl.Visible = false;
-                st6txt.Visible = false;
-
-                st7lbl.Visible = false;
-                st7txt.Visible = false;
-
-                st8lbl.Visible = false;
-                st8txt.Visible = false;
-
-                st9lbl.Visible = false;
-                st9txt.Visible = false;
-            }
-
-            else
-            {
-                st2lbl.Visible = true;
-                st2txt.Visible = true;
-
-                st3lbl.Visible = true;
-                st3txt.Visible = true;
-
-                st4lbl.Visible = true;
-                st4txt.Visible = true;
-
-                st5lbl.Visible = true;
-                st5txt.Visible = true;
-
-                st6lbl.Visible = true;
-                st6txt.Visible = true;
-
-                st7lbl.Visible = true;
-                st7txt.Visible = true;
-
-                st8lbl.Visible = true;
-                st8txt.Visible = true;
-
-                st9lbl.Visible = true;
-                st9txt.Visible = true;
-
-                moreShowingsbtn.Visible = false;
-            }
+            editInfo = true;
+            editMovielbl.Visible = true;
+            AddBtn.Text = "Update Info";
+            resetShowtimes();
+            BodyTabControl.SelectedTab = HomeTab;
         }
-
-        // --------------------------------------------------------------------
-        // MOVIE DETAILS TAB --------------------------------------------------
-
-        public void updateMovieDetailsPage(string title)
-        {
-            int index = 0;
-            bool MovieIsValid = false;
-            // dont have to check if there is a movie file since you clicked on
-            // a movie poster to get here. load the movie xml file.
-            MoviesDocument.Load(MoviesPath);
-
-            XmlNodeList TitleElemList = MoviesDocument.GetElementsByTagName("Title");
-            XmlNodeList LengthElemList = MoviesDocument.GetElementsByTagName("Length");
-            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
-            XmlNodeList GenreElemList = MoviesDocument.GetElementsByTagName("Genre");
-            XmlNodeList ReleaseElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
-            XmlNodeList ActorsElemList = MoviesDocument.GetElementsByTagName("Actor");
-            XmlNodeList DirectorElemList = MoviesDocument.GetElementsByTagName("Director");
-            XmlNodeList SynopsisElemList = MoviesDocument.GetElementsByTagName("Synopsis");
-            XmlNodeList PosterPath = MoviesDocument.GetElementsByTagName("PosterPath");
-            XmlNodeList Showtime1 = MoviesDocument.GetElementsByTagName("Showtime1");
-            XmlNodeList Showtime2 = MoviesDocument.GetElementsByTagName("Showtime2");
-            XmlNodeList Showtime3 = MoviesDocument.GetElementsByTagName("Showtime3");
-            XmlNodeList Showtime4 = MoviesDocument.GetElementsByTagName("Showtime4");
-            XmlNodeList Showtime5 = MoviesDocument.GetElementsByTagName("Showtime5");
-            XmlNodeList Showtime6 = MoviesDocument.GetElementsByTagName("Showtime6");
-            XmlNodeList Showtime7 = MoviesDocument.GetElementsByTagName("Showtime7");
-            XmlNodeList Showtime8 = MoviesDocument.GetElementsByTagName("Showtime8");
-            XmlNodeList Showtime9 = MoviesDocument.GetElementsByTagName("Showtime9");
-
-
-
-            for (int i = 0; i < TitleElemList.Count; i++)
-            {
-                if (title == TitleElemList[i].InnerText)
-                {
-                    index = i;
-                    MovieIsValid = true;
-                    break;
-                }
-            }
-            if (MovieIsValid && editInfo == false)
-            {
-                MDTitleLabel.Text = title;
-                MDReleaseLabel.Text = ReleaseElemList[index].InnerText;
-                MDLengthLabel.Text = LengthElemList[index].InnerText;
-                MDRatingLabel.Text = RatingElemList[index].InnerText;
-                MDGenreLabel.Text = GenreElemList[index].InnerText;
-                MDActorsLabel.Text = ActorsElemList[index].InnerText;
-                MDDirectorLabel.Text = DirectorElemList[index].InnerText;
-                MDSynopsisLabel.Text = SynopsisElemList[index].InnerText;
-                MDBigPoster.ImageLocation = PosterPath[index].InnerText;
-                showtime1.Text = Showtime1[index].InnerText;
-                showtime2.Text = Showtime2[index].InnerText;
-                showtime3.Text = Showtime3[index].InnerText;
-                showtime4.Text = Showtime4[index].InnerText;
-                showtime5.Text = Showtime5[index].InnerText;
-                showtime6.Text = Showtime6[index].InnerText;
-                showtime7.Text = Showtime7[index].InnerText;
-                showtime8.Text = Showtime8[index].InnerText;
-                showtime9.Text = Showtime9[index].InnerText;
-            }
-            else if (editInfo == true)
-            {
-                TitleBox.Text = TitleElemList[index].InnerText;
-                LengthBox.Text = LengthElemList[index].InnerText;
-                SynopsisBox.Text = SynopsisElemList[index].InnerText;
-                GenreBox.Text = GenreElemList[index].InnerText;
-                RatingBox.Text = RatingElemList[index].InnerText;
-                ActorBox.Text = ActorsElemList[index].InnerText;
-                DirectorBox.Text = DirectorElemList[index].InnerText;
-                ReleaseDTPicker.Text = ReleaseElemList[index].InnerText;
-                posterPathtxt.Text = PosterPath[index].InnerText;
-                st1txt.Text = Showtime1[index].InnerText;
-                st2txt.Text = Showtime2[index].InnerText;
-                st3txt.Text = Showtime3[index].InnerText;
-                st4txt.Text = Showtime4[index].InnerText;
-                st5txt.Text = Showtime5[index].InnerText;
-                st6txt.Text = Showtime6[index].InnerText;
-                st7txt.Text = Showtime7[index].InnerText;
-                st8txt.Text = Showtime8[index].InnerText;
-                st9txt.Text = Showtime9[index].InnerText;
-            }
-            else
-            {
-                Console.WriteLine("Error in Movie Details. Cant find selected movie.");
-            }
-
-        }
-
-        //--------------------------------------------------------------------------------------------------
-        //Create Account Page
-        private void button3_Click(object sender, EventArgs e) //Next button
-        {
-            if ((string.IsNullOrEmpty(AddrTxt.Text)) || (string.IsNullOrEmpty(CityTxt.Text))
-                || (string.IsNullOrEmpty(StateTxt.Text)) || (string.IsNullOrEmpty(UserTxt.Text))
-                || (string.IsNullOrEmpty(passTxt.Text)) || (string.IsNullOrEmpty(lNameTxt.Text))
-                || (string.IsNullOrEmpty(fNameTxt.Text)))
-                MessageBox.Show("Required Fields Missing, please enter data.");
-
-            else
-            {
-                BodyTabControl.SelectedTab = PaymentInfoTab;
-            }
-
-        }
-
-        //Enter Payment information to finish create account. Page inaccessible unless previous account info filled.
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string PATH = "accountInfo.xml";
-            XmlDocument doc = new XmlDocument();
-
-            //If there is no current file, then create a new one
-            if (!System.IO.File.Exists(PATH))
-            {
-                //Create neccessary nodes
-                XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
-                XmlComment comment = doc.CreateComment("Account Info");
-                XmlElement root = doc.CreateElement("Accounts");
-                XmlElement acc = doc.CreateElement("Account");
-                XmlAttribute fName = doc.CreateAttribute("First_Name");
-                XmlAttribute lName = doc.CreateAttribute("Last_Name");
-                XmlElement address = doc.CreateElement("Address");
-                XmlElement city = doc.CreateElement("City");
-                XmlElement state = doc.CreateElement("State");
-
-                XmlElement username = doc.CreateElement("Username");
-                XmlElement password = doc.CreateElement("Password"); 
-
-                //Add the values for each nodes
-                fName.Value = fNameTxt.Text;
-                lName.Value = lNameTxt.Text;
-                address.InnerText = AddrTxt.Text;
-                city.InnerText = CityTxt.Text;
-                state.InnerText = StateTxt.Text;
-                username.InnerText = UserTxt.Text;
-                password.InnerText = passTxt.Text;
-
-                //Construct the document
-                doc.AppendChild(declaration);
-                doc.AppendChild(comment);
-                doc.AppendChild(root);
-                root.AppendChild(acc);
-                acc.Attributes.Append(fName);
-                acc.Attributes.Append(lName);
-                acc.AppendChild(address);
-                acc.AppendChild(city);
-                acc.AppendChild(state);
-                acc.AppendChild(username);
-                acc.AppendChild(password);
-
-                doc.Save(PATH);
-            }
-            else //If there is already a file
-            {
-                //Load the XML File
-                doc.Load(PATH);
-
-                //Get the root element
-                XmlElement root = doc.DocumentElement;
-
-                XmlElement acc = doc.CreateElement("Account");
-                XmlAttribute fName = doc.CreateAttribute("First_Name");
-                XmlAttribute lName = doc.CreateAttribute("Last_Name");
-                XmlElement address = doc.CreateElement("Address");
-                XmlElement city = doc.CreateElement("City");
-                XmlElement state = doc.CreateElement("State");
-
-                XmlElement username = doc.CreateElement("Username");
-                XmlElement password = doc.CreateElement("Password");
-
-                //Add the values for each nodes
-                fName.Value = fNameTxt.Text;
-                lName.Value = lNameTxt.Text;
-                address.InnerText = AddrTxt.Text;
-                city.InnerText = CityTxt.Text;
-                state.InnerText = StateTxt.Text;
-                username.InnerText = UserTxt.Text;
-                password.InnerText = passTxt.Text;
-
-                //Construct the Person element
-                acc.Attributes.Append(fName);
-                acc.Attributes.Append(lName);
-                acc.AppendChild(address);
-                acc.AppendChild(city);
-                acc.AppendChild(state);
-                acc.AppendChild(username);
-                acc.AppendChild(password);
-
-                //Add the New person element to the end of the root element
-                root.AppendChild(acc);
-
-                //Save the document
-                doc.Save(PATH);
-            }
-            MessageBox.Show("Successfully created account!");
-
-            BodyTabControl.SelectedTab = LoginTab; //Return to login screen
-
-        }
-
-        private void label4_Click(object sender, EventArgs e) //Clicked Create Account label
-        {
-            BodyTabControl.SelectedTab = AccountTab;
-        }
-
-        //Log into system with a created account
-        private void button1_Click(object sender, EventArgs e) //Clicked Login Button
-        {
-            if (File.Exists("accountInfo.xml"))
-            {
-                XDocument accounts = XDocument.Load("accountInfo.xml");
-                var accInfo = from acc in accounts.Descendants("Account")
-                              select new
-                              {
-                                  Username = acc.Element("Username").Value,
-                                  Password = acc.Element("Password").Value,
-                              };
-                foreach (var acc in accInfo)
-                {
-                    if (usernameTxt.Text == acc.Username && passwordTxt.Text == acc.Password)
-                    {
-                        if (usernameTxt.Text == "Admin")
-                        {
-                            adminLogged = true;
-                        }
-                        MessageBox.Show("Successfully signed in!");
-                        logged = true;
-                        //logBtn.Text = "Log Out";
-                        BodyTabControl.SelectedTab = AdminCtrl;
-                        break;
-                    }
-                    else
-                        continue;
-                }
-                if (logged == false)
-                    MessageBox.Show("Incorrect username/password. Please try again.");
-            }
-            else
-                MessageBox.Show("Login in system temporarily unavailable, check back later.");
-        }
-        //-----------------------------------------------------------------------------------------------------
-        //Movie button always up, access from any page.
-
-
-        //----------------------------------------------------------------------------------------------------
-        // MOVIE DETAILS
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-        }
-
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-        }
-
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-        }
-
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-        }
-
-        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-        }
-
-        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-        }
-
-
-        //-----------------------------------------------------------------------------------------------------
-        //BUY SEATING PAGE
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
-            BodyTabControl.SelectedTab = Ticket;
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //ADULT LABEL
-            double adultTickets;
-            double totalPrice;
-            int ticketA;
-            adultTickets = Convert.ToDouble(comboBox1.Text);
-            ticketA = Convert.ToInt32(comboBox1.Text);
-            totalPrice = 10 * adultTickets;
-            label28.Text = totalPrice.ToString("$0.00");
-            label38.Text = totalPrice.ToString("0.00");
-            label55.Text = ticketA.ToString();
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //SENIOR LABEL
-            double seniorTickets;
-            double totalPrice;
-            int ticketS;
-            seniorTickets = Convert.ToDouble(comboBox2.Text);
-            ticketS = Convert.ToInt32(comboBox2.Text);
-            totalPrice = 9 * seniorTickets;
-            label29.Text = totalPrice.ToString("$0.00");
-            label39.Text = totalPrice.ToString("0.00");
-            label54.Text = ticketS.ToString();
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //CHILD LABEL
-            double childTickets;
-            double totalPriceChild;
-            int ticketC;
-            childTickets = Convert.ToDouble(comboBox3.Text);
-            ticketC = Convert.ToInt32(comboBox3.Text);
-            totalPriceChild = 9 * childTickets;
-            label30.Text = totalPriceChild.ToString("$0.00");
-            label40.Text = totalPriceChild.ToString("0.00");
-            label53.Text = ticketC.ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //BUY TICKETS OFFICIALLY
-            //TAKES YOU TO PAYMENT PAGE
-            BodyTabControl.SelectedTab = Purchase;
-            
-            //SETS UP EVERYTHING ON THE NEXT PAGE
-            double subtotal, child, senior, adult;
-            child = Convert.ToDouble(label40.Text);
-            senior = Convert.ToDouble(label39.Text);
-            adult = Convert.ToDouble(label38.Text);
-            subtotal = child + senior + adult;
-            label34.Text = subtotal.ToString("$0.00");
-        }
-
-
-        //------------------------------------------------------------------------------------------------------
-        //  PURCHASE PAGE
-        private void button5_Click(object sender, EventArgs e)
-        {
-            //Officially buys tickets
-            MessageBox.Show("You have purchased tickets!");
-            BodyTabControl.SelectedTab = PrintTix;
-            comboBox1.ResetText();
-            comboBox2.ResetText();
-            comboBox3.ResetText();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
+        //Admin clicks upload poster on add/edit movie page
+        private void uploadPosterbtn_Click(object sender, EventArgs e)
         {
             string loc;
             openFileDialog1.ShowDialog();
@@ -1361,155 +1407,9 @@ namespace MovieTheater
 
             posterPathtxt.Text = loc;
         }
-
-        public void showMovieInfo()
-        {
-            movieSeattxt.Text = MDTitleLabel.Text;
-            lengthSeattxt.Text = MDLengthLabel.Text;
-        }
-
-        private void showtime1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime1.Text;
-        }
-
-        private void showtime2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime2.Text;
-        }
-
-        private void showtime3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime3.Text;
-        }
-
-        private void showtime4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime4.Text;
-        }
-
-        private void showtime5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime5.Text;
-        }
-
-        private void showtime6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime6.Text;
-        }
-
-        private void showtime7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime7.Text;
-        }
-
-        private void showtime8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime8.Text;
-        }
-
-        private void showtime9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime9.Text;
-        }
-
-        private void moreShowingsbtn_Click(object sender, EventArgs e)
-        {
-            switch (showtimes)
-            {
-                case 2:
-                    {
-                        st2lbl.Visible = true;
-                        st2txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-                case 3:
-                    {
-                        st3lbl.Visible = true;
-                        st3txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-                case 4:
-                    {
-                        st4lbl.Visible = true;
-                        st4txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-                case 5:
-                    {
-                        st5lbl.Visible = true;
-                        st5txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-                case 6:
-                    {
-                        st6lbl.Visible = true;
-                        st6txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-                case 7:
-                    {
-                        st7lbl.Visible = true;
-                        st7txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-                case 8:
-                    {
-                        st8lbl.Visible = true;
-                        st8txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-                case 9:
-                    {
-                        st9lbl.Visible = true;
-                        st9txt.Visible = true;
-                        showtimes++;
-                        break;
-                    }
-            }
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            editInfo = false;
-            BodyTabControl.SelectedTab = AdminTab;
-        }
-
-        private void adminEdit_Click(object sender, EventArgs e)
-        {
-            editInfo = true;
-            editMovielbl.Visible = true;
-            AddBtn.Text = "Update Info";
-            resetShowtimes();
-            BodyTabControl.SelectedTab = HomeTab;
-        }
-
+//-------------------------------------------------------------------------------------------------------------------------
+//Seating Page////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
         private void selected_Seats(Button select, int i)
         {
             if (track[i] % 2 == 0)
@@ -1885,7 +1785,84 @@ namespace MovieTheater
             selected_Seats(f14, 71);
         }
 
+//-----------------------------------------------------------------------------------------------------------------------
+//BUY SEATING PAGE//////////////////////////////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------------------------------------------------
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
+            BodyTabControl.SelectedTab = Ticket;
+        }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //ADULT LABEL
+            double adultTickets;
+            double totalPrice;
+            int ticketA;
+            adultTickets = Convert.ToDouble(comboBox1.Text);
+            ticketA = Convert.ToInt32(comboBox1.Text);
+            totalPrice = 10 * adultTickets;
+            label28.Text = totalPrice.ToString("$0.00");
+            label38.Text = totalPrice.ToString("0.00");
+            label55.Text = ticketA.ToString();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //SENIOR LABEL
+            double seniorTickets;
+            double totalPrice;
+            int ticketS;
+            seniorTickets = Convert.ToDouble(comboBox2.Text);
+            ticketS = Convert.ToInt32(comboBox2.Text);
+            totalPrice = 9 * seniorTickets;
+            label29.Text = totalPrice.ToString("$0.00");
+            label39.Text = totalPrice.ToString("0.00");
+            label54.Text = ticketS.ToString();
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //CHILD LABEL
+            double childTickets;
+            double totalPriceChild;
+            int ticketC;
+            childTickets = Convert.ToDouble(comboBox3.Text);
+            ticketC = Convert.ToInt32(comboBox3.Text);
+            totalPriceChild = 9 * childTickets;
+            label30.Text = totalPriceChild.ToString("$0.00");
+            label40.Text = totalPriceChild.ToString("0.00");
+            label53.Text = ticketC.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //BUY TICKETS OFFICIALLY
+            //TAKES YOU TO PAYMENT PAGE
+            BodyTabControl.SelectedTab = Purchase;
+
+            //SETS UP EVERYTHING ON THE NEXT PAGE
+            double subtotal, child, senior, adult;
+            child = Convert.ToDouble(label40.Text);
+            senior = Convert.ToDouble(label39.Text);
+            adult = Convert.ToDouble(label38.Text);
+            subtotal = child + senior + adult;
+            label34.Text = subtotal.ToString("$0.00");
+        }
+
+
+        //------------------------------------------------------------------------------------------------------
+        //  PURCHASE PAGE
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //Officially buys tickets
+            MessageBox.Show("You have purchased tickets!");
+            BodyTabControl.SelectedTab = PrintTix;
+            comboBox1.ResetText();
+            comboBox2.ResetText();
+            comboBox3.ResetText();
+        }
 
         //------------------------------------------------------------------------------------------------------
         // PRINT TICKETS PAGE
@@ -1893,11 +1870,9 @@ namespace MovieTheater
         private void printTixButton_Click(object sender, EventArgs e)
         {
             //WILL PRINT TICKET ONCE IT IS CLICKED
-            
+
 
         }
-
-
 
         //-----------------------------------------------------------------------------------------------------
     }

@@ -337,7 +337,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.posterPathtxt = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.uploadPosterbtn = new System.Windows.Forms.Button();
             this.ReleaseDTPicker = new System.Windows.Forms.DateTimePicker();
             this.label65 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
@@ -472,7 +472,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-50, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-4, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -3717,7 +3717,7 @@
             this.AdminTab.Controls.Add(this.label3);
             this.AdminTab.Controls.Add(this.label2);
             this.AdminTab.Controls.Add(this.posterPathtxt);
-            this.AdminTab.Controls.Add(this.button6);
+            this.AdminTab.Controls.Add(this.uploadPosterbtn);
             this.AdminTab.Controls.Add(this.ReleaseDTPicker);
             this.AdminTab.Controls.Add(this.label65);
             this.AdminTab.Controls.Add(this.label64);
@@ -3942,15 +3942,14 @@
             this.posterPathtxt.Size = new System.Drawing.Size(151, 20);
             this.posterPathtxt.TabIndex = 94;
             // 
-            // button6
+            // uploadPosterbtn
             // 
-            this.button6.Location = new System.Drawing.Point(112, 433);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(117, 25);
-            this.button6.TabIndex = 93;
-            this.button6.Text = "Upload Poster";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.uploadPosterbtn.Location = new System.Drawing.Point(112, 433);
+            this.uploadPosterbtn.Name = "uploadPosterbtn";
+            this.uploadPosterbtn.Size = new System.Drawing.Size(117, 25);
+            this.uploadPosterbtn.TabIndex = 93;
+            this.uploadPosterbtn.Text = "Upload Poster";
+            this.uploadPosterbtn.UseVisualStyleBackColor = true;
             // 
             // ReleaseDTPicker
             // 
@@ -4579,7 +4578,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label MDSynopsisLabel;
         private System.Windows.Forms.Label MDSSynopsis;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button uploadPosterbtn;
         private System.Windows.Forms.TextBox posterPathtxt;
         private System.Windows.Forms.Label mainShowtimelbl;
         private System.Windows.Forms.LinkLabel showtime9;
