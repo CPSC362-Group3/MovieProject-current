@@ -167,6 +167,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.Seating = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.selectedSeatstxt = new System.Windows.Forms.TextBox();
             this.f14 = new System.Windows.Forms.Button();
             this.f13 = new System.Windows.Forms.Button();
@@ -295,6 +296,24 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.ContactUsTab = new System.Windows.Forms.TabPage();
+            this.pictureofplace = new System.Windows.Forms.PictureBox();
+            this.nameofplaceLabel = new System.Windows.Forms.Label();
+            this.secondAddressLabel = new System.Windows.Forms.Label();
+            this.locationLabel = new System.Windows.Forms.Label();
+            this.locatePicture = new System.Windows.Forms.PictureBox();
+            this.addresslabel = new System.Windows.Forms.Label();
+            this.actualEmailLabel = new System.Windows.Forms.Label();
+            this.EmailLabel = new System.Windows.Forms.Label();
+            this.infoLabel = new System.Windows.Forms.Label();
+            this.hourHeadLabel = new System.Windows.Forms.Label();
+            this.clockPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.callusLabel = new System.Windows.Forms.Label();
+            this.PhonePicture = new System.Windows.Forms.PictureBox();
+            this.hoursLabel = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.phoneLabel = new System.Windows.Forms.Label();
+            this.ContactHeadLabel = new System.Windows.Forms.Label();
             this.AdminTab = new System.Windows.Forms.TabPage();
             this.st9lbl = new System.Windows.Forms.Label();
             this.st8lbl = new System.Windows.Forms.Label();
@@ -345,12 +364,14 @@
             this.adminEdit = new System.Windows.Forms.Button();
             this.adminAdd = new System.Windows.Forms.Button();
             this.adminctrllbl = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.printTixButton = new System.Windows.Forms.Button();
+            this.PrintLabel = new System.Windows.Forms.Label();
             this.contactUsBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
             pictureBox9 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -401,9 +422,16 @@
             this.Seating.SuspendLayout();
             this.Purchase.SuspendLayout();
             this.Ticket.SuspendLayout();
+            this.ContactUsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureofplace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locatePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clockPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhonePicture)).BeginInit();
             this.AdminTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.AdminCtrl.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
@@ -444,7 +472,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-5, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-50, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -555,7 +583,8 @@
             this.BodyTabControl.Controls.Add(this.ContactUsTab);
             this.BodyTabControl.Controls.Add(this.AdminTab);
             this.BodyTabControl.Controls.Add(this.AdminCtrl);
-            this.BodyTabControl.Location = new System.Drawing.Point(-4, 218);
+            this.BodyTabControl.Controls.Add(this.tabPage3);
+            this.BodyTabControl.Location = new System.Drawing.Point(-5, 218);
             this.BodyTabControl.Name = "BodyTabControl";
             this.BodyTabControl.SelectedIndex = 0;
             this.BodyTabControl.Size = new System.Drawing.Size(968, 799);
@@ -2116,6 +2145,16 @@
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 216);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.TabIndex = 82;
+            this.label1.Text = "Selected Seats:";
+            // 
             // selectedSeatstxt
             // 
             this.selectedSeatstxt.Location = new System.Drawing.Point(20, 239);
@@ -3448,12 +3487,211 @@
             // ContactUsTab
             // 
             this.ContactUsTab.BackColor = System.Drawing.Color.Silver;
+            this.ContactUsTab.Controls.Add(this.pictureofplace);
+            this.ContactUsTab.Controls.Add(this.nameofplaceLabel);
+            this.ContactUsTab.Controls.Add(this.secondAddressLabel);
+            this.ContactUsTab.Controls.Add(this.locationLabel);
+            this.ContactUsTab.Controls.Add(this.locatePicture);
+            this.ContactUsTab.Controls.Add(this.addresslabel);
+            this.ContactUsTab.Controls.Add(this.actualEmailLabel);
+            this.ContactUsTab.Controls.Add(this.EmailLabel);
+            this.ContactUsTab.Controls.Add(this.infoLabel);
+            this.ContactUsTab.Controls.Add(this.hourHeadLabel);
+            this.ContactUsTab.Controls.Add(this.clockPicture);
+            this.ContactUsTab.Controls.Add(this.pictureBox7);
+            this.ContactUsTab.Controls.Add(this.callusLabel);
+            this.ContactUsTab.Controls.Add(this.PhonePicture);
+            this.ContactUsTab.Controls.Add(this.hoursLabel);
+            this.ContactUsTab.Controls.Add(this.label69);
+            this.ContactUsTab.Controls.Add(this.phoneLabel);
+            this.ContactUsTab.Controls.Add(this.ContactHeadLabel);
             this.ContactUsTab.Location = new System.Drawing.Point(4, 22);
             this.ContactUsTab.Name = "ContactUsTab";
             this.ContactUsTab.Padding = new System.Windows.Forms.Padding(3);
             this.ContactUsTab.Size = new System.Drawing.Size(960, 773);
             this.ContactUsTab.TabIndex = 9;
             this.ContactUsTab.Text = "Contact";
+            // 
+            // pictureofplace
+            // 
+            this.pictureofplace.Image = ((System.Drawing.Image)(resources.GetObject("pictureofplace.Image")));
+            this.pictureofplace.Location = new System.Drawing.Point(447, 208);
+            this.pictureofplace.Name = "pictureofplace";
+            this.pictureofplace.Size = new System.Drawing.Size(526, 319);
+            this.pictureofplace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureofplace.TabIndex = 17;
+            this.pictureofplace.TabStop = false;
+            // 
+            // nameofplaceLabel
+            // 
+            this.nameofplaceLabel.AutoSize = true;
+            this.nameofplaceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameofplaceLabel.Location = new System.Drawing.Point(63, 84);
+            this.nameofplaceLabel.Name = "nameofplaceLabel";
+            this.nameofplaceLabel.Size = new System.Drawing.Size(94, 20);
+            this.nameofplaceLabel.TabIndex = 16;
+            this.nameofplaceLabel.Text = "Movies362";
+            // 
+            // secondAddressLabel
+            // 
+            this.secondAddressLabel.AutoSize = true;
+            this.secondAddressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondAddressLabel.Location = new System.Drawing.Point(132, 559);
+            this.secondAddressLabel.Name = "secondAddressLabel";
+            this.secondAddressLabel.Size = new System.Drawing.Size(191, 20);
+            this.secondAddressLabel.TabIndex = 15;
+            this.secondAddressLabel.Text = "Fullerton, CA 92834-9480";
+            // 
+            // locationLabel
+            // 
+            this.locationLabel.AutoSize = true;
+            this.locationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.locationLabel.Location = new System.Drawing.Point(132, 539);
+            this.locationLabel.Name = "locationLabel";
+            this.locationLabel.Size = new System.Drawing.Size(136, 20);
+            this.locationLabel.TabIndex = 14;
+            this.locationLabel.Text = "800 N. State Blvd.";
+            // 
+            // locatePicture
+            // 
+            this.locatePicture.Image = ((System.Drawing.Image)(resources.GetObject("locatePicture.Image")));
+            this.locatePicture.Location = new System.Drawing.Point(44, 496);
+            this.locatePicture.Name = "locatePicture";
+            this.locatePicture.Size = new System.Drawing.Size(85, 78);
+            this.locatePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.locatePicture.TabIndex = 13;
+            this.locatePicture.TabStop = false;
+            // 
+            // addresslabel
+            // 
+            this.addresslabel.AutoSize = true;
+            this.addresslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addresslabel.Location = new System.Drawing.Point(132, 507);
+            this.addresslabel.Name = "addresslabel";
+            this.addresslabel.Size = new System.Drawing.Size(75, 20);
+            this.addresslabel.TabIndex = 12;
+            this.addresslabel.Text = "Address";
+            // 
+            // actualEmailLabel
+            // 
+            this.actualEmailLabel.AutoSize = true;
+            this.actualEmailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actualEmailLabel.Location = new System.Drawing.Point(132, 424);
+            this.actualEmailLabel.Name = "actualEmailLabel";
+            this.actualEmailLabel.Size = new System.Drawing.Size(164, 20);
+            this.actualEmailLabel.TabIndex = 11;
+            this.actualEmailLabel.Text = "movie362@gmail.com";
+            // 
+            // EmailLabel
+            // 
+            this.EmailLabel.AutoSize = true;
+            this.EmailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailLabel.Location = new System.Drawing.Point(132, 395);
+            this.EmailLabel.Name = "EmailLabel";
+            this.EmailLabel.Size = new System.Drawing.Size(80, 20);
+            this.EmailLabel.TabIndex = 10;
+            this.EmailLabel.Text = "Email Us";
+            // 
+            // infoLabel
+            // 
+            this.infoLabel.AutoSize = true;
+            this.infoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoLabel.Location = new System.Drawing.Point(194, 307);
+            this.infoLabel.Name = "infoLabel";
+            this.infoLabel.Size = new System.Drawing.Size(215, 20);
+            this.infoLabel.TabIndex = 9;
+            this.infoLabel.Text = "Monday- Sunday: 9AM-11PM";
+            // 
+            // hourHeadLabel
+            // 
+            this.hourHeadLabel.AutoSize = true;
+            this.hourHeadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hourHeadLabel.Location = new System.Drawing.Point(132, 277);
+            this.hourHeadLabel.Name = "hourHeadLabel";
+            this.hourHeadLabel.Size = new System.Drawing.Size(134, 20);
+            this.hourHeadLabel.TabIndex = 8;
+            this.hourHeadLabel.Text = "Hours Avaliable";
+            // 
+            // clockPicture
+            // 
+            this.clockPicture.Image = ((System.Drawing.Image)(resources.GetObject("clockPicture.Image")));
+            this.clockPicture.Location = new System.Drawing.Point(50, 256);
+            this.clockPicture.Name = "clockPicture";
+            this.clockPicture.Size = new System.Drawing.Size(79, 62);
+            this.clockPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.clockPicture.TabIndex = 7;
+            this.clockPicture.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(67, 380);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(49, 35);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // callusLabel
+            // 
+            this.callusLabel.AutoSize = true;
+            this.callusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.callusLabel.Location = new System.Drawing.Point(132, 154);
+            this.callusLabel.Name = "callusLabel";
+            this.callusLabel.Size = new System.Drawing.Size(66, 20);
+            this.callusLabel.TabIndex = 5;
+            this.callusLabel.Text = "Call Us";
+            // 
+            // PhonePicture
+            // 
+            this.PhonePicture.Image = ((System.Drawing.Image)(resources.GetObject("PhonePicture.Image")));
+            this.PhonePicture.Location = new System.Drawing.Point(67, 138);
+            this.PhonePicture.Name = "PhonePicture";
+            this.PhonePicture.Size = new System.Drawing.Size(37, 36);
+            this.PhonePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PhonePicture.TabIndex = 4;
+            this.PhonePicture.TabStop = false;
+            // 
+            // hoursLabel
+            // 
+            this.hoursLabel.AutoSize = true;
+            this.hoursLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoursLabel.Location = new System.Drawing.Point(132, 307);
+            this.hoursLabel.Name = "hoursLabel";
+            this.hoursLabel.Size = new System.Drawing.Size(56, 20);
+            this.hoursLabel.TabIndex = 3;
+            this.hoursLabel.Text = "Hours:";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(194, 183);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(113, 20);
+            this.label69.TabIndex = 2;
+            this.label69.Text = "714) 555-0362";
+            // 
+            // phoneLabel
+            // 
+            this.phoneLabel.AutoSize = true;
+            this.phoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneLabel.Location = new System.Drawing.Point(132, 183);
+            this.phoneLabel.Name = "phoneLabel";
+            this.phoneLabel.Size = new System.Drawing.Size(63, 20);
+            this.phoneLabel.TabIndex = 1;
+            this.phoneLabel.Text = "Phone: ";
+            // 
+            // ContactHeadLabel
+            // 
+            this.ContactHeadLabel.AutoSize = true;
+            this.ContactHeadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactHeadLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.ContactHeadLabel.Location = new System.Drawing.Point(22, 39);
+            this.ContactHeadLabel.Name = "ContactHeadLabel";
+            this.ContactHeadLabel.Size = new System.Drawing.Size(110, 24);
+            this.ContactHeadLabel.TabIndex = 0;
+            this.ContactHeadLabel.Text = "Contact Us";
             // 
             // AdminTab
             // 
@@ -3973,6 +4211,39 @@
             this.adminctrllbl.TabIndex = 0;
             this.adminctrllbl.Text = "Administrator Controls";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.Silver;
+            this.tabPage3.Controls.Add(this.printTixButton);
+            this.tabPage3.Controls.Add(this.PrintLabel);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(960, 773);
+            this.tabPage3.TabIndex = 12;
+            this.tabPage3.Text = "PrintTickets";
+            // 
+            // printTixButton
+            // 
+            this.printTixButton.Location = new System.Drawing.Point(148, 197);
+            this.printTixButton.Name = "printTixButton";
+            this.printTixButton.Size = new System.Drawing.Size(75, 23);
+            this.printTixButton.TabIndex = 1;
+            this.printTixButton.Text = "Print";
+            this.printTixButton.UseVisualStyleBackColor = true;
+            this.printTixButton.Click += new System.EventHandler(this.printTixButton_Click);
+            // 
+            // PrintLabel
+            // 
+            this.PrintLabel.AutoSize = true;
+            this.PrintLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrintLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.PrintLabel.Location = new System.Drawing.Point(49, 25);
+            this.PrintLabel.Name = "PrintLabel";
+            this.PrintLabel.Size = new System.Drawing.Size(144, 25);
+            this.PrintLabel.TabIndex = 0;
+            this.PrintLabel.Text = "Print Tickets";
+            // 
             // contactUsBtn
             // 
             this.contactUsBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -4020,16 +4291,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 216);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
-            this.label1.TabIndex = 82;
-            this.label1.Text = "Selected Seats:";
             // 
             // homepage
             // 
@@ -4097,11 +4358,20 @@
             this.Purchase.PerformLayout();
             this.Ticket.ResumeLayout(false);
             this.Ticket.PerformLayout();
+            this.ContactUsTab.ResumeLayout(false);
+            this.ContactUsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureofplace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locatePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clockPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhonePicture)).EndInit();
             this.AdminTab.ResumeLayout(false);
             this.AdminTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.AdminCtrl.ResumeLayout(false);
             this.AdminCtrl.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
@@ -4430,6 +4700,27 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private System.Windows.Forms.TextBox selectedSeatstxt;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label infoLabel;
+        private System.Windows.Forms.Label hourHeadLabel;
+        private System.Windows.Forms.PictureBox clockPicture;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label callusLabel;
+        private System.Windows.Forms.PictureBox PhonePicture;
+        private System.Windows.Forms.Label hoursLabel;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label phoneLabel;
+        private System.Windows.Forms.Label ContactHeadLabel;
+        private System.Windows.Forms.Label addresslabel;
+        private System.Windows.Forms.Label actualEmailLabel;
+        private System.Windows.Forms.Label EmailLabel;
+        private System.Windows.Forms.Label secondAddressLabel;
+        private System.Windows.Forms.Label locationLabel;
+        private System.Windows.Forms.PictureBox locatePicture;
+        private System.Windows.Forms.Label nameofplaceLabel;
+        private System.Windows.Forms.PictureBox pictureofplace;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button printTixButton;
+        private System.Windows.Forms.Label PrintLabel;
 
     }
 }

@@ -26,6 +26,7 @@ namespace MovieTheater
 
         string MoviesPath = "../../xml/Movies.xml";
         XmlDocument MoviesDocument = new XmlDocument();
+        private TabPage PrintTix;
 
         public homepage()
         {
@@ -1343,7 +1344,7 @@ namespace MovieTheater
         {
             //Officially buys tickets
             MessageBox.Show("You have purchased tickets!");
-            BodyTabControl.SelectedTab = HomeTab;
+            BodyTabControl.SelectedTab = PrintTix;
             comboBox1.ResetText();
             comboBox2.ResetText();
             comboBox3.ResetText();
@@ -1883,6 +1884,20 @@ namespace MovieTheater
         {
             selected_Seats(f14, 71);
         }
+
+
+
+        //------------------------------------------------------------------------------------------------------
+        // PRINT TICKETS PAGE
+        //
+        private void printTixButton_Click(object sender, EventArgs e)
+        {
+            //WILL PRINT TICKET ONCE IT IS CLICKED
+            
+
+        }
+
+
 
         //-----------------------------------------------------------------------------------------------------
     }
