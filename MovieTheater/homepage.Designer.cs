@@ -372,6 +372,7 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.gobackhomebutton = new System.Windows.Forms.Button();
             pictureBox9 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -472,7 +473,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-4, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-13, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -4213,6 +4214,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Silver;
+            this.tabPage3.Controls.Add(this.gobackhomebutton);
             this.tabPage3.Controls.Add(this.printTixButton);
             this.tabPage3.Controls.Add(this.PrintLabel);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -4224,7 +4226,7 @@
             // 
             // printTixButton
             // 
-            this.printTixButton.Location = new System.Drawing.Point(148, 197);
+            this.printTixButton.Location = new System.Drawing.Point(620, 442);
             this.printTixButton.Name = "printTixButton";
             this.printTixButton.Size = new System.Drawing.Size(75, 23);
             this.printTixButton.TabIndex = 1;
@@ -4290,6 +4292,16 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // gobackhomebutton
+            // 
+            this.gobackhomebutton.Location = new System.Drawing.Point(726, 442);
+            this.gobackhomebutton.Name = "gobackhomebutton";
+            this.gobackhomebutton.Size = new System.Drawing.Size(75, 23);
+            this.gobackhomebutton.TabIndex = 2;
+            this.gobackhomebutton.Text = "Home";
+            this.gobackhomebutton.UseVisualStyleBackColor = true;
+            this.gobackhomebutton.Click += new System.EventHandler(this.gobackhomebutton_Click);
             // 
             // homepage
             // 
@@ -4720,6 +4732,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button printTixButton;
         private System.Windows.Forms.Label PrintLabel;
+        private System.Windows.Forms.Button gobackhomebutton;
 
     }
 }

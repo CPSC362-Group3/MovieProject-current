@@ -1874,6 +1874,11 @@ namespace MovieTheater
 
         }
 
+        private void gobackhomebutton_Click(object sender, EventArgs e)
+        {
+            BodyTabControl.SelectedTab = HomeTab;
+        }
+
         //-----------------------------------------------------------------------------------------------------
     }
 }
