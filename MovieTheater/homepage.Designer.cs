@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.PictureBox pictureBox9;
+            System.Windows.Forms.PictureBox pictureBox12;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homepage));
             System.Windows.Forms.PictureBox pictureBox11;
-            System.Windows.Forms.PictureBox pictureBox12;
+            System.Windows.Forms.PictureBox pictureBox9;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.AdminLabel = new System.Windows.Forms.Label();
@@ -99,16 +99,7 @@
             this.search1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.MovieDetailsTab = new System.Windows.Forms.TabPage();
-            this.showtime9 = new System.Windows.Forms.LinkLabel();
-            this.showtime8 = new System.Windows.Forms.LinkLabel();
-            this.showtime7 = new System.Windows.Forms.LinkLabel();
-            this.showtime6 = new System.Windows.Forms.LinkLabel();
-            this.showtime5 = new System.Windows.Forms.LinkLabel();
-            this.showtime4 = new System.Windows.Forms.LinkLabel();
-            this.showtime3 = new System.Windows.Forms.LinkLabel();
-            this.showtime2 = new System.Windows.Forms.LinkLabel();
-            this.showtime1 = new System.Windows.Forms.LinkLabel();
-            this.mainShowtimelbl = new System.Windows.Forms.Label();
+            this.orderTicketsbtn = new System.Windows.Forms.Button();
             this.MDSSynopsis = new System.Windows.Forms.Label();
             this.MDSynopsisLabel = new System.Windows.Forms.Label();
             this.MDDirectorLabel = new System.Windows.Forms.Label();
@@ -280,6 +271,28 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.Ticket = new System.Windows.Forms.TabPage();
+            this.displayLength = new System.Windows.Forms.Label();
+            this.displayRating = new System.Windows.Forms.Label();
+            this.ratinglbl = new System.Windows.Forms.Label();
+            this.lengthlbl = new System.Windows.Forms.Label();
+            this.movietxt = new System.Windows.Forms.Label();
+            this.displayMovieTitle = new System.Windows.Forms.Label();
+            this.displayShowtimelbl = new System.Windows.Forms.Label();
+            this.displayDatelbl = new System.Windows.Forms.Label();
+            this.showtimeDate = new System.Windows.Forms.DateTimePicker();
+            this.showtimelbl = new System.Windows.Forms.Label();
+            this.showDatelbl = new System.Windows.Forms.Label();
+            this.chooseDatelbl = new System.Windows.Forms.Label();
+            this.showtime9 = new System.Windows.Forms.LinkLabel();
+            this.showtime8 = new System.Windows.Forms.LinkLabel();
+            this.showtime7 = new System.Windows.Forms.LinkLabel();
+            this.showtime6 = new System.Windows.Forms.LinkLabel();
+            this.showtime5 = new System.Windows.Forms.LinkLabel();
+            this.showtime4 = new System.Windows.Forms.LinkLabel();
+            this.showtime3 = new System.Windows.Forms.LinkLabel();
+            this.showtime2 = new System.Windows.Forms.LinkLabel();
+            this.showtime1 = new System.Windows.Forms.LinkLabel();
+            this.showtimeHeader = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -300,20 +313,20 @@
             this.nameofplaceLabel = new System.Windows.Forms.Label();
             this.secondAddressLabel = new System.Windows.Forms.Label();
             this.locationLabel = new System.Windows.Forms.Label();
-            this.locatePicture = new System.Windows.Forms.PictureBox();
             this.addresslabel = new System.Windows.Forms.Label();
             this.actualEmailLabel = new System.Windows.Forms.Label();
             this.EmailLabel = new System.Windows.Forms.Label();
             this.infoLabel = new System.Windows.Forms.Label();
             this.hourHeadLabel = new System.Windows.Forms.Label();
-            this.clockPicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.callusLabel = new System.Windows.Forms.Label();
-            this.PhonePicture = new System.Windows.Forms.PictureBox();
             this.hoursLabel = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.ContactHeadLabel = new System.Windows.Forms.Label();
+            this.locatePicture = new System.Windows.Forms.PictureBox();
+            this.clockPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.PhonePicture = new System.Windows.Forms.PictureBox();
             this.AdminTab = new System.Windows.Forms.TabPage();
             this.st9lbl = new System.Windows.Forms.Label();
             this.st8lbl = new System.Windows.Forms.Label();
@@ -333,10 +346,16 @@
             this.st3txt = new System.Windows.Forms.TextBox();
             this.st2txt = new System.Windows.Forms.TextBox();
             this.st1txt = new System.Windows.Forms.TextBox();
+            this.posterPathtxt = new System.Windows.Forms.TextBox();
+            this.DirectorBox = new System.Windows.Forms.TextBox();
+            this.ActorBox = new System.Windows.Forms.TextBox();
+            this.SynopsisBox = new System.Windows.Forms.TextBox();
+            this.DescriptionBox = new System.Windows.Forms.TextBox();
+            this.LengthBox = new System.Windows.Forms.TextBox();
+            this.TitleBox = new System.Windows.Forms.TextBox();
             this.st1lbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.posterPathtxt = new System.Windows.Forms.TextBox();
             this.uploadPosterbtn = new System.Windows.Forms.Button();
             this.ReleaseDTPicker = new System.Windows.Forms.DateTimePicker();
             this.label65 = new System.Windows.Forms.Label();
@@ -349,12 +368,6 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.DirectorBox = new System.Windows.Forms.TextBox();
-            this.ActorBox = new System.Windows.Forms.TextBox();
-            this.SynopsisBox = new System.Windows.Forms.TextBox();
-            this.DescriptionBox = new System.Windows.Forms.TextBox();
-            this.LengthBox = new System.Windows.Forms.TextBox();
-            this.TitleBox = new System.Windows.Forms.TextBox();
             this.GenreBox = new System.Windows.Forms.ComboBox();
             this.RatingBox = new System.Windows.Forms.ComboBox();
             this.AddBtn = new System.Windows.Forms.Button();
@@ -364,7 +377,10 @@
             this.adminEdit = new System.Windows.Forms.Button();
             this.adminAdd = new System.Windows.Forms.Button();
             this.adminctrllbl = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.PrintTix = new System.Windows.Forms.TabPage();
+            this.label70 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.gobackhomebutton = new System.Windows.Forms.Button();
             this.printTixButton = new System.Windows.Forms.Button();
             this.PrintLabel = new System.Windows.Forms.Label();
             this.contactUsBtn = new System.Windows.Forms.PictureBox();
@@ -372,13 +388,12 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.gobackhomebutton = new System.Windows.Forms.Button();
-            pictureBox9 = new System.Windows.Forms.PictureBox();
-            pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).BeginInit();
+            pictureBox11 = new System.Windows.Forms.PictureBox();
+            pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
@@ -432,31 +447,12 @@
             this.AdminTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.AdminCtrl.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.PrintTix.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            pictureBox9.Location = new System.Drawing.Point(107, 29);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new System.Drawing.Size(768, 33);
-            pictureBox9.TabIndex = 51;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            pictureBox11.Location = new System.Drawing.Point(159, 16);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new System.Drawing.Size(768, 33);
-            pictureBox11.TabIndex = 49;
-            pictureBox11.TabStop = false;
             // 
             // pictureBox12
             // 
@@ -468,12 +464,32 @@
             pictureBox12.TabIndex = 50;
             pictureBox12.TabStop = false;
             // 
+            // pictureBox11
+            // 
+            pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            pictureBox11.Location = new System.Drawing.Point(159, 16);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new System.Drawing.Size(768, 33);
+            pictureBox11.TabIndex = 49;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            pictureBox9.Location = new System.Drawing.Point(107, 29);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new System.Drawing.Size(768, 33);
+            pictureBox9.TabIndex = 51;
+            pictureBox9.TabStop = false;
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-13, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-4, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -584,7 +600,7 @@
             this.BodyTabControl.Controls.Add(this.ContactUsTab);
             this.BodyTabControl.Controls.Add(this.AdminTab);
             this.BodyTabControl.Controls.Add(this.AdminCtrl);
-            this.BodyTabControl.Controls.Add(this.tabPage3);
+            this.BodyTabControl.Controls.Add(this.PrintTix);
             this.BodyTabControl.Location = new System.Drawing.Point(-5, 218);
             this.BodyTabControl.Name = "BodyTabControl";
             this.BodyTabControl.SelectedIndex = 0;
@@ -1327,16 +1343,7 @@
             // MovieDetailsTab
             // 
             this.MovieDetailsTab.BackColor = System.Drawing.Color.Silver;
-            this.MovieDetailsTab.Controls.Add(this.showtime9);
-            this.MovieDetailsTab.Controls.Add(this.showtime8);
-            this.MovieDetailsTab.Controls.Add(this.showtime7);
-            this.MovieDetailsTab.Controls.Add(this.showtime6);
-            this.MovieDetailsTab.Controls.Add(this.showtime5);
-            this.MovieDetailsTab.Controls.Add(this.showtime4);
-            this.MovieDetailsTab.Controls.Add(this.showtime3);
-            this.MovieDetailsTab.Controls.Add(this.showtime2);
-            this.MovieDetailsTab.Controls.Add(this.showtime1);
-            this.MovieDetailsTab.Controls.Add(this.mainShowtimelbl);
+            this.MovieDetailsTab.Controls.Add(this.orderTicketsbtn);
             this.MovieDetailsTab.Controls.Add(this.MDSSynopsis);
             this.MovieDetailsTab.Controls.Add(this.MDSynopsisLabel);
             this.MovieDetailsTab.Controls.Add(this.MDDirectorLabel);
@@ -1362,123 +1369,15 @@
             this.MovieDetailsTab.TabIndex = 2;
             this.MovieDetailsTab.Text = "Movie Details";
             // 
-            // showtime9
+            // orderTicketsbtn
             // 
-            this.showtime9.AutoSize = true;
-            this.showtime9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime9.Location = new System.Drawing.Point(674, 633);
-            this.showtime9.Name = "showtime9";
-            this.showtime9.Size = new System.Drawing.Size(85, 20);
-            this.showtime9.TabIndex = 97;
-            this.showtime9.TabStop = true;
-            this.showtime9.Text = "showtime9";
-            this.showtime9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime9_LinkClicked);
-            // 
-            // showtime8
-            // 
-            this.showtime8.AutoSize = true;
-            this.showtime8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime8.Location = new System.Drawing.Point(509, 633);
-            this.showtime8.Name = "showtime8";
-            this.showtime8.Size = new System.Drawing.Size(85, 20);
-            this.showtime8.TabIndex = 96;
-            this.showtime8.TabStop = true;
-            this.showtime8.Text = "showtime8";
-            this.showtime8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime8_LinkClicked);
-            // 
-            // showtime7
-            // 
-            this.showtime7.AutoSize = true;
-            this.showtime7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime7.Location = new System.Drawing.Point(357, 633);
-            this.showtime7.Name = "showtime7";
-            this.showtime7.Size = new System.Drawing.Size(85, 20);
-            this.showtime7.TabIndex = 95;
-            this.showtime7.TabStop = true;
-            this.showtime7.Text = "showtime7";
-            this.showtime7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime7_LinkClicked);
-            // 
-            // showtime6
-            // 
-            this.showtime6.AutoSize = true;
-            this.showtime6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime6.Location = new System.Drawing.Point(203, 633);
-            this.showtime6.Name = "showtime6";
-            this.showtime6.Size = new System.Drawing.Size(85, 20);
-            this.showtime6.TabIndex = 94;
-            this.showtime6.TabStop = true;
-            this.showtime6.Text = "showtime6";
-            this.showtime6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime6_LinkClicked);
-            // 
-            // showtime5
-            // 
-            this.showtime5.AutoSize = true;
-            this.showtime5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime5.Location = new System.Drawing.Point(750, 547);
-            this.showtime5.Name = "showtime5";
-            this.showtime5.Size = new System.Drawing.Size(85, 20);
-            this.showtime5.TabIndex = 93;
-            this.showtime5.TabStop = true;
-            this.showtime5.Text = "showtime5";
-            this.showtime5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime5_LinkClicked);
-            // 
-            // showtime4
-            // 
-            this.showtime4.AutoSize = true;
-            this.showtime4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime4.Location = new System.Drawing.Point(585, 547);
-            this.showtime4.Name = "showtime4";
-            this.showtime4.Size = new System.Drawing.Size(85, 20);
-            this.showtime4.TabIndex = 92;
-            this.showtime4.TabStop = true;
-            this.showtime4.Text = "showtime4";
-            this.showtime4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime4_LinkClicked);
-            // 
-            // showtime3
-            // 
-            this.showtime3.AutoSize = true;
-            this.showtime3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime3.Location = new System.Drawing.Point(428, 547);
-            this.showtime3.Name = "showtime3";
-            this.showtime3.Size = new System.Drawing.Size(85, 20);
-            this.showtime3.TabIndex = 91;
-            this.showtime3.TabStop = true;
-            this.showtime3.Text = "showtime3";
-            this.showtime3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime3_LinkClicked);
-            // 
-            // showtime2
-            // 
-            this.showtime2.AutoSize = true;
-            this.showtime2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime2.Location = new System.Drawing.Point(287, 547);
-            this.showtime2.Name = "showtime2";
-            this.showtime2.Size = new System.Drawing.Size(85, 20);
-            this.showtime2.TabIndex = 90;
-            this.showtime2.TabStop = true;
-            this.showtime2.Text = "showtime2";
-            this.showtime2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime2_LinkClicked);
-            // 
-            // showtime1
-            // 
-            this.showtime1.AutoSize = true;
-            this.showtime1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime1.Location = new System.Drawing.Point(125, 547);
-            this.showtime1.Name = "showtime1";
-            this.showtime1.Size = new System.Drawing.Size(85, 20);
-            this.showtime1.TabIndex = 89;
-            this.showtime1.TabStop = true;
-            this.showtime1.Text = "showtime1";
-            this.showtime1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime1_LinkClicked);
-            // 
-            // mainShowtimelbl
-            // 
-            this.mainShowtimelbl.AutoSize = true;
-            this.mainShowtimelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainShowtimelbl.Location = new System.Drawing.Point(413, 441);
-            this.mainShowtimelbl.Name = "mainShowtimelbl";
-            this.mainShowtimelbl.Size = new System.Drawing.Size(116, 25);
-            this.mainShowtimelbl.TabIndex = 88;
-            this.mainShowtimelbl.Text = "Showtimes";
+            this.orderTicketsbtn.Location = new System.Drawing.Point(400, 591);
+            this.orderTicketsbtn.Name = "orderTicketsbtn";
+            this.orderTicketsbtn.Size = new System.Drawing.Size(197, 34);
+            this.orderTicketsbtn.TabIndex = 88;
+            this.orderTicketsbtn.Text = "Click Here to Order Tickets!";
+            this.orderTicketsbtn.UseVisualStyleBackColor = true;
+            this.orderTicketsbtn.Click += new System.EventHandler(this.orderTicketsbtn_Click);
             // 
             // MDSSynopsis
             // 
@@ -3279,6 +3178,28 @@
             // Ticket
             // 
             this.Ticket.BackColor = System.Drawing.Color.Silver;
+            this.Ticket.Controls.Add(this.displayLength);
+            this.Ticket.Controls.Add(this.displayRating);
+            this.Ticket.Controls.Add(this.ratinglbl);
+            this.Ticket.Controls.Add(this.lengthlbl);
+            this.Ticket.Controls.Add(this.movietxt);
+            this.Ticket.Controls.Add(this.displayMovieTitle);
+            this.Ticket.Controls.Add(this.displayShowtimelbl);
+            this.Ticket.Controls.Add(this.displayDatelbl);
+            this.Ticket.Controls.Add(this.showtimeDate);
+            this.Ticket.Controls.Add(this.showtimelbl);
+            this.Ticket.Controls.Add(this.showDatelbl);
+            this.Ticket.Controls.Add(this.chooseDatelbl);
+            this.Ticket.Controls.Add(this.showtime9);
+            this.Ticket.Controls.Add(this.showtime8);
+            this.Ticket.Controls.Add(this.showtime7);
+            this.Ticket.Controls.Add(this.showtime6);
+            this.Ticket.Controls.Add(this.showtime5);
+            this.Ticket.Controls.Add(this.showtime4);
+            this.Ticket.Controls.Add(this.showtime3);
+            this.Ticket.Controls.Add(this.showtime2);
+            this.Ticket.Controls.Add(this.showtime1);
+            this.Ticket.Controls.Add(this.showtimeHeader);
             this.Ticket.Controls.Add(this.button4);
             this.Ticket.Controls.Add(this.label32);
             this.Ticket.Controls.Add(this.label31);
@@ -3301,9 +3222,244 @@
             this.Ticket.TabIndex = 8;
             this.Ticket.Text = "Ticket";
             // 
+            // displayLength
+            // 
+            this.displayLength.AutoSize = true;
+            this.displayLength.Location = new System.Drawing.Point(109, 153);
+            this.displayLength.Name = "displayLength";
+            this.displayLength.Size = new System.Drawing.Size(72, 13);
+            this.displayLength.TabIndex = 120;
+            this.displayLength.Text = "displayLength";
+            // 
+            // displayRating
+            // 
+            this.displayRating.AutoSize = true;
+            this.displayRating.Location = new System.Drawing.Point(102, 119);
+            this.displayRating.Name = "displayRating";
+            this.displayRating.Size = new System.Drawing.Size(63, 13);
+            this.displayRating.TabIndex = 119;
+            this.displayRating.Text = "showRating";
+            // 
+            // ratinglbl
+            // 
+            this.ratinglbl.AutoSize = true;
+            this.ratinglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ratinglbl.Location = new System.Drawing.Point(39, 115);
+            this.ratinglbl.Name = "ratinglbl";
+            this.ratinglbl.Size = new System.Drawing.Size(57, 20);
+            this.ratinglbl.TabIndex = 118;
+            this.ratinglbl.Text = "Rated:";
+            // 
+            // lengthlbl
+            // 
+            this.lengthlbl.AutoSize = true;
+            this.lengthlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lengthlbl.Location = new System.Drawing.Point(40, 148);
+            this.lengthlbl.Name = "lengthlbl";
+            this.lengthlbl.Size = new System.Drawing.Size(63, 20);
+            this.lengthlbl.TabIndex = 117;
+            this.lengthlbl.Text = "Length:";
+            // 
+            // movietxt
+            // 
+            this.movietxt.AutoSize = true;
+            this.movietxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movietxt.Location = new System.Drawing.Point(40, 84);
+            this.movietxt.Name = "movietxt";
+            this.movietxt.Size = new System.Drawing.Size(54, 20);
+            this.movietxt.TabIndex = 116;
+            this.movietxt.Text = "Movie:";
+            // 
+            // displayMovieTitle
+            // 
+            this.displayMovieTitle.AutoSize = true;
+            this.displayMovieTitle.Location = new System.Drawing.Point(100, 89);
+            this.displayMovieTitle.Name = "displayMovieTitle";
+            this.displayMovieTitle.Size = new System.Drawing.Size(88, 13);
+            this.displayMovieTitle.TabIndex = 115;
+            this.displayMovieTitle.Text = "displayMovieTitle";
+            // 
+            // displayShowtimelbl
+            // 
+            this.displayShowtimelbl.AutoSize = true;
+            this.displayShowtimelbl.Location = new System.Drawing.Point(551, 119);
+            this.displayShowtimelbl.Name = "displayShowtimelbl";
+            this.displayShowtimelbl.Size = new System.Drawing.Size(41, 13);
+            this.displayShowtimelbl.TabIndex = 114;
+            this.displayShowtimelbl.Text = "label71";
+            // 
+            // displayDatelbl
+            // 
+            this.displayDatelbl.AutoSize = true;
+            this.displayDatelbl.Location = new System.Drawing.Point(528, 85);
+            this.displayDatelbl.Name = "displayDatelbl";
+            this.displayDatelbl.Size = new System.Drawing.Size(41, 13);
+            this.displayDatelbl.TabIndex = 113;
+            this.displayDatelbl.Text = "label71";
+            // 
+            // showtimeDate
+            // 
+            this.showtimeDate.Location = new System.Drawing.Point(406, 197);
+            this.showtimeDate.MaxDate = new System.DateTime(2014, 5, 9, 0, 0, 0, 0);
+            this.showtimeDate.MinDate = new System.DateTime(2014, 4, 24, 0, 0, 0, 0);
+            this.showtimeDate.Name = "showtimeDate";
+            this.showtimeDate.Size = new System.Drawing.Size(200, 20);
+            this.showtimeDate.TabIndex = 112;
+            this.showtimeDate.Value = new System.DateTime(2014, 4, 24, 0, 0, 0, 0);
+            this.showtimeDate.ValueChanged += new System.EventHandler(this.showtimeDate_ValueChanged);
+            // 
+            // showtimelbl
+            // 
+            this.showtimelbl.AutoSize = true;
+            this.showtimelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtimelbl.Location = new System.Drawing.Point(403, 119);
+            this.showtimelbl.Name = "showtimelbl";
+            this.showtimelbl.Size = new System.Drawing.Size(126, 16);
+            this.showtimelbl.TabIndex = 110;
+            this.showtimelbl.Text = "Selected Showtime:";
+            // 
+            // showDatelbl
+            // 
+            this.showDatelbl.AutoSize = true;
+            this.showDatelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showDatelbl.Location = new System.Drawing.Point(403, 82);
+            this.showDatelbl.Name = "showDatelbl";
+            this.showDatelbl.Size = new System.Drawing.Size(97, 16);
+            this.showDatelbl.TabIndex = 109;
+            this.showDatelbl.Text = "Selected Date:";
+            // 
+            // chooseDatelbl
+            // 
+            this.chooseDatelbl.AutoSize = true;
+            this.chooseDatelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseDatelbl.Location = new System.Drawing.Point(283, 197);
+            this.chooseDatelbl.Name = "chooseDatelbl";
+            this.chooseDatelbl.Size = new System.Drawing.Size(117, 20);
+            this.chooseDatelbl.TabIndex = 108;
+            this.chooseDatelbl.Text = "Choose a date:";
+            // 
+            // showtime9
+            // 
+            this.showtime9.AutoSize = true;
+            this.showtime9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime9.Location = new System.Drawing.Point(671, 396);
+            this.showtime9.Name = "showtime9";
+            this.showtime9.Size = new System.Drawing.Size(85, 20);
+            this.showtime9.TabIndex = 107;
+            this.showtime9.TabStop = true;
+            this.showtime9.Text = "showtime9";
+            this.showtime9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime9_LinkClicked_1);
+            // 
+            // showtime8
+            // 
+            this.showtime8.AutoSize = true;
+            this.showtime8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime8.Location = new System.Drawing.Point(508, 395);
+            this.showtime8.Name = "showtime8";
+            this.showtime8.Size = new System.Drawing.Size(85, 20);
+            this.showtime8.TabIndex = 106;
+            this.showtime8.TabStop = true;
+            this.showtime8.Text = "showtime8";
+            this.showtime8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime8_LinkClicked_1);
+            // 
+            // showtime7
+            // 
+            this.showtime7.AutoSize = true;
+            this.showtime7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime7.Location = new System.Drawing.Point(353, 395);
+            this.showtime7.Name = "showtime7";
+            this.showtime7.Size = new System.Drawing.Size(85, 20);
+            this.showtime7.TabIndex = 105;
+            this.showtime7.TabStop = true;
+            this.showtime7.Text = "showtime7";
+            this.showtime7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime7_LinkClicked_1);
+            // 
+            // showtime6
+            // 
+            this.showtime6.AutoSize = true;
+            this.showtime6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime6.Location = new System.Drawing.Point(198, 396);
+            this.showtime6.Name = "showtime6";
+            this.showtime6.Size = new System.Drawing.Size(85, 20);
+            this.showtime6.TabIndex = 104;
+            this.showtime6.TabStop = true;
+            this.showtime6.Text = "showtime6";
+            this.showtime6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime6_LinkClicked_1);
+            // 
+            // showtime5
+            // 
+            this.showtime5.AutoSize = true;
+            this.showtime5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime5.Location = new System.Drawing.Point(744, 327);
+            this.showtime5.Name = "showtime5";
+            this.showtime5.Size = new System.Drawing.Size(85, 20);
+            this.showtime5.TabIndex = 103;
+            this.showtime5.TabStop = true;
+            this.showtime5.Text = "showtime5";
+            this.showtime5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime5_LinkClicked_1);
+            // 
+            // showtime4
+            // 
+            this.showtime4.AutoSize = true;
+            this.showtime4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime4.Location = new System.Drawing.Point(579, 328);
+            this.showtime4.Name = "showtime4";
+            this.showtime4.Size = new System.Drawing.Size(85, 20);
+            this.showtime4.TabIndex = 102;
+            this.showtime4.TabStop = true;
+            this.showtime4.Text = "showtime4";
+            this.showtime4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime4_LinkClicked_1);
+            // 
+            // showtime3
+            // 
+            this.showtime3.AutoSize = true;
+            this.showtime3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime3.Location = new System.Drawing.Point(422, 328);
+            this.showtime3.Name = "showtime3";
+            this.showtime3.Size = new System.Drawing.Size(85, 20);
+            this.showtime3.TabIndex = 101;
+            this.showtime3.TabStop = true;
+            this.showtime3.Text = "showtime3";
+            this.showtime3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime3_LinkClicked_1);
+            // 
+            // showtime2
+            // 
+            this.showtime2.AutoSize = true;
+            this.showtime2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime2.Location = new System.Drawing.Point(283, 328);
+            this.showtime2.Name = "showtime2";
+            this.showtime2.Size = new System.Drawing.Size(85, 20);
+            this.showtime2.TabIndex = 100;
+            this.showtime2.TabStop = true;
+            this.showtime2.Text = "showtime2";
+            this.showtime2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime2_LinkClicked_1);
+            // 
+            // showtime1
+            // 
+            this.showtime1.AutoSize = true;
+            this.showtime1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtime1.Location = new System.Drawing.Point(126, 328);
+            this.showtime1.Name = "showtime1";
+            this.showtime1.Size = new System.Drawing.Size(85, 20);
+            this.showtime1.TabIndex = 99;
+            this.showtime1.TabStop = true;
+            this.showtime1.Text = "showtime1";
+            this.showtime1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.showtime1_LinkClicked_1);
+            // 
+            // showtimeHeader
+            // 
+            this.showtimeHeader.AutoSize = true;
+            this.showtimeHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showtimeHeader.Location = new System.Drawing.Point(403, 262);
+            this.showtimeHeader.Name = "showtimeHeader";
+            this.showtimeHeader.Size = new System.Drawing.Size(116, 25);
+            this.showtimeHeader.TabIndex = 98;
+            this.showtimeHeader.Text = "Showtimes";
+            this.showtimeHeader.Visible = false;
+            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(370, 325);
+            this.button4.Location = new System.Drawing.Point(518, 692);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 38);
             this.button4.TabIndex = 14;
@@ -3315,7 +3471,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(32, 96);
+            this.label32.Location = new System.Drawing.Point(180, 463);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(163, 20);
             this.label32.TabIndex = 13;
@@ -3336,7 +3492,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(512, 250);
+            this.label30.Location = new System.Drawing.Point(660, 617);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(49, 20);
             this.label30.TabIndex = 11;
@@ -3346,7 +3502,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(512, 196);
+            this.label29.Location = new System.Drawing.Point(660, 563);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(49, 20);
             this.label29.TabIndex = 10;
@@ -3356,7 +3512,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(512, 141);
+            this.label28.Location = new System.Drawing.Point(660, 508);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(49, 20);
             this.label28.TabIndex = 9;
@@ -3366,7 +3522,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(366, 250);
+            this.label25.Location = new System.Drawing.Point(514, 617);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(121, 20);
             this.label25.TabIndex = 8;
@@ -3376,7 +3532,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(366, 196);
+            this.label26.Location = new System.Drawing.Point(514, 563);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(121, 20);
             this.label26.TabIndex = 7;
@@ -3386,7 +3542,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(366, 141);
+            this.label27.Location = new System.Drawing.Point(514, 508);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(118, 20);
             this.label27.TabIndex = 6;
@@ -3396,7 +3552,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(92, 250);
+            this.label24.Location = new System.Drawing.Point(240, 617);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(44, 20);
             this.label24.TabIndex = 5;
@@ -3406,7 +3562,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(92, 141);
+            this.label4.Location = new System.Drawing.Point(240, 508);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 20);
             this.label4.TabIndex = 3;
@@ -3427,7 +3583,7 @@
             "8",
             "9",
             "10"});
-            this.comboBox3.Location = new System.Drawing.Point(239, 249);
+            this.comboBox3.Location = new System.Drawing.Point(387, 616);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(91, 21);
             this.comboBox3.TabIndex = 2;
@@ -3448,7 +3604,7 @@
             "8",
             "9",
             "10"});
-            this.comboBox2.Location = new System.Drawing.Point(239, 195);
+            this.comboBox2.Location = new System.Drawing.Point(387, 562);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(91, 21);
             this.comboBox2.TabIndex = 1;
@@ -3469,7 +3625,7 @@
             "8",
             "9",
             "10"});
-            this.comboBox1.Location = new System.Drawing.Point(239, 143);
+            this.comboBox1.Location = new System.Drawing.Point(387, 510);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(91, 21);
             this.comboBox1.TabIndex = 0;
@@ -3479,7 +3635,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(92, 196);
+            this.label23.Location = new System.Drawing.Point(240, 563);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(55, 20);
             this.label23.TabIndex = 4;
@@ -3492,20 +3648,20 @@
             this.ContactUsTab.Controls.Add(this.nameofplaceLabel);
             this.ContactUsTab.Controls.Add(this.secondAddressLabel);
             this.ContactUsTab.Controls.Add(this.locationLabel);
-            this.ContactUsTab.Controls.Add(this.locatePicture);
             this.ContactUsTab.Controls.Add(this.addresslabel);
             this.ContactUsTab.Controls.Add(this.actualEmailLabel);
             this.ContactUsTab.Controls.Add(this.EmailLabel);
             this.ContactUsTab.Controls.Add(this.infoLabel);
             this.ContactUsTab.Controls.Add(this.hourHeadLabel);
-            this.ContactUsTab.Controls.Add(this.clockPicture);
-            this.ContactUsTab.Controls.Add(this.pictureBox7);
             this.ContactUsTab.Controls.Add(this.callusLabel);
-            this.ContactUsTab.Controls.Add(this.PhonePicture);
             this.ContactUsTab.Controls.Add(this.hoursLabel);
             this.ContactUsTab.Controls.Add(this.label69);
             this.ContactUsTab.Controls.Add(this.phoneLabel);
             this.ContactUsTab.Controls.Add(this.ContactHeadLabel);
+            this.ContactUsTab.Controls.Add(this.locatePicture);
+            this.ContactUsTab.Controls.Add(this.clockPicture);
+            this.ContactUsTab.Controls.Add(this.pictureBox7);
+            this.ContactUsTab.Controls.Add(this.PhonePicture);
             this.ContactUsTab.Location = new System.Drawing.Point(4, 22);
             this.ContactUsTab.Name = "ContactUsTab";
             this.ContactUsTab.Padding = new System.Windows.Forms.Padding(3);
@@ -3552,16 +3708,6 @@
             this.locationLabel.Size = new System.Drawing.Size(136, 20);
             this.locationLabel.TabIndex = 14;
             this.locationLabel.Text = "800 N. State Blvd.";
-            // 
-            // locatePicture
-            // 
-            this.locatePicture.Image = ((System.Drawing.Image)(resources.GetObject("locatePicture.Image")));
-            this.locatePicture.Location = new System.Drawing.Point(44, 496);
-            this.locatePicture.Name = "locatePicture";
-            this.locatePicture.Size = new System.Drawing.Size(85, 78);
-            this.locatePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.locatePicture.TabIndex = 13;
-            this.locatePicture.TabStop = false;
             // 
             // addresslabel
             // 
@@ -3613,26 +3759,6 @@
             this.hourHeadLabel.TabIndex = 8;
             this.hourHeadLabel.Text = "Hours Avaliable";
             // 
-            // clockPicture
-            // 
-            this.clockPicture.Image = ((System.Drawing.Image)(resources.GetObject("clockPicture.Image")));
-            this.clockPicture.Location = new System.Drawing.Point(50, 256);
-            this.clockPicture.Name = "clockPicture";
-            this.clockPicture.Size = new System.Drawing.Size(79, 62);
-            this.clockPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.clockPicture.TabIndex = 7;
-            this.clockPicture.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(67, 380);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(49, 35);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            // 
             // callusLabel
             // 
             this.callusLabel.AutoSize = true;
@@ -3642,16 +3768,6 @@
             this.callusLabel.Size = new System.Drawing.Size(66, 20);
             this.callusLabel.TabIndex = 5;
             this.callusLabel.Text = "Call Us";
-            // 
-            // PhonePicture
-            // 
-            this.PhonePicture.Image = ((System.Drawing.Image)(resources.GetObject("PhonePicture.Image")));
-            this.PhonePicture.Location = new System.Drawing.Point(67, 138);
-            this.PhonePicture.Name = "PhonePicture";
-            this.PhonePicture.Size = new System.Drawing.Size(37, 36);
-            this.PhonePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PhonePicture.TabIndex = 4;
-            this.PhonePicture.TabStop = false;
             // 
             // hoursLabel
             // 
@@ -3694,6 +3810,46 @@
             this.ContactHeadLabel.TabIndex = 0;
             this.ContactHeadLabel.Text = "Contact Us";
             // 
+            // locatePicture
+            // 
+            this.locatePicture.Image = ((System.Drawing.Image)(resources.GetObject("locatePicture.Image")));
+            this.locatePicture.Location = new System.Drawing.Point(44, 496);
+            this.locatePicture.Name = "locatePicture";
+            this.locatePicture.Size = new System.Drawing.Size(85, 78);
+            this.locatePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.locatePicture.TabIndex = 13;
+            this.locatePicture.TabStop = false;
+            // 
+            // clockPicture
+            // 
+            this.clockPicture.Image = ((System.Drawing.Image)(resources.GetObject("clockPicture.Image")));
+            this.clockPicture.Location = new System.Drawing.Point(50, 256);
+            this.clockPicture.Name = "clockPicture";
+            this.clockPicture.Size = new System.Drawing.Size(79, 62);
+            this.clockPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.clockPicture.TabIndex = 7;
+            this.clockPicture.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(67, 380);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(49, 35);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 6;
+            this.pictureBox7.TabStop = false;
+            // 
+            // PhonePicture
+            // 
+            this.PhonePicture.Image = ((System.Drawing.Image)(resources.GetObject("PhonePicture.Image")));
+            this.PhonePicture.Location = new System.Drawing.Point(67, 138);
+            this.PhonePicture.Name = "PhonePicture";
+            this.PhonePicture.Size = new System.Drawing.Size(37, 36);
+            this.PhonePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PhonePicture.TabIndex = 4;
+            this.PhonePicture.TabStop = false;
+            // 
             // AdminTab
             // 
             this.AdminTab.Controls.Add(this.st9lbl);
@@ -3714,10 +3870,16 @@
             this.AdminTab.Controls.Add(this.st3txt);
             this.AdminTab.Controls.Add(this.st2txt);
             this.AdminTab.Controls.Add(this.st1txt);
+            this.AdminTab.Controls.Add(this.posterPathtxt);
+            this.AdminTab.Controls.Add(this.DirectorBox);
+            this.AdminTab.Controls.Add(this.ActorBox);
+            this.AdminTab.Controls.Add(this.SynopsisBox);
+            this.AdminTab.Controls.Add(this.DescriptionBox);
+            this.AdminTab.Controls.Add(this.LengthBox);
+            this.AdminTab.Controls.Add(this.TitleBox);
             this.AdminTab.Controls.Add(this.st1lbl);
             this.AdminTab.Controls.Add(this.label3);
             this.AdminTab.Controls.Add(this.label2);
-            this.AdminTab.Controls.Add(this.posterPathtxt);
             this.AdminTab.Controls.Add(this.uploadPosterbtn);
             this.AdminTab.Controls.Add(this.ReleaseDTPicker);
             this.AdminTab.Controls.Add(this.label65);
@@ -3730,12 +3892,6 @@
             this.AdminTab.Controls.Add(this.label58);
             this.AdminTab.Controls.Add(this.label57);
             this.AdminTab.Controls.Add(this.label56);
-            this.AdminTab.Controls.Add(this.DirectorBox);
-            this.AdminTab.Controls.Add(this.ActorBox);
-            this.AdminTab.Controls.Add(this.SynopsisBox);
-            this.AdminTab.Controls.Add(this.DescriptionBox);
-            this.AdminTab.Controls.Add(this.LengthBox);
-            this.AdminTab.Controls.Add(this.TitleBox);
             this.AdminTab.Controls.Add(this.GenreBox);
             this.AdminTab.Controls.Add(this.RatingBox);
             this.AdminTab.Controls.Add(this.AddBtn);
@@ -3908,6 +4064,57 @@
             this.st1txt.Size = new System.Drawing.Size(100, 20);
             this.st1txt.TabIndex = 98;
             // 
+            // posterPathtxt
+            // 
+            this.posterPathtxt.Enabled = false;
+            this.posterPathtxt.Location = new System.Drawing.Point(252, 436);
+            this.posterPathtxt.Name = "posterPathtxt";
+            this.posterPathtxt.Size = new System.Drawing.Size(151, 20);
+            this.posterPathtxt.TabIndex = 94;
+            // 
+            // DirectorBox
+            // 
+            this.DirectorBox.Location = new System.Drawing.Point(112, 367);
+            this.DirectorBox.Name = "DirectorBox";
+            this.DirectorBox.Size = new System.Drawing.Size(153, 20);
+            this.DirectorBox.TabIndex = 79;
+            // 
+            // ActorBox
+            // 
+            this.ActorBox.Location = new System.Drawing.Point(112, 303);
+            this.ActorBox.Multiline = true;
+            this.ActorBox.Name = "ActorBox";
+            this.ActorBox.Size = new System.Drawing.Size(291, 39);
+            this.ActorBox.TabIndex = 78;
+            // 
+            // SynopsisBox
+            // 
+            this.SynopsisBox.Location = new System.Drawing.Point(112, 141);
+            this.SynopsisBox.Name = "SynopsisBox";
+            this.SynopsisBox.Size = new System.Drawing.Size(153, 20);
+            this.SynopsisBox.TabIndex = 76;
+            // 
+            // DescriptionBox
+            // 
+            this.DescriptionBox.Location = new System.Drawing.Point(112, 184);
+            this.DescriptionBox.Name = "DescriptionBox";
+            this.DescriptionBox.Size = new System.Drawing.Size(153, 20);
+            this.DescriptionBox.TabIndex = 75;
+            // 
+            // LengthBox
+            // 
+            this.LengthBox.Location = new System.Drawing.Point(112, 101);
+            this.LengthBox.Name = "LengthBox";
+            this.LengthBox.Size = new System.Drawing.Size(153, 20);
+            this.LengthBox.TabIndex = 74;
+            // 
+            // TitleBox
+            // 
+            this.TitleBox.Location = new System.Drawing.Point(112, 59);
+            this.TitleBox.Name = "TitleBox";
+            this.TitleBox.Size = new System.Drawing.Size(153, 20);
+            this.TitleBox.TabIndex = 71;
+            // 
             // st1lbl
             // 
             this.st1lbl.AutoSize = true;
@@ -3934,14 +4141,6 @@
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 95;
             this.label2.Text = "Add Movie Info";
-            // 
-            // posterPathtxt
-            // 
-            this.posterPathtxt.Enabled = false;
-            this.posterPathtxt.Location = new System.Drawing.Point(252, 436);
-            this.posterPathtxt.Name = "posterPathtxt";
-            this.posterPathtxt.Size = new System.Drawing.Size(151, 20);
-            this.posterPathtxt.TabIndex = 94;
             // 
             // uploadPosterbtn
             // 
@@ -4048,49 +4247,6 @@
             this.label56.Size = new System.Drawing.Size(27, 13);
             this.label56.TabIndex = 82;
             this.label56.Text = "Title";
-            // 
-            // DirectorBox
-            // 
-            this.DirectorBox.Location = new System.Drawing.Point(112, 367);
-            this.DirectorBox.Name = "DirectorBox";
-            this.DirectorBox.Size = new System.Drawing.Size(153, 20);
-            this.DirectorBox.TabIndex = 79;
-            // 
-            // ActorBox
-            // 
-            this.ActorBox.Location = new System.Drawing.Point(112, 303);
-            this.ActorBox.Multiline = true;
-            this.ActorBox.Name = "ActorBox";
-            this.ActorBox.Size = new System.Drawing.Size(291, 39);
-            this.ActorBox.TabIndex = 78;
-            // 
-            // SynopsisBox
-            // 
-            this.SynopsisBox.Location = new System.Drawing.Point(112, 141);
-            this.SynopsisBox.Name = "SynopsisBox";
-            this.SynopsisBox.Size = new System.Drawing.Size(153, 20);
-            this.SynopsisBox.TabIndex = 76;
-            // 
-            // DescriptionBox
-            // 
-            this.DescriptionBox.Location = new System.Drawing.Point(112, 184);
-            this.DescriptionBox.Name = "DescriptionBox";
-            this.DescriptionBox.Size = new System.Drawing.Size(153, 20);
-            this.DescriptionBox.TabIndex = 75;
-            // 
-            // LengthBox
-            // 
-            this.LengthBox.Location = new System.Drawing.Point(112, 101);
-            this.LengthBox.Name = "LengthBox";
-            this.LengthBox.Size = new System.Drawing.Size(153, 20);
-            this.LengthBox.TabIndex = 74;
-            // 
-            // TitleBox
-            // 
-            this.TitleBox.Location = new System.Drawing.Point(112, 59);
-            this.TitleBox.Name = "TitleBox";
-            this.TitleBox.Size = new System.Drawing.Size(153, 20);
-            this.TitleBox.TabIndex = 71;
             // 
             // GenreBox
             // 
@@ -4211,18 +4367,51 @@
             this.adminctrllbl.TabIndex = 0;
             this.adminctrllbl.Text = "Administrator Controls";
             // 
-            // tabPage3
+            // PrintTix
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.Silver;
-            this.tabPage3.Controls.Add(this.gobackhomebutton);
-            this.tabPage3.Controls.Add(this.printTixButton);
-            this.tabPage3.Controls.Add(this.PrintLabel);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(960, 773);
-            this.tabPage3.TabIndex = 12;
-            this.tabPage3.Text = "PrintTickets";
+            this.PrintTix.BackColor = System.Drawing.Color.Silver;
+            this.PrintTix.Controls.Add(this.label70);
+            this.PrintTix.Controls.Add(this.pictureBox5);
+            this.PrintTix.Controls.Add(this.gobackhomebutton);
+            this.PrintTix.Controls.Add(this.printTixButton);
+            this.PrintTix.Controls.Add(this.PrintLabel);
+            this.PrintTix.Location = new System.Drawing.Point(4, 22);
+            this.PrintTix.Name = "PrintTix";
+            this.PrintTix.Padding = new System.Windows.Forms.Padding(3);
+            this.PrintTix.Size = new System.Drawing.Size(960, 773);
+            this.PrintTix.TabIndex = 12;
+            this.PrintTix.Text = "PrintTickets";
+            // 
+            // label70
+            // 
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(431, 174);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(210, 34);
+            this.label70.TabIndex = 4;
+            this.label70.Text = "Selected Movie Title";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::MovieTheater.Properties.Resources.ticket;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.InitialImage = global::MovieTheater.Properties.Resources.ticket;
+            this.pictureBox5.Location = new System.Drawing.Point(257, 123);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(533, 241);
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // gobackhomebutton
+            // 
+            this.gobackhomebutton.Location = new System.Drawing.Point(726, 442);
+            this.gobackhomebutton.Name = "gobackhomebutton";
+            this.gobackhomebutton.Size = new System.Drawing.Size(75, 23);
+            this.gobackhomebutton.TabIndex = 2;
+            this.gobackhomebutton.Text = "Home";
+            this.gobackhomebutton.UseVisualStyleBackColor = true;
+            this.gobackhomebutton.Click += new System.EventHandler(this.gobackhomebutton_Click);
             // 
             // printTixButton
             // 
@@ -4293,29 +4482,19 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // gobackhomebutton
-            // 
-            this.gobackhomebutton.Location = new System.Drawing.Point(726, 442);
-            this.gobackhomebutton.Name = "gobackhomebutton";
-            this.gobackhomebutton.Size = new System.Drawing.Size(75, 23);
-            this.gobackhomebutton.TabIndex = 2;
-            this.gobackhomebutton.Text = "Home";
-            this.gobackhomebutton.UseVisualStyleBackColor = true;
-            this.gobackhomebutton.Click += new System.EventHandler(this.gobackhomebutton_Click);
-            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(960, 733);
+            this.ClientSize = new System.Drawing.Size(977, 733);
             this.Controls.Add(this.tabControl1);
             this.Name = "homepage";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -4381,8 +4560,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.AdminCtrl.ResumeLayout(false);
             this.AdminCtrl.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.PrintTix.ResumeLayout(false);
+            this.PrintTix.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
@@ -4407,6 +4587,7 @@
         private System.Windows.Forms.Label AdminLabel;
         private System.Windows.Forms.TabControl BodyTabControl;
         private System.Windows.Forms.TabPage HomeTab;
+        private System.Windows.Forms.Label editMovielbl;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label NSReleaseDateLabel10;
         private System.Windows.Forms.Label NSReleaseDateLabel9;
@@ -4463,6 +4644,8 @@
         private System.Windows.Forms.PictureBox search1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TabPage MovieDetailsTab;
+        private System.Windows.Forms.Label MDSSynopsis;
+        private System.Windows.Forms.Label MDSynopsisLabel;
         private System.Windows.Forms.Label MDDirectorLabel;
         private System.Windows.Forms.Label MDSDirector;
         private System.Windows.Forms.Label MDActorsLabel;
@@ -4519,122 +4702,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage Seating;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TabPage Purchase;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TabPage Ticket;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TabPage ContactUsTab;
-        private System.Windows.Forms.TabPage AdminTab;
-        private System.Windows.Forms.DateTimePicker ReleaseDTPicker;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.TextBox DirectorBox;
-        private System.Windows.Forms.TextBox ActorBox;
-        private System.Windows.Forms.TextBox SynopsisBox;
-        private System.Windows.Forms.TextBox DescriptionBox;
-        private System.Windows.Forms.TextBox LengthBox;
-        private System.Windows.Forms.TextBox TitleBox;
-        private System.Windows.Forms.ComboBox GenreBox;
-        private System.Windows.Forms.ComboBox RatingBox;
-        private System.Windows.Forms.Button AddBtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label MDSynopsisLabel;
-        private System.Windows.Forms.Label MDSSynopsis;
-        private System.Windows.Forms.Button uploadPosterbtn;
-        private System.Windows.Forms.TextBox posterPathtxt;
-        private System.Windows.Forms.Label mainShowtimelbl;
-        private System.Windows.Forms.LinkLabel showtime9;
-        private System.Windows.Forms.LinkLabel showtime8;
-        private System.Windows.Forms.LinkLabel showtime7;
-        private System.Windows.Forms.LinkLabel showtime6;
-        private System.Windows.Forms.LinkLabel showtime5;
-        private System.Windows.Forms.LinkLabel showtime4;
-        private System.Windows.Forms.LinkLabel showtime3;
-        private System.Windows.Forms.LinkLabel showtime2;
-        private System.Windows.Forms.LinkLabel showtime1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox st2txt;
-        private System.Windows.Forms.TextBox st1txt;
-        private System.Windows.Forms.Label st1lbl;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox st5txt;
-        private System.Windows.Forms.TextBox st4txt;
-        private System.Windows.Forms.TextBox st3txt;
-        private System.Windows.Forms.TextBox st9txt;
-        private System.Windows.Forms.TextBox st8txt;
-        private System.Windows.Forms.TextBox st7txt;
-        private System.Windows.Forms.TextBox st6txt;
-        private System.Windows.Forms.Label st8lbl;
-        private System.Windows.Forms.Label st7lbl;
-        private System.Windows.Forms.Label st6lbl;
-        private System.Windows.Forms.Label st5lbl;
-        private System.Windows.Forms.Label st4lbl;
-        private System.Windows.Forms.Label st3lbl;
-        private System.Windows.Forms.Label st2lbl;
-        private System.Windows.Forms.Button moreShowingsbtn;
-        private System.Windows.Forms.Label st9lbl;
-        private System.Windows.Forms.Label ShowtimeSeattxt;
-        private System.Windows.Forms.Label lengthSeattxt;
-        private System.Windows.Forms.Label movieSeattxt;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TabPage AdminCtrl;
-        private System.Windows.Forms.Button adminRemove;
-        private System.Windows.Forms.Button adminEdit;
-        private System.Windows.Forms.Button adminAdd;
-        private System.Windows.Forms.Label adminctrllbl;
-        private System.Windows.Forms.Label editMovielbl;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox selectedSeatstxt;
         private System.Windows.Forms.Button f14;
         private System.Windows.Forms.Button f13;
         private System.Windows.Forms.Button f12;
@@ -4707,10 +4776,82 @@
         private System.Windows.Forms.Button a3;
         private System.Windows.Forms.Button a2;
         private System.Windows.Forms.Button a1;
+        private System.Windows.Forms.Label ShowtimeSeattxt;
+        private System.Windows.Forms.Label lengthSeattxt;
+        private System.Windows.Forms.Label movieSeattxt;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Button button1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
-        private System.Windows.Forms.TextBox selectedSeatstxt;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage Purchase;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TabPage Ticket;
+        private System.Windows.Forms.Label showtimelbl;
+        private System.Windows.Forms.Label showDatelbl;
+        private System.Windows.Forms.Label chooseDatelbl;
+        private System.Windows.Forms.LinkLabel showtime9;
+        private System.Windows.Forms.LinkLabel showtime8;
+        private System.Windows.Forms.LinkLabel showtime7;
+        private System.Windows.Forms.LinkLabel showtime6;
+        private System.Windows.Forms.LinkLabel showtime5;
+        private System.Windows.Forms.LinkLabel showtime4;
+        private System.Windows.Forms.LinkLabel showtime3;
+        private System.Windows.Forms.LinkLabel showtime2;
+        private System.Windows.Forms.LinkLabel showtime1;
+        private System.Windows.Forms.Label showtimeHeader;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TabPage ContactUsTab;
+        private System.Windows.Forms.PictureBox pictureofplace;
+        private System.Windows.Forms.Label nameofplaceLabel;
+        private System.Windows.Forms.Label secondAddressLabel;
+        private System.Windows.Forms.Label locationLabel;
+        private System.Windows.Forms.PictureBox locatePicture;
+        private System.Windows.Forms.Label addresslabel;
+        private System.Windows.Forms.Label actualEmailLabel;
+        private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.Label infoLabel;
         private System.Windows.Forms.Label hourHeadLabel;
         private System.Windows.Forms.PictureBox clockPicture;
@@ -4721,18 +4862,72 @@
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label phoneLabel;
         private System.Windows.Forms.Label ContactHeadLabel;
-        private System.Windows.Forms.Label addresslabel;
-        private System.Windows.Forms.Label actualEmailLabel;
-        private System.Windows.Forms.Label EmailLabel;
-        private System.Windows.Forms.Label secondAddressLabel;
-        private System.Windows.Forms.Label locationLabel;
-        private System.Windows.Forms.PictureBox locatePicture;
-        private System.Windows.Forms.Label nameofplaceLabel;
-        private System.Windows.Forms.PictureBox pictureofplace;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage AdminTab;
+        private System.Windows.Forms.Label st9lbl;
+        private System.Windows.Forms.Label st8lbl;
+        private System.Windows.Forms.Label st7lbl;
+        private System.Windows.Forms.Label st6lbl;
+        private System.Windows.Forms.Label st5lbl;
+        private System.Windows.Forms.Label st4lbl;
+        private System.Windows.Forms.Label st3lbl;
+        private System.Windows.Forms.Label st2lbl;
+        private System.Windows.Forms.Button moreShowingsbtn;
+        private System.Windows.Forms.TextBox st9txt;
+        private System.Windows.Forms.TextBox st8txt;
+        private System.Windows.Forms.TextBox st7txt;
+        private System.Windows.Forms.TextBox st6txt;
+        private System.Windows.Forms.TextBox st5txt;
+        private System.Windows.Forms.TextBox st4txt;
+        private System.Windows.Forms.TextBox st3txt;
+        private System.Windows.Forms.TextBox st2txt;
+        private System.Windows.Forms.TextBox st1txt;
+        private System.Windows.Forms.TextBox posterPathtxt;
+        private System.Windows.Forms.TextBox DirectorBox;
+        private System.Windows.Forms.TextBox ActorBox;
+        private System.Windows.Forms.TextBox SynopsisBox;
+        private System.Windows.Forms.TextBox DescriptionBox;
+        private System.Windows.Forms.TextBox LengthBox;
+        private System.Windows.Forms.TextBox TitleBox;
+        private System.Windows.Forms.Label st1lbl;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button uploadPosterbtn;
+        private System.Windows.Forms.DateTimePicker ReleaseDTPicker;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.ComboBox GenreBox;
+        private System.Windows.Forms.ComboBox RatingBox;
+        private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabPage AdminCtrl;
+        private System.Windows.Forms.Button adminRemove;
+        private System.Windows.Forms.Button adminEdit;
+        private System.Windows.Forms.Button adminAdd;
+        private System.Windows.Forms.Label adminctrllbl;
+        private System.Windows.Forms.TabPage PrintTix;
+        private System.Windows.Forms.Button gobackhomebutton;
         private System.Windows.Forms.Button printTixButton;
         private System.Windows.Forms.Label PrintLabel;
-        private System.Windows.Forms.Button gobackhomebutton;
+        private System.Windows.Forms.Label displayShowtimelbl;
+        private System.Windows.Forms.Label displayDatelbl;
+        private System.Windows.Forms.DateTimePicker showtimeDate;
+        private System.Windows.Forms.Label ratinglbl;
+        private System.Windows.Forms.Label lengthlbl;
+        private System.Windows.Forms.Label movietxt;
+        private System.Windows.Forms.Label displayMovieTitle;
+        private System.Windows.Forms.Button orderTicketsbtn;
+        private System.Windows.Forms.Label displayRating;
+        private System.Windows.Forms.Label displayLength;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label70;
 
     }
 }

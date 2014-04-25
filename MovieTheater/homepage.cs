@@ -31,8 +31,6 @@ namespace MovieTheater
         string AccountsPath = "../../xml/accountInfo.xml";
         XmlDocument MoviesDocument = new XmlDocument();
 
-        private TabPage PrintTix;
-
         public homepage()
         {
             InitializeComponent();
@@ -93,6 +91,8 @@ namespace MovieTheater
             MDDirectorLabel.Parent = backgroundMD;
             MDSSynopsis.Parent = backgroundMD;
             MDSynopsisLabel.Parent = backgroundMD;
+
+            displayDatelbl.Text = DateTime.Today.ToLongDateString();
 
             updateHomePage();
 
@@ -271,7 +271,6 @@ namespace MovieTheater
                 NRTitleLabel1.Visible = true; // title label visible
                 NRPoster1.Visible = true; // poster visible
                 NRPoster1.ImageLocation = PosterElemList[index].InnerText;
-                mainShowtimelbl.Visible = false;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -298,7 +297,6 @@ namespace MovieTheater
                 NRTitleLabel2.Visible = true;
                 NRPoster2.Visible = true;
                 NRPoster2.ImageLocation = PosterElemList[index].InnerText;
-                mainShowtimelbl.Visible = false;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -322,7 +320,6 @@ namespace MovieTheater
                 NRTitleLabel3.Visible = true;
                 NRPoster3.Visible = true;
                 NRPoster3.ImageLocation = PosterElemList[index].InnerText;
-                mainShowtimelbl.Visible = false;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -346,7 +343,6 @@ namespace MovieTheater
                 NRTitleLabel4.Visible = true;
                 NRPoster4.Visible = true;
                 NRPoster4.ImageLocation = PosterElemList[index].InnerText;
-                mainShowtimelbl.Visible = false;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -370,7 +366,6 @@ namespace MovieTheater
                 NRTitleLabel5.Visible = true;
                 NRPoster5.Visible = true;
                 NRPoster5.ImageLocation = PosterElemList[index].InnerText;
-                mainShowtimelbl.Visible = false;
             }
             // ----------------------------------------------------------------
 
@@ -1025,69 +1020,7 @@ namespace MovieTheater
             lengthSeattxt.Text = MDLengthLabel.Text;
         }
 
-        private void showtime1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime1.Text;
-        }
-
-        private void showtime2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime2.Text;
-        }
-
-        private void showtime3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime3.Text;
-        }
-
-        private void showtime4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime4.Text;
-        }
-
-        private void showtime5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime5.Text;
-        }
-
-        private void showtime6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime6.Text;
-        }
-
-        private void showtime7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime7.Text;
-        }
-
-        private void showtime8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime8.Text;
-        }
-
-        private void showtime9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            BodyTabControl.SelectedTab = Seating;
-            showMovieInfo();
-            ShowtimeSeattxt.Text = showtime9.Text;
-        }
-
+        
 //--------------------------------------------------------------------------------------------------------------------------
 //Admin Controls////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //--------------------------------------------------------------------------------------------------------------------------
@@ -1879,6 +1812,63 @@ namespace MovieTheater
             BodyTabControl.SelectedTab = HomeTab;
         }
 
+        private void showtimeDate_ValueChanged(object sender, EventArgs e)
+        {
+            displayDatelbl.Text = showtimeDate.Value.Date.ToLongDateString();
+        }
+
+        private void showtime1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime1.Text;
+        }
+
+        private void showtime2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime2.Text;
+        }
+
+        private void showtime3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime3.Text;
+        }
+
+        private void showtime4_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime4.Text;
+        }
+
+        private void showtime5_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime5.Text;
+        }
+
+        private void showtime6_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime6.Text;
+        }
+
+        private void showtime7_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime7.Text;
+        }
+
+        private void showtime8_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime8.Text;
+        }
+
+        private void showtime9_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime9.Text;
+        }
+
+        private void orderTicketsbtn_Click(object sender, EventArgs e)
+        {
+            BodyTabControl.SelectedTab = Ticket;
+            displayMovieTitle.Text = MDTitleLabel.Text.ToString();
+            displayRating.Text = MDRatingLabel.Text.ToString();
+            displayLength.Text = MDLengthLabel.Text.ToString();
+        }
         //-----------------------------------------------------------------------------------------------------
     }
 }
