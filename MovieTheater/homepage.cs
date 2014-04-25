@@ -1724,7 +1724,7 @@ namespace MovieTheater
         private void button1_Click_1(object sender, EventArgs e)
         {
             //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
-            BodyTabControl.SelectedTab = Ticket;
+            BodyTabControl.SelectedTab = Purchase;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -1773,7 +1773,7 @@ namespace MovieTheater
         {
             //BUY TICKETS OFFICIALLY
             //TAKES YOU TO PAYMENT PAGE
-            BodyTabControl.SelectedTab = Purchase;
+            BodyTabControl.SelectedTab = Seating;
 
             //SETS UP EVERYTHING ON THE NEXT PAGE
             double subtotal, child, senior, adult;

@@ -3291,9 +3291,9 @@
             this.displayShowtimelbl.AutoSize = true;
             this.displayShowtimelbl.Location = new System.Drawing.Point(551, 119);
             this.displayShowtimelbl.Name = "displayShowtimelbl";
-            this.displayShowtimelbl.Size = new System.Drawing.Size(41, 13);
+            this.displayShowtimelbl.Size = new System.Drawing.Size(28, 13);
             this.displayShowtimelbl.TabIndex = 114;
-            this.displayShowtimelbl.Text = "label71";
+            this.displayShowtimelbl.Text = "0:00";
             // 
             // displayDatelbl
             // 
@@ -3571,9 +3571,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(240, 508);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 20);
+            this.label4.Size = new System.Drawing.Size(46, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Adult Manitee";
+            this.label4.Text = "Adult";
             // 
             // comboBox3
             // 
