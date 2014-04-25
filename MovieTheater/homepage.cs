@@ -157,7 +157,7 @@ namespace MovieTheater
         /* browse button click */
         private void browseBtn_Click(object sender, EventArgs e)
         {
-            BodyTabControl.SelectedTab = ContactUsTab;
+            BodyTabControl.SelectedTab = SearchTab;
         }
 
         /* browse button enter */

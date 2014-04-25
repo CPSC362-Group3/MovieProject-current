@@ -365,6 +365,7 @@
             this.adminAdd = new System.Windows.Forms.Button();
             this.adminctrllbl = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.gobackhomebutton = new System.Windows.Forms.Button();
             this.printTixButton = new System.Windows.Forms.Button();
             this.PrintLabel = new System.Windows.Forms.Label();
             this.contactUsBtn = new System.Windows.Forms.PictureBox();
@@ -372,7 +373,6 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.gobackhomebutton = new System.Windows.Forms.Button();
             pictureBox9 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -473,7 +473,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-13, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-31, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -4224,6 +4224,16 @@
             this.tabPage3.TabIndex = 12;
             this.tabPage3.Text = "PrintTickets";
             // 
+            // gobackhomebutton
+            // 
+            this.gobackhomebutton.Location = new System.Drawing.Point(726, 442);
+            this.gobackhomebutton.Name = "gobackhomebutton";
+            this.gobackhomebutton.Size = new System.Drawing.Size(75, 23);
+            this.gobackhomebutton.TabIndex = 2;
+            this.gobackhomebutton.Text = "Home";
+            this.gobackhomebutton.UseVisualStyleBackColor = true;
+            this.gobackhomebutton.Click += new System.EventHandler(this.gobackhomebutton_Click);
+            // 
             // printTixButton
             // 
             this.printTixButton.Location = new System.Drawing.Point(620, 442);
@@ -4292,16 +4302,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // gobackhomebutton
-            // 
-            this.gobackhomebutton.Location = new System.Drawing.Point(726, 442);
-            this.gobackhomebutton.Name = "gobackhomebutton";
-            this.gobackhomebutton.Size = new System.Drawing.Size(75, 23);
-            this.gobackhomebutton.TabIndex = 2;
-            this.gobackhomebutton.Text = "Home";
-            this.gobackhomebutton.UseVisualStyleBackColor = true;
-            this.gobackhomebutton.Click += new System.EventHandler(this.gobackhomebutton_Click);
             // 
             // homepage
             // 
