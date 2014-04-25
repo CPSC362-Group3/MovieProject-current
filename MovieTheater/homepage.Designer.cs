@@ -378,6 +378,11 @@
             this.adminAdd = new System.Windows.Forms.Button();
             this.adminctrllbl = new System.Windows.Forms.Label();
             this.PrintTix = new System.Windows.Forms.TabPage();
+            this.SeatticketLabel = new System.Windows.Forms.Label();
+            this.UsernameTicketLabel = new System.Windows.Forms.Label();
+            this.DateSecondTicketLabel = new System.Windows.Forms.Label();
+            this.TicketDateLabel = new System.Windows.Forms.Label();
+            this.TicketAdmissionLabel = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.gobackhomebutton = new System.Windows.Forms.Button();
@@ -388,6 +393,8 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.PrintNowLabel = new System.Windows.Forms.Label();
+            this.gohomeLabel = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -489,7 +496,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-12, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-28, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -3151,9 +3158,9 @@
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(35, 91);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(107, 20);
+            this.label35.Size = new System.Drawing.Size(46, 20);
             this.label35.TabIndex = 2;
-            this.label35.Text = "Adult Manitee";
+            this.label35.Text = "Adult";
             // 
             // label34
             // 
@@ -4370,6 +4377,13 @@
             // PrintTix
             // 
             this.PrintTix.BackColor = System.Drawing.Color.Silver;
+            this.PrintTix.Controls.Add(this.gohomeLabel);
+            this.PrintTix.Controls.Add(this.PrintNowLabel);
+            this.PrintTix.Controls.Add(this.SeatticketLabel);
+            this.PrintTix.Controls.Add(this.UsernameTicketLabel);
+            this.PrintTix.Controls.Add(this.DateSecondTicketLabel);
+            this.PrintTix.Controls.Add(this.TicketDateLabel);
+            this.PrintTix.Controls.Add(this.TicketAdmissionLabel);
             this.PrintTix.Controls.Add(this.label70);
             this.PrintTix.Controls.Add(this.pictureBox5);
             this.PrintTix.Controls.Add(this.gobackhomebutton);
@@ -4382,11 +4396,63 @@
             this.PrintTix.TabIndex = 12;
             this.PrintTix.Text = "PrintTickets";
             // 
+            // SeatticketLabel
+            // 
+            this.SeatticketLabel.AutoSize = true;
+            this.SeatticketLabel.BackColor = System.Drawing.Color.White;
+            this.SeatticketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeatticketLabel.Location = new System.Drawing.Point(406, 213);
+            this.SeatticketLabel.Name = "SeatticketLabel";
+            this.SeatticketLabel.Size = new System.Drawing.Size(43, 20);
+            this.SeatticketLabel.TabIndex = 9;
+            this.SeatticketLabel.Text = "Seat";
+            // 
+            // UsernameTicketLabel
+            // 
+            this.UsernameTicketLabel.AutoSize = true;
+            this.UsernameTicketLabel.BackColor = System.Drawing.Color.White;
+            this.UsernameTicketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTicketLabel.Location = new System.Drawing.Point(406, 176);
+            this.UsernameTicketLabel.Name = "UsernameTicketLabel";
+            this.UsernameTicketLabel.Size = new System.Drawing.Size(55, 20);
+            this.UsernameTicketLabel.TabIndex = 8;
+            this.UsernameTicketLabel.Text = "NAME";
+            // 
+            // DateSecondTicketLabel
+            // 
+            this.DateSecondTicketLabel.BackColor = System.Drawing.Color.White;
+            this.DateSecondTicketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateSecondTicketLabel.Location = new System.Drawing.Point(296, 249);
+            this.DateSecondTicketLabel.Name = "DateSecondTicketLabel";
+            this.DateSecondTicketLabel.Size = new System.Drawing.Size(70, 80);
+            this.DateSecondTicketLabel.TabIndex = 7;
+            this.DateSecondTicketLabel.Text = "Date";
+            // 
+            // TicketDateLabel
+            // 
+            this.TicketDateLabel.BackColor = System.Drawing.Color.White;
+            this.TicketDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketDateLabel.Location = new System.Drawing.Point(372, 299);
+            this.TicketDateLabel.Name = "TicketDateLabel";
+            this.TicketDateLabel.Size = new System.Drawing.Size(201, 30);
+            this.TicketDateLabel.TabIndex = 6;
+            this.TicketDateLabel.Text = "Date";
+            // 
+            // TicketAdmissionLabel
+            // 
+            this.TicketAdmissionLabel.BackColor = System.Drawing.Color.White;
+            this.TicketAdmissionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketAdmissionLabel.Location = new System.Drawing.Point(372, 256);
+            this.TicketAdmissionLabel.Name = "TicketAdmissionLabel";
+            this.TicketAdmissionLabel.Size = new System.Drawing.Size(201, 30);
+            this.TicketAdmissionLabel.TabIndex = 5;
+            this.TicketAdmissionLabel.Text = "Admission Price";
+            // 
             // label70
             // 
-            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.BackColor = System.Drawing.Color.White;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(431, 174);
+            this.label70.Location = new System.Drawing.Point(336, 132);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(210, 34);
             this.label70.TabIndex = 4;
@@ -4396,8 +4462,9 @@
             // 
             this.pictureBox5.BackgroundImage = global::MovieTheater.Properties.Resources.ticket;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.InitialImage = global::MovieTheater.Properties.Resources.ticket;
-            this.pictureBox5.Location = new System.Drawing.Point(257, 123);
+            this.pictureBox5.Location = new System.Drawing.Point(162, 98);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(533, 241);
             this.pictureBox5.TabIndex = 3;
@@ -4405,7 +4472,7 @@
             // 
             // gobackhomebutton
             // 
-            this.gobackhomebutton.Location = new System.Drawing.Point(726, 442);
+            this.gobackhomebutton.Location = new System.Drawing.Point(509, 424);
             this.gobackhomebutton.Name = "gobackhomebutton";
             this.gobackhomebutton.Size = new System.Drawing.Size(75, 23);
             this.gobackhomebutton.TabIndex = 2;
@@ -4415,7 +4482,7 @@
             // 
             // printTixButton
             // 
-            this.printTixButton.Location = new System.Drawing.Point(620, 442);
+            this.printTixButton.Location = new System.Drawing.Point(213, 424);
             this.printTixButton.Name = "printTixButton";
             this.printTixButton.Size = new System.Drawing.Size(75, 23);
             this.printTixButton.TabIndex = 1;
@@ -4481,6 +4548,28 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // PrintNowLabel
+            // 
+            this.PrintNowLabel.AutoSize = true;
+            this.PrintNowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrintNowLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.PrintNowLabel.Location = new System.Drawing.Point(209, 388);
+            this.PrintNowLabel.Name = "PrintNowLabel";
+            this.PrintNowLabel.Size = new System.Drawing.Size(85, 20);
+            this.PrintNowLabel.TabIndex = 10;
+            this.PrintNowLabel.Text = "Print Now";
+            // 
+            // gohomeLabel
+            // 
+            this.gohomeLabel.AutoSize = true;
+            this.gohomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gohomeLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.gohomeLabel.Location = new System.Drawing.Point(505, 388);
+            this.gohomeLabel.Name = "gohomeLabel";
+            this.gohomeLabel.Size = new System.Drawing.Size(85, 20);
+            this.gohomeLabel.TabIndex = 11;
+            this.gohomeLabel.Text = "Go Home";
             // 
             // homepage
             // 
@@ -4926,8 +5015,15 @@
         private System.Windows.Forms.Button orderTicketsbtn;
         private System.Windows.Forms.Label displayRating;
         private System.Windows.Forms.Label displayLength;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label SeatticketLabel;
+        private System.Windows.Forms.Label UsernameTicketLabel;
+        private System.Windows.Forms.Label DateSecondTicketLabel;
+        private System.Windows.Forms.Label TicketDateLabel;
+        private System.Windows.Forms.Label TicketAdmissionLabel;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label gohomeLabel;
+        private System.Windows.Forms.Label PrintNowLabel;
 
     }
 }
