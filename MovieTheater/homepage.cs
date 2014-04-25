@@ -11,6 +11,8 @@ using System.Xml;
 using System.Xml.Linq;
 using System.IO;
 using MovieTheater.Properties;
+using MovieTheater;
+using MovieTheatre;
 
 namespace MovieTheater
 {
@@ -29,7 +31,9 @@ namespace MovieTheater
         //String file paths, xml related
         string MoviesPath = "../../xml/Movies.xml";
         string AccountsPath = "../../xml/accountInfo.xml";
+        string TransactionsPath = "../../xml/transactions.xml";
         XmlDocument MoviesDocument = new XmlDocument();
+        XmlDocument TransactionsDocument = new XmlDocument();
 
         public homepage()
         {
@@ -1724,7 +1728,25 @@ namespace MovieTheater
         private void button1_Click_1(object sender, EventArgs e)
         {
             //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
+            seatsSelected = getSeatsFromString(selectedSeatstxt.Text);
+            Console.Out.Write(seatsSelected);
             BodyTabControl.SelectedTab = Purchase;
+        }
+
+        //GETS SEATS FROM STRING AND SAVES THEM
+        private List<string> getSeatsFromString(string input)
+        {
+            List<string> result = new List<string>();
+            string[] seats = input.Split();
+            foreach (string str in seats)
+            {
+                bool flag = str.Equals("");
+                if (!flag)
+                {
+                    result.Add(str);
+                }
+            }
+            return result;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -1777,24 +1799,115 @@ namespace MovieTheater
 
             //SETS UP EVERYTHING ON THE NEXT PAGE
             double subtotal, child, senior, adult;
+            int childTicket, seniorTicket, adultTicket;
             child = Convert.ToDouble(label40.Text);
             senior = Convert.ToDouble(label39.Text);
             adult = Convert.ToDouble(label38.Text);
             subtotal = child + senior + adult;
             label34.Text = subtotal.ToString("$0.00");
+
+            //GETS NUMBER TICKETS TO CHECK
+            if(comboBox1.Text == "")
+            {
+                childTicket = 0;
+            }
+            else
+                childTicket = Convert.ToInt32(comboBox1.Text);
+
+            if(comboBox2.Text == "")
+            {
+                seniorTicket = 0;
+            }
+            else 
+                seniorTicket = Convert.ToInt32(comboBox2.Text);
+
+            if(comboBox3.Text == "")
+            {
+                adultTicket = 0;
+            }
+            else
+                adultTicket = Convert.ToInt32(comboBox3.Text);
+
+            tixCounter.Add("Child", childTicket);
+            tixCounter.Add("Adult", adultTicket);
+            tixCounter.Add("Senior", seniorTicket);
+            ticketTotal = childTicket + seniorTicket+ adultTicket;
+
+            //Saves data for purchase
+            time = displayShowtimelbl.Text;
+            date = showtimeDate.Text;
+            movieTitle = displayMovieTitle.Text;
         }
 
-
+        //GLOBAL VARIABLES SO I CAN SAVE MY INFO FOR TIXS
+        string time, date, movieTitle;
+        int ticketTotal;
+        List<string> seatsSelected;
+        Dictionary<string, int> tixCounter = new Dictionary<string,int>();
+        string name;
+        List<Ticket> transaction = new List<Ticket>();
         //------------------------------------------------------------------------------------------------------
         //  PURCHASE PAGE
         private void button5_Click(object sender, EventArgs e)
         {
+            name = textBox1.Text;
+            int indexCounter = 0;
+            foreach (string type in tixCounter.Keys)
+            {
+                int num = tixCounter[type];
+                while (num > 0)
+                {
+                    Ticket tix = new Ticket(movieTitle, type, seatsSelected.ElementAt(indexCounter), time, name, date);
+                    transaction.Add(tix);
+                    num--;
+                }
+                indexCounter++;
+            }
+
+            PurchaseTransaction(transaction);
+
             //Officially buys tickets
             MessageBox.Show("You have purchased tickets!");
             BodyTabControl.SelectedTab = PrintTix;
             comboBox1.ResetText();
             comboBox2.ResetText();
             comboBox3.ResetText();
+        }
+
+
+        private void PurchaseTransaction(List<Ticket> trans)
+        {
+            
+             XmlElement Root;
+            //If there is no current file, then create a new one
+             if (!System.IO.File.Exists(TransactionsPath))
+             {
+                 XmlDeclaration Declaration = TransactionsDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                 XmlComment Comment = TransactionsDocument.CreateComment("PurchaseInfo");
+                 Root = TransactionsDocument.CreateElement("Purchases");
+
+                 TransactionsDocument.AppendChild(Declaration);
+                 TransactionsDocument.AppendChild(Comment);
+                 TransactionsDocument.AppendChild(Root);
+             }
+             else
+             {
+                 TransactionsDocument.Load(TransactionsPath);
+                 Root = TransactionsDocument.DocumentElement;
+
+             }
+             XmlElement proot = TransactionsDocument.CreateElement("Tickets");
+             proot.SetAttribute("UID", "11");
+            //ID??????????????????
+             foreach (Ticket t in trans)
+             {
+                 //XDocument doc = XDocument.Parse(t.ToXml());
+                 //USE tix.toXML();
+                 t.ToXml(TransactionsDocument, proot);
+             }
+            //SAVE DOC
+             TransactionsDocument.Save(TransactionsPath);
+
         }
 
         //------------------------------------------------------------------------------------------------------

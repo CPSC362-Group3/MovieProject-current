@@ -378,6 +378,8 @@
             this.adminAdd = new System.Windows.Forms.Button();
             this.adminctrllbl = new System.Windows.Forms.Label();
             this.PrintTix = new System.Windows.Forms.TabPage();
+            this.gohomeLabel = new System.Windows.Forms.Label();
+            this.PrintNowLabel = new System.Windows.Forms.Label();
             this.SeatticketLabel = new System.Windows.Forms.Label();
             this.UsernameTicketLabel = new System.Windows.Forms.Label();
             this.DateSecondTicketLabel = new System.Windows.Forms.Label();
@@ -393,8 +395,6 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.PrintNowLabel = new System.Windows.Forms.Label();
-            this.gohomeLabel = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -496,7 +496,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-28, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-52, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -4396,6 +4396,28 @@
             this.PrintTix.TabIndex = 12;
             this.PrintTix.Text = "PrintTickets";
             // 
+            // gohomeLabel
+            // 
+            this.gohomeLabel.AutoSize = true;
+            this.gohomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gohomeLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.gohomeLabel.Location = new System.Drawing.Point(505, 388);
+            this.gohomeLabel.Name = "gohomeLabel";
+            this.gohomeLabel.Size = new System.Drawing.Size(85, 20);
+            this.gohomeLabel.TabIndex = 11;
+            this.gohomeLabel.Text = "Go Home";
+            // 
+            // PrintNowLabel
+            // 
+            this.PrintNowLabel.AutoSize = true;
+            this.PrintNowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrintNowLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.PrintNowLabel.Location = new System.Drawing.Point(209, 388);
+            this.PrintNowLabel.Name = "PrintNowLabel";
+            this.PrintNowLabel.Size = new System.Drawing.Size(85, 20);
+            this.PrintNowLabel.TabIndex = 10;
+            this.PrintNowLabel.Text = "Print Now";
+            // 
             // SeatticketLabel
             // 
             this.SeatticketLabel.AutoSize = true;
@@ -4446,7 +4468,7 @@
             this.TicketAdmissionLabel.Name = "TicketAdmissionLabel";
             this.TicketAdmissionLabel.Size = new System.Drawing.Size(201, 30);
             this.TicketAdmissionLabel.TabIndex = 5;
-            this.TicketAdmissionLabel.Text = "Admission Price";
+            this.TicketAdmissionLabel.Text = "Admission TYPE";
             // 
             // label70
             // 
@@ -4548,28 +4570,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // PrintNowLabel
-            // 
-            this.PrintNowLabel.AutoSize = true;
-            this.PrintNowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrintNowLabel.ForeColor = System.Drawing.Color.Maroon;
-            this.PrintNowLabel.Location = new System.Drawing.Point(209, 388);
-            this.PrintNowLabel.Name = "PrintNowLabel";
-            this.PrintNowLabel.Size = new System.Drawing.Size(85, 20);
-            this.PrintNowLabel.TabIndex = 10;
-            this.PrintNowLabel.Text = "Print Now";
-            // 
-            // gohomeLabel
-            // 
-            this.gohomeLabel.AutoSize = true;
-            this.gohomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gohomeLabel.ForeColor = System.Drawing.Color.Maroon;
-            this.gohomeLabel.Location = new System.Drawing.Point(505, 388);
-            this.gohomeLabel.Name = "gohomeLabel";
-            this.gohomeLabel.Size = new System.Drawing.Size(85, 20);
-            this.gohomeLabel.TabIndex = 11;
-            this.gohomeLabel.Text = "Go Home";
             // 
             // homepage
             // 
