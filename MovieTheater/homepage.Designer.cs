@@ -381,8 +381,6 @@
             this.gohomeLabel = new System.Windows.Forms.Label();
             this.PrintNowLabel = new System.Windows.Forms.Label();
             this.SeatticketLabel = new System.Windows.Forms.Label();
-            this.UsernameTicketLabel = new System.Windows.Forms.Label();
-            this.DateSecondTicketLabel = new System.Windows.Forms.Label();
             this.TicketDateLabel = new System.Windows.Forms.Label();
             this.TicketAdmissionLabel = new System.Windows.Forms.Label();
             this.ticketTitle = new System.Windows.Forms.Label();
@@ -395,6 +393,10 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.movielogopictureticket = new System.Windows.Forms.PictureBox();
+            this.namelabeltix = new System.Windows.Forms.Label();
+            this.timeticketlabel = new System.Windows.Forms.Label();
+            this.timetimelabel = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -459,6 +461,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movielogopictureticket)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -496,7 +499,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-12, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-20, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -1268,7 +1271,7 @@
             this.SearchTab.Location = new System.Drawing.Point(4, 22);
             this.SearchTab.Name = "SearchTab";
             this.SearchTab.Padding = new System.Windows.Forms.Padding(3);
-            this.SearchTab.Size = new System.Drawing.Size(960, 776);
+            this.SearchTab.Size = new System.Drawing.Size(960, 773);
             this.SearchTab.TabIndex = 1;
             this.SearchTab.Text = "Search";
             // 
@@ -1372,7 +1375,7 @@
             this.MovieDetailsTab.Location = new System.Drawing.Point(4, 22);
             this.MovieDetailsTab.Name = "MovieDetailsTab";
             this.MovieDetailsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MovieDetailsTab.Size = new System.Drawing.Size(960, 776);
+            this.MovieDetailsTab.Size = new System.Drawing.Size(960, 773);
             this.MovieDetailsTab.TabIndex = 2;
             this.MovieDetailsTab.Text = "Movie Details";
             // 
@@ -1579,7 +1582,7 @@
             this.LoginTab.Location = new System.Drawing.Point(4, 22);
             this.LoginTab.Name = "LoginTab";
             this.LoginTab.Padding = new System.Windows.Forms.Padding(3);
-            this.LoginTab.Size = new System.Drawing.Size(960, 776);
+            this.LoginTab.Size = new System.Drawing.Size(960, 773);
             this.LoginTab.TabIndex = 3;
             this.LoginTab.Text = "Login";
             // 
@@ -1677,7 +1680,7 @@
             this.AccountTab.Location = new System.Drawing.Point(4, 22);
             this.AccountTab.Name = "AccountTab";
             this.AccountTab.Padding = new System.Windows.Forms.Padding(3);
-            this.AccountTab.Size = new System.Drawing.Size(960, 776);
+            this.AccountTab.Size = new System.Drawing.Size(960, 773);
             this.AccountTab.TabIndex = 4;
             this.AccountTab.Text = "Account";
             // 
@@ -1839,7 +1842,7 @@
             this.PaymentInfoTab.Location = new System.Drawing.Point(4, 22);
             this.PaymentInfoTab.Name = "PaymentInfoTab";
             this.PaymentInfoTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PaymentInfoTab.Size = new System.Drawing.Size(960, 776);
+            this.PaymentInfoTab.Size = new System.Drawing.Size(960, 773);
             this.PaymentInfoTab.TabIndex = 5;
             this.PaymentInfoTab.Text = "PaymentInfoTab";
             // 
@@ -2048,7 +2051,7 @@
             this.Seating.Location = new System.Drawing.Point(4, 22);
             this.Seating.Name = "Seating";
             this.Seating.Padding = new System.Windows.Forms.Padding(3);
-            this.Seating.Size = new System.Drawing.Size(960, 776);
+            this.Seating.Size = new System.Drawing.Size(960, 773);
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
             // 
@@ -2881,7 +2884,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(954, 770);
+            this.shapeContainer1.Size = new System.Drawing.Size(954, 767);
             this.shapeContainer1.TabIndex = 12;
             this.shapeContainer1.TabStop = false;
             // 
@@ -2927,7 +2930,7 @@
             this.Purchase.Location = new System.Drawing.Point(4, 22);
             this.Purchase.Name = "Purchase";
             this.Purchase.Padding = new System.Windows.Forms.Padding(3);
-            this.Purchase.Size = new System.Drawing.Size(960, 776);
+            this.Purchase.Size = new System.Drawing.Size(960, 773);
             this.Purchase.TabIndex = 7;
             this.Purchase.Text = "Purchase";
             // 
@@ -4328,7 +4331,7 @@
             this.AdminCtrl.Location = new System.Drawing.Point(4, 22);
             this.AdminCtrl.Name = "AdminCtrl";
             this.AdminCtrl.Padding = new System.Windows.Forms.Padding(3);
-            this.AdminCtrl.Size = new System.Drawing.Size(960, 776);
+            this.AdminCtrl.Size = new System.Drawing.Size(960, 773);
             this.AdminCtrl.TabIndex = 11;
             this.AdminCtrl.Text = "AdminCntrl";
             // 
@@ -4377,11 +4380,13 @@
             // PrintTix
             // 
             this.PrintTix.BackColor = System.Drawing.Color.Silver;
+            this.PrintTix.Controls.Add(this.timetimelabel);
+            this.PrintTix.Controls.Add(this.timeticketlabel);
+            this.PrintTix.Controls.Add(this.namelabeltix);
+            this.PrintTix.Controls.Add(this.movielogopictureticket);
             this.PrintTix.Controls.Add(this.gohomeLabel);
             this.PrintTix.Controls.Add(this.PrintNowLabel);
             this.PrintTix.Controls.Add(this.SeatticketLabel);
-            this.PrintTix.Controls.Add(this.UsernameTicketLabel);
-            this.PrintTix.Controls.Add(this.DateSecondTicketLabel);
             this.PrintTix.Controls.Add(this.TicketDateLabel);
             this.PrintTix.Controls.Add(this.TicketAdmissionLabel);
             this.PrintTix.Controls.Add(this.ticketTitle);
@@ -4392,7 +4397,7 @@
             this.PrintTix.Location = new System.Drawing.Point(4, 22);
             this.PrintTix.Name = "PrintTix";
             this.PrintTix.Padding = new System.Windows.Forms.Padding(3);
-            this.PrintTix.Size = new System.Drawing.Size(960, 776);
+            this.PrintTix.Size = new System.Drawing.Size(960, 773);
             this.PrintTix.TabIndex = 12;
             this.PrintTix.Text = "PrintTickets";
             // 
@@ -4422,39 +4427,18 @@
             // 
             this.SeatticketLabel.AutoSize = true;
             this.SeatticketLabel.BackColor = System.Drawing.Color.White;
-            this.SeatticketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeatticketLabel.Location = new System.Drawing.Point(317, 200);
+            this.SeatticketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeatticketLabel.Location = new System.Drawing.Point(329, 193);
             this.SeatticketLabel.Name = "SeatticketLabel";
             this.SeatticketLabel.Size = new System.Drawing.Size(43, 20);
             this.SeatticketLabel.TabIndex = 9;
             this.SeatticketLabel.Text = "Seat";
             // 
-            // UsernameTicketLabel
-            // 
-            this.UsernameTicketLabel.AutoSize = true;
-            this.UsernameTicketLabel.BackColor = System.Drawing.Color.White;
-            this.UsernameTicketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameTicketLabel.Location = new System.Drawing.Point(349, 153);
-            this.UsernameTicketLabel.Name = "UsernameTicketLabel";
-            this.UsernameTicketLabel.Size = new System.Drawing.Size(55, 20);
-            this.UsernameTicketLabel.TabIndex = 8;
-            this.UsernameTicketLabel.Text = "NAME";
-            // 
-            // DateSecondTicketLabel
-            // 
-            this.DateSecondTicketLabel.BackColor = System.Drawing.Color.White;
-            this.DateSecondTicketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateSecondTicketLabel.Location = new System.Drawing.Point(296, 249);
-            this.DateSecondTicketLabel.Name = "DateSecondTicketLabel";
-            this.DateSecondTicketLabel.Size = new System.Drawing.Size(70, 80);
-            this.DateSecondTicketLabel.TabIndex = 7;
-            this.DateSecondTicketLabel.Text = "Date";
-            // 
             // TicketDateLabel
             // 
             this.TicketDateLabel.BackColor = System.Drawing.Color.White;
-            this.TicketDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TicketDateLabel.Location = new System.Drawing.Point(372, 299);
+            this.TicketDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketDateLabel.Location = new System.Drawing.Point(371, 299);
             this.TicketDateLabel.Name = "TicketDateLabel";
             this.TicketDateLabel.Size = new System.Drawing.Size(201, 30);
             this.TicketDateLabel.TabIndex = 6;
@@ -4474,7 +4458,7 @@
             // 
             this.ticketTitle.BackColor = System.Drawing.Color.White;
             this.ticketTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketTitle.Location = new System.Drawing.Point(330, 119);
+            this.ticketTitle.Location = new System.Drawing.Point(328, 108);
             this.ticketTitle.Name = "ticketTitle";
             this.ticketTitle.Size = new System.Drawing.Size(210, 34);
             this.ticketTitle.TabIndex = 4;
@@ -4571,6 +4555,50 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // movielogopictureticket
+            // 
+            this.movielogopictureticket.BackColor = System.Drawing.Color.White;
+            this.movielogopictureticket.Image = ((System.Drawing.Image)(resources.GetObject("movielogopictureticket.Image")));
+            this.movielogopictureticket.Location = new System.Drawing.Point(293, 256);
+            this.movielogopictureticket.Name = "movielogopictureticket";
+            this.movielogopictureticket.Size = new System.Drawing.Size(73, 73);
+            this.movielogopictureticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.movielogopictureticket.TabIndex = 12;
+            this.movielogopictureticket.TabStop = false;
+            // 
+            // namelabeltix
+            // 
+            this.namelabeltix.AutoSize = true;
+            this.namelabeltix.BackColor = System.Drawing.Color.White;
+            this.namelabeltix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelabeltix.Location = new System.Drawing.Point(402, 164);
+            this.namelabeltix.Name = "namelabeltix";
+            this.namelabeltix.Size = new System.Drawing.Size(55, 20);
+            this.namelabeltix.TabIndex = 13;
+            this.namelabeltix.Text = "Name";
+            // 
+            // timeticketlabel
+            // 
+            this.timeticketlabel.AutoSize = true;
+            this.timeticketlabel.BackColor = System.Drawing.Color.White;
+            this.timeticketlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeticketlabel.Location = new System.Drawing.Point(403, 142);
+            this.timeticketlabel.Name = "timeticketlabel";
+            this.timeticketlabel.Size = new System.Drawing.Size(52, 16);
+            this.timeticketlabel.TabIndex = 14;
+            this.timeticketlabel.Text = "label34";
+            // 
+            // timetimelabel
+            // 
+            this.timetimelabel.AutoSize = true;
+            this.timetimelabel.BackColor = System.Drawing.Color.White;
+            this.timetimelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timetimelabel.Location = new System.Drawing.Point(352, 142);
+            this.timetimelabel.Name = "timetimelabel";
+            this.timetimelabel.Size = new System.Drawing.Size(45, 16);
+            this.timetimelabel.TabIndex = 15;
+            this.timetimelabel.Text = "Time: ";
+            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4655,6 +4683,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movielogopictureticket)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5017,13 +5046,15 @@
         private System.Windows.Forms.Label displayLength;
         private System.Windows.Forms.Label ticketTitle;
         private System.Windows.Forms.Label SeatticketLabel;
-        private System.Windows.Forms.Label UsernameTicketLabel;
-        private System.Windows.Forms.Label DateSecondTicketLabel;
         private System.Windows.Forms.Label TicketDateLabel;
         private System.Windows.Forms.Label TicketAdmissionLabel;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label gohomeLabel;
         private System.Windows.Forms.Label PrintNowLabel;
+        private System.Windows.Forms.PictureBox movielogopictureticket;
+        private System.Windows.Forms.Label namelabeltix;
+        private System.Windows.Forms.Label timeticketlabel;
+        private System.Windows.Forms.Label timetimelabel;
 
     }
 }

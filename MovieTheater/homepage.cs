@@ -1827,10 +1827,10 @@ namespace MovieTheater
             //GETS NUMBER TICKETS TO CHECK
             if(comboBox1.Text == "")
             {
-                childTicket = 0;
+                adultTicket = 0;
             }
             else
-                childTicket = Convert.ToInt32(comboBox1.Text);
+                adultTicket = Convert.ToInt32(comboBox1.Text);
 
             if(comboBox2.Text == "")
             {
@@ -1841,10 +1841,10 @@ namespace MovieTheater
 
             if(comboBox3.Text == "")
             {
-                adultTicket = 0;
+                childTicket = 0;
             }
             else
-                adultTicket = Convert.ToInt32(comboBox3.Text);
+                childTicket = Convert.ToInt32(comboBox3.Text);
 
             tixCounter.Add("Child", childTicket);
             tixCounter.Add("Adult", adultTicket);
@@ -1868,6 +1868,7 @@ namespace MovieTheater
         //  PURCHASE PAGE
         private void button5_Click(object sender, EventArgs e)
         {
+
             name = textBox1.Text;
             int indexCounter = 0;
             foreach (string type in tixCounter.Keys)
@@ -1875,11 +1876,18 @@ namespace MovieTheater
                 int num = tixCounter[type];
                 while (num > 0)
                 {
+                    //Console.Out.Write(type + " " + num.ToString());
+                    TicketAdmissionLabel.Text = type;
+                    TicketDateLabel.Text = date;
+                    namelabeltix.Text = name;
+                    timeticketlabel.Text = time;
+                    
                     Ticket tix = new Ticket(movieTitle, type, seatsSelected.ElementAt(indexCounter), time, name, date);
                     transaction.Add(tix);
                     num--;
+                    indexCounter++;
                 }
-                indexCounter++;
+                //indexCounter++;
             }
 
             PurchaseTransaction(transaction);
@@ -1893,11 +1901,13 @@ namespace MovieTheater
 
             //Prep info for ticket
             ticketTitle.Text = MDTitleLabel.Text;
-            UsernameTicketLabel.Text = currentfN + " " + currentlN;
+            //namelabeltix.Text = currentfN + " " + currentlN;
             List<string> list = new List<string>(
                            selectedSeatstxt.Text.Split(new string[] { "\n" },
                            StringSplitOptions.RemoveEmptyEntries));
             SeatticketLabel.Text = string.Join(",", list);
+
+
         }
 
 
@@ -1942,17 +1952,6 @@ namespace MovieTheater
             time.InnerText = displayShowtimelbl.Text;
             total.InnerText = totalCost.Text; 
 
-            /*proot.SetAttribute("UID", "11");
-            //ID??????????????????
-             foreach (Ticket t in trans)
-             {
-                 //XDocument doc = XDocument.Parse(t.ToXml());
-                 //USE tix.toXML();
-                 t.ToXml(TransactionsDocument, proot);
-             }
-            //SAVE DOC
-             TransactionsDocument.Save(TransactionsPath); */
-
         }
 
         //------------------------------------------------------------------------------------------------------
@@ -1968,6 +1967,15 @@ namespace MovieTheater
         private void gobackhomebutton_Click(object sender, EventArgs e)
         {
             BodyTabControl.SelectedTab = HomeTab;
+            //CLEARS OUT INFO SO THEY CAN BUY OTHER STUFF OR BROWSE
+            //CLEARS OUT INFO
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            displayShowtimelbl.Text = "0:00";
+            selectedSeatstxt.Text = "";
+
         }
 
         private void showtimeDate_ValueChanged(object sender, EventArgs e)
