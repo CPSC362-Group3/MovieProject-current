@@ -12,7 +12,7 @@
     <Actor>Russell Crowe, Emma Watson, Logan Lerman, Jennifer Connelly, Anthony Hopkins, Kevin Durand, Douglas Booth, Dakota Goyo, Mark Margolis, Barry Sloane</Actor>
     <Director>Darren Aronofsky</Director>
     <ReleaseDate>Friday, March 28, 2014</ReleaseDate>
-    <PosterPath>C:\Users\Nick\Documents\GitHub\MovieProject-current\MovieTheater\Posters\noah.jpg</PosterPath>
+    <PosterPath>../../Posters/noah.jpg</PosterPath>
     <Showtime1>11:00am</Showtime1>
     <Showtime2>2:20pm</Showtime2>
     <Showtime3>4:00pm</Showtime3>
@@ -38,7 +38,7 @@
     <Actor>Johnny Depp, Morgan Freeman, Kate Mara, Rebecca Hall, Cillian Murphy, Paul Bettany, Clifton Collins Jr., Luce Rains, Wallace Langham</Actor>
     <Director>Wally Pfister</Director>
     <ReleaseDate>Friday, April 18, 2014</ReleaseDate>
-    <PosterPath>C:\Users\Nick\Documents\GitHub\MovieProject-current\MovieTheater\Posters\trans.jpg</PosterPath>
+    <PosterPath>../../Posters/trans.jpg</PosterPath>
     <Showtime1>9:00am</Showtime1>
     <Showtime2>11:00am</Showtime2>
     <Showtime3>12:00pm</Showtime3>
@@ -59,7 +59,7 @@
     <Actor>Zac Efron, Dave Franco, Rose Byrne, Seth Rogen, Jake Johnson, Christopher Mintz-Plasse, Lisa Kudrow, Halston Sage, Carla Gallo, Chasty Ballesteros</Actor>
     <Director>Nicholas Stoller</Director>
     <ReleaseDate>Friday, May 9, 2014</ReleaseDate>
-    <PosterPath>C:\Users\Nick\Documents\GitHub\MovieProject-current\MovieTheater\Posters\neigh.jpg</PosterPath>
+    <PosterPath>../../Posters/neigh.jpg</PosterPath>
     <Showtime1>
     </Showtime1>
     <Showtime2>
@@ -90,7 +90,7 @@
     <Actor>Chris Evans, Scarlett Johansson, Sebastian Stan, Anthony Mackie, Cobie Smulders, Frank Grillo, Emily VanCamp, Hayley Atwell, Robert Redford, Samuel L. Jackson</Actor>
     <Director>Joe Russo, Anthony Russo</Director>
     <ReleaseDate>Friday, April 4, 2014</ReleaseDate>
-    <PosterPath>C:\Users\Nick\Documents\GitHub\MovieProject-current\MovieTheater\Posters\Cap-2-banner.jpg</PosterPath>
+    <PosterPath>../../Posters/Cap-2-banner.jpg</PosterPath>
     <Showtime1>9:00am</Showtime1>
     <Showtime2>11:00am</Showtime2>
     <Showtime3>12:00pm</Showtime3>

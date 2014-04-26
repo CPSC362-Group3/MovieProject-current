@@ -1356,9 +1356,11 @@ namespace MovieTheater
             if (openFileDialog1.FileName == "openFileDialog1")
                 loc = null;
             else
-                loc = openFileDialog1.FileName;
+                loc = openFileDialog1.SafeFileName;
 
-            posterPathtxt.Text = loc;
+            string path = "../../Posters/";
+            path = path + loc;
+            posterPathtxt.Text = path;
         }
 //-------------------------------------------------------------------------------------------------------------------------
 //Seating Page////////////////////////////////////////////////////////////////////////////////////////////////////////////
