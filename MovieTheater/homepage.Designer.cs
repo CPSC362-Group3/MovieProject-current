@@ -3671,13 +3671,13 @@
             this.ContactUsTab.Location = new System.Drawing.Point(4, 22);
             this.ContactUsTab.Name = "ContactUsTab";
             this.ContactUsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ContactUsTab.Size = new System.Drawing.Size(960, 776);
+            this.ContactUsTab.Size = new System.Drawing.Size(960, 773);
             this.ContactUsTab.TabIndex = 9;
             this.ContactUsTab.Text = "Contact";
             // 
             // pictureofplace
             // 
-            this.pictureofplace.Image = ((System.Drawing.Image)(resources.GetObject("pictureofplace.Image")));
+            this.pictureofplace.Image = global::MovieTheater.Properties.Resources.pictureofplace_Image;
             this.pictureofplace.Location = new System.Drawing.Point(447, 208);
             this.pictureofplace.Name = "pictureofplace";
             this.pictureofplace.Size = new System.Drawing.Size(526, 319);

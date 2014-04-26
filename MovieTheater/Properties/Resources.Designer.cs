@@ -73,6 +73,16 @@ namespace MovieTheater.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pictureofplace_Image {
+            get {
+                object obj = ResourceManager.GetObject("pictureofplace.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ticket {
             get {
                 object obj = ResourceManager.GetObject("ticket", resourceCulture);
