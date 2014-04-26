@@ -36,7 +36,7 @@ namespace MovieTheater
         string TransactionsPath = "../../xml/transactions.xml";
         XmlDocument MoviesDocument = new XmlDocument();
         XmlDocument TransactionsDocument = new XmlDocument();
-
+        string search = ""; // search bar string
          
 
         public homepage()
@@ -100,6 +100,55 @@ namespace MovieTheater
             MDSSynopsis.Parent = backgroundMD;
             MDSynopsisLabel.Parent = backgroundMD;
 
+            STitleLabel1.Parent = backgroundS;
+            STitleLabel2.Parent = backgroundS;
+            STitleLabel3.Parent = backgroundS;
+            STitleLabel4.Parent = backgroundS;
+            STitleLabel5.Parent = backgroundS;
+            STitleLabel6.Parent = backgroundS;
+
+            // contact us page
+            CallusLabel.Parent = backgroundCU;
+            phoneLabel.Parent = backgroundCU;
+            phoneNumberLabel.Parent = backgroundCU;
+            HoursLabel.Parent = backgroundCU;
+            MonLabel.Parent = backgroundCU;
+            TueLabel.Parent = backgroundCU;
+            WedLabel.Parent = backgroundCU;
+            ThuLabel.Parent = backgroundCU;
+            FriLabel.Parent = backgroundCU;
+            SatLabel.Parent = backgroundCU;
+            SunLabel.Parent = backgroundCU;
+            EmailLabel.Parent = backgroundCU;
+            emailInfoLabel.Parent = backgroundCU;
+            addresslabel.Parent = backgroundCU;
+            addressInfo1Label.Parent = backgroundCU;
+            addressInfo2Label.Parent = backgroundCU;
+            MonTimeLabel.Parent = backgroundCU;
+            TueTimeLabel.Parent = backgroundCU;
+            WedTimeLabel.Parent = backgroundCU;
+            FriTimeLabel.Parent = backgroundCU;
+            SatTimeLabel.Parent = backgroundCU;
+            SunTimeLabel.Parent = backgroundCU;
+            ThuTimeLabel.Parent = backgroundCU;
+
+            // account creation page
+            CAPersonalInfoLabel.Parent = backgroundCA;
+            CAFirstNameLabel.Parent = backgroundCA;
+            CALastNameLabel.Parent = backgroundCA;
+            CAAddressLabel.Parent = backgroundCA;
+            CACityLabel.Parent = backgroundCA;
+            CAStateLabel.Parent = backgroundCA;
+            CAAccountInfoLabel.Parent = backgroundCA;
+            CAUsernameLabel.Parent = backgroundCA;
+            CAPasswordLabel.Parent = backgroundCA;
+            CACreditCardInfoLabel.Parent = backgroundCA;
+            CACardholderFNLabel.Parent = backgroundCA;
+            CACardholderLNLabel.Parent = backgroundCA;
+            CACreditCardLabel.Parent = backgroundCA;
+            CASecurityLabel.Parent = backgroundCA;
+            CAExpirationDateLabel.Parent = backgroundCA;
+
             displayDatelbl.Text = DateTime.Today.ToLongDateString();
 
             updateHomePage();
@@ -113,7 +162,37 @@ namespace MovieTheater
         public string GetMovieTitle(string title)
         {
             int end = title.IndexOf(" (");
+            if (end < 0)
+            {
+                Console.WriteLine("Error invalid movie: {0}", title);
+                return null;
+            }
             return title.Substring(0, end);
+        }
+
+        /* Movies Search bar keydown. - activates the search button when enter is pressed */
+        private void searchBar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                searchBtn_Click(this, e);
+                //e.Handled = true;
+                //e.SuppressKeyPress = true;
+            }
+        }
+
+        /* Search Movie button click. Once clicked changes to search tab and searches the string */
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            search = searchBar.Text.ToLower();
+
+            // search is the string is not null and does not only contain whitespace.
+            if (!String.IsNullOrWhiteSpace(search) && search.Length > 2)
+            {
+                RefreshSearchMovies(search);
+                BodyTabControl.SelectedTab = SearchTab;
+            }
+            searchBar.Clear();
         }
 
         /* Admin label click */
@@ -197,7 +276,6 @@ namespace MovieTheater
         {
             contactUsBtn.Image = new Bitmap("../../Resources/contactus_button.jpg");
         }
-
 
 //---------------------------------------------------------------------------------------------------------------------
 //Update and refresh movie info////////////////////////////////////////////////////////////////////////////////////////
@@ -659,6 +737,316 @@ namespace MovieTheater
                 NSPoster10.ImageLocation = PosterElemList[index].InnerText;
             }
         }
+
+//---------------------------------------------------------------------------------------------------------------------
+//Search Movie page ///////////////////////////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------------------------------------------------
+
+        public void RefreshSearchMovies(string search)
+        {
+            searchPoster1.Visible = false;
+            searchPoster2.Visible = false;
+            searchPoster3.Visible = false;
+            searchPoster4.Visible = false;
+            searchPoster5.Visible = false;
+            searchPoster6.Visible = false;
+            STitleLabel1.Visible = false;
+            STitleLabel2.Visible = false;
+            STitleLabel3.Visible = false;
+            STitleLabel4.Visible = false;
+            STitleLabel5.Visible = false;
+            STitleLabel6.Visible = false;
+
+            // check if a file exists
+            if (System.IO.File.Exists(MoviesPath))
+            {
+                MoviesDocument.Load(MoviesPath);
+            }
+            else
+            {
+                // if there is no file, then all elements are invisible.
+                // no reason to continue from here.
+                return;
+            }
+
+            int index = 0;
+            bool addMovie = false;
+
+            int numMovies = MoviesDocument.GetElementsByTagName("Movie").Count;
+            XmlNodeList TitleElemList = MoviesDocument.GetElementsByTagName("Title");
+            XmlNodeList LengthElemList = MoviesDocument.GetElementsByTagName("Length");
+            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
+            XmlNodeList GenreElemList = MoviesDocument.GetElementsByTagName("Genre");
+            XmlNodeList ReleaseElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            XmlNodeList ActorsElemList = MoviesDocument.GetElementsByTagName("Actor");
+            XmlNodeList DirectorElemList = MoviesDocument.GetElementsByTagName("Director");
+            XmlNodeList SynopsisElemList = MoviesDocument.GetElementsByTagName("Synopsis");
+            XmlNodeList PosterPath = MoviesDocument.GetElementsByTagName("PosterPath");
+            XmlNodeList Showtime1List = MoviesDocument.GetElementsByTagName("Showtime1");
+            XmlNodeList Showtime2List = MoviesDocument.GetElementsByTagName("Showtime2");
+            XmlNodeList Showtime3List = MoviesDocument.GetElementsByTagName("Showtime3");
+            XmlNodeList Showtime4List = MoviesDocument.GetElementsByTagName("Showtime4");
+            XmlNodeList Showtime5List = MoviesDocument.GetElementsByTagName("Showtime5");
+            XmlNodeList Showtime6List = MoviesDocument.GetElementsByTagName("Showtime6");
+            XmlNodeList Showtime7List = MoviesDocument.GetElementsByTagName("Showtime7");
+            XmlNodeList Showtime8List = MoviesDocument.GetElementsByTagName("Showtime8");
+            XmlNodeList Showtime9List = MoviesDocument.GetElementsByTagName("Showtime9");
+
+            // depending on how many movies we have, fill out the posters information.
+            // Make each movie visible after setting the posters information
+            // ----------------------------------------------------------------
+            for (int i = index; i < numMovies; i++)
+            {
+                if (TitleElemList[i].InnerText.ToLower().Contains(search) ||
+                    LengthElemList[i].InnerText.ToLower().Contains(search) ||
+                    RatingElemList[i].InnerText.ToLower().Contains(search) ||
+                    GenreElemList[i].InnerText.ToLower().Contains(search) ||
+                    ReleaseElemList[i].InnerText.ToLower().Contains(search) ||
+                    ActorsElemList[i].InnerText.ToLower().Contains(search) ||
+                    DirectorElemList[i].InnerText.ToLower().Contains(search) ||
+                    SynopsisElemList[i].InnerText.ToLower().Contains(search) ||
+                    PosterPath[i].InnerText.ToLower().Contains(search) ||
+                    Showtime1List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime2List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime3List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime4List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime5List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime6List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime7List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime8List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime9List[i].InnerText.ToLower().Contains(search))
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 1
+            {
+                searchPoster1.Visible = true;
+                STitleLabel1.Visible = true;
+                STitleLabel1.Text = TitleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
+            }
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
+            {
+                if (TitleElemList[i].InnerText.ToLower().Contains(search) ||
+                    LengthElemList[i].InnerText.ToLower().Contains(search) ||
+                    RatingElemList[i].InnerText.ToLower().Contains(search) ||
+                    GenreElemList[i].InnerText.ToLower().Contains(search) ||
+                    ReleaseElemList[i].InnerText.ToLower().Contains(search) ||
+                    ActorsElemList[i].InnerText.ToLower().Contains(search) ||
+                    DirectorElemList[i].InnerText.ToLower().Contains(search) ||
+                    SynopsisElemList[i].InnerText.ToLower().Contains(search) ||
+                    PosterPath[i].InnerText.ToLower().Contains(search) ||
+                    Showtime1List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime2List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime3List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime4List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime5List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime6List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime7List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime8List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime9List[i].InnerText.ToLower().Contains(search))
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 2
+            {
+                searchPoster2.Visible = true;
+                STitleLabel2.Visible = true;
+                STitleLabel2.Text = TitleElemList[index].InnerText;
+            }
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
+            {
+                if (TitleElemList[i].InnerText.ToLower().Contains(search) ||
+                    LengthElemList[i].InnerText.ToLower().Contains(search) ||
+                    RatingElemList[i].InnerText.ToLower().Contains(search) ||
+                    GenreElemList[i].InnerText.ToLower().Contains(search) ||
+                    ReleaseElemList[i].InnerText.ToLower().Contains(search) ||
+                    ActorsElemList[i].InnerText.ToLower().Contains(search) ||
+                    DirectorElemList[i].InnerText.ToLower().Contains(search) ||
+                    SynopsisElemList[i].InnerText.ToLower().Contains(search) ||
+                    PosterPath[i].InnerText.ToLower().Contains(search) ||
+                    Showtime1List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime2List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime3List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime4List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime5List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime6List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime7List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime8List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime9List[i].InnerText.ToLower().Contains(search))
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 3
+            {
+                searchPoster1.Visible = true;
+                STitleLabel1.Visible = true;
+                STitleLabel1.Text = TitleElemList[index].InnerText;
+            }
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
+            {
+                if (TitleElemList[i].InnerText.ToLower().Contains(search) ||
+                    LengthElemList[i].InnerText.ToLower().Contains(search) ||
+                    RatingElemList[i].InnerText.ToLower().Contains(search) ||
+                    GenreElemList[i].InnerText.ToLower().Contains(search) ||
+                    ReleaseElemList[i].InnerText.ToLower().Contains(search) ||
+                    ActorsElemList[i].InnerText.ToLower().Contains(search) ||
+                    DirectorElemList[i].InnerText.ToLower().Contains(search) ||
+                    SynopsisElemList[i].InnerText.ToLower().Contains(search) ||
+                    PosterPath[i].InnerText.ToLower().Contains(search) ||
+                    Showtime1List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime2List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime3List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime4List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime5List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime6List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime7List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime8List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime9List[i].InnerText.ToLower().Contains(search))
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 4
+            {
+                searchPoster1.Visible = true;
+                STitleLabel1.Visible = true;
+                STitleLabel1.Text = TitleElemList[index].InnerText;
+            }
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
+            {
+                if (TitleElemList[i].InnerText.ToLower().Contains(search) ||
+                    LengthElemList[i].InnerText.ToLower().Contains(search) ||
+                    RatingElemList[i].InnerText.ToLower().Contains(search) ||
+                    GenreElemList[i].InnerText.ToLower().Contains(search) ||
+                    ReleaseElemList[i].InnerText.ToLower().Contains(search) ||
+                    ActorsElemList[i].InnerText.ToLower().Contains(search) ||
+                    DirectorElemList[i].InnerText.ToLower().Contains(search) ||
+                    SynopsisElemList[i].InnerText.ToLower().Contains(search) ||
+                    PosterPath[i].InnerText.ToLower().Contains(search) ||
+                    Showtime1List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime2List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime3List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime4List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime5List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime6List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime7List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime8List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime9List[i].InnerText.ToLower().Contains(search))
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 5
+            {
+                searchPoster1.Visible = true;
+                STitleLabel1.Visible = true;
+                STitleLabel1.Text = TitleElemList[index].InnerText;
+            }
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+            index++;
+            addMovie = false;
+            for (int i = index; i < numMovies; i++)
+            {
+                if (TitleElemList[i].InnerText.ToLower().Contains(search) ||
+                    LengthElemList[i].InnerText.ToLower().Contains(search) ||
+                    RatingElemList[i].InnerText.ToLower().Contains(search) ||
+                    GenreElemList[i].InnerText.ToLower().Contains(search) ||
+                    ReleaseElemList[i].InnerText.ToLower().Contains(search) ||
+                    ActorsElemList[i].InnerText.ToLower().Contains(search) ||
+                    DirectorElemList[i].InnerText.ToLower().Contains(search) ||
+                    SynopsisElemList[i].InnerText.ToLower().Contains(search) ||
+                    PosterPath[i].InnerText.ToLower().Contains(search) ||
+                    Showtime1List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime2List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime3List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime4List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime5List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime6List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime7List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime8List[i].InnerText.ToLower().Contains(search) ||
+                    Showtime9List[i].InnerText.ToLower().Contains(search))
+                {
+                    index = i;
+                    addMovie = true;
+                    break;
+                }
+            }
+            if (addMovie) // 6
+            {
+                searchPoster1.Visible = true;
+                STitleLabel1.Visible = true;
+                STitleLabel1.Text = TitleElemList[index].InnerText;
+            }
+            // ----------------------------------------------------------------
+            // ----------------------------------------------------------------
+        }
+
+        private void searchPoster1_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(STitleLabel1.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void searchPoster2_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(STitleLabel2.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void searchPoster3_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(STitleLabel3.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void searchPoster4_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(STitleLabel4.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void searchPoster5_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(STitleLabel5.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
+        private void searchPoster6_Click(object sender, EventArgs e)
+        {
+            updateMovieDetailsPage(GetMovieTitle(STitleLabel6.Text));
+            BodyTabControl.SelectedTab = MovieDetailsTab;
+        }
+
 //---------------------------------------------------------------------------------------------------------------------------
 //Movie Details/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //--------------------------------------------------------------------------------------------------------------------------
@@ -2035,6 +2423,7 @@ namespace MovieTheater
             displayRating.Text = MDRatingLabel.Text.ToString();
             displayLength.Text = MDLengthLabel.Text.ToString();
         }
+
         //-----------------------------------------------------------------------------------------------------
     }
 }

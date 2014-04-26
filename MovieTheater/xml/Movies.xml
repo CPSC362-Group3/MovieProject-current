@@ -101,4 +101,35 @@
     <Showtime8>8:00pm</Showtime8>
     <Showtime9>9:00pm</Showtime9>
   </Movie>
+  <Movie>
+    <Title>Neighbors</Title>
+    <Length>97 min</Length>
+    <Synopsis>A comedy about a young couple suffering from arrested development who are forced to live next to a fraternity house after the birth of their newborn baby.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Comedy</Genre>
+    <Rating>R</Rating>
+    <Actor>Zac Efron, Dave Franco, Rose Byrne, Seth Rogen, Jake Johnson, Christopher Mintz-Plasse, Lisa Kudrow, Halston Sage, Carla Gallo, Chasty Ballesteros</Actor>
+    <Director>Nicholas Stoller</Director>
+    <ReleaseDate>05/09/2014</ReleaseDate>
+    <PosterPath>openFileDialog1</PosterPath>
+    <Showtime1>
+    </Showtime1>
+    <Showtime2>
+    </Showtime2>
+    <Showtime3>
+    </Showtime3>
+    <Showtime4>
+    </Showtime4>
+    <Showtime5>
+    </Showtime5>
+    <Showtime6>
+    </Showtime6>
+    <Showtime7>
+    </Showtime7>
+    <Showtime8>
+    </Showtime8>
+    <Showtime9>
+    </Showtime9>
+  </Movie>
 </Movies>
