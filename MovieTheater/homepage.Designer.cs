@@ -268,7 +268,7 @@
             this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.totalCost = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.Ticket = new System.Windows.Forms.TabPage();
             this.displayLength = new System.Windows.Forms.Label();
@@ -385,7 +385,7 @@
             this.DateSecondTicketLabel = new System.Windows.Forms.Label();
             this.TicketDateLabel = new System.Windows.Forms.Label();
             this.TicketAdmissionLabel = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
+            this.ticketTitle = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.gobackhomebutton = new System.Windows.Forms.Button();
             this.printTixButton = new System.Windows.Forms.Button();
@@ -496,7 +496,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-52, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-12, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -1268,7 +1268,7 @@
             this.SearchTab.Location = new System.Drawing.Point(4, 22);
             this.SearchTab.Name = "SearchTab";
             this.SearchTab.Padding = new System.Windows.Forms.Padding(3);
-            this.SearchTab.Size = new System.Drawing.Size(960, 773);
+            this.SearchTab.Size = new System.Drawing.Size(960, 776);
             this.SearchTab.TabIndex = 1;
             this.SearchTab.Text = "Search";
             // 
@@ -1372,7 +1372,7 @@
             this.MovieDetailsTab.Location = new System.Drawing.Point(4, 22);
             this.MovieDetailsTab.Name = "MovieDetailsTab";
             this.MovieDetailsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MovieDetailsTab.Size = new System.Drawing.Size(960, 773);
+            this.MovieDetailsTab.Size = new System.Drawing.Size(960, 776);
             this.MovieDetailsTab.TabIndex = 2;
             this.MovieDetailsTab.Text = "Movie Details";
             // 
@@ -1579,7 +1579,7 @@
             this.LoginTab.Location = new System.Drawing.Point(4, 22);
             this.LoginTab.Name = "LoginTab";
             this.LoginTab.Padding = new System.Windows.Forms.Padding(3);
-            this.LoginTab.Size = new System.Drawing.Size(960, 773);
+            this.LoginTab.Size = new System.Drawing.Size(960, 776);
             this.LoginTab.TabIndex = 3;
             this.LoginTab.Text = "Login";
             // 
@@ -1677,7 +1677,7 @@
             this.AccountTab.Location = new System.Drawing.Point(4, 22);
             this.AccountTab.Name = "AccountTab";
             this.AccountTab.Padding = new System.Windows.Forms.Padding(3);
-            this.AccountTab.Size = new System.Drawing.Size(960, 773);
+            this.AccountTab.Size = new System.Drawing.Size(960, 776);
             this.AccountTab.TabIndex = 4;
             this.AccountTab.Text = "Account";
             // 
@@ -1839,7 +1839,7 @@
             this.PaymentInfoTab.Location = new System.Drawing.Point(4, 22);
             this.PaymentInfoTab.Name = "PaymentInfoTab";
             this.PaymentInfoTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PaymentInfoTab.Size = new System.Drawing.Size(960, 773);
+            this.PaymentInfoTab.Size = new System.Drawing.Size(960, 776);
             this.PaymentInfoTab.TabIndex = 5;
             this.PaymentInfoTab.Text = "PaymentInfoTab";
             // 
@@ -2048,7 +2048,7 @@
             this.Seating.Location = new System.Drawing.Point(4, 22);
             this.Seating.Name = "Seating";
             this.Seating.Padding = new System.Windows.Forms.Padding(3);
-            this.Seating.Size = new System.Drawing.Size(960, 773);
+            this.Seating.Size = new System.Drawing.Size(960, 776);
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
             // 
@@ -2881,7 +2881,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(954, 767);
+            this.shapeContainer1.Size = new System.Drawing.Size(954, 770);
             this.shapeContainer1.TabIndex = 12;
             this.shapeContainer1.TabStop = false;
             // 
@@ -2922,12 +2922,12 @@
             this.Purchase.Controls.Add(this.label37);
             this.Purchase.Controls.Add(this.label36);
             this.Purchase.Controls.Add(this.label35);
-            this.Purchase.Controls.Add(this.label34);
+            this.Purchase.Controls.Add(this.totalCost);
             this.Purchase.Controls.Add(this.label33);
             this.Purchase.Location = new System.Drawing.Point(4, 22);
             this.Purchase.Name = "Purchase";
             this.Purchase.Padding = new System.Windows.Forms.Padding(3);
-            this.Purchase.Size = new System.Drawing.Size(960, 773);
+            this.Purchase.Size = new System.Drawing.Size(960, 776);
             this.Purchase.TabIndex = 7;
             this.Purchase.Text = "Purchase";
             // 
@@ -3162,15 +3162,15 @@
             this.label35.TabIndex = 2;
             this.label35.Text = "Adult";
             // 
-            // label34
+            // totalCost
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(254, 240);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(54, 20);
-            this.label34.TabIndex = 1;
-            this.label34.Text = "$0.00";
+            this.totalCost.AutoSize = true;
+            this.totalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalCost.Location = new System.Drawing.Point(254, 240);
+            this.totalCost.Name = "totalCost";
+            this.totalCost.Size = new System.Drawing.Size(54, 20);
+            this.totalCost.TabIndex = 1;
+            this.totalCost.Text = "$0.00";
             // 
             // label33
             // 
@@ -3300,9 +3300,9 @@
             this.displayDatelbl.AutoSize = true;
             this.displayDatelbl.Location = new System.Drawing.Point(528, 85);
             this.displayDatelbl.Name = "displayDatelbl";
-            this.displayDatelbl.Size = new System.Drawing.Size(41, 13);
+            this.displayDatelbl.Size = new System.Drawing.Size(33, 13);
             this.displayDatelbl.TabIndex = 113;
-            this.displayDatelbl.Text = "label71";
+            this.displayDatelbl.Text = "today";
             // 
             // showtimeDate
             // 
@@ -3459,10 +3459,9 @@
             this.showtimeHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showtimeHeader.Location = new System.Drawing.Point(403, 262);
             this.showtimeHeader.Name = "showtimeHeader";
-            this.showtimeHeader.Size = new System.Drawing.Size(116, 25);
+            this.showtimeHeader.Size = new System.Drawing.Size(189, 25);
             this.showtimeHeader.TabIndex = 98;
-            this.showtimeHeader.Text = "Showtimes";
-            this.showtimeHeader.Visible = false;
+            this.showtimeHeader.Text = "Select a Showtime";
             // 
             // button4
             // 
@@ -3672,7 +3671,7 @@
             this.ContactUsTab.Location = new System.Drawing.Point(4, 22);
             this.ContactUsTab.Name = "ContactUsTab";
             this.ContactUsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ContactUsTab.Size = new System.Drawing.Size(960, 773);
+            this.ContactUsTab.Size = new System.Drawing.Size(960, 776);
             this.ContactUsTab.TabIndex = 9;
             this.ContactUsTab.Text = "Contact";
             // 
@@ -4157,6 +4156,7 @@
             this.uploadPosterbtn.TabIndex = 93;
             this.uploadPosterbtn.Text = "Upload Poster";
             this.uploadPosterbtn.UseVisualStyleBackColor = true;
+            this.uploadPosterbtn.Click += new System.EventHandler(this.uploadPosterbtn_Click_1);
             // 
             // ReleaseDTPicker
             // 
@@ -4328,7 +4328,7 @@
             this.AdminCtrl.Location = new System.Drawing.Point(4, 22);
             this.AdminCtrl.Name = "AdminCtrl";
             this.AdminCtrl.Padding = new System.Windows.Forms.Padding(3);
-            this.AdminCtrl.Size = new System.Drawing.Size(960, 773);
+            this.AdminCtrl.Size = new System.Drawing.Size(960, 776);
             this.AdminCtrl.TabIndex = 11;
             this.AdminCtrl.Text = "AdminCntrl";
             // 
@@ -4384,7 +4384,7 @@
             this.PrintTix.Controls.Add(this.DateSecondTicketLabel);
             this.PrintTix.Controls.Add(this.TicketDateLabel);
             this.PrintTix.Controls.Add(this.TicketAdmissionLabel);
-            this.PrintTix.Controls.Add(this.label70);
+            this.PrintTix.Controls.Add(this.ticketTitle);
             this.PrintTix.Controls.Add(this.pictureBox5);
             this.PrintTix.Controls.Add(this.gobackhomebutton);
             this.PrintTix.Controls.Add(this.printTixButton);
@@ -4392,7 +4392,7 @@
             this.PrintTix.Location = new System.Drawing.Point(4, 22);
             this.PrintTix.Name = "PrintTix";
             this.PrintTix.Padding = new System.Windows.Forms.Padding(3);
-            this.PrintTix.Size = new System.Drawing.Size(960, 773);
+            this.PrintTix.Size = new System.Drawing.Size(960, 776);
             this.PrintTix.TabIndex = 12;
             this.PrintTix.Text = "PrintTickets";
             // 
@@ -4423,7 +4423,7 @@
             this.SeatticketLabel.AutoSize = true;
             this.SeatticketLabel.BackColor = System.Drawing.Color.White;
             this.SeatticketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeatticketLabel.Location = new System.Drawing.Point(406, 213);
+            this.SeatticketLabel.Location = new System.Drawing.Point(317, 200);
             this.SeatticketLabel.Name = "SeatticketLabel";
             this.SeatticketLabel.Size = new System.Drawing.Size(43, 20);
             this.SeatticketLabel.TabIndex = 9;
@@ -4434,7 +4434,7 @@
             this.UsernameTicketLabel.AutoSize = true;
             this.UsernameTicketLabel.BackColor = System.Drawing.Color.White;
             this.UsernameTicketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameTicketLabel.Location = new System.Drawing.Point(406, 176);
+            this.UsernameTicketLabel.Location = new System.Drawing.Point(349, 153);
             this.UsernameTicketLabel.Name = "UsernameTicketLabel";
             this.UsernameTicketLabel.Size = new System.Drawing.Size(55, 20);
             this.UsernameTicketLabel.TabIndex = 8;
@@ -4470,15 +4470,15 @@
             this.TicketAdmissionLabel.TabIndex = 5;
             this.TicketAdmissionLabel.Text = "Admission TYPE";
             // 
-            // label70
+            // ticketTitle
             // 
-            this.label70.BackColor = System.Drawing.Color.White;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(336, 132);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(210, 34);
-            this.label70.TabIndex = 4;
-            this.label70.Text = "Selected Movie Title";
+            this.ticketTitle.BackColor = System.Drawing.Color.White;
+            this.ticketTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketTitle.Location = new System.Drawing.Point(330, 119);
+            this.ticketTitle.Name = "ticketTitle";
+            this.ticketTitle.Size = new System.Drawing.Size(210, 34);
+            this.ticketTitle.TabIndex = 4;
+            this.ticketTitle.Text = "Selected Movie Title";
             // 
             // pictureBox5
             // 
@@ -4901,7 +4901,7 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label totalCost;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TabPage Ticket;
         private System.Windows.Forms.Label showtimelbl;
@@ -5015,7 +5015,7 @@
         private System.Windows.Forms.Button orderTicketsbtn;
         private System.Windows.Forms.Label displayRating;
         private System.Windows.Forms.Label displayLength;
-        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label ticketTitle;
         private System.Windows.Forms.Label SeatticketLabel;
         private System.Windows.Forms.Label UsernameTicketLabel;
         private System.Windows.Forms.Label DateSecondTicketLabel;

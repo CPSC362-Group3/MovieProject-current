@@ -28,12 +28,16 @@ namespace MovieTheater
         int showtimes = 2;
         int[] track = new int[72];
 
+        string currentU, currentfN, currentlN;
+
         //String file paths, xml related
         string MoviesPath = "../../xml/Movies.xml";
         string AccountsPath = "../../xml/accountInfo.xml";
         string TransactionsPath = "../../xml/transactions.xml";
         XmlDocument MoviesDocument = new XmlDocument();
         XmlDocument TransactionsDocument = new XmlDocument();
+
+         
 
         public homepage()
         {
@@ -991,6 +995,8 @@ namespace MovieTheater
                 {
                      Username = acc.Element("Username").Value,
                      Password = acc.Element("Password").Value,
+                     fName = acc.Attribute("First_Name").Value,
+                     lName = acc.Attribute("Last_Name").Value,
                 };
                 foreach (var acc in accInfo)
                 {
@@ -999,11 +1005,21 @@ namespace MovieTheater
                         if (usernameTxt.Text == "Admin")
                         {
                             adminLogged = true;
+                            BodyTabControl.SelectedTab = AdminCtrl;
                         }
+                        else
+                        {
+                            BodyTabControl.SelectedTab = HomeTab;
+                        }
+
+                        currentU = acc.Username;
+                        currentfN = acc.fName;
+                        currentlN = acc.lName;
+
                         MessageBox.Show("Successfully signed in!");
                         logged = true;
                         //logBtn.Text = "Log Out";
-                        BodyTabControl.SelectedTab = AdminCtrl;
+                        
                         break;
                     }
                     else
@@ -1333,7 +1349,7 @@ namespace MovieTheater
             BodyTabControl.SelectedTab = HomeTab;
         }
         //Admin clicks upload poster on add/edit movie page
-        private void uploadPosterbtn_Click(object sender, EventArgs e)
+        private void uploadPosterbtn_Click_1(object sender, EventArgs e)
         {
             string loc;
             openFileDialog1.ShowDialog();
@@ -1804,7 +1820,7 @@ namespace MovieTheater
             senior = Convert.ToDouble(label39.Text);
             adult = Convert.ToDouble(label38.Text);
             subtotal = child + senior + adult;
-            label34.Text = subtotal.ToString("$0.00");
+            totalCost.Text = subtotal.ToString("$0.00");
 
             //GETS NUMBER TICKETS TO CHECK
             if(comboBox1.Text == "")
@@ -1872,6 +1888,14 @@ namespace MovieTheater
             comboBox1.ResetText();
             comboBox2.ResetText();
             comboBox3.ResetText();
+
+            //Prep info for ticket
+            ticketTitle.Text = MDTitleLabel.Text;
+            UsernameTicketLabel.Text = currentfN + " " + currentlN;
+            List<string> list = new List<string>(
+                           selectedSeatstxt.Text.Split(new string[] { "\n" },
+                           StringSplitOptions.RemoveEmptyEntries));
+            SeatticketLabel.Text = string.Join(",", list);
         }
 
 
@@ -1896,8 +1920,27 @@ namespace MovieTheater
                  Root = TransactionsDocument.DocumentElement;
 
              }
-             XmlElement proot = TransactionsDocument.CreateElement("Tickets");
-             proot.SetAttribute("UID", "11");
+
+            XmlElement phis = TransactionsDocument.CreateElement("Purchase_History");
+            XmlElement user = TransactionsDocument.CreateElement("Username");
+            XmlElement date = TransactionsDocument.CreateElement("Date");
+            XmlElement time = TransactionsDocument.CreateElement("Showtime");
+            XmlElement total = TransactionsDocument.CreateElement("Total");
+            XmlElement proot = TransactionsDocument.CreateElement("Tickets");
+
+            Root.AppendChild(phis);
+            phis.AppendChild(user);
+            phis.AppendChild(date);
+            phis.AppendChild(time);
+            phis.AppendChild(total);
+            phis.AppendChild(proot);
+
+            user.InnerText = UserTxt.Text;
+            date.InnerText = displayDatelbl.Text;
+            time.InnerText = displayShowtimelbl.Text;
+            total.InnerText = totalCost.Text; 
+
+            /*proot.SetAttribute("UID", "11");
             //ID??????????????????
              foreach (Ticket t in trans)
              {
@@ -1906,7 +1949,7 @@ namespace MovieTheater
                  t.ToXml(TransactionsDocument, proot);
              }
             //SAVE DOC
-             TransactionsDocument.Save(TransactionsPath);
+             TransactionsDocument.Save(TransactionsPath); */
 
         }
 
