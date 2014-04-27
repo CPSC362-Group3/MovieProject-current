@@ -69,6 +69,37 @@
             this.NRTitleLabel3 = new System.Windows.Forms.Label();
             this.NRTitleLabel2 = new System.Windows.Forms.Label();
             this.NRTitleLabel1 = new System.Windows.Forms.Label();
+            this.BrowseTab = new System.Windows.Forms.TabPage();
+            this.BShowing15 = new System.Windows.Forms.Label();
+            this.BShowing14 = new System.Windows.Forms.Label();
+            this.BShowing13 = new System.Windows.Forms.Label();
+            this.BShowing12 = new System.Windows.Forms.Label();
+            this.BShowing11 = new System.Windows.Forms.Label();
+            this.BShowing10 = new System.Windows.Forms.Label();
+            this.BShowing9 = new System.Windows.Forms.Label();
+            this.BShowing8 = new System.Windows.Forms.Label();
+            this.BShowing7 = new System.Windows.Forms.Label();
+            this.BShowing6 = new System.Windows.Forms.Label();
+            this.BShowing5 = new System.Windows.Forms.Label();
+            this.BShowing4 = new System.Windows.Forms.Label();
+            this.BShowing3 = new System.Windows.Forms.Label();
+            this.BShowing2 = new System.Windows.Forms.Label();
+            this.BShowing1 = new System.Windows.Forms.Label();
+            this.BMovieTitle15 = new System.Windows.Forms.Label();
+            this.BMovieTitle14 = new System.Windows.Forms.Label();
+            this.BMovieTitle13 = new System.Windows.Forms.Label();
+            this.BMovieTitle12 = new System.Windows.Forms.Label();
+            this.BMovieTitle11 = new System.Windows.Forms.Label();
+            this.BMovieTitle10 = new System.Windows.Forms.Label();
+            this.BMovieTitle9 = new System.Windows.Forms.Label();
+            this.BMovieTitle8 = new System.Windows.Forms.Label();
+            this.BMovieTitle7 = new System.Windows.Forms.Label();
+            this.BMovieTitle6 = new System.Windows.Forms.Label();
+            this.BMovieTitle5 = new System.Windows.Forms.Label();
+            this.BMovieTitle4 = new System.Windows.Forms.Label();
+            this.BMovieTitle3 = new System.Windows.Forms.Label();
+            this.BMovieTitle2 = new System.Windows.Forms.Label();
+            this.BMovieTitle1 = new System.Windows.Forms.Label();
             this.SearchTab = new System.Windows.Forms.TabPage();
             this.STitleLabel6 = new System.Windows.Forms.Label();
             this.STitleLabel5 = new System.Windows.Forms.Label();
@@ -380,24 +411,36 @@
             this.gobackhomebutton = new System.Windows.Forms.Button();
             this.printTixButton = new System.Windows.Forms.Button();
             this.PrintLabel = new System.Windows.Forms.Label();
-            this.BrowseTab = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.BMovieTitle15 = new System.Windows.Forms.Label();
-            this.BMovieTitle14 = new System.Windows.Forms.Label();
-            this.BMovieTitle13 = new System.Windows.Forms.Label();
-            this.BMovieTitle12 = new System.Windows.Forms.Label();
-            this.BMovieTitle11 = new System.Windows.Forms.Label();
-            this.BMovieTitle10 = new System.Windows.Forms.Label();
-            this.BMovieTitle9 = new System.Windows.Forms.Label();
-            this.BMovieTitle8 = new System.Windows.Forms.Label();
-            this.BMovieTitle7 = new System.Windows.Forms.Label();
-            this.BMovieTitle6 = new System.Windows.Forms.Label();
-            this.BMovieTitle5 = new System.Windows.Forms.Label();
-            this.BMovieTitle4 = new System.Windows.Forms.Label();
-            this.BMovieTitle3 = new System.Windows.Forms.Label();
-            this.BMovieTitle2 = new System.Windows.Forms.Label();
-            this.BMovieTitle1 = new System.Windows.Forms.Label();
+            this.AccountInfoTab = new System.Windows.Forms.TabPage();
+            this.AIAccountInfoLabel = new System.Windows.Forms.Label();
+            this.AICreditCardInfo = new System.Windows.Forms.Label();
+            this.AIPersonalInfo = new System.Windows.Forms.Label();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.AIExpDate = new System.Windows.Forms.Label();
+            this.AISecurityCode = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.AICCNumber = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.AICLastName = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.AICFirstName = new System.Windows.Forms.Label();
+            this.AIPasswordBox = new System.Windows.Forms.TextBox();
+            this.AIUsernameBox = new System.Windows.Forms.TextBox();
+            this.AIStateBox = new System.Windows.Forms.TextBox();
+            this.AICityBox = new System.Windows.Forms.TextBox();
+            this.AIAddressBox = new System.Windows.Forms.TextBox();
+            this.AILastNameBox = new System.Windows.Forms.TextBox();
+            this.AIFirstNameBox = new System.Windows.Forms.TextBox();
+            this.AIPassword = new System.Windows.Forms.Label();
+            this.AIUsername = new System.Windows.Forms.Label();
+            this.AIState = new System.Windows.Forms.Label();
+            this.AICity = new System.Windows.Forms.Label();
+            this.AIAddress = new System.Windows.Forms.Label();
+            this.AILastName = new System.Windows.Forms.Label();
+            this.AIFirstName = new System.Windows.Forms.Label();
             this.searchBtn = new System.Windows.Forms.PictureBox();
             this.InfoBar = new System.Windows.Forms.PictureBox();
             this.LoginBtn = new System.Windows.Forms.PictureBox();
@@ -420,7 +463,6 @@
             this.NRPoster2 = new System.Windows.Forms.PictureBox();
             this.NRPoster1 = new System.Windows.Forms.PictureBox();
             this.BackgroundHome = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -436,6 +478,7 @@
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.backgroundB = new System.Windows.Forms.PictureBox();
             this.searchPoster6 = new System.Windows.Forms.PictureBox();
             this.searchPoster4 = new System.Windows.Forms.PictureBox();
@@ -465,24 +508,11 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.movielogopictureticket = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.contactUsBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
-            this.BShowing5 = new System.Windows.Forms.Label();
-            this.BShowing4 = new System.Windows.Forms.Label();
-            this.BShowing3 = new System.Windows.Forms.Label();
-            this.BShowing2 = new System.Windows.Forms.Label();
-            this.BShowing1 = new System.Windows.Forms.Label();
-            this.BShowing10 = new System.Windows.Forms.Label();
-            this.BShowing9 = new System.Windows.Forms.Label();
-            this.BShowing8 = new System.Windows.Forms.Label();
-            this.BShowing7 = new System.Windows.Forms.Label();
-            this.BShowing6 = new System.Windows.Forms.Label();
-            this.BShowing15 = new System.Windows.Forms.Label();
-            this.BShowing14 = new System.Windows.Forms.Label();
-            this.BShowing13 = new System.Windows.Forms.Label();
-            this.BShowing12 = new System.Windows.Forms.Label();
-            this.BShowing11 = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -490,6 +520,7 @@
             this.tabPage1.SuspendLayout();
             this.BodyTabControl.SuspendLayout();
             this.HomeTab.SuspendLayout();
+            this.BrowseTab.SuspendLayout();
             this.SearchTab.SuspendLayout();
             this.MovieDetailsTab.SuspendLayout();
             this.LoginTab.SuspendLayout();
@@ -502,7 +533,7 @@
             this.AdminTab.SuspendLayout();
             this.AdminCtrl.SuspendLayout();
             this.PrintTix.SuspendLayout();
-            this.BrowseTab.SuspendLayout();
+            this.AccountInfoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).BeginInit();
@@ -527,7 +558,6 @@
             ((System.ComponentModel.ISupportInitialize)(pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -543,6 +573,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster4)).BeginInit();
@@ -572,6 +603,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movielogopictureticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
@@ -582,7 +615,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, -7);
+            this.tabControl1.Location = new System.Drawing.Point(20, 159);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -641,7 +674,6 @@
             this.BodyTabControl.Controls.Add(this.MovieDetailsTab);
             this.BodyTabControl.Controls.Add(this.LoginTab);
             this.BodyTabControl.Controls.Add(this.AccountTab);
-            this.BodyTabControl.Controls.Add(this.PaymentInfoTab);
             this.BodyTabControl.Controls.Add(this.Seating);
             this.BodyTabControl.Controls.Add(this.Purchase);
             this.BodyTabControl.Controls.Add(this.Ticket);
@@ -649,6 +681,8 @@
             this.BodyTabControl.Controls.Add(this.AdminTab);
             this.BodyTabControl.Controls.Add(this.AdminCtrl);
             this.BodyTabControl.Controls.Add(this.PrintTix);
+            this.BodyTabControl.Controls.Add(this.AccountInfoTab);
+            this.BodyTabControl.Controls.Add(this.PaymentInfoTab);
             this.BodyTabControl.Location = new System.Drawing.Point(-5, 218);
             this.BodyTabControl.Name = "BodyTabControl";
             this.BodyTabControl.SelectedIndex = 0;
@@ -1085,9 +1119,425 @@
             this.NRTitleLabel1.Text = "Movie Title 1";
             this.NRTitleLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
+            // BrowseTab
+            // 
+            this.BrowseTab.Controls.Add(this.BShowing15);
+            this.BrowseTab.Controls.Add(this.BShowing14);
+            this.BrowseTab.Controls.Add(this.BShowing13);
+            this.BrowseTab.Controls.Add(this.BShowing12);
+            this.BrowseTab.Controls.Add(this.BShowing11);
+            this.BrowseTab.Controls.Add(this.BShowing10);
+            this.BrowseTab.Controls.Add(this.BShowing9);
+            this.BrowseTab.Controls.Add(this.BShowing8);
+            this.BrowseTab.Controls.Add(this.BShowing7);
+            this.BrowseTab.Controls.Add(this.BShowing6);
+            this.BrowseTab.Controls.Add(this.BShowing5);
+            this.BrowseTab.Controls.Add(this.BShowing4);
+            this.BrowseTab.Controls.Add(this.BShowing3);
+            this.BrowseTab.Controls.Add(this.BShowing2);
+            this.BrowseTab.Controls.Add(this.BShowing1);
+            this.BrowseTab.Controls.Add(this.BMovieTitle15);
+            this.BrowseTab.Controls.Add(this.BMovieTitle14);
+            this.BrowseTab.Controls.Add(this.BMovieTitle13);
+            this.BrowseTab.Controls.Add(this.BMovieTitle12);
+            this.BrowseTab.Controls.Add(this.BMovieTitle11);
+            this.BrowseTab.Controls.Add(this.BMovieTitle10);
+            this.BrowseTab.Controls.Add(this.BMovieTitle9);
+            this.BrowseTab.Controls.Add(this.BMovieTitle8);
+            this.BrowseTab.Controls.Add(this.BMovieTitle7);
+            this.BrowseTab.Controls.Add(this.BMovieTitle6);
+            this.BrowseTab.Controls.Add(this.BMovieTitle5);
+            this.BrowseTab.Controls.Add(this.BMovieTitle4);
+            this.BrowseTab.Controls.Add(this.BMovieTitle3);
+            this.BrowseTab.Controls.Add(this.BMovieTitle2);
+            this.BrowseTab.Controls.Add(this.BMovieTitle1);
+            this.BrowseTab.Controls.Add(this.pictureBox14);
+            this.BrowseTab.Controls.Add(this.pictureBox15);
+            this.BrowseTab.Controls.Add(this.pictureBox16);
+            this.BrowseTab.Controls.Add(this.pictureBox17);
+            this.BrowseTab.Controls.Add(this.pictureBox18);
+            this.BrowseTab.Controls.Add(this.pictureBox19);
+            this.BrowseTab.Controls.Add(this.pictureBox20);
+            this.BrowseTab.Controls.Add(this.pictureBox21);
+            this.BrowseTab.Controls.Add(this.pictureBox22);
+            this.BrowseTab.Controls.Add(this.pictureBox23);
+            this.BrowseTab.Controls.Add(this.pictureBox24);
+            this.BrowseTab.Controls.Add(this.pictureBox25);
+            this.BrowseTab.Controls.Add(this.pictureBox26);
+            this.BrowseTab.Controls.Add(this.pictureBox27);
+            this.BrowseTab.Controls.Add(this.pictureBox28);
+            this.BrowseTab.Controls.Add(this.pictureBox29);
+            this.BrowseTab.Controls.Add(this.backgroundB);
+            this.BrowseTab.Location = new System.Drawing.Point(4, 22);
+            this.BrowseTab.Name = "BrowseTab";
+            this.BrowseTab.Size = new System.Drawing.Size(962, 773);
+            this.BrowseTab.TabIndex = 13;
+            this.BrowseTab.Text = "Browse";
+            this.BrowseTab.UseVisualStyleBackColor = true;
+            // 
+            // BShowing15
+            // 
+            this.BShowing15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing15.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing15.Location = new System.Drawing.Point(785, 689);
+            this.BShowing15.Name = "BShowing15";
+            this.BShowing15.Size = new System.Drawing.Size(160, 30);
+            this.BShowing15.TabIndex = 145;
+            this.BShowing15.Text = "Showing15";
+            this.BShowing15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing14
+            // 
+            this.BShowing14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing14.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing14.Location = new System.Drawing.Point(593, 689);
+            this.BShowing14.Name = "BShowing14";
+            this.BShowing14.Size = new System.Drawing.Size(160, 30);
+            this.BShowing14.TabIndex = 144;
+            this.BShowing14.Text = "Showing14";
+            this.BShowing14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing13
+            // 
+            this.BShowing13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing13.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing13.Location = new System.Drawing.Point(401, 689);
+            this.BShowing13.Name = "BShowing13";
+            this.BShowing13.Size = new System.Drawing.Size(160, 30);
+            this.BShowing13.TabIndex = 143;
+            this.BShowing13.Text = "Showing13";
+            this.BShowing13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing12
+            // 
+            this.BShowing12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing12.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing12.Location = new System.Drawing.Point(209, 689);
+            this.BShowing12.Name = "BShowing12";
+            this.BShowing12.Size = new System.Drawing.Size(160, 30);
+            this.BShowing12.TabIndex = 142;
+            this.BShowing12.Text = "Showing12";
+            this.BShowing12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing11
+            // 
+            this.BShowing11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing11.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing11.Location = new System.Drawing.Point(17, 689);
+            this.BShowing11.Name = "BShowing11";
+            this.BShowing11.Size = new System.Drawing.Size(160, 30);
+            this.BShowing11.TabIndex = 141;
+            this.BShowing11.Text = "Showing11";
+            this.BShowing11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing10
+            // 
+            this.BShowing10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing10.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing10.Location = new System.Drawing.Point(785, 465);
+            this.BShowing10.Name = "BShowing10";
+            this.BShowing10.Size = new System.Drawing.Size(160, 30);
+            this.BShowing10.TabIndex = 140;
+            this.BShowing10.Text = "Showing10";
+            this.BShowing10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing9
+            // 
+            this.BShowing9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing9.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing9.Location = new System.Drawing.Point(593, 465);
+            this.BShowing9.Name = "BShowing9";
+            this.BShowing9.Size = new System.Drawing.Size(160, 30);
+            this.BShowing9.TabIndex = 139;
+            this.BShowing9.Text = "Showing9";
+            this.BShowing9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing8
+            // 
+            this.BShowing8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing8.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing8.Location = new System.Drawing.Point(401, 465);
+            this.BShowing8.Name = "BShowing8";
+            this.BShowing8.Size = new System.Drawing.Size(160, 30);
+            this.BShowing8.TabIndex = 138;
+            this.BShowing8.Text = "Showing8";
+            this.BShowing8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing7
+            // 
+            this.BShowing7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing7.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing7.Location = new System.Drawing.Point(209, 465);
+            this.BShowing7.Name = "BShowing7";
+            this.BShowing7.Size = new System.Drawing.Size(160, 30);
+            this.BShowing7.TabIndex = 137;
+            this.BShowing7.Text = "Showing7";
+            this.BShowing7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing6
+            // 
+            this.BShowing6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing6.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing6.Location = new System.Drawing.Point(17, 465);
+            this.BShowing6.Name = "BShowing6";
+            this.BShowing6.Size = new System.Drawing.Size(160, 30);
+            this.BShowing6.TabIndex = 136;
+            this.BShowing6.Text = "Showing6";
+            this.BShowing6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing5
+            // 
+            this.BShowing5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing5.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing5.Location = new System.Drawing.Point(785, 241);
+            this.BShowing5.Name = "BShowing5";
+            this.BShowing5.Size = new System.Drawing.Size(160, 30);
+            this.BShowing5.TabIndex = 135;
+            this.BShowing5.Text = "Showing5";
+            this.BShowing5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing4
+            // 
+            this.BShowing4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing4.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing4.Location = new System.Drawing.Point(593, 241);
+            this.BShowing4.Name = "BShowing4";
+            this.BShowing4.Size = new System.Drawing.Size(160, 30);
+            this.BShowing4.TabIndex = 134;
+            this.BShowing4.Text = "Showing4";
+            this.BShowing4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing3
+            // 
+            this.BShowing3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing3.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing3.Location = new System.Drawing.Point(401, 241);
+            this.BShowing3.Name = "BShowing3";
+            this.BShowing3.Size = new System.Drawing.Size(160, 30);
+            this.BShowing3.TabIndex = 133;
+            this.BShowing3.Text = "Showing3";
+            this.BShowing3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing2
+            // 
+            this.BShowing2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing2.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing2.Location = new System.Drawing.Point(209, 241);
+            this.BShowing2.Name = "BShowing2";
+            this.BShowing2.Size = new System.Drawing.Size(160, 30);
+            this.BShowing2.TabIndex = 132;
+            this.BShowing2.Text = "Showing2";
+            this.BShowing2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing1
+            // 
+            this.BShowing1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing1.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing1.Location = new System.Drawing.Point(17, 241);
+            this.BShowing1.Name = "BShowing1";
+            this.BShowing1.Size = new System.Drawing.Size(160, 30);
+            this.BShowing1.TabIndex = 131;
+            this.BShowing1.Text = "Showing1";
+            this.BShowing1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BMovieTitle15
+            // 
+            this.BMovieTitle15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle15.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle15.Location = new System.Drawing.Point(785, 498);
+            this.BMovieTitle15.Name = "BMovieTitle15";
+            this.BMovieTitle15.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle15.TabIndex = 129;
+            this.BMovieTitle15.Text = "Movie Title 15";
+            this.BMovieTitle15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle14
+            // 
+            this.BMovieTitle14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle14.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle14.Location = new System.Drawing.Point(593, 498);
+            this.BMovieTitle14.Name = "BMovieTitle14";
+            this.BMovieTitle14.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle14.TabIndex = 128;
+            this.BMovieTitle14.Text = "Movie Title 14";
+            this.BMovieTitle14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle13
+            // 
+            this.BMovieTitle13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle13.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle13.Location = new System.Drawing.Point(401, 498);
+            this.BMovieTitle13.Name = "BMovieTitle13";
+            this.BMovieTitle13.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle13.TabIndex = 127;
+            this.BMovieTitle13.Text = "Movie Title 13";
+            this.BMovieTitle13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle12
+            // 
+            this.BMovieTitle12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle12.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle12.Location = new System.Drawing.Point(209, 498);
+            this.BMovieTitle12.Name = "BMovieTitle12";
+            this.BMovieTitle12.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle12.TabIndex = 126;
+            this.BMovieTitle12.Text = "Movie Title 12";
+            this.BMovieTitle12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle11
+            // 
+            this.BMovieTitle11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle11.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle11.Location = new System.Drawing.Point(17, 498);
+            this.BMovieTitle11.Name = "BMovieTitle11";
+            this.BMovieTitle11.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle11.TabIndex = 125;
+            this.BMovieTitle11.Text = "Movie Title 11";
+            this.BMovieTitle11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle10
+            // 
+            this.BMovieTitle10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle10.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle10.Location = new System.Drawing.Point(785, 274);
+            this.BMovieTitle10.Name = "BMovieTitle10";
+            this.BMovieTitle10.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle10.TabIndex = 119;
+            this.BMovieTitle10.Text = "Movie Title 10";
+            this.BMovieTitle10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle9
+            // 
+            this.BMovieTitle9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle9.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle9.Location = new System.Drawing.Point(593, 274);
+            this.BMovieTitle9.Name = "BMovieTitle9";
+            this.BMovieTitle9.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle9.TabIndex = 118;
+            this.BMovieTitle9.Text = "Movie Title 9";
+            this.BMovieTitle9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle8
+            // 
+            this.BMovieTitle8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle8.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle8.Location = new System.Drawing.Point(401, 274);
+            this.BMovieTitle8.Name = "BMovieTitle8";
+            this.BMovieTitle8.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle8.TabIndex = 117;
+            this.BMovieTitle8.Text = "Movie Title 8";
+            this.BMovieTitle8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle7
+            // 
+            this.BMovieTitle7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle7.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle7.Location = new System.Drawing.Point(209, 274);
+            this.BMovieTitle7.Name = "BMovieTitle7";
+            this.BMovieTitle7.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle7.TabIndex = 116;
+            this.BMovieTitle7.Text = "Movie Title 7";
+            this.BMovieTitle7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle6
+            // 
+            this.BMovieTitle6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle6.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle6.Location = new System.Drawing.Point(17, 274);
+            this.BMovieTitle6.Name = "BMovieTitle6";
+            this.BMovieTitle6.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle6.TabIndex = 115;
+            this.BMovieTitle6.Text = "Movie Title 6";
+            this.BMovieTitle6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle5
+            // 
+            this.BMovieTitle5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle5.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle5.Location = new System.Drawing.Point(785, 50);
+            this.BMovieTitle5.Name = "BMovieTitle5";
+            this.BMovieTitle5.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle5.TabIndex = 114;
+            this.BMovieTitle5.Text = "Movie Title 5";
+            this.BMovieTitle5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle4
+            // 
+            this.BMovieTitle4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle4.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle4.Location = new System.Drawing.Point(593, 50);
+            this.BMovieTitle4.Name = "BMovieTitle4";
+            this.BMovieTitle4.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle4.TabIndex = 113;
+            this.BMovieTitle4.Text = "Movie Title 4";
+            this.BMovieTitle4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle3
+            // 
+            this.BMovieTitle3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle3.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle3.Location = new System.Drawing.Point(401, 50);
+            this.BMovieTitle3.Name = "BMovieTitle3";
+            this.BMovieTitle3.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle3.TabIndex = 112;
+            this.BMovieTitle3.Text = "Movie Title 3";
+            this.BMovieTitle3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle2
+            // 
+            this.BMovieTitle2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle2.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle2.Location = new System.Drawing.Point(209, 50);
+            this.BMovieTitle2.Name = "BMovieTitle2";
+            this.BMovieTitle2.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle2.TabIndex = 111;
+            this.BMovieTitle2.Text = "Movie Title 2";
+            this.BMovieTitle2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle1
+            // 
+            this.BMovieTitle1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle1.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle1.Location = new System.Drawing.Point(17, 50);
+            this.BMovieTitle1.Name = "BMovieTitle1";
+            this.BMovieTitle1.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle1.TabIndex = 110;
+            this.BMovieTitle1.Text = "Movie Title 1";
+            this.BMovieTitle1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
             // SearchTab
             // 
-            this.SearchTab.BackColor = System.Drawing.Color.Silver;
+            this.SearchTab.BackColor = System.Drawing.Color.Transparent;
             this.SearchTab.Controls.Add(this.STitleLabel6);
             this.SearchTab.Controls.Add(this.STitleLabel5);
             this.SearchTab.Controls.Add(this.STitleLabel4);
@@ -1114,7 +1564,7 @@
             this.STitleLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.STitleLabel6.BackColor = System.Drawing.Color.Transparent;
             this.STitleLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.STitleLabel6.Location = new System.Drawing.Point(495, 512);
+            this.STitleLabel6.Location = new System.Drawing.Point(497, 498);
             this.STitleLabel6.Name = "STitleLabel6";
             this.STitleLabel6.Size = new System.Drawing.Size(160, 30);
             this.STitleLabel6.TabIndex = 88;
@@ -1126,7 +1576,7 @@
             this.STitleLabel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.STitleLabel5.BackColor = System.Drawing.Color.Transparent;
             this.STitleLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.STitleLabel5.Location = new System.Drawing.Point(111, 512);
+            this.STitleLabel5.Location = new System.Drawing.Point(17, 498);
             this.STitleLabel5.Name = "STitleLabel5";
             this.STitleLabel5.Size = new System.Drawing.Size(160, 30);
             this.STitleLabel5.TabIndex = 87;
@@ -1138,7 +1588,7 @@
             this.STitleLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.STitleLabel4.BackColor = System.Drawing.Color.Transparent;
             this.STitleLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.STitleLabel4.Location = new System.Drawing.Point(495, 288);
+            this.STitleLabel4.Location = new System.Drawing.Point(497, 274);
             this.STitleLabel4.Name = "STitleLabel4";
             this.STitleLabel4.Size = new System.Drawing.Size(160, 30);
             this.STitleLabel4.TabIndex = 86;
@@ -1150,7 +1600,7 @@
             this.STitleLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.STitleLabel3.BackColor = System.Drawing.Color.Transparent;
             this.STitleLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.STitleLabel3.Location = new System.Drawing.Point(111, 288);
+            this.STitleLabel3.Location = new System.Drawing.Point(17, 274);
             this.STitleLabel3.Name = "STitleLabel3";
             this.STitleLabel3.Size = new System.Drawing.Size(160, 30);
             this.STitleLabel3.TabIndex = 85;
@@ -1162,7 +1612,7 @@
             this.STitleLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.STitleLabel2.BackColor = System.Drawing.Color.Transparent;
             this.STitleLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.STitleLabel2.Location = new System.Drawing.Point(495, 64);
+            this.STitleLabel2.Location = new System.Drawing.Point(497, 50);
             this.STitleLabel2.Name = "STitleLabel2";
             this.STitleLabel2.Size = new System.Drawing.Size(160, 30);
             this.STitleLabel2.TabIndex = 84;
@@ -1174,7 +1624,7 @@
             this.STitleLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.STitleLabel1.BackColor = System.Drawing.Color.Transparent;
             this.STitleLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.STitleLabel1.Location = new System.Drawing.Point(111, 64);
+            this.STitleLabel1.Location = new System.Drawing.Point(17, 50);
             this.STitleLabel1.Name = "STitleLabel1";
             this.STitleLabel1.Size = new System.Drawing.Size(160, 30);
             this.STitleLabel1.TabIndex = 83;
@@ -4890,62 +5340,6 @@
             this.PrintLabel.TabIndex = 0;
             this.PrintLabel.Text = "Print Tickets";
             // 
-            // BrowseTab
-            // 
-            this.BrowseTab.Controls.Add(this.BShowing15);
-            this.BrowseTab.Controls.Add(this.BShowing14);
-            this.BrowseTab.Controls.Add(this.BShowing13);
-            this.BrowseTab.Controls.Add(this.BShowing12);
-            this.BrowseTab.Controls.Add(this.BShowing11);
-            this.BrowseTab.Controls.Add(this.BShowing10);
-            this.BrowseTab.Controls.Add(this.BShowing9);
-            this.BrowseTab.Controls.Add(this.BShowing8);
-            this.BrowseTab.Controls.Add(this.BShowing7);
-            this.BrowseTab.Controls.Add(this.BShowing6);
-            this.BrowseTab.Controls.Add(this.BShowing5);
-            this.BrowseTab.Controls.Add(this.BShowing4);
-            this.BrowseTab.Controls.Add(this.BShowing3);
-            this.BrowseTab.Controls.Add(this.BShowing2);
-            this.BrowseTab.Controls.Add(this.BShowing1);
-            this.BrowseTab.Controls.Add(this.BMovieTitle15);
-            this.BrowseTab.Controls.Add(this.BMovieTitle14);
-            this.BrowseTab.Controls.Add(this.BMovieTitle13);
-            this.BrowseTab.Controls.Add(this.BMovieTitle12);
-            this.BrowseTab.Controls.Add(this.BMovieTitle11);
-            this.BrowseTab.Controls.Add(this.pictureBox14);
-            this.BrowseTab.Controls.Add(this.pictureBox15);
-            this.BrowseTab.Controls.Add(this.pictureBox16);
-            this.BrowseTab.Controls.Add(this.pictureBox17);
-            this.BrowseTab.Controls.Add(this.pictureBox18);
-            this.BrowseTab.Controls.Add(this.BMovieTitle10);
-            this.BrowseTab.Controls.Add(this.BMovieTitle9);
-            this.BrowseTab.Controls.Add(this.BMovieTitle8);
-            this.BrowseTab.Controls.Add(this.BMovieTitle7);
-            this.BrowseTab.Controls.Add(this.BMovieTitle6);
-            this.BrowseTab.Controls.Add(this.BMovieTitle5);
-            this.BrowseTab.Controls.Add(this.BMovieTitle4);
-            this.BrowseTab.Controls.Add(this.BMovieTitle3);
-            this.BrowseTab.Controls.Add(this.BMovieTitle2);
-            this.BrowseTab.Controls.Add(this.BMovieTitle1);
-            this.BrowseTab.Controls.Add(this.pictureBox19);
-            this.BrowseTab.Controls.Add(this.pictureBox20);
-            this.BrowseTab.Controls.Add(this.pictureBox21);
-            this.BrowseTab.Controls.Add(this.pictureBox22);
-            this.BrowseTab.Controls.Add(this.pictureBox23);
-            this.BrowseTab.Controls.Add(this.pictureBox24);
-            this.BrowseTab.Controls.Add(this.pictureBox25);
-            this.BrowseTab.Controls.Add(this.pictureBox26);
-            this.BrowseTab.Controls.Add(this.pictureBox27);
-            this.BrowseTab.Controls.Add(this.pictureBox28);
-            this.BrowseTab.Controls.Add(this.pictureBox29);
-            this.BrowseTab.Controls.Add(this.backgroundB);
-            this.BrowseTab.Location = new System.Drawing.Point(4, 22);
-            this.BrowseTab.Name = "BrowseTab";
-            this.BrowseTab.Size = new System.Drawing.Size(962, 773);
-            this.BrowseTab.TabIndex = 13;
-            this.BrowseTab.Text = "Browse";
-            this.BrowseTab.UseVisualStyleBackColor = true;
-            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -4960,185 +5354,292 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // BMovieTitle15
+            // AccountInfoTab
             // 
-            this.BMovieTitle15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle15.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle15.Location = new System.Drawing.Point(785, 498);
-            this.BMovieTitle15.Name = "BMovieTitle15";
-            this.BMovieTitle15.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle15.TabIndex = 129;
-            this.BMovieTitle15.Text = "Movie Title 15";
-            this.BMovieTitle15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AccountInfoTab.Controls.Add(this.AIAccountInfoLabel);
+            this.AccountInfoTab.Controls.Add(this.AICreditCardInfo);
+            this.AccountInfoTab.Controls.Add(this.AIPersonalInfo);
+            this.AccountInfoTab.Controls.Add(this.monthCalendar2);
+            this.AccountInfoTab.Controls.Add(this.AIExpDate);
+            this.AccountInfoTab.Controls.Add(this.AISecurityCode);
+            this.AccountInfoTab.Controls.Add(this.textBox9);
+            this.AccountInfoTab.Controls.Add(this.AICCNumber);
+            this.AccountInfoTab.Controls.Add(this.textBox10);
+            this.AccountInfoTab.Controls.Add(this.AICLastName);
+            this.AccountInfoTab.Controls.Add(this.textBox11);
+            this.AccountInfoTab.Controls.Add(this.textBox12);
+            this.AccountInfoTab.Controls.Add(this.AICFirstName);
+            this.AccountInfoTab.Controls.Add(this.AIPasswordBox);
+            this.AccountInfoTab.Controls.Add(this.AIUsernameBox);
+            this.AccountInfoTab.Controls.Add(this.AIStateBox);
+            this.AccountInfoTab.Controls.Add(this.AICityBox);
+            this.AccountInfoTab.Controls.Add(this.AIAddressBox);
+            this.AccountInfoTab.Controls.Add(this.AILastNameBox);
+            this.AccountInfoTab.Controls.Add(this.AIFirstNameBox);
+            this.AccountInfoTab.Controls.Add(this.AIPassword);
+            this.AccountInfoTab.Controls.Add(this.AIUsername);
+            this.AccountInfoTab.Controls.Add(this.AIState);
+            this.AccountInfoTab.Controls.Add(this.AICity);
+            this.AccountInfoTab.Controls.Add(this.AIAddress);
+            this.AccountInfoTab.Controls.Add(this.AILastName);
+            this.AccountInfoTab.Controls.Add(this.AIFirstName);
+            this.AccountInfoTab.Controls.Add(this.pictureBox6);
+            this.AccountInfoTab.Controls.Add(this.pictureBox13);
+            this.AccountInfoTab.Location = new System.Drawing.Point(4, 22);
+            this.AccountInfoTab.Name = "AccountInfoTab";
+            this.AccountInfoTab.Size = new System.Drawing.Size(962, 773);
+            this.AccountInfoTab.TabIndex = 14;
+            this.AccountInfoTab.Text = "AccountInfo";
+            this.AccountInfoTab.UseVisualStyleBackColor = true;
             // 
-            // BMovieTitle14
+            // AIAccountInfoLabel
             // 
-            this.BMovieTitle14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle14.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle14.Location = new System.Drawing.Point(593, 498);
-            this.BMovieTitle14.Name = "BMovieTitle14";
-            this.BMovieTitle14.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle14.TabIndex = 128;
-            this.BMovieTitle14.Text = "Movie Title 14";
-            this.BMovieTitle14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AIAccountInfoLabel.AutoSize = true;
+            this.AIAccountInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIAccountInfoLabel.Location = new System.Drawing.Point(172, 432);
+            this.AIAccountInfoLabel.Name = "AIAccountInfoLabel";
+            this.AIAccountInfoLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIAccountInfoLabel.Size = new System.Drawing.Size(172, 20);
+            this.AIAccountInfoLabel.TabIndex = 115;
+            this.AIAccountInfoLabel.Text = "Account Information";
             // 
-            // BMovieTitle13
+            // AICreditCardInfo
             // 
-            this.BMovieTitle13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle13.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle13.Location = new System.Drawing.Point(401, 498);
-            this.BMovieTitle13.Name = "BMovieTitle13";
-            this.BMovieTitle13.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle13.TabIndex = 127;
-            this.BMovieTitle13.Text = "Movie Title 13";
-            this.BMovieTitle13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AICreditCardInfo.AutoSize = true;
+            this.AICreditCardInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AICreditCardInfo.Location = new System.Drawing.Point(637, 68);
+            this.AICreditCardInfo.Name = "AICreditCardInfo";
+            this.AICreditCardInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AICreditCardInfo.Size = new System.Drawing.Size(197, 20);
+            this.AICreditCardInfo.TabIndex = 114;
+            this.AICreditCardInfo.Text = "Credit Card Information";
             // 
-            // BMovieTitle12
+            // AIPersonalInfo
             // 
-            this.BMovieTitle12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle12.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle12.Location = new System.Drawing.Point(209, 498);
-            this.BMovieTitle12.Name = "BMovieTitle12";
-            this.BMovieTitle12.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle12.TabIndex = 126;
-            this.BMovieTitle12.Text = "Movie Title 12";
-            this.BMovieTitle12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AIPersonalInfo.AutoSize = true;
+            this.AIPersonalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIPersonalInfo.Location = new System.Drawing.Point(172, 68);
+            this.AIPersonalInfo.Name = "AIPersonalInfo";
+            this.AIPersonalInfo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIPersonalInfo.Size = new System.Drawing.Size(176, 20);
+            this.AIPersonalInfo.TabIndex = 113;
+            this.AIPersonalInfo.Text = "Personal Information";
             // 
-            // BMovieTitle11
+            // monthCalendar2
             // 
-            this.BMovieTitle11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle11.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle11.Location = new System.Drawing.Point(17, 498);
-            this.BMovieTitle11.Name = "BMovieTitle11";
-            this.BMovieTitle11.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle11.TabIndex = 125;
-            this.BMovieTitle11.Text = "Movie Title 11";
-            this.BMovieTitle11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.monthCalendar2.Location = new System.Drawing.Point(641, 368);
+            this.monthCalendar2.MinDate = new System.DateTime(2013, 3, 4, 0, 0, 0, 0);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.TabIndex = 104;
             // 
-            // BMovieTitle10
+            // AIExpDate
             // 
-            this.BMovieTitle10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle10.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle10.Location = new System.Drawing.Point(785, 274);
-            this.BMovieTitle10.Name = "BMovieTitle10";
-            this.BMovieTitle10.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle10.TabIndex = 119;
-            this.BMovieTitle10.Text = "Movie Title 10";
-            this.BMovieTitle10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AIExpDate.AutoSize = true;
+            this.AIExpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIExpDate.Location = new System.Drawing.Point(502, 368);
+            this.AIExpDate.Name = "AIExpDate";
+            this.AIExpDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIExpDate.Size = new System.Drawing.Size(102, 16);
+            this.AIExpDate.TabIndex = 112;
+            this.AIExpDate.Text = ":Expiration Date";
             // 
-            // BMovieTitle9
+            // AISecurityCode
             // 
-            this.BMovieTitle9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle9.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle9.Location = new System.Drawing.Point(593, 274);
-            this.BMovieTitle9.Name = "BMovieTitle9";
-            this.BMovieTitle9.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle9.TabIndex = 118;
-            this.BMovieTitle9.Text = "Movie Title 9";
-            this.BMovieTitle9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AISecurityCode.AutoSize = true;
+            this.AISecurityCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AISecurityCode.Location = new System.Drawing.Point(509, 307);
+            this.AISecurityCode.Name = "AISecurityCode";
+            this.AISecurityCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AISecurityCode.Size = new System.Drawing.Size(95, 16);
+            this.AISecurityCode.TabIndex = 111;
+            this.AISecurityCode.Text = ":Security Code";
             // 
-            // BMovieTitle8
+            // textBox9
             // 
-            this.BMovieTitle8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle8.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle8.Location = new System.Drawing.Point(401, 274);
-            this.BMovieTitle8.Name = "BMovieTitle8";
-            this.BMovieTitle8.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle8.TabIndex = 117;
-            this.BMovieTitle8.Text = "Movie Title 8";
-            this.BMovieTitle8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.textBox9.Location = new System.Drawing.Point(637, 240);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(224, 20);
+            this.textBox9.TabIndex = 102;
             // 
-            // BMovieTitle7
+            // AICCNumber
             // 
-            this.BMovieTitle7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle7.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle7.Location = new System.Drawing.Point(209, 274);
-            this.BMovieTitle7.Name = "BMovieTitle7";
-            this.BMovieTitle7.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle7.TabIndex = 116;
-            this.BMovieTitle7.Text = "Movie Title 7";
-            this.BMovieTitle7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AICCNumber.AutoSize = true;
+            this.AICCNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AICCNumber.Location = new System.Drawing.Point(475, 243);
+            this.AICCNumber.Name = "AICCNumber";
+            this.AICCNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AICCNumber.Size = new System.Drawing.Size(129, 16);
+            this.AICCNumber.TabIndex = 110;
+            this.AICCNumber.Text = ":Credit Card Number";
             // 
-            // BMovieTitle6
+            // textBox10
             // 
-            this.BMovieTitle6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle6.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle6.Location = new System.Drawing.Point(17, 274);
-            this.BMovieTitle6.Name = "BMovieTitle6";
-            this.BMovieTitle6.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle6.TabIndex = 115;
-            this.BMovieTitle6.Text = "Movie Title 6";
-            this.BMovieTitle6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.textBox10.Location = new System.Drawing.Point(637, 176);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(224, 20);
+            this.textBox10.TabIndex = 101;
             // 
-            // BMovieTitle5
+            // AICLastName
             // 
-            this.BMovieTitle5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle5.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle5.Location = new System.Drawing.Point(785, 50);
-            this.BMovieTitle5.Name = "BMovieTitle5";
-            this.BMovieTitle5.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle5.TabIndex = 114;
-            this.BMovieTitle5.Text = "Movie Title 5";
-            this.BMovieTitle5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AICLastName.AutoSize = true;
+            this.AICLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AICLastName.Location = new System.Drawing.Point(451, 179);
+            this.AICLastName.Name = "AICLastName";
+            this.AICLastName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AICLastName.Size = new System.Drawing.Size(153, 16);
+            this.AICLastName.TabIndex = 109;
+            this.AICLastName.Text = ":Cardholders Last Name";
             // 
-            // BMovieTitle4
+            // textBox11
             // 
-            this.BMovieTitle4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle4.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle4.Location = new System.Drawing.Point(593, 50);
-            this.BMovieTitle4.Name = "BMovieTitle4";
-            this.BMovieTitle4.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle4.TabIndex = 113;
-            this.BMovieTitle4.Text = "Movie Title 4";
-            this.BMovieTitle4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.textBox11.Location = new System.Drawing.Point(637, 304);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(64, 20);
+            this.textBox11.TabIndex = 103;
             // 
-            // BMovieTitle3
+            // textBox12
             // 
-            this.BMovieTitle3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle3.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle3.Location = new System.Drawing.Point(401, 50);
-            this.BMovieTitle3.Name = "BMovieTitle3";
-            this.BMovieTitle3.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle3.TabIndex = 112;
-            this.BMovieTitle3.Text = "Movie Title 3";
-            this.BMovieTitle3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.textBox12.Location = new System.Drawing.Point(637, 112);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(224, 20);
+            this.textBox12.TabIndex = 100;
             // 
-            // BMovieTitle2
+            // AICFirstName
             // 
-            this.BMovieTitle2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle2.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle2.Location = new System.Drawing.Point(209, 50);
-            this.BMovieTitle2.Name = "BMovieTitle2";
-            this.BMovieTitle2.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle2.TabIndex = 111;
-            this.BMovieTitle2.Text = "Movie Title 2";
-            this.BMovieTitle2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AICFirstName.AutoSize = true;
+            this.AICFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AICFirstName.Location = new System.Drawing.Point(451, 115);
+            this.AICFirstName.Name = "AICFirstName";
+            this.AICFirstName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AICFirstName.Size = new System.Drawing.Size(153, 16);
+            this.AICFirstName.TabIndex = 108;
+            this.AICFirstName.Text = ":Cardholders First Name";
             // 
-            // BMovieTitle1
+            // AIPasswordBox
             // 
-            this.BMovieTitle1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BMovieTitle1.BackColor = System.Drawing.Color.Transparent;
-            this.BMovieTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BMovieTitle1.Location = new System.Drawing.Point(17, 50);
-            this.BMovieTitle1.Name = "BMovieTitle1";
-            this.BMovieTitle1.Size = new System.Drawing.Size(160, 30);
-            this.BMovieTitle1.TabIndex = 110;
-            this.BMovieTitle1.Text = "Movie Title 1";
-            this.BMovieTitle1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AIPasswordBox.Location = new System.Drawing.Point(172, 540);
+            this.AIPasswordBox.Name = "AIPasswordBox";
+            this.AIPasswordBox.Size = new System.Drawing.Size(224, 20);
+            this.AIPasswordBox.TabIndex = 106;
+            // 
+            // AIUsernameBox
+            // 
+            this.AIUsernameBox.Location = new System.Drawing.Point(172, 476);
+            this.AIUsernameBox.Name = "AIUsernameBox";
+            this.AIUsernameBox.Size = new System.Drawing.Size(224, 20);
+            this.AIUsernameBox.TabIndex = 105;
+            // 
+            // AIStateBox
+            // 
+            this.AIStateBox.Location = new System.Drawing.Point(172, 368);
+            this.AIStateBox.Name = "AIStateBox";
+            this.AIStateBox.Size = new System.Drawing.Size(64, 20);
+            this.AIStateBox.TabIndex = 99;
+            // 
+            // AICityBox
+            // 
+            this.AICityBox.Location = new System.Drawing.Point(172, 304);
+            this.AICityBox.Name = "AICityBox";
+            this.AICityBox.Size = new System.Drawing.Size(224, 20);
+            this.AICityBox.TabIndex = 98;
+            // 
+            // AIAddressBox
+            // 
+            this.AIAddressBox.Location = new System.Drawing.Point(172, 240);
+            this.AIAddressBox.Name = "AIAddressBox";
+            this.AIAddressBox.Size = new System.Drawing.Size(224, 20);
+            this.AIAddressBox.TabIndex = 97;
+            // 
+            // AILastNameBox
+            // 
+            this.AILastNameBox.Location = new System.Drawing.Point(172, 176);
+            this.AILastNameBox.Name = "AILastNameBox";
+            this.AILastNameBox.Size = new System.Drawing.Size(224, 20);
+            this.AILastNameBox.TabIndex = 96;
+            // 
+            // AIFirstNameBox
+            // 
+            this.AIFirstNameBox.Location = new System.Drawing.Point(172, 112);
+            this.AIFirstNameBox.Name = "AIFirstNameBox";
+            this.AIFirstNameBox.Size = new System.Drawing.Size(224, 20);
+            this.AIFirstNameBox.TabIndex = 95;
+            // 
+            // AIPassword
+            // 
+            this.AIPassword.AutoSize = true;
+            this.AIPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIPassword.Location = new System.Drawing.Point(67, 543);
+            this.AIPassword.Name = "AIPassword";
+            this.AIPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIPassword.Size = new System.Drawing.Size(71, 16);
+            this.AIPassword.TabIndex = 94;
+            this.AIPassword.Text = ":Password";
+            // 
+            // AIUsername
+            // 
+            this.AIUsername.AutoSize = true;
+            this.AIUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIUsername.Location = new System.Drawing.Point(67, 479);
+            this.AIUsername.Name = "AIUsername";
+            this.AIUsername.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIUsername.Size = new System.Drawing.Size(74, 16);
+            this.AIUsername.TabIndex = 93;
+            this.AIUsername.Text = ":Username";
+            // 
+            // AIState
+            // 
+            this.AIState.AutoSize = true;
+            this.AIState.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIState.Location = new System.Drawing.Point(102, 371);
+            this.AIState.Name = "AIState";
+            this.AIState.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIState.Size = new System.Drawing.Size(42, 16);
+            this.AIState.TabIndex = 92;
+            this.AIState.Text = ":State";
+            // 
+            // AICity
+            // 
+            this.AICity.AutoSize = true;
+            this.AICity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AICity.Location = new System.Drawing.Point(111, 307);
+            this.AICity.Name = "AICity";
+            this.AICity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AICity.Size = new System.Drawing.Size(33, 16);
+            this.AICity.TabIndex = 91;
+            this.AICity.Text = ":City";
+            // 
+            // AIAddress
+            // 
+            this.AIAddress.AutoSize = true;
+            this.AIAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIAddress.Location = new System.Drawing.Point(82, 243);
+            this.AIAddress.Name = "AIAddress";
+            this.AIAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIAddress.Size = new System.Drawing.Size(62, 16);
+            this.AIAddress.TabIndex = 90;
+            this.AIAddress.Text = ":Address";
+            // 
+            // AILastName
+            // 
+            this.AILastName.AutoSize = true;
+            this.AILastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AILastName.Location = new System.Drawing.Point(65, 179);
+            this.AILastName.Name = "AILastName";
+            this.AILastName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AILastName.Size = new System.Drawing.Size(76, 16);
+            this.AILastName.TabIndex = 89;
+            this.AILastName.Text = ":Last Name";
+            // 
+            // AIFirstName
+            // 
+            this.AIFirstName.AutoSize = true;
+            this.AIFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIFirstName.Location = new System.Drawing.Point(65, 115);
+            this.AIFirstName.Name = "AIFirstName";
+            this.AIFirstName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AIFirstName.Size = new System.Drawing.Size(76, 16);
+            this.AIFirstName.TabIndex = 88;
+            this.AIFirstName.Text = ":First Name";
             // 
             // searchBtn
             // 
@@ -5441,16 +5942,6 @@
             this.BackgroundHome.TabIndex = 69;
             this.BackgroundHome.TabStop = false;
             // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox29.Image = global::MovieTheater.Properties.Resources.browse_movies_div;
-            this.pictureBox29.Location = new System.Drawing.Point(32, 16);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(896, 33);
-            this.pictureBox29.TabIndex = 130;
-            this.pictureBox29.TabStop = false;
-            // 
             // pictureBox14
             // 
             this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -5638,6 +6129,16 @@
             this.pictureBox28.TabIndex = 100;
             this.pictureBox28.TabStop = false;
             // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox29.Image = global::MovieTheater.Properties.Resources.browse_movies_div;
+            this.pictureBox29.Location = new System.Drawing.Point(32, 16);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(896, 33);
+            this.pictureBox29.TabIndex = 130;
+            this.pictureBox29.TabStop = false;
+            // 
             // backgroundB
             // 
             this.backgroundB.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -5653,7 +6154,7 @@
             // 
             this.searchPoster6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPoster6.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster6.Image")));
-            this.searchPoster6.Location = new System.Drawing.Point(512, 542);
+            this.searchPoster6.Location = new System.Drawing.Point(512, 528);
             this.searchPoster6.Name = "searchPoster6";
             this.searchPoster6.Size = new System.Drawing.Size(128, 160);
             this.searchPoster6.TabIndex = 82;
@@ -5664,7 +6165,7 @@
             // 
             this.searchPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPoster4.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster4.Image")));
-            this.searchPoster4.Location = new System.Drawing.Point(512, 318);
+            this.searchPoster4.Location = new System.Drawing.Point(513, 304);
             this.searchPoster4.Name = "searchPoster4";
             this.searchPoster4.Size = new System.Drawing.Size(128, 160);
             this.searchPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -5676,7 +6177,7 @@
             // 
             this.searchPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPoster5.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster5.Image")));
-            this.searchPoster5.Location = new System.Drawing.Point(129, 542);
+            this.searchPoster5.Location = new System.Drawing.Point(33, 528);
             this.searchPoster5.Name = "searchPoster5";
             this.searchPoster5.Size = new System.Drawing.Size(128, 160);
             this.searchPoster5.TabIndex = 80;
@@ -5687,7 +6188,7 @@
             // 
             this.searchPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPoster3.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster3.Image")));
-            this.searchPoster3.Location = new System.Drawing.Point(128, 318);
+            this.searchPoster3.Location = new System.Drawing.Point(32, 304);
             this.searchPoster3.Name = "searchPoster3";
             this.searchPoster3.Size = new System.Drawing.Size(128, 160);
             this.searchPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -5699,7 +6200,7 @@
             // 
             this.searchPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPoster2.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster2.Image")));
-            this.searchPoster2.Location = new System.Drawing.Point(512, 94);
+            this.searchPoster2.Location = new System.Drawing.Point(512, 80);
             this.searchPoster2.Name = "searchPoster2";
             this.searchPoster2.Size = new System.Drawing.Size(128, 160);
             this.searchPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -5711,7 +6212,7 @@
             // 
             this.searchPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchPoster1.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster1.Image")));
-            this.searchPoster1.Location = new System.Drawing.Point(128, 94);
+            this.searchPoster1.Location = new System.Drawing.Point(32, 80);
             this.searchPoster1.Name = "searchPoster1";
             this.searchPoster1.Size = new System.Drawing.Size(128, 160);
             this.searchPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -5723,7 +6224,7 @@
             // 
             pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            pictureBox9.Location = new System.Drawing.Point(110, 29);
+            pictureBox9.Location = new System.Drawing.Point(32, 16);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new System.Drawing.Size(768, 33);
             pictureBox9.TabIndex = 51;
@@ -5952,6 +6453,26 @@
             this.pictureBox5.TabIndex = 3;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::MovieTheater.Properties.Resources.account_information_div;
+            this.pictureBox6.Location = new System.Drawing.Point(32, 16);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(896, 33);
+            this.pictureBox6.TabIndex = 107;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.pictureBox13.Image = global::MovieTheater.Properties.Resources.background;
+            this.pictureBox13.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(961, 753);
+            this.pictureBox13.TabIndex = 116;
+            this.pictureBox13.TabStop = false;
+            // 
             // contactUsBtn
             // 
             this.contactUsBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -5986,193 +6507,13 @@
             this.Header.TabIndex = 57;
             this.Header.TabStop = false;
             // 
-            // BShowing5
-            // 
-            this.BShowing5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing5.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing5.Location = new System.Drawing.Point(785, 241);
-            this.BShowing5.Name = "BShowing5";
-            this.BShowing5.Size = new System.Drawing.Size(160, 30);
-            this.BShowing5.TabIndex = 135;
-            this.BShowing5.Text = "Showing5";
-            this.BShowing5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing4
-            // 
-            this.BShowing4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing4.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing4.Location = new System.Drawing.Point(593, 241);
-            this.BShowing4.Name = "BShowing4";
-            this.BShowing4.Size = new System.Drawing.Size(160, 30);
-            this.BShowing4.TabIndex = 134;
-            this.BShowing4.Text = "Showing4";
-            this.BShowing4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing3
-            // 
-            this.BShowing3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing3.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing3.Location = new System.Drawing.Point(401, 241);
-            this.BShowing3.Name = "BShowing3";
-            this.BShowing3.Size = new System.Drawing.Size(160, 30);
-            this.BShowing3.TabIndex = 133;
-            this.BShowing3.Text = "Showing3";
-            this.BShowing3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing2
-            // 
-            this.BShowing2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing2.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing2.Location = new System.Drawing.Point(209, 241);
-            this.BShowing2.Name = "BShowing2";
-            this.BShowing2.Size = new System.Drawing.Size(160, 30);
-            this.BShowing2.TabIndex = 132;
-            this.BShowing2.Text = "Showing2";
-            this.BShowing2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing1
-            // 
-            this.BShowing1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing1.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing1.Location = new System.Drawing.Point(17, 241);
-            this.BShowing1.Name = "BShowing1";
-            this.BShowing1.Size = new System.Drawing.Size(160, 30);
-            this.BShowing1.TabIndex = 131;
-            this.BShowing1.Text = "Showing1";
-            this.BShowing1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing10
-            // 
-            this.BShowing10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing10.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing10.Location = new System.Drawing.Point(785, 465);
-            this.BShowing10.Name = "BShowing10";
-            this.BShowing10.Size = new System.Drawing.Size(160, 30);
-            this.BShowing10.TabIndex = 140;
-            this.BShowing10.Text = "Showing10";
-            this.BShowing10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing9
-            // 
-            this.BShowing9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing9.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing9.Location = new System.Drawing.Point(593, 465);
-            this.BShowing9.Name = "BShowing9";
-            this.BShowing9.Size = new System.Drawing.Size(160, 30);
-            this.BShowing9.TabIndex = 139;
-            this.BShowing9.Text = "Showing9";
-            this.BShowing9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing8
-            // 
-            this.BShowing8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing8.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing8.Location = new System.Drawing.Point(401, 465);
-            this.BShowing8.Name = "BShowing8";
-            this.BShowing8.Size = new System.Drawing.Size(160, 30);
-            this.BShowing8.TabIndex = 138;
-            this.BShowing8.Text = "Showing8";
-            this.BShowing8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing7
-            // 
-            this.BShowing7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing7.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing7.Location = new System.Drawing.Point(209, 465);
-            this.BShowing7.Name = "BShowing7";
-            this.BShowing7.Size = new System.Drawing.Size(160, 30);
-            this.BShowing7.TabIndex = 137;
-            this.BShowing7.Text = "Showing7";
-            this.BShowing7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing6
-            // 
-            this.BShowing6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing6.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing6.Location = new System.Drawing.Point(17, 465);
-            this.BShowing6.Name = "BShowing6";
-            this.BShowing6.Size = new System.Drawing.Size(160, 30);
-            this.BShowing6.TabIndex = 136;
-            this.BShowing6.Text = "Showing6";
-            this.BShowing6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing15
-            // 
-            this.BShowing15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing15.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing15.Location = new System.Drawing.Point(785, 689);
-            this.BShowing15.Name = "BShowing15";
-            this.BShowing15.Size = new System.Drawing.Size(160, 30);
-            this.BShowing15.TabIndex = 145;
-            this.BShowing15.Text = "Showing15";
-            this.BShowing15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing14
-            // 
-            this.BShowing14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing14.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing14.Location = new System.Drawing.Point(593, 689);
-            this.BShowing14.Name = "BShowing14";
-            this.BShowing14.Size = new System.Drawing.Size(160, 30);
-            this.BShowing14.TabIndex = 144;
-            this.BShowing14.Text = "Showing14";
-            this.BShowing14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing13
-            // 
-            this.BShowing13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing13.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing13.Location = new System.Drawing.Point(401, 689);
-            this.BShowing13.Name = "BShowing13";
-            this.BShowing13.Size = new System.Drawing.Size(160, 30);
-            this.BShowing13.TabIndex = 143;
-            this.BShowing13.Text = "Showing13";
-            this.BShowing13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing12
-            // 
-            this.BShowing12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing12.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing12.Location = new System.Drawing.Point(209, 689);
-            this.BShowing12.Name = "BShowing12";
-            this.BShowing12.Size = new System.Drawing.Size(160, 30);
-            this.BShowing12.TabIndex = 142;
-            this.BShowing12.Text = "Showing12";
-            this.BShowing12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BShowing11
-            // 
-            this.BShowing11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BShowing11.BackColor = System.Drawing.Color.Transparent;
-            this.BShowing11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BShowing11.Location = new System.Drawing.Point(17, 689);
-            this.BShowing11.Name = "BShowing11";
-            this.BShowing11.Size = new System.Drawing.Size(160, 30);
-            this.BShowing11.TabIndex = 141;
-            this.BShowing11.Text = "Showing11";
-            this.BShowing11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1033, 733);
+            this.ClientSize = new System.Drawing.Size(1142, 833);
             this.Controls.Add(this.tabControl1);
             this.Name = "homepage";
             this.Text = "Form1";
@@ -6182,6 +6523,7 @@
             this.BodyTabControl.ResumeLayout(false);
             this.HomeTab.ResumeLayout(false);
             this.HomeTab.PerformLayout();
+            this.BrowseTab.ResumeLayout(false);
             this.SearchTab.ResumeLayout(false);
             this.MovieDetailsTab.ResumeLayout(false);
             this.MovieDetailsTab.PerformLayout();
@@ -6204,7 +6546,8 @@
             this.AdminCtrl.ResumeLayout(false);
             this.PrintTix.ResumeLayout(false);
             this.PrintTix.PerformLayout();
-            this.BrowseTab.ResumeLayout(false);
+            this.AccountInfoTab.ResumeLayout(false);
+            this.AccountInfoTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).EndInit();
@@ -6229,7 +6572,6 @@
             ((System.ComponentModel.ISupportInitialize)(pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
@@ -6245,6 +6587,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster4)).EndInit();
@@ -6274,6 +6617,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movielogopictureticket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
@@ -6734,6 +7079,36 @@
         private System.Windows.Forms.Label BShowing3;
         private System.Windows.Forms.Label BShowing2;
         private System.Windows.Forms.Label BShowing1;
+        private System.Windows.Forms.TabPage AccountInfoTab;
+        private System.Windows.Forms.Label AIAccountInfoLabel;
+        private System.Windows.Forms.Label AICreditCardInfo;
+        private System.Windows.Forms.Label AIPersonalInfo;
+        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.Label AIExpDate;
+        private System.Windows.Forms.Label AISecurityCode;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label AICCNumber;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label AICLastName;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label AICFirstName;
+        private System.Windows.Forms.TextBox AIPasswordBox;
+        private System.Windows.Forms.TextBox AIUsernameBox;
+        private System.Windows.Forms.TextBox AIStateBox;
+        private System.Windows.Forms.TextBox AICityBox;
+        private System.Windows.Forms.TextBox AIAddressBox;
+        private System.Windows.Forms.TextBox AILastNameBox;
+        private System.Windows.Forms.TextBox AIFirstNameBox;
+        private System.Windows.Forms.Label AIPassword;
+        private System.Windows.Forms.Label AIUsername;
+        private System.Windows.Forms.Label AIState;
+        private System.Windows.Forms.Label AICity;
+        private System.Windows.Forms.Label AIAddress;
+        private System.Windows.Forms.Label AILastName;
+        private System.Windows.Forms.Label AIFirstName;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox13;
 
     }
 }

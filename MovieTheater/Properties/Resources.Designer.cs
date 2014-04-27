@@ -63,6 +63,16 @@ namespace MovieTheater.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap account_information_div {
+            get {
+                object obj = ResourceManager.GetObject("account_information_div", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap admin_controls_div {
             get {
                 object obj = ResourceManager.GetObject("admin_controls_div", resourceCulture);
