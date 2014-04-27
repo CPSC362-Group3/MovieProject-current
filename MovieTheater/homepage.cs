@@ -19,7 +19,7 @@ namespace MovieTheater
     public partial class homepage : Form
     {
         //Boolean Flags
-        bool adminLogged = false;
+        bool adminLogged = true;
         bool logged = false;
         bool editInfo = false;
         
@@ -50,7 +50,20 @@ namespace MovieTheater
             BodyTabControl.ItemSize = new Size(0, 1);
             BodyTabControl.SizeMode = TabSizeMode.Fixed;
 
-            // New Release posters
+            setBackgrounds();
+            displayDatelbl.Text = DateTime.Today.ToLongDateString();
+
+            updateHomePage();
+
+        }
+//------------------------------------------------------------------------------------------------------------------------
+// GLOBAL FUNCTIONS, Main button controls ///////////////////////////////////////////////////////////////////////////////
+//------------------------------------------------------------------------------------------------------------------------
+
+        // setBackground parents
+        public void setBackgrounds()
+        {
+            // Home Page
             NRTitleLabel1.Parent = BackgroundHome;
             NRTitleLabel2.Parent = BackgroundHome;
             NRTitleLabel3.Parent = BackgroundHome;
@@ -61,8 +74,6 @@ namespace MovieTheater
             NRReleaseDateLabel3.Parent = BackgroundHome;
             NRReleaseDateLabel4.Parent = BackgroundHome;
             NRReleaseDateLabel5.Parent = BackgroundHome;
-
-            // Now Showing posters
             NSTitleLabel1.Parent = BackgroundHome;
             NSTitleLabel2.Parent = BackgroundHome;
             NSTitleLabel3.Parent = BackgroundHome;
@@ -100,6 +111,7 @@ namespace MovieTheater
             MDSSynopsis.Parent = backgroundMD;
             MDSynopsisLabel.Parent = backgroundMD;
 
+            // Search page
             STitleLabel1.Parent = backgroundS;
             STitleLabel2.Parent = backgroundS;
             STitleLabel3.Parent = backgroundS;
@@ -107,7 +119,7 @@ namespace MovieTheater
             STitleLabel5.Parent = backgroundS;
             STitleLabel6.Parent = backgroundS;
 
-            // contact us page
+            // Contact us page
             CallusLabel.Parent = backgroundCU;
             phoneLabel.Parent = backgroundCU;
             phoneNumberLabel.Parent = backgroundCU;
@@ -132,7 +144,7 @@ namespace MovieTheater
             SunTimeLabel.Parent = backgroundCU;
             ThuTimeLabel.Parent = backgroundCU;
 
-            // account creation page
+            // Account creation page
             CAPersonalInfoLabel.Parent = backgroundCA;
             CAFirstNameLabel.Parent = backgroundCA;
             CALastNameLabel.Parent = backgroundCA;
@@ -149,14 +161,39 @@ namespace MovieTheater
             CASecurityLabel.Parent = backgroundCA;
             CAExpirationDateLabel.Parent = backgroundCA;
 
-            displayDatelbl.Text = DateTime.Today.ToLongDateString();
-
-            updateHomePage();
+            //Browse page
+            BMovieTitle1.Parent = backgroundB;
+            BMovieTitle2.Parent = backgroundB;
+            BMovieTitle3.Parent = backgroundB;
+            BMovieTitle4.Parent = backgroundB;
+            BMovieTitle5.Parent = backgroundB;
+            BMovieTitle6.Parent = backgroundB;
+            BMovieTitle7.Parent = backgroundB;
+            BMovieTitle8.Parent = backgroundB;
+            BMovieTitle9.Parent = backgroundB;
+            BMovieTitle10.Parent = backgroundB;
+            BMovieTitle11.Parent = backgroundB;
+            BMovieTitle12.Parent = backgroundB;
+            BMovieTitle13.Parent = backgroundB;
+            BMovieTitle14.Parent = backgroundB;
+            BMovieTitle15.Parent = backgroundB;
+            BShowing1.Parent = backgroundB;
+            BShowing2.Parent = backgroundB;
+            BShowing3.Parent = backgroundB;
+            BShowing4.Parent = backgroundB;
+            BShowing5.Parent = backgroundB;
+            BShowing6.Parent = backgroundB;
+            BShowing7.Parent = backgroundB;
+            BShowing8.Parent = backgroundB;
+            BShowing9.Parent = backgroundB;
+            BShowing10.Parent = backgroundB;
+            BShowing11.Parent = backgroundB;
+            BShowing12.Parent = backgroundB;
+            BShowing13.Parent = backgroundB;
+            BShowing14.Parent = backgroundB;
+            BShowing15.Parent = backgroundB;
 
         }
-//------------------------------------------------------------------------------------------------------------------------
-// GLOBAL FUNCTIONS, Main button controls ///////////////////////////////////////////////////////////////////////////////
-//------------------------------------------------------------------------------------------------------------------------
 
         // get movie title from a label with a rating on it. utility function.
         public string GetMovieTitle(string title)
@@ -244,7 +281,7 @@ namespace MovieTheater
         /* browse button click */
         private void browseBtn_Click(object sender, EventArgs e)
         {
-            BodyTabControl.SelectedTab = SearchTab;
+            BodyTabControl.SelectedTab = BrowseTab;
         }
 
         /* browse button enter */
@@ -1112,15 +1149,15 @@ namespace MovieTheater
             }
             else if (editInfo == true)
             {
-                TitleBox.Text = TitleElemList[index].InnerText;
-                LengthBox.Text = LengthElemList[index].InnerText;
-                SynopsisBox.Text = SynopsisElemList[index].InnerText;
-                GenreBox.Text = GenreElemList[index].InnerText;
-                RatingBox.Text = RatingElemList[index].InnerText;
-                ActorBox.Text = ActorsElemList[index].InnerText;
-                DirectorBox.Text = DirectorElemList[index].InnerText;
-                ReleaseDTPicker.Text = ReleaseElemList[index].InnerText;
-                posterPathtxt.Text = PosterPath[index].InnerText;
+                AMITitleBox.Text = TitleElemList[index].InnerText;
+                AMILengthBox.Text = LengthElemList[index].InnerText;
+                AMISynopsisBox.Text = SynopsisElemList[index].InnerText;
+                AMIGenreBox.Text = GenreElemList[index].InnerText;
+                AMIRatingBox.Text = RatingElemList[index].InnerText;
+                AMIActorBox.Text = ActorsElemList[index].InnerText;
+                AMIDirectorBox.Text = DirectorElemList[index].InnerText;
+                AMIReleaseDTPicker.Text = ReleaseElemList[index].InnerText;
+                AMIposterPathtxt.Text = PosterPath[index].InnerText;
                 st1txt.Text = Showtime1[index].InnerText;
                 st2txt.Text = Showtime2[index].InnerText;
                 st3txt.Text = Showtime3[index].InnerText;
@@ -1151,7 +1188,7 @@ namespace MovieTheater
 
             for (int i = 0; i < TitleElemList.Count; i++)
             {
-                if (TitleBox.Text == TitleElemList[i].InnerText)
+                if (AMITitleBox.Text == TitleElemList[i].InnerText)
                 {
                     currentInd = i;
                     break;
@@ -1640,15 +1677,15 @@ namespace MovieTheater
                 Movie.AppendChild(Showtime8);
                 Movie.AppendChild(Showtime9);
 
-                Title.InnerText = TitleBox.Text;
-                Length.InnerText = LengthBox.Text;
-                Synopsis.InnerText = SynopsisBox.Text;
-                Description.InnerText = DescriptionBox.Text;
-                Genre.InnerText = GenreBox.Text;
-                Rating.InnerText = RatingBox.Text;
-                Actor.InnerText = ActorBox.Text;
-                Director.InnerText = DirectorBox.Text;
-                ReleaseDate.InnerText = ReleaseDTPicker.Value.ToString("MM/dd/yyyy");
+                Title.InnerText = AMITitleBox.Text;
+                Length.InnerText = AMILengthBox.Text;
+                Synopsis.InnerText = AMISynopsisBox.Text;
+                Description.InnerText = AMIDescriptionBox.Text;
+                Genre.InnerText = AMIGenreBox.Text;
+                Rating.InnerText = AMIRatingBox.Text;
+                Actor.InnerText = AMIActorBox.Text;
+                Director.InnerText = AMIDirectorBox.Text;
+                ReleaseDate.InnerText = AMIReleaseDTPicker.Value.ToString("MM/dd/yyyy");
                 PosterPath.InnerText = openFileDialog1.FileName;
                 Showtime1.InnerText = st1txt.Text;
                 Showtime2.InnerText = st2txt.Text;
@@ -1662,16 +1699,16 @@ namespace MovieTheater
 
                 MoviesDocument.Save(MoviesPath);
 
-                TitleBox.Clear();
-                LengthBox.Clear();
-                SynopsisBox.Clear();
-                DescriptionBox.Clear();
-                GenreBox.ResetText();
-                RatingBox.ResetText();
-                ActorBox.Clear();
-                DirectorBox.Clear();
-                ReleaseDTPicker.ResetText();
-                posterPathtxt.Clear();
+                AMITitleBox.Clear();
+                AMILengthBox.Clear();
+                AMISynopsisBox.Clear();
+                AMIDescriptionBox.Clear();
+                AMIGenreBox.ResetText();
+                AMIRatingBox.ResetText();
+                AMIActorBox.Clear();
+                AMIDirectorBox.Clear();
+                AMIReleaseDTPicker.ResetText();
+                AMIposterPathtxt.Clear();
                 resetShowtimes();
             }
             else
@@ -1703,15 +1740,15 @@ namespace MovieTheater
 
                 MessageBox.Show(index.ToString());
 
-                TitleElemList[currentInd].InnerText = TitleBox.Text;
-                LengthElemList[currentInd].InnerText = LengthBox.Text;
-                SynopsisElemList[currentInd].InnerText = SynopsisBox.Text;
-                GenreElemList[currentInd].InnerText = GenreBox.Text;
-                RatingElemList[currentInd].InnerText = RatingBox.Text;
-                ActorsElemList[currentInd].InnerText = ActorBox.Text;
-                DirectorElemList[currentInd].InnerText = DirectorBox.Text;
-                ReleaseElemList[currentInd].InnerText = ReleaseDTPicker.Text;
-                PosterPath[currentInd].InnerText = posterPathtxt.Text;
+                TitleElemList[currentInd].InnerText = AMITitleBox.Text;
+                LengthElemList[currentInd].InnerText = AMILengthBox.Text;
+                SynopsisElemList[currentInd].InnerText = AMISynopsisBox.Text;
+                GenreElemList[currentInd].InnerText = AMIGenreBox.Text;
+                RatingElemList[currentInd].InnerText = AMIRatingBox.Text;
+                ActorsElemList[currentInd].InnerText = AMIActorBox.Text;
+                DirectorElemList[currentInd].InnerText = AMIDirectorBox.Text;
+                ReleaseElemList[currentInd].InnerText = AMIReleaseDTPicker.Text;
+                PosterPath[currentInd].InnerText = AMIposterPathtxt.Text;
                 Showtime1[currentInd].InnerText = st1txt.Text;
                 Showtime2[currentInd].InnerText = st2txt.Text;
                 Showtime3[currentInd].InnerText = st3txt.Text;
@@ -1722,7 +1759,6 @@ namespace MovieTheater
                 Showtime8[currentInd].InnerText = st8txt.Text;
                 Showtime9[currentInd].InnerText = st9txt.Text;
                 MoviesDocument.Save(MoviesPath);
-
             }
 
         }
@@ -1748,7 +1784,7 @@ namespace MovieTheater
 
             string path = "../../Posters/";
             path = path + loc;
-            posterPathtxt.Text = path;
+            AMIposterPathtxt.Text = path;
         }
 //-------------------------------------------------------------------------------------------------------------------------
 //Seating Page////////////////////////////////////////////////////////////////////////////////////////////////////////////

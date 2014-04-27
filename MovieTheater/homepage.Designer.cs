@@ -28,24 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.PictureBox pictureBox12;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(homepage));
+            System.Windows.Forms.PictureBox pictureBox12;
             System.Windows.Forms.PictureBox pictureBox11;
             System.Windows.Forms.PictureBox pictureBox9;
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.searchBtn = new System.Windows.Forms.PictureBox();
             this.searchBar = new System.Windows.Forms.TextBox();
             this.AdminLabel = new System.Windows.Forms.Label();
-            this.InfoBar = new System.Windows.Forms.PictureBox();
-            this.LoginBtn = new System.Windows.Forms.PictureBox();
-            this.homeBtn = new System.Windows.Forms.PictureBox();
-            this.browseBtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.BodyTabControl = new System.Windows.Forms.TabControl();
             this.HomeTab = new System.Windows.Forms.TabPage();
             this.editMovielbl = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.NSReleaseDateLabel10 = new System.Windows.Forms.Label();
             this.NSReleaseDateLabel9 = new System.Windows.Forms.Label();
             this.NSReleaseDateLabel8 = new System.Windows.Forms.Label();
@@ -56,11 +49,6 @@
             this.NSTitleLabel8 = new System.Windows.Forms.Label();
             this.NSTitleLabel7 = new System.Windows.Forms.Label();
             this.NSTitleLabel6 = new System.Windows.Forms.Label();
-            this.NSPoster10 = new System.Windows.Forms.PictureBox();
-            this.NSPoster9 = new System.Windows.Forms.PictureBox();
-            this.NSPoster8 = new System.Windows.Forms.PictureBox();
-            this.NSPoster7 = new System.Windows.Forms.PictureBox();
-            this.NSPoster6 = new System.Windows.Forms.PictureBox();
             this.NSReleaseDateLabel5 = new System.Windows.Forms.Label();
             this.NSReleaseDateLabel4 = new System.Windows.Forms.Label();
             this.NSReleaseDateLabel3 = new System.Windows.Forms.Label();
@@ -81,17 +69,6 @@
             this.NRTitleLabel3 = new System.Windows.Forms.Label();
             this.NRTitleLabel2 = new System.Windows.Forms.Label();
             this.NRTitleLabel1 = new System.Windows.Forms.Label();
-            this.NSPoster5 = new System.Windows.Forms.PictureBox();
-            this.NSPoster4 = new System.Windows.Forms.PictureBox();
-            this.NSPoster3 = new System.Windows.Forms.PictureBox();
-            this.NSPoster2 = new System.Windows.Forms.PictureBox();
-            this.NSPoster1 = new System.Windows.Forms.PictureBox();
-            this.NRPoster5 = new System.Windows.Forms.PictureBox();
-            this.NRPoster4 = new System.Windows.Forms.PictureBox();
-            this.NRPoster3 = new System.Windows.Forms.PictureBox();
-            this.NRPoster2 = new System.Windows.Forms.PictureBox();
-            this.NRPoster1 = new System.Windows.Forms.PictureBox();
-            this.BackgroundHome = new System.Windows.Forms.PictureBox();
             this.SearchTab = new System.Windows.Forms.TabPage();
             this.STitleLabel6 = new System.Windows.Forms.Label();
             this.STitleLabel5 = new System.Windows.Forms.Label();
@@ -99,13 +76,6 @@
             this.STitleLabel3 = new System.Windows.Forms.Label();
             this.STitleLabel2 = new System.Windows.Forms.Label();
             this.STitleLabel1 = new System.Windows.Forms.Label();
-            this.searchPoster6 = new System.Windows.Forms.PictureBox();
-            this.searchPoster4 = new System.Windows.Forms.PictureBox();
-            this.searchPoster5 = new System.Windows.Forms.PictureBox();
-            this.searchPoster3 = new System.Windows.Forms.PictureBox();
-            this.searchPoster2 = new System.Windows.Forms.PictureBox();
-            this.searchPoster1 = new System.Windows.Forms.PictureBox();
-            this.backgroundS = new System.Windows.Forms.PictureBox();
             this.MovieDetailsTab = new System.Windows.Forms.TabPage();
             this.orderTicketsbtn = new System.Windows.Forms.Button();
             this.MDSSynopsis = new System.Windows.Forms.Label();
@@ -123,11 +93,7 @@
             this.MDReleaseLabel = new System.Windows.Forms.Label();
             this.MDSReleaseDate = new System.Windows.Forms.Label();
             this.MDTitleLabel = new System.Windows.Forms.Label();
-            this.MDBigPoster = new System.Windows.Forms.PictureBox();
-            this.MovieDetailsDiv = new System.Windows.Forms.PictureBox();
-            this.backgroundMD = new System.Windows.Forms.PictureBox();
             this.LoginTab = new System.Windows.Forms.TabPage();
-            this.LoginDiv = new System.Windows.Forms.PictureBox();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.usernameTxt = new System.Windows.Forms.TextBox();
             this.loginbutton = new System.Windows.Forms.Button();
@@ -135,7 +101,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.backgroundL = new System.Windows.Forms.PictureBox();
             this.AccountTab = new System.Windows.Forms.TabPage();
             this.CAAccountInfoLabel = new System.Windows.Forms.Label();
             this.CACreditCardInfoLabel = new System.Windows.Forms.Label();
@@ -151,7 +116,6 @@
             this.label34 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.CACardholderFNLabel = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.CACreateAccountBtn = new System.Windows.Forms.Button();
             this.passTxt = new System.Windows.Forms.TextBox();
             this.UserTxt = new System.Windows.Forms.TextBox();
@@ -167,7 +131,6 @@
             this.CAAddressLabel = new System.Windows.Forms.Label();
             this.CALastNameLabel = new System.Windows.Forms.Label();
             this.CAFirstNameLabel = new System.Windows.Forms.Label();
-            this.backgroundCA = new System.Windows.Forms.PictureBox();
             this.PaymentInfoTab = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -266,7 +229,6 @@
             this.label48 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.Purchase = new System.Windows.Forms.TabPage();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
@@ -347,9 +309,6 @@
             this.ThuLabel = new System.Windows.Forms.Label();
             this.WedLabel = new System.Windows.Forms.Label();
             this.TueLabel = new System.Windows.Forms.Label();
-            this.ClockPicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureofplace = new System.Windows.Forms.PictureBox();
             this.addressInfo2Label = new System.Windows.Forms.Label();
             this.addressInfo1Label = new System.Windows.Forms.Label();
             this.addresslabel = new System.Windows.Forms.Label();
@@ -360,11 +319,9 @@
             this.CallusLabel = new System.Windows.Forms.Label();
             this.phoneNumberLabel = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
-            this.MapPicture = new System.Windows.Forms.PictureBox();
-            this.EmailPicture = new System.Windows.Forms.PictureBox();
-            this.PhonePicture = new System.Windows.Forms.PictureBox();
-            this.backgroundCU = new System.Windows.Forms.PictureBox();
             this.AdminTab = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.st9lbl = new System.Windows.Forms.Label();
             this.st8lbl = new System.Windows.Forms.Label();
             this.st7lbl = new System.Windows.Forms.Label();
@@ -383,74 +340,175 @@
             this.st3txt = new System.Windows.Forms.TextBox();
             this.st2txt = new System.Windows.Forms.TextBox();
             this.st1txt = new System.Windows.Forms.TextBox();
-            this.posterPathtxt = new System.Windows.Forms.TextBox();
-            this.DirectorBox = new System.Windows.Forms.TextBox();
-            this.ActorBox = new System.Windows.Forms.TextBox();
-            this.SynopsisBox = new System.Windows.Forms.TextBox();
-            this.DescriptionBox = new System.Windows.Forms.TextBox();
-            this.LengthBox = new System.Windows.Forms.TextBox();
-            this.TitleBox = new System.Windows.Forms.TextBox();
+            this.AMIposterPathtxt = new System.Windows.Forms.TextBox();
+            this.AMIDirectorBox = new System.Windows.Forms.TextBox();
+            this.AMIActorBox = new System.Windows.Forms.TextBox();
+            this.AMISynopsisBox = new System.Windows.Forms.TextBox();
+            this.AMIDescriptionBox = new System.Windows.Forms.TextBox();
+            this.AMILengthBox = new System.Windows.Forms.TextBox();
+            this.AMITitleBox = new System.Windows.Forms.TextBox();
             this.st1lbl = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.uploadPosterbtn = new System.Windows.Forms.Button();
-            this.ReleaseDTPicker = new System.Windows.Forms.DateTimePicker();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.GenreBox = new System.Windows.Forms.ComboBox();
-            this.RatingBox = new System.Windows.Forms.ComboBox();
+            this.AMIuploadPosterbtn = new System.Windows.Forms.Button();
+            this.AMIReleaseDTPicker = new System.Windows.Forms.DateTimePicker();
+            this.AMIPoster = new System.Windows.Forms.Label();
+            this.AMIRelease = new System.Windows.Forms.Label();
+            this.AMIDirector = new System.Windows.Forms.Label();
+            this.AMIActor = new System.Windows.Forms.Label();
+            this.AMIRating = new System.Windows.Forms.Label();
+            this.AMIGenre = new System.Windows.Forms.Label();
+            this.AMIDescription = new System.Windows.Forms.Label();
+            this.AMISynopsis = new System.Windows.Forms.Label();
+            this.AMILength = new System.Windows.Forms.Label();
+            this.AMITitle = new System.Windows.Forms.Label();
+            this.AMIGenreBox = new System.Windows.Forms.ComboBox();
+            this.AMIRatingBox = new System.Windows.Forms.ComboBox();
             this.AddBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AdminCtrl = new System.Windows.Forms.TabPage();
             this.adminRemove = new System.Windows.Forms.Button();
             this.adminEdit = new System.Windows.Forms.Button();
             this.adminAdd = new System.Windows.Forms.Button();
-            this.adminctrllbl = new System.Windows.Forms.Label();
             this.PrintTix = new System.Windows.Forms.TabPage();
             this.timetimelabel = new System.Windows.Forms.Label();
             this.timeticketlabel = new System.Windows.Forms.Label();
             this.namelabeltix = new System.Windows.Forms.Label();
-            this.movielogopictureticket = new System.Windows.Forms.PictureBox();
             this.gohomeLabel = new System.Windows.Forms.Label();
             this.PrintNowLabel = new System.Windows.Forms.Label();
             this.SeatticketLabel = new System.Windows.Forms.Label();
             this.TicketDateLabel = new System.Windows.Forms.Label();
             this.TicketAdmissionLabel = new System.Windows.Forms.Label();
             this.ticketTitle = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.gobackhomebutton = new System.Windows.Forms.Button();
             this.printTixButton = new System.Windows.Forms.Button();
             this.PrintLabel = new System.Windows.Forms.Label();
+            this.BrowseTab = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.BMovieTitle15 = new System.Windows.Forms.Label();
+            this.BMovieTitle14 = new System.Windows.Forms.Label();
+            this.BMovieTitle13 = new System.Windows.Forms.Label();
+            this.BMovieTitle12 = new System.Windows.Forms.Label();
+            this.BMovieTitle11 = new System.Windows.Forms.Label();
+            this.BMovieTitle10 = new System.Windows.Forms.Label();
+            this.BMovieTitle9 = new System.Windows.Forms.Label();
+            this.BMovieTitle8 = new System.Windows.Forms.Label();
+            this.BMovieTitle7 = new System.Windows.Forms.Label();
+            this.BMovieTitle6 = new System.Windows.Forms.Label();
+            this.BMovieTitle5 = new System.Windows.Forms.Label();
+            this.BMovieTitle4 = new System.Windows.Forms.Label();
+            this.BMovieTitle3 = new System.Windows.Forms.Label();
+            this.BMovieTitle2 = new System.Windows.Forms.Label();
+            this.BMovieTitle1 = new System.Windows.Forms.Label();
+            this.searchBtn = new System.Windows.Forms.PictureBox();
+            this.InfoBar = new System.Windows.Forms.PictureBox();
+            this.LoginBtn = new System.Windows.Forms.PictureBox();
+            this.homeBtn = new System.Windows.Forms.PictureBox();
+            this.browseBtn = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.NSPoster10 = new System.Windows.Forms.PictureBox();
+            this.NSPoster9 = new System.Windows.Forms.PictureBox();
+            this.NSPoster8 = new System.Windows.Forms.PictureBox();
+            this.NSPoster7 = new System.Windows.Forms.PictureBox();
+            this.NSPoster6 = new System.Windows.Forms.PictureBox();
+            this.NSPoster5 = new System.Windows.Forms.PictureBox();
+            this.NSPoster4 = new System.Windows.Forms.PictureBox();
+            this.NSPoster3 = new System.Windows.Forms.PictureBox();
+            this.NSPoster2 = new System.Windows.Forms.PictureBox();
+            this.NSPoster1 = new System.Windows.Forms.PictureBox();
+            this.NRPoster5 = new System.Windows.Forms.PictureBox();
+            this.NRPoster4 = new System.Windows.Forms.PictureBox();
+            this.NRPoster3 = new System.Windows.Forms.PictureBox();
+            this.NRPoster2 = new System.Windows.Forms.PictureBox();
+            this.NRPoster1 = new System.Windows.Forms.PictureBox();
+            this.BackgroundHome = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.backgroundB = new System.Windows.Forms.PictureBox();
+            this.searchPoster6 = new System.Windows.Forms.PictureBox();
+            this.searchPoster4 = new System.Windows.Forms.PictureBox();
+            this.searchPoster5 = new System.Windows.Forms.PictureBox();
+            this.searchPoster3 = new System.Windows.Forms.PictureBox();
+            this.searchPoster2 = new System.Windows.Forms.PictureBox();
+            this.searchPoster1 = new System.Windows.Forms.PictureBox();
+            this.backgroundS = new System.Windows.Forms.PictureBox();
+            this.MDBigPoster = new System.Windows.Forms.PictureBox();
+            this.MovieDetailsDiv = new System.Windows.Forms.PictureBox();
+            this.backgroundMD = new System.Windows.Forms.PictureBox();
+            this.LoginDiv = new System.Windows.Forms.PictureBox();
+            this.backgroundL = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.backgroundCA = new System.Windows.Forms.PictureBox();
+            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.ClockPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureofplace = new System.Windows.Forms.PictureBox();
+            this.MapPicture = new System.Windows.Forms.PictureBox();
+            this.EmailPicture = new System.Windows.Forms.PictureBox();
+            this.PhonePicture = new System.Windows.Forms.PictureBox();
+            this.backgroundCU = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.adminControlDiv = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.movielogopictureticket = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.contactUsBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.BShowing5 = new System.Windows.Forms.Label();
+            this.BShowing4 = new System.Windows.Forms.Label();
+            this.BShowing3 = new System.Windows.Forms.Label();
+            this.BShowing2 = new System.Windows.Forms.Label();
+            this.BShowing1 = new System.Windows.Forms.Label();
+            this.BShowing10 = new System.Windows.Forms.Label();
+            this.BShowing9 = new System.Windows.Forms.Label();
+            this.BShowing8 = new System.Windows.Forms.Label();
+            this.BShowing7 = new System.Windows.Forms.Label();
+            this.BShowing6 = new System.Windows.Forms.Label();
+            this.BShowing15 = new System.Windows.Forms.Label();
+            this.BShowing14 = new System.Windows.Forms.Label();
+            this.BShowing13 = new System.Windows.Forms.Label();
+            this.BShowing12 = new System.Windows.Forms.Label();
+            this.BShowing11 = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.BodyTabControl.SuspendLayout();
+            this.HomeTab.SuspendLayout();
+            this.SearchTab.SuspendLayout();
+            this.MovieDetailsTab.SuspendLayout();
+            this.LoginTab.SuspendLayout();
+            this.AccountTab.SuspendLayout();
+            this.PaymentInfoTab.SuspendLayout();
+            this.Seating.SuspendLayout();
+            this.Purchase.SuspendLayout();
+            this.Ticket.SuspendLayout();
+            this.ContactUsTab.SuspendLayout();
+            this.AdminTab.SuspendLayout();
+            this.AdminCtrl.SuspendLayout();
+            this.PrintTix.SuspendLayout();
+            this.BrowseTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.browseBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.BodyTabControl.SuspendLayout();
-            this.HomeTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster8)).BeginInit();
@@ -466,30 +524,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).BeginInit();
-            this.SearchTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundS)).BeginInit();
-            this.MovieDetailsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MDBigPoster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MovieDetailsDiv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundMD)).BeginInit();
-            this.LoginTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoginDiv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundL)).BeginInit();
-            this.AccountTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundCA)).BeginInit();
-            this.PaymentInfoTab.SuspendLayout();
-            this.Seating.SuspendLayout();
-            this.Purchase.SuspendLayout();
-            this.Ticket.SuspendLayout();
-            this.ContactUsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClockPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureofplace)).BeginInit();
@@ -497,10 +566,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.EmailPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhonePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundCU)).BeginInit();
-            this.AdminTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.AdminCtrl.SuspendLayout();
-            this.PrintTix.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adminControlDiv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movielogopictureticket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
@@ -508,42 +577,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox12
-            // 
-            pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            pictureBox12.Location = new System.Drawing.Point(160, 272);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new System.Drawing.Size(768, 33);
-            pictureBox12.TabIndex = 50;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            pictureBox11.Location = new System.Drawing.Point(160, 16);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new System.Drawing.Size(768, 33);
-            pictureBox11.TabIndex = 49;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            pictureBox9.Location = new System.Drawing.Point(110, 29);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new System.Drawing.Size(768, 33);
-            pictureBox9.TabIndex = 51;
-            pictureBox9.TabStop = false;
-            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-2, -13);
+            this.tabControl1.Location = new System.Drawing.Point(0, -7);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -573,15 +612,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
-            // searchBtn
-            // 
-            this.searchBtn.Location = new System.Drawing.Point(937, 206);
-            this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(20, 20);
-            this.searchBtn.TabIndex = 77;
-            this.searchBtn.TabStop = false;
-            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
-            // 
             // searchBar
             // 
             this.searchBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -603,68 +633,10 @@
             this.AdminLabel.Text = "Admin";
             this.AdminLabel.Click += new System.EventHandler(this.AdminLabel_Click);
             // 
-            // InfoBar
-            // 
-            this.InfoBar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.InfoBar.Image = ((System.Drawing.Image)(resources.GetObject("InfoBar.Image")));
-            this.InfoBar.Location = new System.Drawing.Point(0, 160);
-            this.InfoBar.Name = "InfoBar";
-            this.InfoBar.Size = new System.Drawing.Size(960, 64);
-            this.InfoBar.TabIndex = 61;
-            this.InfoBar.TabStop = false;
-            // 
-            // LoginBtn
-            // 
-            this.LoginBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.LoginBtn.Image = ((System.Drawing.Image)(resources.GetObject("LoginBtn.Image")));
-            this.LoginBtn.Location = new System.Drawing.Point(800, 128);
-            this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(160, 32);
-            this.LoginBtn.TabIndex = 73;
-            this.LoginBtn.TabStop = false;
-            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
-            this.LoginBtn.MouseEnter += new System.EventHandler(this.LoginBtn_MouseEnter);
-            this.LoginBtn.MouseLeave += new System.EventHandler(this.LoginBtn_MouseLeave);
-            // 
-            // homeBtn
-            // 
-            this.homeBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
-            this.homeBtn.Location = new System.Drawing.Point(0, 128);
-            this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(160, 32);
-            this.homeBtn.TabIndex = 72;
-            this.homeBtn.TabStop = false;
-            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
-            this.homeBtn.MouseEnter += new System.EventHandler(this.homeBtn_MouseEnter);
-            this.homeBtn.MouseLeave += new System.EventHandler(this.homeBtn_MouseLeave);
-            // 
-            // browseBtn
-            // 
-            this.browseBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.browseBtn.Image = ((System.Drawing.Image)(resources.GetObject("browseBtn.Image")));
-            this.browseBtn.Location = new System.Drawing.Point(160, 128);
-            this.browseBtn.Name = "browseBtn";
-            this.browseBtn.Size = new System.Drawing.Size(160, 32);
-            this.browseBtn.TabIndex = 71;
-            this.browseBtn.TabStop = false;
-            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
-            this.browseBtn.MouseEnter += new System.EventHandler(this.browseBtn_MouseEnter);
-            this.browseBtn.MouseLeave += new System.EventHandler(this.browseBtn_MouseLeave);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(320, 128);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox3.TabIndex = 70;
-            this.pictureBox3.TabStop = false;
-            // 
             // BodyTabControl
             // 
             this.BodyTabControl.Controls.Add(this.HomeTab);
+            this.BodyTabControl.Controls.Add(this.BrowseTab);
             this.BodyTabControl.Controls.Add(this.SearchTab);
             this.BodyTabControl.Controls.Add(this.MovieDetailsTab);
             this.BodyTabControl.Controls.Add(this.LoginTab);
@@ -685,9 +657,8 @@
             // 
             // HomeTab
             // 
-            this.HomeTab.BackColor = System.Drawing.Color.Silver;
+            this.HomeTab.BackColor = System.Drawing.Color.Transparent;
             this.HomeTab.Controls.Add(this.editMovielbl);
-            this.HomeTab.Controls.Add(this.pictureBox6);
             this.HomeTab.Controls.Add(this.NSReleaseDateLabel10);
             this.HomeTab.Controls.Add(this.NSReleaseDateLabel9);
             this.HomeTab.Controls.Add(this.NSReleaseDateLabel8);
@@ -754,17 +725,6 @@
             this.editMovielbl.Text = "Select a Movie to Edit";
             this.editMovielbl.Visible = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(128, 800);
-            this.pictureBox6.TabIndex = 105;
-            this.pictureBox6.TabStop = false;
-            // 
             // NSReleaseDateLabel10
             // 
             this.NSReleaseDateLabel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -782,7 +742,7 @@
             this.NSReleaseDateLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel9.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel9.Location = new System.Drawing.Point(624, 722);
+            this.NSReleaseDateLabel9.Location = new System.Drawing.Point(593, 722);
             this.NSReleaseDateLabel9.Name = "NSReleaseDateLabel9";
             this.NSReleaseDateLabel9.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel9.TabIndex = 103;
@@ -794,7 +754,7 @@
             this.NSReleaseDateLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel8.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel8.Location = new System.Drawing.Point(464, 722);
+            this.NSReleaseDateLabel8.Location = new System.Drawing.Point(401, 722);
             this.NSReleaseDateLabel8.Name = "NSReleaseDateLabel8";
             this.NSReleaseDateLabel8.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel8.TabIndex = 102;
@@ -806,7 +766,7 @@
             this.NSReleaseDateLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel7.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel7.Location = new System.Drawing.Point(304, 722);
+            this.NSReleaseDateLabel7.Location = new System.Drawing.Point(209, 722);
             this.NSReleaseDateLabel7.Name = "NSReleaseDateLabel7";
             this.NSReleaseDateLabel7.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel7.TabIndex = 101;
@@ -818,7 +778,7 @@
             this.NSReleaseDateLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel6.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel6.Location = new System.Drawing.Point(144, 722);
+            this.NSReleaseDateLabel6.Location = new System.Drawing.Point(17, 722);
             this.NSReleaseDateLabel6.Name = "NSReleaseDateLabel6";
             this.NSReleaseDateLabel6.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel6.TabIndex = 100;
@@ -842,7 +802,7 @@
             this.NSTitleLabel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel9.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel9.Location = new System.Drawing.Point(624, 530);
+            this.NSTitleLabel9.Location = new System.Drawing.Point(593, 530);
             this.NSTitleLabel9.Name = "NSTitleLabel9";
             this.NSTitleLabel9.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel9.TabIndex = 98;
@@ -854,7 +814,7 @@
             this.NSTitleLabel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel8.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel8.Location = new System.Drawing.Point(464, 530);
+            this.NSTitleLabel8.Location = new System.Drawing.Point(401, 530);
             this.NSTitleLabel8.Name = "NSTitleLabel8";
             this.NSTitleLabel8.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel8.TabIndex = 97;
@@ -866,7 +826,7 @@
             this.NSTitleLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel7.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel7.Location = new System.Drawing.Point(304, 530);
+            this.NSTitleLabel7.Location = new System.Drawing.Point(209, 530);
             this.NSTitleLabel7.Name = "NSTitleLabel7";
             this.NSTitleLabel7.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel7.TabIndex = 96;
@@ -878,77 +838,12 @@
             this.NSTitleLabel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel6.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel6.Location = new System.Drawing.Point(144, 530);
+            this.NSTitleLabel6.Location = new System.Drawing.Point(17, 530);
             this.NSTitleLabel6.Name = "NSTitleLabel6";
             this.NSTitleLabel6.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel6.TabIndex = 95;
             this.NSTitleLabel6.Text = "Movie Title 6";
             this.NSTitleLabel6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // NSPoster10
-            // 
-            this.NSPoster10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster10.ErrorImage")));
-            this.NSPoster10.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster10.Image")));
-            this.NSPoster10.Location = new System.Drawing.Point(800, 560);
-            this.NSPoster10.Name = "NSPoster10";
-            this.NSPoster10.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster10.TabIndex = 94;
-            this.NSPoster10.TabStop = false;
-            this.NSPoster10.Click += new System.EventHandler(this.NSPoster10_Click);
-            // 
-            // NSPoster9
-            // 
-            this.NSPoster9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster9.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster9.ErrorImage")));
-            this.NSPoster9.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster9.Image")));
-            this.NSPoster9.Location = new System.Drawing.Point(640, 560);
-            this.NSPoster9.Name = "NSPoster9";
-            this.NSPoster9.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster9.TabIndex = 93;
-            this.NSPoster9.TabStop = false;
-            this.NSPoster9.Click += new System.EventHandler(this.NSPoster9_Click);
-            // 
-            // NSPoster8
-            // 
-            this.NSPoster8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster8.ErrorImage")));
-            this.NSPoster8.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster8.Image")));
-            this.NSPoster8.Location = new System.Drawing.Point(480, 560);
-            this.NSPoster8.Name = "NSPoster8";
-            this.NSPoster8.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster8.TabIndex = 92;
-            this.NSPoster8.TabStop = false;
-            this.NSPoster8.Click += new System.EventHandler(this.NSPoster8_Click);
-            // 
-            // NSPoster7
-            // 
-            this.NSPoster7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster7.ErrorImage")));
-            this.NSPoster7.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster7.Image")));
-            this.NSPoster7.Location = new System.Drawing.Point(324, 560);
-            this.NSPoster7.Name = "NSPoster7";
-            this.NSPoster7.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster7.TabIndex = 91;
-            this.NSPoster7.TabStop = false;
-            this.NSPoster7.Click += new System.EventHandler(this.NSPoster7_Click);
-            // 
-            // NSPoster6
-            // 
-            this.NSPoster6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster6.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster6.ErrorImage")));
-            this.NSPoster6.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster6.Image")));
-            this.NSPoster6.Location = new System.Drawing.Point(160, 560);
-            this.NSPoster6.Name = "NSPoster6";
-            this.NSPoster6.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster6.TabIndex = 90;
-            this.NSPoster6.TabStop = false;
-            this.NSPoster6.Click += new System.EventHandler(this.NSPoster6_Click);
             // 
             // NSReleaseDateLabel5
             // 
@@ -967,7 +862,7 @@
             this.NSReleaseDateLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel4.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel4.Location = new System.Drawing.Point(624, 498);
+            this.NSReleaseDateLabel4.Location = new System.Drawing.Point(593, 498);
             this.NSReleaseDateLabel4.Name = "NSReleaseDateLabel4";
             this.NSReleaseDateLabel4.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel4.TabIndex = 88;
@@ -979,7 +874,7 @@
             this.NSReleaseDateLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel3.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel3.Location = new System.Drawing.Point(464, 498);
+            this.NSReleaseDateLabel3.Location = new System.Drawing.Point(401, 498);
             this.NSReleaseDateLabel3.Name = "NSReleaseDateLabel3";
             this.NSReleaseDateLabel3.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel3.TabIndex = 87;
@@ -991,7 +886,7 @@
             this.NSReleaseDateLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel2.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel2.Location = new System.Drawing.Point(304, 498);
+            this.NSReleaseDateLabel2.Location = new System.Drawing.Point(209, 498);
             this.NSReleaseDateLabel2.Name = "NSReleaseDateLabel2";
             this.NSReleaseDateLabel2.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel2.TabIndex = 86;
@@ -1003,7 +898,7 @@
             this.NSReleaseDateLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSReleaseDateLabel1.BackColor = System.Drawing.Color.Transparent;
             this.NSReleaseDateLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSReleaseDateLabel1.Location = new System.Drawing.Point(144, 498);
+            this.NSReleaseDateLabel1.Location = new System.Drawing.Point(17, 498);
             this.NSReleaseDateLabel1.Name = "NSReleaseDateLabel1";
             this.NSReleaseDateLabel1.Size = new System.Drawing.Size(160, 20);
             this.NSReleaseDateLabel1.TabIndex = 85;
@@ -1027,7 +922,7 @@
             this.NSTitleLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel4.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel4.Location = new System.Drawing.Point(624, 306);
+            this.NSTitleLabel4.Location = new System.Drawing.Point(593, 306);
             this.NSTitleLabel4.Name = "NSTitleLabel4";
             this.NSTitleLabel4.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel4.TabIndex = 83;
@@ -1039,7 +934,7 @@
             this.NSTitleLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel3.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel3.Location = new System.Drawing.Point(464, 306);
+            this.NSTitleLabel3.Location = new System.Drawing.Point(401, 306);
             this.NSTitleLabel3.Name = "NSTitleLabel3";
             this.NSTitleLabel3.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel3.TabIndex = 82;
@@ -1051,7 +946,7 @@
             this.NSTitleLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel2.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel2.Location = new System.Drawing.Point(304, 306);
+            this.NSTitleLabel2.Location = new System.Drawing.Point(209, 306);
             this.NSTitleLabel2.Name = "NSTitleLabel2";
             this.NSTitleLabel2.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel2.TabIndex = 81;
@@ -1063,7 +958,7 @@
             this.NSTitleLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NSTitleLabel1.BackColor = System.Drawing.Color.Transparent;
             this.NSTitleLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NSTitleLabel1.Location = new System.Drawing.Point(144, 306);
+            this.NSTitleLabel1.Location = new System.Drawing.Point(17, 306);
             this.NSTitleLabel1.Name = "NSTitleLabel1";
             this.NSTitleLabel1.Size = new System.Drawing.Size(160, 30);
             this.NSTitleLabel1.TabIndex = 80;
@@ -1087,7 +982,7 @@
             this.NRReleaseDateLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRReleaseDateLabel4.BackColor = System.Drawing.Color.Transparent;
             this.NRReleaseDateLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRReleaseDateLabel4.Location = new System.Drawing.Point(624, 243);
+            this.NRReleaseDateLabel4.Location = new System.Drawing.Point(593, 243);
             this.NRReleaseDateLabel4.Name = "NRReleaseDateLabel4";
             this.NRReleaseDateLabel4.Size = new System.Drawing.Size(160, 20);
             this.NRReleaseDateLabel4.TabIndex = 78;
@@ -1099,7 +994,7 @@
             this.NRReleaseDateLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRReleaseDateLabel3.BackColor = System.Drawing.Color.Transparent;
             this.NRReleaseDateLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRReleaseDateLabel3.Location = new System.Drawing.Point(464, 243);
+            this.NRReleaseDateLabel3.Location = new System.Drawing.Point(401, 243);
             this.NRReleaseDateLabel3.Name = "NRReleaseDateLabel3";
             this.NRReleaseDateLabel3.Size = new System.Drawing.Size(160, 20);
             this.NRReleaseDateLabel3.TabIndex = 77;
@@ -1111,7 +1006,7 @@
             this.NRReleaseDateLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRReleaseDateLabel2.BackColor = System.Drawing.Color.Transparent;
             this.NRReleaseDateLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRReleaseDateLabel2.Location = new System.Drawing.Point(304, 243);
+            this.NRReleaseDateLabel2.Location = new System.Drawing.Point(209, 243);
             this.NRReleaseDateLabel2.Name = "NRReleaseDateLabel2";
             this.NRReleaseDateLabel2.Size = new System.Drawing.Size(160, 20);
             this.NRReleaseDateLabel2.TabIndex = 76;
@@ -1123,7 +1018,7 @@
             this.NRReleaseDateLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRReleaseDateLabel1.BackColor = System.Drawing.Color.Transparent;
             this.NRReleaseDateLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRReleaseDateLabel1.Location = new System.Drawing.Point(144, 243);
+            this.NRReleaseDateLabel1.Location = new System.Drawing.Point(17, 243);
             this.NRReleaseDateLabel1.Name = "NRReleaseDateLabel1";
             this.NRReleaseDateLabel1.Size = new System.Drawing.Size(160, 20);
             this.NRReleaseDateLabel1.TabIndex = 75;
@@ -1147,7 +1042,7 @@
             this.NRTitleLabel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRTitleLabel4.BackColor = System.Drawing.Color.Transparent;
             this.NRTitleLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRTitleLabel4.Location = new System.Drawing.Point(624, 50);
+            this.NRTitleLabel4.Location = new System.Drawing.Point(593, 50);
             this.NRTitleLabel4.Name = "NRTitleLabel4";
             this.NRTitleLabel4.Size = new System.Drawing.Size(160, 30);
             this.NRTitleLabel4.TabIndex = 73;
@@ -1159,7 +1054,7 @@
             this.NRTitleLabel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRTitleLabel3.BackColor = System.Drawing.Color.Transparent;
             this.NRTitleLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRTitleLabel3.Location = new System.Drawing.Point(464, 50);
+            this.NRTitleLabel3.Location = new System.Drawing.Point(401, 50);
             this.NRTitleLabel3.Name = "NRTitleLabel3";
             this.NRTitleLabel3.Size = new System.Drawing.Size(160, 30);
             this.NRTitleLabel3.TabIndex = 72;
@@ -1171,7 +1066,7 @@
             this.NRTitleLabel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRTitleLabel2.BackColor = System.Drawing.Color.Transparent;
             this.NRTitleLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRTitleLabel2.Location = new System.Drawing.Point(304, 50);
+            this.NRTitleLabel2.Location = new System.Drawing.Point(209, 50);
             this.NRTitleLabel2.Name = "NRTitleLabel2";
             this.NRTitleLabel2.Size = new System.Drawing.Size(160, 30);
             this.NRTitleLabel2.TabIndex = 71;
@@ -1183,160 +1078,12 @@
             this.NRTitleLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.NRTitleLabel1.BackColor = System.Drawing.Color.Transparent;
             this.NRTitleLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NRTitleLabel1.Location = new System.Drawing.Point(144, 50);
+            this.NRTitleLabel1.Location = new System.Drawing.Point(17, 50);
             this.NRTitleLabel1.Name = "NRTitleLabel1";
             this.NRTitleLabel1.Size = new System.Drawing.Size(160, 30);
             this.NRTitleLabel1.TabIndex = 70;
             this.NRTitleLabel1.Text = "Movie Title 1";
             this.NRTitleLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // NSPoster5
-            // 
-            this.NSPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster5.ErrorImage")));
-            this.NSPoster5.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster5.Image")));
-            this.NSPoster5.Location = new System.Drawing.Point(800, 336);
-            this.NSPoster5.Name = "NSPoster5";
-            this.NSPoster5.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster5.TabIndex = 60;
-            this.NSPoster5.TabStop = false;
-            this.NSPoster5.Click += new System.EventHandler(this.NSPoster5_Click);
-            // 
-            // NSPoster4
-            // 
-            this.NSPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster4.ErrorImage")));
-            this.NSPoster4.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster4.Image")));
-            this.NSPoster4.Location = new System.Drawing.Point(640, 336);
-            this.NSPoster4.Name = "NSPoster4";
-            this.NSPoster4.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster4.TabIndex = 59;
-            this.NSPoster4.TabStop = false;
-            this.NSPoster4.Click += new System.EventHandler(this.NSPoster4_Click);
-            // 
-            // NSPoster3
-            // 
-            this.NSPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster3.ErrorImage")));
-            this.NSPoster3.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster3.Image")));
-            this.NSPoster3.Location = new System.Drawing.Point(480, 336);
-            this.NSPoster3.Name = "NSPoster3";
-            this.NSPoster3.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster3.TabIndex = 58;
-            this.NSPoster3.TabStop = false;
-            this.NSPoster3.Click += new System.EventHandler(this.NSPoster3_Click);
-            // 
-            // NSPoster2
-            // 
-            this.NSPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster2.ErrorImage")));
-            this.NSPoster2.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster2.Image")));
-            this.NSPoster2.Location = new System.Drawing.Point(324, 336);
-            this.NSPoster2.Name = "NSPoster2";
-            this.NSPoster2.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster2.TabIndex = 57;
-            this.NSPoster2.TabStop = false;
-            this.NSPoster2.Click += new System.EventHandler(this.NSPoster2_Click);
-            // 
-            // NSPoster1
-            // 
-            this.NSPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NSPoster1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster1.ErrorImage")));
-            this.NSPoster1.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster1.Image")));
-            this.NSPoster1.Location = new System.Drawing.Point(160, 336);
-            this.NSPoster1.Name = "NSPoster1";
-            this.NSPoster1.Size = new System.Drawing.Size(128, 160);
-            this.NSPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NSPoster1.TabIndex = 56;
-            this.NSPoster1.TabStop = false;
-            this.NSPoster1.Click += new System.EventHandler(this.NSPoster1_Click);
-            // 
-            // NRPoster5
-            // 
-            this.NRPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NRPoster5.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.NRPoster5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster5.ErrorImage")));
-            this.NRPoster5.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster5.Image")));
-            this.NRPoster5.Location = new System.Drawing.Point(800, 80);
-            this.NRPoster5.Name = "NRPoster5";
-            this.NRPoster5.Size = new System.Drawing.Size(128, 160);
-            this.NRPoster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NRPoster5.TabIndex = 55;
-            this.NRPoster5.TabStop = false;
-            this.NRPoster5.Click += new System.EventHandler(this.NRPoster5_Click);
-            // 
-            // NRPoster4
-            // 
-            this.NRPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NRPoster4.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.NRPoster4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster4.ErrorImage")));
-            this.NRPoster4.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster4.Image")));
-            this.NRPoster4.Location = new System.Drawing.Point(640, 80);
-            this.NRPoster4.Name = "NRPoster4";
-            this.NRPoster4.Size = new System.Drawing.Size(128, 160);
-            this.NRPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NRPoster4.TabIndex = 54;
-            this.NRPoster4.TabStop = false;
-            this.NRPoster4.Click += new System.EventHandler(this.NRPoster4_Click);
-            // 
-            // NRPoster3
-            // 
-            this.NRPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NRPoster3.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.NRPoster3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster3.ErrorImage")));
-            this.NRPoster3.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster3.Image")));
-            this.NRPoster3.Location = new System.Drawing.Point(480, 80);
-            this.NRPoster3.Name = "NRPoster3";
-            this.NRPoster3.Size = new System.Drawing.Size(128, 160);
-            this.NRPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NRPoster3.TabIndex = 53;
-            this.NRPoster3.TabStop = false;
-            this.NRPoster3.Click += new System.EventHandler(this.NRPoster3_Click);
-            // 
-            // NRPoster2
-            // 
-            this.NRPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NRPoster2.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.NRPoster2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster2.ErrorImage")));
-            this.NRPoster2.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster2.Image")));
-            this.NRPoster2.Location = new System.Drawing.Point(324, 80);
-            this.NRPoster2.Name = "NRPoster2";
-            this.NRPoster2.Size = new System.Drawing.Size(128, 160);
-            this.NRPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NRPoster2.TabIndex = 52;
-            this.NRPoster2.TabStop = false;
-            this.NRPoster2.Click += new System.EventHandler(this.NRPoster2_Click);
-            // 
-            // NRPoster1
-            // 
-            this.NRPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.NRPoster1.BackColor = System.Drawing.Color.Transparent;
-            this.NRPoster1.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.NRPoster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.NRPoster1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster1.ErrorImage")));
-            this.NRPoster1.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster1.Image")));
-            this.NRPoster1.Location = new System.Drawing.Point(160, 80);
-            this.NRPoster1.Name = "NRPoster1";
-            this.NRPoster1.Size = new System.Drawing.Size(128, 160);
-            this.NRPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NRPoster1.TabIndex = 51;
-            this.NRPoster1.TabStop = false;
-            this.NRPoster1.Click += new System.EventHandler(this.NRPoster1_Click);
-            // 
-            // BackgroundHome
-            // 
-            this.BackgroundHome.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BackgroundHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.BackgroundHome.Image = ((System.Drawing.Image)(resources.GetObject("BackgroundHome.Image")));
-            this.BackgroundHome.Location = new System.Drawing.Point(0, 0);
-            this.BackgroundHome.Name = "BackgroundHome";
-            this.BackgroundHome.Size = new System.Drawing.Size(961, 753);
-            this.BackgroundHome.TabIndex = 69;
-            this.BackgroundHome.TabStop = false;
             // 
             // SearchTab
             // 
@@ -1434,87 +1181,6 @@
             this.STitleLabel1.Text = "Movie Title 1";
             this.STitleLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // searchPoster6
-            // 
-            this.searchPoster6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchPoster6.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster6.Image")));
-            this.searchPoster6.Location = new System.Drawing.Point(512, 542);
-            this.searchPoster6.Name = "searchPoster6";
-            this.searchPoster6.Size = new System.Drawing.Size(128, 160);
-            this.searchPoster6.TabIndex = 82;
-            this.searchPoster6.TabStop = false;
-            this.searchPoster6.Click += new System.EventHandler(this.searchPoster6_Click);
-            // 
-            // searchPoster4
-            // 
-            this.searchPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchPoster4.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster4.Image")));
-            this.searchPoster4.Location = new System.Drawing.Point(512, 318);
-            this.searchPoster4.Name = "searchPoster4";
-            this.searchPoster4.Size = new System.Drawing.Size(128, 160);
-            this.searchPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.searchPoster4.TabIndex = 81;
-            this.searchPoster4.TabStop = false;
-            this.searchPoster4.Click += new System.EventHandler(this.searchPoster4_Click);
-            // 
-            // searchPoster5
-            // 
-            this.searchPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchPoster5.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster5.Image")));
-            this.searchPoster5.Location = new System.Drawing.Point(129, 542);
-            this.searchPoster5.Name = "searchPoster5";
-            this.searchPoster5.Size = new System.Drawing.Size(128, 160);
-            this.searchPoster5.TabIndex = 80;
-            this.searchPoster5.TabStop = false;
-            this.searchPoster5.Click += new System.EventHandler(this.searchPoster5_Click);
-            // 
-            // searchPoster3
-            // 
-            this.searchPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchPoster3.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster3.Image")));
-            this.searchPoster3.Location = new System.Drawing.Point(128, 318);
-            this.searchPoster3.Name = "searchPoster3";
-            this.searchPoster3.Size = new System.Drawing.Size(128, 160);
-            this.searchPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.searchPoster3.TabIndex = 79;
-            this.searchPoster3.TabStop = false;
-            this.searchPoster3.Click += new System.EventHandler(this.searchPoster3_Click);
-            // 
-            // searchPoster2
-            // 
-            this.searchPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchPoster2.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster2.Image")));
-            this.searchPoster2.Location = new System.Drawing.Point(512, 94);
-            this.searchPoster2.Name = "searchPoster2";
-            this.searchPoster2.Size = new System.Drawing.Size(128, 160);
-            this.searchPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.searchPoster2.TabIndex = 78;
-            this.searchPoster2.TabStop = false;
-            this.searchPoster2.Click += new System.EventHandler(this.searchPoster2_Click);
-            // 
-            // searchPoster1
-            // 
-            this.searchPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.searchPoster1.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster1.Image")));
-            this.searchPoster1.Location = new System.Drawing.Point(128, 94);
-            this.searchPoster1.Name = "searchPoster1";
-            this.searchPoster1.Size = new System.Drawing.Size(128, 160);
-            this.searchPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.searchPoster1.TabIndex = 77;
-            this.searchPoster1.TabStop = false;
-            this.searchPoster1.Click += new System.EventHandler(this.searchPoster1_Click);
-            // 
-            // backgroundS
-            // 
-            this.backgroundS.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.backgroundS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.backgroundS.Image = ((System.Drawing.Image)(resources.GetObject("backgroundS.Image")));
-            this.backgroundS.Location = new System.Drawing.Point(3, 0);
-            this.backgroundS.Name = "backgroundS";
-            this.backgroundS.Size = new System.Drawing.Size(961, 767);
-            this.backgroundS.TabIndex = 70;
-            this.backgroundS.TabStop = false;
-            // 
             // MovieDetailsTab
             // 
             this.MovieDetailsTab.BackColor = System.Drawing.Color.Silver;
@@ -1546,7 +1212,7 @@
             // 
             // orderTicketsbtn
             // 
-            this.orderTicketsbtn.Location = new System.Drawing.Point(400, 591);
+            this.orderTicketsbtn.Location = new System.Drawing.Point(91, 428);
             this.orderTicketsbtn.Name = "orderTicketsbtn";
             this.orderTicketsbtn.Size = new System.Drawing.Size(197, 34);
             this.orderTicketsbtn.TabIndex = 88;
@@ -1703,37 +1369,6 @@
             this.MDTitleLabel.TabIndex = 72;
             this.MDTitleLabel.Text = "label1";
             // 
-            // MDBigPoster
-            // 
-            this.MDBigPoster.Image = ((System.Drawing.Image)(resources.GetObject("MDBigPoster.Image")));
-            this.MDBigPoster.Location = new System.Drawing.Point(32, 80);
-            this.MDBigPoster.Name = "MDBigPoster";
-            this.MDBigPoster.Size = new System.Drawing.Size(256, 320);
-            this.MDBigPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MDBigPoster.TabIndex = 71;
-            this.MDBigPoster.TabStop = false;
-            // 
-            // MovieDetailsDiv
-            // 
-            this.MovieDetailsDiv.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.MovieDetailsDiv.Image = ((System.Drawing.Image)(resources.GetObject("MovieDetailsDiv.Image")));
-            this.MovieDetailsDiv.Location = new System.Drawing.Point(33, 16);
-            this.MovieDetailsDiv.Name = "MovieDetailsDiv";
-            this.MovieDetailsDiv.Size = new System.Drawing.Size(896, 33);
-            this.MovieDetailsDiv.TabIndex = 44;
-            this.MovieDetailsDiv.TabStop = false;
-            // 
-            // backgroundMD
-            // 
-            this.backgroundMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.backgroundMD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.backgroundMD.Image = ((System.Drawing.Image)(resources.GetObject("backgroundMD.Image")));
-            this.backgroundMD.Location = new System.Drawing.Point(3, 0);
-            this.backgroundMD.Name = "backgroundMD";
-            this.backgroundMD.Size = new System.Drawing.Size(960, 773);
-            this.backgroundMD.TabIndex = 70;
-            this.backgroundMD.TabStop = false;
-            // 
             // LoginTab
             // 
             this.LoginTab.BackColor = System.Drawing.Color.Transparent;
@@ -1752,15 +1387,6 @@
             this.LoginTab.Size = new System.Drawing.Size(962, 773);
             this.LoginTab.TabIndex = 3;
             this.LoginTab.Text = "Login";
-            // 
-            // LoginDiv
-            // 
-            this.LoginDiv.Image = ((System.Drawing.Image)(resources.GetObject("LoginDiv.Image")));
-            this.LoginDiv.Location = new System.Drawing.Point(32, 16);
-            this.LoginDiv.Name = "LoginDiv";
-            this.LoginDiv.Size = new System.Drawing.Size(896, 33);
-            this.LoginDiv.TabIndex = 73;
-            this.LoginDiv.TabStop = false;
             // 
             // passwordTxt
             // 
@@ -1834,17 +1460,6 @@
             this.label7.TabIndex = 53;
             this.label7.Text = "Username:";
             // 
-            // backgroundL
-            // 
-            this.backgroundL.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.backgroundL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.backgroundL.Image = ((System.Drawing.Image)(resources.GetObject("backgroundL.Image")));
-            this.backgroundL.Location = new System.Drawing.Point(0, 0);
-            this.backgroundL.Name = "backgroundL";
-            this.backgroundL.Size = new System.Drawing.Size(961, 387);
-            this.backgroundL.TabIndex = 74;
-            this.backgroundL.TabStop = false;
-            // 
             // AccountTab
             // 
             this.AccountTab.BackColor = System.Drawing.Color.Transparent;
@@ -1862,7 +1477,6 @@
             this.AccountTab.Controls.Add(this.label34);
             this.AccountTab.Controls.Add(this.textBox5);
             this.AccountTab.Controls.Add(this.CACardholderFNLabel);
-            this.AccountTab.Controls.Add(this.pictureBox7);
             this.AccountTab.Controls.Add(this.CACreateAccountBtn);
             this.AccountTab.Controls.Add(this.passTxt);
             this.AccountTab.Controls.Add(this.UserTxt);
@@ -1878,13 +1492,14 @@
             this.AccountTab.Controls.Add(this.CAAddressLabel);
             this.AccountTab.Controls.Add(this.CALastNameLabel);
             this.AccountTab.Controls.Add(this.CAFirstNameLabel);
+            this.AccountTab.Controls.Add(this.pictureBox7);
             this.AccountTab.Controls.Add(this.backgroundCA);
             this.AccountTab.Location = new System.Drawing.Point(4, 22);
             this.AccountTab.Name = "AccountTab";
             this.AccountTab.Padding = new System.Windows.Forms.Padding(3);
             this.AccountTab.Size = new System.Drawing.Size(962, 773);
             this.AccountTab.TabIndex = 4;
-            this.AccountTab.Text = "Account";
+            this.AccountTab.Text = "Create Account";
             // 
             // CAAccountInfoLabel
             // 
@@ -1929,22 +1544,22 @@
             // CAExpirationDateLabel
             // 
             this.CAExpirationDateLabel.AutoSize = true;
-            this.CAExpirationDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAExpirationDateLabel.Location = new System.Drawing.Point(507, 368);
+            this.CAExpirationDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAExpirationDateLabel.Location = new System.Drawing.Point(502, 368);
             this.CAExpirationDateLabel.Name = "CAExpirationDateLabel";
             this.CAExpirationDateLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CAExpirationDateLabel.Size = new System.Drawing.Size(122, 20);
+            this.CAExpirationDateLabel.Size = new System.Drawing.Size(102, 16);
             this.CAExpirationDateLabel.TabIndex = 83;
             this.CAExpirationDateLabel.Text = ":Expiration Date";
             // 
             // CASecurityLabel
             // 
             this.CASecurityLabel.AutoSize = true;
-            this.CASecurityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CASecurityLabel.Location = new System.Drawing.Point(509, 304);
+            this.CASecurityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CASecurityLabel.Location = new System.Drawing.Point(509, 307);
             this.CASecurityLabel.Name = "CASecurityLabel";
             this.CASecurityLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CASecurityLabel.Size = new System.Drawing.Size(112, 20);
+            this.CASecurityLabel.Size = new System.Drawing.Size(95, 16);
             this.CASecurityLabel.TabIndex = 82;
             this.CASecurityLabel.Text = ":Security Code";
             // 
@@ -1958,11 +1573,11 @@
             // CACreditCardLabel
             // 
             this.CACreditCardLabel.AutoSize = true;
-            this.CACreditCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CACreditCardLabel.Location = new System.Drawing.Point(468, 240);
+            this.CACreditCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CACreditCardLabel.Location = new System.Drawing.Point(475, 243);
             this.CACreditCardLabel.Name = "CACreditCardLabel";
             this.CACreditCardLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CACreditCardLabel.Size = new System.Drawing.Size(153, 20);
+            this.CACreditCardLabel.Size = new System.Drawing.Size(129, 16);
             this.CACreditCardLabel.TabIndex = 80;
             this.CACreditCardLabel.Text = ":Credit Card Number";
             // 
@@ -1976,11 +1591,11 @@
             // CACardholderLNLabel
             // 
             this.CACardholderLNLabel.AutoSize = true;
-            this.CACardholderLNLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CACardholderLNLabel.Location = new System.Drawing.Point(441, 176);
+            this.CACardholderLNLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CACardholderLNLabel.Location = new System.Drawing.Point(451, 179);
             this.CACardholderLNLabel.Name = "CACardholderLNLabel";
             this.CACardholderLNLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CACardholderLNLabel.Size = new System.Drawing.Size(180, 20);
+            this.CACardholderLNLabel.Size = new System.Drawing.Size(153, 16);
             this.CACardholderLNLabel.TabIndex = 78;
             this.CACardholderLNLabel.Text = ":Cardholders Last Name";
             // 
@@ -2010,22 +1625,13 @@
             // CACardholderFNLabel
             // 
             this.CACardholderFNLabel.AutoSize = true;
-            this.CACardholderFNLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CACardholderFNLabel.Location = new System.Drawing.Point(441, 112);
+            this.CACardholderFNLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CACardholderFNLabel.Location = new System.Drawing.Point(451, 115);
             this.CACardholderFNLabel.Name = "CACardholderFNLabel";
             this.CACardholderFNLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CACardholderFNLabel.Size = new System.Drawing.Size(180, 20);
+            this.CACardholderFNLabel.Size = new System.Drawing.Size(153, 16);
             this.CACardholderFNLabel.TabIndex = 74;
             this.CACardholderFNLabel.Text = ":Cardholders First Name";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(32, 16);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(896, 33);
-            this.pictureBox7.TabIndex = 72;
-            this.pictureBox7.TabStop = false;
             // 
             // CACreateAccountBtn
             // 
@@ -2089,90 +1695,79 @@
             // CAPasswordLabel
             // 
             this.CAPasswordLabel.AutoSize = true;
-            this.CAPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAPasswordLabel.Location = new System.Drawing.Point(67, 540);
+            this.CAPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAPasswordLabel.Location = new System.Drawing.Point(67, 543);
             this.CAPasswordLabel.Name = "CAPasswordLabel";
             this.CAPasswordLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CAPasswordLabel.Size = new System.Drawing.Size(82, 20);
+            this.CAPasswordLabel.Size = new System.Drawing.Size(71, 16);
             this.CAPasswordLabel.TabIndex = 23;
             this.CAPasswordLabel.Text = ":Password";
             // 
             // CAUsernameLabel
             // 
             this.CAUsernameLabel.AutoSize = true;
-            this.CAUsernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAUsernameLabel.Location = new System.Drawing.Point(67, 476);
+            this.CAUsernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAUsernameLabel.Location = new System.Drawing.Point(67, 479);
             this.CAUsernameLabel.Name = "CAUsernameLabel";
             this.CAUsernameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CAUsernameLabel.Size = new System.Drawing.Size(87, 20);
+            this.CAUsernameLabel.Size = new System.Drawing.Size(74, 16);
             this.CAUsernameLabel.TabIndex = 22;
             this.CAUsernameLabel.Text = ":Username";
             // 
             // CAStateLabel
             // 
             this.CAStateLabel.AutoSize = true;
-            this.CAStateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAStateLabel.Location = new System.Drawing.Point(102, 368);
+            this.CAStateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAStateLabel.Location = new System.Drawing.Point(102, 371);
             this.CAStateLabel.Name = "CAStateLabel";
             this.CAStateLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CAStateLabel.Size = new System.Drawing.Size(52, 20);
+            this.CAStateLabel.Size = new System.Drawing.Size(42, 16);
             this.CAStateLabel.TabIndex = 21;
             this.CAStateLabel.Text = ":State";
             // 
             // CACityLabel
             // 
             this.CACityLabel.AutoSize = true;
-            this.CACityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CACityLabel.Location = new System.Drawing.Point(115, 304);
+            this.CACityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CACityLabel.Location = new System.Drawing.Point(111, 307);
             this.CACityLabel.Name = "CACityLabel";
             this.CACityLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CACityLabel.Size = new System.Drawing.Size(39, 20);
+            this.CACityLabel.Size = new System.Drawing.Size(33, 16);
             this.CACityLabel.TabIndex = 20;
             this.CACityLabel.Text = ":City";
             // 
             // CAAddressLabel
             // 
             this.CAAddressLabel.AutoSize = true;
-            this.CAAddressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAAddressLabel.Location = new System.Drawing.Point(82, 240);
+            this.CAAddressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAAddressLabel.Location = new System.Drawing.Point(82, 243);
             this.CAAddressLabel.Name = "CAAddressLabel";
             this.CAAddressLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CAAddressLabel.Size = new System.Drawing.Size(72, 20);
+            this.CAAddressLabel.Size = new System.Drawing.Size(62, 16);
             this.CAAddressLabel.TabIndex = 19;
             this.CAAddressLabel.Text = ":Address";
             // 
             // CALastNameLabel
             // 
             this.CALastNameLabel.AutoSize = true;
-            this.CALastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CALastNameLabel.Location = new System.Drawing.Point(64, 176);
+            this.CALastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CALastNameLabel.Location = new System.Drawing.Point(65, 179);
             this.CALastNameLabel.Name = "CALastNameLabel";
             this.CALastNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CALastNameLabel.Size = new System.Drawing.Size(90, 20);
+            this.CALastNameLabel.Size = new System.Drawing.Size(76, 16);
             this.CALastNameLabel.TabIndex = 18;
             this.CALastNameLabel.Text = ":Last Name";
             // 
             // CAFirstNameLabel
             // 
             this.CAFirstNameLabel.AutoSize = true;
-            this.CAFirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAFirstNameLabel.Location = new System.Drawing.Point(64, 112);
+            this.CAFirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAFirstNameLabel.Location = new System.Drawing.Point(65, 115);
             this.CAFirstNameLabel.Name = "CAFirstNameLabel";
             this.CAFirstNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CAFirstNameLabel.Size = new System.Drawing.Size(90, 20);
+            this.CAFirstNameLabel.Size = new System.Drawing.Size(76, 16);
             this.CAFirstNameLabel.TabIndex = 17;
             this.CAFirstNameLabel.Text = ":First Name";
-            // 
-            // backgroundCA
-            // 
-            this.backgroundCA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.backgroundCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.backgroundCA.Image = ((System.Drawing.Image)(resources.GetObject("backgroundCA.Image")));
-            this.backgroundCA.Location = new System.Drawing.Point(0, 0);
-            this.backgroundCA.Name = "backgroundCA";
-            this.backgroundCA.Size = new System.Drawing.Size(961, 668);
-            this.backgroundCA.TabIndex = 73;
-            this.backgroundCA.TabStop = false;
             // 
             // PaymentInfoTab
             // 
@@ -3599,15 +3194,6 @@
             this.shapeContainer1.TabIndex = 12;
             this.shapeContainer1.TabStop = false;
             // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape1.BackgroundImage")));
-            this.rectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Gainsboro;
-            this.rectangleShape1.Location = new System.Drawing.Point(208, 127);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(515, 147);
-            // 
             // Purchase
             // 
             this.Purchase.BackColor = System.Drawing.Color.Silver;
@@ -4377,9 +3963,6 @@
             this.ContactUsTab.Controls.Add(this.ThuLabel);
             this.ContactUsTab.Controls.Add(this.WedLabel);
             this.ContactUsTab.Controls.Add(this.TueLabel);
-            this.ContactUsTab.Controls.Add(this.ClockPicture);
-            this.ContactUsTab.Controls.Add(this.pictureBox2);
-            this.ContactUsTab.Controls.Add(this.pictureofplace);
             this.ContactUsTab.Controls.Add(this.addressInfo2Label);
             this.ContactUsTab.Controls.Add(this.addressInfo1Label);
             this.ContactUsTab.Controls.Add(this.addresslabel);
@@ -4390,6 +3973,9 @@
             this.ContactUsTab.Controls.Add(this.CallusLabel);
             this.ContactUsTab.Controls.Add(this.phoneNumberLabel);
             this.ContactUsTab.Controls.Add(this.phoneLabel);
+            this.ContactUsTab.Controls.Add(this.ClockPicture);
+            this.ContactUsTab.Controls.Add(this.pictureBox2);
+            this.ContactUsTab.Controls.Add(this.pictureofplace);
             this.ContactUsTab.Controls.Add(this.MapPicture);
             this.ContactUsTab.Controls.Add(this.EmailPicture);
             this.ContactUsTab.Controls.Add(this.PhonePicture);
@@ -4531,34 +4117,6 @@
             this.TueLabel.TabIndex = 73;
             this.TueLabel.Text = "Tue:";
             // 
-            // ClockPicture
-            // 
-            this.ClockPicture.Image = ((System.Drawing.Image)(resources.GetObject("ClockPicture.Image")));
-            this.ClockPicture.Location = new System.Drawing.Point(32, 176);
-            this.ClockPicture.Name = "ClockPicture";
-            this.ClockPicture.Size = new System.Drawing.Size(64, 64);
-            this.ClockPicture.TabIndex = 72;
-            this.ClockPicture.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(32, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(896, 33);
-            this.pictureBox2.TabIndex = 71;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureofplace
-            // 
-            this.pictureofplace.Image = global::MovieTheater.Properties.Resources.pictureofplace_Image;
-            this.pictureofplace.Location = new System.Drawing.Point(364, 137);
-            this.pictureofplace.Name = "pictureofplace";
-            this.pictureofplace.Size = new System.Drawing.Size(526, 319);
-            this.pictureofplace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureofplace.TabIndex = 17;
-            this.pictureofplace.TabStop = false;
-            // 
             // addressInfo2Label
             // 
             this.addressInfo2Label.AutoSize = true;
@@ -4659,49 +4217,10 @@
             this.phoneLabel.TabIndex = 1;
             this.phoneLabel.Text = "Phone: ";
             // 
-            // MapPicture
-            // 
-            this.MapPicture.Image = ((System.Drawing.Image)(resources.GetObject("MapPicture.Image")));
-            this.MapPicture.Location = new System.Drawing.Point(32, 432);
-            this.MapPicture.Name = "MapPicture";
-            this.MapPicture.Size = new System.Drawing.Size(64, 96);
-            this.MapPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MapPicture.TabIndex = 13;
-            this.MapPicture.TabStop = false;
-            // 
-            // EmailPicture
-            // 
-            this.EmailPicture.Image = ((System.Drawing.Image)(resources.GetObject("EmailPicture.Image")));
-            this.EmailPicture.Location = new System.Drawing.Point(32, 368);
-            this.EmailPicture.Name = "EmailPicture";
-            this.EmailPicture.Size = new System.Drawing.Size(64, 46);
-            this.EmailPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.EmailPicture.TabIndex = 6;
-            this.EmailPicture.TabStop = false;
-            // 
-            // PhonePicture
-            // 
-            this.PhonePicture.Image = ((System.Drawing.Image)(resources.GetObject("PhonePicture.Image")));
-            this.PhonePicture.Location = new System.Drawing.Point(32, 48);
-            this.PhonePicture.Name = "PhonePicture";
-            this.PhonePicture.Size = new System.Drawing.Size(64, 96);
-            this.PhonePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PhonePicture.TabIndex = 4;
-            this.PhonePicture.TabStop = false;
-            // 
-            // backgroundCU
-            // 
-            this.backgroundCU.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.backgroundCU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.backgroundCU.Image = ((System.Drawing.Image)(resources.GetObject("backgroundCU.Image")));
-            this.backgroundCU.Location = new System.Drawing.Point(1, 0);
-            this.backgroundCU.Name = "backgroundCU";
-            this.backgroundCU.Size = new System.Drawing.Size(961, 569);
-            this.backgroundCU.TabIndex = 70;
-            this.backgroundCU.TabStop = false;
-            // 
             // AdminTab
             // 
+            this.AdminTab.Controls.Add(this.label3);
+            this.AdminTab.Controls.Add(this.label2);
             this.AdminTab.Controls.Add(this.st9lbl);
             this.AdminTab.Controls.Add(this.st8lbl);
             this.AdminTab.Controls.Add(this.st7lbl);
@@ -4720,45 +4239,67 @@
             this.AdminTab.Controls.Add(this.st3txt);
             this.AdminTab.Controls.Add(this.st2txt);
             this.AdminTab.Controls.Add(this.st1txt);
-            this.AdminTab.Controls.Add(this.posterPathtxt);
-            this.AdminTab.Controls.Add(this.DirectorBox);
-            this.AdminTab.Controls.Add(this.ActorBox);
-            this.AdminTab.Controls.Add(this.SynopsisBox);
-            this.AdminTab.Controls.Add(this.DescriptionBox);
-            this.AdminTab.Controls.Add(this.LengthBox);
-            this.AdminTab.Controls.Add(this.TitleBox);
+            this.AdminTab.Controls.Add(this.AMIposterPathtxt);
+            this.AdminTab.Controls.Add(this.AMIDirectorBox);
+            this.AdminTab.Controls.Add(this.AMIActorBox);
+            this.AdminTab.Controls.Add(this.AMISynopsisBox);
+            this.AdminTab.Controls.Add(this.AMIDescriptionBox);
+            this.AdminTab.Controls.Add(this.AMILengthBox);
+            this.AdminTab.Controls.Add(this.AMITitleBox);
             this.AdminTab.Controls.Add(this.st1lbl);
-            this.AdminTab.Controls.Add(this.label3);
-            this.AdminTab.Controls.Add(this.label2);
-            this.AdminTab.Controls.Add(this.uploadPosterbtn);
-            this.AdminTab.Controls.Add(this.ReleaseDTPicker);
-            this.AdminTab.Controls.Add(this.label65);
-            this.AdminTab.Controls.Add(this.label64);
-            this.AdminTab.Controls.Add(this.label63);
-            this.AdminTab.Controls.Add(this.label62);
-            this.AdminTab.Controls.Add(this.label61);
-            this.AdminTab.Controls.Add(this.label60);
-            this.AdminTab.Controls.Add(this.label59);
-            this.AdminTab.Controls.Add(this.label58);
-            this.AdminTab.Controls.Add(this.label57);
-            this.AdminTab.Controls.Add(this.label56);
-            this.AdminTab.Controls.Add(this.GenreBox);
-            this.AdminTab.Controls.Add(this.RatingBox);
+            this.AdminTab.Controls.Add(this.AMIuploadPosterbtn);
+            this.AdminTab.Controls.Add(this.AMIReleaseDTPicker);
+            this.AdminTab.Controls.Add(this.AMIPoster);
+            this.AdminTab.Controls.Add(this.AMIRelease);
+            this.AdminTab.Controls.Add(this.AMIDirector);
+            this.AdminTab.Controls.Add(this.AMIActor);
+            this.AdminTab.Controls.Add(this.AMIRating);
+            this.AdminTab.Controls.Add(this.AMIGenre);
+            this.AdminTab.Controls.Add(this.AMIDescription);
+            this.AdminTab.Controls.Add(this.AMISynopsis);
+            this.AdminTab.Controls.Add(this.AMILength);
+            this.AdminTab.Controls.Add(this.AMITitle);
+            this.AdminTab.Controls.Add(this.AMIGenreBox);
+            this.AdminTab.Controls.Add(this.AMIRatingBox);
             this.AdminTab.Controls.Add(this.AddBtn);
+            this.AdminTab.Controls.Add(this.pictureBox10);
             this.AdminTab.Controls.Add(this.pictureBox1);
             this.AdminTab.Location = new System.Drawing.Point(4, 22);
             this.AdminTab.Name = "AdminTab";
             this.AdminTab.Size = new System.Drawing.Size(962, 773);
             this.AdminTab.TabIndex = 10;
-            this.AdminTab.Text = "Admin";
+            this.AdminTab.Text = "Admin Add Movie";
             this.AdminTab.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(618, 71);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(96, 20);
+            this.label3.TabIndex = 118;
+            this.label3.Text = "Showtimes";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(158, 71);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(152, 20);
+            this.label2.TabIndex = 117;
+            this.label2.Text = "Movie Information";
             // 
             // st9lbl
             // 
             this.st9lbl.AutoSize = true;
-            this.st9lbl.Location = new System.Drawing.Point(563, 309);
+            this.st9lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st9lbl.Location = new System.Drawing.Point(516, 496);
             this.st9lbl.Name = "st9lbl";
-            this.st9lbl.Size = new System.Drawing.Size(62, 13);
+            this.st9lbl.Size = new System.Drawing.Size(76, 16);
             this.st9lbl.TabIndex = 115;
             this.st9lbl.Text = "Showtime 9";
             this.st9lbl.Visible = false;
@@ -4766,9 +4307,10 @@
             // st8lbl
             // 
             this.st8lbl.AutoSize = true;
-            this.st8lbl.Location = new System.Drawing.Point(563, 283);
+            this.st8lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st8lbl.Location = new System.Drawing.Point(516, 448);
             this.st8lbl.Name = "st8lbl";
-            this.st8lbl.Size = new System.Drawing.Size(62, 13);
+            this.st8lbl.Size = new System.Drawing.Size(76, 16);
             this.st8lbl.TabIndex = 114;
             this.st8lbl.Text = "Showtime 8";
             this.st8lbl.Visible = false;
@@ -4776,9 +4318,10 @@
             // st7lbl
             // 
             this.st7lbl.AutoSize = true;
-            this.st7lbl.Location = new System.Drawing.Point(563, 257);
+            this.st7lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st7lbl.Location = new System.Drawing.Point(516, 400);
             this.st7lbl.Name = "st7lbl";
-            this.st7lbl.Size = new System.Drawing.Size(62, 13);
+            this.st7lbl.Size = new System.Drawing.Size(76, 16);
             this.st7lbl.TabIndex = 113;
             this.st7lbl.Text = "Showtime 7";
             this.st7lbl.Visible = false;
@@ -4786,9 +4329,10 @@
             // st6lbl
             // 
             this.st6lbl.AutoSize = true;
-            this.st6lbl.Location = new System.Drawing.Point(563, 232);
+            this.st6lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st6lbl.Location = new System.Drawing.Point(516, 351);
             this.st6lbl.Name = "st6lbl";
-            this.st6lbl.Size = new System.Drawing.Size(62, 13);
+            this.st6lbl.Size = new System.Drawing.Size(76, 16);
             this.st6lbl.TabIndex = 112;
             this.st6lbl.Text = "Showtime 6";
             this.st6lbl.Visible = false;
@@ -4796,9 +4340,10 @@
             // st5lbl
             // 
             this.st5lbl.AutoSize = true;
-            this.st5lbl.Location = new System.Drawing.Point(563, 205);
+            this.st5lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st5lbl.Location = new System.Drawing.Point(516, 304);
             this.st5lbl.Name = "st5lbl";
-            this.st5lbl.Size = new System.Drawing.Size(62, 13);
+            this.st5lbl.Size = new System.Drawing.Size(76, 16);
             this.st5lbl.TabIndex = 111;
             this.st5lbl.Text = "Showtime 5";
             this.st5lbl.Visible = false;
@@ -4806,9 +4351,10 @@
             // st4lbl
             // 
             this.st4lbl.AutoSize = true;
-            this.st4lbl.Location = new System.Drawing.Point(563, 179);
+            this.st4lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st4lbl.Location = new System.Drawing.Point(516, 256);
             this.st4lbl.Name = "st4lbl";
-            this.st4lbl.Size = new System.Drawing.Size(62, 13);
+            this.st4lbl.Size = new System.Drawing.Size(76, 16);
             this.st4lbl.TabIndex = 110;
             this.st4lbl.Text = "Showtime 4";
             this.st4lbl.Visible = false;
@@ -4816,9 +4362,10 @@
             // st3lbl
             // 
             this.st3lbl.AutoSize = true;
-            this.st3lbl.Location = new System.Drawing.Point(563, 153);
+            this.st3lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st3lbl.Location = new System.Drawing.Point(516, 208);
             this.st3lbl.Name = "st3lbl";
-            this.st3lbl.Size = new System.Drawing.Size(62, 13);
+            this.st3lbl.Size = new System.Drawing.Size(76, 16);
             this.st3lbl.TabIndex = 109;
             this.st3lbl.Text = "Showtime 3";
             this.st3lbl.Visible = false;
@@ -4826,18 +4373,19 @@
             // st2lbl
             // 
             this.st2lbl.AutoSize = true;
-            this.st2lbl.Location = new System.Drawing.Point(563, 127);
+            this.st2lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st2lbl.Location = new System.Drawing.Point(516, 160);
             this.st2lbl.Name = "st2lbl";
-            this.st2lbl.Size = new System.Drawing.Size(62, 13);
+            this.st2lbl.Size = new System.Drawing.Size(76, 16);
             this.st2lbl.TabIndex = 108;
             this.st2lbl.Text = "Showtime 2";
             this.st2lbl.Visible = false;
             // 
             // moreShowingsbtn
             // 
-            this.moreShowingsbtn.Location = new System.Drawing.Point(651, 335);
+            this.moreShowingsbtn.Location = new System.Drawing.Point(767, 105);
             this.moreShowingsbtn.Name = "moreShowingsbtn";
-            this.moreShowingsbtn.Size = new System.Drawing.Size(114, 45);
+            this.moreShowingsbtn.Size = new System.Drawing.Size(128, 25);
             this.moreShowingsbtn.TabIndex = 107;
             this.moreShowingsbtn.Text = "Add Another Showtime";
             this.moreShowingsbtn.UseVisualStyleBackColor = true;
@@ -4845,264 +4393,257 @@
             // 
             // st9txt
             // 
-            this.st9txt.Location = new System.Drawing.Point(658, 309);
+            this.st9txt.Location = new System.Drawing.Point(618, 492);
             this.st9txt.Name = "st9txt";
-            this.st9txt.Size = new System.Drawing.Size(100, 20);
+            this.st9txt.Size = new System.Drawing.Size(128, 20);
             this.st9txt.TabIndex = 106;
             this.st9txt.Visible = false;
             // 
             // st8txt
             // 
-            this.st8txt.Location = new System.Drawing.Point(658, 283);
+            this.st8txt.Location = new System.Drawing.Point(618, 444);
             this.st8txt.Name = "st8txt";
-            this.st8txt.Size = new System.Drawing.Size(100, 20);
+            this.st8txt.Size = new System.Drawing.Size(128, 20);
             this.st8txt.TabIndex = 105;
             this.st8txt.Visible = false;
             // 
             // st7txt
             // 
-            this.st7txt.Location = new System.Drawing.Point(658, 257);
+            this.st7txt.Location = new System.Drawing.Point(618, 396);
             this.st7txt.Name = "st7txt";
-            this.st7txt.Size = new System.Drawing.Size(100, 20);
+            this.st7txt.Size = new System.Drawing.Size(128, 20);
             this.st7txt.TabIndex = 104;
             this.st7txt.Visible = false;
             // 
             // st6txt
             // 
-            this.st6txt.Location = new System.Drawing.Point(658, 231);
+            this.st6txt.Location = new System.Drawing.Point(618, 347);
             this.st6txt.Name = "st6txt";
-            this.st6txt.Size = new System.Drawing.Size(100, 20);
+            this.st6txt.Size = new System.Drawing.Size(128, 20);
             this.st6txt.TabIndex = 103;
             this.st6txt.Visible = false;
             // 
             // st5txt
             // 
-            this.st5txt.Location = new System.Drawing.Point(658, 205);
+            this.st5txt.Location = new System.Drawing.Point(618, 300);
             this.st5txt.Name = "st5txt";
-            this.st5txt.Size = new System.Drawing.Size(100, 20);
+            this.st5txt.Size = new System.Drawing.Size(128, 20);
             this.st5txt.TabIndex = 102;
             this.st5txt.Visible = false;
             // 
             // st4txt
             // 
-            this.st4txt.Location = new System.Drawing.Point(658, 179);
+            this.st4txt.Location = new System.Drawing.Point(618, 252);
             this.st4txt.Name = "st4txt";
-            this.st4txt.Size = new System.Drawing.Size(100, 20);
+            this.st4txt.Size = new System.Drawing.Size(128, 20);
             this.st4txt.TabIndex = 101;
             this.st4txt.Visible = false;
             // 
             // st3txt
             // 
-            this.st3txt.Location = new System.Drawing.Point(658, 153);
+            this.st3txt.Location = new System.Drawing.Point(618, 203);
             this.st3txt.Name = "st3txt";
-            this.st3txt.Size = new System.Drawing.Size(100, 20);
+            this.st3txt.Size = new System.Drawing.Size(128, 20);
             this.st3txt.TabIndex = 100;
             this.st3txt.Visible = false;
             // 
             // st2txt
             // 
-            this.st2txt.Location = new System.Drawing.Point(658, 127);
+            this.st2txt.Location = new System.Drawing.Point(618, 156);
             this.st2txt.Name = "st2txt";
-            this.st2txt.Size = new System.Drawing.Size(100, 20);
+            this.st2txt.Size = new System.Drawing.Size(128, 20);
             this.st2txt.TabIndex = 99;
             this.st2txt.Visible = false;
             // 
             // st1txt
             // 
-            this.st1txt.Location = new System.Drawing.Point(658, 101);
+            this.st1txt.Location = new System.Drawing.Point(618, 108);
             this.st1txt.Name = "st1txt";
-            this.st1txt.Size = new System.Drawing.Size(100, 20);
+            this.st1txt.Size = new System.Drawing.Size(128, 20);
             this.st1txt.TabIndex = 98;
             // 
-            // posterPathtxt
+            // AMIposterPathtxt
             // 
-            this.posterPathtxt.Enabled = false;
-            this.posterPathtxt.Location = new System.Drawing.Point(252, 436);
-            this.posterPathtxt.Name = "posterPathtxt";
-            this.posterPathtxt.Size = new System.Drawing.Size(151, 20);
-            this.posterPathtxt.TabIndex = 94;
+            this.AMIposterPathtxt.Enabled = false;
+            this.AMIposterPathtxt.Location = new System.Drawing.Point(158, 542);
+            this.AMIposterPathtxt.Name = "AMIposterPathtxt";
+            this.AMIposterPathtxt.Size = new System.Drawing.Size(200, 20);
+            this.AMIposterPathtxt.TabIndex = 94;
             // 
-            // DirectorBox
+            // AMIDirectorBox
             // 
-            this.DirectorBox.Location = new System.Drawing.Point(112, 367);
-            this.DirectorBox.Name = "DirectorBox";
-            this.DirectorBox.Size = new System.Drawing.Size(153, 20);
-            this.DirectorBox.TabIndex = 79;
+            this.AMIDirectorBox.Location = new System.Drawing.Point(158, 448);
+            this.AMIDirectorBox.Name = "AMIDirectorBox";
+            this.AMIDirectorBox.Size = new System.Drawing.Size(200, 20);
+            this.AMIDirectorBox.TabIndex = 79;
             // 
-            // ActorBox
+            // AMIActorBox
             // 
-            this.ActorBox.Location = new System.Drawing.Point(112, 303);
-            this.ActorBox.Multiline = true;
-            this.ActorBox.Name = "ActorBox";
-            this.ActorBox.Size = new System.Drawing.Size(291, 39);
-            this.ActorBox.TabIndex = 78;
+            this.AMIActorBox.Location = new System.Drawing.Point(158, 400);
+            this.AMIActorBox.Multiline = true;
+            this.AMIActorBox.Name = "AMIActorBox";
+            this.AMIActorBox.Size = new System.Drawing.Size(200, 39);
+            this.AMIActorBox.TabIndex = 78;
             // 
-            // SynopsisBox
+            // AMISynopsisBox
             // 
-            this.SynopsisBox.Location = new System.Drawing.Point(112, 141);
-            this.SynopsisBox.Name = "SynopsisBox";
-            this.SynopsisBox.Size = new System.Drawing.Size(153, 20);
-            this.SynopsisBox.TabIndex = 76;
+            this.AMISynopsisBox.Location = new System.Drawing.Point(158, 207);
+            this.AMISynopsisBox.Name = "AMISynopsisBox";
+            this.AMISynopsisBox.Size = new System.Drawing.Size(200, 20);
+            this.AMISynopsisBox.TabIndex = 76;
             // 
-            // DescriptionBox
+            // AMIDescriptionBox
             // 
-            this.DescriptionBox.Location = new System.Drawing.Point(112, 184);
-            this.DescriptionBox.Name = "DescriptionBox";
-            this.DescriptionBox.Size = new System.Drawing.Size(153, 20);
-            this.DescriptionBox.TabIndex = 75;
+            this.AMIDescriptionBox.Location = new System.Drawing.Point(158, 256);
+            this.AMIDescriptionBox.Name = "AMIDescriptionBox";
+            this.AMIDescriptionBox.Size = new System.Drawing.Size(200, 20);
+            this.AMIDescriptionBox.TabIndex = 75;
             // 
-            // LengthBox
+            // AMILengthBox
             // 
-            this.LengthBox.Location = new System.Drawing.Point(112, 101);
-            this.LengthBox.Name = "LengthBox";
-            this.LengthBox.Size = new System.Drawing.Size(153, 20);
-            this.LengthBox.TabIndex = 74;
+            this.AMILengthBox.Location = new System.Drawing.Point(158, 160);
+            this.AMILengthBox.Name = "AMILengthBox";
+            this.AMILengthBox.Size = new System.Drawing.Size(200, 20);
+            this.AMILengthBox.TabIndex = 74;
             // 
-            // TitleBox
+            // AMITitleBox
             // 
-            this.TitleBox.Location = new System.Drawing.Point(112, 59);
-            this.TitleBox.Name = "TitleBox";
-            this.TitleBox.Size = new System.Drawing.Size(153, 20);
-            this.TitleBox.TabIndex = 71;
+            this.AMITitleBox.Location = new System.Drawing.Point(158, 112);
+            this.AMITitleBox.Name = "AMITitleBox";
+            this.AMITitleBox.Size = new System.Drawing.Size(200, 20);
+            this.AMITitleBox.TabIndex = 71;
             // 
             // st1lbl
             // 
             this.st1lbl.AutoSize = true;
-            this.st1lbl.Location = new System.Drawing.Point(563, 104);
+            this.st1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st1lbl.Location = new System.Drawing.Point(516, 112);
             this.st1lbl.Name = "st1lbl";
-            this.st1lbl.Size = new System.Drawing.Size(62, 13);
+            this.st1lbl.Size = new System.Drawing.Size(76, 16);
             this.st1lbl.TabIndex = 97;
             this.st1lbl.Text = "Showtime 1";
             // 
-            // label3
+            // AMIuploadPosterbtn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(664, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 13);
-            this.label3.TabIndex = 96;
-            this.label3.Text = "Add Showtimes";
+            this.AMIuploadPosterbtn.Location = new System.Drawing.Point(364, 539);
+            this.AMIuploadPosterbtn.Name = "AMIuploadPosterbtn";
+            this.AMIuploadPosterbtn.Size = new System.Drawing.Size(128, 25);
+            this.AMIuploadPosterbtn.TabIndex = 93;
+            this.AMIuploadPosterbtn.Text = "Upload Poster";
+            this.AMIuploadPosterbtn.UseVisualStyleBackColor = true;
+            this.AMIuploadPosterbtn.Click += new System.EventHandler(this.uploadPosterbtn_Click_1);
             // 
-            // label2
+            // AMIReleaseDTPicker
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 95;
-            this.label2.Text = "Add Movie Info";
+            this.AMIReleaseDTPicker.Location = new System.Drawing.Point(158, 496);
+            this.AMIReleaseDTPicker.Name = "AMIReleaseDTPicker";
+            this.AMIReleaseDTPicker.Size = new System.Drawing.Size(200, 20);
+            this.AMIReleaseDTPicker.TabIndex = 92;
             // 
-            // uploadPosterbtn
+            // AMIPoster
             // 
-            this.uploadPosterbtn.Location = new System.Drawing.Point(112, 433);
-            this.uploadPosterbtn.Name = "uploadPosterbtn";
-            this.uploadPosterbtn.Size = new System.Drawing.Size(117, 25);
-            this.uploadPosterbtn.TabIndex = 93;
-            this.uploadPosterbtn.Text = "Upload Poster";
-            this.uploadPosterbtn.UseVisualStyleBackColor = true;
-            this.uploadPosterbtn.Click += new System.EventHandler(this.uploadPosterbtn_Click_1);
+            this.AMIPoster.AutoSize = true;
+            this.AMIPoster.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMIPoster.Location = new System.Drawing.Point(50, 546);
+            this.AMIPoster.Name = "AMIPoster";
+            this.AMIPoster.Size = new System.Drawing.Size(74, 16);
+            this.AMIPoster.TabIndex = 91;
+            this.AMIPoster.Text = "PosterPath";
             // 
-            // ReleaseDTPicker
+            // AMIRelease
             // 
-            this.ReleaseDTPicker.Location = new System.Drawing.Point(112, 393);
-            this.ReleaseDTPicker.Name = "ReleaseDTPicker";
-            this.ReleaseDTPicker.Size = new System.Drawing.Size(200, 20);
-            this.ReleaseDTPicker.TabIndex = 92;
+            this.AMIRelease.AutoSize = true;
+            this.AMIRelease.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMIRelease.Location = new System.Drawing.Point(32, 496);
+            this.AMIRelease.Name = "AMIRelease";
+            this.AMIRelease.Size = new System.Drawing.Size(92, 16);
+            this.AMIRelease.TabIndex = 90;
+            this.AMIRelease.Text = "Release Date";
             // 
-            // label65
+            // AMIDirector
             // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(34, 439);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(59, 13);
-            this.label65.TabIndex = 91;
-            this.label65.Text = "PosterPath";
+            this.AMIDirector.AutoSize = true;
+            this.AMIDirector.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMIDirector.Location = new System.Drawing.Point(67, 448);
+            this.AMIDirector.Name = "AMIDirector";
+            this.AMIDirector.Size = new System.Drawing.Size(55, 16);
+            this.AMIDirector.TabIndex = 89;
+            this.AMIDirector.Text = "Director";
             // 
-            // label64
+            // AMIActor
             // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(34, 399);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(72, 13);
-            this.label64.TabIndex = 90;
-            this.label64.Text = "Release Date";
+            this.AMIActor.AutoSize = true;
+            this.AMIActor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMIActor.Location = new System.Drawing.Point(83, 400);
+            this.AMIActor.Name = "AMIActor";
+            this.AMIActor.Size = new System.Drawing.Size(39, 16);
+            this.AMIActor.TabIndex = 88;
+            this.AMIActor.Text = "Actor";
             // 
-            // label63
+            // AMIRating
             // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(34, 367);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(44, 13);
-            this.label63.TabIndex = 89;
-            this.label63.Text = "Director";
+            this.AMIRating.AutoSize = true;
+            this.AMIRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMIRating.Location = new System.Drawing.Point(75, 351);
+            this.AMIRating.Name = "AMIRating";
+            this.AMIRating.Size = new System.Drawing.Size(47, 16);
+            this.AMIRating.TabIndex = 87;
+            this.AMIRating.Text = "Rating";
             // 
-            // label62
+            // AMIGenre
             // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(34, 306);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(32, 13);
-            this.label62.TabIndex = 88;
-            this.label62.Text = "Actor";
+            this.AMIGenre.AutoSize = true;
+            this.AMIGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMIGenre.Location = new System.Drawing.Point(77, 304);
+            this.AMIGenre.Name = "AMIGenre";
+            this.AMIGenre.Size = new System.Drawing.Size(45, 16);
+            this.AMIGenre.TabIndex = 86;
+            this.AMIGenre.Text = "Genre";
             // 
-            // label61
+            // AMIDescription
             // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(34, 265);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(38, 13);
-            this.label61.TabIndex = 87;
-            this.label61.Text = "Rating";
+            this.AMIDescription.AutoSize = true;
+            this.AMIDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMIDescription.Location = new System.Drawing.Point(48, 256);
+            this.AMIDescription.Name = "AMIDescription";
+            this.AMIDescription.Size = new System.Drawing.Size(76, 16);
+            this.AMIDescription.TabIndex = 85;
+            this.AMIDescription.Text = "Description";
             // 
-            // label60
+            // AMISynopsis
             // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(34, 227);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(36, 13);
-            this.label60.TabIndex = 86;
-            this.label60.Text = "Genre";
+            this.AMISynopsis.AutoSize = true;
+            this.AMISynopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMISynopsis.Location = new System.Drawing.Point(58, 207);
+            this.AMISynopsis.Name = "AMISynopsis";
+            this.AMISynopsis.Size = new System.Drawing.Size(64, 16);
+            this.AMISynopsis.TabIndex = 84;
+            this.AMISynopsis.Text = "Synopsis";
             // 
-            // label59
+            // AMILength
             // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(34, 187);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(60, 13);
-            this.label59.TabIndex = 85;
-            this.label59.Text = "Description";
+            this.AMILength.AutoSize = true;
+            this.AMILength.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMILength.Location = new System.Drawing.Point(74, 160);
+            this.AMILength.Name = "AMILength";
+            this.AMILength.Size = new System.Drawing.Size(48, 16);
+            this.AMILength.TabIndex = 83;
+            this.AMILength.Text = "Length";
             // 
-            // label58
+            // AMITitle
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(34, 144);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(49, 13);
-            this.label58.TabIndex = 84;
-            this.label58.Text = "Synopsis";
+            this.AMITitle.AutoSize = true;
+            this.AMITitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AMITitle.Location = new System.Drawing.Point(88, 112);
+            this.AMITitle.Name = "AMITitle";
+            this.AMITitle.Size = new System.Drawing.Size(34, 16);
+            this.AMITitle.TabIndex = 82;
+            this.AMITitle.Text = "Title";
             // 
-            // label57
+            // AMIGenreBox
             // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(34, 104);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(40, 13);
-            this.label57.TabIndex = 83;
-            this.label57.Text = "Length";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(34, 62);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(27, 13);
-            this.label56.TabIndex = 82;
-            this.label56.Text = "Title";
-            // 
-            // GenreBox
-            // 
-            this.GenreBox.FormattingEnabled = true;
-            this.GenreBox.Items.AddRange(new object[] {
+            this.AMIGenreBox.FormattingEnabled = true;
+            this.AMIGenreBox.Items.AddRange(new object[] {
             "Action",
             "Adventure",
             "Comedy",
@@ -5121,65 +4662,55 @@
             "Thriller",
             "War",
             "Western"});
-            this.GenreBox.Location = new System.Drawing.Point(112, 224);
-            this.GenreBox.Name = "GenreBox";
-            this.GenreBox.Size = new System.Drawing.Size(121, 21);
-            this.GenreBox.TabIndex = 77;
+            this.AMIGenreBox.Location = new System.Drawing.Point(158, 304);
+            this.AMIGenreBox.Name = "AMIGenreBox";
+            this.AMIGenreBox.Size = new System.Drawing.Size(200, 21);
+            this.AMIGenreBox.TabIndex = 77;
             // 
-            // RatingBox
+            // AMIRatingBox
             // 
-            this.RatingBox.FormattingEnabled = true;
-            this.RatingBox.Items.AddRange(new object[] {
+            this.AMIRatingBox.FormattingEnabled = true;
+            this.AMIRatingBox.Items.AddRange(new object[] {
             "G",
             "PG",
             "PG-13",
             "R",
             "NC-17",
             "Not Rated"});
-            this.RatingBox.Location = new System.Drawing.Point(112, 262);
-            this.RatingBox.Name = "RatingBox";
-            this.RatingBox.Size = new System.Drawing.Size(121, 21);
-            this.RatingBox.TabIndex = 73;
+            this.AMIRatingBox.Location = new System.Drawing.Point(158, 352);
+            this.AMIRatingBox.Name = "AMIRatingBox";
+            this.AMIRatingBox.Size = new System.Drawing.Size(200, 21);
+            this.AMIRatingBox.TabIndex = 73;
             // 
             // AddBtn
             // 
-            this.AddBtn.Location = new System.Drawing.Point(112, 472);
+            this.AddBtn.Location = new System.Drawing.Point(618, 539);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(75, 23);
+            this.AddBtn.Size = new System.Drawing.Size(128, 25);
             this.AddBtn.TabIndex = 72;
-            this.AddBtn.Text = "Add";
+            this.AddBtn.Text = "Add Movie";
             this.AddBtn.UseVisualStyleBackColor = true;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(964, 773);
-            this.pictureBox1.TabIndex = 70;
-            this.pictureBox1.TabStop = false;
-            // 
             // AdminCtrl
             // 
-            this.AdminCtrl.BackColor = System.Drawing.Color.Silver;
+            this.AdminCtrl.BackColor = System.Drawing.Color.Transparent;
+            this.AdminCtrl.Controls.Add(this.adminControlDiv);
             this.AdminCtrl.Controls.Add(this.adminRemove);
             this.AdminCtrl.Controls.Add(this.adminEdit);
             this.AdminCtrl.Controls.Add(this.adminAdd);
-            this.AdminCtrl.Controls.Add(this.adminctrllbl);
+            this.AdminCtrl.Controls.Add(this.pictureBox8);
             this.AdminCtrl.Location = new System.Drawing.Point(4, 22);
             this.AdminCtrl.Name = "AdminCtrl";
             this.AdminCtrl.Padding = new System.Windows.Forms.Padding(3);
             this.AdminCtrl.Size = new System.Drawing.Size(962, 773);
             this.AdminCtrl.TabIndex = 11;
-            this.AdminCtrl.Text = "AdminCntrl";
+            this.AdminCtrl.Text = "Admin Control";
             // 
             // adminRemove
             // 
             this.adminRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminRemove.Location = new System.Drawing.Point(383, 283);
+            this.adminRemove.Location = new System.Drawing.Point(383, 208);
             this.adminRemove.Name = "adminRemove";
             this.adminRemove.Size = new System.Drawing.Size(189, 40);
             this.adminRemove.TabIndex = 3;
@@ -5189,7 +4720,7 @@
             // adminEdit
             // 
             this.adminEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminEdit.Location = new System.Drawing.Point(383, 187);
+            this.adminEdit.Location = new System.Drawing.Point(383, 144);
             this.adminEdit.Name = "adminEdit";
             this.adminEdit.Size = new System.Drawing.Size(189, 41);
             this.adminEdit.TabIndex = 2;
@@ -5200,7 +4731,7 @@
             // adminAdd
             // 
             this.adminAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminAdd.Location = new System.Drawing.Point(383, 104);
+            this.adminAdd.Location = new System.Drawing.Point(383, 80);
             this.adminAdd.Name = "adminAdd";
             this.adminAdd.Size = new System.Drawing.Size(189, 37);
             this.adminAdd.TabIndex = 1;
@@ -5208,33 +4739,23 @@
             this.adminAdd.UseVisualStyleBackColor = true;
             this.adminAdd.Click += new System.EventHandler(this.button7_Click);
             // 
-            // adminctrllbl
-            // 
-            this.adminctrllbl.AutoSize = true;
-            this.adminctrllbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminctrllbl.Location = new System.Drawing.Point(366, 40);
-            this.adminctrllbl.Name = "adminctrllbl";
-            this.adminctrllbl.Size = new System.Drawing.Size(224, 25);
-            this.adminctrllbl.TabIndex = 0;
-            this.adminctrllbl.Text = "Administrator Controls";
-            // 
             // PrintTix
             // 
             this.PrintTix.BackColor = System.Drawing.Color.Silver;
             this.PrintTix.Controls.Add(this.timetimelabel);
             this.PrintTix.Controls.Add(this.timeticketlabel);
             this.PrintTix.Controls.Add(this.namelabeltix);
-            this.PrintTix.Controls.Add(this.movielogopictureticket);
             this.PrintTix.Controls.Add(this.gohomeLabel);
             this.PrintTix.Controls.Add(this.PrintNowLabel);
             this.PrintTix.Controls.Add(this.SeatticketLabel);
             this.PrintTix.Controls.Add(this.TicketDateLabel);
             this.PrintTix.Controls.Add(this.TicketAdmissionLabel);
             this.PrintTix.Controls.Add(this.ticketTitle);
-            this.PrintTix.Controls.Add(this.pictureBox5);
             this.PrintTix.Controls.Add(this.gobackhomebutton);
             this.PrintTix.Controls.Add(this.printTixButton);
             this.PrintTix.Controls.Add(this.PrintLabel);
+            this.PrintTix.Controls.Add(this.movielogopictureticket);
+            this.PrintTix.Controls.Add(this.pictureBox5);
             this.PrintTix.Location = new System.Drawing.Point(4, 22);
             this.PrintTix.Name = "PrintTix";
             this.PrintTix.Padding = new System.Windows.Forms.Padding(3);
@@ -5274,17 +4795,6 @@
             this.namelabeltix.Size = new System.Drawing.Size(55, 20);
             this.namelabeltix.TabIndex = 13;
             this.namelabeltix.Text = "Name";
-            // 
-            // movielogopictureticket
-            // 
-            this.movielogopictureticket.BackColor = System.Drawing.Color.White;
-            this.movielogopictureticket.Image = ((System.Drawing.Image)(resources.GetObject("movielogopictureticket.Image")));
-            this.movielogopictureticket.Location = new System.Drawing.Point(293, 256);
-            this.movielogopictureticket.Name = "movielogopictureticket";
-            this.movielogopictureticket.Size = new System.Drawing.Size(73, 73);
-            this.movielogopictureticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.movielogopictureticket.TabIndex = 12;
-            this.movielogopictureticket.TabStop = false;
             // 
             // gohomeLabel
             // 
@@ -5349,18 +4859,6 @@
             this.ticketTitle.TabIndex = 4;
             this.ticketTitle.Text = "Selected Movie Title";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::MovieTheater.Properties.Resources.ticket;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.InitialImage = global::MovieTheater.Properties.Resources.ticket;
-            this.pictureBox5.Location = new System.Drawing.Point(162, 98);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(533, 241);
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
             // gobackhomebutton
             // 
             this.gobackhomebutton.Location = new System.Drawing.Point(509, 424);
@@ -5391,6 +4889,1068 @@
             this.PrintLabel.Size = new System.Drawing.Size(144, 25);
             this.PrintLabel.TabIndex = 0;
             this.PrintLabel.Text = "Print Tickets";
+            // 
+            // BrowseTab
+            // 
+            this.BrowseTab.Controls.Add(this.BShowing15);
+            this.BrowseTab.Controls.Add(this.BShowing14);
+            this.BrowseTab.Controls.Add(this.BShowing13);
+            this.BrowseTab.Controls.Add(this.BShowing12);
+            this.BrowseTab.Controls.Add(this.BShowing11);
+            this.BrowseTab.Controls.Add(this.BShowing10);
+            this.BrowseTab.Controls.Add(this.BShowing9);
+            this.BrowseTab.Controls.Add(this.BShowing8);
+            this.BrowseTab.Controls.Add(this.BShowing7);
+            this.BrowseTab.Controls.Add(this.BShowing6);
+            this.BrowseTab.Controls.Add(this.BShowing5);
+            this.BrowseTab.Controls.Add(this.BShowing4);
+            this.BrowseTab.Controls.Add(this.BShowing3);
+            this.BrowseTab.Controls.Add(this.BShowing2);
+            this.BrowseTab.Controls.Add(this.BShowing1);
+            this.BrowseTab.Controls.Add(this.BMovieTitle15);
+            this.BrowseTab.Controls.Add(this.BMovieTitle14);
+            this.BrowseTab.Controls.Add(this.BMovieTitle13);
+            this.BrowseTab.Controls.Add(this.BMovieTitle12);
+            this.BrowseTab.Controls.Add(this.BMovieTitle11);
+            this.BrowseTab.Controls.Add(this.pictureBox14);
+            this.BrowseTab.Controls.Add(this.pictureBox15);
+            this.BrowseTab.Controls.Add(this.pictureBox16);
+            this.BrowseTab.Controls.Add(this.pictureBox17);
+            this.BrowseTab.Controls.Add(this.pictureBox18);
+            this.BrowseTab.Controls.Add(this.BMovieTitle10);
+            this.BrowseTab.Controls.Add(this.BMovieTitle9);
+            this.BrowseTab.Controls.Add(this.BMovieTitle8);
+            this.BrowseTab.Controls.Add(this.BMovieTitle7);
+            this.BrowseTab.Controls.Add(this.BMovieTitle6);
+            this.BrowseTab.Controls.Add(this.BMovieTitle5);
+            this.BrowseTab.Controls.Add(this.BMovieTitle4);
+            this.BrowseTab.Controls.Add(this.BMovieTitle3);
+            this.BrowseTab.Controls.Add(this.BMovieTitle2);
+            this.BrowseTab.Controls.Add(this.BMovieTitle1);
+            this.BrowseTab.Controls.Add(this.pictureBox19);
+            this.BrowseTab.Controls.Add(this.pictureBox20);
+            this.BrowseTab.Controls.Add(this.pictureBox21);
+            this.BrowseTab.Controls.Add(this.pictureBox22);
+            this.BrowseTab.Controls.Add(this.pictureBox23);
+            this.BrowseTab.Controls.Add(this.pictureBox24);
+            this.BrowseTab.Controls.Add(this.pictureBox25);
+            this.BrowseTab.Controls.Add(this.pictureBox26);
+            this.BrowseTab.Controls.Add(this.pictureBox27);
+            this.BrowseTab.Controls.Add(this.pictureBox28);
+            this.BrowseTab.Controls.Add(this.pictureBox29);
+            this.BrowseTab.Controls.Add(this.backgroundB);
+            this.BrowseTab.Location = new System.Drawing.Point(4, 22);
+            this.BrowseTab.Name = "BrowseTab";
+            this.BrowseTab.Size = new System.Drawing.Size(962, 773);
+            this.BrowseTab.TabIndex = 13;
+            this.BrowseTab.Text = "Browse";
+            this.BrowseTab.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1003, 1018);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // BMovieTitle15
+            // 
+            this.BMovieTitle15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle15.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle15.Location = new System.Drawing.Point(785, 498);
+            this.BMovieTitle15.Name = "BMovieTitle15";
+            this.BMovieTitle15.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle15.TabIndex = 129;
+            this.BMovieTitle15.Text = "Movie Title 15";
+            this.BMovieTitle15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle14
+            // 
+            this.BMovieTitle14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle14.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle14.Location = new System.Drawing.Point(593, 498);
+            this.BMovieTitle14.Name = "BMovieTitle14";
+            this.BMovieTitle14.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle14.TabIndex = 128;
+            this.BMovieTitle14.Text = "Movie Title 14";
+            this.BMovieTitle14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle13
+            // 
+            this.BMovieTitle13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle13.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle13.Location = new System.Drawing.Point(401, 498);
+            this.BMovieTitle13.Name = "BMovieTitle13";
+            this.BMovieTitle13.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle13.TabIndex = 127;
+            this.BMovieTitle13.Text = "Movie Title 13";
+            this.BMovieTitle13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle12
+            // 
+            this.BMovieTitle12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle12.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle12.Location = new System.Drawing.Point(209, 498);
+            this.BMovieTitle12.Name = "BMovieTitle12";
+            this.BMovieTitle12.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle12.TabIndex = 126;
+            this.BMovieTitle12.Text = "Movie Title 12";
+            this.BMovieTitle12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle11
+            // 
+            this.BMovieTitle11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle11.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle11.Location = new System.Drawing.Point(17, 498);
+            this.BMovieTitle11.Name = "BMovieTitle11";
+            this.BMovieTitle11.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle11.TabIndex = 125;
+            this.BMovieTitle11.Text = "Movie Title 11";
+            this.BMovieTitle11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle10
+            // 
+            this.BMovieTitle10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle10.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle10.Location = new System.Drawing.Point(785, 274);
+            this.BMovieTitle10.Name = "BMovieTitle10";
+            this.BMovieTitle10.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle10.TabIndex = 119;
+            this.BMovieTitle10.Text = "Movie Title 10";
+            this.BMovieTitle10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle9
+            // 
+            this.BMovieTitle9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle9.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle9.Location = new System.Drawing.Point(593, 274);
+            this.BMovieTitle9.Name = "BMovieTitle9";
+            this.BMovieTitle9.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle9.TabIndex = 118;
+            this.BMovieTitle9.Text = "Movie Title 9";
+            this.BMovieTitle9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle8
+            // 
+            this.BMovieTitle8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle8.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle8.Location = new System.Drawing.Point(401, 274);
+            this.BMovieTitle8.Name = "BMovieTitle8";
+            this.BMovieTitle8.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle8.TabIndex = 117;
+            this.BMovieTitle8.Text = "Movie Title 8";
+            this.BMovieTitle8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle7
+            // 
+            this.BMovieTitle7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle7.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle7.Location = new System.Drawing.Point(209, 274);
+            this.BMovieTitle7.Name = "BMovieTitle7";
+            this.BMovieTitle7.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle7.TabIndex = 116;
+            this.BMovieTitle7.Text = "Movie Title 7";
+            this.BMovieTitle7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle6
+            // 
+            this.BMovieTitle6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle6.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle6.Location = new System.Drawing.Point(17, 274);
+            this.BMovieTitle6.Name = "BMovieTitle6";
+            this.BMovieTitle6.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle6.TabIndex = 115;
+            this.BMovieTitle6.Text = "Movie Title 6";
+            this.BMovieTitle6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle5
+            // 
+            this.BMovieTitle5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle5.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle5.Location = new System.Drawing.Point(785, 50);
+            this.BMovieTitle5.Name = "BMovieTitle5";
+            this.BMovieTitle5.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle5.TabIndex = 114;
+            this.BMovieTitle5.Text = "Movie Title 5";
+            this.BMovieTitle5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle4
+            // 
+            this.BMovieTitle4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle4.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle4.Location = new System.Drawing.Point(593, 50);
+            this.BMovieTitle4.Name = "BMovieTitle4";
+            this.BMovieTitle4.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle4.TabIndex = 113;
+            this.BMovieTitle4.Text = "Movie Title 4";
+            this.BMovieTitle4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle3
+            // 
+            this.BMovieTitle3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle3.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle3.Location = new System.Drawing.Point(401, 50);
+            this.BMovieTitle3.Name = "BMovieTitle3";
+            this.BMovieTitle3.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle3.TabIndex = 112;
+            this.BMovieTitle3.Text = "Movie Title 3";
+            this.BMovieTitle3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle2
+            // 
+            this.BMovieTitle2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle2.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle2.Location = new System.Drawing.Point(209, 50);
+            this.BMovieTitle2.Name = "BMovieTitle2";
+            this.BMovieTitle2.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle2.TabIndex = 111;
+            this.BMovieTitle2.Text = "Movie Title 2";
+            this.BMovieTitle2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // BMovieTitle1
+            // 
+            this.BMovieTitle1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BMovieTitle1.BackColor = System.Drawing.Color.Transparent;
+            this.BMovieTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMovieTitle1.Location = new System.Drawing.Point(17, 50);
+            this.BMovieTitle1.Name = "BMovieTitle1";
+            this.BMovieTitle1.Size = new System.Drawing.Size(160, 30);
+            this.BMovieTitle1.TabIndex = 110;
+            this.BMovieTitle1.Text = "Movie Title 1";
+            this.BMovieTitle1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // searchBtn
+            // 
+            this.searchBtn.Location = new System.Drawing.Point(937, 206);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(20, 20);
+            this.searchBtn.TabIndex = 77;
+            this.searchBtn.TabStop = false;
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            // 
+            // InfoBar
+            // 
+            this.InfoBar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.InfoBar.Image = ((System.Drawing.Image)(resources.GetObject("InfoBar.Image")));
+            this.InfoBar.Location = new System.Drawing.Point(0, 160);
+            this.InfoBar.Name = "InfoBar";
+            this.InfoBar.Size = new System.Drawing.Size(960, 64);
+            this.InfoBar.TabIndex = 61;
+            this.InfoBar.TabStop = false;
+            // 
+            // LoginBtn
+            // 
+            this.LoginBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.LoginBtn.Image = ((System.Drawing.Image)(resources.GetObject("LoginBtn.Image")));
+            this.LoginBtn.Location = new System.Drawing.Point(800, 128);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(160, 32);
+            this.LoginBtn.TabIndex = 73;
+            this.LoginBtn.TabStop = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
+            this.LoginBtn.MouseEnter += new System.EventHandler(this.LoginBtn_MouseEnter);
+            this.LoginBtn.MouseLeave += new System.EventHandler(this.LoginBtn_MouseLeave);
+            // 
+            // homeBtn
+            // 
+            this.homeBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
+            this.homeBtn.Location = new System.Drawing.Point(0, 128);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(160, 32);
+            this.homeBtn.TabIndex = 72;
+            this.homeBtn.TabStop = false;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            this.homeBtn.MouseEnter += new System.EventHandler(this.homeBtn_MouseEnter);
+            this.homeBtn.MouseLeave += new System.EventHandler(this.homeBtn_MouseLeave);
+            // 
+            // browseBtn
+            // 
+            this.browseBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.browseBtn.Image = ((System.Drawing.Image)(resources.GetObject("browseBtn.Image")));
+            this.browseBtn.Location = new System.Drawing.Point(160, 128);
+            this.browseBtn.Name = "browseBtn";
+            this.browseBtn.Size = new System.Drawing.Size(160, 32);
+            this.browseBtn.TabIndex = 71;
+            this.browseBtn.TabStop = false;
+            this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
+            this.browseBtn.MouseEnter += new System.EventHandler(this.browseBtn_MouseEnter);
+            this.browseBtn.MouseLeave += new System.EventHandler(this.browseBtn_MouseLeave);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(320, 128);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(160, 32);
+            this.pictureBox3.TabIndex = 70;
+            this.pictureBox3.TabStop = false;
+            // 
+            // NSPoster10
+            // 
+            this.NSPoster10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster10.ErrorImage")));
+            this.NSPoster10.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster10.Image")));
+            this.NSPoster10.Location = new System.Drawing.Point(800, 560);
+            this.NSPoster10.Name = "NSPoster10";
+            this.NSPoster10.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster10.TabIndex = 94;
+            this.NSPoster10.TabStop = false;
+            this.NSPoster10.Click += new System.EventHandler(this.NSPoster10_Click);
+            // 
+            // NSPoster9
+            // 
+            this.NSPoster9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster9.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster9.ErrorImage")));
+            this.NSPoster9.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster9.Image")));
+            this.NSPoster9.Location = new System.Drawing.Point(608, 560);
+            this.NSPoster9.Name = "NSPoster9";
+            this.NSPoster9.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster9.TabIndex = 93;
+            this.NSPoster9.TabStop = false;
+            this.NSPoster9.Click += new System.EventHandler(this.NSPoster9_Click);
+            // 
+            // NSPoster8
+            // 
+            this.NSPoster8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster8.ErrorImage")));
+            this.NSPoster8.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster8.Image")));
+            this.NSPoster8.Location = new System.Drawing.Point(416, 560);
+            this.NSPoster8.Name = "NSPoster8";
+            this.NSPoster8.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster8.TabIndex = 92;
+            this.NSPoster8.TabStop = false;
+            this.NSPoster8.Click += new System.EventHandler(this.NSPoster8_Click);
+            // 
+            // NSPoster7
+            // 
+            this.NSPoster7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster7.ErrorImage")));
+            this.NSPoster7.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster7.Image")));
+            this.NSPoster7.Location = new System.Drawing.Point(224, 560);
+            this.NSPoster7.Name = "NSPoster7";
+            this.NSPoster7.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster7.TabIndex = 91;
+            this.NSPoster7.TabStop = false;
+            this.NSPoster7.Click += new System.EventHandler(this.NSPoster7_Click);
+            // 
+            // NSPoster6
+            // 
+            this.NSPoster6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster6.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster6.ErrorImage")));
+            this.NSPoster6.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster6.Image")));
+            this.NSPoster6.Location = new System.Drawing.Point(33, 560);
+            this.NSPoster6.Name = "NSPoster6";
+            this.NSPoster6.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster6.TabIndex = 90;
+            this.NSPoster6.TabStop = false;
+            this.NSPoster6.Click += new System.EventHandler(this.NSPoster6_Click);
+            // 
+            // NSPoster5
+            // 
+            this.NSPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster5.ErrorImage")));
+            this.NSPoster5.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster5.Image")));
+            this.NSPoster5.Location = new System.Drawing.Point(801, 336);
+            this.NSPoster5.Name = "NSPoster5";
+            this.NSPoster5.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster5.TabIndex = 60;
+            this.NSPoster5.TabStop = false;
+            this.NSPoster5.Click += new System.EventHandler(this.NSPoster5_Click);
+            // 
+            // NSPoster4
+            // 
+            this.NSPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster4.ErrorImage")));
+            this.NSPoster4.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster4.Image")));
+            this.NSPoster4.Location = new System.Drawing.Point(608, 336);
+            this.NSPoster4.Name = "NSPoster4";
+            this.NSPoster4.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster4.TabIndex = 59;
+            this.NSPoster4.TabStop = false;
+            this.NSPoster4.Click += new System.EventHandler(this.NSPoster4_Click);
+            // 
+            // NSPoster3
+            // 
+            this.NSPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster3.ErrorImage")));
+            this.NSPoster3.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster3.Image")));
+            this.NSPoster3.Location = new System.Drawing.Point(416, 336);
+            this.NSPoster3.Name = "NSPoster3";
+            this.NSPoster3.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster3.TabIndex = 58;
+            this.NSPoster3.TabStop = false;
+            this.NSPoster3.Click += new System.EventHandler(this.NSPoster3_Click);
+            // 
+            // NSPoster2
+            // 
+            this.NSPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster2.ErrorImage")));
+            this.NSPoster2.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster2.Image")));
+            this.NSPoster2.Location = new System.Drawing.Point(224, 336);
+            this.NSPoster2.Name = "NSPoster2";
+            this.NSPoster2.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster2.TabIndex = 57;
+            this.NSPoster2.TabStop = false;
+            this.NSPoster2.Click += new System.EventHandler(this.NSPoster2_Click);
+            // 
+            // NSPoster1
+            // 
+            this.NSPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NSPoster1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NSPoster1.ErrorImage")));
+            this.NSPoster1.Image = ((System.Drawing.Image)(resources.GetObject("NSPoster1.Image")));
+            this.NSPoster1.Location = new System.Drawing.Point(33, 336);
+            this.NSPoster1.Name = "NSPoster1";
+            this.NSPoster1.Size = new System.Drawing.Size(128, 160);
+            this.NSPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NSPoster1.TabIndex = 56;
+            this.NSPoster1.TabStop = false;
+            this.NSPoster1.Click += new System.EventHandler(this.NSPoster1_Click);
+            // 
+            // NRPoster5
+            // 
+            this.NRPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster5.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster5.ErrorImage")));
+            this.NRPoster5.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster5.Image")));
+            this.NRPoster5.Location = new System.Drawing.Point(800, 80);
+            this.NRPoster5.Name = "NRPoster5";
+            this.NRPoster5.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster5.TabIndex = 55;
+            this.NRPoster5.TabStop = false;
+            this.NRPoster5.Click += new System.EventHandler(this.NRPoster5_Click);
+            // 
+            // NRPoster4
+            // 
+            this.NRPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster4.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster4.ErrorImage")));
+            this.NRPoster4.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster4.Image")));
+            this.NRPoster4.Location = new System.Drawing.Point(608, 80);
+            this.NRPoster4.Name = "NRPoster4";
+            this.NRPoster4.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster4.TabIndex = 54;
+            this.NRPoster4.TabStop = false;
+            this.NRPoster4.Click += new System.EventHandler(this.NRPoster4_Click);
+            // 
+            // NRPoster3
+            // 
+            this.NRPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster3.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster3.ErrorImage")));
+            this.NRPoster3.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster3.Image")));
+            this.NRPoster3.Location = new System.Drawing.Point(416, 80);
+            this.NRPoster3.Name = "NRPoster3";
+            this.NRPoster3.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster3.TabIndex = 53;
+            this.NRPoster3.TabStop = false;
+            this.NRPoster3.Click += new System.EventHandler(this.NRPoster3_Click);
+            // 
+            // NRPoster2
+            // 
+            this.NRPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster2.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster2.ErrorImage")));
+            this.NRPoster2.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster2.Image")));
+            this.NRPoster2.Location = new System.Drawing.Point(224, 80);
+            this.NRPoster2.Name = "NRPoster2";
+            this.NRPoster2.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster2.TabIndex = 52;
+            this.NRPoster2.TabStop = false;
+            this.NRPoster2.Click += new System.EventHandler(this.NRPoster2_Click);
+            // 
+            // NRPoster1
+            // 
+            this.NRPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.NRPoster1.BackColor = System.Drawing.Color.Transparent;
+            this.NRPoster1.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.NRPoster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NRPoster1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("NRPoster1.ErrorImage")));
+            this.NRPoster1.Image = ((System.Drawing.Image)(resources.GetObject("NRPoster1.Image")));
+            this.NRPoster1.Location = new System.Drawing.Point(32, 80);
+            this.NRPoster1.Name = "NRPoster1";
+            this.NRPoster1.Size = new System.Drawing.Size(128, 160);
+            this.NRPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NRPoster1.TabIndex = 51;
+            this.NRPoster1.TabStop = false;
+            this.NRPoster1.Click += new System.EventHandler(this.NRPoster1_Click);
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            pictureBox12.Location = new System.Drawing.Point(32, 272);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new System.Drawing.Size(768, 33);
+            pictureBox12.TabIndex = 50;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            pictureBox11.Location = new System.Drawing.Point(32, 16);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new System.Drawing.Size(768, 33);
+            pictureBox11.TabIndex = 49;
+            pictureBox11.TabStop = false;
+            // 
+            // BackgroundHome
+            // 
+            this.BackgroundHome.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BackgroundHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.BackgroundHome.Image = ((System.Drawing.Image)(resources.GetObject("BackgroundHome.Image")));
+            this.BackgroundHome.Location = new System.Drawing.Point(0, 0);
+            this.BackgroundHome.Name = "BackgroundHome";
+            this.BackgroundHome.Size = new System.Drawing.Size(961, 753);
+            this.BackgroundHome.TabIndex = 69;
+            this.BackgroundHome.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox29.Image = global::MovieTheater.Properties.Resources.browse_movies_div;
+            this.pictureBox29.Location = new System.Drawing.Point(32, 16);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(896, 33);
+            this.pictureBox29.TabIndex = 130;
+            this.pictureBox29.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox14.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.ErrorImage")));
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(800, 528);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 124;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox15.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.ErrorImage")));
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(608, 528);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 123;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox16.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.ErrorImage")));
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(416, 528);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 122;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox17.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.ErrorImage")));
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(224, 528);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 121;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox18.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.ErrorImage")));
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(33, 528);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 120;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox19.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.ErrorImage")));
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(800, 304);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 109;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox20.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.ErrorImage")));
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Location = new System.Drawing.Point(608, 304);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 108;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox21.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.ErrorImage")));
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.Location = new System.Drawing.Point(416, 304);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 107;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox22.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox22.ErrorImage")));
+            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
+            this.pictureBox22.Location = new System.Drawing.Point(224, 304);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 106;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox23.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox23.ErrorImage")));
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
+            this.pictureBox23.Location = new System.Drawing.Point(32, 304);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 105;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox24.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.pictureBox24.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox24.ErrorImage")));
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
+            this.pictureBox24.Location = new System.Drawing.Point(800, 80);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox24.TabIndex = 104;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox25.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.pictureBox25.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.ErrorImage")));
+            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
+            this.pictureBox25.Location = new System.Drawing.Point(608, 80);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox25.TabIndex = 103;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox26.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.pictureBox26.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox26.ErrorImage")));
+            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
+            this.pictureBox26.Location = new System.Drawing.Point(416, 80);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 102;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox27.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.pictureBox27.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox27.ErrorImage")));
+            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
+            this.pictureBox27.Location = new System.Drawing.Point(224, 80);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox27.TabIndex = 101;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox28.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.pictureBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox28.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox28.ErrorImage")));
+            this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
+            this.pictureBox28.Location = new System.Drawing.Point(32, 80);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(128, 160);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox28.TabIndex = 100;
+            this.pictureBox28.TabStop = false;
+            // 
+            // backgroundB
+            // 
+            this.backgroundB.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundB.Image = global::MovieTheater.Properties.Resources.background;
+            this.backgroundB.Location = new System.Drawing.Point(0, 0);
+            this.backgroundB.Name = "backgroundB";
+            this.backgroundB.Size = new System.Drawing.Size(961, 753);
+            this.backgroundB.TabIndex = 70;
+            this.backgroundB.TabStop = false;
+            // 
+            // searchPoster6
+            // 
+            this.searchPoster6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchPoster6.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster6.Image")));
+            this.searchPoster6.Location = new System.Drawing.Point(512, 542);
+            this.searchPoster6.Name = "searchPoster6";
+            this.searchPoster6.Size = new System.Drawing.Size(128, 160);
+            this.searchPoster6.TabIndex = 82;
+            this.searchPoster6.TabStop = false;
+            this.searchPoster6.Click += new System.EventHandler(this.searchPoster6_Click);
+            // 
+            // searchPoster4
+            // 
+            this.searchPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchPoster4.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster4.Image")));
+            this.searchPoster4.Location = new System.Drawing.Point(512, 318);
+            this.searchPoster4.Name = "searchPoster4";
+            this.searchPoster4.Size = new System.Drawing.Size(128, 160);
+            this.searchPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.searchPoster4.TabIndex = 81;
+            this.searchPoster4.TabStop = false;
+            this.searchPoster4.Click += new System.EventHandler(this.searchPoster4_Click);
+            // 
+            // searchPoster5
+            // 
+            this.searchPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchPoster5.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster5.Image")));
+            this.searchPoster5.Location = new System.Drawing.Point(129, 542);
+            this.searchPoster5.Name = "searchPoster5";
+            this.searchPoster5.Size = new System.Drawing.Size(128, 160);
+            this.searchPoster5.TabIndex = 80;
+            this.searchPoster5.TabStop = false;
+            this.searchPoster5.Click += new System.EventHandler(this.searchPoster5_Click);
+            // 
+            // searchPoster3
+            // 
+            this.searchPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchPoster3.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster3.Image")));
+            this.searchPoster3.Location = new System.Drawing.Point(128, 318);
+            this.searchPoster3.Name = "searchPoster3";
+            this.searchPoster3.Size = new System.Drawing.Size(128, 160);
+            this.searchPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.searchPoster3.TabIndex = 79;
+            this.searchPoster3.TabStop = false;
+            this.searchPoster3.Click += new System.EventHandler(this.searchPoster3_Click);
+            // 
+            // searchPoster2
+            // 
+            this.searchPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchPoster2.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster2.Image")));
+            this.searchPoster2.Location = new System.Drawing.Point(512, 94);
+            this.searchPoster2.Name = "searchPoster2";
+            this.searchPoster2.Size = new System.Drawing.Size(128, 160);
+            this.searchPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.searchPoster2.TabIndex = 78;
+            this.searchPoster2.TabStop = false;
+            this.searchPoster2.Click += new System.EventHandler(this.searchPoster2_Click);
+            // 
+            // searchPoster1
+            // 
+            this.searchPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchPoster1.Image = ((System.Drawing.Image)(resources.GetObject("searchPoster1.Image")));
+            this.searchPoster1.Location = new System.Drawing.Point(128, 94);
+            this.searchPoster1.Name = "searchPoster1";
+            this.searchPoster1.Size = new System.Drawing.Size(128, 160);
+            this.searchPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.searchPoster1.TabIndex = 77;
+            this.searchPoster1.TabStop = false;
+            this.searchPoster1.Click += new System.EventHandler(this.searchPoster1_Click);
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            pictureBox9.Location = new System.Drawing.Point(110, 29);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new System.Drawing.Size(768, 33);
+            pictureBox9.TabIndex = 51;
+            pictureBox9.TabStop = false;
+            // 
+            // backgroundS
+            // 
+            this.backgroundS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundS.Image = ((System.Drawing.Image)(resources.GetObject("backgroundS.Image")));
+            this.backgroundS.Location = new System.Drawing.Point(3, 0);
+            this.backgroundS.Name = "backgroundS";
+            this.backgroundS.Size = new System.Drawing.Size(961, 767);
+            this.backgroundS.TabIndex = 70;
+            this.backgroundS.TabStop = false;
+            // 
+            // MDBigPoster
+            // 
+            this.MDBigPoster.Image = ((System.Drawing.Image)(resources.GetObject("MDBigPoster.Image")));
+            this.MDBigPoster.Location = new System.Drawing.Point(32, 80);
+            this.MDBigPoster.Name = "MDBigPoster";
+            this.MDBigPoster.Size = new System.Drawing.Size(256, 320);
+            this.MDBigPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MDBigPoster.TabIndex = 71;
+            this.MDBigPoster.TabStop = false;
+            // 
+            // MovieDetailsDiv
+            // 
+            this.MovieDetailsDiv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.MovieDetailsDiv.Image = ((System.Drawing.Image)(resources.GetObject("MovieDetailsDiv.Image")));
+            this.MovieDetailsDiv.Location = new System.Drawing.Point(33, 16);
+            this.MovieDetailsDiv.Name = "MovieDetailsDiv";
+            this.MovieDetailsDiv.Size = new System.Drawing.Size(896, 33);
+            this.MovieDetailsDiv.TabIndex = 44;
+            this.MovieDetailsDiv.TabStop = false;
+            // 
+            // backgroundMD
+            // 
+            this.backgroundMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundMD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundMD.Image = ((System.Drawing.Image)(resources.GetObject("backgroundMD.Image")));
+            this.backgroundMD.Location = new System.Drawing.Point(3, 0);
+            this.backgroundMD.Name = "backgroundMD";
+            this.backgroundMD.Size = new System.Drawing.Size(960, 773);
+            this.backgroundMD.TabIndex = 70;
+            this.backgroundMD.TabStop = false;
+            // 
+            // LoginDiv
+            // 
+            this.LoginDiv.Image = ((System.Drawing.Image)(resources.GetObject("LoginDiv.Image")));
+            this.LoginDiv.Location = new System.Drawing.Point(32, 16);
+            this.LoginDiv.Name = "LoginDiv";
+            this.LoginDiv.Size = new System.Drawing.Size(896, 33);
+            this.LoginDiv.TabIndex = 73;
+            this.LoginDiv.TabStop = false;
+            // 
+            // backgroundL
+            // 
+            this.backgroundL.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundL.Image = ((System.Drawing.Image)(resources.GetObject("backgroundL.Image")));
+            this.backgroundL.Location = new System.Drawing.Point(0, 0);
+            this.backgroundL.Name = "backgroundL";
+            this.backgroundL.Size = new System.Drawing.Size(961, 387);
+            this.backgroundL.TabIndex = 74;
+            this.backgroundL.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(32, 16);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(896, 33);
+            this.pictureBox7.TabIndex = 72;
+            this.pictureBox7.TabStop = false;
+            // 
+            // backgroundCA
+            // 
+            this.backgroundCA.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundCA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundCA.Image = ((System.Drawing.Image)(resources.GetObject("backgroundCA.Image")));
+            this.backgroundCA.Location = new System.Drawing.Point(0, 0);
+            this.backgroundCA.Name = "backgroundCA";
+            this.backgroundCA.Size = new System.Drawing.Size(961, 668);
+            this.backgroundCA.TabIndex = 73;
+            this.backgroundCA.TabStop = false;
+            // 
+            // rectangleShape1
+            // 
+            this.rectangleShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape1.BackgroundImage")));
+            this.rectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Gainsboro;
+            this.rectangleShape1.Location = new System.Drawing.Point(208, 127);
+            this.rectangleShape1.Name = "rectangleShape1";
+            this.rectangleShape1.Size = new System.Drawing.Size(515, 147);
+            // 
+            // ClockPicture
+            // 
+            this.ClockPicture.Image = ((System.Drawing.Image)(resources.GetObject("ClockPicture.Image")));
+            this.ClockPicture.Location = new System.Drawing.Point(32, 176);
+            this.ClockPicture.Name = "ClockPicture";
+            this.ClockPicture.Size = new System.Drawing.Size(64, 64);
+            this.ClockPicture.TabIndex = 72;
+            this.ClockPicture.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(32, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(896, 33);
+            this.pictureBox2.TabIndex = 71;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureofplace
+            // 
+            this.pictureofplace.Image = global::MovieTheater.Properties.Resources.pictureofplace_Image;
+            this.pictureofplace.Location = new System.Drawing.Point(364, 137);
+            this.pictureofplace.Name = "pictureofplace";
+            this.pictureofplace.Size = new System.Drawing.Size(526, 319);
+            this.pictureofplace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureofplace.TabIndex = 17;
+            this.pictureofplace.TabStop = false;
+            // 
+            // MapPicture
+            // 
+            this.MapPicture.Image = ((System.Drawing.Image)(resources.GetObject("MapPicture.Image")));
+            this.MapPicture.Location = new System.Drawing.Point(32, 432);
+            this.MapPicture.Name = "MapPicture";
+            this.MapPicture.Size = new System.Drawing.Size(64, 96);
+            this.MapPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MapPicture.TabIndex = 13;
+            this.MapPicture.TabStop = false;
+            // 
+            // EmailPicture
+            // 
+            this.EmailPicture.Image = ((System.Drawing.Image)(resources.GetObject("EmailPicture.Image")));
+            this.EmailPicture.Location = new System.Drawing.Point(32, 368);
+            this.EmailPicture.Name = "EmailPicture";
+            this.EmailPicture.Size = new System.Drawing.Size(64, 46);
+            this.EmailPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EmailPicture.TabIndex = 6;
+            this.EmailPicture.TabStop = false;
+            // 
+            // PhonePicture
+            // 
+            this.PhonePicture.Image = ((System.Drawing.Image)(resources.GetObject("PhonePicture.Image")));
+            this.PhonePicture.Location = new System.Drawing.Point(32, 48);
+            this.PhonePicture.Name = "PhonePicture";
+            this.PhonePicture.Size = new System.Drawing.Size(64, 96);
+            this.PhonePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PhonePicture.TabIndex = 4;
+            this.PhonePicture.TabStop = false;
+            // 
+            // backgroundCU
+            // 
+            this.backgroundCU.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundCU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundCU.Image = ((System.Drawing.Image)(resources.GetObject("backgroundCU.Image")));
+            this.backgroundCU.Location = new System.Drawing.Point(1, 0);
+            this.backgroundCU.Name = "backgroundCU";
+            this.backgroundCU.Size = new System.Drawing.Size(961, 569);
+            this.backgroundCU.TabIndex = 70;
+            this.backgroundCU.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::MovieTheater.Properties.Resources.movie_information_div;
+            this.pictureBox10.Location = new System.Drawing.Point(32, 16);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(896, 33);
+            this.pictureBox10.TabIndex = 116;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(964, 675);
+            this.pictureBox1.TabIndex = 70;
+            this.pictureBox1.TabStop = false;
+            // 
+            // adminControlDiv
+            // 
+            this.adminControlDiv.Image = global::MovieTheater.Properties.Resources.admin_controls_div;
+            this.adminControlDiv.Location = new System.Drawing.Point(32, 16);
+            this.adminControlDiv.Name = "adminControlDiv";
+            this.adminControlDiv.Size = new System.Drawing.Size(896, 33);
+            this.adminControlDiv.TabIndex = 73;
+            this.adminControlDiv.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(961, 336);
+            this.pictureBox8.TabIndex = 74;
+            this.pictureBox8.TabStop = false;
+            // 
+            // movielogopictureticket
+            // 
+            this.movielogopictureticket.BackColor = System.Drawing.Color.White;
+            this.movielogopictureticket.Image = ((System.Drawing.Image)(resources.GetObject("movielogopictureticket.Image")));
+            this.movielogopictureticket.Location = new System.Drawing.Point(293, 256);
+            this.movielogopictureticket.Name = "movielogopictureticket";
+            this.movielogopictureticket.Size = new System.Drawing.Size(73, 73);
+            this.movielogopictureticket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.movielogopictureticket.TabIndex = 12;
+            this.movielogopictureticket.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::MovieTheater.Properties.Resources.ticket;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.InitialImage = global::MovieTheater.Properties.Resources.ticket;
+            this.pictureBox5.Location = new System.Drawing.Point(162, 98);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(533, 241);
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
             // 
             // contactUsBtn
             // 
@@ -5426,19 +5986,185 @@
             this.Header.TabIndex = 57;
             this.Header.TabStop = false;
             // 
-            // tabPage2
+            // BShowing5
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(961, 1018);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.BShowing5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing5.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing5.Location = new System.Drawing.Point(785, 241);
+            this.BShowing5.Name = "BShowing5";
+            this.BShowing5.Size = new System.Drawing.Size(160, 30);
+            this.BShowing5.TabIndex = 135;
+            this.BShowing5.Text = "Showing5";
+            this.BShowing5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // openFileDialog1
+            // BShowing4
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.BShowing4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing4.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing4.Location = new System.Drawing.Point(593, 241);
+            this.BShowing4.Name = "BShowing4";
+            this.BShowing4.Size = new System.Drawing.Size(160, 30);
+            this.BShowing4.TabIndex = 134;
+            this.BShowing4.Text = "Showing4";
+            this.BShowing4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing3
+            // 
+            this.BShowing3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing3.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing3.Location = new System.Drawing.Point(401, 241);
+            this.BShowing3.Name = "BShowing3";
+            this.BShowing3.Size = new System.Drawing.Size(160, 30);
+            this.BShowing3.TabIndex = 133;
+            this.BShowing3.Text = "Showing3";
+            this.BShowing3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing2
+            // 
+            this.BShowing2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing2.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing2.Location = new System.Drawing.Point(209, 241);
+            this.BShowing2.Name = "BShowing2";
+            this.BShowing2.Size = new System.Drawing.Size(160, 30);
+            this.BShowing2.TabIndex = 132;
+            this.BShowing2.Text = "Showing2";
+            this.BShowing2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing1
+            // 
+            this.BShowing1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing1.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing1.Location = new System.Drawing.Point(17, 241);
+            this.BShowing1.Name = "BShowing1";
+            this.BShowing1.Size = new System.Drawing.Size(160, 30);
+            this.BShowing1.TabIndex = 131;
+            this.BShowing1.Text = "Showing1";
+            this.BShowing1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing10
+            // 
+            this.BShowing10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing10.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing10.Location = new System.Drawing.Point(785, 465);
+            this.BShowing10.Name = "BShowing10";
+            this.BShowing10.Size = new System.Drawing.Size(160, 30);
+            this.BShowing10.TabIndex = 140;
+            this.BShowing10.Text = "Showing10";
+            this.BShowing10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing9
+            // 
+            this.BShowing9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing9.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing9.Location = new System.Drawing.Point(593, 465);
+            this.BShowing9.Name = "BShowing9";
+            this.BShowing9.Size = new System.Drawing.Size(160, 30);
+            this.BShowing9.TabIndex = 139;
+            this.BShowing9.Text = "Showing9";
+            this.BShowing9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing8
+            // 
+            this.BShowing8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing8.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing8.Location = new System.Drawing.Point(401, 465);
+            this.BShowing8.Name = "BShowing8";
+            this.BShowing8.Size = new System.Drawing.Size(160, 30);
+            this.BShowing8.TabIndex = 138;
+            this.BShowing8.Text = "Showing8";
+            this.BShowing8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing7
+            // 
+            this.BShowing7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing7.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing7.Location = new System.Drawing.Point(209, 465);
+            this.BShowing7.Name = "BShowing7";
+            this.BShowing7.Size = new System.Drawing.Size(160, 30);
+            this.BShowing7.TabIndex = 137;
+            this.BShowing7.Text = "Showing7";
+            this.BShowing7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing6
+            // 
+            this.BShowing6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing6.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing6.Location = new System.Drawing.Point(17, 465);
+            this.BShowing6.Name = "BShowing6";
+            this.BShowing6.Size = new System.Drawing.Size(160, 30);
+            this.BShowing6.TabIndex = 136;
+            this.BShowing6.Text = "Showing6";
+            this.BShowing6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing15
+            // 
+            this.BShowing15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing15.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing15.Location = new System.Drawing.Point(785, 689);
+            this.BShowing15.Name = "BShowing15";
+            this.BShowing15.Size = new System.Drawing.Size(160, 30);
+            this.BShowing15.TabIndex = 145;
+            this.BShowing15.Text = "Showing15";
+            this.BShowing15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing14
+            // 
+            this.BShowing14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing14.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing14.Location = new System.Drawing.Point(593, 689);
+            this.BShowing14.Name = "BShowing14";
+            this.BShowing14.Size = new System.Drawing.Size(160, 30);
+            this.BShowing14.TabIndex = 144;
+            this.BShowing14.Text = "Showing14";
+            this.BShowing14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing13
+            // 
+            this.BShowing13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing13.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing13.Location = new System.Drawing.Point(401, 689);
+            this.BShowing13.Name = "BShowing13";
+            this.BShowing13.Size = new System.Drawing.Size(160, 30);
+            this.BShowing13.TabIndex = 143;
+            this.BShowing13.Text = "Showing13";
+            this.BShowing13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing12
+            // 
+            this.BShowing12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing12.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing12.Location = new System.Drawing.Point(209, 689);
+            this.BShowing12.Name = "BShowing12";
+            this.BShowing12.Size = new System.Drawing.Size(160, 30);
+            this.BShowing12.TabIndex = 142;
+            this.BShowing12.Text = "Showing12";
+            this.BShowing12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BShowing11
+            // 
+            this.BShowing11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BShowing11.BackColor = System.Drawing.Color.Transparent;
+            this.BShowing11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BShowing11.Location = new System.Drawing.Point(17, 689);
+            this.BShowing11.Name = "BShowing11";
+            this.BShowing11.Size = new System.Drawing.Size(160, 30);
+            this.BShowing11.TabIndex = 141;
+            this.BShowing11.Text = "Showing11";
+            this.BShowing11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // homepage
             // 
@@ -5450,22 +6176,41 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "homepage";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.BodyTabControl.ResumeLayout(false);
+            this.HomeTab.ResumeLayout(false);
+            this.HomeTab.PerformLayout();
+            this.SearchTab.ResumeLayout(false);
+            this.MovieDetailsTab.ResumeLayout(false);
+            this.MovieDetailsTab.PerformLayout();
+            this.LoginTab.ResumeLayout(false);
+            this.LoginTab.PerformLayout();
+            this.AccountTab.ResumeLayout(false);
+            this.AccountTab.PerformLayout();
+            this.PaymentInfoTab.ResumeLayout(false);
+            this.PaymentInfoTab.PerformLayout();
+            this.Seating.ResumeLayout(false);
+            this.Seating.PerformLayout();
+            this.Purchase.ResumeLayout(false);
+            this.Purchase.PerformLayout();
+            this.Ticket.ResumeLayout(false);
+            this.Ticket.PerformLayout();
+            this.ContactUsTab.ResumeLayout(false);
+            this.ContactUsTab.PerformLayout();
+            this.AdminTab.ResumeLayout(false);
+            this.AdminTab.PerformLayout();
+            this.AdminCtrl.ResumeLayout(false);
+            this.PrintTix.ResumeLayout(false);
+            this.PrintTix.PerformLayout();
+            this.BrowseTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.searchBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.browseBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.BodyTabControl.ResumeLayout(false);
-            this.HomeTab.ResumeLayout(false);
-            this.HomeTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster8)).EndInit();
@@ -5481,38 +6226,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).EndInit();
-            this.SearchTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchPoster1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundS)).EndInit();
-            this.MovieDetailsTab.ResumeLayout(false);
-            this.MovieDetailsTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MDBigPoster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MovieDetailsDiv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundMD)).EndInit();
-            this.LoginTab.ResumeLayout(false);
-            this.LoginTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoginDiv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundL)).EndInit();
-            this.AccountTab.ResumeLayout(false);
-            this.AccountTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundCA)).EndInit();
-            this.PaymentInfoTab.ResumeLayout(false);
-            this.PaymentInfoTab.PerformLayout();
-            this.Seating.ResumeLayout(false);
-            this.Seating.PerformLayout();
-            this.Purchase.ResumeLayout(false);
-            this.Purchase.PerformLayout();
-            this.Ticket.ResumeLayout(false);
-            this.Ticket.PerformLayout();
-            this.ContactUsTab.ResumeLayout(false);
-            this.ContactUsTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClockPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureofplace)).EndInit();
@@ -5520,13 +6268,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.EmailPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhonePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundCU)).EndInit();
-            this.AdminTab.ResumeLayout(false);
-            this.AdminTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.AdminCtrl.ResumeLayout(false);
-            this.AdminCtrl.PerformLayout();
-            this.PrintTix.ResumeLayout(false);
-            this.PrintTix.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adminControlDiv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movielogopictureticket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
@@ -5554,7 +6299,6 @@
         private System.Windows.Forms.TabControl BodyTabControl;
         private System.Windows.Forms.TabPage HomeTab;
         private System.Windows.Forms.Label editMovielbl;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label NSReleaseDateLabel10;
         private System.Windows.Forms.Label NSReleaseDateLabel9;
         private System.Windows.Forms.Label NSReleaseDateLabel8;
@@ -5836,37 +6580,34 @@
         private System.Windows.Forms.TextBox st3txt;
         private System.Windows.Forms.TextBox st2txt;
         private System.Windows.Forms.TextBox st1txt;
-        private System.Windows.Forms.TextBox posterPathtxt;
-        private System.Windows.Forms.TextBox DirectorBox;
-        private System.Windows.Forms.TextBox ActorBox;
-        private System.Windows.Forms.TextBox SynopsisBox;
-        private System.Windows.Forms.TextBox DescriptionBox;
-        private System.Windows.Forms.TextBox LengthBox;
-        private System.Windows.Forms.TextBox TitleBox;
+        private System.Windows.Forms.TextBox AMIposterPathtxt;
+        private System.Windows.Forms.TextBox AMIDirectorBox;
+        private System.Windows.Forms.TextBox AMIActorBox;
+        private System.Windows.Forms.TextBox AMISynopsisBox;
+        private System.Windows.Forms.TextBox AMIDescriptionBox;
+        private System.Windows.Forms.TextBox AMILengthBox;
+        private System.Windows.Forms.TextBox AMITitleBox;
         private System.Windows.Forms.Label st1lbl;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button uploadPosterbtn;
-        private System.Windows.Forms.DateTimePicker ReleaseDTPicker;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.ComboBox GenreBox;
-        private System.Windows.Forms.ComboBox RatingBox;
+        private System.Windows.Forms.Button AMIuploadPosterbtn;
+        private System.Windows.Forms.DateTimePicker AMIReleaseDTPicker;
+        private System.Windows.Forms.Label AMIPoster;
+        private System.Windows.Forms.Label AMIRelease;
+        private System.Windows.Forms.Label AMIDirector;
+        private System.Windows.Forms.Label AMIActor;
+        private System.Windows.Forms.Label AMIRating;
+        private System.Windows.Forms.Label AMIGenre;
+        private System.Windows.Forms.Label AMIDescription;
+        private System.Windows.Forms.Label AMISynopsis;
+        private System.Windows.Forms.Label AMILength;
+        private System.Windows.Forms.Label AMITitle;
+        private System.Windows.Forms.ComboBox AMIGenreBox;
+        private System.Windows.Forms.ComboBox AMIRatingBox;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage AdminCtrl;
         private System.Windows.Forms.Button adminRemove;
         private System.Windows.Forms.Button adminEdit;
         private System.Windows.Forms.Button adminAdd;
-        private System.Windows.Forms.Label adminctrllbl;
         private System.Windows.Forms.TabPage PrintTix;
         private System.Windows.Forms.Button gobackhomebutton;
         private System.Windows.Forms.Button printTixButton;
@@ -5940,6 +6681,59 @@
         private System.Windows.Forms.Label CACreditCardInfoLabel;
         private System.Windows.Forms.PictureBox LoginDiv;
         private System.Windows.Forms.PictureBox backgroundL;
+        private System.Windows.Forms.PictureBox adminControlDiv;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage BrowseTab;
+        private System.Windows.Forms.PictureBox backgroundB;
+        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.Label BMovieTitle15;
+        private System.Windows.Forms.Label BMovieTitle14;
+        private System.Windows.Forms.Label BMovieTitle13;
+        private System.Windows.Forms.Label BMovieTitle12;
+        private System.Windows.Forms.Label BMovieTitle11;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Label BMovieTitle10;
+        private System.Windows.Forms.Label BMovieTitle9;
+        private System.Windows.Forms.Label BMovieTitle8;
+        private System.Windows.Forms.Label BMovieTitle7;
+        private System.Windows.Forms.Label BMovieTitle6;
+        private System.Windows.Forms.Label BMovieTitle5;
+        private System.Windows.Forms.Label BMovieTitle4;
+        private System.Windows.Forms.Label BMovieTitle3;
+        private System.Windows.Forms.Label BMovieTitle2;
+        private System.Windows.Forms.Label BMovieTitle1;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.Label BShowing15;
+        private System.Windows.Forms.Label BShowing14;
+        private System.Windows.Forms.Label BShowing13;
+        private System.Windows.Forms.Label BShowing12;
+        private System.Windows.Forms.Label BShowing11;
+        private System.Windows.Forms.Label BShowing10;
+        private System.Windows.Forms.Label BShowing9;
+        private System.Windows.Forms.Label BShowing8;
+        private System.Windows.Forms.Label BShowing7;
+        private System.Windows.Forms.Label BShowing6;
+        private System.Windows.Forms.Label BShowing5;
+        private System.Windows.Forms.Label BShowing4;
+        private System.Windows.Forms.Label BShowing3;
+        private System.Windows.Forms.Label BShowing2;
+        private System.Windows.Forms.Label BShowing1;
 
     }
 }
