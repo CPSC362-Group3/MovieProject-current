@@ -1762,7 +1762,7 @@ namespace MovieTheater
             }
             else
             {
-                select.BackColor = SystemColors.Control;
+                select.BackColor = Color.Maroon;
                 selectedSeatstxt.Lines = selectedSeatstxt.Lines.Where(line => !line.Contains(select.Name)).ToArray();
             }
 
@@ -2243,6 +2243,10 @@ namespace MovieTheater
             time = displayShowtimelbl.Text;
             date = showtimeDate.Text;
             movieTitle = displayMovieTitle.Text;
+
+            movieSeattxt.Text = MDTitleLabel.Text.ToString();
+            lengthSeattxt.Text = MDLengthLabel.Text.ToString();
+            ShowtimeSeattxt.Text = displayShowtimelbl.Text.ToString();
         }
 
         //GLOBAL VARIABLES SO I CAN SAVE MY INFO FOR TIXS

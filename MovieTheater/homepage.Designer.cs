@@ -127,6 +127,7 @@
             this.MovieDetailsDiv = new System.Windows.Forms.PictureBox();
             this.backgroundMD = new System.Windows.Forms.PictureBox();
             this.LoginTab = new System.Windows.Forms.TabPage();
+            this.LoginDiv = new System.Windows.Forms.PictureBox();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.usernameTxt = new System.Windows.Forms.TextBox();
             this.loginbutton = new System.Windows.Forms.Button();
@@ -134,7 +135,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.backgroundL = new System.Windows.Forms.PictureBox();
             this.AccountTab = new System.Windows.Forms.TabPage();
+            this.CAAccountInfoLabel = new System.Windows.Forms.Label();
+            this.CACreditCardInfoLabel = new System.Windows.Forms.Label();
             this.CAPersonalInfoLabel = new System.Windows.Forms.Label();
             this.CAExpirationCalendar = new System.Windows.Forms.MonthCalendar();
             this.CAExpirationDateLabel = new System.Windows.Forms.Label();
@@ -430,10 +434,6 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.CACreditCardInfoLabel = new System.Windows.Forms.Label();
-            this.CAAccountInfoLabel = new System.Windows.Forms.Label();
-            this.LoginDiv = new System.Windows.Forms.PictureBox();
-            this.backgroundL = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -480,6 +480,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MovieDetailsDiv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundMD)).BeginInit();
             this.LoginTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginDiv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundL)).BeginInit();
             this.AccountTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundCA)).BeginInit();
@@ -504,8 +506,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LoginDiv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backgroundL)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -543,7 +543,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(6, -13);
+            this.tabControl1.Location = new System.Drawing.Point(-2, -13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -1753,6 +1753,15 @@
             this.LoginTab.TabIndex = 3;
             this.LoginTab.Text = "Login";
             // 
+            // LoginDiv
+            // 
+            this.LoginDiv.Image = ((System.Drawing.Image)(resources.GetObject("LoginDiv.Image")));
+            this.LoginDiv.Location = new System.Drawing.Point(32, 16);
+            this.LoginDiv.Name = "LoginDiv";
+            this.LoginDiv.Size = new System.Drawing.Size(896, 33);
+            this.LoginDiv.TabIndex = 73;
+            this.LoginDiv.TabStop = false;
+            // 
             // passwordTxt
             // 
             this.passwordTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1825,6 +1834,17 @@
             this.label7.TabIndex = 53;
             this.label7.Text = "Username:";
             // 
+            // backgroundL
+            // 
+            this.backgroundL.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundL.Image = ((System.Drawing.Image)(resources.GetObject("backgroundL.Image")));
+            this.backgroundL.Location = new System.Drawing.Point(0, 0);
+            this.backgroundL.Name = "backgroundL";
+            this.backgroundL.Size = new System.Drawing.Size(961, 387);
+            this.backgroundL.TabIndex = 74;
+            this.backgroundL.TabStop = false;
+            // 
             // AccountTab
             // 
             this.AccountTab.BackColor = System.Drawing.Color.Transparent;
@@ -1865,6 +1885,28 @@
             this.AccountTab.Size = new System.Drawing.Size(962, 773);
             this.AccountTab.TabIndex = 4;
             this.AccountTab.Text = "Account";
+            // 
+            // CAAccountInfoLabel
+            // 
+            this.CAAccountInfoLabel.AutoSize = true;
+            this.CAAccountInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAAccountInfoLabel.Location = new System.Drawing.Point(172, 432);
+            this.CAAccountInfoLabel.Name = "CAAccountInfoLabel";
+            this.CAAccountInfoLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CAAccountInfoLabel.Size = new System.Drawing.Size(172, 20);
+            this.CAAccountInfoLabel.TabIndex = 87;
+            this.CAAccountInfoLabel.Text = "Account Information";
+            // 
+            // CACreditCardInfoLabel
+            // 
+            this.CACreditCardInfoLabel.AutoSize = true;
+            this.CACreditCardInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CACreditCardInfoLabel.Location = new System.Drawing.Point(637, 68);
+            this.CACreditCardInfoLabel.Name = "CACreditCardInfoLabel";
+            this.CACreditCardInfoLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CACreditCardInfoLabel.Size = new System.Drawing.Size(197, 20);
+            this.CACreditCardInfoLabel.TabIndex = 86;
+            this.CACreditCardInfoLabel.Text = "Credit Card Information";
             // 
             // CAPersonalInfoLabel
             // 
@@ -2273,7 +2315,7 @@
             // 
             // Seating
             // 
-            this.Seating.BackColor = System.Drawing.Color.Silver;
+            this.Seating.BackColor = System.Drawing.Color.Black;
             this.Seating.Controls.Add(this.label1);
             this.Seating.Controls.Add(this.selectedSeatstxt);
             this.Seating.Controls.Add(this.f14);
@@ -2368,7 +2410,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 216);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(32, 184);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 82;
@@ -2376,739 +2419,1094 @@
             // 
             // selectedSeatstxt
             // 
-            this.selectedSeatstxt.Location = new System.Drawing.Point(20, 239);
+            this.selectedSeatstxt.Location = new System.Drawing.Point(27, 217);
             this.selectedSeatstxt.Multiline = true;
             this.selectedSeatstxt.Name = "selectedSeatstxt";
             this.selectedSeatstxt.ReadOnly = true;
-            this.selectedSeatstxt.Size = new System.Drawing.Size(154, 113);
+            this.selectedSeatstxt.Size = new System.Drawing.Size(106, 87);
             this.selectedSeatstxt.TabIndex = 81;
             this.selectedSeatstxt.Text = "\r\n";
             // 
             // f14
             // 
+            this.f14.BackColor = System.Drawing.Color.Maroon;
+            this.f14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f14.ForeColor = System.Drawing.Color.White;
             this.f14.Location = new System.Drawing.Point(762, 573);
             this.f14.Name = "f14";
             this.f14.Size = new System.Drawing.Size(38, 35);
             this.f14.TabIndex = 80;
             this.f14.Text = "F14";
-            this.f14.UseVisualStyleBackColor = true;
+            this.f14.UseVisualStyleBackColor = false;
             this.f14.Click += new System.EventHandler(this.f14_Click);
             // 
             // f13
             // 
+            this.f13.BackColor = System.Drawing.Color.Maroon;
+            this.f13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f13.ForeColor = System.Drawing.Color.White;
             this.f13.Location = new System.Drawing.Point(718, 573);
             this.f13.Name = "f13";
             this.f13.Size = new System.Drawing.Size(38, 35);
             this.f13.TabIndex = 79;
             this.f13.Text = "F13";
-            this.f13.UseVisualStyleBackColor = true;
+            this.f13.UseVisualStyleBackColor = false;
             this.f13.Click += new System.EventHandler(this.f13_Click);
             // 
             // f12
             // 
+            this.f12.BackColor = System.Drawing.Color.Maroon;
+            this.f12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f12.ForeColor = System.Drawing.Color.White;
             this.f12.Location = new System.Drawing.Point(637, 573);
             this.f12.Name = "f12";
             this.f12.Size = new System.Drawing.Size(38, 35);
             this.f12.TabIndex = 78;
             this.f12.Text = "F12";
-            this.f12.UseVisualStyleBackColor = true;
+            this.f12.UseVisualStyleBackColor = false;
             this.f12.Click += new System.EventHandler(this.f12_Click);
             // 
             // f11
             // 
+            this.f11.BackColor = System.Drawing.Color.Maroon;
+            this.f11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f11.ForeColor = System.Drawing.Color.White;
             this.f11.Location = new System.Drawing.Point(593, 573);
             this.f11.Name = "f11";
             this.f11.Size = new System.Drawing.Size(38, 35);
             this.f11.TabIndex = 77;
             this.f11.Text = "F11";
-            this.f11.UseVisualStyleBackColor = true;
+            this.f11.UseVisualStyleBackColor = false;
             this.f11.Click += new System.EventHandler(this.f11_Click);
             // 
             // f10
             // 
+            this.f10.BackColor = System.Drawing.Color.Maroon;
+            this.f10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f10.ForeColor = System.Drawing.Color.White;
             this.f10.Location = new System.Drawing.Point(549, 573);
             this.f10.Name = "f10";
             this.f10.Size = new System.Drawing.Size(38, 35);
             this.f10.TabIndex = 76;
             this.f10.Text = "F10";
-            this.f10.UseVisualStyleBackColor = true;
+            this.f10.UseVisualStyleBackColor = false;
             this.f10.Click += new System.EventHandler(this.f10_Click);
             // 
             // f9
             // 
+            this.f9.BackColor = System.Drawing.Color.Maroon;
+            this.f9.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f9.ForeColor = System.Drawing.Color.White;
             this.f9.Location = new System.Drawing.Point(505, 573);
             this.f9.Name = "f9";
             this.f9.Size = new System.Drawing.Size(38, 35);
             this.f9.TabIndex = 75;
             this.f9.Text = "F9";
-            this.f9.UseVisualStyleBackColor = true;
+            this.f9.UseVisualStyleBackColor = false;
             this.f9.Click += new System.EventHandler(this.f9_Click);
             // 
             // f8
             // 
+            this.f8.BackColor = System.Drawing.Color.Maroon;
+            this.f8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f8.ForeColor = System.Drawing.Color.White;
             this.f8.Location = new System.Drawing.Point(461, 573);
             this.f8.Name = "f8";
             this.f8.Size = new System.Drawing.Size(38, 35);
             this.f8.TabIndex = 74;
             this.f8.Text = "F8";
-            this.f8.UseVisualStyleBackColor = true;
+            this.f8.UseVisualStyleBackColor = false;
             this.f8.Click += new System.EventHandler(this.f8_Click);
             // 
             // f7
             // 
+            this.f7.BackColor = System.Drawing.Color.Maroon;
+            this.f7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f7.ForeColor = System.Drawing.Color.White;
             this.f7.Location = new System.Drawing.Point(417, 573);
             this.f7.Name = "f7";
             this.f7.Size = new System.Drawing.Size(38, 35);
             this.f7.TabIndex = 73;
             this.f7.Text = "F7";
-            this.f7.UseVisualStyleBackColor = true;
+            this.f7.UseVisualStyleBackColor = false;
             this.f7.Click += new System.EventHandler(this.f7_Click);
             // 
             // f6
             // 
+            this.f6.BackColor = System.Drawing.Color.Maroon;
+            this.f6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f6.ForeColor = System.Drawing.Color.White;
             this.f6.Location = new System.Drawing.Point(373, 573);
             this.f6.Name = "f6";
             this.f6.Size = new System.Drawing.Size(38, 35);
             this.f6.TabIndex = 72;
             this.f6.Text = "F6";
-            this.f6.UseVisualStyleBackColor = true;
+            this.f6.UseVisualStyleBackColor = false;
             this.f6.Click += new System.EventHandler(this.f6_Click);
             // 
             // f5
             // 
+            this.f5.BackColor = System.Drawing.Color.Maroon;
+            this.f5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f5.ForeColor = System.Drawing.Color.White;
             this.f5.Location = new System.Drawing.Point(329, 573);
             this.f5.Name = "f5";
             this.f5.Size = new System.Drawing.Size(38, 35);
             this.f5.TabIndex = 71;
             this.f5.Text = "F5";
-            this.f5.UseVisualStyleBackColor = true;
+            this.f5.UseVisualStyleBackColor = false;
             this.f5.Click += new System.EventHandler(this.f5_Click);
             // 
             // f4
             // 
+            this.f4.BackColor = System.Drawing.Color.Maroon;
+            this.f4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f4.ForeColor = System.Drawing.Color.White;
             this.f4.Location = new System.Drawing.Point(285, 573);
             this.f4.Name = "f4";
             this.f4.Size = new System.Drawing.Size(38, 35);
             this.f4.TabIndex = 70;
             this.f4.Text = "F4";
-            this.f4.UseVisualStyleBackColor = true;
+            this.f4.UseVisualStyleBackColor = false;
             this.f4.Click += new System.EventHandler(this.f4_Click);
             // 
             // f3
             // 
+            this.f3.BackColor = System.Drawing.Color.Maroon;
+            this.f3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f3.ForeColor = System.Drawing.Color.White;
             this.f3.Location = new System.Drawing.Point(240, 573);
             this.f3.Name = "f3";
             this.f3.Size = new System.Drawing.Size(38, 35);
             this.f3.TabIndex = 69;
             this.f3.Text = "F3";
-            this.f3.UseVisualStyleBackColor = true;
+            this.f3.UseVisualStyleBackColor = false;
             this.f3.Click += new System.EventHandler(this.f3_Click);
             // 
             // f2
             // 
+            this.f2.BackColor = System.Drawing.Color.Maroon;
+            this.f2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f2.ForeColor = System.Drawing.Color.White;
             this.f2.Location = new System.Drawing.Point(156, 573);
             this.f2.Name = "f2";
             this.f2.Size = new System.Drawing.Size(38, 35);
             this.f2.TabIndex = 68;
             this.f2.Text = "F2";
-            this.f2.UseVisualStyleBackColor = true;
+            this.f2.UseVisualStyleBackColor = false;
             this.f2.Click += new System.EventHandler(this.f2_Click);
             // 
             // f1
             // 
+            this.f1.BackColor = System.Drawing.Color.Maroon;
+            this.f1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f1.ForeColor = System.Drawing.Color.White;
             this.f1.Location = new System.Drawing.Point(112, 573);
             this.f1.Name = "f1";
             this.f1.Size = new System.Drawing.Size(38, 35);
             this.f1.TabIndex = 67;
             this.f1.Text = "F1";
-            this.f1.UseVisualStyleBackColor = true;
+            this.f1.UseVisualStyleBackColor = false;
             this.f1.Click += new System.EventHandler(this.f1_Click);
             // 
             // e14
             // 
+            this.e14.BackColor = System.Drawing.Color.Maroon;
+            this.e14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e14.ForeColor = System.Drawing.Color.White;
             this.e14.Location = new System.Drawing.Point(762, 518);
             this.e14.Name = "e14";
             this.e14.Size = new System.Drawing.Size(38, 35);
             this.e14.TabIndex = 66;
             this.e14.Text = "E14";
-            this.e14.UseVisualStyleBackColor = true;
+            this.e14.UseVisualStyleBackColor = false;
             this.e14.Click += new System.EventHandler(this.e14_Click);
             // 
             // e13
             // 
+            this.e13.BackColor = System.Drawing.Color.Maroon;
+            this.e13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e13.ForeColor = System.Drawing.Color.White;
             this.e13.Location = new System.Drawing.Point(718, 518);
             this.e13.Name = "e13";
             this.e13.Size = new System.Drawing.Size(38, 35);
             this.e13.TabIndex = 65;
             this.e13.Text = "E13";
-            this.e13.UseVisualStyleBackColor = true;
+            this.e13.UseVisualStyleBackColor = false;
             this.e13.Click += new System.EventHandler(this.e13_Click);
             // 
             // e12
             // 
+            this.e12.BackColor = System.Drawing.Color.Maroon;
+            this.e12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e12.ForeColor = System.Drawing.Color.White;
             this.e12.Location = new System.Drawing.Point(637, 518);
             this.e12.Name = "e12";
             this.e12.Size = new System.Drawing.Size(38, 35);
             this.e12.TabIndex = 64;
             this.e12.Text = "E12";
-            this.e12.UseVisualStyleBackColor = true;
+            this.e12.UseVisualStyleBackColor = false;
             this.e12.Click += new System.EventHandler(this.e12_Click);
             // 
             // e11
             // 
+            this.e11.BackColor = System.Drawing.Color.Maroon;
+            this.e11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e11.ForeColor = System.Drawing.Color.White;
             this.e11.Location = new System.Drawing.Point(593, 518);
             this.e11.Name = "e11";
             this.e11.Size = new System.Drawing.Size(38, 35);
             this.e11.TabIndex = 63;
             this.e11.Text = "E11";
-            this.e11.UseVisualStyleBackColor = true;
+            this.e11.UseVisualStyleBackColor = false;
             this.e11.Click += new System.EventHandler(this.e11_Click);
             // 
             // e10
             // 
+            this.e10.BackColor = System.Drawing.Color.Maroon;
+            this.e10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e10.ForeColor = System.Drawing.Color.White;
             this.e10.Location = new System.Drawing.Point(549, 518);
             this.e10.Name = "e10";
             this.e10.Size = new System.Drawing.Size(38, 35);
             this.e10.TabIndex = 62;
             this.e10.Text = "E10";
-            this.e10.UseVisualStyleBackColor = true;
+            this.e10.UseVisualStyleBackColor = false;
             this.e10.Click += new System.EventHandler(this.e10_Click);
             // 
             // e9
             // 
+            this.e9.BackColor = System.Drawing.Color.Maroon;
+            this.e9.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e9.ForeColor = System.Drawing.Color.White;
             this.e9.Location = new System.Drawing.Point(505, 518);
             this.e9.Name = "e9";
             this.e9.Size = new System.Drawing.Size(38, 35);
             this.e9.TabIndex = 61;
             this.e9.Text = "E9";
-            this.e9.UseVisualStyleBackColor = true;
+            this.e9.UseVisualStyleBackColor = false;
             this.e9.Click += new System.EventHandler(this.e9_Click);
             // 
             // e8
             // 
+            this.e8.BackColor = System.Drawing.Color.Maroon;
+            this.e8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e8.ForeColor = System.Drawing.Color.White;
             this.e8.Location = new System.Drawing.Point(461, 518);
             this.e8.Name = "e8";
             this.e8.Size = new System.Drawing.Size(38, 35);
             this.e8.TabIndex = 60;
             this.e8.Text = "E8";
-            this.e8.UseVisualStyleBackColor = true;
+            this.e8.UseVisualStyleBackColor = false;
             this.e8.Click += new System.EventHandler(this.e8_Click);
             // 
             // e7
             // 
+            this.e7.BackColor = System.Drawing.Color.Maroon;
+            this.e7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e7.ForeColor = System.Drawing.Color.White;
             this.e7.Location = new System.Drawing.Point(417, 518);
             this.e7.Name = "e7";
             this.e7.Size = new System.Drawing.Size(38, 35);
             this.e7.TabIndex = 59;
             this.e7.Text = "E7";
-            this.e7.UseVisualStyleBackColor = true;
+            this.e7.UseVisualStyleBackColor = false;
             this.e7.Click += new System.EventHandler(this.e7_Click);
             // 
             // e6
             // 
+            this.e6.BackColor = System.Drawing.Color.Maroon;
+            this.e6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e6.ForeColor = System.Drawing.Color.White;
             this.e6.Location = new System.Drawing.Point(373, 518);
             this.e6.Name = "e6";
             this.e6.Size = new System.Drawing.Size(38, 35);
             this.e6.TabIndex = 58;
             this.e6.Text = "E6";
-            this.e6.UseVisualStyleBackColor = true;
+            this.e6.UseVisualStyleBackColor = false;
             this.e6.Click += new System.EventHandler(this.e6_Click);
             // 
             // e5
             // 
+            this.e5.BackColor = System.Drawing.Color.Maroon;
+            this.e5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e5.ForeColor = System.Drawing.Color.White;
             this.e5.Location = new System.Drawing.Point(329, 518);
             this.e5.Name = "e5";
             this.e5.Size = new System.Drawing.Size(38, 35);
             this.e5.TabIndex = 57;
             this.e5.Text = "E5";
-            this.e5.UseVisualStyleBackColor = true;
+            this.e5.UseVisualStyleBackColor = false;
             this.e5.Click += new System.EventHandler(this.e5_Click);
             // 
             // e4
             // 
+            this.e4.BackColor = System.Drawing.Color.Maroon;
+            this.e4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e4.ForeColor = System.Drawing.Color.White;
             this.e4.Location = new System.Drawing.Point(285, 518);
             this.e4.Name = "e4";
             this.e4.Size = new System.Drawing.Size(38, 35);
             this.e4.TabIndex = 56;
             this.e4.Text = "E4";
-            this.e4.UseVisualStyleBackColor = true;
+            this.e4.UseVisualStyleBackColor = false;
             this.e4.Click += new System.EventHandler(this.e4_Click);
             // 
             // e3
             // 
+            this.e3.BackColor = System.Drawing.Color.Maroon;
+            this.e3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e3.ForeColor = System.Drawing.Color.White;
             this.e3.Location = new System.Drawing.Point(240, 518);
             this.e3.Name = "e3";
             this.e3.Size = new System.Drawing.Size(38, 35);
             this.e3.TabIndex = 55;
             this.e3.Text = "E3";
-            this.e3.UseVisualStyleBackColor = true;
+            this.e3.UseVisualStyleBackColor = false;
             this.e3.Click += new System.EventHandler(this.e3_Click);
             // 
             // e2
             // 
+            this.e2.BackColor = System.Drawing.Color.Maroon;
+            this.e2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e2.ForeColor = System.Drawing.Color.White;
             this.e2.Location = new System.Drawing.Point(156, 518);
             this.e2.Name = "e2";
             this.e2.Size = new System.Drawing.Size(38, 35);
             this.e2.TabIndex = 54;
             this.e2.Text = "E2";
-            this.e2.UseVisualStyleBackColor = true;
+            this.e2.UseVisualStyleBackColor = false;
             this.e2.Click += new System.EventHandler(this.e2_Click);
             // 
             // e1
             // 
+            this.e1.BackColor = System.Drawing.Color.Maroon;
+            this.e1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e1.ForeColor = System.Drawing.Color.White;
             this.e1.Location = new System.Drawing.Point(112, 518);
             this.e1.Name = "e1";
             this.e1.Size = new System.Drawing.Size(38, 35);
             this.e1.TabIndex = 53;
             this.e1.Text = "E1";
-            this.e1.UseVisualStyleBackColor = true;
+            this.e1.UseVisualStyleBackColor = false;
             this.e1.Click += new System.EventHandler(this.e1_Click);
             // 
             // d14
             // 
+            this.d14.BackColor = System.Drawing.Color.Maroon;
+            this.d14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d14.ForeColor = System.Drawing.Color.White;
             this.d14.Location = new System.Drawing.Point(762, 464);
             this.d14.Name = "d14";
             this.d14.Size = new System.Drawing.Size(38, 35);
             this.d14.TabIndex = 52;
             this.d14.Text = "D14";
-            this.d14.UseVisualStyleBackColor = true;
+            this.d14.UseVisualStyleBackColor = false;
             this.d14.Click += new System.EventHandler(this.d14_Click);
             // 
             // d13
             // 
+            this.d13.BackColor = System.Drawing.Color.Maroon;
+            this.d13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d13.ForeColor = System.Drawing.Color.White;
             this.d13.Location = new System.Drawing.Point(718, 464);
             this.d13.Name = "d13";
             this.d13.Size = new System.Drawing.Size(38, 35);
             this.d13.TabIndex = 51;
             this.d13.Text = "D13";
-            this.d13.UseVisualStyleBackColor = true;
+            this.d13.UseVisualStyleBackColor = false;
             this.d13.Click += new System.EventHandler(this.d13_Click);
             // 
             // d12
             // 
+            this.d12.BackColor = System.Drawing.Color.Maroon;
+            this.d12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d12.ForeColor = System.Drawing.Color.White;
             this.d12.Location = new System.Drawing.Point(637, 464);
             this.d12.Name = "d12";
             this.d12.Size = new System.Drawing.Size(38, 35);
             this.d12.TabIndex = 50;
             this.d12.Text = "D12";
-            this.d12.UseVisualStyleBackColor = true;
+            this.d12.UseVisualStyleBackColor = false;
             this.d12.Click += new System.EventHandler(this.d12_Click);
             // 
             // d11
             // 
+            this.d11.BackColor = System.Drawing.Color.Maroon;
+            this.d11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d11.ForeColor = System.Drawing.Color.White;
             this.d11.Location = new System.Drawing.Point(593, 464);
             this.d11.Name = "d11";
             this.d11.Size = new System.Drawing.Size(38, 35);
             this.d11.TabIndex = 49;
             this.d11.Text = "D11";
-            this.d11.UseVisualStyleBackColor = true;
+            this.d11.UseVisualStyleBackColor = false;
             this.d11.Click += new System.EventHandler(this.d11_Click);
             // 
             // d10
             // 
+            this.d10.BackColor = System.Drawing.Color.Maroon;
+            this.d10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d10.ForeColor = System.Drawing.Color.White;
             this.d10.Location = new System.Drawing.Point(549, 464);
             this.d10.Name = "d10";
             this.d10.Size = new System.Drawing.Size(38, 35);
             this.d10.TabIndex = 48;
             this.d10.Text = "D10";
-            this.d10.UseVisualStyleBackColor = true;
+            this.d10.UseVisualStyleBackColor = false;
             this.d10.Click += new System.EventHandler(this.d10_Click);
             // 
             // d9
             // 
+            this.d9.BackColor = System.Drawing.Color.Maroon;
+            this.d9.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d9.ForeColor = System.Drawing.Color.White;
             this.d9.Location = new System.Drawing.Point(505, 464);
             this.d9.Name = "d9";
             this.d9.Size = new System.Drawing.Size(38, 35);
             this.d9.TabIndex = 47;
             this.d9.Text = "D9";
-            this.d9.UseVisualStyleBackColor = true;
+            this.d9.UseVisualStyleBackColor = false;
             this.d9.Click += new System.EventHandler(this.d9_Click);
             // 
             // d8
             // 
+            this.d8.BackColor = System.Drawing.Color.Maroon;
+            this.d8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d8.ForeColor = System.Drawing.Color.White;
             this.d8.Location = new System.Drawing.Point(461, 464);
             this.d8.Name = "d8";
             this.d8.Size = new System.Drawing.Size(38, 35);
             this.d8.TabIndex = 46;
             this.d8.Text = "D8";
-            this.d8.UseVisualStyleBackColor = true;
+            this.d8.UseVisualStyleBackColor = false;
             this.d8.Click += new System.EventHandler(this.d8_Click);
             // 
             // d7
             // 
+            this.d7.BackColor = System.Drawing.Color.Maroon;
+            this.d7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d7.ForeColor = System.Drawing.Color.White;
             this.d7.Location = new System.Drawing.Point(417, 464);
             this.d7.Name = "d7";
             this.d7.Size = new System.Drawing.Size(38, 35);
             this.d7.TabIndex = 45;
             this.d7.Text = "D7";
-            this.d7.UseVisualStyleBackColor = true;
+            this.d7.UseVisualStyleBackColor = false;
             this.d7.Click += new System.EventHandler(this.d7_Click);
             // 
             // d6
             // 
+            this.d6.BackColor = System.Drawing.Color.Maroon;
+            this.d6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d6.ForeColor = System.Drawing.Color.White;
             this.d6.Location = new System.Drawing.Point(373, 464);
             this.d6.Name = "d6";
             this.d6.Size = new System.Drawing.Size(38, 35);
             this.d6.TabIndex = 44;
             this.d6.Text = "D6";
-            this.d6.UseVisualStyleBackColor = true;
+            this.d6.UseVisualStyleBackColor = false;
             this.d6.Click += new System.EventHandler(this.d6_Click);
             // 
             // d5
             // 
+            this.d5.BackColor = System.Drawing.Color.Maroon;
+            this.d5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d5.ForeColor = System.Drawing.Color.White;
             this.d5.Location = new System.Drawing.Point(329, 464);
             this.d5.Name = "d5";
             this.d5.Size = new System.Drawing.Size(38, 35);
             this.d5.TabIndex = 43;
             this.d5.Text = "D5";
-            this.d5.UseVisualStyleBackColor = true;
+            this.d5.UseVisualStyleBackColor = false;
             this.d5.Click += new System.EventHandler(this.d5_Click);
             // 
             // d4
             // 
+            this.d4.BackColor = System.Drawing.Color.Maroon;
+            this.d4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d4.ForeColor = System.Drawing.Color.White;
             this.d4.Location = new System.Drawing.Point(285, 464);
             this.d4.Name = "d4";
             this.d4.Size = new System.Drawing.Size(38, 35);
             this.d4.TabIndex = 42;
             this.d4.Text = "D4";
-            this.d4.UseVisualStyleBackColor = true;
+            this.d4.UseVisualStyleBackColor = false;
             this.d4.Click += new System.EventHandler(this.d4_Click);
             // 
             // d3
             // 
+            this.d3.BackColor = System.Drawing.Color.Maroon;
+            this.d3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d3.ForeColor = System.Drawing.Color.White;
             this.d3.Location = new System.Drawing.Point(240, 464);
             this.d3.Name = "d3";
             this.d3.Size = new System.Drawing.Size(38, 35);
             this.d3.TabIndex = 41;
             this.d3.Text = "D3";
-            this.d3.UseVisualStyleBackColor = true;
+            this.d3.UseVisualStyleBackColor = false;
             this.d3.Click += new System.EventHandler(this.d3_Click);
             // 
             // d2
             // 
+            this.d2.BackColor = System.Drawing.Color.Maroon;
+            this.d2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d2.ForeColor = System.Drawing.Color.White;
             this.d2.Location = new System.Drawing.Point(156, 464);
             this.d2.Name = "d2";
             this.d2.Size = new System.Drawing.Size(38, 35);
             this.d2.TabIndex = 40;
             this.d2.Text = "D2";
-            this.d2.UseVisualStyleBackColor = true;
+            this.d2.UseVisualStyleBackColor = false;
             this.d2.Click += new System.EventHandler(this.d2_Click);
             // 
             // d1
             // 
+            this.d1.BackColor = System.Drawing.Color.Maroon;
+            this.d1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d1.ForeColor = System.Drawing.Color.White;
             this.d1.Location = new System.Drawing.Point(112, 464);
             this.d1.Name = "d1";
             this.d1.Size = new System.Drawing.Size(38, 35);
             this.d1.TabIndex = 39;
             this.d1.Text = "D1";
-            this.d1.UseVisualStyleBackColor = true;
+            this.d1.UseVisualStyleBackColor = false;
             this.d1.Click += new System.EventHandler(this.d1_Click);
             // 
             // c14
             // 
+            this.c14.BackColor = System.Drawing.Color.Maroon;
+            this.c14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c14.ForeColor = System.Drawing.Color.White;
             this.c14.Location = new System.Drawing.Point(762, 414);
             this.c14.Name = "c14";
             this.c14.Size = new System.Drawing.Size(38, 35);
             this.c14.TabIndex = 38;
             this.c14.Text = "C14";
-            this.c14.UseVisualStyleBackColor = true;
+            this.c14.UseVisualStyleBackColor = false;
             this.c14.Click += new System.EventHandler(this.c14_Click);
             // 
             // c13
             // 
+            this.c13.BackColor = System.Drawing.Color.Maroon;
+            this.c13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c13.ForeColor = System.Drawing.Color.White;
             this.c13.Location = new System.Drawing.Point(718, 414);
             this.c13.Name = "c13";
             this.c13.Size = new System.Drawing.Size(38, 35);
             this.c13.TabIndex = 37;
             this.c13.Text = "C13";
-            this.c13.UseVisualStyleBackColor = true;
+            this.c13.UseVisualStyleBackColor = false;
             this.c13.Click += new System.EventHandler(this.c13_Click);
             // 
             // c12
             // 
+            this.c12.BackColor = System.Drawing.Color.Maroon;
+            this.c12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c12.ForeColor = System.Drawing.Color.White;
             this.c12.Location = new System.Drawing.Point(637, 414);
             this.c12.Name = "c12";
             this.c12.Size = new System.Drawing.Size(38, 35);
             this.c12.TabIndex = 36;
             this.c12.Text = "C12";
-            this.c12.UseVisualStyleBackColor = true;
+            this.c12.UseVisualStyleBackColor = false;
             this.c12.Click += new System.EventHandler(this.c12_Click);
             // 
             // c11
             // 
+            this.c11.BackColor = System.Drawing.Color.Maroon;
+            this.c11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c11.ForeColor = System.Drawing.Color.White;
             this.c11.Location = new System.Drawing.Point(593, 414);
             this.c11.Name = "c11";
             this.c11.Size = new System.Drawing.Size(38, 35);
             this.c11.TabIndex = 35;
             this.c11.Text = "C11";
-            this.c11.UseVisualStyleBackColor = true;
+            this.c11.UseVisualStyleBackColor = false;
             this.c11.Click += new System.EventHandler(this.c11_Click);
             // 
             // c10
             // 
+            this.c10.BackColor = System.Drawing.Color.Maroon;
+            this.c10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c10.ForeColor = System.Drawing.Color.White;
             this.c10.Location = new System.Drawing.Point(549, 414);
             this.c10.Name = "c10";
             this.c10.Size = new System.Drawing.Size(38, 35);
             this.c10.TabIndex = 34;
             this.c10.Text = "C10";
-            this.c10.UseVisualStyleBackColor = true;
+            this.c10.UseVisualStyleBackColor = false;
             this.c10.Click += new System.EventHandler(this.c10_Click);
             // 
             // c9
             // 
+            this.c9.BackColor = System.Drawing.Color.Maroon;
+            this.c9.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c9.ForeColor = System.Drawing.Color.White;
             this.c9.Location = new System.Drawing.Point(505, 414);
             this.c9.Name = "c9";
             this.c9.Size = new System.Drawing.Size(38, 35);
             this.c9.TabIndex = 33;
             this.c9.Text = "C9";
-            this.c9.UseVisualStyleBackColor = true;
+            this.c9.UseVisualStyleBackColor = false;
             this.c9.Click += new System.EventHandler(this.c9_Click);
             // 
             // c8
             // 
+            this.c8.BackColor = System.Drawing.Color.Maroon;
+            this.c8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c8.ForeColor = System.Drawing.Color.White;
             this.c8.Location = new System.Drawing.Point(461, 414);
             this.c8.Name = "c8";
             this.c8.Size = new System.Drawing.Size(38, 35);
             this.c8.TabIndex = 32;
             this.c8.Text = "C8";
-            this.c8.UseVisualStyleBackColor = true;
+            this.c8.UseVisualStyleBackColor = false;
             this.c8.Click += new System.EventHandler(this.c8_Click);
             // 
             // c7
             // 
+            this.c7.BackColor = System.Drawing.Color.Maroon;
+            this.c7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c7.ForeColor = System.Drawing.Color.White;
             this.c7.Location = new System.Drawing.Point(417, 414);
             this.c7.Name = "c7";
             this.c7.Size = new System.Drawing.Size(38, 35);
             this.c7.TabIndex = 31;
             this.c7.Text = "C7";
-            this.c7.UseVisualStyleBackColor = true;
+            this.c7.UseVisualStyleBackColor = false;
             this.c7.Click += new System.EventHandler(this.c7_Click);
             // 
             // c6
             // 
+            this.c6.BackColor = System.Drawing.Color.Maroon;
+            this.c6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c6.ForeColor = System.Drawing.Color.White;
             this.c6.Location = new System.Drawing.Point(373, 414);
             this.c6.Name = "c6";
             this.c6.Size = new System.Drawing.Size(38, 35);
             this.c6.TabIndex = 30;
             this.c6.Text = "C6";
-            this.c6.UseVisualStyleBackColor = true;
+            this.c6.UseVisualStyleBackColor = false;
             this.c6.Click += new System.EventHandler(this.c6_Click);
             // 
             // c5
             // 
+            this.c5.BackColor = System.Drawing.Color.Maroon;
+            this.c5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c5.ForeColor = System.Drawing.Color.White;
             this.c5.Location = new System.Drawing.Point(329, 414);
             this.c5.Name = "c5";
             this.c5.Size = new System.Drawing.Size(38, 35);
             this.c5.TabIndex = 29;
             this.c5.Text = "C5";
-            this.c5.UseVisualStyleBackColor = true;
+            this.c5.UseVisualStyleBackColor = false;
             this.c5.Click += new System.EventHandler(this.c5_Click);
             // 
             // c4
             // 
+            this.c4.BackColor = System.Drawing.Color.Maroon;
+            this.c4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c4.ForeColor = System.Drawing.Color.White;
             this.c4.Location = new System.Drawing.Point(285, 414);
             this.c4.Name = "c4";
             this.c4.Size = new System.Drawing.Size(38, 35);
             this.c4.TabIndex = 28;
             this.c4.Text = "C4";
-            this.c4.UseVisualStyleBackColor = true;
+            this.c4.UseVisualStyleBackColor = false;
             this.c4.Click += new System.EventHandler(this.c4_Click);
             // 
             // c3
             // 
+            this.c3.BackColor = System.Drawing.Color.Maroon;
+            this.c3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c3.ForeColor = System.Drawing.Color.White;
             this.c3.Location = new System.Drawing.Point(240, 414);
             this.c3.Name = "c3";
             this.c3.Size = new System.Drawing.Size(38, 35);
             this.c3.TabIndex = 27;
             this.c3.Text = "C3";
-            this.c3.UseVisualStyleBackColor = true;
+            this.c3.UseVisualStyleBackColor = false;
             this.c3.Click += new System.EventHandler(this.c3_Click);
             // 
             // c2
             // 
+            this.c2.BackColor = System.Drawing.Color.Maroon;
+            this.c2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c2.ForeColor = System.Drawing.Color.White;
             this.c2.Location = new System.Drawing.Point(156, 414);
             this.c2.Name = "c2";
             this.c2.Size = new System.Drawing.Size(38, 35);
             this.c2.TabIndex = 26;
             this.c2.Text = "C2";
-            this.c2.UseVisualStyleBackColor = true;
+            this.c2.UseVisualStyleBackColor = false;
             this.c2.Click += new System.EventHandler(this.c2_Click);
             // 
             // c1
             // 
+            this.c1.BackColor = System.Drawing.Color.Maroon;
+            this.c1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c1.ForeColor = System.Drawing.Color.White;
             this.c1.Location = new System.Drawing.Point(112, 414);
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(38, 35);
             this.c1.TabIndex = 25;
             this.c1.Text = "C1";
-            this.c1.UseVisualStyleBackColor = true;
+            this.c1.UseVisualStyleBackColor = false;
             this.c1.Click += new System.EventHandler(this.c1_Click);
             // 
             // b8
             // 
+            this.b8.BackColor = System.Drawing.Color.Maroon;
+            this.b8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b8.ForeColor = System.Drawing.Color.White;
             this.b8.Location = new System.Drawing.Point(593, 336);
             this.b8.Name = "b8";
             this.b8.Size = new System.Drawing.Size(38, 35);
             this.b8.TabIndex = 24;
             this.b8.Text = "B8";
-            this.b8.UseVisualStyleBackColor = true;
+            this.b8.UseVisualStyleBackColor = false;
             this.b8.Click += new System.EventHandler(this.b8_Click);
             // 
             // b7
             // 
+            this.b7.BackColor = System.Drawing.Color.Maroon;
+            this.b7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b7.ForeColor = System.Drawing.Color.White;
             this.b7.Location = new System.Drawing.Point(549, 336);
             this.b7.Name = "b7";
             this.b7.Size = new System.Drawing.Size(38, 35);
             this.b7.TabIndex = 23;
             this.b7.Text = "B7";
-            this.b7.UseVisualStyleBackColor = true;
+            this.b7.UseVisualStyleBackColor = false;
             this.b7.Click += new System.EventHandler(this.b7_Click);
             // 
             // b6
             // 
+            this.b6.BackColor = System.Drawing.Color.Maroon;
+            this.b6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b6.ForeColor = System.Drawing.Color.White;
             this.b6.Location = new System.Drawing.Point(505, 336);
             this.b6.Name = "b6";
             this.b6.Size = new System.Drawing.Size(38, 35);
             this.b6.TabIndex = 22;
             this.b6.Text = "B6";
-            this.b6.UseVisualStyleBackColor = true;
+            this.b6.UseVisualStyleBackColor = false;
             this.b6.Click += new System.EventHandler(this.b6_Click);
             // 
             // b5
             // 
+            this.b5.BackColor = System.Drawing.Color.Maroon;
+            this.b5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b5.ForeColor = System.Drawing.Color.White;
             this.b5.Location = new System.Drawing.Point(461, 336);
             this.b5.Name = "b5";
             this.b5.Size = new System.Drawing.Size(38, 35);
             this.b5.TabIndex = 21;
             this.b5.Text = "B5";
-            this.b5.UseVisualStyleBackColor = true;
+            this.b5.UseVisualStyleBackColor = false;
             this.b5.Click += new System.EventHandler(this.b5_Click);
             // 
             // b4
             // 
+            this.b4.BackColor = System.Drawing.Color.Maroon;
+            this.b4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b4.ForeColor = System.Drawing.Color.White;
             this.b4.Location = new System.Drawing.Point(417, 336);
             this.b4.Name = "b4";
             this.b4.Size = new System.Drawing.Size(38, 35);
             this.b4.TabIndex = 20;
             this.b4.Text = "B4";
-            this.b4.UseVisualStyleBackColor = true;
+            this.b4.UseVisualStyleBackColor = false;
             this.b4.Click += new System.EventHandler(this.b4_Click);
             // 
             // b3
             // 
+            this.b3.BackColor = System.Drawing.Color.Maroon;
+            this.b3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b3.ForeColor = System.Drawing.Color.White;
             this.b3.Location = new System.Drawing.Point(373, 336);
             this.b3.Name = "b3";
             this.b3.Size = new System.Drawing.Size(38, 35);
             this.b3.TabIndex = 19;
             this.b3.Text = "B3";
-            this.b3.UseVisualStyleBackColor = true;
+            this.b3.UseVisualStyleBackColor = false;
             this.b3.Click += new System.EventHandler(this.b3_Click);
             // 
             // b2
             // 
+            this.b2.BackColor = System.Drawing.Color.Maroon;
+            this.b2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b2.ForeColor = System.Drawing.Color.White;
             this.b2.Location = new System.Drawing.Point(329, 336);
             this.b2.Name = "b2";
             this.b2.Size = new System.Drawing.Size(38, 35);
             this.b2.TabIndex = 18;
             this.b2.Text = "B2";
-            this.b2.UseVisualStyleBackColor = true;
+            this.b2.UseVisualStyleBackColor = false;
             this.b2.Click += new System.EventHandler(this.b2_Click);
             // 
             // b1
             // 
+            this.b1.BackColor = System.Drawing.Color.Maroon;
+            this.b1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.b1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b1.ForeColor = System.Drawing.Color.White;
             this.b1.Location = new System.Drawing.Point(285, 336);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(38, 35);
             this.b1.TabIndex = 17;
             this.b1.Text = "B1";
-            this.b1.UseVisualStyleBackColor = true;
+            this.b1.UseVisualStyleBackColor = false;
             this.b1.Click += new System.EventHandler(this.b1_Click);
             // 
             // a8
             // 
+            this.a8.BackColor = System.Drawing.Color.Maroon;
+            this.a8.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a8.ForeColor = System.Drawing.Color.White;
             this.a8.Location = new System.Drawing.Point(593, 295);
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(38, 35);
             this.a8.TabIndex = 16;
             this.a8.Text = "A8";
-            this.a8.UseVisualStyleBackColor = true;
+            this.a8.UseVisualStyleBackColor = false;
             this.a8.Click += new System.EventHandler(this.a8_Click);
             // 
             // a7
             // 
+            this.a7.BackColor = System.Drawing.Color.Maroon;
+            this.a7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a7.ForeColor = System.Drawing.Color.White;
             this.a7.Location = new System.Drawing.Point(549, 295);
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(38, 35);
             this.a7.TabIndex = 15;
             this.a7.Text = "A7";
-            this.a7.UseVisualStyleBackColor = true;
+            this.a7.UseVisualStyleBackColor = false;
             this.a7.Click += new System.EventHandler(this.a7_Click);
             // 
             // a6
             // 
+            this.a6.BackColor = System.Drawing.Color.Maroon;
+            this.a6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a6.ForeColor = System.Drawing.Color.White;
             this.a6.Location = new System.Drawing.Point(505, 295);
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(38, 35);
             this.a6.TabIndex = 14;
             this.a6.Text = "A6";
-            this.a6.UseVisualStyleBackColor = true;
+            this.a6.UseVisualStyleBackColor = false;
             this.a6.Click += new System.EventHandler(this.a6_Click);
             // 
             // a5
             // 
+            this.a5.BackColor = System.Drawing.Color.Maroon;
+            this.a5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a5.ForeColor = System.Drawing.Color.White;
             this.a5.Location = new System.Drawing.Point(461, 295);
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(38, 35);
             this.a5.TabIndex = 13;
             this.a5.Text = "A5";
-            this.a5.UseVisualStyleBackColor = true;
+            this.a5.UseVisualStyleBackColor = false;
             this.a5.Click += new System.EventHandler(this.a5_Click);
             // 
             // a4
             // 
+            this.a4.BackColor = System.Drawing.Color.Maroon;
+            this.a4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a4.ForeColor = System.Drawing.Color.White;
             this.a4.Location = new System.Drawing.Point(417, 295);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(38, 35);
             this.a4.TabIndex = 11;
             this.a4.Text = "A4";
-            this.a4.UseVisualStyleBackColor = true;
+            this.a4.UseVisualStyleBackColor = false;
             this.a4.Click += new System.EventHandler(this.a4_Click);
             // 
             // a3
             // 
+            this.a3.BackColor = System.Drawing.Color.Maroon;
+            this.a3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a3.ForeColor = System.Drawing.Color.White;
             this.a3.Location = new System.Drawing.Point(373, 295);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(38, 35);
             this.a3.TabIndex = 10;
             this.a3.Text = "A3";
-            this.a3.UseVisualStyleBackColor = true;
+            this.a3.UseVisualStyleBackColor = false;
             this.a3.Click += new System.EventHandler(this.a3_Click);
             // 
             // a2
             // 
+            this.a2.BackColor = System.Drawing.Color.Maroon;
+            this.a2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.a2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a2.ForeColor = System.Drawing.Color.White;
             this.a2.Location = new System.Drawing.Point(329, 295);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(38, 35);
             this.a2.TabIndex = 9;
             this.a2.Text = "A2";
-            this.a2.UseVisualStyleBackColor = true;
+            this.a2.UseVisualStyleBackColor = false;
             this.a2.Click += new System.EventHandler(this.a2_Click);
             // 
             // a1
             // 
+            this.a1.BackColor = System.Drawing.Color.Maroon;
+            this.a1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.a1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.a1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.a1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.a1.ForeColor = System.Drawing.Color.White;
             this.a1.Location = new System.Drawing.Point(285, 295);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(38, 35);
             this.a1.TabIndex = 8;
             this.a1.Text = "A1";
-            this.a1.UseVisualStyleBackColor = true;
+            this.a1.UseVisualStyleBackColor = false;
             this.a1.Click += new System.EventHandler(this.a1_Click);
             // 
             // ShowtimeSeattxt
             // 
             this.ShowtimeSeattxt.AutoSize = true;
             this.ShowtimeSeattxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowtimeSeattxt.Location = new System.Drawing.Point(121, 158);
+            this.ShowtimeSeattxt.ForeColor = System.Drawing.Color.White;
+            this.ShowtimeSeattxt.Location = new System.Drawing.Point(121, 145);
             this.ShowtimeSeattxt.Name = "ShowtimeSeattxt";
             this.ShowtimeSeattxt.Size = new System.Drawing.Size(60, 20);
             this.ShowtimeSeattxt.TabIndex = 7;
@@ -3118,7 +3516,8 @@
             // 
             this.lengthSeattxt.AutoSize = true;
             this.lengthSeattxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lengthSeattxt.Location = new System.Drawing.Point(106, 121);
+            this.lengthSeattxt.ForeColor = System.Drawing.Color.White;
+            this.lengthSeattxt.Location = new System.Drawing.Point(108, 112);
             this.lengthSeattxt.Name = "lengthSeattxt";
             this.lengthSeattxt.Size = new System.Drawing.Size(60, 20);
             this.lengthSeattxt.TabIndex = 6;
@@ -3128,7 +3527,8 @@
             // 
             this.movieSeattxt.AutoSize = true;
             this.movieSeattxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movieSeattxt.Location = new System.Drawing.Point(108, 85);
+            this.movieSeattxt.ForeColor = System.Drawing.Color.White;
+            this.movieSeattxt.Location = new System.Drawing.Point(108, 73);
             this.movieSeattxt.Name = "movieSeattxt";
             this.movieSeattxt.Size = new System.Drawing.Size(60, 20);
             this.movieSeattxt.TabIndex = 5;
@@ -3138,7 +3538,8 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(32, 158);
+            this.label68.ForeColor = System.Drawing.Color.White;
+            this.label68.Location = new System.Drawing.Point(32, 145);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(83, 20);
             this.label68.TabIndex = 4;
@@ -3148,7 +3549,8 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(32, 120);
+            this.label67.ForeColor = System.Drawing.Color.White;
+            this.label67.Location = new System.Drawing.Point(32, 112);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(63, 20);
             this.label67.TabIndex = 3;
@@ -3158,8 +3560,8 @@
             // 
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label66.Location = new System.Drawing.Point(32, 85);
+            this.label66.ForeColor = System.Drawing.Color.White;
+            this.label66.Location = new System.Drawing.Point(32, 73);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(54, 20);
             this.label66.TabIndex = 2;
@@ -3601,7 +4003,7 @@
             // displayShowtimelbl
             // 
             this.displayShowtimelbl.AutoSize = true;
-            this.displayShowtimelbl.Location = new System.Drawing.Point(551, 119);
+            this.displayShowtimelbl.Location = new System.Drawing.Point(189, 219);
             this.displayShowtimelbl.Name = "displayShowtimelbl";
             this.displayShowtimelbl.Size = new System.Drawing.Size(28, 13);
             this.displayShowtimelbl.TabIndex = 114;
@@ -3610,7 +4012,7 @@
             // displayDatelbl
             // 
             this.displayDatelbl.AutoSize = true;
-            this.displayDatelbl.Location = new System.Drawing.Point(528, 85);
+            this.displayDatelbl.Location = new System.Drawing.Point(166, 185);
             this.displayDatelbl.Name = "displayDatelbl";
             this.displayDatelbl.Size = new System.Drawing.Size(33, 13);
             this.displayDatelbl.TabIndex = 113;
@@ -3618,7 +4020,7 @@
             // 
             // showtimeDate
             // 
-            this.showtimeDate.Location = new System.Drawing.Point(406, 197);
+            this.showtimeDate.Location = new System.Drawing.Point(430, 99);
             this.showtimeDate.MaxDate = new System.DateTime(2014, 5, 9, 0, 0, 0, 0);
             this.showtimeDate.MinDate = new System.DateTime(2014, 4, 24, 0, 0, 0, 0);
             this.showtimeDate.Name = "showtimeDate";
@@ -3631,7 +4033,7 @@
             // 
             this.showtimelbl.AutoSize = true;
             this.showtimelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtimelbl.Location = new System.Drawing.Point(403, 119);
+            this.showtimelbl.Location = new System.Drawing.Point(41, 219);
             this.showtimelbl.Name = "showtimelbl";
             this.showtimelbl.Size = new System.Drawing.Size(126, 16);
             this.showtimelbl.TabIndex = 110;
@@ -3641,7 +4043,7 @@
             // 
             this.showDatelbl.AutoSize = true;
             this.showDatelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showDatelbl.Location = new System.Drawing.Point(403, 82);
+            this.showDatelbl.Location = new System.Drawing.Point(41, 182);
             this.showDatelbl.Name = "showDatelbl";
             this.showDatelbl.Size = new System.Drawing.Size(97, 16);
             this.showDatelbl.TabIndex = 109;
@@ -3651,7 +4053,7 @@
             // 
             this.chooseDatelbl.AutoSize = true;
             this.chooseDatelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chooseDatelbl.Location = new System.Drawing.Point(283, 197);
+            this.chooseDatelbl.Location = new System.Drawing.Point(307, 99);
             this.chooseDatelbl.Name = "chooseDatelbl";
             this.chooseDatelbl.Size = new System.Drawing.Size(117, 20);
             this.chooseDatelbl.TabIndex = 108;
@@ -3661,7 +4063,7 @@
             // 
             this.showtime9.AutoSize = true;
             this.showtime9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime9.Location = new System.Drawing.Point(671, 396);
+            this.showtime9.Location = new System.Drawing.Point(569, 349);
             this.showtime9.Name = "showtime9";
             this.showtime9.Size = new System.Drawing.Size(85, 20);
             this.showtime9.TabIndex = 107;
@@ -3673,7 +4075,7 @@
             // 
             this.showtime8.AutoSize = true;
             this.showtime8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime8.Location = new System.Drawing.Point(508, 395);
+            this.showtime8.Location = new System.Drawing.Point(439, 349);
             this.showtime8.Name = "showtime8";
             this.showtime8.Size = new System.Drawing.Size(85, 20);
             this.showtime8.TabIndex = 106;
@@ -3685,7 +4087,7 @@
             // 
             this.showtime7.AutoSize = true;
             this.showtime7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime7.Location = new System.Drawing.Point(353, 395);
+            this.showtime7.Location = new System.Drawing.Point(307, 349);
             this.showtime7.Name = "showtime7";
             this.showtime7.Size = new System.Drawing.Size(85, 20);
             this.showtime7.TabIndex = 105;
@@ -3697,7 +4099,7 @@
             // 
             this.showtime6.AutoSize = true;
             this.showtime6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime6.Location = new System.Drawing.Point(198, 396);
+            this.showtime6.Location = new System.Drawing.Point(569, 277);
             this.showtime6.Name = "showtime6";
             this.showtime6.Size = new System.Drawing.Size(85, 20);
             this.showtime6.TabIndex = 104;
@@ -3709,7 +4111,7 @@
             // 
             this.showtime5.AutoSize = true;
             this.showtime5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime5.Location = new System.Drawing.Point(744, 327);
+            this.showtime5.Location = new System.Drawing.Point(439, 277);
             this.showtime5.Name = "showtime5";
             this.showtime5.Size = new System.Drawing.Size(85, 20);
             this.showtime5.TabIndex = 103;
@@ -3721,7 +4123,7 @@
             // 
             this.showtime4.AutoSize = true;
             this.showtime4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime4.Location = new System.Drawing.Point(579, 328);
+            this.showtime4.Location = new System.Drawing.Point(307, 277);
             this.showtime4.Name = "showtime4";
             this.showtime4.Size = new System.Drawing.Size(85, 20);
             this.showtime4.TabIndex = 102;
@@ -3733,7 +4135,7 @@
             // 
             this.showtime3.AutoSize = true;
             this.showtime3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime3.Location = new System.Drawing.Point(422, 328);
+            this.showtime3.Location = new System.Drawing.Point(569, 216);
             this.showtime3.Name = "showtime3";
             this.showtime3.Size = new System.Drawing.Size(85, 20);
             this.showtime3.TabIndex = 101;
@@ -3745,7 +4147,7 @@
             // 
             this.showtime2.AutoSize = true;
             this.showtime2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime2.Location = new System.Drawing.Point(283, 328);
+            this.showtime2.Location = new System.Drawing.Point(439, 212);
             this.showtime2.Name = "showtime2";
             this.showtime2.Size = new System.Drawing.Size(85, 20);
             this.showtime2.TabIndex = 100;
@@ -3757,7 +4159,7 @@
             // 
             this.showtime1.AutoSize = true;
             this.showtime1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtime1.Location = new System.Drawing.Point(126, 328);
+            this.showtime1.Location = new System.Drawing.Point(307, 212);
             this.showtime1.Name = "showtime1";
             this.showtime1.Size = new System.Drawing.Size(85, 20);
             this.showtime1.TabIndex = 99;
@@ -3769,7 +4171,7 @@
             // 
             this.showtimeHeader.AutoSize = true;
             this.showtimeHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showtimeHeader.Location = new System.Drawing.Point(403, 262);
+            this.showtimeHeader.Location = new System.Drawing.Point(391, 162);
             this.showtimeHeader.Name = "showtimeHeader";
             this.showtimeHeader.Size = new System.Drawing.Size(189, 25);
             this.showtimeHeader.TabIndex = 98;
@@ -3777,7 +4179,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(518, 692);
+            this.button4.Location = new System.Drawing.Point(378, 696);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 38);
             this.button4.TabIndex = 14;
@@ -5029,7 +5431,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1003, 1018);
+            this.tabPage2.Size = new System.Drawing.Size(961, 1018);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -5038,55 +5440,13 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // CACreditCardInfoLabel
-            // 
-            this.CACreditCardInfoLabel.AutoSize = true;
-            this.CACreditCardInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CACreditCardInfoLabel.Location = new System.Drawing.Point(637, 68);
-            this.CACreditCardInfoLabel.Name = "CACreditCardInfoLabel";
-            this.CACreditCardInfoLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CACreditCardInfoLabel.Size = new System.Drawing.Size(197, 20);
-            this.CACreditCardInfoLabel.TabIndex = 86;
-            this.CACreditCardInfoLabel.Text = "Credit Card Information";
-            // 
-            // CAAccountInfoLabel
-            // 
-            this.CAAccountInfoLabel.AutoSize = true;
-            this.CAAccountInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAAccountInfoLabel.Location = new System.Drawing.Point(172, 432);
-            this.CAAccountInfoLabel.Name = "CAAccountInfoLabel";
-            this.CAAccountInfoLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.CAAccountInfoLabel.Size = new System.Drawing.Size(172, 20);
-            this.CAAccountInfoLabel.TabIndex = 87;
-            this.CAAccountInfoLabel.Text = "Account Information";
-            // 
-            // LoginDiv
-            // 
-            this.LoginDiv.Image = ((System.Drawing.Image)(resources.GetObject("LoginDiv.Image")));
-            this.LoginDiv.Location = new System.Drawing.Point(32, 16);
-            this.LoginDiv.Name = "LoginDiv";
-            this.LoginDiv.Size = new System.Drawing.Size(896, 33);
-            this.LoginDiv.TabIndex = 73;
-            this.LoginDiv.TabStop = false;
-            // 
-            // backgroundL
-            // 
-            this.backgroundL.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.backgroundL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.backgroundL.Image = ((System.Drawing.Image)(resources.GetObject("backgroundL.Image")));
-            this.backgroundL.Location = new System.Drawing.Point(0, 0);
-            this.backgroundL.Name = "backgroundL";
-            this.backgroundL.Size = new System.Drawing.Size(961, 387);
-            this.backgroundL.TabIndex = 74;
-            this.backgroundL.TabStop = false;
-            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1033, 962);
+            this.ClientSize = new System.Drawing.Size(1033, 733);
             this.Controls.Add(this.tabControl1);
             this.Name = "homepage";
             this.Text = "Form1";
@@ -5137,6 +5497,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.backgroundMD)).EndInit();
             this.LoginTab.ResumeLayout(false);
             this.LoginTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginDiv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundL)).EndInit();
             this.AccountTab.ResumeLayout(false);
             this.AccountTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -5170,8 +5532,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LoginDiv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backgroundL)).EndInit();
             this.ResumeLayout(false);
 
         }
