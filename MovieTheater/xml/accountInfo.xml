@@ -1,18 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Account Info-->
 <Accounts>
-  <Account First_Name="Dan" Last_Name="Dan">
-    <Address>123 Cherry Ave</Address>
-    <City>Chino</City>
+  <Account First_Name="Nick" Last_Name="Diller">
+    <Address>123 Place Ave</Address>
+    <City>Somewhere</City>
+    <State>CA</State>
+    <Username>Gameofthrones</Username>
+    <Password>redwedding</Password>
+    <CH_FNAME>Nicholas</CH_FNAME>
+    <CH_LNAME>Diller</CH_LNAME>
+    <Card_Number>2133213123134212</Card_Number>
+    <Security_Code>111</Security_Code>
+  </Account>
+  <Account First_Name="Owner" Last_Name="Manager">
+    <Address>213 City St</Address>
+    <City>Fullerton</City>
     <State>CA</State>
     <Username>Admin</Username>
     <Password>password</Password>
-  </Account>
-  <Account First_Name="Nick" Last_Name="Diller">
-    <Address>12213 Smith Street</Address>
-    <City>Chino</City>
-    <State>CA</State>
-    <Username>redwedding</Username>
-    <Password>gameofthrones</Password>
+    <CH_FNAME>Owner</CH_FNAME>
+    <CH_LNAME>Manager</CH_LNAME>
+    <Card_Number>1231438891239341</Card_Number>
+    <Security_Code>
+    </Security_Code>
   </Account>
 </Accounts>

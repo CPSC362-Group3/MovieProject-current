@@ -19,7 +19,7 @@ namespace MovieTheater
     public partial class homepage : Form
     {
         //Boolean Flags
-        bool adminLogged = true;
+        bool adminLogged = false;
         bool logged = false;
         bool editInfo = false;
         
@@ -28,7 +28,7 @@ namespace MovieTheater
         int showtimes = 2;
         int[] track = new int[72];
 
-        string currentU, currentfN, currentlN;
+        string currentU, SC;
 
         //String file paths, xml related
         string MoviesPath = "../../xml/Movies.xml";
@@ -52,6 +52,8 @@ namespace MovieTheater
 
             setBackgrounds();
             displayDatelbl.Text = DateTime.Today.ToLongDateString();
+            showtimeDate.MinDate = DateTime.Today;
+            showtimeDate.MaxDate = DateTime.FromOADate(14);
 
             updateHomePage();
 
@@ -1298,104 +1300,123 @@ namespace MovieTheater
                 MessageBox.Show("Required Fields Missing, please enter data.");
 
             else
-            {
-                BodyTabControl.SelectedTab = PaymentInfoTab;
+            { 
+                XmlDocument doc = new XmlDocument();
+
+                //If there is no current file, then create a new one
+                if (!System.IO.File.Exists(AccountsPath))
+                {
+                    //Create neccessary nodes
+                    XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                    XmlComment comment = doc.CreateComment("Account Info");
+                    XmlElement root = doc.CreateElement("Accounts");
+                    XmlElement acc = doc.CreateElement("Account");
+                    XmlAttribute fName = doc.CreateAttribute("First_Name");
+                    XmlAttribute lName = doc.CreateAttribute("Last_Name");
+                    XmlElement address = doc.CreateElement("Address");
+                    XmlElement city = doc.CreateElement("City");
+                    XmlElement state = doc.CreateElement("State");
+
+                    XmlElement username = doc.CreateElement("Username");
+                    XmlElement password = doc.CreateElement("Password");
+
+                    XmlElement cardfname = doc.CreateElement("CH_FNAME");
+                    XmlElement cardlname = doc.CreateElement("CH_LNAME");
+                    XmlElement cardnum = doc.CreateElement("Card_Number");
+                    XmlElement securitycode = doc.CreateElement("Security_Code");
+
+                    //Add the values for each nodes
+                    fName.Value = fNameTxt.Text;
+                    lName.Value = lNameTxt.Text;
+                    address.InnerText = AddrTxt.Text;
+                    city.InnerText = CityTxt.Text;
+                    state.InnerText = StateTxt.Text;
+                    username.InnerText = UserTxt.Text;
+                    password.InnerText = passTxt.Text;
+                    cardfname.InnerText = chfname.Text;
+                    cardlname.InnerText = chlname.Text;
+                    cardnum.InnerText = ccn.Text;
+                    securitycode.InnerText = secCode.Text;
+
+
+                    //Construct the document
+                    doc.AppendChild(declaration);
+                    doc.AppendChild(comment);
+                    doc.AppendChild(root);
+                    root.AppendChild(acc);
+                    acc.Attributes.Append(fName);
+                    acc.Attributes.Append(lName);
+                    acc.AppendChild(address);
+                    acc.AppendChild(city);
+                    acc.AppendChild(state);
+                    acc.AppendChild(username);
+                    acc.AppendChild(password);
+                    acc.AppendChild(cardfname);
+                    acc.AppendChild(cardlname);
+                    acc.AppendChild(cardnum);
+                    acc.AppendChild(securitycode);
+
+                    doc.Save(AccountsPath);
+                }
+                else //If there is already a file
+                {
+                    //Load the XML File
+                    doc.Load(AccountsPath);
+
+                    //Get the root element
+                    XmlElement root = doc.DocumentElement;
+
+                    XmlElement acc = doc.CreateElement("Account");
+                    XmlAttribute fName = doc.CreateAttribute("First_Name");
+                    XmlAttribute lName = doc.CreateAttribute("Last_Name");
+                    XmlElement address = doc.CreateElement("Address");
+                    XmlElement city = doc.CreateElement("City");
+                    XmlElement state = doc.CreateElement("State");
+
+                    XmlElement username = doc.CreateElement("Username");
+                    XmlElement password = doc.CreateElement("Password");
+
+                    XmlElement cardfname = doc.CreateElement("CH_FNAME");
+                    XmlElement cardlname = doc.CreateElement("CH_LNAME");
+                    XmlElement cardnum = doc.CreateElement("Card_Number");
+                    XmlElement securitycode = doc.CreateElement("Security_Code");
+
+                    //Add the values for each nodes
+                    fName.Value = fNameTxt.Text;
+                    lName.Value = lNameTxt.Text;
+                    address.InnerText = AddrTxt.Text;
+                    city.InnerText = CityTxt.Text;
+                    state.InnerText = StateTxt.Text;
+                    username.InnerText = UserTxt.Text;
+                    password.InnerText = passTxt.Text;
+                    cardfname.InnerText = chfname.Text;
+                    cardlname.InnerText = chlname.Text;
+                    cardnum.InnerText = ccn.Text;
+                    securitycode.InnerText = secCode.Text;
+
+                    //Construct the Person element
+                    acc.Attributes.Append(fName);
+                    acc.Attributes.Append(lName);
+                    acc.AppendChild(address);
+                    acc.AppendChild(city);
+                    acc.AppendChild(state);
+                    acc.AppendChild(username);
+                    acc.AppendChild(password);
+                    acc.AppendChild(cardfname);
+                    acc.AppendChild(cardlname);
+                    acc.AppendChild(cardnum);
+                    acc.AppendChild(securitycode);
+
+                    //Add the New person element to the end of the root element
+                    root.AppendChild(acc);
+
+                    //Save the document
+                    doc.Save(AccountsPath);
+                }
+                MessageBox.Show("Successfully created account!");
+
+                BodyTabControl.SelectedTab = LoginTab; //Return to login screen
             }
-
-        }
-
-        //Enter Payment information to finish create account. Page inaccessible unless previous account info filled.
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string PATH = "accountInfo.xml";
-            XmlDocument doc = new XmlDocument();
-
-            //If there is no current file, then create a new one
-            if (!System.IO.File.Exists(PATH))
-            {
-                //Create neccessary nodes
-                XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
-                XmlComment comment = doc.CreateComment("Account Info");
-                XmlElement root = doc.CreateElement("Accounts");
-                XmlElement acc = doc.CreateElement("Account");
-                XmlAttribute fName = doc.CreateAttribute("First_Name");
-                XmlAttribute lName = doc.CreateAttribute("Last_Name");
-                XmlElement address = doc.CreateElement("Address");
-                XmlElement city = doc.CreateElement("City");
-                XmlElement state = doc.CreateElement("State");
-
-                XmlElement username = doc.CreateElement("Username");
-                XmlElement password = doc.CreateElement("Password"); 
-
-                //Add the values for each nodes
-                fName.Value = fNameTxt.Text;
-                lName.Value = lNameTxt.Text;
-                address.InnerText = AddrTxt.Text;
-                city.InnerText = CityTxt.Text;
-                state.InnerText = StateTxt.Text;
-                username.InnerText = UserTxt.Text;
-                password.InnerText = passTxt.Text;
-
-                //Construct the document
-                doc.AppendChild(declaration);
-                doc.AppendChild(comment);
-                doc.AppendChild(root);
-                root.AppendChild(acc);
-                acc.Attributes.Append(fName);
-                acc.Attributes.Append(lName);
-                acc.AppendChild(address);
-                acc.AppendChild(city);
-                acc.AppendChild(state);
-                acc.AppendChild(username);
-                acc.AppendChild(password);
-
-                doc.Save(PATH);
-            }
-            else //If there is already a file
-            {
-                //Load the XML File
-                doc.Load(PATH);
-
-                //Get the root element
-                XmlElement root = doc.DocumentElement;
-
-                XmlElement acc = doc.CreateElement("Account");
-                XmlAttribute fName = doc.CreateAttribute("First_Name");
-                XmlAttribute lName = doc.CreateAttribute("Last_Name");
-                XmlElement address = doc.CreateElement("Address");
-                XmlElement city = doc.CreateElement("City");
-                XmlElement state = doc.CreateElement("State");
-
-                XmlElement username = doc.CreateElement("Username");
-                XmlElement password = doc.CreateElement("Password");
-
-                //Add the values for each nodes
-                fName.Value = fNameTxt.Text;
-                lName.Value = lNameTxt.Text;
-                address.InnerText = AddrTxt.Text;
-                city.InnerText = CityTxt.Text;
-                state.InnerText = StateTxt.Text;
-                username.InnerText = UserTxt.Text;
-                password.InnerText = passTxt.Text;
-
-                //Construct the Person element
-                acc.Attributes.Append(fName);
-                acc.Attributes.Append(lName);
-                acc.AppendChild(address);
-                acc.AppendChild(city);
-                acc.AppendChild(state);
-                acc.AppendChild(username);
-                acc.AppendChild(password);
-
-                //Add the New person element to the end of the root element
-                root.AppendChild(acc);
-
-                //Save the document
-                doc.Save(PATH);
-            }
-            MessageBox.Show("Successfully created account!");
-
-            BodyTabControl.SelectedTab = LoginTab; //Return to login screen
 
         }
 
@@ -1420,8 +1441,11 @@ namespace MovieTheater
                 {
                      Username = acc.Element("Username").Value,
                      Password = acc.Element("Password").Value,
-                     fName = acc.Attribute("First_Name").Value,
-                     lName = acc.Attribute("Last_Name").Value,
+                     CHfName = acc.Element("CH_FNAME").Value,
+                     CHlName = acc.Element("CH_LNAME").Value,
+                     CHnum = acc.Element("Card_Number").Value,
+                     Sec = acc.Element("Security_Code").Value,
+
                 };
                 foreach (var acc in accInfo)
                 {
@@ -1438,8 +1462,11 @@ namespace MovieTheater
                         }
 
                         currentU = acc.Username;
-                        currentfN = acc.fName;
-                        currentlN = acc.lName;
+                        PurchaseFname.Text = acc.CHfName;
+                        PurchaseLname.Text = acc.CHlName;
+                        PurchaseCnum.Text = "****-****-****-" + acc.CHnum.Substring(12,4);
+                        SC = acc.Sec;
+
 
                         MessageBox.Show("Successfully signed in!");
                         logged = true;
@@ -2167,6 +2194,8 @@ namespace MovieTheater
 //-----------------------------------------------------------------------------------------------------------------------
 //BUY SEATING PAGE//////////////////////////////////////////////////////////////////////////////////////////////////////
 //-----------------------------------------------------------------------------------------------------------------------
+        
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             //BUTTON TAKES USERS TO THE BUY TICKETS PAGE
@@ -2296,45 +2325,54 @@ namespace MovieTheater
         //  PURCHASE PAGE
         private void button5_Click(object sender, EventArgs e)
         {
-
-            name = textBox1.Text;
-            int indexCounter = 0;
-            foreach (string type in tixCounter.Keys)
+            if (SC != PurchaseSec.Text)
+                MessageBox.Show("Security Code does not match our records. Please re-enter the code.");
+            else
             {
-                int num = tixCounter[type];
-                while (num > 0)
+                name = PurchaseFname.Text + "  " + PurchaseLname.Text;
+                int indexCounter = 0;
+                foreach (string type in tixCounter.Keys)
                 {
-                    //Console.Out.Write(type + " " + num.ToString());
-                    TicketAdmissionLabel.Text = type;
-                    TicketDateLabel.Text = date;
-                    namelabeltix.Text = name;
-                    timeticketlabel.Text = time;
-                    
-                    Ticket tix = new Ticket(movieTitle, type, seatsSelected.ElementAt(indexCounter), time, name, date);
-                    transaction.Add(tix);
-                    num--;
-                    indexCounter++;
+                    int num = tixCounter[type];
+                    while (num > 0)
+                    {
+                        //Console.Out.Write(type + " " + num.ToString());
+                        TicketAdmissionLabel.Text = type;
+                        TicketDateLabel.Text = date;
+                        nameticketlabel.Text = name;
+                        timeticketlabel.Text = time;
+                        ticketPoster.ImageLocation = MDBigPoster.ImageLocation;
+                        address1tick.Text = addressInfo1Label.Text;
+                        address2tik.Text = addressInfo2Label.Text;
+
+                        Ticket tix = new Ticket(movieTitle, type, seatsSelected.ElementAt(indexCounter), time, name, date);
+                        transaction.Add(tix);
+                        num--;
+                        indexCounter++;
+                    }
+                    //indexCounter++;
                 }
-                //indexCounter++;
+
+
+
+
+                PurchaseTransaction(transaction);
+
+                //Officially buys tickets
+                MessageBox.Show("You have purchased tickets!");
+                BodyTabControl.SelectedTab = PrintTix;
+                comboBox1.ResetText();
+                comboBox2.ResetText();
+                comboBox3.ResetText();
+
+                //Prep info for ticket
+                ticketTitle.Text = MDTitleLabel.Text;
+                //namelabeltix.Text = currentfN + " " + currentlN;
+                List<string> list = new List<string>(
+                               selectedSeatstxt.Text.Split(new string[] { "\n" },
+                               StringSplitOptions.RemoveEmptyEntries));
+                SeatticketLabel.Text = string.Join(",", list);
             }
-
-            PurchaseTransaction(transaction);
-
-            //Officially buys tickets
-            MessageBox.Show("You have purchased tickets!");
-            BodyTabControl.SelectedTab = PrintTix;
-            comboBox1.ResetText();
-            comboBox2.ResetText();
-            comboBox3.ResetText();
-
-            //Prep info for ticket
-            ticketTitle.Text = MDTitleLabel.Text;
-            //namelabeltix.Text = currentfN + " " + currentlN;
-            List<string> list = new List<string>(
-                           selectedSeatstxt.Text.Split(new string[] { "\n" },
-                           StringSplitOptions.RemoveEmptyEntries));
-            SeatticketLabel.Text = string.Join(",", list);
-
 
         }
 
@@ -2378,7 +2416,9 @@ namespace MovieTheater
             user.InnerText = UserTxt.Text;
             date.InnerText = displayDatelbl.Text;
             time.InnerText = displayShowtimelbl.Text;
-            total.InnerText = totalCost.Text; 
+            total.InnerText = totalCost.Text;
+
+            TransactionsDocument.Save(TransactionsPath);
 
         }
 
@@ -2397,10 +2437,10 @@ namespace MovieTheater
             BodyTabControl.SelectedTab = HomeTab;
             //CLEARS OUT INFO SO THEY CAN BUY OTHER STUFF OR BROWSE
             //CLEARS OUT INFO
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
+            PurchaseFname.Text = null;
+            PurchaseLname.Text = null;
+            PurchaseCnum.Text = null;
+            PurchaseSec.Text = null;
             displayShowtimelbl.Text = "0:00";
             selectedSeatstxt.Text = "";
 

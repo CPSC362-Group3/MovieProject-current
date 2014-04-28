@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Babasse-Old-School-Bobines-video.ico" />
+    <None Include="Resources\ticket.png" />
     <None Include="Resources\admin_controls_div.jpg" />
     <None Include="Resources\movie_information_div.jpg" />
     <None Include="Resources\background.jpg" />
