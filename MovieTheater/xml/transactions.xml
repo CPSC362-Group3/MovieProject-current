@@ -232,4 +232,12 @@
     <Total>$20.00</Total>
     <Tickets />
   </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Wednesday, May 7, 2014</Date>
+    <Showtime>11:00am</Showtime>
+    <Total>$20.00</Total>
+    <Tickets />
+  </Purchase_History>
 </Purchases>

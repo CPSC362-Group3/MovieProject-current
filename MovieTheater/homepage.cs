@@ -2492,7 +2492,8 @@ namespace MovieTheater
             e.Graphics.DrawString(TicketAdmissionLabel.Text, SystemFonts.DefaultFont, Brushes.Black, 874, 450);    //TYPE
 
             //ADDS GRAPHIC TO IMAGE
-            //e.Graphics.DrawImage(ticketPoster.Text, SystemFonts.DefaultFont, Brushes.Black, 10, 10);
+            //RESIZE IT
+            e.Graphics.DrawImage(ticketPoster.Image, 0, 0);
         }
 
 
