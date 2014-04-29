@@ -1410,6 +1410,7 @@ namespace MovieTheater
                     acc.AppendChild(cardlname);
                     acc.AppendChild(cardnum);
                     acc.AppendChild(securitycode);
+                    Console.Out.Write(securitycode.InnerText + "\n");
 
                     //Add the New person element to the end of the root element
                     root.AppendChild(acc);
@@ -1468,7 +1469,10 @@ namespace MovieTheater
                         currentU = acc.Username;
                         PurchaseFname.Text = acc.CHfName;
                         PurchaseLname.Text = acc.CHlName;
+                        //MAKE SURE TO CHECK THAT EVERYTHING THEY ENTERED IS CORRECT
+                        //VALIDATION
                         PurchaseCnum.Text = "****-****-****-" + acc.CHnum.Substring(12,4);
+                        //PurchaseCnum.Text = "****-****-****-" + acc.CHnum.Substring(4, 12);
                         SC = acc.Sec;
 
 
@@ -2471,9 +2475,24 @@ namespace MovieTheater
         {
             float x = e.MarginBounds.Left;
             float y = e.MarginBounds.Top;
+
+            //FIX IMAGE CAPTURE
             Bitmap bmp = new Bitmap(this.groupTicketBox.Width, this.groupTicketBox.Height);
             this.groupTicketBox.DrawToBitmap(bmp, new Rectangle(0, 0, this.groupTicketBox.Width, this.groupTicketBox.Height));
             e.Graphics.DrawImage((Image)bmp, x, y);
+            //ADDS TEXT TO THE IMAGE
+            e.Graphics.DrawString(nameticketlabel.Text, SystemFonts.DefaultFont, Brushes.Black, 642, 201);          //NAME
+            e.Graphics.DrawString(ticketTitle.Text, SystemFonts.DefaultFont, Brushes.Black, 650,219);               //MOVIE TITLE
+            e.Graphics.DrawString(SeatticketLabel.Text, SystemFonts.DefaultFont, Brushes.Black, 574, 245);          //SEAT
+            e.Graphics.DrawString(cinemanametik.Text, SystemFonts.DefaultFont, Brushes.Black, 600, 280);             //PLACE
+            e.Graphics.DrawString(address1tick.Text, SystemFonts.DefaultFont, Brushes.Black, 600, 300);             //ADDRESS
+            e.Graphics.DrawString(address2tik.Text, SystemFonts.DefaultFont, Brushes.Black, 600, 320);              // ADDRESS
+            e.Graphics.DrawString(TicketDateLabel.Text, SystemFonts.DefaultFont, Brushes.Black, 574, 400);          //DATE
+            e.Graphics.DrawString(timeticketlabel.Text, SystemFonts.DefaultFont, Brushes.Black, 874, 400);          //TIME
+            e.Graphics.DrawString(TicketAdmissionLabel.Text, SystemFonts.DefaultFont, Brushes.Black, 874, 450);    //TYPE
+
+            //ADDS GRAPHIC TO IMAGE
+            //e.Graphics.DrawImage(ticketPoster.Text, SystemFonts.DefaultFont, Brushes.Black, 10, 10);
         }
 
 
