@@ -468,7 +468,7 @@
             this.gobackhomebutton = new System.Windows.Forms.Button();
             this.printTixButton = new System.Windows.Forms.Button();
             this.PrintLabel = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.fullticket = new System.Windows.Forms.PictureBox();
             this.AccountInfoTab = new System.Windows.Forms.TabPage();
             this.AIAccountInfoLabel = new System.Windows.Forms.Label();
             this.AICreditCardInfo = new System.Windows.Forms.Label();
@@ -605,7 +605,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.PrintTix.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ticketPoster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullticket)).BeginInit();
             this.AccountInfoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -650,7 +650,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-1, 373);
+            this.tabControl1.Location = new System.Drawing.Point(-9, 373);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -5886,7 +5886,7 @@
             this.PrintTix.Controls.Add(this.gobackhomebutton);
             this.PrintTix.Controls.Add(this.printTixButton);
             this.PrintTix.Controls.Add(this.PrintLabel);
-            this.PrintTix.Controls.Add(this.pictureBox5);
+            this.PrintTix.Controls.Add(this.fullticket);
             this.PrintTix.Location = new System.Drawing.Point(4, 22);
             this.PrintTix.Name = "PrintTix";
             this.PrintTix.Padding = new System.Windows.Forms.Padding(3);
@@ -6075,17 +6075,17 @@
             this.PrintLabel.TabIndex = 0;
             this.PrintLabel.Text = "Print Tickets";
             // 
-            // pictureBox5
+            // fullticket
             // 
-            this.pictureBox5.BackgroundImage = global::MovieTheater.Properties.Resources.ticket1;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Image = global::MovieTheater.Properties.Resources.ticket1;
-            this.pictureBox5.InitialImage = global::MovieTheater.Properties.Resources.ticket;
-            this.pictureBox5.Location = new System.Drawing.Point(122, 70);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(768, 315);
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
+            this.fullticket.BackgroundImage = global::MovieTheater.Properties.Resources.ticket1;
+            this.fullticket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fullticket.Image = global::MovieTheater.Properties.Resources.ticket1;
+            this.fullticket.InitialImage = global::MovieTheater.Properties.Resources.ticket;
+            this.fullticket.Location = new System.Drawing.Point(122, 70);
+            this.fullticket.Name = "fullticket";
+            this.fullticket.Size = new System.Drawing.Size(768, 315);
+            this.fullticket.TabIndex = 3;
+            this.fullticket.TabStop = false;
             // 
             // AccountInfoTab
             // 
@@ -6685,7 +6685,7 @@
             this.PrintTix.ResumeLayout(false);
             this.PrintTix.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ticketPoster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fullticket)).EndInit();
             this.AccountInfoTab.ResumeLayout(false);
             this.AccountInfoTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -7135,7 +7135,7 @@
         private System.Windows.Forms.Button gobackhomebutton;
         private System.Windows.Forms.Button printTixButton;
         private System.Windows.Forms.Label PrintLabel;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox fullticket;
         private System.Windows.Forms.TabPage AccountInfoTab;
         private System.Windows.Forms.Label AIAccountInfoLabel;
         private System.Windows.Forms.Label AICreditCardInfo;

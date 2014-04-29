@@ -13,6 +13,8 @@ using System.IO;
 using MovieTheater.Properties;
 using MovieTheater;
 using MovieTheatre;
+using System.Drawing.Printing;
+using System.Drawing.Imaging;
 
 namespace MovieTheater
 {
@@ -2428,9 +2430,29 @@ namespace MovieTheater
         private void printTixButton_Click(object sender, EventArgs e)
         {
             //WILL PRINT TICKET ONCE IT IS CLICKED
+            //PrintDocument tmpDoc = new PrintDocument();
+            //tmpDoc.PrintPage += new PrintPageEventHandler(pd_PrintPage);
+            //PrintPreviewDialog tmpPpd = new PrintPreviewDialog();
+            //tmpPpd.Document = tmpDoc;
+            //tmpPpd.ShowDialog();
 
+            Rectangle bounds = this.Bounds;
+            using (Bitmap bitmap = new Bitmap(fullticket.Width, fullticket.Height))
+            {
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    g.CopyFromScreen(new Point(fullticket.Margin.Left, fullticket.Margin.Top), Point.Empty, bounds.Size);
+                }
+                bitmap.Save("../../Posters/test.jpg", ImageFormat.Jpeg);
+            }
 
         }
+
+        private void pd_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs ev)
+        {
+            ev.Graphics.DrawImage(fullticket.Image, 0, 0);
+        }
+
 
         private void gobackhomebutton_Click(object sender, EventArgs e)
         {
