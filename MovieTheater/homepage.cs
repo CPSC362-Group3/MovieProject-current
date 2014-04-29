@@ -2493,7 +2493,13 @@ namespace MovieTheater
 
             //ADDS GRAPHIC TO IMAGE
             //RESIZE IT
-            e.Graphics.DrawImage(ticketPoster.Image, 0, 0);
+            // Create rectangle for displaying image.
+            Rectangle destRect = new Rectangle(165, 190, 350, 350);
+
+            // Create rectangle for source image.
+            Rectangle srcRect = new Rectangle(0, 0, 350, 450);
+            GraphicsUnit units = GraphicsUnit.Pixel;
+            e.Graphics.DrawImage(ticketPoster.Image, destRect, srcRect, units);
         }
 
 
