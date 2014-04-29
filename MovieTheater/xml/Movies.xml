@@ -132,4 +132,30 @@
     <Showtime9>
     </Showtime9>
   </Movie>
+  <Movie>
+    <Title>Rio 2</Title>
+    <Length>100 min</Length>
+    <Synopsis>It's a jungle out there for Blu, Jewel and their three kids in RIO 2, after they're hurtled from that magical city to the wilds of the Amazon. As Blu tries to fit in, he goes beak-to-beak with the vengeful Nigel, and meets the most fearsome adversary of all - his father-in-law.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Family</Genre>
+    <Rating>G</Rating>
+    <Actor>Jesse Eisenberg, Anne Hathaway, Jemaine Clement, Bruno Mars, Jamie Foxx, Miguel Ferrer, Bebel Gilberto, Jeffrey Garcia, Andy Garcia</Actor>
+    <Director>Carlos Saldanha</Director>
+    <ReleaseDate>04/11/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\rio2newposter.jpg</PosterPath>
+    <Showtime1>10:00AM</Showtime1>
+    <Showtime2>1:00PM</Showtime2>
+    <Showtime3>4:40PM</Showtime3>
+    <Showtime4>7:30PM</Showtime4>
+    <Showtime5>10:10PM</Showtime5>
+    <Showtime6>
+    </Showtime6>
+    <Showtime7>
+    </Showtime7>
+    <Showtime8>
+    </Showtime8>
+    <Showtime9>
+    </Showtime9>
+  </Movie>
 </Movies>
