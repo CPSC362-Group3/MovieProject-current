@@ -53,7 +53,7 @@ namespace MovieTheater
             setBackgrounds();
             displayDatelbl.Text = DateTime.Today.ToLongDateString();
             showtimeDate.MinDate = DateTime.Today;
-            showtimeDate.MaxDate = DateTime.FromOADate(14);
+            showtimeDate.MaxDate = DateTime.Today.AddDays(14.0);
 
             updateHomePage();
 
