@@ -26,6 +26,8 @@ namespace MovieTheater
         bool editInfo = false;
         
         //Int counters
+        int seats = 0;
+        int totalseats = 0;
         int currentInd = 0;
         int showtimes = 2;
         int[] track = new int[72];
@@ -1820,18 +1822,25 @@ namespace MovieTheater
 //-------------------------------------------------------------------------------------------------------------------------
         private void selected_Seats(Button select, int i)
         {
-            if (track[i] % 2 == 0)
+            if (seats < totalseats)
             {
-                select.BackColor = Color.Yellow;
-                selectedSeatstxt.AppendText(select.Name + "\n");
+                if (track[i] % 2 == 0)
+                {
+                    select.BackColor = Color.Yellow;
+                    selectedSeatstxt.AppendText(select.Name + "\n");
+                    seats++;
+                }
+                else
+                {
+                    select.BackColor = Color.Maroon;
+                    selectedSeatstxt.Lines = selectedSeatstxt.Lines.Where(line => !line.Contains(select.Name)).ToArray();
+                    seats--;
+                }
+
+                track[i]++;
             }
             else
-            {
-                select.BackColor = Color.Maroon;
-                selectedSeatstxt.Lines = selectedSeatstxt.Lines.Where(line => !line.Contains(select.Name)).ToArray();
-            }
-
-            track[i]++;
+                MessageBox.Show("You have already picked your seats.");
         }
 
         private void a1_Click(object sender, EventArgs e)
@@ -2301,6 +2310,7 @@ namespace MovieTheater
             else
                 childTicket = Convert.ToInt32(comboBox3.Text);
 
+            totalseats = childTicket + adultTicket + seniorTicket;
             tixCounter.Add("Child", childTicket);
             tixCounter.Add("Adult", adultTicket);
             tixCounter.Add("Senior", seniorTicket);
@@ -2437,20 +2447,33 @@ namespace MovieTheater
             //tmpPpd.ShowDialog();
 
             Rectangle bounds = this.Bounds;
-            using (Bitmap bitmap = new Bitmap(fullticket.Width, fullticket.Height))
+            using (Bitmap bitmap = new Bitmap(groupTicketBox.Width, groupTicketBox.Height))
             {
                 using (Graphics g = Graphics.FromImage(bitmap))
                 {
-                    g.CopyFromScreen(new Point(fullticket.Margin.Left, fullticket.Margin.Top), Point.Empty, bounds.Size);
+                    g.CopyFromScreen(new Point(groupTicketBox.Left, groupTicketBox.Top), Point.Empty, bounds.Size);
                 }
                 bitmap.Save("../../Posters/test.jpg", ImageFormat.Jpeg);
             }
 
+            PrintDocument doc = new PrintDocument();
+            doc.PrintPage += this.Doc_PrintPage;
+            PrintDialog dlgSettings = new PrintDialog();
+            dlgSettings.Document = doc;
+            if (dlgSettings.ShowDialog() == DialogResult.OK)
+            {
+                doc.Print();
+            }
+
         }
 
-        private void pd_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs ev)
+        private void Doc_PrintPage(object sender, PrintPageEventArgs e)
         {
-            ev.Graphics.DrawImage(fullticket.Image, 0, 0);
+            float x = e.MarginBounds.Left;
+            float y = e.MarginBounds.Top;
+            Bitmap bmp = new Bitmap(this.groupTicketBox.Width, this.groupTicketBox.Height);
+            this.groupTicketBox.DrawToBitmap(bmp, new Rectangle(0, 0, this.groupTicketBox.Width, this.groupTicketBox.Height));
+            e.Graphics.DrawImage((Image)bmp, x, y);
         }
 
 
@@ -2465,6 +2488,7 @@ namespace MovieTheater
             PurchaseSec.Text = null;
             displayShowtimelbl.Text = "0:00";
             selectedSeatstxt.Text = "";
+            seats = 0;
 
         }
 

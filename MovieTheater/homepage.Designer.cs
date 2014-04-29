@@ -451,24 +451,25 @@
             this.adminAdd = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.PrintTix = new System.Windows.Forms.TabPage();
+            this.groupTicketBox = new System.Windows.Forms.GroupBox();
             this.randtik = new System.Windows.Forms.Label();
-            this.nameticketlabel = new System.Windows.Forms.Label();
+            this.TicketAdmissionLabel = new System.Windows.Forms.Label();
+            this.timeticketlabel = new System.Windows.Forms.Label();
             this.address2tik = new System.Windows.Forms.Label();
             this.address1tick = new System.Windows.Forms.Label();
-            this.cinemanametik = new System.Windows.Forms.Label();
+            this.TicketDateLabel = new System.Windows.Forms.Label();
             this.ticketPoster = new System.Windows.Forms.PictureBox();
+            this.cinemanametik = new System.Windows.Forms.Label();
+            this.ticketTitle = new System.Windows.Forms.Label();
             this.ticketTheaterTitle = new System.Windows.Forms.Label();
-            this.timeticketlabel = new System.Windows.Forms.Label();
+            this.nameticketlabel = new System.Windows.Forms.Label();
+            this.SeatticketLabel = new System.Windows.Forms.Label();
+            this.fullticket = new System.Windows.Forms.PictureBox();
             this.gohomeLabel = new System.Windows.Forms.Label();
             this.PrintNowLabel = new System.Windows.Forms.Label();
-            this.SeatticketLabel = new System.Windows.Forms.Label();
-            this.TicketDateLabel = new System.Windows.Forms.Label();
-            this.TicketAdmissionLabel = new System.Windows.Forms.Label();
-            this.ticketTitle = new System.Windows.Forms.Label();
             this.gobackhomebutton = new System.Windows.Forms.Button();
             this.printTixButton = new System.Windows.Forms.Button();
             this.PrintLabel = new System.Windows.Forms.Label();
-            this.fullticket = new System.Windows.Forms.PictureBox();
             this.AccountInfoTab = new System.Windows.Forms.TabPage();
             this.AIAccountInfoLabel = new System.Windows.Forms.Label();
             this.AICreditCardInfo = new System.Windows.Forms.Label();
@@ -604,6 +605,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.adminControlDiv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.PrintTix.SuspendLayout();
+            this.groupTicketBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ticketPoster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullticket)).BeginInit();
             this.AccountInfoTab.SuspendLayout();
@@ -650,7 +652,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-9, 373);
+            this.tabControl1.Location = new System.Drawing.Point(-33, 373);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -5869,24 +5871,12 @@
             // PrintTix
             // 
             this.PrintTix.BackColor = System.Drawing.Color.Silver;
-            this.PrintTix.Controls.Add(this.randtik);
-            this.PrintTix.Controls.Add(this.nameticketlabel);
-            this.PrintTix.Controls.Add(this.address2tik);
-            this.PrintTix.Controls.Add(this.address1tick);
-            this.PrintTix.Controls.Add(this.cinemanametik);
-            this.PrintTix.Controls.Add(this.ticketPoster);
-            this.PrintTix.Controls.Add(this.ticketTheaterTitle);
-            this.PrintTix.Controls.Add(this.timeticketlabel);
+            this.PrintTix.Controls.Add(this.groupTicketBox);
             this.PrintTix.Controls.Add(this.gohomeLabel);
             this.PrintTix.Controls.Add(this.PrintNowLabel);
-            this.PrintTix.Controls.Add(this.SeatticketLabel);
-            this.PrintTix.Controls.Add(this.TicketDateLabel);
-            this.PrintTix.Controls.Add(this.TicketAdmissionLabel);
-            this.PrintTix.Controls.Add(this.ticketTitle);
             this.PrintTix.Controls.Add(this.gobackhomebutton);
             this.PrintTix.Controls.Add(this.printTixButton);
             this.PrintTix.Controls.Add(this.PrintLabel);
-            this.PrintTix.Controls.Add(this.fullticket);
             this.PrintTix.Location = new System.Drawing.Point(4, 22);
             this.PrintTix.Name = "PrintTix";
             this.PrintTix.Padding = new System.Windows.Forms.Padding(3);
@@ -5894,33 +5884,63 @@
             this.PrintTix.TabIndex = 12;
             this.PrintTix.Text = "PrintTickets";
             // 
+            // groupTicketBox
+            // 
+            this.groupTicketBox.Controls.Add(this.randtik);
+            this.groupTicketBox.Controls.Add(this.TicketAdmissionLabel);
+            this.groupTicketBox.Controls.Add(this.timeticketlabel);
+            this.groupTicketBox.Controls.Add(this.address2tik);
+            this.groupTicketBox.Controls.Add(this.address1tick);
+            this.groupTicketBox.Controls.Add(this.TicketDateLabel);
+            this.groupTicketBox.Controls.Add(this.ticketPoster);
+            this.groupTicketBox.Controls.Add(this.cinemanametik);
+            this.groupTicketBox.Controls.Add(this.ticketTitle);
+            this.groupTicketBox.Controls.Add(this.ticketTheaterTitle);
+            this.groupTicketBox.Controls.Add(this.nameticketlabel);
+            this.groupTicketBox.Controls.Add(this.SeatticketLabel);
+            this.groupTicketBox.Controls.Add(this.fullticket);
+            this.groupTicketBox.Location = new System.Drawing.Point(126, 70);
+            this.groupTicketBox.Name = "groupTicketBox";
+            this.groupTicketBox.Size = new System.Drawing.Size(766, 315);
+            this.groupTicketBox.TabIndex = 23;
+            this.groupTicketBox.TabStop = false;
+            this.groupTicketBox.Text = "groupTicketbox";
+            // 
             // randtik
             // 
             this.randtik.AutoSize = true;
             this.randtik.BackColor = System.Drawing.Color.White;
-            this.randtik.Location = new System.Drawing.Point(475, 357);
+            this.randtik.Location = new System.Drawing.Point(352, 288);
             this.randtik.Name = "randtik";
             this.randtik.Size = new System.Drawing.Size(43, 13);
             this.randtik.TabIndex = 22;
             this.randtik.Text = "randTik";
             // 
-            // nameticketlabel
+            // TicketAdmissionLabel
             // 
-            this.nameticketlabel.AutoSize = true;
-            this.nameticketlabel.BackColor = System.Drawing.Color.White;
-            this.nameticketlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameticketlabel.Location = new System.Drawing.Point(555, 144);
-            this.nameticketlabel.Name = "nameticketlabel";
-            this.nameticketlabel.Size = new System.Drawing.Size(45, 16);
-            this.nameticketlabel.TabIndex = 21;
-            this.nameticketlabel.Text = "Name";
-            this.nameticketlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TicketAdmissionLabel.BackColor = System.Drawing.Color.White;
+            this.TicketAdmissionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketAdmissionLabel.Location = new System.Drawing.Point(479, 288);
+            this.TicketAdmissionLabel.Name = "TicketAdmissionLabel";
+            this.TicketAdmissionLabel.Size = new System.Drawing.Size(196, 13);
+            this.TicketAdmissionLabel.TabIndex = 5;
+            this.TicketAdmissionLabel.Text = "Admission TYPE";
+            // 
+            // timeticketlabel
+            // 
+            this.timeticketlabel.BackColor = System.Drawing.Color.White;
+            this.timeticketlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeticketlabel.Location = new System.Drawing.Point(459, 254);
+            this.timeticketlabel.Name = "timeticketlabel";
+            this.timeticketlabel.Size = new System.Drawing.Size(56, 16);
+            this.timeticketlabel.TabIndex = 15;
+            this.timeticketlabel.Text = "Time: ";
             // 
             // address2tik
             // 
             this.address2tik.BackColor = System.Drawing.Color.White;
             this.address2tik.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address2tik.Location = new System.Drawing.Point(627, 275);
+            this.address2tik.Location = new System.Drawing.Point(502, 205);
             this.address2tik.Name = "address2tik";
             this.address2tik.Size = new System.Drawing.Size(171, 20);
             this.address2tik.TabIndex = 20;
@@ -5931,54 +5951,100 @@
             // 
             this.address1tick.BackColor = System.Drawing.Color.White;
             this.address1tick.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address1tick.Location = new System.Drawing.Point(677, 256);
+            this.address1tick.Location = new System.Drawing.Point(552, 186);
             this.address1tick.Name = "address1tick";
             this.address1tick.Size = new System.Drawing.Size(121, 17);
             this.address1tick.TabIndex = 19;
             this.address1tick.Text = "Address1";
             this.address1tick.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // cinemanametik
+            // TicketDateLabel
             // 
-            this.cinemanametik.BackColor = System.Drawing.Color.White;
-            this.cinemanametik.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cinemanametik.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cinemanametik.Location = new System.Drawing.Point(665, 237);
-            this.cinemanametik.Name = "cinemanametik";
-            this.cinemanametik.Size = new System.Drawing.Size(133, 19);
-            this.cinemanametik.TabIndex = 18;
-            this.cinemanametik.Text = "Pseudo Cinema";
-            this.cinemanametik.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TicketDateLabel.BackColor = System.Drawing.Color.White;
+            this.TicketDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TicketDateLabel.Location = new System.Drawing.Point(352, 251);
+            this.TicketDateLabel.Name = "TicketDateLabel";
+            this.TicketDateLabel.Size = new System.Drawing.Size(85, 25);
+            this.TicketDateLabel.TabIndex = 6;
+            this.TicketDateLabel.Text = "Date";
             // 
             // ticketPoster
             // 
-            this.ticketPoster.Location = new System.Drawing.Point(209, 129);
+            this.ticketPoster.Location = new System.Drawing.Point(87, 59);
             this.ticketPoster.Name = "ticketPoster";
             this.ticketPoster.Size = new System.Drawing.Size(166, 243);
             this.ticketPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ticketPoster.TabIndex = 17;
             this.ticketPoster.TabStop = false;
             // 
+            // cinemanametik
+            // 
+            this.cinemanametik.BackColor = System.Drawing.Color.White;
+            this.cinemanametik.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinemanametik.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cinemanametik.Location = new System.Drawing.Point(540, 167);
+            this.cinemanametik.Name = "cinemanametik";
+            this.cinemanametik.Size = new System.Drawing.Size(133, 19);
+            this.cinemanametik.TabIndex = 18;
+            this.cinemanametik.Text = "Pseudo Cinema";
+            this.cinemanametik.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ticketTitle
+            // 
+            this.ticketTitle.BackColor = System.Drawing.Color.White;
+            this.ticketTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketTitle.Location = new System.Drawing.Point(276, 111);
+            this.ticketTitle.Name = "ticketTitle";
+            this.ticketTitle.Size = new System.Drawing.Size(399, 34);
+            this.ticketTitle.TabIndex = 4;
+            this.ticketTitle.Text = "Selected Movie Title";
+            this.ticketTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ticketTheaterTitle
             // 
             this.ticketTheaterTitle.BackColor = System.Drawing.Color.White;
             this.ticketTheaterTitle.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ticketTheaterTitle.ForeColor = System.Drawing.Color.Maroon;
-            this.ticketTheaterTitle.Location = new System.Drawing.Point(127, 73);
+            this.ticketTheaterTitle.Location = new System.Drawing.Point(6, 2);
             this.ticketTheaterTitle.Name = "ticketTheaterTitle";
             this.ticketTheaterTitle.Size = new System.Drawing.Size(192, 42);
             this.ticketTheaterTitle.TabIndex = 16;
             this.ticketTheaterTitle.Text = "Pseudo Cinema";
             // 
-            // timeticketlabel
+            // nameticketlabel
             // 
-            this.timeticketlabel.BackColor = System.Drawing.Color.White;
-            this.timeticketlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeticketlabel.Location = new System.Drawing.Point(581, 323);
-            this.timeticketlabel.Name = "timeticketlabel";
-            this.timeticketlabel.Size = new System.Drawing.Size(56, 16);
-            this.timeticketlabel.TabIndex = 15;
-            this.timeticketlabel.Text = "Time: ";
+            this.nameticketlabel.AutoSize = true;
+            this.nameticketlabel.BackColor = System.Drawing.Color.White;
+            this.nameticketlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameticketlabel.Location = new System.Drawing.Point(437, 74);
+            this.nameticketlabel.Name = "nameticketlabel";
+            this.nameticketlabel.Size = new System.Drawing.Size(45, 16);
+            this.nameticketlabel.TabIndex = 21;
+            this.nameticketlabel.Text = "Name";
+            this.nameticketlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SeatticketLabel
+            // 
+            this.SeatticketLabel.BackColor = System.Drawing.Color.White;
+            this.SeatticketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeatticketLabel.Location = new System.Drawing.Point(393, 145);
+            this.SeatticketLabel.Name = "SeatticketLabel";
+            this.SeatticketLabel.Size = new System.Drawing.Size(146, 14);
+            this.SeatticketLabel.TabIndex = 9;
+            this.SeatticketLabel.Text = "Seat";
+            this.SeatticketLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fullticket
+            // 
+            this.fullticket.BackgroundImage = global::MovieTheater.Properties.Resources.ticket1;
+            this.fullticket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fullticket.Image = global::MovieTheater.Properties.Resources.ticket1;
+            this.fullticket.InitialImage = global::MovieTheater.Properties.Resources.ticket;
+            this.fullticket.Location = new System.Drawing.Point(-5, 33);
+            this.fullticket.Name = "fullticket";
+            this.fullticket.Size = new System.Drawing.Size(765, 315);
+            this.fullticket.TabIndex = 3;
+            this.fullticket.TabStop = false;
             // 
             // gohomeLabel
             // 
@@ -6001,48 +6067,6 @@
             this.PrintNowLabel.Size = new System.Drawing.Size(85, 20);
             this.PrintNowLabel.TabIndex = 10;
             this.PrintNowLabel.Text = "Print Now";
-            // 
-            // SeatticketLabel
-            // 
-            this.SeatticketLabel.BackColor = System.Drawing.Color.White;
-            this.SeatticketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeatticketLabel.Location = new System.Drawing.Point(506, 209);
-            this.SeatticketLabel.Name = "SeatticketLabel";
-            this.SeatticketLabel.Size = new System.Drawing.Size(146, 14);
-            this.SeatticketLabel.TabIndex = 9;
-            this.SeatticketLabel.Text = "Seat";
-            this.SeatticketLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TicketDateLabel
-            // 
-            this.TicketDateLabel.BackColor = System.Drawing.Color.White;
-            this.TicketDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TicketDateLabel.Location = new System.Drawing.Point(478, 323);
-            this.TicketDateLabel.Name = "TicketDateLabel";
-            this.TicketDateLabel.Size = new System.Drawing.Size(85, 25);
-            this.TicketDateLabel.TabIndex = 6;
-            this.TicketDateLabel.Text = "Date";
-            // 
-            // TicketAdmissionLabel
-            // 
-            this.TicketAdmissionLabel.BackColor = System.Drawing.Color.White;
-            this.TicketAdmissionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TicketAdmissionLabel.Location = new System.Drawing.Point(601, 356);
-            this.TicketAdmissionLabel.Name = "TicketAdmissionLabel";
-            this.TicketAdmissionLabel.Size = new System.Drawing.Size(196, 13);
-            this.TicketAdmissionLabel.TabIndex = 5;
-            this.TicketAdmissionLabel.Text = "Admission TYPE";
-            // 
-            // ticketTitle
-            // 
-            this.ticketTitle.BackColor = System.Drawing.Color.White;
-            this.ticketTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketTitle.Location = new System.Drawing.Point(394, 175);
-            this.ticketTitle.Name = "ticketTitle";
-            this.ticketTitle.Size = new System.Drawing.Size(399, 34);
-            this.ticketTitle.TabIndex = 4;
-            this.ticketTitle.Text = "Selected Movie Title";
-            this.ticketTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gobackhomebutton
             // 
@@ -6074,18 +6098,6 @@
             this.PrintLabel.Size = new System.Drawing.Size(144, 25);
             this.PrintLabel.TabIndex = 0;
             this.PrintLabel.Text = "Print Tickets";
-            // 
-            // fullticket
-            // 
-            this.fullticket.BackgroundImage = global::MovieTheater.Properties.Resources.ticket1;
-            this.fullticket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fullticket.Image = global::MovieTheater.Properties.Resources.ticket1;
-            this.fullticket.InitialImage = global::MovieTheater.Properties.Resources.ticket;
-            this.fullticket.Location = new System.Drawing.Point(122, 70);
-            this.fullticket.Name = "fullticket";
-            this.fullticket.Size = new System.Drawing.Size(768, 315);
-            this.fullticket.TabIndex = 3;
-            this.fullticket.TabStop = false;
             // 
             // AccountInfoTab
             // 
@@ -6684,6 +6696,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.PrintTix.ResumeLayout(false);
             this.PrintTix.PerformLayout();
+            this.groupTicketBox.ResumeLayout(false);
+            this.groupTicketBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ticketPoster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fullticket)).EndInit();
             this.AccountInfoTab.ResumeLayout(false);
@@ -7187,6 +7201,7 @@
         private System.Windows.Forms.Label cinemanametik;
         private System.Windows.Forms.PictureBox ticketPoster;
         private System.Windows.Forms.Label ticketTheaterTitle;
+        private System.Windows.Forms.GroupBox groupTicketBox;
 
     }
 }
