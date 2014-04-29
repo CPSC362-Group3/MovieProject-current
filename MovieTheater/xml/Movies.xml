@@ -158,4 +158,29 @@
     <Showtime9>
     </Showtime9>
   </Movie>
+  <Movie>
+    <Title>The Quiet Ones</Title>
+    <Length>98 min</Length>
+    <Synopsis>Tucked away in an estate outside of London, Professor Coupland along with a team of university students conduct an "experiment" on Jane Harper, a young girl who harbors unspeakable secrets. What dark forces they uncover are more terrifying than any of them expected.</Synopsis>
+    <Description>Horror</Description>
+    <Genre>Horror</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Sam Claflin, Jared Harris, Olivia Cooke, Erin Richards, Max Pirkis</Actor>
+    <Director>John Pogue</Director>
+    <ReleaseDate>04/25/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\TheQuietOnes.jpg</PosterPath>
+    <Showtime1>1:55PM</Showtime1>
+    <Showtime2>4:25PM</Showtime2>
+    <Showtime3>7:25PM</Showtime3>
+    <Showtime4>9:45PM</Showtime4>
+    <Showtime5>11:25PM</Showtime5>
+    <Showtime6>
+    </Showtime6>
+    <Showtime7>
+    </Showtime7>
+    <Showtime8>
+    </Showtime8>
+    <Showtime9>
+    </Showtime9>
+  </Movie>
 </Movies>
