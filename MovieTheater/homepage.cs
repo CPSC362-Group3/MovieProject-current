@@ -2281,7 +2281,7 @@ namespace MovieTheater
         {
             //BUY TICKETS OFFICIALLY
             //TAKES YOU TO PAYMENT PAGE
-            BodyTabControl.SelectedTab = Seating;
+           // BodyTabControl.SelectedTab = Seating;
 
             //SETS UP EVERYTHING ON THE NEXT PAGE
             double subtotal, child, senior, adult;
@@ -2291,6 +2291,35 @@ namespace MovieTheater
             adult = Convert.ToDouble(label38.Text);
             subtotal = child + senior + adult;
             totalCost.Text = subtotal.ToString("$0.00");
+
+            //CHECKS FOR TICKET AMOUNT PURCHASE
+
+            //MISSING BOTH SHOWTIME AND TICKET AMOUNT
+            if (displayShowtimelbl.Text == "0:00" && comboBox1.Text == "" && comboBox2.Text == "" && comboBox3.Text == "")
+            {
+                MessageBox.Show("Please enter ticket amount and show time.");
+                tixCounter.Clear();
+
+
+            }
+            //MISSING TICKET AMOUNT
+            else if (comboBox1.Text == "" && comboBox2.Text == "" && comboBox3.Text == "")
+            {
+                MessageBox.Show("Please enter a ticket amount!");
+                tixCounter.Clear();
+                
+            }
+            
+            //MISSING JUST SHOW TIME
+            else if(displayShowtimelbl.Text == "0:00")
+            {
+                MessageBox.Show("Please enter show time.");
+                tixCounter.Clear();
+            }
+            else
+                BodyTabControl.SelectedTab = Seating;
+
+
 
             //GETS NUMBER TICKETS TO CHECK
             if(comboBox1.Text == "")
@@ -2315,6 +2344,12 @@ namespace MovieTheater
                 childTicket = Convert.ToInt32(comboBox3.Text);
 
             totalseats = childTicket + adultTicket + seniorTicket;
+            
+            //CHECKS AND CLEARS
+            if (tixCounter.Count != 0)
+                tixCounter.Clear();
+
+            //ADDS UP LATEST DATA
             tixCounter.Add("Child", childTicket);
             tixCounter.Add("Adult", adultTicket);
             tixCounter.Add("Senior", seniorTicket);
@@ -2328,6 +2363,9 @@ namespace MovieTheater
             movieSeattxt.Text = MDTitleLabel.Text.ToString();
             lengthSeattxt.Text = MDLengthLabel.Text.ToString();
             ShowtimeSeattxt.Text = displayShowtimelbl.Text.ToString();
+
+
+
         }
 
         //GLOBAL VARIABLES SO I CAN SAVE MY INFO FOR TIXS
