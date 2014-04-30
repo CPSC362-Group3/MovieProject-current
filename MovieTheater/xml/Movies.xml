@@ -50,16 +50,16 @@
     <Showtime9>9:00pm</Showtime9>
   </Movie>
   <Movie>
-    <Title>Neighbors</Title>
-    <Length>97 min</Length>
-    <Synopsis>A comedy about a young couple suffering from arrested development who are forced to live next to a fraternity house after the birth of their newborn baby.</Synopsis>
+    <Title>The Protector 2</Title>
+    <Length>104 min</Length>
+    <Synopsis>When the owner of a major elephant camp is murdered, Kham finds himself the number one suspect and on the run from both the police and the deceased's vengeful twin nieces. But luck is on Kham's side when he runs into an Interpol agent sent to Thailand on a secret mission.</Synopsis>
     <Description>d</Description>
-    <Genre>Comedy</Genre>
+    <Genre>Action</Genre>
     <Rating>R</Rating>
-    <Actor>Zac Efron, Dave Franco, Rose Byrne, Seth Rogen, Jake Johnson, Christopher Mintz-Plasse, Lisa Kudrow, Halston Sage, Carla Gallo, Chasty Ballesteros</Actor>
-    <Director>Nicholas Stoller</Director>
+    <Actor>Tony Jaa, RZA, Petchtai Wongkamlao, Jeeja Yanin, Marrese Crump, Yayaing Phongam, Kazo Patrick Tang</Actor>
+    <Director>Prachya Pinkaew</Director>
     <ReleaseDate>Friday, May 9, 2014</ReleaseDate>
-    <PosterPath>../../Posters/neigh.jpg</PosterPath>
+    <PosterPath>../../Posters/theprotector_019.jpg</PosterPath>
     <Showtime1>
     </Showtime1>
     <Showtime2>
@@ -273,6 +273,55 @@
     </Showtime3>
     <Showtime4>
     </Showtime4>
+    <Showtime5>
+    </Showtime5>
+    <Showtime6>
+    </Showtime6>
+    <Showtime7>
+    </Showtime7>
+    <Showtime8>
+    </Showtime8>
+    <Showtime9>
+    </Showtime9>
+  </Movie>
+  <Movie>
+    <Title>The Other Woman</Title>
+    <Length>109 min</Length>
+    <Synopsis>After discovering her boyfriend is married, Carly soon meets the wife he's been cheating on. And when yet another affair is discovered, all three women team up to plot mutual revenge on the three-timing SOB.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Comedy</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Cameron Diaz, Leslie Mann, Don Johnson, Kate Upton, Taylor Kinney, Nicki Minaj, Kenneth Maharaj, Victor Cruz, Nikolaj Coster, David Thornton, Madison McKinley, Alyshia Ochse</Actor>
+    <Director>Nick Cassavetes</Director>
+    <ReleaseDate>04/25/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\theotherwoman.jpg</PosterPath>
+    <Showtime1>2:00PM</Showtime1>
+    <Showtime2>2:30PM</Showtime2>
+    <Showtime3>4:40PM</Showtime3>
+    <Showtime4>5:10PM</Showtime4>
+    <Showtime5>7:20PM</Showtime5>
+    <Showtime6>7:50PM</Showtime6>
+    <Showtime7>10:00PM</Showtime7>
+    <Showtime8>10:40PM</Showtime8>
+    <Showtime9>11:10PM</Showtime9>
+  </Movie>
+  <Movie>
+    <Title>Draft Day</Title>
+    <Length>109 min</Length>
+    <Synopsis>At the NFL Draft, general manager Sonny Weaver has the opportunity to rebuild his team when he trades for the number one pick. He must decide what he's willing to sacrifice on a life-changing day for a few hundred young men with NFL dreams.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Sport</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Chris Berman, Dave Donaldson, Patrick St. Esprit, Chi McBride, Mel Kiper, Jon Gruden, Kevin Costner, Deion Sanders, Mike Mayock, Jennifer Garner, Anothony Rizzo, Aaron Goldhammer, Chadwick Boseman, Jordan Harris, Zachary Littlejohn</Actor>
+    <Director>Ivan Reitman</Director>
+    <ReleaseDate>Friday, April 11, 2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\draftday.jpg</PosterPath>
+    <Showtime1>1:00PM</Showtime1>
+    <Showtime2>4:00PM</Showtime2>
+    <Showtime3>7:20PM</Showtime3>
+    <Showtime4>10:10PM</Showtime4>
     <Showtime5>
     </Showtime5>
     <Showtime6>
