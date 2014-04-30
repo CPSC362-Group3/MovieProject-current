@@ -253,4 +253,35 @@
     <Showtime8>8:40PM</Showtime8>
     <Showtime9>10:30PM</Showtime9>
   </Movie>
+  <Movie>
+    <Title>Walk Of Shame</Title>
+    <Length>95 min</Length>
+    <Synopsis>A reporter's dream of becoming a news anchor is compromised after a one-night stand leaves her stranded in downtown L.A. without a phone, car, ID or money - and only 8 hours to make it to the most important job interview of her life.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Comedy</Genre>
+    <Rating>R</Rating>
+    <Actor>Elizabeth Banks, James Marsden, Gillian Jacobs, Sarah Wright, Ethan Suplee, Bill Burr, Ken Davitian, Lawrence Gilliard Jr., Alphonso McAuley, Da'Vone McDonld, Eric Etebari, Oliver Hudson</Actor>
+    <Director>Steven Brill</Director>
+    <ReleaseDate>05/02/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\walkofshame.jpg</PosterPath>
+    <Showtime1>
+    </Showtime1>
+    <Showtime2>
+    </Showtime2>
+    <Showtime3>
+    </Showtime3>
+    <Showtime4>
+    </Showtime4>
+    <Showtime5>
+    </Showtime5>
+    <Showtime6>
+    </Showtime6>
+    <Showtime7>
+    </Showtime7>
+    <Showtime8>
+    </Showtime8>
+    <Showtime9>
+    </Showtime9>
+  </Movie>
 </Movies>
