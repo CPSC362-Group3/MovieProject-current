@@ -521,6 +521,8 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.emailtickets = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.emailLabelAccount = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -1922,6 +1924,8 @@
             // AccountTab
             // 
             this.AccountTab.BackColor = System.Drawing.Color.Transparent;
+            this.AccountTab.Controls.Add(this.emailLabelAccount);
+            this.AccountTab.Controls.Add(this.emailBox);
             this.AccountTab.Controls.Add(this.CAAccountInfoLabel);
             this.AccountTab.Controls.Add(this.CACreditCardInfoLabel);
             this.AccountTab.Controls.Add(this.CAPersonalInfoLabel);
@@ -1964,7 +1968,7 @@
             // 
             this.CAAccountInfoLabel.AutoSize = true;
             this.CAAccountInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAAccountInfoLabel.Location = new System.Drawing.Point(172, 432);
+            this.CAAccountInfoLabel.Location = new System.Drawing.Point(172, 466);
             this.CAAccountInfoLabel.Name = "CAAccountInfoLabel";
             this.CAAccountInfoLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CAAccountInfoLabel.Size = new System.Drawing.Size(172, 20);
@@ -2053,14 +2057,14 @@
             // 
             // passTxt
             // 
-            this.passTxt.Location = new System.Drawing.Point(172, 540);
+            this.passTxt.Location = new System.Drawing.Point(172, 574);
             this.passTxt.Name = "passTxt";
             this.passTxt.Size = new System.Drawing.Size(224, 20);
             this.passTxt.TabIndex = 35;
             // 
             // UserTxt
             // 
-            this.UserTxt.Location = new System.Drawing.Point(172, 476);
+            this.UserTxt.Location = new System.Drawing.Point(172, 510);
             this.UserTxt.Name = "UserTxt";
             this.UserTxt.Size = new System.Drawing.Size(224, 20);
             this.UserTxt.TabIndex = 34;
@@ -2156,7 +2160,7 @@
             // 
             this.CAPasswordLabel.AutoSize = true;
             this.CAPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAPasswordLabel.Location = new System.Drawing.Point(67, 543);
+            this.CAPasswordLabel.Location = new System.Drawing.Point(67, 577);
             this.CAPasswordLabel.Name = "CAPasswordLabel";
             this.CAPasswordLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CAPasswordLabel.Size = new System.Drawing.Size(71, 16);
@@ -2167,7 +2171,7 @@
             // 
             this.CAUsernameLabel.AutoSize = true;
             this.CAUsernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CAUsernameLabel.Location = new System.Drawing.Point(67, 479);
+            this.CAUsernameLabel.Location = new System.Drawing.Point(67, 513);
             this.CAUsernameLabel.Name = "CAUsernameLabel";
             this.CAUsernameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CAUsernameLabel.Size = new System.Drawing.Size(74, 16);
@@ -6617,6 +6621,24 @@
             this.label15.TabIndex = 25;
             this.label15.Text = "Email";
             // 
+            // emailBox
+            // 
+            this.emailBox.Location = new System.Drawing.Point(172, 424);
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(224, 20);
+            this.emailBox.TabIndex = 89;
+            // 
+            // emailLabelAccount
+            // 
+            this.emailLabelAccount.AutoSize = true;
+            this.emailLabelAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLabelAccount.Location = new System.Drawing.Point(102, 428);
+            this.emailLabelAccount.Name = "emailLabelAccount";
+            this.emailLabelAccount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.emailLabelAccount.Size = new System.Drawing.Size(45, 16);
+            this.emailLabelAccount.TabIndex = 90;
+            this.emailLabelAccount.Text = "Email:";
+            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7229,6 +7251,8 @@
         private System.Windows.Forms.GroupBox groupTicketBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button emailtickets;
+        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.Label emailLabelAccount;
 
     }
 }
