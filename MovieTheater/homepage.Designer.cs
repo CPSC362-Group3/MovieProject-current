@@ -412,15 +412,6 @@
             this.st3lbl = new System.Windows.Forms.Label();
             this.st2lbl = new System.Windows.Forms.Label();
             this.moreShowingsbtn = new System.Windows.Forms.Button();
-            this.st9txt = new System.Windows.Forms.TextBox();
-            this.st8txt = new System.Windows.Forms.TextBox();
-            this.st7txt = new System.Windows.Forms.TextBox();
-            this.st6txt = new System.Windows.Forms.TextBox();
-            this.st5txt = new System.Windows.Forms.TextBox();
-            this.st4txt = new System.Windows.Forms.TextBox();
-            this.st3txt = new System.Windows.Forms.TextBox();
-            this.st2txt = new System.Windows.Forms.TextBox();
-            this.st1txt = new System.Windows.Forms.TextBox();
             this.AMIposterPathtxt = new System.Windows.Forms.TextBox();
             this.AMIDirectorBox = new System.Windows.Forms.TextBox();
             this.AMIActorBox = new System.Windows.Forms.TextBox();
@@ -523,6 +514,24 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.st1txt = new System.Windows.Forms.MaskedTextBox();
+            this.st2txt = new System.Windows.Forms.MaskedTextBox();
+            this.st3txt = new System.Windows.Forms.MaskedTextBox();
+            this.st4txt = new System.Windows.Forms.MaskedTextBox();
+            this.st5txt = new System.Windows.Forms.MaskedTextBox();
+            this.st6txt = new System.Windows.Forms.MaskedTextBox();
+            this.st7txt = new System.Windows.Forms.MaskedTextBox();
+            this.st8txt = new System.Windows.Forms.MaskedTextBox();
+            this.st9txt = new System.Windows.Forms.MaskedTextBox();
+            this.st1cb = new System.Windows.Forms.ComboBox();
+            this.st2cb = new System.Windows.Forms.ComboBox();
+            this.st3cb = new System.Windows.Forms.ComboBox();
+            this.st4cb = new System.Windows.Forms.ComboBox();
+            this.st5cb = new System.Windows.Forms.ComboBox();
+            this.st6cb = new System.Windows.Forms.ComboBox();
+            this.st7cb = new System.Windows.Forms.ComboBox();
+            this.st8cb = new System.Windows.Forms.ComboBox();
+            this.st9cb = new System.Windows.Forms.ComboBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -656,7 +665,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(82, 34);
+            this.tabControl1.Location = new System.Drawing.Point(74, 34);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -688,7 +697,7 @@
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(937, 206);
+            this.searchBtn.Location = new System.Drawing.Point(940, 192);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(20, 20);
             this.searchBtn.TabIndex = 77;
@@ -699,7 +708,7 @@
             // 
             this.searchBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBar.Location = new System.Drawing.Point(799, 206);
+            this.searchBar.Location = new System.Drawing.Point(799, 192);
             this.searchBar.Name = "searchBar";
             this.searchBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.searchBar.Size = new System.Drawing.Size(135, 20);
@@ -5332,6 +5341,24 @@
             // 
             // AdminTab
             // 
+            this.AdminTab.Controls.Add(this.st9cb);
+            this.AdminTab.Controls.Add(this.st8cb);
+            this.AdminTab.Controls.Add(this.st7cb);
+            this.AdminTab.Controls.Add(this.st6cb);
+            this.AdminTab.Controls.Add(this.st5cb);
+            this.AdminTab.Controls.Add(this.st4cb);
+            this.AdminTab.Controls.Add(this.st3cb);
+            this.AdminTab.Controls.Add(this.st2cb);
+            this.AdminTab.Controls.Add(this.st1cb);
+            this.AdminTab.Controls.Add(this.st9txt);
+            this.AdminTab.Controls.Add(this.st8txt);
+            this.AdminTab.Controls.Add(this.st7txt);
+            this.AdminTab.Controls.Add(this.st6txt);
+            this.AdminTab.Controls.Add(this.st5txt);
+            this.AdminTab.Controls.Add(this.st4txt);
+            this.AdminTab.Controls.Add(this.st3txt);
+            this.AdminTab.Controls.Add(this.st2txt);
+            this.AdminTab.Controls.Add(this.st1txt);
             this.AdminTab.Controls.Add(this.label3);
             this.AdminTab.Controls.Add(this.label2);
             this.AdminTab.Controls.Add(this.st9lbl);
@@ -5343,15 +5370,6 @@
             this.AdminTab.Controls.Add(this.st3lbl);
             this.AdminTab.Controls.Add(this.st2lbl);
             this.AdminTab.Controls.Add(this.moreShowingsbtn);
-            this.AdminTab.Controls.Add(this.st9txt);
-            this.AdminTab.Controls.Add(this.st8txt);
-            this.AdminTab.Controls.Add(this.st7txt);
-            this.AdminTab.Controls.Add(this.st6txt);
-            this.AdminTab.Controls.Add(this.st5txt);
-            this.AdminTab.Controls.Add(this.st4txt);
-            this.AdminTab.Controls.Add(this.st3txt);
-            this.AdminTab.Controls.Add(this.st2txt);
-            this.AdminTab.Controls.Add(this.st1txt);
             this.AdminTab.Controls.Add(this.AMIposterPathtxt);
             this.AdminTab.Controls.Add(this.AMIDirectorBox);
             this.AdminTab.Controls.Add(this.AMIActorBox);
@@ -5503,77 +5521,6 @@
             this.moreShowingsbtn.Text = "Add Another Showtime";
             this.moreShowingsbtn.UseVisualStyleBackColor = true;
             this.moreShowingsbtn.Click += new System.EventHandler(this.moreShowingsbtn_Click);
-            // 
-            // st9txt
-            // 
-            this.st9txt.Location = new System.Drawing.Point(618, 492);
-            this.st9txt.Name = "st9txt";
-            this.st9txt.Size = new System.Drawing.Size(128, 20);
-            this.st9txt.TabIndex = 106;
-            this.st9txt.Visible = false;
-            // 
-            // st8txt
-            // 
-            this.st8txt.Location = new System.Drawing.Point(618, 444);
-            this.st8txt.Name = "st8txt";
-            this.st8txt.Size = new System.Drawing.Size(128, 20);
-            this.st8txt.TabIndex = 105;
-            this.st8txt.Visible = false;
-            // 
-            // st7txt
-            // 
-            this.st7txt.Location = new System.Drawing.Point(618, 396);
-            this.st7txt.Name = "st7txt";
-            this.st7txt.Size = new System.Drawing.Size(128, 20);
-            this.st7txt.TabIndex = 104;
-            this.st7txt.Visible = false;
-            // 
-            // st6txt
-            // 
-            this.st6txt.Location = new System.Drawing.Point(618, 347);
-            this.st6txt.Name = "st6txt";
-            this.st6txt.Size = new System.Drawing.Size(128, 20);
-            this.st6txt.TabIndex = 103;
-            this.st6txt.Visible = false;
-            // 
-            // st5txt
-            // 
-            this.st5txt.Location = new System.Drawing.Point(618, 300);
-            this.st5txt.Name = "st5txt";
-            this.st5txt.Size = new System.Drawing.Size(128, 20);
-            this.st5txt.TabIndex = 102;
-            this.st5txt.Visible = false;
-            // 
-            // st4txt
-            // 
-            this.st4txt.Location = new System.Drawing.Point(618, 252);
-            this.st4txt.Name = "st4txt";
-            this.st4txt.Size = new System.Drawing.Size(128, 20);
-            this.st4txt.TabIndex = 101;
-            this.st4txt.Visible = false;
-            // 
-            // st3txt
-            // 
-            this.st3txt.Location = new System.Drawing.Point(618, 203);
-            this.st3txt.Name = "st3txt";
-            this.st3txt.Size = new System.Drawing.Size(128, 20);
-            this.st3txt.TabIndex = 100;
-            this.st3txt.Visible = false;
-            // 
-            // st2txt
-            // 
-            this.st2txt.Location = new System.Drawing.Point(618, 156);
-            this.st2txt.Name = "st2txt";
-            this.st2txt.Size = new System.Drawing.Size(128, 20);
-            this.st2txt.TabIndex = 99;
-            this.st2txt.Visible = false;
-            // 
-            // st1txt
-            // 
-            this.st1txt.Location = new System.Drawing.Point(618, 108);
-            this.st1txt.Name = "st1txt";
-            this.st1txt.Size = new System.Drawing.Size(128, 20);
-            this.st1txt.TabIndex = 98;
             // 
             // AMIposterPathtxt
             // 
@@ -5851,20 +5798,20 @@
             // 
             // adminRemove
             // 
-            this.adminRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminRemove.Location = new System.Drawing.Point(383, 208);
+            this.adminRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminRemove.Location = new System.Drawing.Point(641, 87);
             this.adminRemove.Name = "adminRemove";
-            this.adminRemove.Size = new System.Drawing.Size(189, 40);
+            this.adminRemove.Size = new System.Drawing.Size(189, 139);
             this.adminRemove.TabIndex = 3;
             this.adminRemove.Text = "Remove a Movie";
             this.adminRemove.UseVisualStyleBackColor = true;
             // 
             // adminEdit
             // 
-            this.adminEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminEdit.Location = new System.Drawing.Point(383, 144);
+            this.adminEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminEdit.Location = new System.Drawing.Point(362, 87);
             this.adminEdit.Name = "adminEdit";
-            this.adminEdit.Size = new System.Drawing.Size(189, 41);
+            this.adminEdit.Size = new System.Drawing.Size(189, 139);
             this.adminEdit.TabIndex = 2;
             this.adminEdit.Text = "Edit a Movie";
             this.adminEdit.UseVisualStyleBackColor = true;
@@ -5872,10 +5819,10 @@
             // 
             // adminAdd
             // 
-            this.adminAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminAdd.Location = new System.Drawing.Point(383, 80);
+            this.adminAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminAdd.Location = new System.Drawing.Point(76, 87);
             this.adminAdd.Name = "adminAdd";
-            this.adminAdd.Size = new System.Drawing.Size(189, 37);
+            this.adminAdd.Size = new System.Drawing.Size(189, 139);
             this.adminAdd.TabIndex = 1;
             this.adminAdd.Text = "Add a Movie";
             this.adminAdd.UseVisualStyleBackColor = true;
@@ -6639,6 +6586,202 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // st1txt
+            // 
+            this.st1txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st1txt.Location = new System.Drawing.Point(618, 108);
+            this.st1txt.Mask = "90:00";
+            this.st1txt.Name = "st1txt";
+            this.st1txt.Size = new System.Drawing.Size(38, 22);
+            this.st1txt.TabIndex = 119;
+            // 
+            // st2txt
+            // 
+            this.st2txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st2txt.Location = new System.Drawing.Point(618, 157);
+            this.st2txt.Mask = "90:00";
+            this.st2txt.Name = "st2txt";
+            this.st2txt.Size = new System.Drawing.Size(38, 22);
+            this.st2txt.TabIndex = 120;
+            this.st2txt.Visible = false;
+            // 
+            // st3txt
+            // 
+            this.st3txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st3txt.Location = new System.Drawing.Point(618, 204);
+            this.st3txt.Mask = "90:00";
+            this.st3txt.Name = "st3txt";
+            this.st3txt.Size = new System.Drawing.Size(38, 22);
+            this.st3txt.TabIndex = 121;
+            this.st3txt.Visible = false;
+            // 
+            // st4txt
+            // 
+            this.st4txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st4txt.Location = new System.Drawing.Point(618, 254);
+            this.st4txt.Mask = "90:00";
+            this.st4txt.Name = "st4txt";
+            this.st4txt.Size = new System.Drawing.Size(38, 22);
+            this.st4txt.TabIndex = 122;
+            this.st4txt.Visible = false;
+            // 
+            // st5txt
+            // 
+            this.st5txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st5txt.Location = new System.Drawing.Point(618, 301);
+            this.st5txt.Mask = "90:00";
+            this.st5txt.Name = "st5txt";
+            this.st5txt.Size = new System.Drawing.Size(38, 22);
+            this.st5txt.TabIndex = 123;
+            this.st5txt.Visible = false;
+            // 
+            // st6txt
+            // 
+            this.st6txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st6txt.Location = new System.Drawing.Point(618, 350);
+            this.st6txt.Mask = "90:00";
+            this.st6txt.Name = "st6txt";
+            this.st6txt.Size = new System.Drawing.Size(38, 22);
+            this.st6txt.TabIndex = 124;
+            this.st6txt.Visible = false;
+            // 
+            // st7txt
+            // 
+            this.st7txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st7txt.Location = new System.Drawing.Point(618, 397);
+            this.st7txt.Mask = "90:00";
+            this.st7txt.Name = "st7txt";
+            this.st7txt.Size = new System.Drawing.Size(38, 22);
+            this.st7txt.TabIndex = 125;
+            this.st7txt.Visible = false;
+            // 
+            // st8txt
+            // 
+            this.st8txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st8txt.Location = new System.Drawing.Point(618, 445);
+            this.st8txt.Mask = "90:00";
+            this.st8txt.Name = "st8txt";
+            this.st8txt.Size = new System.Drawing.Size(38, 22);
+            this.st8txt.TabIndex = 126;
+            this.st8txt.Visible = false;
+            // 
+            // st9txt
+            // 
+            this.st9txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.st9txt.Location = new System.Drawing.Point(618, 494);
+            this.st9txt.Mask = "90:00";
+            this.st9txt.Name = "st9txt";
+            this.st9txt.Size = new System.Drawing.Size(38, 22);
+            this.st9txt.TabIndex = 127;
+            this.st9txt.Visible = false;
+            // 
+            // st1cb
+            // 
+            this.st1cb.FormattingEnabled = true;
+            this.st1cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st1cb.Location = new System.Drawing.Point(662, 108);
+            this.st1cb.Name = "st1cb";
+            this.st1cb.Size = new System.Drawing.Size(67, 21);
+            this.st1cb.TabIndex = 128;
+            // 
+            // st2cb
+            // 
+            this.st2cb.FormattingEnabled = true;
+            this.st2cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st2cb.Location = new System.Drawing.Point(662, 158);
+            this.st2cb.Name = "st2cb";
+            this.st2cb.Size = new System.Drawing.Size(67, 21);
+            this.st2cb.TabIndex = 129;
+            this.st2cb.Visible = false;
+            // 
+            // st3cb
+            // 
+            this.st3cb.FormattingEnabled = true;
+            this.st3cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st3cb.Location = new System.Drawing.Point(662, 205);
+            this.st3cb.Name = "st3cb";
+            this.st3cb.Size = new System.Drawing.Size(67, 21);
+            this.st3cb.TabIndex = 130;
+            this.st3cb.Visible = false;
+            // 
+            // st4cb
+            // 
+            this.st4cb.FormattingEnabled = true;
+            this.st4cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st4cb.Location = new System.Drawing.Point(662, 254);
+            this.st4cb.Name = "st4cb";
+            this.st4cb.Size = new System.Drawing.Size(67, 21);
+            this.st4cb.TabIndex = 131;
+            this.st4cb.Visible = false;
+            // 
+            // st5cb
+            // 
+            this.st5cb.FormattingEnabled = true;
+            this.st5cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st5cb.Location = new System.Drawing.Point(662, 301);
+            this.st5cb.Name = "st5cb";
+            this.st5cb.Size = new System.Drawing.Size(67, 21);
+            this.st5cb.TabIndex = 132;
+            this.st5cb.Visible = false;
+            // 
+            // st6cb
+            // 
+            this.st6cb.FormattingEnabled = true;
+            this.st6cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st6cb.Location = new System.Drawing.Point(662, 350);
+            this.st6cb.Name = "st6cb";
+            this.st6cb.Size = new System.Drawing.Size(67, 21);
+            this.st6cb.TabIndex = 133;
+            this.st6cb.Visible = false;
+            // 
+            // st7cb
+            // 
+            this.st7cb.FormattingEnabled = true;
+            this.st7cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st7cb.Location = new System.Drawing.Point(662, 398);
+            this.st7cb.Name = "st7cb";
+            this.st7cb.Size = new System.Drawing.Size(67, 21);
+            this.st7cb.TabIndex = 134;
+            this.st7cb.Visible = false;
+            // 
+            // st8cb
+            // 
+            this.st8cb.FormattingEnabled = true;
+            this.st8cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st8cb.Location = new System.Drawing.Point(662, 443);
+            this.st8cb.Name = "st8cb";
+            this.st8cb.Size = new System.Drawing.Size(67, 21);
+            this.st8cb.TabIndex = 135;
+            this.st8cb.Visible = false;
+            // 
+            // st9cb
+            // 
+            this.st9cb.FormattingEnabled = true;
+            this.st9cb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.st9cb.Location = new System.Drawing.Point(662, 495);
+            this.st9cb.Name = "st9cb";
+            this.st9cb.Size = new System.Drawing.Size(67, 21);
+            this.st9cb.TabIndex = 136;
+            this.st9cb.Visible = false;
+            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7145,15 +7288,6 @@
         private System.Windows.Forms.Label st3lbl;
         private System.Windows.Forms.Label st2lbl;
         private System.Windows.Forms.Button moreShowingsbtn;
-        private System.Windows.Forms.TextBox st9txt;
-        private System.Windows.Forms.TextBox st8txt;
-        private System.Windows.Forms.TextBox st7txt;
-        private System.Windows.Forms.TextBox st6txt;
-        private System.Windows.Forms.TextBox st5txt;
-        private System.Windows.Forms.TextBox st4txt;
-        private System.Windows.Forms.TextBox st3txt;
-        private System.Windows.Forms.TextBox st2txt;
-        private System.Windows.Forms.TextBox st1txt;
         private System.Windows.Forms.TextBox AMIposterPathtxt;
         private System.Windows.Forms.TextBox AMIDirectorBox;
         private System.Windows.Forms.TextBox AMIActorBox;
@@ -7253,6 +7387,24 @@
         private System.Windows.Forms.Button emailtickets;
         private System.Windows.Forms.TextBox emailBox;
         private System.Windows.Forms.Label emailLabelAccount;
+        private System.Windows.Forms.ComboBox st9cb;
+        private System.Windows.Forms.ComboBox st8cb;
+        private System.Windows.Forms.ComboBox st7cb;
+        private System.Windows.Forms.ComboBox st6cb;
+        private System.Windows.Forms.ComboBox st5cb;
+        private System.Windows.Forms.ComboBox st4cb;
+        private System.Windows.Forms.ComboBox st3cb;
+        private System.Windows.Forms.ComboBox st2cb;
+        private System.Windows.Forms.ComboBox st1cb;
+        private System.Windows.Forms.MaskedTextBox st9txt;
+        private System.Windows.Forms.MaskedTextBox st8txt;
+        private System.Windows.Forms.MaskedTextBox st7txt;
+        private System.Windows.Forms.MaskedTextBox st6txt;
+        private System.Windows.Forms.MaskedTextBox st5txt;
+        private System.Windows.Forms.MaskedTextBox st4txt;
+        private System.Windows.Forms.MaskedTextBox st3txt;
+        private System.Windows.Forms.MaskedTextBox st2txt;
+        private System.Windows.Forms.MaskedTextBox st1txt;
 
     }
 }

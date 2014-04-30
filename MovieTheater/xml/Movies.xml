@@ -333,4 +333,30 @@
     <Showtime9>
     </Showtime9>
   </Movie>
+  <Movie>
+    <Title>213</Title>
+    <Length>sad</Length>
+    <Synopsis>ad</Synopsis>
+    <Description>
+    </Description>
+    <Genre>
+    </Genre>
+    <Rating>
+    </Rating>
+    <Actor>
+    </Actor>
+    <Director>
+    </Director>
+    <ReleaseDate>Wednesday, April 30, 2014</ReleaseDate>
+    <PosterPath>openFileDialog1</PosterPath>
+    <Showtime1> 9:30AM</Showtime1>
+    <Showtime2> 8:00PM</Showtime2>
+    <Showtime3>  :</Showtime3>
+    <Showtime4>  :</Showtime4>
+    <Showtime5>  :</Showtime5>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
+  </Movie>
 </Movies>
