@@ -219,7 +219,7 @@
     <Rating>R</Rating>
     <Actor>Marlon Wayans, Gabriel Iglesias, Affion Crockett, Dave Sheridan, Jaime Pressly, Ricky Overton, Missi Pyle, Ashely Rickards, Rick Overton, Hayes MacArthhur</Actor>
     <Director>Michael Tiddes</Director>
-    <ReleaseDate>04/29/2014</ReleaseDate>
+    <ReleaseDate>Friday, April 18, 2014</ReleaseDate>
     <PosterPath>C:\Users\Leslie\Pictures\hauntedhouse2.jpg</PosterPath>
     <Showtime1>12:20PM</Showtime1>
     <Showtime2>2:00PM</Showtime2>
@@ -229,7 +229,28 @@
     <Showtime6>7:10PM</Showtime6>
     <Showtime7>8:00PM</Showtime7>
     <Showtime8>9:40PM</Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <Showtime9>10:30PM</Showtime9>
+  </Movie>
+  <Movie>
+    <Title>The Amazing Spider-Man 2</Title>
+    <Length>140 min</Length>
+    <Synopsis>Peter Parker runs the gauntlet as the mysterious company Oscorp sends up a slew of supervillains against him, impacting on his life.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Action</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Andrew Garfield, Emma Stone, Jamie Foxx, Dane DeHaan, Colm Feore, Sally Field, Embeth Davidtz, Paul Giamattie</Actor>
+    <Director>Mark Webb</Director>
+    <ReleaseDate>05/02/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\spiderman2.jpg</PosterPath>
+    <Showtime1>9:20AM</Showtime1>
+    <Showtime2>11:00AM</Showtime2>
+    <Showtime3>1:40PM</Showtime3>
+    <Showtime4>2:30PM</Showtime4>
+    <Showtime5>3:20PM</Showtime5>
+    <Showtime6>5:10PM</Showtime6>
+    <Showtime7>6:00PM</Showtime7>
+    <Showtime8>8:40PM</Showtime8>
+    <Showtime9>10:30PM</Showtime9>
   </Movie>
 </Movies>
