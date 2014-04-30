@@ -183,4 +183,30 @@
     <Showtime9>
     </Showtime9>
   </Movie>
+  <Movie>
+    <Title>Divergent</Title>
+    <Length>140 min</Length>
+    <Synopsis>In a world divided by factions based on virtues, Tris learns she's Divergent and won't fit in. When she discovers a plot to destroy Divergents, Tris and the mysterious Four must find out what makes Divergents dangerous before it's too late.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Action</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Shailene Woodley, Theo James, Kate Winslet, Jai Courtney, Ray Stevenson, Zoe Kravitz, Miles Teller, Tony Goldwyn, Ansel Elgort, Maggie Q, Mekhi Phifer, </Actor>
+    <Director>Neil Burger</Director>
+    <ReleaseDate>03/21/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\divergent_poster.jpg</PosterPath>
+    <Showtime1>10:30AM</Showtime1>
+    <Showtime2>12:10PM</Showtime2>
+    <Showtime3>3:20PM</Showtime3>
+    <Showtime4>6:30PM</Showtime4>
+    <Showtime5>9:20PM</Showtime5>
+    <Showtime6>
+    </Showtime6>
+    <Showtime7>
+    </Showtime7>
+    <Showtime8>
+    </Showtime8>
+    <Showtime9>
+    </Showtime9>
+  </Movie>
 </Movies>

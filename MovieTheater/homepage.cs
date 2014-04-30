@@ -686,9 +686,9 @@ namespace MovieTheater
             if (addMovie) // 6
             {
                 NSTitleLabel6.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
-                NSReleaseDateLabel1.Visible = true;
-                NSTitleLabel1.Visible = true;
-                NSPoster1.Visible = true;
+                NSReleaseDateLabel6.Visible = true;
+                NSTitleLabel6.Visible = true;
+                NSPoster6.Visible = true;
                 NSPoster6.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
@@ -708,9 +708,9 @@ namespace MovieTheater
             if (addMovie) // 7
             {
                 NSTitleLabel7.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
-                NSReleaseDateLabel2.Visible = true;
-                NSTitleLabel2.Visible = true;
-                NSPoster2.Visible = true;
+                NSReleaseDateLabel7.Visible = true;
+                NSTitleLabel7.Visible = true;
+                NSPoster7.Visible = true;
                 NSPoster7.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
@@ -730,9 +730,9 @@ namespace MovieTheater
             if (addMovie) // 8
             {
                 NSTitleLabel8.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
-                NSReleaseDateLabel3.Visible = true;
-                NSTitleLabel3.Visible = true;
-                NSPoster3.Visible = true;
+                NSReleaseDateLabel8.Visible = true;
+                NSTitleLabel8.Visible = true;
+                NSPoster8.Visible = true;
                 NSPoster8.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
@@ -752,9 +752,9 @@ namespace MovieTheater
             if (addMovie) // 9
             {
                 NSTitleLabel9.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
-                NSReleaseDateLabel4.Visible = true;
-                NSTitleLabel4.Visible = true;
-                NSPoster4.Visible = true;
+                NSReleaseDateLabel9.Visible = true;
+                NSTitleLabel9.Visible = true;
+                NSPoster9.Visible = true;
                 NSPoster9.ImageLocation = PosterElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
@@ -774,9 +774,9 @@ namespace MovieTheater
             if (addMovie) // 10
             {
                 NSTitleLabel10.Text = titleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
-                NSReleaseDateLabel5.Visible = true;
-                NSTitleLabel5.Visible = true;
-                NSPoster5.Visible = true;
+                NSReleaseDateLabel10.Visible = true;
+                NSTitleLabel10.Visible = true;
+                NSPoster10.Visible = true;
                 NSPoster10.ImageLocation = PosterElemList[index].InnerText;
             }
         }
