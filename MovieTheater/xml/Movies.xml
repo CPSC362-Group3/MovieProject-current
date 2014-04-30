@@ -209,4 +209,27 @@
     <Showtime9>
     </Showtime9>
   </Movie>
+  <Movie>
+    <Title>A Haunted House 2</Title>
+    <Length>87 min</Length>
+    <Synopsis>Crossing new lines and breaking old barriers, this is the sequel to the hilarious box-office hit starring Marlon Wayans as Malcolm who, after exorcising the demons of his ex, is starting fresh with his new girlfriend and her two children. After moving into their dream home, Malcolm is once again plagued by bizarre paranormal events. With spine-tingling tension and hilarious punch-lines this film is inspired by the latest supernatural horror movie franchises and shows that this time...it's not just the house that's haunted!</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Comedy</Genre>
+    <Rating>R</Rating>
+    <Actor>Marlon Wayans, Gabriel Iglesias, Affion Crockett, Dave Sheridan, Jaime Pressly, Ricky Overton, Missi Pyle, Ashely Rickards, Rick Overton, Hayes MacArthhur</Actor>
+    <Director>Michael Tiddes</Director>
+    <ReleaseDate>04/29/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Pictures\hauntedhouse2.jpg</PosterPath>
+    <Showtime1>12:20PM</Showtime1>
+    <Showtime2>2:00PM</Showtime2>
+    <Showtime3>2:40PM</Showtime3>
+    <Showtime4>4:30PM</Showtime4>
+    <Showtime5>5:20PM</Showtime5>
+    <Showtime6>7:10PM</Showtime6>
+    <Showtime7>8:00PM</Showtime7>
+    <Showtime8>9:40PM</Showtime8>
+    <Showtime9>
+    </Showtime9>
+  </Movie>
 </Movies>
