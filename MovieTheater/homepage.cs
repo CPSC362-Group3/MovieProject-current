@@ -15,6 +15,7 @@ using MovieTheater;
 using MovieTheatre;
 using System.Drawing.Printing;
 using System.Drawing.Imaging;
+using System.Net.Mail;
 
 namespace MovieTheater
 {
@@ -2509,6 +2510,40 @@ namespace MovieTheater
 
         }
 
+
+        private void emailtickets_Click(object sender, EventArgs e)
+        {
+            //EMAILS 
+            //=======================================================================================
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                mail.From = new MailAddress("movies362@gmail.com");
+                mail.To.Add("leslie.salguero93@gmail.com");
+                mail.Subject = "Movie Ticket Purchase Confirmation";
+                mail.Body = "Hello, The movie ticket(s) you ordered have been sent and attached to this email! \n You can print them when you please. Just make sure to have them before entering the establishment.\n Regards, Pseudo Cinema";
+
+                //System.Net.Mail.Attachment attachment;
+                //attachment = new System.Net.Mail.Attachment("your attachment file");
+                //mail.Attachments.Add(attachment);
+
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("semovies362@gmail.com", "movies362");
+                SmtpServer.EnableSsl = true;
+
+                SmtpServer.Send(mail);
+                MessageBox.Show("mail Send");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+        }
+
+
+
         private void Doc_PrintPage(object sender, PrintPageEventArgs e)
         {
             float x = e.MarginBounds.Left;
@@ -2613,6 +2648,7 @@ namespace MovieTheater
             displayRating.Text = MDRatingLabel.Text.ToString();
             displayLength.Text = MDLengthLabel.Text.ToString();
         }
+
 
         //-----------------------------------------------------------------------------------------------------
     }
