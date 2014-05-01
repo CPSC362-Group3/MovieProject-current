@@ -1938,6 +1938,7 @@ namespace MovieTheater
             }
             else
                 MessageBox.Show("You have already picked your seats.");
+
         }
 
         private void a1_Click(object sender, EventArgs e)
@@ -2343,7 +2344,6 @@ namespace MovieTheater
 
                 resetSeats();
             }
-            
         }
 
         //GETS SEATS FROM STRING AND SAVES THEM
@@ -2451,8 +2451,6 @@ namespace MovieTheater
             }
             else
                 BodyTabControl.SelectedTab = Seating;
-
-
 
             //GETS NUMBER TICKETS TO CHECK
             if (comboBox1.Text == "")
@@ -3051,6 +3049,7 @@ namespace MovieTheater
             displayShowtimelbl.Text = "0:00";
             selectedSeatstxt.Text = "";
             seats = 0;
+            resetSeats();
 
         }
 

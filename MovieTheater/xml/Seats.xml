@@ -89,12 +89,18 @@
     <Title>Divergent</Title>
     <Showtime> 9:20PM</Showtime>
     <Date>05/01/2014</Date>
-    <Reserved>c3</Reserved>
+    <Reserved>c3e6</Reserved>
   </Seats_taken>
   <Seats_taken>
     <Title>Draft Day</Title>
     <Showtime>10:10PM</Showtime>
     <Date>05/01/2014</Date>
     <Reserved>c_11</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>The Other Woman</Title>
+    <Showtime> 7:50PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>,f9</Reserved>
   </Seats_taken>
 </Seats>

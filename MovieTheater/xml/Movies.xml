@@ -18,10 +18,10 @@
     <Showtime3>04:00PM</Showtime3>
     <Showtime4>07:00PM</Showtime4>
     <Showtime5>09:00PM</Showtime5>
-    <Showtime6>  :PM</Showtime6>
-    <Showtime7>  :PM</Showtime7>
-    <Showtime8>  :PM</Showtime8>
-    <Showtime9>  :PM</Showtime9>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
     <Title>Transcendence</Title>
@@ -181,7 +181,7 @@
     <Showtime5> 6:20PM</Showtime5>
     <Showtime6> 8:15PM</Showtime6>
     <Showtime7> 9:20PM</Showtime7>
-    <Showtime8>12:30AM</Showtime8>
+    <Showtime8>  :</Showtime8>
     <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
@@ -284,15 +284,15 @@
     <Director>Ivan Reitman</Director>
     <ReleaseDate>Friday, April 11, 2014</ReleaseDate>
     <PosterPath>../../Posters/draftday.jpg</PosterPath>
-    <Showtime1>10:0PM</Showtime1>
-    <Showtime2> 4:00PM</Showtime2>
-    <Showtime3> 7:20PM</Showtime3>
-    <Showtime4>10:10PM</Showtime4>
-    <Showtime5>  :PM</Showtime5>
-    <Showtime6>  :PM</Showtime6>
-    <Showtime7>  :PM</Showtime7>
-    <Showtime8>  :PM</Showtime8>
-    <Showtime9>  :PM</Showtime9>
+    <Showtime1>10:00AM</Showtime1>
+    <Showtime2>12:00PM</Showtime2>
+    <Showtime3> 3:20PM</Showtime3>
+    <Showtime4>04:10PM</Showtime4>
+    <Showtime5> 7:45PM</Showtime5>
+    <Showtime6>10:00PM</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
     <Title>213</Title>
