@@ -46,36 +46,6 @@
     <Showtime9>09:00PM</Showtime9>
   </Movie>
   <Movie>
-    <Title>The Protector 2</Title>
-    <Length>104 min</Length>
-    <Synopsis>When the owner of a major elephant camp is murdered, Kham finds himself the number one suspect and on the run from both the police and the deceased's vengeful twin nieces. But luck is on Kham's side when he runs into an Interpol agent sent to Thailand on a secret mission.</Synopsis>
-    <Description>d</Description>
-    <Genre>Action</Genre>
-    <Rating>R</Rating>
-    <Actor>Tony Jaa, RZA, Petchtai Wongkamlao, Jeeja Yanin, Marrese Crump, Yayaing Phongam, Kazo Patrick Tang</Actor>
-    <Director>Prachya Pinkaew</Director>
-    <ReleaseDate>Friday, May 9, 2014</ReleaseDate>
-    <PosterPath>../../Posters/theprotector_019.jpg</PosterPath>
-    <Showtime1>
-    </Showtime1>
-    <Showtime2>
-    </Showtime2>
-    <Showtime3>
-    </Showtime3>
-    <Showtime4>
-    </Showtime4>
-    <Showtime5>
-    </Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
-  </Movie>
-  <Movie>
     <Title>Captain America: The Winter Soldier</Title>
     <Length>136 min</Length>
     <Synopsis>After the cataclysmic events in New York with The Avengers, Steve Rogers, aka Captain America, living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy-the Winter Soldier.</Synopsis>
@@ -350,6 +320,28 @@
     <Director>Robert Stromberg</Director>
     <ReleaseDate>05/30/2014</ReleaseDate>
     <PosterPath>C:\Users\Miguel\Documents\GitHub\MovieProject-current\MovieTheater\Posters\maleficent.jpg</PosterPath>
+    <Showtime1>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
+    <Showtime2>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
+    <Showtime3>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
+    <Showtime4>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
+    <Showtime5>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
+    <Showtime6>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
+    <Showtime7>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
+    <Showtime8>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
+    <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
+  </Movie>
+  <Movie>
+    <Title>X-Men: Days of Future Past</Title>
+    <Length>130 min</Length>
+    <Synopsis>The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.&lt;/</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Action</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Hugh Jackman, James McAvoy, Michael Fassbender, Jennifer Lawrence, Nicholas Hoult, Patrick Stewart, Ian McKellen, Ellen Page, Anna Paquin, Halle Berry, Shawn Ashmore, Peter Dinklage</Actor>
+    <Director>Bryan Singer</Director>
+    <ReleaseDate>05/23/2014</ReleaseDate>
+    <PosterPath>C:\Users\Miguel\Documents\GitHub\MovieProject-current\MovieTheater\Posters\xmendofp.jpg</PosterPath>
     <Showtime1>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
     <Showtime2>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
     <Showtime3>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
