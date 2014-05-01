@@ -667,7 +667,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(66, 34);
+            this.tabControl1.Location = new System.Drawing.Point(58, 34);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -6086,7 +6086,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Maroon;
-            this.label15.Location = new System.Drawing.Point(505, 388);
+            this.label15.Location = new System.Drawing.Point(505, 421);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 20);
             this.label15.TabIndex = 25;
@@ -6094,7 +6094,7 @@
             // 
             // emailtickets
             // 
-            this.emailtickets.Location = new System.Drawing.Point(492, 424);
+            this.emailtickets.Location = new System.Drawing.Point(492, 457);
             this.emailtickets.Name = "emailtickets";
             this.emailtickets.Size = new System.Drawing.Size(75, 23);
             this.emailtickets.TabIndex = 24;
@@ -6269,7 +6269,7 @@
             this.gohomeLabel.AutoSize = true;
             this.gohomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gohomeLabel.ForeColor = System.Drawing.Color.Maroon;
-            this.gohomeLabel.Location = new System.Drawing.Point(796, 388);
+            this.gohomeLabel.Location = new System.Drawing.Point(796, 421);
             this.gohomeLabel.Name = "gohomeLabel";
             this.gohomeLabel.Size = new System.Drawing.Size(85, 20);
             this.gohomeLabel.TabIndex = 11;
@@ -6280,7 +6280,7 @@
             this.PrintNowLabel.AutoSize = true;
             this.PrintNowLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrintNowLabel.ForeColor = System.Drawing.Color.Maroon;
-            this.PrintNowLabel.Location = new System.Drawing.Point(209, 388);
+            this.PrintNowLabel.Location = new System.Drawing.Point(209, 421);
             this.PrintNowLabel.Name = "PrintNowLabel";
             this.PrintNowLabel.Size = new System.Drawing.Size(85, 20);
             this.PrintNowLabel.TabIndex = 10;
@@ -6288,7 +6288,7 @@
             // 
             // gobackhomebutton
             // 
-            this.gobackhomebutton.Location = new System.Drawing.Point(801, 424);
+            this.gobackhomebutton.Location = new System.Drawing.Point(801, 457);
             this.gobackhomebutton.Name = "gobackhomebutton";
             this.gobackhomebutton.Size = new System.Drawing.Size(75, 23);
             this.gobackhomebutton.TabIndex = 2;
@@ -6298,7 +6298,7 @@
             // 
             // printTixButton
             // 
-            this.printTixButton.Location = new System.Drawing.Point(213, 424);
+            this.printTixButton.Location = new System.Drawing.Point(213, 457);
             this.printTixButton.Name = "printTixButton";
             this.printTixButton.Size = new System.Drawing.Size(75, 23);
             this.printTixButton.TabIndex = 1;
