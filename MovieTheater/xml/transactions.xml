@@ -488,4 +488,26 @@
     <Total>$10.00</Total>
     <Tickets />
   </Purchase_History>
+  <Purchase_History>
+    <Username>notyourfwend</Username>
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime>12:00pm</Showtime>
+    <Total>$30.00</Total>
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Wednesday, April 30, 2014</Date>
+    <Showtime> 7:30PM</Showtime>
+    <Total>$30.00</Total>
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>Gameofthrones</Username>
+    <Date>Wednesday, April 30, 2014</Date>
+    <Showtime> 1:00PM</Showtime>
+    <Total>$10.00</Total>
+    <Tickets />
+  </Purchase_History>
 </Purchases>

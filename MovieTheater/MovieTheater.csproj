@@ -35,7 +35,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Babasse-Old-School-Bobines-video.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Babasse-Old-School-Bobines-video.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
@@ -99,7 +99,7 @@
     <None Include="Resources\ticket.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Babasse-Old-School-Bobines-video.ico" />
+    <Content Include="Resources\Babasse-Old-School-Bobines-video.ico" />
     <None Include="Resources\TICKETOUTLINE.png" />
     <None Include="Resources\ticket.png" />
     <None Include="Resources\admin_controls_div.jpg" />

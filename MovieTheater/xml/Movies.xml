@@ -111,26 +111,17 @@
     <Rating>R</Rating>
     <Actor>Zac Efron, Dave Franco, Rose Byrne, Seth Rogen, Jake Johnson, Christopher Mintz-Plasse, Lisa Kudrow, Halston Sage, Carla Gallo, Chasty Ballesteros</Actor>
     <Director>Nicholas Stoller</Director>
-    <ReleaseDate>05/09/2014</ReleaseDate>
-    <PosterPath>openFileDialog1</PosterPath>
-    <Showtime1>
-    </Showtime1>
-    <Showtime2>
-    </Showtime2>
-    <Showtime3>
-    </Showtime3>
-    <Showtime4>
-    </Showtime4>
-    <Showtime5>
-    </Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <ReleaseDate>Friday, May 9, 2014</ReleaseDate>
+    <PosterPath>../../Posters/neigh.jpg</PosterPath>
+    <Showtime1>  :</Showtime1>
+    <Showtime2>  :</Showtime2>
+    <Showtime3>  :</Showtime3>
+    <Showtime4>  :</Showtime4>
+    <Showtime5>  :</Showtime5>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
     <Title>Rio 2</Title>
@@ -142,21 +133,17 @@
     <Rating>G</Rating>
     <Actor>Jesse Eisenberg, Anne Hathaway, Jemaine Clement, Bruno Mars, Jamie Foxx, Miguel Ferrer, Bebel Gilberto, Jeffrey Garcia, Andy Garcia</Actor>
     <Director>Carlos Saldanha</Director>
-    <ReleaseDate>04/11/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\rio2newposter.jpg</PosterPath>
+    <ReleaseDate>Friday, April 11, 2014</ReleaseDate>
+    <PosterPath>../../Posters/rio2newposter.jpg</PosterPath>
     <Showtime1>10:00AM</Showtime1>
-    <Showtime2>1:00PM</Showtime2>
-    <Showtime3>4:40PM</Showtime3>
-    <Showtime4>7:30PM</Showtime4>
+    <Showtime2> 1:00PM</Showtime2>
+    <Showtime3> 4:40PM</Showtime3>
+    <Showtime4> 7:30PM</Showtime4>
     <Showtime5>10:10PM</Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
     <Title>The Quiet Ones</Title>
@@ -167,21 +154,17 @@
     <Rating>PG-13</Rating>
     <Actor>Sam Claflin, Jared Harris, Olivia Cooke, Erin Richards, Max Pirkis</Actor>
     <Director>John Pogue</Director>
-    <ReleaseDate>04/25/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\TheQuietOnes.jpg</PosterPath>
-    <Showtime1>1:55PM</Showtime1>
-    <Showtime2>4:25PM</Showtime2>
-    <Showtime3>7:25PM</Showtime3>
-    <Showtime4>9:45PM</Showtime4>
+    <ReleaseDate>Friday, April 25, 2014</ReleaseDate>
+    <PosterPath>../../Posters/TheQuietOnes.jpg</PosterPath>
+    <Showtime1> 1:55PM</Showtime1>
+    <Showtime2> 4:25PM</Showtime2>
+    <Showtime3> 7:25PM</Showtime3>
+    <Showtime4> 9:45PM</Showtime4>
     <Showtime5>11:25PM</Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <Showtime6>  :PM</Showtime6>
+    <Showtime7>  :PM</Showtime7>
+    <Showtime8>  :PM</Showtime8>
+    <Showtime9>  :PM</Showtime9>
   </Movie>
   <Movie>
     <Title>Divergent</Title>
@@ -193,21 +176,17 @@
     <Rating>PG-13</Rating>
     <Actor>Shailene Woodley, Theo James, Kate Winslet, Jai Courtney, Ray Stevenson, Zoe Kravitz, Miles Teller, Tony Goldwyn, Ansel Elgort, Maggie Q, Mekhi Phifer, </Actor>
     <Director>Neil Burger</Director>
-    <ReleaseDate>03/21/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\divergent_poster.jpg</PosterPath>
-    <Showtime1>10:30AM</Showtime1>
+    <ReleaseDate>Friday, March 21, 2014</ReleaseDate>
+    <PosterPath>../../Posters/divergent_poster.jpg</PosterPath>
+    <Showtime1>10:30PM</Showtime1>
     <Showtime2>12:10PM</Showtime2>
-    <Showtime3>3:20PM</Showtime3>
-    <Showtime4>6:30PM</Showtime4>
-    <Showtime5>9:20PM</Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <Showtime3> 3:20PM</Showtime3>
+    <Showtime4> 6:30PM</Showtime4>
+    <Showtime5> 9:20PM</Showtime5>
+    <Showtime6>  :PM</Showtime6>
+    <Showtime7>  :PM</Showtime7>
+    <Showtime8>  :PM</Showtime8>
+    <Showtime9>  :PM</Showtime9>
   </Movie>
   <Movie>
     <Title>A Haunted House 2</Title>
@@ -220,15 +199,15 @@
     <Actor>Marlon Wayans, Gabriel Iglesias, Affion Crockett, Dave Sheridan, Jaime Pressly, Ricky Overton, Missi Pyle, Ashely Rickards, Rick Overton, Hayes MacArthhur</Actor>
     <Director>Michael Tiddes</Director>
     <ReleaseDate>Friday, April 18, 2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\hauntedhouse2.jpg</PosterPath>
+    <PosterPath>../../Posters/hauntedhouse2.jpg</PosterPath>
     <Showtime1>12:20PM</Showtime1>
-    <Showtime2>2:00PM</Showtime2>
-    <Showtime3>2:40PM</Showtime3>
-    <Showtime4>4:30PM</Showtime4>
-    <Showtime5>5:20PM</Showtime5>
-    <Showtime6>7:10PM</Showtime6>
-    <Showtime7>8:00PM</Showtime7>
-    <Showtime8>9:40PM</Showtime8>
+    <Showtime2> 2:00PM</Showtime2>
+    <Showtime3> 2:40PM</Showtime3>
+    <Showtime4> 4:30PM</Showtime4>
+    <Showtime5> 5:20PM</Showtime5>
+    <Showtime6> 7:10PM</Showtime6>
+    <Showtime7> 8:00PM</Showtime7>
+    <Showtime8> 9:40PM</Showtime8>
     <Showtime9>10:30PM</Showtime9>
   </Movie>
   <Movie>
@@ -241,17 +220,17 @@
     <Rating>PG-13</Rating>
     <Actor>Andrew Garfield, Emma Stone, Jamie Foxx, Dane DeHaan, Colm Feore, Sally Field, Embeth Davidtz, Paul Giamattie</Actor>
     <Director>Mark Webb</Director>
-    <ReleaseDate>05/02/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\spiderman2.jpg</PosterPath>
-    <Showtime1>9:20AM</Showtime1>
-    <Showtime2>11:00AM</Showtime2>
-    <Showtime3>1:40PM</Showtime3>
-    <Showtime4>2:30PM</Showtime4>
-    <Showtime5>3:20PM</Showtime5>
-    <Showtime6>5:10PM</Showtime6>
-    <Showtime7>6:00PM</Showtime7>
-    <Showtime8>8:40PM</Showtime8>
-    <Showtime9>10:30PM</Showtime9>
+    <ReleaseDate>Friday, May 2, 2014</ReleaseDate>
+    <PosterPath>../../Posters/spiderman2.jpg</PosterPath>
+    <Showtime1>92:0</Showtime1>
+    <Showtime2>11:00</Showtime2>
+    <Showtime3>14:0</Showtime3>
+    <Showtime4>23:0</Showtime4>
+    <Showtime5>32:0</Showtime5>
+    <Showtime6>51:0</Showtime6>
+    <Showtime7>60:0</Showtime7>
+    <Showtime8>84:0</Showtime8>
+    <Showtime9>10:30</Showtime9>
   </Movie>
   <Movie>
     <Title>Walk Of Shame</Title>
@@ -263,26 +242,17 @@
     <Rating>R</Rating>
     <Actor>Elizabeth Banks, James Marsden, Gillian Jacobs, Sarah Wright, Ethan Suplee, Bill Burr, Ken Davitian, Lawrence Gilliard Jr., Alphonso McAuley, Da'Vone McDonld, Eric Etebari, Oliver Hudson</Actor>
     <Director>Steven Brill</Director>
-    <ReleaseDate>05/02/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\walkofshame.jpg</PosterPath>
-    <Showtime1>
-    </Showtime1>
-    <Showtime2>
-    </Showtime2>
-    <Showtime3>
-    </Showtime3>
-    <Showtime4>
-    </Showtime4>
-    <Showtime5>
-    </Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <ReleaseDate>Friday, May 2, 2014</ReleaseDate>
+    <PosterPath>../../Posters/walkofshame.jpg</PosterPath>
+    <Showtime1>  :</Showtime1>
+    <Showtime2>  :</Showtime2>
+    <Showtime3>  :</Showtime3>
+    <Showtime4>  :</Showtime4>
+    <Showtime5>  :</Showtime5>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
     <Title>The Other Woman</Title>
@@ -294,14 +264,14 @@
     <Rating>PG-13</Rating>
     <Actor>Cameron Diaz, Leslie Mann, Don Johnson, Kate Upton, Taylor Kinney, Nicki Minaj, Kenneth Maharaj, Victor Cruz, Nikolaj Coster, David Thornton, Madison McKinley, Alyshia Ochse</Actor>
     <Director>Nick Cassavetes</Director>
-    <ReleaseDate>04/25/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\theotherwoman.jpg</PosterPath>
-    <Showtime1>2:00PM</Showtime1>
-    <Showtime2>2:30PM</Showtime2>
-    <Showtime3>4:40PM</Showtime3>
-    <Showtime4>5:10PM</Showtime4>
-    <Showtime5>7:20PM</Showtime5>
-    <Showtime6>7:50PM</Showtime6>
+    <ReleaseDate>Friday, April 25, 2014</ReleaseDate>
+    <PosterPath>../../Posters/theotherwoman.jpg</PosterPath>
+    <Showtime1> 2:00PM</Showtime1>
+    <Showtime2> 2:30PM</Showtime2>
+    <Showtime3> 4:40PM</Showtime3>
+    <Showtime4> 5:10PM</Showtime4>
+    <Showtime5> 7:20PM</Showtime5>
+    <Showtime6> 7:50PM</Showtime6>
     <Showtime7>10:00PM</Showtime7>
     <Showtime8>10:40PM</Showtime8>
     <Showtime9>11:10PM</Showtime9>
@@ -317,21 +287,16 @@
     <Actor>Chris Berman, Dave Donaldson, Patrick St. Esprit, Chi McBride, Mel Kiper, Jon Gruden, Kevin Costner, Deion Sanders, Mike Mayock, Jennifer Garner, Anothony Rizzo, Aaron Goldhammer, Chadwick Boseman, Jordan Harris, Zachary Littlejohn</Actor>
     <Director>Ivan Reitman</Director>
     <ReleaseDate>Friday, April 11, 2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Pictures\draftday.jpg</PosterPath>
-    <Showtime1>1:00PM</Showtime1>
-    <Showtime2>4:00PM</Showtime2>
-    <Showtime3>7:20PM</Showtime3>
+    <PosterPath>../../Posters/draftday.jpg</PosterPath>
+    <Showtime1>10:0PM</Showtime1>
+    <Showtime2> 4:00PM</Showtime2>
+    <Showtime3> 7:20PM</Showtime3>
     <Showtime4>10:10PM</Showtime4>
-    <Showtime5>
-    </Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <Showtime5>  :PM</Showtime5>
+    <Showtime6>  :PM</Showtime6>
+    <Showtime7>  :PM</Showtime7>
+    <Showtime8>  :PM</Showtime8>
+    <Showtime9>  :PM</Showtime9>
   </Movie>
   <Movie>
     <Title>213</Title>
@@ -358,5 +323,27 @@
     <Showtime7>  :</Showtime7>
     <Showtime8>  :</Showtime8>
     <Showtime9>  :</Showtime9>
+  </Movie>
+  <Movie>
+    <Title>The Other Woman</Title>
+    <Length>109 min</Length>
+    <Synopsis>After discovering her boyfriend is married, Carly soon meets the wife he's been cheating on. And when yet another affair is discovered, all three women team up to plot mutual revenge on the three-timing SOB.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Comedy</Genre>
+    <Rating>PG-13</Rating>
+    <Actor>Cameron Diaz, Leslie Mann, Don Johnson, Kate Upton, Taylor Kinney, Nicki Minaj, Kenneth Maharaj, Victor Cruz, Nikolaj Coster, David Thornton, Madison McKinley, Alyshia Ochse</Actor>
+    <Director>Nick Cassavetes</Director>
+    <ReleaseDate>04/25/2014</ReleaseDate>
+    <PosterPath>C:\Users\Nick\Documents\GitHub\MovieProject-current\MovieTheater\Posters\theotherwoman.jpg</PosterPath>
+    <Showtime1>10:0System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
+    <Showtime2>11:10System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
+    <Showtime3> 1:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
+    <Showtime4> 2:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
+    <Showtime5> 3:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
+    <Showtime6> 3:45System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
+    <Showtime7> 5:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
+    <Showtime8> 7:40System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
+    <Showtime9> 8:10System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
   </Movie>
 </Movies>

@@ -25,6 +25,7 @@ namespace MovieTheater
         bool adminLogged = false;
         bool logged = false;
         bool editInfo = false;
+        bool NRtime = false;
 
         //Int counters
         int seats = 0;
@@ -33,7 +34,7 @@ namespace MovieTheater
         int showtimes = 2;
         int[] track = new int[72];
 
-        string currentU, SC;
+        string currentU, SC, currentemail;
 
         //String file paths, xml related
         string MoviesPath = "../../xml/Movies.xml";
@@ -246,6 +247,9 @@ namespace MovieTheater
                 BodyTabControl.SelectedTab = AdminCtrl;
             else
                 BodyTabControl.SelectedTab = LoginTab;
+
+            usernameTxt.Clear();
+            passwordTxt.Clear();
         }
 
         /* Home button click */
@@ -271,6 +275,8 @@ namespace MovieTheater
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             BodyTabControl.SelectedTab = LoginTab;
+            usernameTxt.Clear();
+            passwordTxt.Clear();
         }
 
         /* Login button enter */
@@ -1094,12 +1100,13 @@ namespace MovieTheater
         //---------------------------------------------------------------------------------------------------------------------------
         //Movie Details/////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //--------------------------------------------------------------------------------------------------------------------------
-        public void checkValidtime(XmlNodeList show, int index, Label display)
+
+        private void checkValidtime(XmlNodeList show, int index, Label display)
         {
-            if (show[index].InnerText != "  :")
-                display.Text = show[index].InnerText;
-            else
-                display.Text = "";
+           if (show[index].InnerText != "  :")
+               display.Text = show[index].InnerText;
+           else
+               display.Text = "";
         }
 
         public void updateMovieDetailsPage(string title)
@@ -1215,92 +1222,109 @@ namespace MovieTheater
         /* Poster Clicks */
         private void NRPoster1_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = false;
             updateMovieDetailsPage(GetMovieTitle(NRTitleLabel1.Text));
             updateMI();
+            
         }
 
         private void NRPoster2_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = false;
             updateMovieDetailsPage(GetMovieTitle(NRTitleLabel2.Text));
             updateMI();
+            
         }
 
         private void NRPoster3_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = false;
             updateMovieDetailsPage(GetMovieTitle(NRTitleLabel3.Text));
-            updateMI();
+            updateMI();   
         }
 
         private void NRPoster4_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = false;
             updateMovieDetailsPage(GetMovieTitle(NRTitleLabel4.Text));
-            updateMI();
+            updateMI();        
         }
 
         private void NRPoster5_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = false;
             updateMovieDetailsPage(GetMovieTitle(NRTitleLabel5.Text));
-            updateMI();
+            updateMI();        
         }
 
         private void NSPoster1_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel1.Text));
-            updateMI();
+            updateMI();           
         }
 
         private void NSPoster2_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel2.Text));
-            updateMI();
+            updateMI();           
         }
 
         private void NSPoster3_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel3.Text));
-            updateMI();
+            updateMI();           
         }
 
         private void NSPoster4_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel4.Text));
-            updateMI();
+            updateMI();         
         }
 
         private void NSPoster5_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel5.Text));
-            updateMI();
+            updateMI();           
         }
 
         private void NSPoster6_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel6.Text));
-            updateMI();
+            updateMI();           
         }
 
         private void NSPoster7_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel7.Text));
-            updateMI();
+            updateMI();          
         }
 
         private void NSPoster8_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel8.Text));
-            updateMI();
+            updateMI();           
         }
 
         private void NSPoster9_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel9.Text));
-            updateMI();
+            updateMI();          
         }
 
         private void NSPoster10_Click(object sender, EventArgs e)
         {
+            orderTicketsbtn.Visible = true;
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel10.Text));
-            updateMI();
+            updateMI();          
         }
         //-------------------------------------------------------------------------------------------------------------------------
         //Create Account Page//////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1338,6 +1362,7 @@ namespace MovieTheater
                     XmlElement cardlname = doc.CreateElement("CH_LNAME");
                     XmlElement cardnum = doc.CreateElement("Card_Number");
                     XmlElement securitycode = doc.CreateElement("Security_Code");
+                    XmlElement email = doc.CreateElement("email");
 
                     //Add the values for each nodes
                     fName.Value = fNameTxt.Text;
@@ -1351,6 +1376,7 @@ namespace MovieTheater
                     cardlname.InnerText = chlname.Text;
                     cardnum.InnerText = ccn.Text;
                     securitycode.InnerText = secCode.Text;
+                    email.InnerText = emailBox.Text;
 
 
                     //Construct the document
@@ -1369,6 +1395,7 @@ namespace MovieTheater
                     acc.AppendChild(cardlname);
                     acc.AppendChild(cardnum);
                     acc.AppendChild(securitycode);
+                    acc.AppendChild(email);
 
                     doc.Save(AccountsPath);
                 }
@@ -1394,6 +1421,7 @@ namespace MovieTheater
                     XmlElement cardlname = doc.CreateElement("CH_LNAME");
                     XmlElement cardnum = doc.CreateElement("Card_Number");
                     XmlElement securitycode = doc.CreateElement("Security_Code");
+                    XmlElement email = doc.CreateElement("email");
 
                     //Add the values for each nodes
                     fName.Value = fNameTxt.Text;
@@ -1406,7 +1434,8 @@ namespace MovieTheater
                     cardfname.InnerText = chfname.Text;
                     cardlname.InnerText = chlname.Text;
                     cardnum.InnerText = ccn.Text;
-                    securitycode.InnerText = secCode.Text;
+                    securitycode.InnerText = CCV.Text;
+                    email.InnerText = emailBox.Text;
 
                     //Construct the Person element
                     acc.Attributes.Append(fName);
@@ -1420,6 +1449,7 @@ namespace MovieTheater
                     acc.AppendChild(cardlname);
                     acc.AppendChild(cardnum);
                     acc.AppendChild(securitycode);
+                    acc.AppendChild(email);
                     Console.Out.Write(securitycode.InnerText + "\n");
 
                     //Add the New person element to the end of the root element
@@ -1460,6 +1490,7 @@ namespace MovieTheater
                                   CHlName = acc.Element("CH_LNAME").Value,
                                   CHnum = acc.Element("Card_Number").Value,
                                   Sec = acc.Element("Security_Code").Value,
+                                  emailto = acc.Element("email").Value,
 
                               };
                 foreach (var acc in accInfo)
@@ -1474,9 +1505,11 @@ namespace MovieTheater
                         else
                         {
                             BodyTabControl.SelectedTab = HomeTab;
+                            adminLogged = false;
                         }
 
                         currentU = acc.Username;
+                        currentemail = acc.emailto;
                         PurchaseFname.Text = acc.CHfName;
                         PurchaseLname.Text = acc.CHlName;
                         //MAKE SURE TO CHECK THAT EVERYTHING THEY ENTERED IS CORRECT
@@ -1488,7 +1521,10 @@ namespace MovieTheater
 
                         MessageBox.Show("Successfully signed in!");
                         logged = true;
-                        //logBtn.Text = "Log Out";
+
+                        homeLogged.Visible = true;
+                        checkLog.Visible = true;
+                        checkLog.Text = usernameTxt.Text;
 
                         break;
                     }
@@ -2554,7 +2590,7 @@ namespace MovieTheater
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
                 mail.From = new MailAddress("movies362@gmail.com");
-                mail.To.Add("leslie.salguero93@gmail.com");
+                mail.To.Add(currentemail);
                 mail.Subject = "Movie Ticket Purchase Confirmation";
                 mail.Body = "Hello, The movie ticket(s) you ordered have been sent and attached to this email! \n You can print them when you please. Just make sure to have them before entering the establishment.\n Regards, Pseudo Cinema";
 
@@ -2567,7 +2603,7 @@ namespace MovieTheater
                 SmtpServer.EnableSsl = true;
 
                 SmtpServer.Send(mail);
-                MessageBox.Show("mail Send");
+                MessageBox.Show("Email sent to: " + currentemail);
             }
             catch (Exception ex)
             {
@@ -2674,6 +2710,7 @@ namespace MovieTheater
         {
             displayShowtimelbl.Text = showtime9.Text;
         }
+
 
         private void orderTicketsbtn_Click(object sender, EventArgs e)
         {

@@ -1,74 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Account Info-->
 <Accounts>
-  <Account First_Name="Nick" Last_Name="Diller">
-    <Address>123 Place Ave</Address>
-    <City>Somewhere</City>
-    <State>CA</State>
-    <Username>Gameofthrones</Username>
-    <Password>redwedding</Password>
-    <CH_FNAME>Nicholas</CH_FNAME>
-    <CH_LNAME>Diller</CH_LNAME>
-    <Card_Number>2133213123134212</Card_Number>
-    <Security_Code>111</Security_Code>
-  </Account>
   <Account First_Name="Owner" Last_Name="Manager">
-    <Address>213 City St</Address>
+    <Address>123 Cherry Ave</Address>
     <City>Fullerton</City>
     <State>CA</State>
     <Username>Admin</Username>
     <Password>password</Password>
     <CH_FNAME>Owner</CH_FNAME>
     <CH_LNAME>Manager</CH_LNAME>
-    <Card_Number>1231438891239341</Card_Number>
+    <Card_Number>1238998123791827</Card_Number>
     <Security_Code>
     </Security_Code>
+    <email>owner@msn.com</email>
   </Account>
-  <Account First_Name="leslie" Last_Name="salguero">
-    <Address>123 C</Address>
-    <City>Corona</City>
+  <Account First_Name="Nick" Last_Name="Dille">
+    <Address>123 Main St</Address>
+    <City>Chino Hills</City>
     <State>CA</State>
-    <Username>lol</Username>
-    <Password>lol</Password>
-    <CH_FNAME>Leslie</CH_FNAME>
-    <CH_LNAME>Salguero</CH_LNAME>
-    <Card_Number>555555555555</Card_Number>
-    <Security_Code>
-    </Security_Code>
-  </Account>
-  <Account First_Name="leslie" Last_Name="salguero">
-    <Address>4555 Shine</Address>
-    <City>Corona</City>
-    <State>CA</State>
-    <Username>okay</Username>
-    <Password>okay</Password>
-    <CH_FNAME>Leslie</CH_FNAME>
-    <CH_LNAME>Salguero</CH_LNAME>
-    <Card_Number>1234123412341234</Card_Number>
-    <Security_Code>
-    </Security_Code>
-  </Account>
-  <Account First_Name="Test" Last_Name="Test">
-    <Address>Test </Address>
-    <City>Fullerton</City>
-    <State>CA</State>
-    <Username>test</Username>
-    <Password>test</Password>
-    <CH_FNAME>Test</CH_FNAME>
-    <CH_LNAME>Test</CH_LNAME>
-    <Card_Number>1234123412341234</Card_Number>
-    <Security_Code>
-    </Security_Code>
-  </Account>
-  <Account First_Name="test" Last_Name="test">
-    <Address>123 test</Address>
-    <City>Fullerton</City>
-    <State>CA</State>
-    <Username>go</Username>
-    <Password>go</Password>
-    <CH_FNAME>test</CH_FNAME>
-    <CH_LNAME>test</CH_LNAME>
-    <Card_Number>1234123412341234</Card_Number>
-    <Security_Code>362</Security_Code>
+    <Username>Gameofthrones</Username>
+    <Password>redwedding</Password>
+    <CH_FNAME>Nick</CH_FNAME>
+    <CH_LNAME>Diller</CH_LNAME>
+    <Card_Number>1238998123791827</Card_Number>
+    <Security_Code>123</Security_Code>
+    <email>kingofcrazy6@msn.com</email>
   </Account>
 </Accounts>
