@@ -2332,6 +2332,12 @@ namespace MovieTheater
 
                 seatsSelected = getSeatsFromString(selectedSeatstxt.Text);
                 seatsTaken();
+
+                List<string> list = new List<string>(
+                               selectedSeatstxt.Text.Split(new string[] { "\n" },
+                               StringSplitOptions.RemoveEmptyEntries));
+                SeatticketLabel.Text = string.Join(", ", list);
+
                 resetSeats();
             }
             
@@ -2542,10 +2548,6 @@ namespace MovieTheater
 
                 //Prep info for ticket
                 ticketTitle.Text = MDTitleLabel.Text;
-                List<string> list = new List<string>(
-                               selectedSeatstxt.Text.Split(new string[] { "\n" },
-                               StringSplitOptions.RemoveEmptyEntries));
-                SeatticketLabel.Text = string.Join("  ", list);
             }
 
         }

@@ -220,6 +220,12 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.backgroundCA = new System.Windows.Forms.PictureBox();
             this.Seating = new System.Windows.Forms.TabPage();
+            this.ticketcount = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.selectedSeatstxt = new System.Windows.Forms.TextBox();
             this.f_14 = new System.Windows.Forms.Button();
@@ -534,12 +540,6 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.ticketcount = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -673,7 +673,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(58, 34);
+            this.tabControl1.Location = new System.Drawing.Point(50, 34);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -3063,6 +3063,75 @@
             this.Seating.Size = new System.Drawing.Size(962, 773);
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
+            // 
+            // ticketcount
+            // 
+            this.ticketcount.AutoSize = true;
+            this.ticketcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketcount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ticketcount.Location = new System.Drawing.Point(120, 194);
+            this.ticketcount.Name = "ticketcount";
+            this.ticketcount.Size = new System.Drawing.Size(0, 20);
+            this.ticketcount.TabIndex = 88;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(36, 189);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(63, 20);
+            this.label18.TabIndex = 87;
+            this.label18.Text = "Tickets:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(799, 222);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(155, 20);
+            this.label17.TabIndex = 86;
+            this.label17.Text = "=       Available Seats";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(799, 162);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(126, 20);
+            this.label16.TabIndex = 85;
+            this.label16.Text = "=       Your Seats";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Maroon;
+            this.button6.Enabled = false;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(757, 217);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(35, 33);
+            this.button6.TabIndex = 84;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.Enabled = false;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(757, 157);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 33);
+            this.button3.TabIndex = 83;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -6824,75 +6893,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Enabled = false;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(757, 157);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 33);
-            this.button3.TabIndex = 83;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Maroon;
-            this.button6.Enabled = false;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(757, 217);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(35, 33);
-            this.button6.TabIndex = 84;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Black;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(799, 162);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(126, 20);
-            this.label16.TabIndex = 85;
-            this.label16.Text = "=       Your Seats";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Black;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(799, 222);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(155, 20);
-            this.label17.TabIndex = 86;
-            this.label17.Text = "=       Available Seats";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(36, 189);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(63, 20);
-            this.label18.TabIndex = 87;
-            this.label18.Text = "Tickets:";
-            // 
-            // ticketcount
-            // 
-            this.ticketcount.AutoSize = true;
-            this.ticketcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketcount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ticketcount.Location = new System.Drawing.Point(120, 194);
-            this.ticketcount.Name = "ticketcount";
-            this.ticketcount.Size = new System.Drawing.Size(0, 20);
-            this.ticketcount.TabIndex = 88;
             // 
             // homepage
             // 
