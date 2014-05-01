@@ -295,73 +295,25 @@
     <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
-    <Title>213</Title>
-    <Length>sad</Length>
-    <Synopsis>ad</Synopsis>
+    <Title>Heaven Is For Real</Title>
+    <Length>100 min</Length>
+    <Synopsis>A small-town father must find the courage and conviction to share his son's extraordinary, life-changing experience with the world.</Synopsis>
     <Description>
     </Description>
-    <Genre>
-    </Genre>
-    <Rating>
-    </Rating>
-    <Actor>
-    </Actor>
-    <Director>
-    </Director>
-    <ReleaseDate>Wednesday, April 30, 2014</ReleaseDate>
-    <PosterPath>openFileDialog1</PosterPath>
-    <Showtime1> 9:30AM</Showtime1>
-    <Showtime2> 8:00PM</Showtime2>
-    <Showtime3>  :</Showtime3>
-    <Showtime4>  :</Showtime4>
-    <Showtime5>  :</Showtime5>
-    <Showtime6>  :</Showtime6>
-    <Showtime7>  :</Showtime7>
-    <Showtime8>  :</Showtime8>
-    <Showtime9>  :</Showtime9>
-  </Movie>
-  <Movie>
-    <Title>The Other Woman</Title>
-    <Length>109 min</Length>
-    <Synopsis>After discovering her boyfriend is married, Carly soon meets the wife he's been cheating on. And when yet another affair is discovered, all three women team up to plot mutual revenge on the three-timing SOB.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Comedy</Genre>
-    <Rating>PG-13</Rating>
-    <Actor>Cameron Diaz, Leslie Mann, Don Johnson, Kate Upton, Taylor Kinney, Nicki Minaj, Kenneth Maharaj, Victor Cruz, Nikolaj Coster, David Thornton, Madison McKinley, Alyshia Ochse</Actor>
-    <Director>Nick Cassavetes</Director>
-    <ReleaseDate>04/25/2014</ReleaseDate>
-    <PosterPath>C:\Users\Nick\Documents\GitHub\MovieProject-current\MovieTheater\Posters\theotherwoman.jpg</PosterPath>
-    <Showtime1>10:0System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
-    <Showtime2>11:10System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
-    <Showtime3> 1:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
-    <Showtime4> 2:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
-    <Showtime5> 3:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
-    <Showtime6> 3:45System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
-    <Showtime7> 5:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
-    <Showtime8> 7:40System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
-    <Showtime9> 8:10System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Walk Of Shame</Title>
-    <Length>95 min</Length>
-    <Synopsis>A reporter's dream of becoming a news anchor is compromised after a one-night stand leaves her stranded in downtown L.A. without a phone, car, ID or money - and only 8 hours to make it to the most important job interview of her life.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Comedy</Genre>
-    <Rating>R</Rating>
-    <Actor>Elizabeth Banks, James Marsden, Gillian Jacobs, Sarah Wright, Ethan Suplee, Bill Burr, Ken Davitian, Lawrence Gilliard Jr., Alphonso McAuley, Da'Vone McDonld, Eric Etebari, Oliver Hudson</Actor>
-    <Director>Steven Brill</Director>
-    <ReleaseDate>05/02/2014</ReleaseDate>
-    <PosterPath>openFileDialog1</PosterPath>
-    <Showtime1>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
-    <Showtime2>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
-    <Showtime3>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
-    <Showtime4>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
-    <Showtime5>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
-    <Showtime6>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
-    <Showtime7>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
-    <Showtime8>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
+    <Genre>Drama</Genre>
+    <Rating>PG</Rating>
+    <Actor>Greg Kinnear, Kelly Reilly, Thomas Haden Church, Connor Corum, Lanes Styles, Margo Martindale, Jacob Varges</Actor>
+    <Director>Randel Wallace</Director>
+    <ReleaseDate>04/16/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Documents\GitHub\MovieProject-current\MovieTheater\Posters\heavenisreal113f.jpg</PosterPath>
+    <Showtime1> 1:45System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
+    <Showtime2> 2:20System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
+    <Showtime3> 4:30System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
+    <Showtime4> 5:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
+    <Showtime5> 7:15System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
+    <Showtime6> 7:45System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
+    <Showtime7> 9:50System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
+    <Showtime8>10:20System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
     <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
   </Movie>
 </Movies>
