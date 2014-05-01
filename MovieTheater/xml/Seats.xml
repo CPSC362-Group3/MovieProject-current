@@ -71,6 +71,30 @@
     <Title>Rio 2</Title>
     <Showtime> 4:40PM</Showtime>
     <Date>05/01/2014</Date>
-    <Reserved>c7,c8</Reserved>
+    <Reserved>c7,c8f_10</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>A Haunted House 2</Title>
+    <Showtime> 9:40PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>f8</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Divergent</Title>
+    <Showtime> 6:20PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>d7</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Divergent</Title>
+    <Showtime> 9:20PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>c3</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Draft Day</Title>
+    <Showtime>10:10PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>c_11</Reserved>
   </Seats_taken>
 </Seats>

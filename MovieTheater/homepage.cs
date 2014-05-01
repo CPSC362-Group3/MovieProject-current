@@ -2445,6 +2445,10 @@ namespace MovieTheater
                 MessageBox.Show("Please enter show time.");
                 tixCounter.Clear();
             }
+            else if (HasMovieTimePassed(displayShowtimelbl.Text))
+            {
+                MessageBox.Show("Time has passed. Please pick another time.");
+            }
             else
                 BodyTabControl.SelectedTab = Seating;
 
@@ -2494,8 +2498,6 @@ namespace MovieTheater
             lengthSeattxt.Text = MDLengthLabel.Text.ToString();
             ShowtimeSeattxt.Text = displayShowtimelbl.Text.ToString();
 
-            HasMovieTimePassed(displayShowtimelbl.Text);
-
         }
 
 
@@ -2506,9 +2508,7 @@ namespace MovieTheater
             bool flag = false;
             var currDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
             int sentinel;
-            //var currTime;
-            Console.Out.Write("Selected DateTimeObj: " + selectedDate.ToString() + "\n");
-            Console.Out.Write("Current  DateTimeObj: " + currDate.ToString() + "\n");
+            var currTime = DateTime.Now.TimeOfDay;
 
             if (selectedDate != null)
             {
@@ -2519,23 +2519,20 @@ namespace MovieTheater
                 }
                 else if (sentinel == 0)
                 {
-                    //CHECK TIME
-                    //string time = movieTime.ToLower();
-
-                    //string currMeridian = currTime.Substring(currTime.Length - 2);
-                    //string movMeridian = time.Substring(time.Length - 2);
-                    //if (movMeridian == "am" && currMeridian == "pm")
-                    //    flag = true;
+                    int result = TimeSpan.Compare(currTime, ConvertToMilitaryTime(movieTime));
+                    if (result >= 0)
+                    {
+                        //CURRTIME AFTER CURRENT TIME
+                        flag = true;
+                    }
+                    else
+                        flag = false;
+                    
                 }
                 else return flag;
 
             }
-
-           
-            ////after checking dates
-
             return flag;
-
         }
 
         //Note: This assumes a format of hh:mmtt which all showtimes follow
@@ -2545,9 +2542,12 @@ namespace MovieTheater
             int hours = Convert.ToInt32(time.Substring(0, colonIndex));
             int minutes = Convert.ToInt32(time.Substring(colonIndex + 1, 2));
             string meridian = time.Substring(time.Length - 2).ToLower();
-            if (meridian == "pm")
+            if (meridian == "pm" && hours != 12)
                 hours += 12;
-            return new TimeSpan(hours, minutes, 0);
+            if (meridian == "am" && hours == 12)
+                hours = 0;
+            var result = new TimeSpan(hours, minutes, 0);
+            return result;  
         }
 
 

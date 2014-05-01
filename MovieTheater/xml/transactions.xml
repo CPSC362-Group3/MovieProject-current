@@ -40,4 +40,44 @@
     <Total>$20.00</Total>
     <Tickets />
   </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime> 9:40PM</Showtime>
+    <Total>$10.00</Total>
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime> 6:20PM</Showtime>
+    <Total>$10.00</Total>
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime> 9:20PM</Showtime>
+    <Total>$10.00</Total>
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime>10:10PM</Showtime>
+    <Total>$10.00</Total>
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime> 4:40PM</Showtime>
+    <Total>$10.00</Total>
+    <Tickets />
+  </Purchase_History>
 </Purchases>
