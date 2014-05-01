@@ -27,6 +27,7 @@ namespace MovieTheater
         bool editInfo = false;
         bool seatingChart = false;
         bool needslogin = false;
+        bool editMovie = false;
 
         //Int counters
         int browsePageNum = 1;
@@ -76,6 +77,8 @@ namespace MovieTheater
         // setBackground parents
         public void setBackgrounds()
         {
+            emailLabelAccount.Parent = backgroundCA;
+
             // Home Page
             NRTitleLabel1.Parent = BackgroundHome;
             NRTitleLabel2.Parent = BackgroundHome;
@@ -331,6 +334,7 @@ namespace MovieTheater
         {
             updateHomePage();
             resetSeats();
+            editInfo = false;
             BodyTabControl.SelectedTab = HomeTab;
         }
 
@@ -349,6 +353,7 @@ namespace MovieTheater
         /* Login button click */
         private void LoginBtn_Click(object sender, EventArgs e)
         {
+            editInfo = false;
             if (adminLogged)
             {
                 BodyTabControl.SelectedTab = AdminCtrl;
@@ -396,6 +401,7 @@ namespace MovieTheater
         /* browse button click */
         private void browseBtn_Click(object sender, EventArgs e)
         {
+            editInfo = false;
             browsePageNum = 1;
             RefreshBrowse(browsePageNum);
             BodyTabControl.SelectedTab = BrowseTab;
@@ -417,6 +423,7 @@ namespace MovieTheater
         /* Contact Us button click */
         private void contactUsBtn_Click(object sender, EventArgs e)
         {
+            editInfo = false;
             BodyTabControl.SelectedTab = ContactUsTab;
             resetSeats();
         }
@@ -1234,6 +1241,52 @@ namespace MovieTheater
                 }
             }
 
+        }
+
+        public void loadMovie(string title)
+        {
+            if (System.IO.File.Exists(MoviesPath))
+            {
+                MoviesDocument.Load(MoviesPath);
+            }
+            else
+            {
+                // if there is no file, then all elements are invisible.
+                // no reason to continue from here.
+                return;
+            }
+            XmlNodeList TitleElemList = MoviesDocument.GetElementsByTagName("Title");
+            XmlNodeList LengthElemList = MoviesDocument.GetElementsByTagName("Length");
+            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
+            XmlNodeList GenreElemList = MoviesDocument.GetElementsByTagName("Genre");
+            XmlNodeList ReleaseElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            XmlNodeList ActorsElemList = MoviesDocument.GetElementsByTagName("Actor");
+            XmlNodeList DirectorElemList = MoviesDocument.GetElementsByTagName("Director");
+            XmlNodeList SynopsisElemList = MoviesDocument.GetElementsByTagName("Synopsis");
+            XmlNodeList PosterPath = MoviesDocument.GetElementsByTagName("PosterPath");
+            XmlNodeList Showtime1List = MoviesDocument.GetElementsByTagName("Showtime1");
+            XmlNodeList Showtime2List = MoviesDocument.GetElementsByTagName("Showtime2");
+            XmlNodeList Showtime3List = MoviesDocument.GetElementsByTagName("Showtime3");
+            XmlNodeList Showtime4List = MoviesDocument.GetElementsByTagName("Showtime4");
+            XmlNodeList Showtime5List = MoviesDocument.GetElementsByTagName("Showtime5");
+            XmlNodeList Showtime6List = MoviesDocument.GetElementsByTagName("Showtime6");
+            XmlNodeList Showtime7List = MoviesDocument.GetElementsByTagName("Showtime7");
+            XmlNodeList Showtime8List = MoviesDocument.GetElementsByTagName("Showtime8");
+            XmlNodeList Showtime9List = MoviesDocument.GetElementsByTagName("Showtime9");
+
+            int index = 0;
+            for (int i = 0; i < TitleElemList.Count; i++)
+            {
+                if (TitleElemList[index].InnerText == title)
+                {
+                    index = i;
+                }
+            }
+            AMITitleBox.Text = TitleElemList[index].InnerText;
+            AMILengthBox.Text = LengthElemList[index].InnerText;
+            AMIRatingBox.Text = RatingElemList[index].InnerText;
+            AMIGenreBox.Text = GenreElemList[index].InnerText;
+            //AMIReleaseDTPicker
         }
 
         private void BPoster1_Click(object sender, EventArgs e)
@@ -2502,6 +2555,20 @@ namespace MovieTheater
                     //Save the document
                     doc.Save(AccountsPath);
                 }
+
+                fNameTxt.Clear();
+                lNameTxt.Clear();
+                AddrTxt.Clear();
+                CityTxt.Clear();
+                StateTxt.Clear();
+                emailBox.Clear();
+                UserTxt.Clear();
+                passTxt.Clear();
+                chfname.Clear();
+                chlname.Clear();
+                ccn.Clear();
+                CCV.Clear();
+
                 MessageBox.Show("Successfully created account!");
 
                 BodyTabControl.SelectedTab = LoginTab; //Return to login screen
@@ -2922,11 +2989,12 @@ namespace MovieTheater
         //Admin Clicks edit a movie
         private void adminEdit_Click(object sender, EventArgs e)
         {
+            editMovie = true;
             editInfo = true;
-            editMovielbl.Visible = true;
             AddBtn.Text = "Update Info";
             resetShowtimes();
-            BodyTabControl.SelectedTab = HomeTab;
+            RefreshBrowse(1);
+            BodyTabControl.SelectedTab = BrowseTab;
         }
         //Admin clicks upload poster on add/edit movie page
         private void uploadPosterbtn_Click_1(object sender, EventArgs e)
@@ -4160,6 +4228,9 @@ namespace MovieTheater
             adminLogged = false;
             LoginBtn.Image = new Bitmap("../../Resources/login_button.jpg");
             updateHomePage();
+            checkLog.Visible = false;
+            homeLogged.Visible = false;
+            checkLog.Text = "";
             BodyTabControl.SelectedTab = HomeTab;
         }
 

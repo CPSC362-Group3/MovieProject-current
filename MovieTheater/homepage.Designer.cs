@@ -724,12 +724,12 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-19, -8);
+            this.tabControl1.Location = new System.Drawing.Point(-12, -12);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1011, 1044);
+            this.tabControl1.Size = new System.Drawing.Size(975, 1044);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -751,7 +751,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1003, 1018);
+            this.tabPage1.Size = new System.Drawing.Size(967, 1018);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -2891,7 +2891,7 @@
             // 
             // MovieDetailsTab
             // 
-            this.MovieDetailsTab.BackColor = System.Drawing.Color.Silver;
+            this.MovieDetailsTab.BackColor = System.Drawing.Color.Transparent;
             this.MovieDetailsTab.Controls.Add(this.orderTicketsbtn);
             this.MovieDetailsTab.Controls.Add(this.MDSSynopsis);
             this.MovieDetailsTab.Controls.Add(this.MDSynopsisLabel);
@@ -2951,7 +2951,7 @@
             // 
             this.MDDirectorLabel.AutoSize = true;
             this.MDDirectorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MDDirectorLabel.Location = new System.Drawing.Point(306, 382);
+            this.MDDirectorLabel.Location = new System.Drawing.Point(306, 335);
             this.MDDirectorLabel.Name = "MDDirectorLabel";
             this.MDDirectorLabel.Size = new System.Drawing.Size(49, 13);
             this.MDDirectorLabel.TabIndex = 84;
@@ -2961,7 +2961,7 @@
             // 
             this.MDSDirector.AutoSize = true;
             this.MDSDirector.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MDSDirector.Location = new System.Drawing.Point(306, 359);
+            this.MDSDirector.Location = new System.Drawing.Point(306, 312);
             this.MDSDirector.Name = "MDSDirector";
             this.MDSDirector.Size = new System.Drawing.Size(71, 13);
             this.MDSDirector.TabIndex = 83;
@@ -2969,11 +2969,10 @@
             // 
             // MDActorsLabel
             // 
-            this.MDActorsLabel.AutoSize = true;
             this.MDActorsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MDActorsLabel.Location = new System.Drawing.Point(306, 335);
+            this.MDActorsLabel.Location = new System.Drawing.Point(306, 382);
             this.MDActorsLabel.Name = "MDActorsLabel";
-            this.MDActorsLabel.Size = new System.Drawing.Size(37, 13);
+            this.MDActorsLabel.Size = new System.Drawing.Size(305, 80);
             this.MDActorsLabel.TabIndex = 82;
             this.MDActorsLabel.Text = "Actors";
             // 
@@ -2981,7 +2980,7 @@
             // 
             this.MDSActors.AutoSize = true;
             this.MDSActors.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MDSActors.Location = new System.Drawing.Point(306, 312);
+            this.MDSActors.Location = new System.Drawing.Point(306, 359);
             this.MDSActors.Name = "MDSActors";
             this.MDSActors.Size = new System.Drawing.Size(57, 13);
             this.MDSActors.TabIndex = 81;
@@ -3102,9 +3101,9 @@
             this.backgroundMD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.backgroundMD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
             this.backgroundMD.Image = ((System.Drawing.Image)(resources.GetObject("backgroundMD.Image")));
-            this.backgroundMD.Location = new System.Drawing.Point(3, 0);
+            this.backgroundMD.Location = new System.Drawing.Point(0, 0);
             this.backgroundMD.Name = "backgroundMD";
-            this.backgroundMD.Size = new System.Drawing.Size(960, 773);
+            this.backgroundMD.Size = new System.Drawing.Size(966, 532);
             this.backgroundMD.TabIndex = 70;
             this.backgroundMD.TabStop = false;
             // 
@@ -3470,7 +3469,7 @@
             this.CACreateAccountBtn.Name = "CACreateAccountBtn";
             this.CACreateAccountBtn.Size = new System.Drawing.Size(151, 38);
             this.CACreateAccountBtn.TabIndex = 36;
-            this.CACreateAccountBtn.Text = "Next";
+            this.CACreateAccountBtn.Text = "Create Account";
             this.CACreateAccountBtn.UseVisualStyleBackColor = true;
             this.CACreateAccountBtn.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -6479,6 +6478,7 @@
             // 
             // AMITitleBox
             // 
+            this.AMITitleBox.HideSelection = false;
             this.AMITitleBox.Location = new System.Drawing.Point(158, 112);
             this.AMITitleBox.Name = "AMITitleBox";
             this.AMITitleBox.Size = new System.Drawing.Size(200, 20);
@@ -7529,7 +7529,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1003, 1018);
+            this.tabPage2.Size = new System.Drawing.Size(967, 1018);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -7544,7 +7544,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1244, 733);
+            this.ClientSize = new System.Drawing.Size(991, 733);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "homepage";
