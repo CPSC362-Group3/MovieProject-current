@@ -222,11 +222,11 @@
             this.Seating = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.selectedSeatstxt = new System.Windows.Forms.TextBox();
-            this.f14 = new System.Windows.Forms.Button();
-            this.f13 = new System.Windows.Forms.Button();
-            this.f12 = new System.Windows.Forms.Button();
-            this.f11 = new System.Windows.Forms.Button();
-            this.f10 = new System.Windows.Forms.Button();
+            this.f_14 = new System.Windows.Forms.Button();
+            this.f_13 = new System.Windows.Forms.Button();
+            this.f_12 = new System.Windows.Forms.Button();
+            this.f_11 = new System.Windows.Forms.Button();
+            this.f_10 = new System.Windows.Forms.Button();
             this.f9 = new System.Windows.Forms.Button();
             this.f8 = new System.Windows.Forms.Button();
             this.f7 = new System.Windows.Forms.Button();
@@ -236,11 +236,11 @@
             this.f3 = new System.Windows.Forms.Button();
             this.f2 = new System.Windows.Forms.Button();
             this.f1 = new System.Windows.Forms.Button();
-            this.e14 = new System.Windows.Forms.Button();
-            this.e13 = new System.Windows.Forms.Button();
-            this.e12 = new System.Windows.Forms.Button();
-            this.e11 = new System.Windows.Forms.Button();
-            this.e10 = new System.Windows.Forms.Button();
+            this.e_14 = new System.Windows.Forms.Button();
+            this.e_13 = new System.Windows.Forms.Button();
+            this.e_12 = new System.Windows.Forms.Button();
+            this.e_11 = new System.Windows.Forms.Button();
+            this.e_10 = new System.Windows.Forms.Button();
             this.e9 = new System.Windows.Forms.Button();
             this.e8 = new System.Windows.Forms.Button();
             this.e7 = new System.Windows.Forms.Button();
@@ -250,11 +250,11 @@
             this.e3 = new System.Windows.Forms.Button();
             this.e2 = new System.Windows.Forms.Button();
             this.e1 = new System.Windows.Forms.Button();
-            this.d14 = new System.Windows.Forms.Button();
-            this.d13 = new System.Windows.Forms.Button();
-            this.d12 = new System.Windows.Forms.Button();
-            this.d11 = new System.Windows.Forms.Button();
-            this.d10 = new System.Windows.Forms.Button();
+            this.d_14 = new System.Windows.Forms.Button();
+            this.d_13 = new System.Windows.Forms.Button();
+            this.d_12 = new System.Windows.Forms.Button();
+            this.d_11 = new System.Windows.Forms.Button();
+            this.d_10 = new System.Windows.Forms.Button();
             this.d9 = new System.Windows.Forms.Button();
             this.d8 = new System.Windows.Forms.Button();
             this.d7 = new System.Windows.Forms.Button();
@@ -264,11 +264,11 @@
             this.d3 = new System.Windows.Forms.Button();
             this.d2 = new System.Windows.Forms.Button();
             this.d1 = new System.Windows.Forms.Button();
-            this.c14 = new System.Windows.Forms.Button();
-            this.c13 = new System.Windows.Forms.Button();
-            this.c12 = new System.Windows.Forms.Button();
-            this.c11 = new System.Windows.Forms.Button();
-            this.c10 = new System.Windows.Forms.Button();
+            this.c_14 = new System.Windows.Forms.Button();
+            this.c_13 = new System.Windows.Forms.Button();
+            this.c_12 = new System.Windows.Forms.Button();
+            this.c_11 = new System.Windows.Forms.Button();
+            this.c_10 = new System.Windows.Forms.Button();
             this.c9 = new System.Windows.Forms.Button();
             this.c8 = new System.Windows.Forms.Button();
             this.c7 = new System.Windows.Forms.Button();
@@ -534,6 +534,12 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.ticketcount = new System.Windows.Forms.Label();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -667,7 +673,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(66, 34);
+            this.tabControl1.Location = new System.Drawing.Point(58, 34);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -895,10 +901,10 @@
             // editMovielbl
             // 
             this.editMovielbl.AutoSize = true;
-            this.editMovielbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editMovielbl.Location = new System.Drawing.Point(445, 16);
+            this.editMovielbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editMovielbl.Location = new System.Drawing.Point(371, 16);
             this.editMovielbl.Name = "editMovielbl";
-            this.editMovielbl.Size = new System.Drawing.Size(162, 20);
+            this.editMovielbl.Size = new System.Drawing.Size(221, 25);
             this.editMovielbl.TabIndex = 118;
             this.editMovielbl.Text = "Select a Movie to Edit";
             this.editMovielbl.Visible = false;
@@ -2962,13 +2968,19 @@
             // Seating
             // 
             this.Seating.BackColor = System.Drawing.Color.Black;
+            this.Seating.Controls.Add(this.ticketcount);
+            this.Seating.Controls.Add(this.label18);
+            this.Seating.Controls.Add(this.label17);
+            this.Seating.Controls.Add(this.label16);
+            this.Seating.Controls.Add(this.button6);
+            this.Seating.Controls.Add(this.button3);
             this.Seating.Controls.Add(this.label1);
             this.Seating.Controls.Add(this.selectedSeatstxt);
-            this.Seating.Controls.Add(this.f14);
-            this.Seating.Controls.Add(this.f13);
-            this.Seating.Controls.Add(this.f12);
-            this.Seating.Controls.Add(this.f11);
-            this.Seating.Controls.Add(this.f10);
+            this.Seating.Controls.Add(this.f_14);
+            this.Seating.Controls.Add(this.f_13);
+            this.Seating.Controls.Add(this.f_12);
+            this.Seating.Controls.Add(this.f_11);
+            this.Seating.Controls.Add(this.f_10);
             this.Seating.Controls.Add(this.f9);
             this.Seating.Controls.Add(this.f8);
             this.Seating.Controls.Add(this.f7);
@@ -2978,11 +2990,11 @@
             this.Seating.Controls.Add(this.f3);
             this.Seating.Controls.Add(this.f2);
             this.Seating.Controls.Add(this.f1);
-            this.Seating.Controls.Add(this.e14);
-            this.Seating.Controls.Add(this.e13);
-            this.Seating.Controls.Add(this.e12);
-            this.Seating.Controls.Add(this.e11);
-            this.Seating.Controls.Add(this.e10);
+            this.Seating.Controls.Add(this.e_14);
+            this.Seating.Controls.Add(this.e_13);
+            this.Seating.Controls.Add(this.e_12);
+            this.Seating.Controls.Add(this.e_11);
+            this.Seating.Controls.Add(this.e_10);
             this.Seating.Controls.Add(this.e9);
             this.Seating.Controls.Add(this.e8);
             this.Seating.Controls.Add(this.e7);
@@ -2992,11 +3004,11 @@
             this.Seating.Controls.Add(this.e3);
             this.Seating.Controls.Add(this.e2);
             this.Seating.Controls.Add(this.e1);
-            this.Seating.Controls.Add(this.d14);
-            this.Seating.Controls.Add(this.d13);
-            this.Seating.Controls.Add(this.d12);
-            this.Seating.Controls.Add(this.d11);
-            this.Seating.Controls.Add(this.d10);
+            this.Seating.Controls.Add(this.d_14);
+            this.Seating.Controls.Add(this.d_13);
+            this.Seating.Controls.Add(this.d_12);
+            this.Seating.Controls.Add(this.d_11);
+            this.Seating.Controls.Add(this.d_10);
             this.Seating.Controls.Add(this.d9);
             this.Seating.Controls.Add(this.d8);
             this.Seating.Controls.Add(this.d7);
@@ -3006,11 +3018,11 @@
             this.Seating.Controls.Add(this.d3);
             this.Seating.Controls.Add(this.d2);
             this.Seating.Controls.Add(this.d1);
-            this.Seating.Controls.Add(this.c14);
-            this.Seating.Controls.Add(this.c13);
-            this.Seating.Controls.Add(this.c12);
-            this.Seating.Controls.Add(this.c11);
-            this.Seating.Controls.Add(this.c10);
+            this.Seating.Controls.Add(this.c_14);
+            this.Seating.Controls.Add(this.c_13);
+            this.Seating.Controls.Add(this.c_12);
+            this.Seating.Controls.Add(this.c_11);
+            this.Seating.Controls.Add(this.c_10);
             this.Seating.Controls.Add(this.c9);
             this.Seating.Controls.Add(this.c8);
             this.Seating.Controls.Add(this.c7);
@@ -3057,7 +3069,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(32, 184);
+            this.label1.Location = new System.Drawing.Point(28, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 20);
             this.label1.TabIndex = 82;
@@ -3065,7 +3077,7 @@
             // 
             // selectedSeatstxt
             // 
-            this.selectedSeatstxt.Location = new System.Drawing.Point(27, 217);
+            this.selectedSeatstxt.Location = new System.Drawing.Point(26, 284);
             this.selectedSeatstxt.Multiline = true;
             this.selectedSeatstxt.Name = "selectedSeatstxt";
             this.selectedSeatstxt.ReadOnly = true;
@@ -3073,80 +3085,80 @@
             this.selectedSeatstxt.TabIndex = 81;
             this.selectedSeatstxt.Text = "\r\n";
             // 
-            // f14
+            // f_14
             // 
-            this.f14.BackColor = System.Drawing.Color.Maroon;
-            this.f14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.f14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.f14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.f14.ForeColor = System.Drawing.Color.White;
-            this.f14.Location = new System.Drawing.Point(762, 573);
-            this.f14.Name = "f14";
-            this.f14.Size = new System.Drawing.Size(38, 35);
-            this.f14.TabIndex = 80;
-            this.f14.Text = "F14";
-            this.f14.UseVisualStyleBackColor = false;
-            this.f14.Click += new System.EventHandler(this.f14_Click);
+            this.f_14.BackColor = System.Drawing.Color.Maroon;
+            this.f_14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f_14.ForeColor = System.Drawing.Color.White;
+            this.f_14.Location = new System.Drawing.Point(762, 573);
+            this.f_14.Name = "f_14";
+            this.f_14.Size = new System.Drawing.Size(38, 35);
+            this.f_14.TabIndex = 80;
+            this.f_14.Text = "F14";
+            this.f_14.UseVisualStyleBackColor = false;
+            this.f_14.Click += new System.EventHandler(this.f14_Click);
             // 
-            // f13
+            // f_13
             // 
-            this.f13.BackColor = System.Drawing.Color.Maroon;
-            this.f13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.f13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.f13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.f13.ForeColor = System.Drawing.Color.White;
-            this.f13.Location = new System.Drawing.Point(718, 573);
-            this.f13.Name = "f13";
-            this.f13.Size = new System.Drawing.Size(38, 35);
-            this.f13.TabIndex = 79;
-            this.f13.Text = "F13";
-            this.f13.UseVisualStyleBackColor = false;
-            this.f13.Click += new System.EventHandler(this.f13_Click);
+            this.f_13.BackColor = System.Drawing.Color.Maroon;
+            this.f_13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f_13.ForeColor = System.Drawing.Color.White;
+            this.f_13.Location = new System.Drawing.Point(718, 573);
+            this.f_13.Name = "f_13";
+            this.f_13.Size = new System.Drawing.Size(38, 35);
+            this.f_13.TabIndex = 79;
+            this.f_13.Text = "F13";
+            this.f_13.UseVisualStyleBackColor = false;
+            this.f_13.Click += new System.EventHandler(this.f13_Click);
             // 
-            // f12
+            // f_12
             // 
-            this.f12.BackColor = System.Drawing.Color.Maroon;
-            this.f12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.f12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.f12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.f12.ForeColor = System.Drawing.Color.White;
-            this.f12.Location = new System.Drawing.Point(637, 573);
-            this.f12.Name = "f12";
-            this.f12.Size = new System.Drawing.Size(38, 35);
-            this.f12.TabIndex = 78;
-            this.f12.Text = "F12";
-            this.f12.UseVisualStyleBackColor = false;
-            this.f12.Click += new System.EventHandler(this.f12_Click);
+            this.f_12.BackColor = System.Drawing.Color.Maroon;
+            this.f_12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f_12.ForeColor = System.Drawing.Color.White;
+            this.f_12.Location = new System.Drawing.Point(637, 573);
+            this.f_12.Name = "f_12";
+            this.f_12.Size = new System.Drawing.Size(38, 35);
+            this.f_12.TabIndex = 78;
+            this.f_12.Text = "F12";
+            this.f_12.UseVisualStyleBackColor = false;
+            this.f_12.Click += new System.EventHandler(this.f12_Click);
             // 
-            // f11
+            // f_11
             // 
-            this.f11.BackColor = System.Drawing.Color.Maroon;
-            this.f11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.f11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.f11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.f11.ForeColor = System.Drawing.Color.White;
-            this.f11.Location = new System.Drawing.Point(593, 573);
-            this.f11.Name = "f11";
-            this.f11.Size = new System.Drawing.Size(38, 35);
-            this.f11.TabIndex = 77;
-            this.f11.Text = "F11";
-            this.f11.UseVisualStyleBackColor = false;
-            this.f11.Click += new System.EventHandler(this.f11_Click);
+            this.f_11.BackColor = System.Drawing.Color.Maroon;
+            this.f_11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f_11.ForeColor = System.Drawing.Color.White;
+            this.f_11.Location = new System.Drawing.Point(593, 573);
+            this.f_11.Name = "f_11";
+            this.f_11.Size = new System.Drawing.Size(38, 35);
+            this.f_11.TabIndex = 77;
+            this.f_11.Text = "F11";
+            this.f_11.UseVisualStyleBackColor = false;
+            this.f_11.Click += new System.EventHandler(this.f11_Click);
             // 
-            // f10
+            // f_10
             // 
-            this.f10.BackColor = System.Drawing.Color.Maroon;
-            this.f10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.f10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.f10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.f10.ForeColor = System.Drawing.Color.White;
-            this.f10.Location = new System.Drawing.Point(549, 573);
-            this.f10.Name = "f10";
-            this.f10.Size = new System.Drawing.Size(38, 35);
-            this.f10.TabIndex = 76;
-            this.f10.Text = "F10";
-            this.f10.UseVisualStyleBackColor = false;
-            this.f10.Click += new System.EventHandler(this.f10_Click);
+            this.f_10.BackColor = System.Drawing.Color.Maroon;
+            this.f_10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.f_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.f_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.f_10.ForeColor = System.Drawing.Color.White;
+            this.f_10.Location = new System.Drawing.Point(549, 573);
+            this.f_10.Name = "f_10";
+            this.f_10.Size = new System.Drawing.Size(38, 35);
+            this.f_10.TabIndex = 76;
+            this.f_10.Text = "F10";
+            this.f_10.UseVisualStyleBackColor = false;
+            this.f_10.Click += new System.EventHandler(this.f10_Click);
             // 
             // f9
             // 
@@ -3281,80 +3293,80 @@
             this.f1.UseVisualStyleBackColor = false;
             this.f1.Click += new System.EventHandler(this.f1_Click);
             // 
-            // e14
+            // e_14
             // 
-            this.e14.BackColor = System.Drawing.Color.Maroon;
-            this.e14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.e14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.e14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.e14.ForeColor = System.Drawing.Color.White;
-            this.e14.Location = new System.Drawing.Point(762, 518);
-            this.e14.Name = "e14";
-            this.e14.Size = new System.Drawing.Size(38, 35);
-            this.e14.TabIndex = 66;
-            this.e14.Text = "E14";
-            this.e14.UseVisualStyleBackColor = false;
-            this.e14.Click += new System.EventHandler(this.e14_Click);
+            this.e_14.BackColor = System.Drawing.Color.Maroon;
+            this.e_14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e_14.ForeColor = System.Drawing.Color.White;
+            this.e_14.Location = new System.Drawing.Point(762, 518);
+            this.e_14.Name = "e_14";
+            this.e_14.Size = new System.Drawing.Size(38, 35);
+            this.e_14.TabIndex = 66;
+            this.e_14.Text = "E14";
+            this.e_14.UseVisualStyleBackColor = false;
+            this.e_14.Click += new System.EventHandler(this.e14_Click);
             // 
-            // e13
+            // e_13
             // 
-            this.e13.BackColor = System.Drawing.Color.Maroon;
-            this.e13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.e13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.e13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.e13.ForeColor = System.Drawing.Color.White;
-            this.e13.Location = new System.Drawing.Point(718, 518);
-            this.e13.Name = "e13";
-            this.e13.Size = new System.Drawing.Size(38, 35);
-            this.e13.TabIndex = 65;
-            this.e13.Text = "E13";
-            this.e13.UseVisualStyleBackColor = false;
-            this.e13.Click += new System.EventHandler(this.e13_Click);
+            this.e_13.BackColor = System.Drawing.Color.Maroon;
+            this.e_13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e_13.ForeColor = System.Drawing.Color.White;
+            this.e_13.Location = new System.Drawing.Point(718, 518);
+            this.e_13.Name = "e_13";
+            this.e_13.Size = new System.Drawing.Size(38, 35);
+            this.e_13.TabIndex = 65;
+            this.e_13.Text = "E13";
+            this.e_13.UseVisualStyleBackColor = false;
+            this.e_13.Click += new System.EventHandler(this.e13_Click);
             // 
-            // e12
+            // e_12
             // 
-            this.e12.BackColor = System.Drawing.Color.Maroon;
-            this.e12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.e12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.e12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.e12.ForeColor = System.Drawing.Color.White;
-            this.e12.Location = new System.Drawing.Point(637, 518);
-            this.e12.Name = "e12";
-            this.e12.Size = new System.Drawing.Size(38, 35);
-            this.e12.TabIndex = 64;
-            this.e12.Text = "E12";
-            this.e12.UseVisualStyleBackColor = false;
-            this.e12.Click += new System.EventHandler(this.e12_Click);
+            this.e_12.BackColor = System.Drawing.Color.Maroon;
+            this.e_12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e_12.ForeColor = System.Drawing.Color.White;
+            this.e_12.Location = new System.Drawing.Point(637, 518);
+            this.e_12.Name = "e_12";
+            this.e_12.Size = new System.Drawing.Size(38, 35);
+            this.e_12.TabIndex = 64;
+            this.e_12.Text = "E12";
+            this.e_12.UseVisualStyleBackColor = false;
+            this.e_12.Click += new System.EventHandler(this.e12_Click);
             // 
-            // e11
+            // e_11
             // 
-            this.e11.BackColor = System.Drawing.Color.Maroon;
-            this.e11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.e11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.e11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.e11.ForeColor = System.Drawing.Color.White;
-            this.e11.Location = new System.Drawing.Point(593, 518);
-            this.e11.Name = "e11";
-            this.e11.Size = new System.Drawing.Size(38, 35);
-            this.e11.TabIndex = 63;
-            this.e11.Text = "E11";
-            this.e11.UseVisualStyleBackColor = false;
-            this.e11.Click += new System.EventHandler(this.e11_Click);
+            this.e_11.BackColor = System.Drawing.Color.Maroon;
+            this.e_11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e_11.ForeColor = System.Drawing.Color.White;
+            this.e_11.Location = new System.Drawing.Point(593, 518);
+            this.e_11.Name = "e_11";
+            this.e_11.Size = new System.Drawing.Size(38, 35);
+            this.e_11.TabIndex = 63;
+            this.e_11.Text = "E11";
+            this.e_11.UseVisualStyleBackColor = false;
+            this.e_11.Click += new System.EventHandler(this.e11_Click);
             // 
-            // e10
+            // e_10
             // 
-            this.e10.BackColor = System.Drawing.Color.Maroon;
-            this.e10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.e10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.e10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.e10.ForeColor = System.Drawing.Color.White;
-            this.e10.Location = new System.Drawing.Point(549, 518);
-            this.e10.Name = "e10";
-            this.e10.Size = new System.Drawing.Size(38, 35);
-            this.e10.TabIndex = 62;
-            this.e10.Text = "E10";
-            this.e10.UseVisualStyleBackColor = false;
-            this.e10.Click += new System.EventHandler(this.e10_Click);
+            this.e_10.BackColor = System.Drawing.Color.Maroon;
+            this.e_10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.e_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.e_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.e_10.ForeColor = System.Drawing.Color.White;
+            this.e_10.Location = new System.Drawing.Point(549, 518);
+            this.e_10.Name = "e_10";
+            this.e_10.Size = new System.Drawing.Size(38, 35);
+            this.e_10.TabIndex = 62;
+            this.e_10.Text = "E10";
+            this.e_10.UseVisualStyleBackColor = false;
+            this.e_10.Click += new System.EventHandler(this.e10_Click);
             // 
             // e9
             // 
@@ -3489,80 +3501,80 @@
             this.e1.UseVisualStyleBackColor = false;
             this.e1.Click += new System.EventHandler(this.e1_Click);
             // 
-            // d14
+            // d_14
             // 
-            this.d14.BackColor = System.Drawing.Color.Maroon;
-            this.d14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.d14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.d14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.d14.ForeColor = System.Drawing.Color.White;
-            this.d14.Location = new System.Drawing.Point(762, 464);
-            this.d14.Name = "d14";
-            this.d14.Size = new System.Drawing.Size(38, 35);
-            this.d14.TabIndex = 52;
-            this.d14.Text = "D14";
-            this.d14.UseVisualStyleBackColor = false;
-            this.d14.Click += new System.EventHandler(this.d14_Click);
+            this.d_14.BackColor = System.Drawing.Color.Maroon;
+            this.d_14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d_14.ForeColor = System.Drawing.Color.White;
+            this.d_14.Location = new System.Drawing.Point(762, 464);
+            this.d_14.Name = "d_14";
+            this.d_14.Size = new System.Drawing.Size(38, 35);
+            this.d_14.TabIndex = 52;
+            this.d_14.Text = "D14";
+            this.d_14.UseVisualStyleBackColor = false;
+            this.d_14.Click += new System.EventHandler(this.d14_Click);
             // 
-            // d13
+            // d_13
             // 
-            this.d13.BackColor = System.Drawing.Color.Maroon;
-            this.d13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.d13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.d13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.d13.ForeColor = System.Drawing.Color.White;
-            this.d13.Location = new System.Drawing.Point(718, 464);
-            this.d13.Name = "d13";
-            this.d13.Size = new System.Drawing.Size(38, 35);
-            this.d13.TabIndex = 51;
-            this.d13.Text = "D13";
-            this.d13.UseVisualStyleBackColor = false;
-            this.d13.Click += new System.EventHandler(this.d13_Click);
+            this.d_13.BackColor = System.Drawing.Color.Maroon;
+            this.d_13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d_13.ForeColor = System.Drawing.Color.White;
+            this.d_13.Location = new System.Drawing.Point(718, 464);
+            this.d_13.Name = "d_13";
+            this.d_13.Size = new System.Drawing.Size(38, 35);
+            this.d_13.TabIndex = 51;
+            this.d_13.Text = "D13";
+            this.d_13.UseVisualStyleBackColor = false;
+            this.d_13.Click += new System.EventHandler(this.d13_Click);
             // 
-            // d12
+            // d_12
             // 
-            this.d12.BackColor = System.Drawing.Color.Maroon;
-            this.d12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.d12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.d12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.d12.ForeColor = System.Drawing.Color.White;
-            this.d12.Location = new System.Drawing.Point(637, 464);
-            this.d12.Name = "d12";
-            this.d12.Size = new System.Drawing.Size(38, 35);
-            this.d12.TabIndex = 50;
-            this.d12.Text = "D12";
-            this.d12.UseVisualStyleBackColor = false;
-            this.d12.Click += new System.EventHandler(this.d12_Click);
+            this.d_12.BackColor = System.Drawing.Color.Maroon;
+            this.d_12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d_12.ForeColor = System.Drawing.Color.White;
+            this.d_12.Location = new System.Drawing.Point(637, 464);
+            this.d_12.Name = "d_12";
+            this.d_12.Size = new System.Drawing.Size(38, 35);
+            this.d_12.TabIndex = 50;
+            this.d_12.Text = "D12";
+            this.d_12.UseVisualStyleBackColor = false;
+            this.d_12.Click += new System.EventHandler(this.d12_Click);
             // 
-            // d11
+            // d_11
             // 
-            this.d11.BackColor = System.Drawing.Color.Maroon;
-            this.d11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.d11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.d11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.d11.ForeColor = System.Drawing.Color.White;
-            this.d11.Location = new System.Drawing.Point(593, 464);
-            this.d11.Name = "d11";
-            this.d11.Size = new System.Drawing.Size(38, 35);
-            this.d11.TabIndex = 49;
-            this.d11.Text = "D11";
-            this.d11.UseVisualStyleBackColor = false;
-            this.d11.Click += new System.EventHandler(this.d11_Click);
+            this.d_11.BackColor = System.Drawing.Color.Maroon;
+            this.d_11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d_11.ForeColor = System.Drawing.Color.White;
+            this.d_11.Location = new System.Drawing.Point(593, 464);
+            this.d_11.Name = "d_11";
+            this.d_11.Size = new System.Drawing.Size(38, 35);
+            this.d_11.TabIndex = 49;
+            this.d_11.Text = "D11";
+            this.d_11.UseVisualStyleBackColor = false;
+            this.d_11.Click += new System.EventHandler(this.d11_Click);
             // 
-            // d10
+            // d_10
             // 
-            this.d10.BackColor = System.Drawing.Color.Maroon;
-            this.d10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.d10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.d10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.d10.ForeColor = System.Drawing.Color.White;
-            this.d10.Location = new System.Drawing.Point(549, 464);
-            this.d10.Name = "d10";
-            this.d10.Size = new System.Drawing.Size(38, 35);
-            this.d10.TabIndex = 48;
-            this.d10.Text = "D10";
-            this.d10.UseVisualStyleBackColor = false;
-            this.d10.Click += new System.EventHandler(this.d10_Click);
+            this.d_10.BackColor = System.Drawing.Color.Maroon;
+            this.d_10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.d_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.d_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.d_10.ForeColor = System.Drawing.Color.White;
+            this.d_10.Location = new System.Drawing.Point(549, 464);
+            this.d_10.Name = "d_10";
+            this.d_10.Size = new System.Drawing.Size(38, 35);
+            this.d_10.TabIndex = 48;
+            this.d_10.Text = "D10";
+            this.d_10.UseVisualStyleBackColor = false;
+            this.d_10.Click += new System.EventHandler(this.d10_Click);
             // 
             // d9
             // 
@@ -3697,80 +3709,80 @@
             this.d1.UseVisualStyleBackColor = false;
             this.d1.Click += new System.EventHandler(this.d1_Click);
             // 
-            // c14
+            // c_14
             // 
-            this.c14.BackColor = System.Drawing.Color.Maroon;
-            this.c14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.c14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.c14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.c14.ForeColor = System.Drawing.Color.White;
-            this.c14.Location = new System.Drawing.Point(762, 414);
-            this.c14.Name = "c14";
-            this.c14.Size = new System.Drawing.Size(38, 35);
-            this.c14.TabIndex = 38;
-            this.c14.Text = "C14";
-            this.c14.UseVisualStyleBackColor = false;
-            this.c14.Click += new System.EventHandler(this.c14_Click);
+            this.c_14.BackColor = System.Drawing.Color.Maroon;
+            this.c_14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c_14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c_14.ForeColor = System.Drawing.Color.White;
+            this.c_14.Location = new System.Drawing.Point(762, 414);
+            this.c_14.Name = "c_14";
+            this.c_14.Size = new System.Drawing.Size(38, 35);
+            this.c_14.TabIndex = 38;
+            this.c_14.Text = "C14";
+            this.c_14.UseVisualStyleBackColor = false;
+            this.c_14.Click += new System.EventHandler(this.c14_Click);
             // 
-            // c13
+            // c_13
             // 
-            this.c13.BackColor = System.Drawing.Color.Maroon;
-            this.c13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.c13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.c13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.c13.ForeColor = System.Drawing.Color.White;
-            this.c13.Location = new System.Drawing.Point(718, 414);
-            this.c13.Name = "c13";
-            this.c13.Size = new System.Drawing.Size(38, 35);
-            this.c13.TabIndex = 37;
-            this.c13.Text = "C13";
-            this.c13.UseVisualStyleBackColor = false;
-            this.c13.Click += new System.EventHandler(this.c13_Click);
+            this.c_13.BackColor = System.Drawing.Color.Maroon;
+            this.c_13.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c_13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c_13.ForeColor = System.Drawing.Color.White;
+            this.c_13.Location = new System.Drawing.Point(718, 414);
+            this.c_13.Name = "c_13";
+            this.c_13.Size = new System.Drawing.Size(38, 35);
+            this.c_13.TabIndex = 37;
+            this.c_13.Text = "C13";
+            this.c_13.UseVisualStyleBackColor = false;
+            this.c_13.Click += new System.EventHandler(this.c13_Click);
             // 
-            // c12
+            // c_12
             // 
-            this.c12.BackColor = System.Drawing.Color.Maroon;
-            this.c12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.c12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.c12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.c12.ForeColor = System.Drawing.Color.White;
-            this.c12.Location = new System.Drawing.Point(637, 414);
-            this.c12.Name = "c12";
-            this.c12.Size = new System.Drawing.Size(38, 35);
-            this.c12.TabIndex = 36;
-            this.c12.Text = "C12";
-            this.c12.UseVisualStyleBackColor = false;
-            this.c12.Click += new System.EventHandler(this.c12_Click);
+            this.c_12.BackColor = System.Drawing.Color.Maroon;
+            this.c_12.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c_12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c_12.ForeColor = System.Drawing.Color.White;
+            this.c_12.Location = new System.Drawing.Point(637, 414);
+            this.c_12.Name = "c_12";
+            this.c_12.Size = new System.Drawing.Size(38, 35);
+            this.c_12.TabIndex = 36;
+            this.c_12.Text = "C12";
+            this.c_12.UseVisualStyleBackColor = false;
+            this.c_12.Click += new System.EventHandler(this.c12_Click);
             // 
-            // c11
+            // c_11
             // 
-            this.c11.BackColor = System.Drawing.Color.Maroon;
-            this.c11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.c11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.c11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.c11.ForeColor = System.Drawing.Color.White;
-            this.c11.Location = new System.Drawing.Point(593, 414);
-            this.c11.Name = "c11";
-            this.c11.Size = new System.Drawing.Size(38, 35);
-            this.c11.TabIndex = 35;
-            this.c11.Text = "C11";
-            this.c11.UseVisualStyleBackColor = false;
-            this.c11.Click += new System.EventHandler(this.c11_Click);
+            this.c_11.BackColor = System.Drawing.Color.Maroon;
+            this.c_11.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c_11.ForeColor = System.Drawing.Color.White;
+            this.c_11.Location = new System.Drawing.Point(593, 414);
+            this.c_11.Name = "c_11";
+            this.c_11.Size = new System.Drawing.Size(38, 35);
+            this.c_11.TabIndex = 35;
+            this.c_11.Text = "C11";
+            this.c_11.UseVisualStyleBackColor = false;
+            this.c_11.Click += new System.EventHandler(this.c11_Click);
             // 
-            // c10
+            // c_10
             // 
-            this.c10.BackColor = System.Drawing.Color.Maroon;
-            this.c10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.c10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.c10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.c10.ForeColor = System.Drawing.Color.White;
-            this.c10.Location = new System.Drawing.Point(549, 414);
-            this.c10.Name = "c10";
-            this.c10.Size = new System.Drawing.Size(38, 35);
-            this.c10.TabIndex = 34;
-            this.c10.Text = "C10";
-            this.c10.UseVisualStyleBackColor = false;
-            this.c10.Click += new System.EventHandler(this.c10_Click);
+            this.c_10.BackColor = System.Drawing.Color.Maroon;
+            this.c_10.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.c_10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.c_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.c_10.ForeColor = System.Drawing.Color.White;
+            this.c_10.Location = new System.Drawing.Point(549, 414);
+            this.c_10.Name = "c_10";
+            this.c_10.Size = new System.Drawing.Size(38, 35);
+            this.c_10.TabIndex = 34;
+            this.c_10.Text = "C10";
+            this.c_10.UseVisualStyleBackColor = false;
+            this.c_10.Click += new System.EventHandler(this.c10_Click);
             // 
             // c9
             // 
@@ -6813,6 +6825,75 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.Enabled = false;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(757, 157);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(35, 33);
+            this.button3.TabIndex = 83;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Maroon;
+            this.button6.Enabled = false;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(757, 217);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(35, 33);
+            this.button6.TabIndex = 84;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(799, 162);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(126, 20);
+            this.label16.TabIndex = 85;
+            this.label16.Text = "=       Your Seats";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(799, 222);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(155, 20);
+            this.label17.TabIndex = 86;
+            this.label17.Text = "=       Available Seats";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(36, 189);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(63, 20);
+            this.label18.TabIndex = 87;
+            this.label18.Text = "Tickets:";
+            // 
+            // ticketcount
+            // 
+            this.ticketcount.AutoSize = true;
+            this.ticketcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketcount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ticketcount.Location = new System.Drawing.Point(120, 194);
+            this.ticketcount.Name = "ticketcount";
+            this.ticketcount.Size = new System.Drawing.Size(0, 20);
+            this.ticketcount.TabIndex = 88;
+            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7128,11 +7209,11 @@
         private System.Windows.Forms.TabPage Seating;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox selectedSeatstxt;
-        private System.Windows.Forms.Button f14;
-        private System.Windows.Forms.Button f13;
-        private System.Windows.Forms.Button f12;
-        private System.Windows.Forms.Button f11;
-        private System.Windows.Forms.Button f10;
+        private System.Windows.Forms.Button f_14;
+        private System.Windows.Forms.Button f_13;
+        private System.Windows.Forms.Button f_12;
+        private System.Windows.Forms.Button f_11;
+        private System.Windows.Forms.Button f_10;
         private System.Windows.Forms.Button f9;
         private System.Windows.Forms.Button f8;
         private System.Windows.Forms.Button f7;
@@ -7142,11 +7223,11 @@
         private System.Windows.Forms.Button f3;
         private System.Windows.Forms.Button f2;
         private System.Windows.Forms.Button f1;
-        private System.Windows.Forms.Button e14;
-        private System.Windows.Forms.Button e13;
-        private System.Windows.Forms.Button e12;
-        private System.Windows.Forms.Button e11;
-        private System.Windows.Forms.Button e10;
+        private System.Windows.Forms.Button e_14;
+        private System.Windows.Forms.Button e_13;
+        private System.Windows.Forms.Button e_12;
+        private System.Windows.Forms.Button e_11;
+        private System.Windows.Forms.Button e_10;
         private System.Windows.Forms.Button e9;
         private System.Windows.Forms.Button e8;
         private System.Windows.Forms.Button e7;
@@ -7156,11 +7237,11 @@
         private System.Windows.Forms.Button e3;
         private System.Windows.Forms.Button e2;
         private System.Windows.Forms.Button e1;
-        private System.Windows.Forms.Button d14;
-        private System.Windows.Forms.Button d13;
-        private System.Windows.Forms.Button d12;
-        private System.Windows.Forms.Button d11;
-        private System.Windows.Forms.Button d10;
+        private System.Windows.Forms.Button d_14;
+        private System.Windows.Forms.Button d_13;
+        private System.Windows.Forms.Button d_12;
+        private System.Windows.Forms.Button d_11;
+        private System.Windows.Forms.Button d_10;
         private System.Windows.Forms.Button d9;
         private System.Windows.Forms.Button d8;
         private System.Windows.Forms.Button d7;
@@ -7170,11 +7251,11 @@
         private System.Windows.Forms.Button d3;
         private System.Windows.Forms.Button d2;
         private System.Windows.Forms.Button d1;
-        private System.Windows.Forms.Button c14;
-        private System.Windows.Forms.Button c13;
-        private System.Windows.Forms.Button c12;
-        private System.Windows.Forms.Button c11;
-        private System.Windows.Forms.Button c10;
+        private System.Windows.Forms.Button c_14;
+        private System.Windows.Forms.Button c_13;
+        private System.Windows.Forms.Button c_12;
+        private System.Windows.Forms.Button c_11;
+        private System.Windows.Forms.Button c_10;
         private System.Windows.Forms.Button c9;
         private System.Windows.Forms.Button c8;
         private System.Windows.Forms.Button c7;
@@ -7439,6 +7520,12 @@
         private System.Windows.Forms.MaskedTextBox st1txt;
         private System.Windows.Forms.Label checkLog;
         private System.Windows.Forms.Label homeLogged;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label ticketcount;
+        private System.Windows.Forms.Label label18;
 
     }
 }

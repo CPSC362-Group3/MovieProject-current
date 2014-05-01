@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--SeatingInfo-->
+<Seats>
+  <Seats_taken>
+    <Title>A Haunted House 2</Title>
+    <Showtime> 2:00PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,b3,b4,b3,b4,c4,c5</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Captain America: The Winter Soldier</Title>
+    <Showtime>11:00am</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,a1,a2</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>The Other Woman</Title>
+    <Showtime> 2:00PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,c5,c6,c7d5,d6,d7,a4,a5,a6</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Rio 2</Title>
+    <Showtime> 7:30PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,c9,c10e8,e9,e7,e6</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Captain America: The Winter Soldier</Title>
+    <Showtime>12:00PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,c10,c11,c12</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Captain America: The Winter Soldier</Title>
+    <Showtime>08:00PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,c9,c10,e7,e8,e9,e6</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>The Quiet Ones</Title>
+    <Showtime> 7:25PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,c1,c2,c_11,c_12,d1</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Captain America: The Winter Soldier</Title>
+    <Showtime>09:00PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,c6,c7,c8,c9,c_10</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Captain America: The Winter Soldier</Title>
+    <Showtime>01:30PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>,c8,c9,d5,d6,d7</Reserved>
+  </Seats_taken>
+</Seats>

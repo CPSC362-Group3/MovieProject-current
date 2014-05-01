@@ -13,19 +13,15 @@
     <Director>Darren Aronofsky</Director>
     <ReleaseDate>Friday, March 28, 2014</ReleaseDate>
     <PosterPath>../../Posters/noah.jpg</PosterPath>
-    <Showtime1>11:00am</Showtime1>
-    <Showtime2>2:20pm</Showtime2>
-    <Showtime3>4:00pm</Showtime3>
-    <Showtime4>7:00pm</Showtime4>
-    <Showtime5>9:00pm</Showtime5>
-    <Showtime6>
-    </Showtime6>
-    <Showtime7>
-    </Showtime7>
-    <Showtime8>
-    </Showtime8>
-    <Showtime9>
-    </Showtime9>
+    <Showtime1>11:00AM</Showtime1>
+    <Showtime2>02:20PM</Showtime2>
+    <Showtime3>04:00PM</Showtime3>
+    <Showtime4>07:00PM</Showtime4>
+    <Showtime5>09:00PM</Showtime5>
+    <Showtime6>  :PM</Showtime6>
+    <Showtime7>  :PM</Showtime7>
+    <Showtime8>  :PM</Showtime8>
+    <Showtime9>  :PM</Showtime9>
   </Movie>
   <Movie>
     <Title>Transcendence</Title>
@@ -39,15 +35,15 @@
     <Director>Wally Pfister</Director>
     <ReleaseDate>Friday, April 18, 2014</ReleaseDate>
     <PosterPath>../../Posters/trans.jpg</PosterPath>
-    <Showtime1>9:00am</Showtime1>
-    <Showtime2>11:00am</Showtime2>
-    <Showtime3>12:00pm</Showtime3>
-    <Showtime4>1:00pm</Showtime4>
-    <Showtime5>2:20pm</Showtime5>
-    <Showtime6>4:00pm</Showtime6>
-    <Showtime7>5:00pm</Showtime7>
-    <Showtime8>7:00pm</Showtime8>
-    <Showtime9>9:00pm</Showtime9>
+    <Showtime1>09:00AM</Showtime1>
+    <Showtime2>11:00AM</Showtime2>
+    <Showtime3>12:00PM</Showtime3>
+    <Showtime4>01:00PM</Showtime4>
+    <Showtime5>02:20PM</Showtime5>
+    <Showtime6>04:00PM</Showtime6>
+    <Showtime7>05:00PM</Showtime7>
+    <Showtime8>07:00PM</Showtime8>
+    <Showtime9>09:00PM</Showtime9>
   </Movie>
   <Movie>
     <Title>The Protector 2</Title>
@@ -91,15 +87,15 @@
     <Director>Joe Russo, Anthony Russo</Director>
     <ReleaseDate>Friday, April 4, 2014</ReleaseDate>
     <PosterPath>../../Posters/Cap-2-banner.jpg</PosterPath>
-    <Showtime1>9:00am</Showtime1>
-    <Showtime2>11:00am</Showtime2>
-    <Showtime3>12:00pm</Showtime3>
-    <Showtime4>1:30pm</Showtime4>
-    <Showtime5>3:00pm</Showtime5>
-    <Showtime6>4:00pm</Showtime6>
-    <Showtime7>5:00pm</Showtime7>
-    <Showtime8>8:00pm</Showtime8>
-    <Showtime9>9:00pm</Showtime9>
+    <Showtime1>09:00AM</Showtime1>
+    <Showtime2>11:00AM</Showtime2>
+    <Showtime3>12:00PM</Showtime3>
+    <Showtime4>01:30PM</Showtime4>
+    <Showtime5>03:00PM</Showtime5>
+    <Showtime6>04:00PM</Showtime6>
+    <Showtime7>05:00PM</Showtime7>
+    <Showtime8>08:00PM</Showtime8>
+    <Showtime9>09:00PM</Showtime9>
   </Movie>
   <Movie>
     <Title>Neighbors</Title>
