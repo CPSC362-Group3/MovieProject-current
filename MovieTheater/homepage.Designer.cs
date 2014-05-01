@@ -5761,9 +5761,9 @@
             this.SunTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SunTimeLabel.Location = new System.Drawing.Point(168, 320);
             this.SunTimeLabel.Name = "SunTimeLabel";
-            this.SunTimeLabel.Size = new System.Drawing.Size(104, 16);
+            this.SunTimeLabel.Size = new System.Drawing.Size(111, 16);
             this.SunTimeLabel.TabIndex = 86;
-            this.SunTimeLabel.Text = "0:00am - 0:00pm";
+            this.SunTimeLabel.Text = "9:00am - 12:00am";
             // 
             // SatTimeLabel
             // 
@@ -5771,9 +5771,9 @@
             this.SatTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SatTimeLabel.Location = new System.Drawing.Point(168, 300);
             this.SatTimeLabel.Name = "SatTimeLabel";
-            this.SatTimeLabel.Size = new System.Drawing.Size(104, 16);
+            this.SatTimeLabel.Size = new System.Drawing.Size(111, 16);
             this.SatTimeLabel.TabIndex = 85;
-            this.SatTimeLabel.Text = "0:00am - 0:00pm";
+            this.SatTimeLabel.Text = "9:00am - 12:00am";
             // 
             // FriTimeLabel
             // 
@@ -5781,9 +5781,9 @@
             this.FriTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FriTimeLabel.Location = new System.Drawing.Point(168, 280);
             this.FriTimeLabel.Name = "FriTimeLabel";
-            this.FriTimeLabel.Size = new System.Drawing.Size(104, 16);
+            this.FriTimeLabel.Size = new System.Drawing.Size(111, 16);
             this.FriTimeLabel.TabIndex = 84;
-            this.FriTimeLabel.Text = "0:00am - 0:00pm";
+            this.FriTimeLabel.Text = "9:00am - 12:00am";
             // 
             // ThuTimeLabel
             // 
@@ -5791,9 +5791,9 @@
             this.ThuTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThuTimeLabel.Location = new System.Drawing.Point(168, 260);
             this.ThuTimeLabel.Name = "ThuTimeLabel";
-            this.ThuTimeLabel.Size = new System.Drawing.Size(104, 16);
+            this.ThuTimeLabel.Size = new System.Drawing.Size(111, 16);
             this.ThuTimeLabel.TabIndex = 83;
-            this.ThuTimeLabel.Text = "0:00am - 0:00pm";
+            this.ThuTimeLabel.Text = "9:00am - 12:00am";
             // 
             // WedTimeLabel
             // 
@@ -5801,9 +5801,9 @@
             this.WedTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WedTimeLabel.Location = new System.Drawing.Point(168, 240);
             this.WedTimeLabel.Name = "WedTimeLabel";
-            this.WedTimeLabel.Size = new System.Drawing.Size(104, 16);
+            this.WedTimeLabel.Size = new System.Drawing.Size(111, 16);
             this.WedTimeLabel.TabIndex = 82;
-            this.WedTimeLabel.Text = "0:00am - 0:00pm";
+            this.WedTimeLabel.Text = "9:00am - 12:00am";
             // 
             // TueTimeLabel
             // 
@@ -5811,9 +5811,9 @@
             this.TueTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TueTimeLabel.Location = new System.Drawing.Point(168, 220);
             this.TueTimeLabel.Name = "TueTimeLabel";
-            this.TueTimeLabel.Size = new System.Drawing.Size(104, 16);
+            this.TueTimeLabel.Size = new System.Drawing.Size(111, 16);
             this.TueTimeLabel.TabIndex = 81;
-            this.TueTimeLabel.Text = "0:00am - 0:00pm";
+            this.TueTimeLabel.Text = "9:00am - 12:00am";
             // 
             // MonTimeLabel
             // 
@@ -5821,9 +5821,9 @@
             this.MonTimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MonTimeLabel.Location = new System.Drawing.Point(168, 200);
             this.MonTimeLabel.Name = "MonTimeLabel";
-            this.MonTimeLabel.Size = new System.Drawing.Size(104, 16);
+            this.MonTimeLabel.Size = new System.Drawing.Size(111, 16);
             this.MonTimeLabel.TabIndex = 80;
-            this.MonTimeLabel.Text = "0:00am - 0:00pm";
+            this.MonTimeLabel.Text = "9:00am - 12:00am";
             // 
             // SunLabel
             // 
@@ -7544,7 +7544,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1227, 733);
+            this.ClientSize = new System.Drawing.Size(1244, 733);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "homepage";
