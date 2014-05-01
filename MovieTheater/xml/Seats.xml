@@ -55,4 +55,22 @@
     <Date>04/30/2014</Date>
     <Reserved>,c8,c9,d5,d6,d7</Reserved>
   </Seats_taken>
+  <Seats_taken>
+    <Title>Transcendence</Title>
+    <Showtime>05:00PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>c6,c7,c8,c9,c_10,d9,d8,d7,d_10,d6</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>The Other Woman</Title>
+    <Showtime>10:00PM</Showtime>
+    <Date>04/30/2014</Date>
+    <Reserved>b2,b4,c6,d6,e6,e8,d8,c8,c9</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Rio 2</Title>
+    <Showtime> 4:40PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>c7,c8</Reserved>
+  </Seats_taken>
 </Seats>

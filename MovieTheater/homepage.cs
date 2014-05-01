@@ -1343,9 +1343,12 @@ namespace MovieTheater
             if ((string.IsNullOrEmpty(AddrTxt.Text)) || (string.IsNullOrEmpty(CityTxt.Text))
                 || (string.IsNullOrEmpty(StateTxt.Text)) || (string.IsNullOrEmpty(UserTxt.Text))
                 || (string.IsNullOrEmpty(passTxt.Text)) || (string.IsNullOrEmpty(lNameTxt.Text))
-                || (string.IsNullOrEmpty(fNameTxt.Text)))
+                || (string.IsNullOrEmpty(fNameTxt.Text)) || (string.IsNullOrEmpty(chfname.Text))
+                || (string.IsNullOrEmpty(chlname.Text)) || (string.IsNullOrEmpty(ccn.Text))
+                || (string.IsNullOrEmpty(CCV.Text)))
                 MessageBox.Show("Required Fields Missing, please enter data.");
-
+            else if (ccn.TextLength < 16)
+                MessageBox.Show("Invalid credit card number. Must be 16 digits long.");
             else
             {
                 XmlDocument doc = new XmlDocument();
