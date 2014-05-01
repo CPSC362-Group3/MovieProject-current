@@ -131,6 +131,54 @@ namespace MovieTheater
             STitleLabel4.Parent = backgroundS;
             STitleLabel5.Parent = backgroundS;
             STitleLabel6.Parent = backgroundS;
+            SReleaseLabel1.Parent = backgroundS;
+            SReleaseLabel2.Parent = backgroundS;
+            SReleaseLabel3.Parent = backgroundS;
+            SReleaseLabel4.Parent = backgroundS;
+            SReleaseLabel5.Parent = backgroundS;
+            SReleaseLabel6.Parent = backgroundS;
+            SLengthLabel1.Parent = backgroundS;
+            SLengthLabel2.Parent = backgroundS;
+            SLengthLabel3.Parent = backgroundS;
+            SLengthLabel4.Parent = backgroundS;
+            SLengthLabel5.Parent = backgroundS;
+            SLengthLabel6.Parent = backgroundS;
+            SRatingLabel1.Parent = backgroundS;
+            SRatingLabel2.Parent = backgroundS;
+            SRatingLabel3.Parent = backgroundS;
+            SRatingLabel4.Parent = backgroundS;
+            SRatingLabel5.Parent = backgroundS;
+            SRatingLabel6.Parent = backgroundS;
+            SGenreLabel1.Parent = backgroundS;
+            SGenreLabel2.Parent = backgroundS;
+            SGenreLabel3.Parent = backgroundS;
+            SGenreLabel4.Parent = backgroundS;
+            SGenreLabel5.Parent = backgroundS;
+            SGenreLabel6.Parent = backgroundS;
+            SRelease1.Parent = backgroundS;
+            SRelease2.Parent = backgroundS;
+            SRelease3.Parent = backgroundS;
+            SRelease4.Parent = backgroundS;
+            SRelease5.Parent = backgroundS;
+            SRelease6.Parent = backgroundS;
+            SLength1.Parent = backgroundS;
+            SLength2.Parent = backgroundS;
+            SLength3.Parent = backgroundS;
+            SLength4.Parent = backgroundS;
+            SLength5.Parent = backgroundS;
+            SLength6.Parent = backgroundS;
+            SRating1.Parent = backgroundS;
+            SRating2.Parent = backgroundS;
+            SRating3.Parent = backgroundS;
+            SRating4.Parent = backgroundS;
+            SRating5.Parent = backgroundS;
+            SRating6.Parent = backgroundS;
+            SGenre1.Parent = backgroundS;
+            SGenre2.Parent = backgroundS;
+            SGenre3.Parent = backgroundS;
+            SGenre4.Parent = backgroundS;
+            SGenre5.Parent = backgroundS;
+            SGenre6.Parent = backgroundS;
 
             // Contact us page
             CallusLabel.Parent = backgroundCU;
@@ -1382,9 +1430,11 @@ namespace MovieTheater
 
         public void refreshAccountInfo()
         {
+            AISaveBtn.Visible = false;
+            AIEditBtn.Visible = true;
+
             int index = 0;
             XmlDocument accounts = new XmlDocument();
-
             if (System.IO.File.Exists(AccountsPath))
             {
                 accounts.Load(AccountsPath);
@@ -1460,6 +1510,8 @@ namespace MovieTheater
         // edit account info button
         private void AIEditBtn_Click(object sender, EventArgs e)
         {
+            AISaveBtn.Visible = true;
+            AIEditBtn.Visible = false;
             AIFirstNameBox.ReadOnly = false;
             AILastNameBox.ReadOnly = false;
             AIAddressBox.ReadOnly = false;
@@ -1586,6 +1638,54 @@ namespace MovieTheater
             STitleLabel4.Visible = false;
             STitleLabel5.Visible = false;
             STitleLabel6.Visible = false;
+            SReleaseLabel1.Visible = false;
+            SReleaseLabel2.Visible = false;
+            SReleaseLabel3.Visible = false;
+            SReleaseLabel4.Visible = false;
+            SReleaseLabel5.Visible = false;
+            SReleaseLabel6.Visible = false;
+            SLengthLabel1.Visible = false;
+            SLengthLabel2.Visible = false;
+            SLengthLabel3.Visible = false;
+            SLengthLabel4.Visible = false;
+            SLengthLabel5.Visible = false;
+            SLengthLabel6.Visible = false;
+            SRatingLabel1.Visible = false;
+            SRatingLabel2.Visible = false;
+            SRatingLabel3.Visible = false;
+            SRatingLabel4.Visible = false;
+            SRatingLabel5.Visible = false;
+            SRatingLabel6.Visible = false;
+            SGenreLabel1.Visible = false;
+            SGenreLabel2.Visible = false;
+            SGenreLabel3.Visible = false;
+            SGenreLabel4.Visible = false;
+            SGenreLabel5.Visible = false;
+            SGenreLabel6.Visible = false;
+            SRelease1.Visible = false;
+            SRelease2.Visible = false;
+            SRelease3.Visible = false;
+            SRelease4.Visible = false;
+            SRelease5.Visible = false;
+            SRelease6.Visible = false;
+            SLength1.Visible = false;
+            SLength2.Visible = false;
+            SLength3.Visible = false;
+            SLength4.Visible = false;
+            SLength5.Visible = false;
+            SLength6.Visible = false;
+            SRating1.Visible = false;
+            SRating2.Visible = false;
+            SRating3.Visible = false;
+            SRating4.Visible = false;
+            SRating5.Visible = false;
+            SRating6.Visible = false;
+            SGenre1.Visible = false;
+            SGenre2.Visible = false;
+            SGenre3.Visible = false;
+            SGenre4.Visible = false;
+            SGenre5.Visible = false;
+            SGenre6.Visible = false;
 
             // check if a file exists
             if (System.IO.File.Exists(MoviesPath))
@@ -1655,7 +1755,20 @@ namespace MovieTheater
             {
                 searchPoster1.Visible = true;
                 STitleLabel1.Visible = true;
-                STitleLabel1.Text = TitleElemList[index].InnerText + " (" + RatingElemList[index].InnerText + ")";
+                SReleaseLabel1.Visible = true;
+                SRelease1.Visible = true;
+                SLengthLabel1.Visible = true;
+                SLength1.Visible = true;
+                SRatingLabel1.Visible = true;
+                SRating1.Visible = true;
+                SGenreLabel1.Visible = true;
+                SGenre1.Visible = true;
+                STitleLabel1.Text = TitleElemList[index].InnerText;
+                searchPoster1.ImageLocation = PosterPath[index].InnerText;
+                SRelease1.Text = ReleaseElemList[index].InnerText;
+                SLength1.Text = LengthElemList[index].InnerText;
+                SRating1.Text = RatingElemList[index].InnerText;
+                SGenre1.Text = GenreElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -1691,7 +1804,20 @@ namespace MovieTheater
             {
                 searchPoster2.Visible = true;
                 STitleLabel2.Visible = true;
+                SReleaseLabel2.Visible = true;
+                SRelease2.Visible = true;
+                SLengthLabel2.Visible = true;
+                SLength2.Visible = true;
+                SRatingLabel2.Visible = true;
+                SRating2.Visible = true;
+                SGenreLabel2.Visible = true;
+                SGenre2.Visible = true;
                 STitleLabel2.Text = TitleElemList[index].InnerText;
+                searchPoster2.ImageLocation = PosterPath[index].InnerText;
+                SRelease2.Text = ReleaseElemList[index].InnerText;
+                SLength2.Text = LengthElemList[index].InnerText;
+                SRating2.Text = RatingElemList[index].InnerText;
+                SGenre2.Text = GenreElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -1725,9 +1851,22 @@ namespace MovieTheater
             }
             if (addMovie) // 3
             {
-                searchPoster1.Visible = true;
-                STitleLabel1.Visible = true;
-                STitleLabel1.Text = TitleElemList[index].InnerText;
+                searchPoster3.Visible = true;
+                STitleLabel3.Visible = true;
+                SReleaseLabel3.Visible = true;
+                SRelease3.Visible = true;
+                SLengthLabel1.Visible = true;
+                SLength3.Visible = true;
+                SRatingLabel1.Visible = true;
+                SRating3.Visible = true;
+                SGenreLabel1.Visible = true;
+                SGenre3.Visible = true;
+                STitleLabel3.Text = TitleElemList[index].InnerText;
+                searchPoster3.ImageLocation = PosterPath[index].InnerText;
+                SRelease3.Text = ReleaseElemList[index].InnerText;
+                SLength3.Text = LengthElemList[index].InnerText;
+                SRating3.Text = RatingElemList[index].InnerText;
+                SGenre3.Text = GenreElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -1761,9 +1900,22 @@ namespace MovieTheater
             }
             if (addMovie) // 4
             {
-                searchPoster1.Visible = true;
-                STitleLabel1.Visible = true;
-                STitleLabel1.Text = TitleElemList[index].InnerText;
+                searchPoster4.Visible = true;
+                STitleLabel4.Visible = true;
+                SReleaseLabel4.Visible = true;
+                SRelease4.Visible = true;
+                SLengthLabel4.Visible = true;
+                SLength4.Visible = true;
+                SRatingLabel4.Visible = true;
+                SRating4.Visible = true;
+                SGenreLabel4.Visible = true;
+                SGenre4.Visible = true;
+                STitleLabel4.Text = TitleElemList[index].InnerText;
+                searchPoster4.ImageLocation = PosterPath[index].InnerText;
+                SRelease4.Text = ReleaseElemList[index].InnerText;
+                SLength4.Text = LengthElemList[index].InnerText;
+                SRating4.Text = RatingElemList[index].InnerText;
+                SGenre4.Text = GenreElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -1797,9 +1949,22 @@ namespace MovieTheater
             }
             if (addMovie) // 5
             {
-                searchPoster1.Visible = true;
-                STitleLabel1.Visible = true;
-                STitleLabel1.Text = TitleElemList[index].InnerText;
+                searchPoster5.Visible = true;
+                STitleLabel5.Visible = true;
+                SReleaseLabel5.Visible = true;
+                SRelease5.Visible = true;
+                SLengthLabel5.Visible = true;
+                SLength5.Visible = true;
+                SRatingLabel5.Visible = true;
+                SRating5.Visible = true;
+                SGenreLabel5.Visible = true;
+                SGenre5.Visible = true;
+                STitleLabel5.Text = TitleElemList[index].InnerText;
+                searchPoster5.ImageLocation = PosterPath[index].InnerText;
+                SRelease5.Text = ReleaseElemList[index].InnerText;
+                SLength5.Text = LengthElemList[index].InnerText;
+                SRating5.Text = RatingElemList[index].InnerText;
+                SGenre5.Text = GenreElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -1833,9 +1998,22 @@ namespace MovieTheater
             }
             if (addMovie) // 6
             {
-                searchPoster1.Visible = true;
-                STitleLabel1.Visible = true;
-                STitleLabel1.Text = TitleElemList[index].InnerText;
+                searchPoster6.Visible = true;
+                STitleLabel6.Visible = true;
+                SReleaseLabel6.Visible = true;
+                SRelease6.Visible = true;
+                SLengthLabel6.Visible = true;
+                SLength6.Visible = true;
+                SRatingLabel6.Visible = true;
+                SRating6.Visible = true;
+                SGenreLabel6.Visible = true;
+                SGenre6.Visible = true;
+                STitleLabel6.Text = TitleElemList[index].InnerText;
+                searchPoster6.ImageLocation = PosterPath[index].InnerText;
+                SRelease6.Text = ReleaseElemList[index].InnerText;
+                SLength6.Text = LengthElemList[index].InnerText;
+                SRating6.Text = RatingElemList[index].InnerText;
+                SGenre6.Text = GenreElemList[index].InnerText;
             }
             // ----------------------------------------------------------------
             // ----------------------------------------------------------------
@@ -1843,37 +2021,97 @@ namespace MovieTheater
 
         private void searchPoster1_Click(object sender, EventArgs e)
         {
-            updateMovieDetailsPage(GetMovieTitle(STitleLabel1.Text));
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime = Convert.ToDateTime(SRelease1.Text);
+            if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(STitleLabel1.Text);
             BodyTabControl.SelectedTab = MovieDetailsTab;
         }
 
         private void searchPoster2_Click(object sender, EventArgs e)
         {
-            updateMovieDetailsPage(GetMovieTitle(STitleLabel2.Text));
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime = Convert.ToDateTime(SRelease2.Text);
+            if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(STitleLabel2.Text);
             BodyTabControl.SelectedTab = MovieDetailsTab;
         }
 
         private void searchPoster3_Click(object sender, EventArgs e)
         {
-            updateMovieDetailsPage(GetMovieTitle(STitleLabel3.Text));
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime = Convert.ToDateTime(SRelease3.Text);
+            if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(STitleLabel3.Text);
             BodyTabControl.SelectedTab = MovieDetailsTab;
         }
 
         private void searchPoster4_Click(object sender, EventArgs e)
         {
-            updateMovieDetailsPage(GetMovieTitle(STitleLabel4.Text));
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime = Convert.ToDateTime(SRelease4.Text);
+            if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(STitleLabel4.Text);
             BodyTabControl.SelectedTab = MovieDetailsTab;
         }
 
         private void searchPoster5_Click(object sender, EventArgs e)
         {
-            updateMovieDetailsPage(GetMovieTitle(STitleLabel5.Text));
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime = Convert.ToDateTime(SRelease5.Text);
+            if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(STitleLabel5.Text);
             BodyTabControl.SelectedTab = MovieDetailsTab;
         }
 
         private void searchPoster6_Click(object sender, EventArgs e)
         {
-            updateMovieDetailsPage(GetMovieTitle(STitleLabel6.Text));
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime = Convert.ToDateTime(SRelease6.Text);
+            if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(STitleLabel6.Text);
             BodyTabControl.SelectedTab = MovieDetailsTab;
         }
 
