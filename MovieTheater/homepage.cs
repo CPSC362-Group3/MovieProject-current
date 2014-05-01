@@ -2504,15 +2504,15 @@ namespace MovieTheater
         private bool HasMovieTimePassed(string movieTime)
         {
             bool flag = false;
-            var currTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
+            var currDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
             int sentinel;
-
+            //var currTime;
             Console.Out.Write("Selected DateTimeObj: " + selectedDate.ToString() + "\n");
-            Console.Out.Write("Current  DateTimeObj: " + currTime.ToString() + "\n");
+            Console.Out.Write("Current  DateTimeObj: " + currDate.ToString() + "\n");
 
             if (selectedDate != null)
             {
-                sentinel = currTime.CompareTo(selectedDate);
+                sentinel = currDate.CompareTo(selectedDate);
                 if (sentinel > 0)
                 {
                     flag = true;
@@ -2520,25 +2520,35 @@ namespace MovieTheater
                 else if (sentinel == 0)
                 {
                     //CHECK TIME
+                    //string time = movieTime.ToLower();
+
+                    //string currMeridian = currTime.Substring(currTime.Length - 2);
+                    //string movMeridian = time.Substring(time.Length - 2);
+                    //if (movMeridian == "am" && currMeridian == "pm")
+                    //    flag = true;
                 }
                 else return flag;
 
             }
 
-            //string currTime = DateTime.Now.ToString("h:mmtt").ToLower();
-            //string time = movieTime.ToLower();
-
-            //string currMeridian = currTime.Substring(currTime.Length - 2);
-            //string movMeridian = time.Substring(time.Length - 2);
+           
             ////after checking dates
-            //if (movMeridian == "am" && currMeridian == "pm")
-            //    flag = true;
-            //if (movMeridian == "pm" && currMeridian == "am")
 
             return flag;
 
         }
 
+        //Note: This assumes a format of hh:mmtt which all showtimes follow
+        private TimeSpan ConvertToMilitaryTime(string time)
+        {
+            int colonIndex = time.IndexOf(':');
+            int hours = Convert.ToInt32(time.Substring(0, colonIndex));
+            int minutes = Convert.ToInt32(time.Substring(colonIndex + 1, 2));
+            string meridian = time.Substring(time.Length - 2).ToLower();
+            if (meridian == "pm")
+                hours += 12;
+            return new TimeSpan(hours, minutes, 0);
+        }
 
 
 
