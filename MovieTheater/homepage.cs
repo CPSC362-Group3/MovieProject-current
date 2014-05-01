@@ -2866,14 +2866,11 @@ namespace MovieTheater
         private void printTixButton_Click(object sender, EventArgs e)
         {
             //WILL PRINT TICKET ONCE IT IS CLICKED
-            //PrintDocument tmpDoc = new PrintDocument();
-            //tmpDoc.PrintPage += new PrintPageEventHandler(pd_PrintPage);
-            //PrintPreviewDialog tmpPpd = new PrintPreviewDialog();
-            //tmpPpd.Document = tmpDoc;
-            //tmpPpd.ShowDialog();
 
+            //766, 315
             Rectangle bounds = this.Bounds;
-            using (Bitmap bitmap = new Bitmap(groupTicketBox.Width, groupTicketBox.Height))
+            //using (Bitmap bitmap = new Bitmap(groupTicketBox.Width, groupTicketBox.Height))
+            using(Bitmap bitmap = new Bitmap (1000, 350))
             {
                 using (Graphics g = Graphics.FromImage(bitmap))
                 {
@@ -2898,6 +2895,21 @@ namespace MovieTheater
         {
             //EMAILS 
             //=======================================================================================
+            //766, 315
+
+            //SAVES IMAGE CODE
+            Rectangle bounds = this.Bounds;
+            //using (Bitmap bitmap = new Bitmap(groupTicketBox.Width, groupTicketBox.Height))
+            using (Bitmap bitmap = new Bitmap(1000, 350))
+            {
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    g.CopyFromScreen(new Point(groupTicketBox.Left, groupTicketBox.Top), Point.Empty, bounds.Size);
+                }
+                bitmap.Save("../../Posters/test.jpg", ImageFormat.Jpeg);
+            }
+
+            //ACTUAL EMAIL CODE
             try
             {
                 MailMessage mail = new MailMessage();
@@ -2905,11 +2917,15 @@ namespace MovieTheater
                 mail.From = new MailAddress("movies362@gmail.com");
                 mail.To.Add(currentemail);
                 mail.Subject = "Movie Ticket Purchase Confirmation";
-                mail.Body = "Hello, The movie ticket(s) you ordered have been sent and attached to this email! \n You can print them when you please. Just make sure to have them before entering the establishment.\n Regards, Pseudo Cinema";
+                mail.Body = " Hello, The movie ticket(s) you ordered have been sent and attached to this email! \n You can print them when you please. Just make sure to have them before entering the establishment.\n Regards, Pseudo Cinema";
 
-                //System.Net.Mail.Attachment attachment;
-                //attachment = new System.Net.Mail.Attachment("your attachment file");
-                //mail.Attachments.Add(attachment);
+                string attachmentPath = @"../../Posters/test.jpg";
+                Attachment inline = new Attachment(attachmentPath);
+                inline.ContentDisposition.Inline = true;
+                inline.ContentType.MediaType = "image/jpg";
+                inline.ContentType.Name = Path.GetFileName(attachmentPath);
+
+                mail.Attachments.Add(inline);
 
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential("semovies362@gmail.com", "movies362");
@@ -2946,6 +2962,7 @@ namespace MovieTheater
             e.Graphics.DrawString(TicketDateLabel.Text, SystemFonts.DefaultFont, Brushes.Black, 574, 400);          //DATE
             e.Graphics.DrawString(timeticketlabel.Text, SystemFonts.DefaultFont, Brushes.Black, 874, 400);          //TIME
             e.Graphics.DrawString(TicketAdmissionLabel.Text, SystemFonts.DefaultFont, Brushes.Black, 874, 450);    //TYPE
+            e.Graphics.DrawString(randtik.Text, SystemFonts.DefaultFont, Brushes.Black, 500, 245);                  //SEAT TITLE
 
             //ADDS GRAPHIC TO IMAGE
             //RESIZE IT

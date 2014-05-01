@@ -511,6 +511,7 @@
     <Tickets />
   </Purchase_History>
   <Purchase_History>
+<<<<<<< HEAD
     <Username>
     </Username>
     <Date>Thursday, May 1, 2014</Date>
@@ -531,22 +532,37 @@
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
     <Showtime> 4:40PM</Showtime>
+=======
+    <Username>go</Username>
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime>10:10PM</Showtime>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Total>$10.00</Total>
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
+<<<<<<< HEAD
     <Date>Wednesday, April 30, 2014</Date>
     <Showtime> 4:40PM</Showtime>
     <Total>$30.00</Total>
+=======
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime> 6:30PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime>1:00pm</Showtime>
+=======
+    <Showtime> 3:20PM</Showtime>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Total>$20.00</Total>
     <Tickets />
   </Purchase_History>
@@ -554,6 +570,7 @@
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime>1:00pm</Showtime>
     <Total>$30.00</Total>
     <Tickets />
@@ -579,6 +596,9 @@
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
     <Showtime> 2:00PM</Showtime>
+=======
+    <Showtime>7:00pm</Showtime>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Total>$10.00</Total>
     <Tickets />
   </Purchase_History>
@@ -586,96 +606,159 @@
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime> 2:00PM</Showtime>
     <Total>$40.00</Total>
+=======
+    <Showtime> 3:20PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
+<<<<<<< HEAD
     <Date>Wednesday, April 30, 2014</Date>
     <Showtime> 2:00PM</Showtime>
     <Total>$30.00</Total>
+=======
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime>7:00pm</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime> 2:00PM</Showtime>
     <Total>$50.00</Total>
+=======
+    <Showtime>12:10PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
+<<<<<<< HEAD
     <Date>Wednesday, April 30, 2014</Date>
     <Showtime> 2:00PM</Showtime>
     <Total>$20.00</Total>
+=======
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime> 4:30PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime> 2:00PM</Showtime>
     <Total>$20.00</Total>
+=======
+    <Showtime> 4:40PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime> 2:00PM</Showtime>
     <Total>$40.00</Total>
+=======
+    <Showtime>10:00PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime>11:00am</Showtime>
     <Total>$20.00</Total>
+=======
+    <Showtime> 3:20PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
+    <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
+    <Showtime> 2:00PM</Showtime>
+    <Total>$30.00</Total>
+=======
+    <Showtime> 4:40PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+    <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
+    <Showtime> 2:00PM</Showtime>
+    <Total>$30.00</Total>
+=======
+    <Showtime> 7:20PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
+    <Tickets />
+  </Purchase_History>
+  <Purchase_History>
+    <Username>
+    </Username>
+<<<<<<< HEAD
     <Date>Wednesday, April 30, 2014</Date>
     <Showtime> 2:00PM</Showtime>
     <Total>$30.00</Total>
+=======
+    <Date>Thursday, May 1, 2014</Date>
+    <Showtime>10:00PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
-    <Showtime> 2:00PM</Showtime>
-    <Total>$30.00</Total>
-    <Tickets />
-  </Purchase_History>
-  <Purchase_History>
-    <Username>
-    </Username>
-    <Date>Wednesday, April 30, 2014</Date>
-    <Showtime> 2:00PM</Showtime>
-    <Total>$30.00</Total>
-    <Tickets />
-  </Purchase_History>
-  <Purchase_History>
-    <Username>
-    </Username>
-    <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime> 7:30PM</Showtime>
     <Total>$39.00</Total>
+=======
+    <Showtime> 3:20PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime>08:00PM</Showtime>
     <Total>$38.00</Total>
+=======
+    <Showtime> 7:25PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
@@ -683,23 +766,37 @@
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
     <Showtime> 7:25PM</Showtime>
+<<<<<<< HEAD
     <Total>$40.00</Total>
+=======
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime>09:00PM</Showtime>
     <Total>$50.00</Total>
+=======
+    <Showtime> 8:00PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
   <Purchase_History>
     <Username>
     </Username>
     <Date>Wednesday, April 30, 2014</Date>
+<<<<<<< HEAD
     <Showtime>01:30PM</Showtime>
     <Total>$50.00</Total>
+=======
+    <Showtime> 4:25PM</Showtime>
+    <Total>$10.00</Total>
+>>>>>>> 36cb42980b81ed8b0a7cef6f3f569ad5bc67029d
     <Tickets />
   </Purchase_History>
 </Purchases>

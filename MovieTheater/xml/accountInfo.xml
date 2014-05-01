@@ -26,4 +26,16 @@
     <Security_Code>123</Security_Code>
     <email>kingofcrazy6@msn.com</email>
   </Account>
+  <Account First_Name="Leslie" Last_Name="Salguero">
+    <Address>456 State College</Address>
+    <City>Fullerton</City>
+    <State>CA</State>
+    <Username>go</Username>
+    <Password>go</Password>
+    <CH_FNAME>Leslie</CH_FNAME>
+    <CH_LNAME>Salguero</CH_LNAME>
+    <Card_Number>1234123412341234</Card_Number>
+    <Security_Code>362</Security_Code>
+    <email>leslie.salguero93@gmail.com</email>
+  </Account>
 </Accounts>
