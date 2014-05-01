@@ -338,4 +338,26 @@
     <Showtime8>  :</Showtime8>
     <Showtime9>  :</Showtime9>
   </Movie>
+  <Movie>
+    <Title>Maleficent</Title>
+    <Length>98 min</Length>
+    <Synopsis>A vindictive fairy is driven to curse an infant princess only to realize the child may be the only one who can restore peace.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Adventure</Genre>
+    <Rating>PG</Rating>
+    <Actor>&gt;Angelina Jolie, Sharlto Copley, Elle Fanning, Sam Riley, Imelda Staunton, Juno Temple, Lesley Manville, Brenton Thwaites, Miranda Richardson</Actor>
+    <Director>Robert Stromberg</Director>
+    <ReleaseDate>05/30/2014</ReleaseDate>
+    <PosterPath>C:\Users\Miguel\Documents\GitHub\MovieProject-current\MovieTheater\Posters\maleficent.jpg</PosterPath>
+    <Showtime1>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
+    <Showtime2>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
+    <Showtime3>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
+    <Showtime4>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
+    <Showtime5>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
+    <Showtime6>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
+    <Showtime7>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
+    <Showtime8>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
+    <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
+  </Movie>
 </Movies>
