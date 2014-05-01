@@ -58,14 +58,14 @@
     <ReleaseDate>Friday, April 4, 2014</ReleaseDate>
     <PosterPath>../../Posters/Cap-2-banner.jpg</PosterPath>
     <Showtime1>09:00AM</Showtime1>
-    <Showtime2>11:00</Showtime2>
-    <Showtime3>12:00</Showtime3>
-    <Showtime4>01:30</Showtime4>
-    <Showtime5>03:00</Showtime5>
-    <Showtime6>04:00</Showtime6>
-    <Showtime7>05:00</Showtime7>
-    <Showtime8>08:00</Showtime8>
-    <Showtime9>09:00</Showtime9>
+    <Showtime2>11:00AM</Showtime2>
+    <Showtime3>12:00PM</Showtime3>
+    <Showtime4>01:30PM</Showtime4>
+    <Showtime5>03:00PM</Showtime5>
+    <Showtime6>04:00PM</Showtime6>
+    <Showtime7>05:00PM</Showtime7>
+    <Showtime8>08:00PM</Showtime8>
+    <Showtime9>09:00PM</Showtime9>
   </Movie>
   <Movie>
     <Title>Neighbors</Title>

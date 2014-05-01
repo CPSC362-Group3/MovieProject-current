@@ -89,7 +89,7 @@
     <Title>Divergent</Title>
     <Showtime> 9:20PM</Showtime>
     <Date>05/01/2014</Date>
-    <Reserved>c3e6</Reserved>
+    <Reserved>c3e6a1,a2,a3,a4,a5,a6</Reserved>
   </Seats_taken>
   <Seats_taken>
     <Title>Draft Day</Title>
@@ -108,5 +108,41 @@
     <Showtime>02:20PM</Showtime>
     <Date>05/15/2014</Date>
     <Reserved>b2,c_10,b7,c9</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Draft Day</Title>
+    <Showtime> 7:45PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>,a2,a1</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Rio 2</Title>
+    <Showtime> 7:30PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>a7,a8,b8,b7</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Captain America: The Winter Soldier</Title>
+    <Showtime>09:00PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>a7,a8</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Captain America: The Winter Soldier</Title>
+    <Showtime>08:00PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>e5</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Rio 2</Title>
+    <Showtime>10:10PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>,e_13,d_13,c_13,c_14,d_14</Reserved>
+  </Seats_taken>
+  <Seats_taken>
+    <Title>Noah</Title>
+    <Showtime>07:00PM</Showtime>
+    <Date>05/01/2014</Date>
+    <Reserved>,c3,c4,c5,c6</Reserved>
   </Seats_taken>
 </Seats>

@@ -305,6 +305,7 @@ namespace MovieTheater
         /* Search Movie button click. Once clicked changes to search tab and searches the string */
         private void searchBtn_Click(object sender, EventArgs e)
         {
+            editInfo = false;
             search = searchBar.Text.ToLower();
 
             // search is the string is not null and does not only contain whitespace.
@@ -3037,9 +3038,12 @@ namespace MovieTheater
                 select.BackColor = Color.Maroon;
                 selectedSeatstxt.Lines = selectedSeatstxt.Lines.Where(line => !line.Contains(select.Name)).ToArray();
                 seats--;
+                track[i]++;
             }
             else
                 MessageBox.Show("You have already picked your seats.");
+
+            Console.WriteLine("seats: {0}, totalseats: {1}", seats, totalseats);
 
         }
 
@@ -3411,6 +3415,78 @@ namespace MovieTheater
             selectedSeatstxt.Clear();
             totalseats = 0;
             seats = 0;
+            a1.BackColor = Color.Maroon;
+            a2.BackColor = Color.Maroon;
+            a3.BackColor = Color.Maroon;
+            a4.BackColor = Color.Maroon;
+            a5.BackColor = Color.Maroon;
+            a6.BackColor = Color.Maroon;
+            a7.BackColor = Color.Maroon;
+            a8.BackColor = Color.Maroon; 
+            b1.BackColor = Color.Maroon;
+            b2.BackColor = Color.Maroon;
+            b3.BackColor = Color.Maroon;
+            b4.BackColor = Color.Maroon;
+            b5.BackColor = Color.Maroon;
+            b6.BackColor = Color.Maroon;
+            b7.BackColor = Color.Maroon;
+            b8.BackColor = Color.Maroon;
+            c1.BackColor = Color.Maroon;
+            c2.BackColor = Color.Maroon;
+            c3.BackColor = Color.Maroon;
+            c4.BackColor = Color.Maroon;
+            c5.BackColor = Color.Maroon;
+            c6.BackColor = Color.Maroon;
+            c7.BackColor = Color.Maroon;
+            c8.BackColor = Color.Maroon;
+            c9.BackColor = Color.Maroon;
+            c_10.BackColor = Color.Maroon;
+            c_11.BackColor = Color.Maroon;
+            c_12.BackColor = Color.Maroon;
+            c_13.BackColor = Color.Maroon;
+            c_14.BackColor = Color.Maroon;
+            d1.BackColor = Color.Maroon;
+            d2.BackColor = Color.Maroon;
+            d3.BackColor = Color.Maroon;
+            d4.BackColor = Color.Maroon;
+            d5.BackColor = Color.Maroon;
+            d6.BackColor = Color.Maroon;
+            d7.BackColor = Color.Maroon;
+            d8.BackColor = Color.Maroon;
+            d9.BackColor = Color.Maroon;
+            d_10.BackColor = Color.Maroon;
+            d_11.BackColor = Color.Maroon;
+            d_12.BackColor = Color.Maroon;
+            d_13.BackColor = Color.Maroon;
+            d_14.BackColor = Color.Maroon;
+            e1.BackColor = Color.Maroon;
+            e2.BackColor = Color.Maroon;
+            e3.BackColor = Color.Maroon;
+            e4.BackColor = Color.Maroon;
+            e5.BackColor = Color.Maroon;
+            e6.BackColor = Color.Maroon;
+            e7.BackColor = Color.Maroon;
+            e8.BackColor = Color.Maroon;
+            e9.BackColor = Color.Maroon;
+            e_10.BackColor = Color.Maroon;
+            e_11.BackColor = Color.Maroon;
+            e_12.BackColor = Color.Maroon;
+            e_13.BackColor = Color.Maroon;
+            e_14.BackColor = Color.Maroon;
+            f1.BackColor = Color.Maroon;
+            f2.BackColor = Color.Maroon;
+            f3.BackColor = Color.Maroon;
+            f4.BackColor = Color.Maroon;
+            f5.BackColor = Color.Maroon;
+            f6.BackColor = Color.Maroon;
+            f7.BackColor = Color.Maroon;
+            f8.BackColor = Color.Maroon;
+            f9.BackColor = Color.Maroon;
+            f_10.BackColor = Color.Maroon;
+            f_11.BackColor = Color.Maroon;
+            f_12.BackColor = Color.Maroon;
+            f_13.BackColor = Color.Maroon;
+            f_14.BackColor = Color.Maroon;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -3597,6 +3673,10 @@ namespace MovieTheater
             movieSeattxt.Text = MDTitleLabel.Text.ToString();
             lengthSeattxt.Text = MDLengthLabel.Text.ToString();
             ShowtimeSeattxt.Text = displayShowtimelbl.Text.ToString();
+
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
+            comboBox3.SelectedIndex = 0;
 
         }
 
@@ -4144,9 +4224,9 @@ namespace MovieTheater
             BodyTabControl.SelectedTab = HomeTab;
             //CLEARS OUT INFO SO THEY CAN BUY OTHER STUFF OR BROWSE
             //CLEARS OUT INFO
-            PurchaseFname.Text = null;
-            PurchaseLname.Text = null;
-            PurchaseCnum.Text = null;
+            //PurchaseFname.Text = null;
+            //PurchaseLname.Text = null;
+            //PurchaseCnum.Text = null;
             PurchaseSec.Text = null;
             displayShowtimelbl.Text = "0:00";
             selectedSeatstxt.Text = "";
