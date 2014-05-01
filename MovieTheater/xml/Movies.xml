@@ -304,17 +304,17 @@
     <Rating>PG</Rating>
     <Actor>Greg Kinnear, Kelly Reilly, Thomas Haden Church, Connor Corum, Lanes Styles, Margo Martindale, Jacob Varges</Actor>
     <Director>Randel Wallace</Director>
-    <ReleaseDate>04/16/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Documents\GitHub\MovieProject-current\MovieTheater\Posters\heavenisreal113f.jpg</PosterPath>
-    <Showtime1> 1:45System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
-    <Showtime2> 2:20System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
-    <Showtime3> 4:30System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
-    <Showtime4> 5:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
-    <Showtime5> 7:15System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
-    <Showtime6> 7:45System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
-    <Showtime7> 9:50System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
-    <Showtime8>10:20System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
-    <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
+    <ReleaseDate>Wednesday, April 16, 2014</ReleaseDate>
+    <PosterPath>../../Posters/heavenisreal113f.jpg</PosterPath>
+    <Showtime1> 1:45</Showtime1>
+    <Showtime2> 2:20</Showtime2>
+    <Showtime3> 4:30</Showtime3>
+    <Showtime4> 5:00</Showtime4>
+    <Showtime5> 7:15</Showtime5>
+    <Showtime6> 7:45</Showtime6>
+    <Showtime7> 9:50</Showtime7>
+    <Showtime8>10:20</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
     <Title>Oculus</Title>
@@ -326,16 +326,16 @@
     <Rating>R</Rating>
     <Actor>Karen Gillan, Brenton Thwaites, Katee Sackhoff, Rory Cochrane, Garret Ryan, Annalise Basso, James Laffetry</Actor>
     <Director>Mike Flanagan</Director>
-    <ReleaseDate>04/11/2014</ReleaseDate>
-    <PosterPath>C:\Users\Leslie\Documents\GitHub\MovieProject-current\MovieTheater\Posters\oculus.jpg</PosterPath>
-    <Showtime1>12:30System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
-    <Showtime2> 1:40System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
-    <Showtime3> 3:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
-    <Showtime4> 5:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
-    <Showtime5>10:30System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
-    <Showtime6>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
-    <Showtime7>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
-    <Showtime8>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
-    <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
+    <ReleaseDate>Friday, April 11, 2014</ReleaseDate>
+    <PosterPath>../../Posters/oculus.jpg</PosterPath>
+    <Showtime1>12:30</Showtime1>
+    <Showtime2> 1:40</Showtime2>
+    <Showtime3> 3:00</Showtime3>
+    <Showtime4> 5:00</Showtime4>
+    <Showtime5>10:30</Showtime5>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
 </Movies>
