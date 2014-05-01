@@ -50,16 +50,16 @@
     <Security_Code>000</Security_Code>
     <email>monimd132@msn.com</email>
   </Account>
-  <Account First_Name="asd" Last_Name="sad">
-    <Address>sd</Address>
-    <City>d</City>
-    <State>ds</State>
+  <Account First_Name="sad" Last_Name="asd">
+    <Address>123 ave lane</Address>
+    <City>Chino Hills</City>
+    <State>CA</State>
     <Username>asd</Username>
     <Password>asd</Password>
-    <CH_FNAME>asd</CH_FNAME>
-    <CH_LNAME>asd</CH_LNAME>
+    <CH_FNAME>Slim</CH_FNAME>
+    <CH_LNAME>Shady</CH_LNAME>
     <Card_Number>1231231241123412</Card_Number>
-    <Security_Code>123</Security_Code>
+    <Security_Code>321</Security_Code>
     <email>ads</email>
   </Account>
 </Accounts>

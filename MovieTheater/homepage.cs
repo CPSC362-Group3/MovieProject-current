@@ -29,6 +29,7 @@ namespace MovieTheater
         bool needslogin = false;
 
         //Int counters
+        int browsePageNum = 1;
         int seats = 0;
         int totalseats = 0;
         int currentInd = 0;
@@ -36,7 +37,7 @@ namespace MovieTheater
         int showtimes = 2;
         int[] track = new int[72];
 
-        string currentU, SC, currentemail;
+        string currentUser, SC, currentemail;
 
         //String file paths, xml related
         string MoviesPath = "../../xml/Movies.xml";
@@ -205,6 +206,22 @@ namespace MovieTheater
             BShowing14.Parent = backgroundB;
             BShowing15.Parent = backgroundB;
 
+            // Account Info
+            AIPersonalInfo.Parent = backgroundAI;
+            AICreditCardInfo.Parent = backgroundAI;
+            AIAccountInfoLabel.Parent = backgroundAI;
+            AIFirstName.Parent = backgroundAI;
+            AILastName.Parent = backgroundAI;
+            AIAddress.Parent = backgroundAI;
+            AICity.Parent = backgroundAI;
+            AIState.Parent = backgroundAI;
+            AIUsername.Parent = backgroundAI;
+            AIPassword.Parent = backgroundAI;
+            AICFirstName.Parent = backgroundAI;
+            AICLastName.Parent = backgroundAI;
+            AICCNumber.Parent = backgroundAI;
+            AISecurityCode.Parent = backgroundAI;
+            AIExpDate.Parent = backgroundAI;
         }
 
         // get movie title from a label with a rating on it. utility function.
@@ -280,10 +297,18 @@ namespace MovieTheater
         /* Login button click */
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            BodyTabControl.SelectedTab = LoginTab;
-            usernameTxt.Clear();
-            passwordTxt.Clear();
-            resetSeats();
+            if (logged)
+            {
+                refreshAccountInfo();
+                BodyTabControl.SelectedTab = AccountInfoTab;
+            }
+            else
+            {
+                BodyTabControl.SelectedTab = LoginTab;
+                usernameTxt.Clear();
+                passwordTxt.Clear();
+                resetSeats();
+            }
         }
 
         /* Login button enter */
@@ -301,6 +326,8 @@ namespace MovieTheater
         /* browse button click */
         private void browseBtn_Click(object sender, EventArgs e)
         {
+            browsePageNum = 1;
+            RefreshBrowse(browsePageNum);
             BodyTabControl.SelectedTab = BrowseTab;
             resetSeats();
         }
@@ -798,6 +825,750 @@ namespace MovieTheater
         }
 
         //---------------------------------------------------------------------------------------------------------------------
+        //Browse Movie page ///////////////////////////////////////////////////////////////////////////////////////////////////
+        //---------------------------------------------------------------------------------------------------------------------
+
+        public void RefreshBrowse(int page)
+        {
+            BMovieTitle1.Visible = false;
+            BShowing1.Visible = false;
+            BPoster1.Visible = false;
+            BMovieTitle2.Visible = false;
+            BShowing2.Visible = false;
+            BPoster2.Visible = false;
+            BMovieTitle3.Visible = false;
+            BShowing3.Visible = false;
+            BPoster3.Visible = false;
+            BMovieTitle4.Visible = false;
+            BShowing4.Visible = false;
+            BPoster4.Visible = false;
+            BMovieTitle5.Visible = false;
+            BShowing5.Visible = false;
+            BPoster5.Visible = false;
+            BMovieTitle6.Visible = false;
+            BShowing6.Visible = false;
+            BPoster6.Visible = false;
+            BMovieTitle7.Visible = false;
+            BShowing7.Visible = false;
+            BPoster7.Visible = false;
+            BMovieTitle8.Visible = false;
+            BShowing8.Visible = false;
+            BPoster8.Visible = false;
+            BMovieTitle9.Visible = false;
+            BShowing9.Visible = false;
+            BPoster9.Visible = false;
+            BMovieTitle10.Visible = false;
+            BShowing10.Visible = false;
+            BPoster10.Visible = false;
+            BMovieTitle11.Visible = false;
+            BShowing11.Visible = false;
+            BPoster11.Visible = false;
+            BMovieTitle12.Visible = false;
+            BShowing12.Visible = false;
+            BPoster12.Visible = false;
+            BMovieTitle13.Visible = false;
+            BShowing13.Visible = false;
+            BPoster13.Visible = false;
+            BMovieTitle14.Visible = false;
+            BShowing14.Visible = false;
+            BPoster14.Visible = false;
+            BMovieTitle15.Visible = false;
+            BShowing15.Visible = false;
+            BPoster15.Visible = false;
+
+            int numMovies = MoviesDocument.GetElementsByTagName("Movie").Count;
+            XmlNodeList titleElemList = MoviesDocument.GetElementsByTagName("Title");
+            XmlNodeList RatingElemList = MoviesDocument.GetElementsByTagName("Rating");
+            XmlNodeList ReleaseDateElemList = MoviesDocument.GetElementsByTagName("ReleaseDate");
+            XmlNodeList PosterElemList = MoviesDocument.GetElementsByTagName("PosterPath");
+
+            DateTime CurrentTime = DateTime.Now;
+            DateTime ReleaseTime;
+
+            // depending on how many movies we have, fill out the posters information.
+            // Make each movie visible after setting the posters information
+            // ----------------------------------------------------------------
+
+            int index = 0;
+            for (int i = 0; i < page; i++)
+            {
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing1.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing1.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle1.Visible = true;
+                    BShowing1.Visible = true;
+                    BPoster1.Visible = true;
+                    BMovieTitle1.Text = titleElemList[index].InnerText;
+                    BPoster1.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing2.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing2.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle2.Visible = true;
+                    BShowing2.Visible = true;
+                    BPoster2.Visible = true;
+                    BMovieTitle2.Text = titleElemList[index].InnerText;
+                    BPoster2.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing3.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing3.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle3.Visible = true;
+                    BShowing3.Visible = true;
+                    BPoster3.Visible = true;
+                    BMovieTitle3.Text = titleElemList[index].InnerText;
+                    BPoster3.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing4.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing4.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle4.Visible = true;
+                    BShowing4.Visible = true;
+                    BPoster4.Visible = true;
+                    BMovieTitle4.Text = titleElemList[index].InnerText;
+                    BPoster4.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing5.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing5.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle5.Visible = true;
+                    BShowing5.Visible = true;
+                    BPoster5.Visible = true;
+                    BMovieTitle5.Text = titleElemList[index].InnerText;
+                    BPoster5.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing6.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing6.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle1.Visible = true;
+                    BShowing6.Visible = true;
+                    BPoster6.Visible = true;
+                    BMovieTitle6.Text = titleElemList[index].InnerText;
+                    BPoster6.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing7.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing7.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle7.Visible = true;
+                    BShowing7.Visible = true;
+                    BPoster7.Visible = true;
+                    BMovieTitle7.Text = titleElemList[index].InnerText;
+                    BPoster7.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing8.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing8.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle8.Visible = true;
+                    BShowing8.Visible = true;
+                    BPoster8.Visible = true;
+                    BMovieTitle8.Text = titleElemList[index].InnerText;
+                    BPoster8.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing9.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing9.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle9.Visible = true;
+                    BShowing9.Visible = true;
+                    BPoster9.Visible = true;
+                    BMovieTitle9.Text = titleElemList[index].InnerText;
+                    BPoster9.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing10.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing10.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle10.Visible = true;
+                    BShowing10.Visible = true;
+                    BPoster10.Visible = true;
+                    BMovieTitle10.Text = titleElemList[index].InnerText;
+                    BPoster10.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing11.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing11.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle11.Visible = true;
+                    BShowing11.Visible = true;
+                    BPoster11.Visible = true;
+                    BMovieTitle11.Text = titleElemList[index].InnerText;
+                    BPoster11.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing12.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing12.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle12.Visible = true;
+                    BShowing12.Visible = true;
+                    BPoster12.Visible = true;
+                    BMovieTitle12.Text = titleElemList[index].InnerText;
+                    BPoster12.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing13.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing13.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle13.Visible = true;
+                    BShowing13.Visible = true;
+                    BPoster13.Visible = true;
+                    BMovieTitle13.Text = titleElemList[index].InnerText;
+                    BPoster13.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing14.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing14.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle14.Visible = true;
+                    BShowing14.Visible = true;
+                    BPoster14.Visible = true;
+                    BMovieTitle14.Text = titleElemList[index].InnerText;
+                    BPoster14.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+                if (index < numMovies)
+                {
+                    ReleaseTime = Convert.ToDateTime(ReleaseDateElemList[index].InnerText);
+                    if (DateTime.Compare(ReleaseTime, CurrentTime) <= 0)
+                    {
+                        BShowing15.Text = "NOW SHOWING";
+                    }
+                    else
+                    {
+                        BShowing15.Text = ReleaseDateElemList[index].InnerText;
+                    }
+                    BMovieTitle15.Visible = true;
+                    BShowing15.Visible = true;
+                    BPoster15.Visible = true;
+                    BMovieTitle15.Text = titleElemList[index].InnerText;
+                    BPoster15.ImageLocation = PosterElemList[index].InnerText;
+                    index++;
+                }
+            }
+
+        }
+
+        private void BPoster1_Click(object sender, EventArgs e)
+        {
+            if (BShowing1.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle1.Text);
+            updateMI();
+        }
+
+        private void BPoster2_Click(object sender, EventArgs e)
+        {
+            if (BShowing2.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle2.Text);
+            updateMI();
+        }
+
+        private void BPoster3_Click(object sender, EventArgs e)
+        {
+            if (BShowing3.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle3.Text);
+            updateMI();
+        }
+
+        private void BPoster4_Click(object sender, EventArgs e)
+        {
+            if (BShowing4.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle4.Text);
+            updateMI();
+        }
+
+        private void BPoster5_Click(object sender, EventArgs e)
+        {
+            if (BShowing5.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle5.Text);
+            updateMI();
+        }
+
+        private void BPoster6_Click(object sender, EventArgs e)
+        {
+            if (BShowing6.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle6.Text);
+            updateMI();
+        }
+
+        private void BPoster7_Click(object sender, EventArgs e)
+        {
+            if (BShowing7.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle7.Text);
+            updateMI();
+        }
+
+        private void BPoster8_Click(object sender, EventArgs e)
+        {
+            if (BShowing8.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle8.Text);
+            updateMI();
+        }
+
+        private void BPoster9_Click(object sender, EventArgs e)
+        {
+            if (BShowing9.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle9.Text);
+            updateMI();
+        }
+
+        private void BPoster10_Click(object sender, EventArgs e)
+        {
+            if (BShowing10.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle10.Text);
+            updateMI();
+        }
+
+        private void BPoster11_Click(object sender, EventArgs e)
+        {
+            if (BShowing11.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle11.Text);
+            updateMI();
+        }
+
+        private void BPoster12_Click(object sender, EventArgs e)
+        {
+            if (BShowing12.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle12.Text);
+            updateMI();
+        }
+
+        private void BPoster13_Click(object sender, EventArgs e)
+        {
+            if (BShowing13.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle13.Text);
+            updateMI();
+        }
+
+        private void BPoster14_Click(object sender, EventArgs e)
+        {
+            if (BShowing14.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle14.Text);
+            updateMI();
+        }
+
+        private void BPoster15_Click(object sender, EventArgs e)
+        {
+            if (BShowing15.Text == "NOW SHOWING")
+            {
+                orderTicketsbtn.Visible = true;
+            }
+            else
+            {
+                orderTicketsbtn.Visible = false;
+            }
+            updateMovieDetailsPage(BMovieTitle15.Text);
+            updateMI();
+        }
+
+        //---------------------------------------------------------------------------------------------------------------------
+        //Account Info page ///////////////////////////////////////////////////////////////////////////////////////////////////
+        //---------------------------------------------------------------------------------------------------------------------
+
+        public void refreshAccountInfo()
+        {
+            int index = 0;
+            XmlDocument accounts = new XmlDocument();
+
+            if (System.IO.File.Exists(AccountsPath))
+            {
+                accounts.Load(AccountsPath);
+            }
+            else
+            {
+                // if there is no file, then all elements are invisible.
+                // no reason to continue from here.
+                Console.WriteLine("Error: AccountInfo file does not exist.");
+                return;
+            }
+
+            XmlNodeList Account = accounts.GetElementsByTagName("Account");
+            XmlNodeList Address = accounts.GetElementsByTagName("Address");
+            XmlNodeList City = accounts.GetElementsByTagName("City");
+            XmlNodeList State = accounts.GetElementsByTagName("State");
+            XmlNodeList Username = accounts.GetElementsByTagName("Username");
+            XmlNodeList Password = accounts.GetElementsByTagName("Password");
+            XmlNodeList CH_FNAME = accounts.GetElementsByTagName("CH_FNAME");
+            XmlNodeList CH_LNAME = accounts.GetElementsByTagName("CH_LNAME");
+            XmlNodeList Card_Number = accounts.GetElementsByTagName("Card_Number");
+            XmlNodeList Security_Code = accounts.GetElementsByTagName("Security_Code");
+
+            for (int i = 0; i < Username.Count; i++)
+            {
+                if (Username[i].InnerText == currentUser)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            AIFirstNameBox.ReadOnly = true;
+            AILastNameBox.ReadOnly = true;
+            AIAddressBox.ReadOnly = true;
+            AICityBox.ReadOnly = true;
+            AIStateBox.ReadOnly = true;
+            AIUsernameBox.ReadOnly = true;
+            AIPasswordBox.ReadOnly = true;
+            AICHFirstNameBox.ReadOnly = true;
+            AICHLastNameBox.ReadOnly = true;
+            AICredit.ReadOnly = true;
+            AISecurity.ReadOnly = true;
+
+            AIFirstNameBox.Text = Account[index].Attributes["First_Name"].InnerText;
+            AILastNameBox.Text = Account[index].Attributes["Last_Name"].InnerText;
+            AIAddressBox.Text = Address[index].InnerText;
+            AICityBox.Text = City[index].InnerText;
+            AIStateBox.Text = State[index].InnerText;
+            AIUsernameBox.Text = Username[index].InnerText;
+            // password
+            AIPasswordBox.Text = "";
+            for (int i = 0; i < Password[index].InnerText.Length; i++)
+            {
+                AIPasswordBox.Text = AIPasswordBox.Text + "*";
+            }
+            AICHFirstNameBox.Text = CH_FNAME[index].InnerText;
+            AICHLastNameBox.Text = CH_LNAME[index].InnerText;
+            // credit card
+            AICredit.Text = "****-****-****-";
+            if (Card_Number[index].InnerText.Length > 12)
+            {
+                for (int i = 12; i < Card_Number[index].InnerText.Length; i++)
+                {
+                    AICredit.Text = AICredit.Text + Card_Number[index].InnerText[i];
+                }
+            }
+            // security code
+            //AISecurity.Text = Security_Code[index].InnerText;
+            AISecurity.Text = "***";
+        }
+
+        // edit account info button
+        private void AIEditBtn_Click(object sender, EventArgs e)
+        {
+            AIFirstNameBox.ReadOnly = false;
+            AILastNameBox.ReadOnly = false;
+            AIAddressBox.ReadOnly = false;
+            AICityBox.ReadOnly = false;
+            AIStateBox.ReadOnly = false;
+            AIPasswordBox.ReadOnly = false;
+            AICHFirstNameBox.ReadOnly = false;
+            AICHLastNameBox.ReadOnly = false;
+            AICredit.ReadOnly = false;
+            AISecurity.ReadOnly = false;
+        }
+
+        private void AISaveBtn_Click(object sender, EventArgs e)
+        {
+            AIFirstNameBox.ReadOnly = true;
+            AILastNameBox.ReadOnly = true;
+            AIAddressBox.ReadOnly = true;
+            AICityBox.ReadOnly = true;
+            AIStateBox.ReadOnly = true;
+            AIPasswordBox.ReadOnly = true;
+            AICHFirstNameBox.ReadOnly = true;
+            AICHLastNameBox.ReadOnly = true;
+            AICredit.ReadOnly = true;
+            AISecurity.ReadOnly = true;
+
+            int index = 0;
+            XmlDocument accounts = new XmlDocument();
+
+            if (System.IO.File.Exists(AccountsPath))
+            {
+                accounts.Load(AccountsPath);
+            }
+            else
+            {
+                // if there is no file, then all elements are invisible.
+                // no reason to continue from here.
+                Console.WriteLine("Error: AccountInfo file does not exist.");
+                return;
+            }
+
+            XmlNodeList Account = accounts.GetElementsByTagName("Account");
+            XmlNodeList Address = accounts.GetElementsByTagName("Address");
+            XmlNodeList City = accounts.GetElementsByTagName("City");
+            XmlNodeList State = accounts.GetElementsByTagName("State");
+            XmlNodeList Username = accounts.GetElementsByTagName("Username");
+            XmlNodeList Password = accounts.GetElementsByTagName("Password");
+            XmlNodeList CH_FNAME = accounts.GetElementsByTagName("CH_FNAME");
+            XmlNodeList CH_LNAME = accounts.GetElementsByTagName("CH_LNAME");
+            XmlNodeList Card_Number = accounts.GetElementsByTagName("Card_Number");
+            XmlNodeList Security_Code = accounts.GetElementsByTagName("Security_Code");
+
+            for (int i = 0; i < Username.Count; i++)
+            {
+                if (Username[i].InnerText == currentUser)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            // ADD ERROR CHECKS HERE!
+            if (AIFirstNameBox.Text.Length > 1)
+            {
+                Account[index].Attributes["First_Name"].InnerText = AIFirstNameBox.Text;
+            }
+            if (AILastNameBox.Text.Length > 1)
+            {
+                Account[index].Attributes["Last_Name"].InnerText = AILastNameBox.Text;
+            }
+            if (AIAddressBox.Text.Length > 1)
+            {
+                Address[index].InnerText = AIAddressBox.Text;
+            }
+            if (AICityBox.Text.Length > 1)
+            {
+                City[index].InnerText = AICityBox.Text;
+            }
+            if (AIStateBox.Text.Length > 1)
+            {
+                State[index].InnerText = AIStateBox.Text;
+            }
+            if (!AIPasswordBox.Text.Contains("*"))
+            {
+                Password[index].InnerText = AIPasswordBox.Text;
+            }
+            if (AICHFirstNameBox.Text.Length > 1)
+            {
+                CH_FNAME[index].InnerText = AICHFirstNameBox.Text;
+            }
+            if (AICHLastNameBox.Text.Length > 1)
+            {
+                CH_LNAME[index].InnerText = AICHLastNameBox.Text;
+            }
+            if (!AICredit.Text.Contains("*"))
+            {
+                Card_Number[index].InnerText = AICredit.Text;
+            }
+            if (!AISecurity.Text.Contains("*"))
+            {
+                if (AISecurity.Text.Length > 1 && AISecurity.Text.Length < 4)
+                {
+                    Security_Code[index].InnerText = AISecurity.Text;
+                }
+            }
+
+            accounts.Save(AccountsPath);
+            refreshAccountInfo();
+        }
+
+        //---------------------------------------------------------------------------------------------------------------------
         //Search Movie page ///////////////////////////////////////////////////////////////////////////////////////////////////
         //---------------------------------------------------------------------------------------------------------------------
 
@@ -1234,7 +2005,6 @@ namespace MovieTheater
             orderTicketsbtn.Visible = false;
             updateMovieDetailsPage(GetMovieTitle(NRTitleLabel1.Text));
             updateMI();
-            
         }
 
         private void NRPoster2_Click(object sender, EventArgs e)
@@ -1524,7 +2294,7 @@ namespace MovieTheater
                             adminLogged = false;
                         }
 
-                        currentU = acc.Username;
+                        currentUser = acc.Username;
                         currentemail = acc.emailto;
                         PurchaseFname.Text = acc.CHfName;
                         PurchaseLname.Text = acc.CHlName;
@@ -3112,7 +3882,6 @@ namespace MovieTheater
             displayRating.Text = MDRatingLabel.Text.ToString();
             displayLength.Text = MDLengthLabel.Text.ToString();
         }
-
 
         //-----------------------------------------------------------------------------------------------------
     }

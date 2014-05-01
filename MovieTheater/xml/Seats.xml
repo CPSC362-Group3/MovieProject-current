@@ -103,4 +103,10 @@
     <Date>05/01/2014</Date>
     <Reserved>,f9</Reserved>
   </Seats_taken>
+  <Seats_taken>
+    <Title>Noah</Title>
+    <Showtime>02:20PM</Showtime>
+    <Date>05/15/2014</Date>
+    <Reserved>b2,c_10,b7,c9</Reserved>
+  </Seats_taken>
 </Seats>

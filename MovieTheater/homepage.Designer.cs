@@ -124,21 +124,21 @@
             this.BMovieTitle3 = new System.Windows.Forms.Label();
             this.BMovieTitle2 = new System.Windows.Forms.Label();
             this.BMovieTitle1 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.BPoster15 = new System.Windows.Forms.PictureBox();
+            this.BPoster14 = new System.Windows.Forms.PictureBox();
+            this.BPoster13 = new System.Windows.Forms.PictureBox();
+            this.BPoster12 = new System.Windows.Forms.PictureBox();
+            this.BPoster11 = new System.Windows.Forms.PictureBox();
+            this.BPoster10 = new System.Windows.Forms.PictureBox();
+            this.BPoster9 = new System.Windows.Forms.PictureBox();
+            this.BPoster8 = new System.Windows.Forms.PictureBox();
+            this.BPoster7 = new System.Windows.Forms.PictureBox();
+            this.BPoster6 = new System.Windows.Forms.PictureBox();
+            this.BPoster5 = new System.Windows.Forms.PictureBox();
+            this.BPoster4 = new System.Windows.Forms.PictureBox();
+            this.BPoster3 = new System.Windows.Forms.PictureBox();
+            this.BPoster2 = new System.Windows.Forms.PictureBox();
+            this.BPoster1 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.backgroundB = new System.Windows.Forms.PictureBox();
             this.SearchTab = new System.Windows.Forms.TabPage();
@@ -498,10 +498,10 @@
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
             this.AIExpDate = new System.Windows.Forms.Label();
             this.AISecurityCode = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.AICredit = new System.Windows.Forms.TextBox();
+            this.AICHLastNameBox = new System.Windows.Forms.TextBox();
+            this.AISecurity = new System.Windows.Forms.TextBox();
+            this.AICHFirstNameBox = new System.Windows.Forms.TextBox();
             this.AIPasswordBox = new System.Windows.Forms.TextBox();
             this.AIUsernameBox = new System.Windows.Forms.TextBox();
             this.AIStateBox = new System.Windows.Forms.TextBox();
@@ -520,7 +520,7 @@
             this.AILastName = new System.Windows.Forms.Label();
             this.AIFirstName = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.backgroundAI = new System.Windows.Forms.PictureBox();
             this.PaymentInfoTab = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -540,6 +540,8 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.AIEditBtn = new System.Windows.Forms.Button();
+            this.AISaveBtn = new System.Windows.Forms.Button();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -573,21 +575,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).BeginInit();
             this.BrowseTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundB)).BeginInit();
             this.SearchTab.SuspendLayout();
@@ -631,7 +633,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.fullticket)).BeginInit();
             this.AccountInfoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundAI)).BeginInit();
             this.PaymentInfoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -673,7 +675,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(42, 34);
+            this.tabControl1.Location = new System.Drawing.Point(26, 34);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -833,7 +835,7 @@
             this.BodyTabControl.Controls.Add(this.PrintTix);
             this.BodyTabControl.Controls.Add(this.AccountInfoTab);
             this.BodyTabControl.Controls.Add(this.PaymentInfoTab);
-            this.BodyTabControl.Location = new System.Drawing.Point(-5, 218);
+            this.BodyTabControl.Location = new System.Drawing.Point(-4, 218);
             this.BodyTabControl.Name = "BodyTabControl";
             this.BodyTabControl.SelectedIndex = 0;
             this.BodyTabControl.Size = new System.Drawing.Size(970, 799);
@@ -1478,7 +1480,7 @@
             this.BackgroundHome.Image = ((System.Drawing.Image)(resources.GetObject("BackgroundHome.Image")));
             this.BackgroundHome.Location = new System.Drawing.Point(0, 0);
             this.BackgroundHome.Name = "BackgroundHome";
-            this.BackgroundHome.Size = new System.Drawing.Size(961, 753);
+            this.BackgroundHome.Size = new System.Drawing.Size(961, 773);
             this.BackgroundHome.TabIndex = 69;
             this.BackgroundHome.TabStop = false;
             // 
@@ -1514,21 +1516,21 @@
             this.BrowseTab.Controls.Add(this.BMovieTitle3);
             this.BrowseTab.Controls.Add(this.BMovieTitle2);
             this.BrowseTab.Controls.Add(this.BMovieTitle1);
-            this.BrowseTab.Controls.Add(this.pictureBox14);
-            this.BrowseTab.Controls.Add(this.pictureBox15);
-            this.BrowseTab.Controls.Add(this.pictureBox16);
-            this.BrowseTab.Controls.Add(this.pictureBox17);
-            this.BrowseTab.Controls.Add(this.pictureBox18);
-            this.BrowseTab.Controls.Add(this.pictureBox19);
-            this.BrowseTab.Controls.Add(this.pictureBox20);
-            this.BrowseTab.Controls.Add(this.pictureBox21);
-            this.BrowseTab.Controls.Add(this.pictureBox22);
-            this.BrowseTab.Controls.Add(this.pictureBox23);
-            this.BrowseTab.Controls.Add(this.pictureBox24);
-            this.BrowseTab.Controls.Add(this.pictureBox25);
-            this.BrowseTab.Controls.Add(this.pictureBox26);
-            this.BrowseTab.Controls.Add(this.pictureBox27);
-            this.BrowseTab.Controls.Add(this.pictureBox28);
+            this.BrowseTab.Controls.Add(this.BPoster15);
+            this.BrowseTab.Controls.Add(this.BPoster14);
+            this.BrowseTab.Controls.Add(this.BPoster13);
+            this.BrowseTab.Controls.Add(this.BPoster12);
+            this.BrowseTab.Controls.Add(this.BPoster11);
+            this.BrowseTab.Controls.Add(this.BPoster10);
+            this.BrowseTab.Controls.Add(this.BPoster9);
+            this.BrowseTab.Controls.Add(this.BPoster8);
+            this.BrowseTab.Controls.Add(this.BPoster7);
+            this.BrowseTab.Controls.Add(this.BPoster6);
+            this.BrowseTab.Controls.Add(this.BPoster5);
+            this.BrowseTab.Controls.Add(this.BPoster4);
+            this.BrowseTab.Controls.Add(this.BPoster3);
+            this.BrowseTab.Controls.Add(this.BPoster2);
+            this.BrowseTab.Controls.Add(this.BPoster1);
             this.BrowseTab.Controls.Add(this.pictureBox29);
             this.BrowseTab.Controls.Add(this.backgroundB);
             this.BrowseTab.Location = new System.Drawing.Point(4, 22);
@@ -1898,192 +1900,207 @@
             this.BMovieTitle1.Text = "Movie Title 1";
             this.BMovieTitle1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // pictureBox14
+            // BPoster15
             // 
-            this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox14.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox14.ErrorImage")));
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(800, 528);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 124;
-            this.pictureBox14.TabStop = false;
+            this.BPoster15.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster15.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster15.ErrorImage")));
+            this.BPoster15.Image = ((System.Drawing.Image)(resources.GetObject("BPoster15.Image")));
+            this.BPoster15.Location = new System.Drawing.Point(800, 528);
+            this.BPoster15.Name = "BPoster15";
+            this.BPoster15.Size = new System.Drawing.Size(128, 160);
+            this.BPoster15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster15.TabIndex = 124;
+            this.BPoster15.TabStop = false;
+            this.BPoster15.Click += new System.EventHandler(this.BPoster15_Click);
             // 
-            // pictureBox15
+            // BPoster14
             // 
-            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox15.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox15.ErrorImage")));
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(608, 528);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 123;
-            this.pictureBox15.TabStop = false;
+            this.BPoster14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster14.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster14.ErrorImage")));
+            this.BPoster14.Image = ((System.Drawing.Image)(resources.GetObject("BPoster14.Image")));
+            this.BPoster14.Location = new System.Drawing.Point(608, 528);
+            this.BPoster14.Name = "BPoster14";
+            this.BPoster14.Size = new System.Drawing.Size(128, 160);
+            this.BPoster14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster14.TabIndex = 123;
+            this.BPoster14.TabStop = false;
+            this.BPoster14.Click += new System.EventHandler(this.BPoster14_Click);
             // 
-            // pictureBox16
+            // BPoster13
             // 
-            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox16.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox16.ErrorImage")));
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(416, 528);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 122;
-            this.pictureBox16.TabStop = false;
+            this.BPoster13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster13.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster13.ErrorImage")));
+            this.BPoster13.Image = ((System.Drawing.Image)(resources.GetObject("BPoster13.Image")));
+            this.BPoster13.Location = new System.Drawing.Point(416, 528);
+            this.BPoster13.Name = "BPoster13";
+            this.BPoster13.Size = new System.Drawing.Size(128, 160);
+            this.BPoster13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster13.TabIndex = 122;
+            this.BPoster13.TabStop = false;
+            this.BPoster13.Click += new System.EventHandler(this.BPoster13_Click);
             // 
-            // pictureBox17
+            // BPoster12
             // 
-            this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox17.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.ErrorImage")));
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(224, 528);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 121;
-            this.pictureBox17.TabStop = false;
+            this.BPoster12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster12.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster12.ErrorImage")));
+            this.BPoster12.Image = ((System.Drawing.Image)(resources.GetObject("BPoster12.Image")));
+            this.BPoster12.Location = new System.Drawing.Point(224, 528);
+            this.BPoster12.Name = "BPoster12";
+            this.BPoster12.Size = new System.Drawing.Size(128, 160);
+            this.BPoster12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster12.TabIndex = 121;
+            this.BPoster12.TabStop = false;
+            this.BPoster12.Click += new System.EventHandler(this.BPoster12_Click);
             // 
-            // pictureBox18
+            // BPoster11
             // 
-            this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox18.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox18.ErrorImage")));
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(33, 528);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 120;
-            this.pictureBox18.TabStop = false;
+            this.BPoster11.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster11.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster11.ErrorImage")));
+            this.BPoster11.Image = ((System.Drawing.Image)(resources.GetObject("BPoster11.Image")));
+            this.BPoster11.Location = new System.Drawing.Point(33, 528);
+            this.BPoster11.Name = "BPoster11";
+            this.BPoster11.Size = new System.Drawing.Size(128, 160);
+            this.BPoster11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster11.TabIndex = 120;
+            this.BPoster11.TabStop = false;
+            this.BPoster11.Click += new System.EventHandler(this.BPoster11_Click);
             // 
-            // pictureBox19
+            // BPoster10
             // 
-            this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox19.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox19.ErrorImage")));
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(800, 304);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 109;
-            this.pictureBox19.TabStop = false;
+            this.BPoster10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster10.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster10.ErrorImage")));
+            this.BPoster10.Image = ((System.Drawing.Image)(resources.GetObject("BPoster10.Image")));
+            this.BPoster10.Location = new System.Drawing.Point(800, 304);
+            this.BPoster10.Name = "BPoster10";
+            this.BPoster10.Size = new System.Drawing.Size(128, 160);
+            this.BPoster10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster10.TabIndex = 109;
+            this.BPoster10.TabStop = false;
+            this.BPoster10.Click += new System.EventHandler(this.BPoster10_Click);
             // 
-            // pictureBox20
+            // BPoster9
             // 
-            this.pictureBox20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox20.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox20.ErrorImage")));
-            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
-            this.pictureBox20.Location = new System.Drawing.Point(608, 304);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 108;
-            this.pictureBox20.TabStop = false;
+            this.BPoster9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster9.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster9.ErrorImage")));
+            this.BPoster9.Image = ((System.Drawing.Image)(resources.GetObject("BPoster9.Image")));
+            this.BPoster9.Location = new System.Drawing.Point(608, 304);
+            this.BPoster9.Name = "BPoster9";
+            this.BPoster9.Size = new System.Drawing.Size(128, 160);
+            this.BPoster9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster9.TabIndex = 108;
+            this.BPoster9.TabStop = false;
+            this.BPoster9.Click += new System.EventHandler(this.BPoster9_Click);
             // 
-            // pictureBox21
+            // BPoster8
             // 
-            this.pictureBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox21.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox21.ErrorImage")));
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(416, 304);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 107;
-            this.pictureBox21.TabStop = false;
+            this.BPoster8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster8.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster8.ErrorImage")));
+            this.BPoster8.Image = ((System.Drawing.Image)(resources.GetObject("BPoster8.Image")));
+            this.BPoster8.Location = new System.Drawing.Point(416, 304);
+            this.BPoster8.Name = "BPoster8";
+            this.BPoster8.Size = new System.Drawing.Size(128, 160);
+            this.BPoster8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster8.TabIndex = 107;
+            this.BPoster8.TabStop = false;
+            this.BPoster8.Click += new System.EventHandler(this.BPoster8_Click);
             // 
-            // pictureBox22
+            // BPoster7
             // 
-            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox22.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox22.ErrorImage")));
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(224, 304);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 106;
-            this.pictureBox22.TabStop = false;
+            this.BPoster7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster7.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster7.ErrorImage")));
+            this.BPoster7.Image = ((System.Drawing.Image)(resources.GetObject("BPoster7.Image")));
+            this.BPoster7.Location = new System.Drawing.Point(224, 304);
+            this.BPoster7.Name = "BPoster7";
+            this.BPoster7.Size = new System.Drawing.Size(128, 160);
+            this.BPoster7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster7.TabIndex = 106;
+            this.BPoster7.TabStop = false;
+            this.BPoster7.Click += new System.EventHandler(this.BPoster7_Click);
             // 
-            // pictureBox23
+            // BPoster6
             // 
-            this.pictureBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox23.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox23.ErrorImage")));
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(32, 304);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 105;
-            this.pictureBox23.TabStop = false;
+            this.BPoster6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster6.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster6.ErrorImage")));
+            this.BPoster6.Image = ((System.Drawing.Image)(resources.GetObject("BPoster6.Image")));
+            this.BPoster6.Location = new System.Drawing.Point(32, 304);
+            this.BPoster6.Name = "BPoster6";
+            this.BPoster6.Size = new System.Drawing.Size(128, 160);
+            this.BPoster6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster6.TabIndex = 105;
+            this.BPoster6.TabStop = false;
+            this.BPoster6.Click += new System.EventHandler(this.BPoster6_Click);
             // 
-            // pictureBox24
+            // BPoster5
             // 
-            this.pictureBox24.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox24.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox24.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox24.ErrorImage")));
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(800, 80);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 104;
-            this.pictureBox24.TabStop = false;
+            this.BPoster5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster5.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.BPoster5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster5.ErrorImage")));
+            this.BPoster5.Image = ((System.Drawing.Image)(resources.GetObject("BPoster5.Image")));
+            this.BPoster5.Location = new System.Drawing.Point(800, 80);
+            this.BPoster5.Name = "BPoster5";
+            this.BPoster5.Size = new System.Drawing.Size(128, 160);
+            this.BPoster5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster5.TabIndex = 104;
+            this.BPoster5.TabStop = false;
+            this.BPoster5.Click += new System.EventHandler(this.BPoster5_Click);
             // 
-            // pictureBox25
+            // BPoster4
             // 
-            this.pictureBox25.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox25.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox25.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.ErrorImage")));
-            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
-            this.pictureBox25.Location = new System.Drawing.Point(608, 80);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 103;
-            this.pictureBox25.TabStop = false;
+            this.BPoster4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster4.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.BPoster4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster4.ErrorImage")));
+            this.BPoster4.Image = ((System.Drawing.Image)(resources.GetObject("BPoster4.Image")));
+            this.BPoster4.Location = new System.Drawing.Point(608, 80);
+            this.BPoster4.Name = "BPoster4";
+            this.BPoster4.Size = new System.Drawing.Size(128, 160);
+            this.BPoster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster4.TabIndex = 103;
+            this.BPoster4.TabStop = false;
+            this.BPoster4.Click += new System.EventHandler(this.BPoster4_Click);
             // 
-            // pictureBox26
+            // BPoster3
             // 
-            this.pictureBox26.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox26.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox26.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox26.ErrorImage")));
-            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
-            this.pictureBox26.Location = new System.Drawing.Point(416, 80);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 102;
-            this.pictureBox26.TabStop = false;
+            this.BPoster3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster3.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.BPoster3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster3.ErrorImage")));
+            this.BPoster3.Image = ((System.Drawing.Image)(resources.GetObject("BPoster3.Image")));
+            this.BPoster3.Location = new System.Drawing.Point(416, 80);
+            this.BPoster3.Name = "BPoster3";
+            this.BPoster3.Size = new System.Drawing.Size(128, 160);
+            this.BPoster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster3.TabIndex = 102;
+            this.BPoster3.TabStop = false;
+            this.BPoster3.Click += new System.EventHandler(this.BPoster3_Click);
             // 
-            // pictureBox27
+            // BPoster2
             // 
-            this.pictureBox27.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox27.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox27.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox27.ErrorImage")));
-            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
-            this.pictureBox27.Location = new System.Drawing.Point(224, 80);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 101;
-            this.pictureBox27.TabStop = false;
+            this.BPoster2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster2.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.BPoster2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster2.ErrorImage")));
+            this.BPoster2.Image = ((System.Drawing.Image)(resources.GetObject("BPoster2.Image")));
+            this.BPoster2.Location = new System.Drawing.Point(224, 80);
+            this.BPoster2.Name = "BPoster2";
+            this.BPoster2.Size = new System.Drawing.Size(128, 160);
+            this.BPoster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster2.TabIndex = 101;
+            this.BPoster2.TabStop = false;
+            this.BPoster2.Click += new System.EventHandler(this.BPoster2_Click);
             // 
-            // pictureBox28
+            // BPoster1
             // 
-            this.pictureBox28.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox28.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
-            this.pictureBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox28.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox28.ErrorImage")));
-            this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
-            this.pictureBox28.Location = new System.Drawing.Point(32, 80);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(128, 160);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 100;
-            this.pictureBox28.TabStop = false;
+            this.BPoster1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BPoster1.BackColor = System.Drawing.Color.Transparent;
+            this.BPoster1.BackgroundImage = global::MovieTheater.Properties.Resources.pictureBox1_Image;
+            this.BPoster1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BPoster1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("BPoster1.ErrorImage")));
+            this.BPoster1.Image = ((System.Drawing.Image)(resources.GetObject("BPoster1.Image")));
+            this.BPoster1.Location = new System.Drawing.Point(32, 80);
+            this.BPoster1.Name = "BPoster1";
+            this.BPoster1.Size = new System.Drawing.Size(128, 160);
+            this.BPoster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BPoster1.TabIndex = 100;
+            this.BPoster1.TabStop = false;
+            this.BPoster1.Click += new System.EventHandler(this.BPoster1_Click);
             // 
             // pictureBox29
             // 
@@ -5442,7 +5459,7 @@
             this.backgroundCU.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.backgroundCU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
             this.backgroundCU.Image = ((System.Drawing.Image)(resources.GetObject("backgroundCU.Image")));
-            this.backgroundCU.Location = new System.Drawing.Point(1, 0);
+            this.backgroundCU.Location = new System.Drawing.Point(0, 0);
             this.backgroundCU.Name = "backgroundCU";
             this.backgroundCU.Size = new System.Drawing.Size(961, 569);
             this.backgroundCU.TabIndex = 70;
@@ -6400,16 +6417,18 @@
             // 
             // AccountInfoTab
             // 
+            this.AccountInfoTab.Controls.Add(this.AISaveBtn);
+            this.AccountInfoTab.Controls.Add(this.AIEditBtn);
             this.AccountInfoTab.Controls.Add(this.AIAccountInfoLabel);
             this.AccountInfoTab.Controls.Add(this.AICreditCardInfo);
             this.AccountInfoTab.Controls.Add(this.AIPersonalInfo);
             this.AccountInfoTab.Controls.Add(this.monthCalendar2);
             this.AccountInfoTab.Controls.Add(this.AIExpDate);
             this.AccountInfoTab.Controls.Add(this.AISecurityCode);
-            this.AccountInfoTab.Controls.Add(this.textBox9);
-            this.AccountInfoTab.Controls.Add(this.textBox10);
-            this.AccountInfoTab.Controls.Add(this.textBox11);
-            this.AccountInfoTab.Controls.Add(this.textBox12);
+            this.AccountInfoTab.Controls.Add(this.AICredit);
+            this.AccountInfoTab.Controls.Add(this.AICHLastNameBox);
+            this.AccountInfoTab.Controls.Add(this.AISecurity);
+            this.AccountInfoTab.Controls.Add(this.AICHFirstNameBox);
             this.AccountInfoTab.Controls.Add(this.AIPasswordBox);
             this.AccountInfoTab.Controls.Add(this.AIUsernameBox);
             this.AccountInfoTab.Controls.Add(this.AIStateBox);
@@ -6428,7 +6447,7 @@
             this.AccountInfoTab.Controls.Add(this.AILastName);
             this.AccountInfoTab.Controls.Add(this.AIFirstName);
             this.AccountInfoTab.Controls.Add(this.pictureBox6);
-            this.AccountInfoTab.Controls.Add(this.pictureBox13);
+            this.AccountInfoTab.Controls.Add(this.backgroundAI);
             this.AccountInfoTab.Location = new System.Drawing.Point(4, 22);
             this.AccountInfoTab.Name = "AccountInfoTab";
             this.AccountInfoTab.Size = new System.Drawing.Size(962, 773);
@@ -6498,35 +6517,35 @@
             this.AISecurityCode.TabIndex = 111;
             this.AISecurityCode.Text = ":Security Code";
             // 
-            // textBox9
+            // AICredit
             // 
-            this.textBox9.Location = new System.Drawing.Point(637, 240);
-            this.textBox9.MaxLength = 16;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(224, 20);
-            this.textBox9.TabIndex = 102;
+            this.AICredit.Location = new System.Drawing.Point(637, 240);
+            this.AICredit.MaxLength = 16;
+            this.AICredit.Name = "AICredit";
+            this.AICredit.Size = new System.Drawing.Size(224, 20);
+            this.AICredit.TabIndex = 102;
             // 
-            // textBox10
+            // AICHLastNameBox
             // 
-            this.textBox10.Location = new System.Drawing.Point(637, 176);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(224, 20);
-            this.textBox10.TabIndex = 101;
+            this.AICHLastNameBox.Location = new System.Drawing.Point(637, 176);
+            this.AICHLastNameBox.Name = "AICHLastNameBox";
+            this.AICHLastNameBox.Size = new System.Drawing.Size(224, 20);
+            this.AICHLastNameBox.TabIndex = 101;
             // 
-            // textBox11
+            // AISecurity
             // 
-            this.textBox11.Location = new System.Drawing.Point(637, 304);
-            this.textBox11.MaxLength = 3;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(64, 20);
-            this.textBox11.TabIndex = 103;
+            this.AISecurity.Location = new System.Drawing.Point(637, 304);
+            this.AISecurity.MaxLength = 3;
+            this.AISecurity.Name = "AISecurity";
+            this.AISecurity.Size = new System.Drawing.Size(64, 20);
+            this.AISecurity.TabIndex = 103;
             // 
-            // textBox12
+            // AICHFirstNameBox
             // 
-            this.textBox12.Location = new System.Drawing.Point(637, 112);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(224, 20);
-            this.textBox12.TabIndex = 100;
+            this.AICHFirstNameBox.Location = new System.Drawing.Point(637, 112);
+            this.AICHFirstNameBox.Name = "AICHFirstNameBox";
+            this.AICHFirstNameBox.Size = new System.Drawing.Size(224, 20);
+            this.AICHFirstNameBox.TabIndex = 100;
             // 
             // AIPasswordBox
             // 
@@ -6697,16 +6716,16 @@
             this.pictureBox6.TabIndex = 107;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox13
+            // backgroundAI
             // 
-            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
-            this.pictureBox13.Image = global::MovieTheater.Properties.Resources.background;
-            this.pictureBox13.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(961, 753);
-            this.pictureBox13.TabIndex = 116;
-            this.pictureBox13.TabStop = false;
+            this.backgroundAI.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.backgroundAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.backgroundAI.Image = global::MovieTheater.Properties.Resources.background;
+            this.backgroundAI.Location = new System.Drawing.Point(0, 0);
+            this.backgroundAI.Name = "backgroundAI";
+            this.backgroundAI.Size = new System.Drawing.Size(961, 686);
+            this.backgroundAI.TabIndex = 116;
+            this.backgroundAI.TabStop = false;
             // 
             // PaymentInfoTab
             // 
@@ -6894,6 +6913,28 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // AIEditBtn
+            // 
+            this.AIEditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AIEditBtn.Location = new System.Drawing.Point(693, 578);
+            this.AIEditBtn.Name = "AIEditBtn";
+            this.AIEditBtn.Size = new System.Drawing.Size(168, 36);
+            this.AIEditBtn.TabIndex = 117;
+            this.AIEditBtn.Text = "Edit";
+            this.AIEditBtn.UseVisualStyleBackColor = true;
+            this.AIEditBtn.Click += new System.EventHandler(this.AIEditBtn_Click);
+            // 
+            // AISaveBtn
+            // 
+            this.AISaveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AISaveBtn.Location = new System.Drawing.Point(693, 620);
+            this.AISaveBtn.Name = "AISaveBtn";
+            this.AISaveBtn.Size = new System.Drawing.Size(168, 36);
+            this.AISaveBtn.TabIndex = 118;
+            this.AISaveBtn.Text = "Save";
+            this.AISaveBtn.UseVisualStyleBackColor = true;
+            this.AISaveBtn.Click += new System.EventHandler(this.AISaveBtn_Click);
+            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6937,21 +6978,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.NRPoster1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundHome)).EndInit();
             this.BrowseTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BPoster1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundB)).EndInit();
             this.SearchTab.ResumeLayout(false);
@@ -7006,7 +7047,7 @@
             this.AccountInfoTab.ResumeLayout(false);
             this.AccountInfoTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backgroundAI)).EndInit();
             this.PaymentInfoTab.ResumeLayout(false);
             this.PaymentInfoTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
@@ -7113,21 +7154,21 @@
         private System.Windows.Forms.Label BMovieTitle3;
         private System.Windows.Forms.Label BMovieTitle2;
         private System.Windows.Forms.Label BMovieTitle1;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox24;
-        private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox26;
-        private System.Windows.Forms.PictureBox pictureBox27;
-        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.PictureBox BPoster15;
+        private System.Windows.Forms.PictureBox BPoster14;
+        private System.Windows.Forms.PictureBox BPoster13;
+        private System.Windows.Forms.PictureBox BPoster12;
+        private System.Windows.Forms.PictureBox BPoster11;
+        private System.Windows.Forms.PictureBox BPoster10;
+        private System.Windows.Forms.PictureBox BPoster9;
+        private System.Windows.Forms.PictureBox BPoster8;
+        private System.Windows.Forms.PictureBox BPoster7;
+        private System.Windows.Forms.PictureBox BPoster6;
+        private System.Windows.Forms.PictureBox BPoster5;
+        private System.Windows.Forms.PictureBox BPoster4;
+        private System.Windows.Forms.PictureBox BPoster3;
+        private System.Windows.Forms.PictureBox BPoster2;
+        private System.Windows.Forms.PictureBox BPoster1;
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PictureBox backgroundB;
         private System.Windows.Forms.TabPage SearchTab;
@@ -7451,10 +7492,10 @@
         private System.Windows.Forms.MonthCalendar monthCalendar2;
         private System.Windows.Forms.Label AIExpDate;
         private System.Windows.Forms.Label AISecurityCode;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox AICredit;
+        private System.Windows.Forms.TextBox AICHLastNameBox;
+        private System.Windows.Forms.TextBox AISecurity;
+        private System.Windows.Forms.TextBox AICHFirstNameBox;
         private System.Windows.Forms.TextBox AIPasswordBox;
         private System.Windows.Forms.TextBox AIUsernameBox;
         private System.Windows.Forms.TextBox AIStateBox;
@@ -7473,7 +7514,7 @@
         private System.Windows.Forms.Label AILastName;
         private System.Windows.Forms.Label AIFirstName;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox backgroundAI;
         private System.Windows.Forms.TabPage PaymentInfoTab;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
@@ -7526,6 +7567,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label ticketcount;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button AIEditBtn;
+        private System.Windows.Forms.Button AISaveBtn;
 
     }
 }
