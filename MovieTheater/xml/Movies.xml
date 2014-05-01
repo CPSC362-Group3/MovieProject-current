@@ -342,4 +342,26 @@
     <Showtime8> 7:40System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
     <Showtime9> 8:10System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
   </Movie>
+  <Movie>
+    <Title>Walk Of Shame</Title>
+    <Length>95 min</Length>
+    <Synopsis>A reporter's dream of becoming a news anchor is compromised after a one-night stand leaves her stranded in downtown L.A. without a phone, car, ID or money - and only 8 hours to make it to the most important job interview of her life.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Comedy</Genre>
+    <Rating>R</Rating>
+    <Actor>Elizabeth Banks, James Marsden, Gillian Jacobs, Sarah Wright, Ethan Suplee, Bill Burr, Ken Davitian, Lawrence Gilliard Jr., Alphonso McAuley, Da'Vone McDonld, Eric Etebari, Oliver Hudson</Actor>
+    <Director>Steven Brill</Director>
+    <ReleaseDate>05/02/2014</ReleaseDate>
+    <PosterPath>openFileDialog1</PosterPath>
+    <Showtime1>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
+    <Showtime2>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
+    <Showtime3>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
+    <Showtime4>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
+    <Showtime5>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
+    <Showtime6>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
+    <Showtime7>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
+    <Showtime8>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
+    <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
+  </Movie>
 </Movies>

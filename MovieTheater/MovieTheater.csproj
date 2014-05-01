@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Babasse-Old-School-Bobines-video.ico" />
+    <None Include="Resources\search_icon.jpg" />
     <None Include="Resources\search.jpg" />
     <None Include="Resources\TICKETOUTLINE.png" />
     <None Include="Resources\ticket.png" />
@@ -108,6 +109,11 @@
     <None Include="Resources\background.jpg" />
     <None Include="Resources\browse_movies_div.jpg" />
     <None Include="Resources\account_information_div.jpg" />
+    <None Include="Resources\home_button.jpg" />
+    <None Include="Resources\browse_button.jpg" />
+    <None Include="Resources\Contact_us_button.jpg" />
+    <None Include="Resources\login_button.jpg" />
+    <None Include="Resources\banner.jpg" />
     <Content Include="Resources\pictureofplace.Image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

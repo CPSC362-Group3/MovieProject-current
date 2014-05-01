@@ -103,6 +103,54 @@
             this.BMovieTitle2 = new System.Windows.Forms.Label();
             this.BMovieTitle1 = new System.Windows.Forms.Label();
             this.SearchTab = new System.Windows.Forms.TabPage();
+            this.SGenre6 = new System.Windows.Forms.Label();
+            this.SGenreLabel6 = new System.Windows.Forms.Label();
+            this.SRating6 = new System.Windows.Forms.Label();
+            this.SRatingLabel6 = new System.Windows.Forms.Label();
+            this.SLength6 = new System.Windows.Forms.Label();
+            this.SLengthLabel6 = new System.Windows.Forms.Label();
+            this.SRelease6 = new System.Windows.Forms.Label();
+            this.SReleaseLabel6 = new System.Windows.Forms.Label();
+            this.SGenre5 = new System.Windows.Forms.Label();
+            this.SGenreLabel5 = new System.Windows.Forms.Label();
+            this.SRating5 = new System.Windows.Forms.Label();
+            this.SRatingLabel5 = new System.Windows.Forms.Label();
+            this.SLength5 = new System.Windows.Forms.Label();
+            this.SLengthLabel5 = new System.Windows.Forms.Label();
+            this.SRelease5 = new System.Windows.Forms.Label();
+            this.SReleaseLabel5 = new System.Windows.Forms.Label();
+            this.SGenre4 = new System.Windows.Forms.Label();
+            this.SGenreLabel4 = new System.Windows.Forms.Label();
+            this.SRating4 = new System.Windows.Forms.Label();
+            this.SRatingLabel4 = new System.Windows.Forms.Label();
+            this.SLength4 = new System.Windows.Forms.Label();
+            this.SLengthLabel4 = new System.Windows.Forms.Label();
+            this.SRelease4 = new System.Windows.Forms.Label();
+            this.SReleaseLabel4 = new System.Windows.Forms.Label();
+            this.SGenre3 = new System.Windows.Forms.Label();
+            this.SGenreLabel3 = new System.Windows.Forms.Label();
+            this.SRating3 = new System.Windows.Forms.Label();
+            this.SRatingLabel3 = new System.Windows.Forms.Label();
+            this.SLength3 = new System.Windows.Forms.Label();
+            this.SLengthLabel3 = new System.Windows.Forms.Label();
+            this.SRelease3 = new System.Windows.Forms.Label();
+            this.SReleaseLabel3 = new System.Windows.Forms.Label();
+            this.SGenre2 = new System.Windows.Forms.Label();
+            this.SGenreLabel2 = new System.Windows.Forms.Label();
+            this.SRating2 = new System.Windows.Forms.Label();
+            this.SRatingLabel2 = new System.Windows.Forms.Label();
+            this.SLength2 = new System.Windows.Forms.Label();
+            this.SLengthLabel2 = new System.Windows.Forms.Label();
+            this.SRelease2 = new System.Windows.Forms.Label();
+            this.SReleaseLabel2 = new System.Windows.Forms.Label();
+            this.SGenre1 = new System.Windows.Forms.Label();
+            this.SGenreLabel1 = new System.Windows.Forms.Label();
+            this.SRating1 = new System.Windows.Forms.Label();
+            this.SRatingLabel1 = new System.Windows.Forms.Label();
+            this.SLength1 = new System.Windows.Forms.Label();
+            this.SLengthLabel1 = new System.Windows.Forms.Label();
+            this.SRelease1 = new System.Windows.Forms.Label();
+            this.SReleaseLabel1 = new System.Windows.Forms.Label();
             this.STitleLabel6 = new System.Windows.Forms.Label();
             this.STitleLabel5 = new System.Windows.Forms.Label();
             this.STitleLabel4 = new System.Windows.Forms.Label();
@@ -470,61 +518,12 @@
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.SGenre1 = new System.Windows.Forms.Label();
-            this.SGenreLabel1 = new System.Windows.Forms.Label();
-            this.SRating1 = new System.Windows.Forms.Label();
-            this.SRatingLabel1 = new System.Windows.Forms.Label();
-            this.SLength1 = new System.Windows.Forms.Label();
-            this.SLengthLabel1 = new System.Windows.Forms.Label();
-            this.SRelease1 = new System.Windows.Forms.Label();
-            this.SReleaseLabel1 = new System.Windows.Forms.Label();
-            this.SGenre2 = new System.Windows.Forms.Label();
-            this.SGenreLabel2 = new System.Windows.Forms.Label();
-            this.SRating2 = new System.Windows.Forms.Label();
-            this.SRatingLabel2 = new System.Windows.Forms.Label();
-            this.SLength2 = new System.Windows.Forms.Label();
-            this.SLengthLabel2 = new System.Windows.Forms.Label();
-            this.SRelease2 = new System.Windows.Forms.Label();
-            this.SReleaseLabel2 = new System.Windows.Forms.Label();
-            this.SGenre3 = new System.Windows.Forms.Label();
-            this.SGenreLabel3 = new System.Windows.Forms.Label();
-            this.SRating3 = new System.Windows.Forms.Label();
-            this.SRatingLabel3 = new System.Windows.Forms.Label();
-            this.SLength3 = new System.Windows.Forms.Label();
-            this.SLengthLabel3 = new System.Windows.Forms.Label();
-            this.SRelease3 = new System.Windows.Forms.Label();
-            this.SReleaseLabel3 = new System.Windows.Forms.Label();
-            this.SGenre4 = new System.Windows.Forms.Label();
-            this.SGenreLabel4 = new System.Windows.Forms.Label();
-            this.SRating4 = new System.Windows.Forms.Label();
-            this.SRatingLabel4 = new System.Windows.Forms.Label();
-            this.SLength4 = new System.Windows.Forms.Label();
-            this.SLengthLabel4 = new System.Windows.Forms.Label();
-            this.SRelease4 = new System.Windows.Forms.Label();
-            this.SReleaseLabel4 = new System.Windows.Forms.Label();
-            this.SGenre5 = new System.Windows.Forms.Label();
-            this.SGenreLabel5 = new System.Windows.Forms.Label();
-            this.SRating5 = new System.Windows.Forms.Label();
-            this.SRatingLabel5 = new System.Windows.Forms.Label();
-            this.SLength5 = new System.Windows.Forms.Label();
-            this.SLengthLabel5 = new System.Windows.Forms.Label();
-            this.SRelease5 = new System.Windows.Forms.Label();
-            this.SReleaseLabel5 = new System.Windows.Forms.Label();
-            this.SGenre6 = new System.Windows.Forms.Label();
-            this.SGenreLabel6 = new System.Windows.Forms.Label();
-            this.SRating6 = new System.Windows.Forms.Label();
-            this.SRatingLabel6 = new System.Windows.Forms.Label();
-            this.SLength6 = new System.Windows.Forms.Label();
-            this.SLengthLabel6 = new System.Windows.Forms.Label();
-            this.SRelease6 = new System.Windows.Forms.Label();
-            this.SReleaseLabel6 = new System.Windows.Forms.Label();
             this.searchPictureBox = new System.Windows.Forms.PictureBox();
             this.searchBtn = new System.Windows.Forms.PictureBox();
             this.InfoBar = new System.Windows.Forms.PictureBox();
             this.LoginBtn = new System.Windows.Forms.PictureBox();
             this.homeBtn = new System.Windows.Forms.PictureBox();
             this.browseBtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.NSPoster10 = new System.Windows.Forms.PictureBox();
             this.NSPoster9 = new System.Windows.Forms.PictureBox();
             this.NSPoster8 = new System.Windows.Forms.PictureBox();
@@ -589,8 +588,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.backgroundAI = new System.Windows.Forms.PictureBox();
             this.contactUsBtn = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.PictureBox();
+            this.AILogoutBtn = new System.Windows.Forms.Button();
+            this.SSearchString = new System.Windows.Forms.Label();
+            this.ALogoutBtn = new System.Windows.Forms.Button();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -619,7 +620,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.browseBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster8)).BeginInit();
@@ -686,7 +686,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundAI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
             this.SuspendLayout();
             // 
@@ -695,7 +694,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(10, 42);
+            this.tabControl1.Location = new System.Drawing.Point(9, 38);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -716,10 +715,8 @@
             this.tabPage1.Controls.Add(this.LoginBtn);
             this.tabPage1.Controls.Add(this.homeBtn);
             this.tabPage1.Controls.Add(this.browseBtn);
-            this.tabPage1.Controls.Add(this.pictureBox3);
             this.tabPage1.Controls.Add(this.BodyTabControl);
             this.tabPage1.Controls.Add(this.contactUsBtn);
-            this.tabPage1.Controls.Add(this.pictureBox4);
             this.tabPage1.Controls.Add(this.Header);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -732,7 +729,8 @@
             // 
             this.checkLog.AutoSize = true;
             this.checkLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkLog.Location = new System.Drawing.Point(797, 101);
+            this.checkLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkLog.Location = new System.Drawing.Point(839, 3);
             this.checkLog.Name = "checkLog";
             this.checkLog.Size = new System.Drawing.Size(31, 20);
             this.checkLog.TabIndex = 79;
@@ -742,10 +740,11 @@
             // homeLogged
             // 
             this.homeLogged.AutoSize = true;
-            this.homeLogged.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeLogged.Location = new System.Drawing.Point(702, 105);
+            this.homeLogged.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeLogged.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homeLogged.Location = new System.Drawing.Point(739, 3);
             this.homeLogged.Name = "homeLogged";
-            this.homeLogged.Size = new System.Drawing.Size(89, 16);
+            this.homeLogged.Size = new System.Drawing.Size(104, 20);
             this.homeLogged.TabIndex = 78;
             this.homeLogged.Text = "Logged in as:";
             this.homeLogged.Visible = false;
@@ -764,7 +763,7 @@
             // AdminLabel
             // 
             this.AdminLabel.AutoSize = true;
-            this.AdminLabel.Location = new System.Drawing.Point(893, 27);
+            this.AdminLabel.Location = new System.Drawing.Point(907, 101);
             this.AdminLabel.Name = "AdminLabel";
             this.AdminLabel.Size = new System.Drawing.Size(36, 13);
             this.AdminLabel.TabIndex = 74;
@@ -1643,6 +1642,7 @@
             // SearchTab
             // 
             this.SearchTab.BackColor = System.Drawing.Color.Transparent;
+            this.SearchTab.Controls.Add(this.SSearchString);
             this.SearchTab.Controls.Add(this.SGenre6);
             this.SearchTab.Controls.Add(this.SGenreLabel6);
             this.SearchTab.Controls.Add(this.SRating6);
@@ -1711,6 +1711,486 @@
             this.SearchTab.Size = new System.Drawing.Size(962, 773);
             this.SearchTab.TabIndex = 1;
             this.SearchTab.Text = "Search";
+            // 
+            // SGenre6
+            // 
+            this.SGenre6.AutoSize = true;
+            this.SGenre6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenre6.Location = new System.Drawing.Point(656, 671);
+            this.SGenre6.Name = "SGenre6";
+            this.SGenre6.Size = new System.Drawing.Size(36, 13);
+            this.SGenre6.TabIndex = 137;
+            this.SGenre6.Text = "Genre";
+            // 
+            // SGenreLabel6
+            // 
+            this.SGenreLabel6.AutoSize = true;
+            this.SGenreLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenreLabel6.Location = new System.Drawing.Point(656, 651);
+            this.SGenreLabel6.Name = "SGenreLabel6";
+            this.SGenreLabel6.Size = new System.Drawing.Size(50, 13);
+            this.SGenreLabel6.TabIndex = 136;
+            this.SGenreLabel6.Text = "GENRE";
+            // 
+            // SRating6
+            // 
+            this.SRating6.AutoSize = true;
+            this.SRating6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRating6.Location = new System.Drawing.Point(656, 630);
+            this.SRating6.Name = "SRating6";
+            this.SRating6.Size = new System.Drawing.Size(38, 13);
+            this.SRating6.TabIndex = 135;
+            this.SRating6.Text = "Rating";
+            // 
+            // SRatingLabel6
+            // 
+            this.SRatingLabel6.AutoSize = true;
+            this.SRatingLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRatingLabel6.Location = new System.Drawing.Point(656, 610);
+            this.SRatingLabel6.Name = "SRatingLabel6";
+            this.SRatingLabel6.Size = new System.Drawing.Size(54, 13);
+            this.SRatingLabel6.TabIndex = 134;
+            this.SRatingLabel6.Text = "RATING";
+            // 
+            // SLength6
+            // 
+            this.SLength6.AutoSize = true;
+            this.SLength6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLength6.Location = new System.Drawing.Point(656, 589);
+            this.SLength6.Name = "SLength6";
+            this.SLength6.Size = new System.Drawing.Size(40, 13);
+            this.SLength6.TabIndex = 133;
+            this.SLength6.Text = "Length";
+            // 
+            // SLengthLabel6
+            // 
+            this.SLengthLabel6.AutoSize = true;
+            this.SLengthLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLengthLabel6.Location = new System.Drawing.Point(656, 569);
+            this.SLengthLabel6.Name = "SLengthLabel6";
+            this.SLengthLabel6.Size = new System.Drawing.Size(57, 13);
+            this.SLengthLabel6.TabIndex = 132;
+            this.SLengthLabel6.Text = "LENGTH";
+            // 
+            // SRelease6
+            // 
+            this.SRelease6.AutoSize = true;
+            this.SRelease6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRelease6.Location = new System.Drawing.Point(656, 548);
+            this.SRelease6.Name = "SRelease6";
+            this.SRelease6.Size = new System.Drawing.Size(72, 13);
+            this.SRelease6.TabIndex = 131;
+            this.SRelease6.Text = "Release Date";
+            // 
+            // SReleaseLabel6
+            // 
+            this.SReleaseLabel6.AutoSize = true;
+            this.SReleaseLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SReleaseLabel6.Location = new System.Drawing.Point(656, 528);
+            this.SReleaseLabel6.Name = "SReleaseLabel6";
+            this.SReleaseLabel6.Size = new System.Drawing.Size(100, 13);
+            this.SReleaseLabel6.TabIndex = 130;
+            this.SReleaseLabel6.Text = "RELEASE DATE";
+            // 
+            // SGenre5
+            // 
+            this.SGenre5.AutoSize = true;
+            this.SGenre5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenre5.Location = new System.Drawing.Point(176, 671);
+            this.SGenre5.Name = "SGenre5";
+            this.SGenre5.Size = new System.Drawing.Size(36, 13);
+            this.SGenre5.TabIndex = 129;
+            this.SGenre5.Text = "Genre";
+            // 
+            // SGenreLabel5
+            // 
+            this.SGenreLabel5.AutoSize = true;
+            this.SGenreLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenreLabel5.Location = new System.Drawing.Point(176, 651);
+            this.SGenreLabel5.Name = "SGenreLabel5";
+            this.SGenreLabel5.Size = new System.Drawing.Size(50, 13);
+            this.SGenreLabel5.TabIndex = 128;
+            this.SGenreLabel5.Text = "GENRE";
+            // 
+            // SRating5
+            // 
+            this.SRating5.AutoSize = true;
+            this.SRating5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRating5.Location = new System.Drawing.Point(176, 630);
+            this.SRating5.Name = "SRating5";
+            this.SRating5.Size = new System.Drawing.Size(38, 13);
+            this.SRating5.TabIndex = 127;
+            this.SRating5.Text = "Rating";
+            // 
+            // SRatingLabel5
+            // 
+            this.SRatingLabel5.AutoSize = true;
+            this.SRatingLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRatingLabel5.Location = new System.Drawing.Point(176, 610);
+            this.SRatingLabel5.Name = "SRatingLabel5";
+            this.SRatingLabel5.Size = new System.Drawing.Size(54, 13);
+            this.SRatingLabel5.TabIndex = 126;
+            this.SRatingLabel5.Text = "RATING";
+            // 
+            // SLength5
+            // 
+            this.SLength5.AutoSize = true;
+            this.SLength5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLength5.Location = new System.Drawing.Point(176, 589);
+            this.SLength5.Name = "SLength5";
+            this.SLength5.Size = new System.Drawing.Size(40, 13);
+            this.SLength5.TabIndex = 125;
+            this.SLength5.Text = "Length";
+            // 
+            // SLengthLabel5
+            // 
+            this.SLengthLabel5.AutoSize = true;
+            this.SLengthLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLengthLabel5.Location = new System.Drawing.Point(176, 569);
+            this.SLengthLabel5.Name = "SLengthLabel5";
+            this.SLengthLabel5.Size = new System.Drawing.Size(57, 13);
+            this.SLengthLabel5.TabIndex = 124;
+            this.SLengthLabel5.Text = "LENGTH";
+            // 
+            // SRelease5
+            // 
+            this.SRelease5.AutoSize = true;
+            this.SRelease5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRelease5.Location = new System.Drawing.Point(176, 548);
+            this.SRelease5.Name = "SRelease5";
+            this.SRelease5.Size = new System.Drawing.Size(72, 13);
+            this.SRelease5.TabIndex = 123;
+            this.SRelease5.Text = "Release Date";
+            // 
+            // SReleaseLabel5
+            // 
+            this.SReleaseLabel5.AutoSize = true;
+            this.SReleaseLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SReleaseLabel5.Location = new System.Drawing.Point(176, 528);
+            this.SReleaseLabel5.Name = "SReleaseLabel5";
+            this.SReleaseLabel5.Size = new System.Drawing.Size(100, 13);
+            this.SReleaseLabel5.TabIndex = 122;
+            this.SReleaseLabel5.Text = "RELEASE DATE";
+            // 
+            // SGenre4
+            // 
+            this.SGenre4.AutoSize = true;
+            this.SGenre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenre4.Location = new System.Drawing.Point(656, 447);
+            this.SGenre4.Name = "SGenre4";
+            this.SGenre4.Size = new System.Drawing.Size(36, 13);
+            this.SGenre4.TabIndex = 121;
+            this.SGenre4.Text = "Genre";
+            // 
+            // SGenreLabel4
+            // 
+            this.SGenreLabel4.AutoSize = true;
+            this.SGenreLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenreLabel4.Location = new System.Drawing.Point(656, 427);
+            this.SGenreLabel4.Name = "SGenreLabel4";
+            this.SGenreLabel4.Size = new System.Drawing.Size(50, 13);
+            this.SGenreLabel4.TabIndex = 120;
+            this.SGenreLabel4.Text = "GENRE";
+            // 
+            // SRating4
+            // 
+            this.SRating4.AutoSize = true;
+            this.SRating4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRating4.Location = new System.Drawing.Point(656, 406);
+            this.SRating4.Name = "SRating4";
+            this.SRating4.Size = new System.Drawing.Size(38, 13);
+            this.SRating4.TabIndex = 119;
+            this.SRating4.Text = "Rating";
+            // 
+            // SRatingLabel4
+            // 
+            this.SRatingLabel4.AutoSize = true;
+            this.SRatingLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRatingLabel4.Location = new System.Drawing.Point(656, 386);
+            this.SRatingLabel4.Name = "SRatingLabel4";
+            this.SRatingLabel4.Size = new System.Drawing.Size(54, 13);
+            this.SRatingLabel4.TabIndex = 118;
+            this.SRatingLabel4.Text = "RATING";
+            // 
+            // SLength4
+            // 
+            this.SLength4.AutoSize = true;
+            this.SLength4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLength4.Location = new System.Drawing.Point(656, 365);
+            this.SLength4.Name = "SLength4";
+            this.SLength4.Size = new System.Drawing.Size(40, 13);
+            this.SLength4.TabIndex = 117;
+            this.SLength4.Text = "Length";
+            // 
+            // SLengthLabel4
+            // 
+            this.SLengthLabel4.AutoSize = true;
+            this.SLengthLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLengthLabel4.Location = new System.Drawing.Point(656, 345);
+            this.SLengthLabel4.Name = "SLengthLabel4";
+            this.SLengthLabel4.Size = new System.Drawing.Size(57, 13);
+            this.SLengthLabel4.TabIndex = 116;
+            this.SLengthLabel4.Text = "LENGTH";
+            // 
+            // SRelease4
+            // 
+            this.SRelease4.AutoSize = true;
+            this.SRelease4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRelease4.Location = new System.Drawing.Point(656, 324);
+            this.SRelease4.Name = "SRelease4";
+            this.SRelease4.Size = new System.Drawing.Size(72, 13);
+            this.SRelease4.TabIndex = 115;
+            this.SRelease4.Text = "Release Date";
+            // 
+            // SReleaseLabel4
+            // 
+            this.SReleaseLabel4.AutoSize = true;
+            this.SReleaseLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SReleaseLabel4.Location = new System.Drawing.Point(656, 304);
+            this.SReleaseLabel4.Name = "SReleaseLabel4";
+            this.SReleaseLabel4.Size = new System.Drawing.Size(100, 13);
+            this.SReleaseLabel4.TabIndex = 114;
+            this.SReleaseLabel4.Text = "RELEASE DATE";
+            // 
+            // SGenre3
+            // 
+            this.SGenre3.AutoSize = true;
+            this.SGenre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenre3.Location = new System.Drawing.Point(176, 447);
+            this.SGenre3.Name = "SGenre3";
+            this.SGenre3.Size = new System.Drawing.Size(36, 13);
+            this.SGenre3.TabIndex = 113;
+            this.SGenre3.Text = "Genre";
+            // 
+            // SGenreLabel3
+            // 
+            this.SGenreLabel3.AutoSize = true;
+            this.SGenreLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenreLabel3.Location = new System.Drawing.Point(176, 427);
+            this.SGenreLabel3.Name = "SGenreLabel3";
+            this.SGenreLabel3.Size = new System.Drawing.Size(50, 13);
+            this.SGenreLabel3.TabIndex = 112;
+            this.SGenreLabel3.Text = "GENRE";
+            // 
+            // SRating3
+            // 
+            this.SRating3.AutoSize = true;
+            this.SRating3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRating3.Location = new System.Drawing.Point(176, 406);
+            this.SRating3.Name = "SRating3";
+            this.SRating3.Size = new System.Drawing.Size(38, 13);
+            this.SRating3.TabIndex = 111;
+            this.SRating3.Text = "Rating";
+            // 
+            // SRatingLabel3
+            // 
+            this.SRatingLabel3.AutoSize = true;
+            this.SRatingLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRatingLabel3.Location = new System.Drawing.Point(176, 386);
+            this.SRatingLabel3.Name = "SRatingLabel3";
+            this.SRatingLabel3.Size = new System.Drawing.Size(54, 13);
+            this.SRatingLabel3.TabIndex = 110;
+            this.SRatingLabel3.Text = "RATING";
+            // 
+            // SLength3
+            // 
+            this.SLength3.AutoSize = true;
+            this.SLength3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLength3.Location = new System.Drawing.Point(176, 365);
+            this.SLength3.Name = "SLength3";
+            this.SLength3.Size = new System.Drawing.Size(40, 13);
+            this.SLength3.TabIndex = 109;
+            this.SLength3.Text = "Length";
+            // 
+            // SLengthLabel3
+            // 
+            this.SLengthLabel3.AutoSize = true;
+            this.SLengthLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLengthLabel3.Location = new System.Drawing.Point(176, 345);
+            this.SLengthLabel3.Name = "SLengthLabel3";
+            this.SLengthLabel3.Size = new System.Drawing.Size(57, 13);
+            this.SLengthLabel3.TabIndex = 108;
+            this.SLengthLabel3.Text = "LENGTH";
+            // 
+            // SRelease3
+            // 
+            this.SRelease3.AutoSize = true;
+            this.SRelease3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRelease3.Location = new System.Drawing.Point(176, 324);
+            this.SRelease3.Name = "SRelease3";
+            this.SRelease3.Size = new System.Drawing.Size(72, 13);
+            this.SRelease3.TabIndex = 107;
+            this.SRelease3.Text = "Release Date";
+            // 
+            // SReleaseLabel3
+            // 
+            this.SReleaseLabel3.AutoSize = true;
+            this.SReleaseLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SReleaseLabel3.Location = new System.Drawing.Point(176, 304);
+            this.SReleaseLabel3.Name = "SReleaseLabel3";
+            this.SReleaseLabel3.Size = new System.Drawing.Size(100, 13);
+            this.SReleaseLabel3.TabIndex = 106;
+            this.SReleaseLabel3.Text = "RELEASE DATE";
+            // 
+            // SGenre2
+            // 
+            this.SGenre2.AutoSize = true;
+            this.SGenre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenre2.Location = new System.Drawing.Point(656, 225);
+            this.SGenre2.Name = "SGenre2";
+            this.SGenre2.Size = new System.Drawing.Size(36, 13);
+            this.SGenre2.TabIndex = 105;
+            this.SGenre2.Text = "Genre";
+            // 
+            // SGenreLabel2
+            // 
+            this.SGenreLabel2.AutoSize = true;
+            this.SGenreLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenreLabel2.Location = new System.Drawing.Point(656, 205);
+            this.SGenreLabel2.Name = "SGenreLabel2";
+            this.SGenreLabel2.Size = new System.Drawing.Size(50, 13);
+            this.SGenreLabel2.TabIndex = 104;
+            this.SGenreLabel2.Text = "GENRE";
+            // 
+            // SRating2
+            // 
+            this.SRating2.AutoSize = true;
+            this.SRating2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRating2.Location = new System.Drawing.Point(656, 184);
+            this.SRating2.Name = "SRating2";
+            this.SRating2.Size = new System.Drawing.Size(38, 13);
+            this.SRating2.TabIndex = 103;
+            this.SRating2.Text = "Rating";
+            // 
+            // SRatingLabel2
+            // 
+            this.SRatingLabel2.AutoSize = true;
+            this.SRatingLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRatingLabel2.Location = new System.Drawing.Point(656, 164);
+            this.SRatingLabel2.Name = "SRatingLabel2";
+            this.SRatingLabel2.Size = new System.Drawing.Size(54, 13);
+            this.SRatingLabel2.TabIndex = 102;
+            this.SRatingLabel2.Text = "RATING";
+            // 
+            // SLength2
+            // 
+            this.SLength2.AutoSize = true;
+            this.SLength2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLength2.Location = new System.Drawing.Point(656, 143);
+            this.SLength2.Name = "SLength2";
+            this.SLength2.Size = new System.Drawing.Size(40, 13);
+            this.SLength2.TabIndex = 101;
+            this.SLength2.Text = "Length";
+            // 
+            // SLengthLabel2
+            // 
+            this.SLengthLabel2.AutoSize = true;
+            this.SLengthLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLengthLabel2.Location = new System.Drawing.Point(656, 123);
+            this.SLengthLabel2.Name = "SLengthLabel2";
+            this.SLengthLabel2.Size = new System.Drawing.Size(57, 13);
+            this.SLengthLabel2.TabIndex = 100;
+            this.SLengthLabel2.Text = "LENGTH";
+            // 
+            // SRelease2
+            // 
+            this.SRelease2.AutoSize = true;
+            this.SRelease2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRelease2.Location = new System.Drawing.Point(656, 102);
+            this.SRelease2.Name = "SRelease2";
+            this.SRelease2.Size = new System.Drawing.Size(72, 13);
+            this.SRelease2.TabIndex = 99;
+            this.SRelease2.Text = "Release Date";
+            // 
+            // SReleaseLabel2
+            // 
+            this.SReleaseLabel2.AutoSize = true;
+            this.SReleaseLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SReleaseLabel2.Location = new System.Drawing.Point(656, 82);
+            this.SReleaseLabel2.Name = "SReleaseLabel2";
+            this.SReleaseLabel2.Size = new System.Drawing.Size(100, 13);
+            this.SReleaseLabel2.TabIndex = 98;
+            this.SReleaseLabel2.Text = "RELEASE DATE";
+            // 
+            // SGenre1
+            // 
+            this.SGenre1.AutoSize = true;
+            this.SGenre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenre1.Location = new System.Drawing.Point(176, 225);
+            this.SGenre1.Name = "SGenre1";
+            this.SGenre1.Size = new System.Drawing.Size(36, 13);
+            this.SGenre1.TabIndex = 97;
+            this.SGenre1.Text = "Genre";
+            // 
+            // SGenreLabel1
+            // 
+            this.SGenreLabel1.AutoSize = true;
+            this.SGenreLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SGenreLabel1.Location = new System.Drawing.Point(176, 205);
+            this.SGenreLabel1.Name = "SGenreLabel1";
+            this.SGenreLabel1.Size = new System.Drawing.Size(50, 13);
+            this.SGenreLabel1.TabIndex = 96;
+            this.SGenreLabel1.Text = "GENRE";
+            // 
+            // SRating1
+            // 
+            this.SRating1.AutoSize = true;
+            this.SRating1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRating1.Location = new System.Drawing.Point(176, 184);
+            this.SRating1.Name = "SRating1";
+            this.SRating1.Size = new System.Drawing.Size(38, 13);
+            this.SRating1.TabIndex = 95;
+            this.SRating1.Text = "Rating";
+            // 
+            // SRatingLabel1
+            // 
+            this.SRatingLabel1.AutoSize = true;
+            this.SRatingLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRatingLabel1.Location = new System.Drawing.Point(176, 164);
+            this.SRatingLabel1.Name = "SRatingLabel1";
+            this.SRatingLabel1.Size = new System.Drawing.Size(54, 13);
+            this.SRatingLabel1.TabIndex = 94;
+            this.SRatingLabel1.Text = "RATING";
+            // 
+            // SLength1
+            // 
+            this.SLength1.AutoSize = true;
+            this.SLength1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLength1.Location = new System.Drawing.Point(176, 143);
+            this.SLength1.Name = "SLength1";
+            this.SLength1.Size = new System.Drawing.Size(40, 13);
+            this.SLength1.TabIndex = 93;
+            this.SLength1.Text = "Length";
+            // 
+            // SLengthLabel1
+            // 
+            this.SLengthLabel1.AutoSize = true;
+            this.SLengthLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SLengthLabel1.Location = new System.Drawing.Point(176, 123);
+            this.SLengthLabel1.Name = "SLengthLabel1";
+            this.SLengthLabel1.Size = new System.Drawing.Size(57, 13);
+            this.SLengthLabel1.TabIndex = 92;
+            this.SLengthLabel1.Text = "LENGTH";
+            // 
+            // SRelease1
+            // 
+            this.SRelease1.AutoSize = true;
+            this.SRelease1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRelease1.Location = new System.Drawing.Point(176, 102);
+            this.SRelease1.Name = "SRelease1";
+            this.SRelease1.Size = new System.Drawing.Size(72, 13);
+            this.SRelease1.TabIndex = 91;
+            this.SRelease1.Text = "Release Date";
+            // 
+            // SReleaseLabel1
+            // 
+            this.SReleaseLabel1.AutoSize = true;
+            this.SReleaseLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SReleaseLabel1.Location = new System.Drawing.Point(176, 82);
+            this.SReleaseLabel1.Name = "SReleaseLabel1";
+            this.SReleaseLabel1.Size = new System.Drawing.Size(100, 13);
+            this.SReleaseLabel1.TabIndex = 90;
+            this.SReleaseLabel1.Text = "RELEASE DATE";
             // 
             // STitleLabel6
             // 
@@ -5412,6 +5892,7 @@
             // AdminCtrl
             // 
             this.AdminCtrl.BackColor = System.Drawing.Color.Transparent;
+            this.AdminCtrl.Controls.Add(this.ALogoutBtn);
             this.AdminCtrl.Controls.Add(this.adminControlDiv);
             this.AdminCtrl.Controls.Add(this.adminRemove);
             this.AdminCtrl.Controls.Add(this.adminEdit);
@@ -5427,7 +5908,7 @@
             // adminRemove
             // 
             this.adminRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminRemove.Location = new System.Drawing.Point(641, 87);
+            this.adminRemove.Location = new System.Drawing.Point(499, 88);
             this.adminRemove.Name = "adminRemove";
             this.adminRemove.Size = new System.Drawing.Size(189, 139);
             this.adminRemove.TabIndex = 3;
@@ -5437,7 +5918,7 @@
             // adminEdit
             // 
             this.adminEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminEdit.Location = new System.Drawing.Point(362, 87);
+            this.adminEdit.Location = new System.Drawing.Point(267, 88);
             this.adminEdit.Name = "adminEdit";
             this.adminEdit.Size = new System.Drawing.Size(189, 139);
             this.adminEdit.TabIndex = 2;
@@ -5448,7 +5929,7 @@
             // adminAdd
             // 
             this.adminAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminAdd.Location = new System.Drawing.Point(76, 87);
+            this.adminAdd.Location = new System.Drawing.Point(35, 88);
             this.adminAdd.Name = "adminAdd";
             this.adminAdd.Size = new System.Drawing.Size(189, 139);
             this.adminAdd.TabIndex = 1;
@@ -5691,6 +6172,7 @@
             // 
             // AccountInfoTab
             // 
+            this.AccountInfoTab.Controls.Add(this.AILogoutBtn);
             this.AccountInfoTab.Controls.Add(this.AISaveBtn);
             this.AccountInfoTab.Controls.Add(this.AIEditBtn);
             this.AccountInfoTab.Controls.Add(this.AIAccountInfoLabel);
@@ -5732,7 +6214,7 @@
             // AISaveBtn
             // 
             this.AISaveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AISaveBtn.Location = new System.Drawing.Point(693, 578);
+            this.AISaveBtn.Location = new System.Drawing.Point(502, 543);
             this.AISaveBtn.Name = "AISaveBtn";
             this.AISaveBtn.Size = new System.Drawing.Size(168, 36);
             this.AISaveBtn.TabIndex = 118;
@@ -5743,7 +6225,7 @@
             // AIEditBtn
             // 
             this.AIEditBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AIEditBtn.Location = new System.Drawing.Point(693, 578);
+            this.AIEditBtn.Location = new System.Drawing.Point(502, 542);
             this.AIEditBtn.Name = "AIEditBtn";
             this.AIEditBtn.Size = new System.Drawing.Size(168, 36);
             this.AIEditBtn.TabIndex = 117;
@@ -6155,486 +6637,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // SGenre1
-            // 
-            this.SGenre1.AutoSize = true;
-            this.SGenre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenre1.Location = new System.Drawing.Point(176, 225);
-            this.SGenre1.Name = "SGenre1";
-            this.SGenre1.Size = new System.Drawing.Size(36, 13);
-            this.SGenre1.TabIndex = 97;
-            this.SGenre1.Text = "Genre";
-            // 
-            // SGenreLabel1
-            // 
-            this.SGenreLabel1.AutoSize = true;
-            this.SGenreLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenreLabel1.Location = new System.Drawing.Point(176, 205);
-            this.SGenreLabel1.Name = "SGenreLabel1";
-            this.SGenreLabel1.Size = new System.Drawing.Size(50, 13);
-            this.SGenreLabel1.TabIndex = 96;
-            this.SGenreLabel1.Text = "GENRE";
-            // 
-            // SRating1
-            // 
-            this.SRating1.AutoSize = true;
-            this.SRating1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRating1.Location = new System.Drawing.Point(176, 184);
-            this.SRating1.Name = "SRating1";
-            this.SRating1.Size = new System.Drawing.Size(38, 13);
-            this.SRating1.TabIndex = 95;
-            this.SRating1.Text = "Rating";
-            // 
-            // SRatingLabel1
-            // 
-            this.SRatingLabel1.AutoSize = true;
-            this.SRatingLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRatingLabel1.Location = new System.Drawing.Point(176, 164);
-            this.SRatingLabel1.Name = "SRatingLabel1";
-            this.SRatingLabel1.Size = new System.Drawing.Size(54, 13);
-            this.SRatingLabel1.TabIndex = 94;
-            this.SRatingLabel1.Text = "RATING";
-            // 
-            // SLength1
-            // 
-            this.SLength1.AutoSize = true;
-            this.SLength1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLength1.Location = new System.Drawing.Point(176, 143);
-            this.SLength1.Name = "SLength1";
-            this.SLength1.Size = new System.Drawing.Size(40, 13);
-            this.SLength1.TabIndex = 93;
-            this.SLength1.Text = "Length";
-            // 
-            // SLengthLabel1
-            // 
-            this.SLengthLabel1.AutoSize = true;
-            this.SLengthLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLengthLabel1.Location = new System.Drawing.Point(176, 123);
-            this.SLengthLabel1.Name = "SLengthLabel1";
-            this.SLengthLabel1.Size = new System.Drawing.Size(57, 13);
-            this.SLengthLabel1.TabIndex = 92;
-            this.SLengthLabel1.Text = "LENGTH";
-            // 
-            // SRelease1
-            // 
-            this.SRelease1.AutoSize = true;
-            this.SRelease1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRelease1.Location = new System.Drawing.Point(176, 102);
-            this.SRelease1.Name = "SRelease1";
-            this.SRelease1.Size = new System.Drawing.Size(72, 13);
-            this.SRelease1.TabIndex = 91;
-            this.SRelease1.Text = "Release Date";
-            // 
-            // SReleaseLabel1
-            // 
-            this.SReleaseLabel1.AutoSize = true;
-            this.SReleaseLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SReleaseLabel1.Location = new System.Drawing.Point(176, 82);
-            this.SReleaseLabel1.Name = "SReleaseLabel1";
-            this.SReleaseLabel1.Size = new System.Drawing.Size(100, 13);
-            this.SReleaseLabel1.TabIndex = 90;
-            this.SReleaseLabel1.Text = "RELEASE DATE";
-            // 
-            // SGenre2
-            // 
-            this.SGenre2.AutoSize = true;
-            this.SGenre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenre2.Location = new System.Drawing.Point(656, 225);
-            this.SGenre2.Name = "SGenre2";
-            this.SGenre2.Size = new System.Drawing.Size(36, 13);
-            this.SGenre2.TabIndex = 105;
-            this.SGenre2.Text = "Genre";
-            // 
-            // SGenreLabel2
-            // 
-            this.SGenreLabel2.AutoSize = true;
-            this.SGenreLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenreLabel2.Location = new System.Drawing.Point(656, 205);
-            this.SGenreLabel2.Name = "SGenreLabel2";
-            this.SGenreLabel2.Size = new System.Drawing.Size(50, 13);
-            this.SGenreLabel2.TabIndex = 104;
-            this.SGenreLabel2.Text = "GENRE";
-            // 
-            // SRating2
-            // 
-            this.SRating2.AutoSize = true;
-            this.SRating2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRating2.Location = new System.Drawing.Point(656, 184);
-            this.SRating2.Name = "SRating2";
-            this.SRating2.Size = new System.Drawing.Size(38, 13);
-            this.SRating2.TabIndex = 103;
-            this.SRating2.Text = "Rating";
-            // 
-            // SRatingLabel2
-            // 
-            this.SRatingLabel2.AutoSize = true;
-            this.SRatingLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRatingLabel2.Location = new System.Drawing.Point(656, 164);
-            this.SRatingLabel2.Name = "SRatingLabel2";
-            this.SRatingLabel2.Size = new System.Drawing.Size(54, 13);
-            this.SRatingLabel2.TabIndex = 102;
-            this.SRatingLabel2.Text = "RATING";
-            // 
-            // SLength2
-            // 
-            this.SLength2.AutoSize = true;
-            this.SLength2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLength2.Location = new System.Drawing.Point(656, 143);
-            this.SLength2.Name = "SLength2";
-            this.SLength2.Size = new System.Drawing.Size(40, 13);
-            this.SLength2.TabIndex = 101;
-            this.SLength2.Text = "Length";
-            // 
-            // SLengthLabel2
-            // 
-            this.SLengthLabel2.AutoSize = true;
-            this.SLengthLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLengthLabel2.Location = new System.Drawing.Point(656, 123);
-            this.SLengthLabel2.Name = "SLengthLabel2";
-            this.SLengthLabel2.Size = new System.Drawing.Size(57, 13);
-            this.SLengthLabel2.TabIndex = 100;
-            this.SLengthLabel2.Text = "LENGTH";
-            // 
-            // SRelease2
-            // 
-            this.SRelease2.AutoSize = true;
-            this.SRelease2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRelease2.Location = new System.Drawing.Point(656, 102);
-            this.SRelease2.Name = "SRelease2";
-            this.SRelease2.Size = new System.Drawing.Size(72, 13);
-            this.SRelease2.TabIndex = 99;
-            this.SRelease2.Text = "Release Date";
-            // 
-            // SReleaseLabel2
-            // 
-            this.SReleaseLabel2.AutoSize = true;
-            this.SReleaseLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SReleaseLabel2.Location = new System.Drawing.Point(656, 82);
-            this.SReleaseLabel2.Name = "SReleaseLabel2";
-            this.SReleaseLabel2.Size = new System.Drawing.Size(100, 13);
-            this.SReleaseLabel2.TabIndex = 98;
-            this.SReleaseLabel2.Text = "RELEASE DATE";
-            // 
-            // SGenre3
-            // 
-            this.SGenre3.AutoSize = true;
-            this.SGenre3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenre3.Location = new System.Drawing.Point(176, 447);
-            this.SGenre3.Name = "SGenre3";
-            this.SGenre3.Size = new System.Drawing.Size(36, 13);
-            this.SGenre3.TabIndex = 113;
-            this.SGenre3.Text = "Genre";
-            // 
-            // SGenreLabel3
-            // 
-            this.SGenreLabel3.AutoSize = true;
-            this.SGenreLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenreLabel3.Location = new System.Drawing.Point(176, 427);
-            this.SGenreLabel3.Name = "SGenreLabel3";
-            this.SGenreLabel3.Size = new System.Drawing.Size(50, 13);
-            this.SGenreLabel3.TabIndex = 112;
-            this.SGenreLabel3.Text = "GENRE";
-            // 
-            // SRating3
-            // 
-            this.SRating3.AutoSize = true;
-            this.SRating3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRating3.Location = new System.Drawing.Point(176, 406);
-            this.SRating3.Name = "SRating3";
-            this.SRating3.Size = new System.Drawing.Size(38, 13);
-            this.SRating3.TabIndex = 111;
-            this.SRating3.Text = "Rating";
-            // 
-            // SRatingLabel3
-            // 
-            this.SRatingLabel3.AutoSize = true;
-            this.SRatingLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRatingLabel3.Location = new System.Drawing.Point(176, 386);
-            this.SRatingLabel3.Name = "SRatingLabel3";
-            this.SRatingLabel3.Size = new System.Drawing.Size(54, 13);
-            this.SRatingLabel3.TabIndex = 110;
-            this.SRatingLabel3.Text = "RATING";
-            // 
-            // SLength3
-            // 
-            this.SLength3.AutoSize = true;
-            this.SLength3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLength3.Location = new System.Drawing.Point(176, 365);
-            this.SLength3.Name = "SLength3";
-            this.SLength3.Size = new System.Drawing.Size(40, 13);
-            this.SLength3.TabIndex = 109;
-            this.SLength3.Text = "Length";
-            // 
-            // SLengthLabel3
-            // 
-            this.SLengthLabel3.AutoSize = true;
-            this.SLengthLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLengthLabel3.Location = new System.Drawing.Point(176, 345);
-            this.SLengthLabel3.Name = "SLengthLabel3";
-            this.SLengthLabel3.Size = new System.Drawing.Size(57, 13);
-            this.SLengthLabel3.TabIndex = 108;
-            this.SLengthLabel3.Text = "LENGTH";
-            // 
-            // SRelease3
-            // 
-            this.SRelease3.AutoSize = true;
-            this.SRelease3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRelease3.Location = new System.Drawing.Point(176, 324);
-            this.SRelease3.Name = "SRelease3";
-            this.SRelease3.Size = new System.Drawing.Size(72, 13);
-            this.SRelease3.TabIndex = 107;
-            this.SRelease3.Text = "Release Date";
-            // 
-            // SReleaseLabel3
-            // 
-            this.SReleaseLabel3.AutoSize = true;
-            this.SReleaseLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SReleaseLabel3.Location = new System.Drawing.Point(176, 304);
-            this.SReleaseLabel3.Name = "SReleaseLabel3";
-            this.SReleaseLabel3.Size = new System.Drawing.Size(100, 13);
-            this.SReleaseLabel3.TabIndex = 106;
-            this.SReleaseLabel3.Text = "RELEASE DATE";
-            // 
-            // SGenre4
-            // 
-            this.SGenre4.AutoSize = true;
-            this.SGenre4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenre4.Location = new System.Drawing.Point(656, 447);
-            this.SGenre4.Name = "SGenre4";
-            this.SGenre4.Size = new System.Drawing.Size(36, 13);
-            this.SGenre4.TabIndex = 121;
-            this.SGenre4.Text = "Genre";
-            // 
-            // SGenreLabel4
-            // 
-            this.SGenreLabel4.AutoSize = true;
-            this.SGenreLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenreLabel4.Location = new System.Drawing.Point(656, 427);
-            this.SGenreLabel4.Name = "SGenreLabel4";
-            this.SGenreLabel4.Size = new System.Drawing.Size(50, 13);
-            this.SGenreLabel4.TabIndex = 120;
-            this.SGenreLabel4.Text = "GENRE";
-            // 
-            // SRating4
-            // 
-            this.SRating4.AutoSize = true;
-            this.SRating4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRating4.Location = new System.Drawing.Point(656, 406);
-            this.SRating4.Name = "SRating4";
-            this.SRating4.Size = new System.Drawing.Size(38, 13);
-            this.SRating4.TabIndex = 119;
-            this.SRating4.Text = "Rating";
-            // 
-            // SRatingLabel4
-            // 
-            this.SRatingLabel4.AutoSize = true;
-            this.SRatingLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRatingLabel4.Location = new System.Drawing.Point(656, 386);
-            this.SRatingLabel4.Name = "SRatingLabel4";
-            this.SRatingLabel4.Size = new System.Drawing.Size(54, 13);
-            this.SRatingLabel4.TabIndex = 118;
-            this.SRatingLabel4.Text = "RATING";
-            // 
-            // SLength4
-            // 
-            this.SLength4.AutoSize = true;
-            this.SLength4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLength4.Location = new System.Drawing.Point(656, 365);
-            this.SLength4.Name = "SLength4";
-            this.SLength4.Size = new System.Drawing.Size(40, 13);
-            this.SLength4.TabIndex = 117;
-            this.SLength4.Text = "Length";
-            // 
-            // SLengthLabel4
-            // 
-            this.SLengthLabel4.AutoSize = true;
-            this.SLengthLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLengthLabel4.Location = new System.Drawing.Point(656, 345);
-            this.SLengthLabel4.Name = "SLengthLabel4";
-            this.SLengthLabel4.Size = new System.Drawing.Size(57, 13);
-            this.SLengthLabel4.TabIndex = 116;
-            this.SLengthLabel4.Text = "LENGTH";
-            // 
-            // SRelease4
-            // 
-            this.SRelease4.AutoSize = true;
-            this.SRelease4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRelease4.Location = new System.Drawing.Point(656, 324);
-            this.SRelease4.Name = "SRelease4";
-            this.SRelease4.Size = new System.Drawing.Size(72, 13);
-            this.SRelease4.TabIndex = 115;
-            this.SRelease4.Text = "Release Date";
-            // 
-            // SReleaseLabel4
-            // 
-            this.SReleaseLabel4.AutoSize = true;
-            this.SReleaseLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SReleaseLabel4.Location = new System.Drawing.Point(656, 304);
-            this.SReleaseLabel4.Name = "SReleaseLabel4";
-            this.SReleaseLabel4.Size = new System.Drawing.Size(100, 13);
-            this.SReleaseLabel4.TabIndex = 114;
-            this.SReleaseLabel4.Text = "RELEASE DATE";
-            // 
-            // SGenre5
-            // 
-            this.SGenre5.AutoSize = true;
-            this.SGenre5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenre5.Location = new System.Drawing.Point(176, 671);
-            this.SGenre5.Name = "SGenre5";
-            this.SGenre5.Size = new System.Drawing.Size(36, 13);
-            this.SGenre5.TabIndex = 129;
-            this.SGenre5.Text = "Genre";
-            // 
-            // SGenreLabel5
-            // 
-            this.SGenreLabel5.AutoSize = true;
-            this.SGenreLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenreLabel5.Location = new System.Drawing.Point(176, 651);
-            this.SGenreLabel5.Name = "SGenreLabel5";
-            this.SGenreLabel5.Size = new System.Drawing.Size(50, 13);
-            this.SGenreLabel5.TabIndex = 128;
-            this.SGenreLabel5.Text = "GENRE";
-            // 
-            // SRating5
-            // 
-            this.SRating5.AutoSize = true;
-            this.SRating5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRating5.Location = new System.Drawing.Point(176, 630);
-            this.SRating5.Name = "SRating5";
-            this.SRating5.Size = new System.Drawing.Size(38, 13);
-            this.SRating5.TabIndex = 127;
-            this.SRating5.Text = "Rating";
-            // 
-            // SRatingLabel5
-            // 
-            this.SRatingLabel5.AutoSize = true;
-            this.SRatingLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRatingLabel5.Location = new System.Drawing.Point(176, 610);
-            this.SRatingLabel5.Name = "SRatingLabel5";
-            this.SRatingLabel5.Size = new System.Drawing.Size(54, 13);
-            this.SRatingLabel5.TabIndex = 126;
-            this.SRatingLabel5.Text = "RATING";
-            // 
-            // SLength5
-            // 
-            this.SLength5.AutoSize = true;
-            this.SLength5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLength5.Location = new System.Drawing.Point(176, 589);
-            this.SLength5.Name = "SLength5";
-            this.SLength5.Size = new System.Drawing.Size(40, 13);
-            this.SLength5.TabIndex = 125;
-            this.SLength5.Text = "Length";
-            // 
-            // SLengthLabel5
-            // 
-            this.SLengthLabel5.AutoSize = true;
-            this.SLengthLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLengthLabel5.Location = new System.Drawing.Point(176, 569);
-            this.SLengthLabel5.Name = "SLengthLabel5";
-            this.SLengthLabel5.Size = new System.Drawing.Size(57, 13);
-            this.SLengthLabel5.TabIndex = 124;
-            this.SLengthLabel5.Text = "LENGTH";
-            // 
-            // SRelease5
-            // 
-            this.SRelease5.AutoSize = true;
-            this.SRelease5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRelease5.Location = new System.Drawing.Point(176, 548);
-            this.SRelease5.Name = "SRelease5";
-            this.SRelease5.Size = new System.Drawing.Size(72, 13);
-            this.SRelease5.TabIndex = 123;
-            this.SRelease5.Text = "Release Date";
-            // 
-            // SReleaseLabel5
-            // 
-            this.SReleaseLabel5.AutoSize = true;
-            this.SReleaseLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SReleaseLabel5.Location = new System.Drawing.Point(176, 528);
-            this.SReleaseLabel5.Name = "SReleaseLabel5";
-            this.SReleaseLabel5.Size = new System.Drawing.Size(100, 13);
-            this.SReleaseLabel5.TabIndex = 122;
-            this.SReleaseLabel5.Text = "RELEASE DATE";
-            // 
-            // SGenre6
-            // 
-            this.SGenre6.AutoSize = true;
-            this.SGenre6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenre6.Location = new System.Drawing.Point(656, 671);
-            this.SGenre6.Name = "SGenre6";
-            this.SGenre6.Size = new System.Drawing.Size(36, 13);
-            this.SGenre6.TabIndex = 137;
-            this.SGenre6.Text = "Genre";
-            // 
-            // SGenreLabel6
-            // 
-            this.SGenreLabel6.AutoSize = true;
-            this.SGenreLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SGenreLabel6.Location = new System.Drawing.Point(656, 651);
-            this.SGenreLabel6.Name = "SGenreLabel6";
-            this.SGenreLabel6.Size = new System.Drawing.Size(50, 13);
-            this.SGenreLabel6.TabIndex = 136;
-            this.SGenreLabel6.Text = "GENRE";
-            // 
-            // SRating6
-            // 
-            this.SRating6.AutoSize = true;
-            this.SRating6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRating6.Location = new System.Drawing.Point(656, 630);
-            this.SRating6.Name = "SRating6";
-            this.SRating6.Size = new System.Drawing.Size(38, 13);
-            this.SRating6.TabIndex = 135;
-            this.SRating6.Text = "Rating";
-            // 
-            // SRatingLabel6
-            // 
-            this.SRatingLabel6.AutoSize = true;
-            this.SRatingLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRatingLabel6.Location = new System.Drawing.Point(656, 610);
-            this.SRatingLabel6.Name = "SRatingLabel6";
-            this.SRatingLabel6.Size = new System.Drawing.Size(54, 13);
-            this.SRatingLabel6.TabIndex = 134;
-            this.SRatingLabel6.Text = "RATING";
-            // 
-            // SLength6
-            // 
-            this.SLength6.AutoSize = true;
-            this.SLength6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLength6.Location = new System.Drawing.Point(656, 589);
-            this.SLength6.Name = "SLength6";
-            this.SLength6.Size = new System.Drawing.Size(40, 13);
-            this.SLength6.TabIndex = 133;
-            this.SLength6.Text = "Length";
-            // 
-            // SLengthLabel6
-            // 
-            this.SLengthLabel6.AutoSize = true;
-            this.SLengthLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SLengthLabel6.Location = new System.Drawing.Point(656, 569);
-            this.SLengthLabel6.Name = "SLengthLabel6";
-            this.SLengthLabel6.Size = new System.Drawing.Size(57, 13);
-            this.SLengthLabel6.TabIndex = 132;
-            this.SLengthLabel6.Text = "LENGTH";
-            // 
-            // SRelease6
-            // 
-            this.SRelease6.AutoSize = true;
-            this.SRelease6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRelease6.Location = new System.Drawing.Point(656, 548);
-            this.SRelease6.Name = "SRelease6";
-            this.SRelease6.Size = new System.Drawing.Size(72, 13);
-            this.SRelease6.TabIndex = 131;
-            this.SRelease6.Text = "Release Date";
-            // 
-            // SReleaseLabel6
-            // 
-            this.SReleaseLabel6.AutoSize = true;
-            this.SReleaseLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SReleaseLabel6.Location = new System.Drawing.Point(656, 528);
-            this.SReleaseLabel6.Name = "SReleaseLabel6";
-            this.SReleaseLabel6.Size = new System.Drawing.Size(100, 13);
-            this.SReleaseLabel6.TabIndex = 130;
-            this.SReleaseLabel6.Text = "RELEASE DATE";
-            // 
             // searchPictureBox
             // 
             this.searchPictureBox.Image = global::MovieTheater.Properties.Resources.search;
@@ -6646,6 +6648,7 @@
             // 
             // searchBtn
             // 
+            this.searchBtn.Image = global::MovieTheater.Properties.Resources.search_icon;
             this.searchBtn.Location = new System.Drawing.Point(937, 207);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(20, 20);
@@ -6666,10 +6669,10 @@
             // LoginBtn
             // 
             this.LoginBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.LoginBtn.Image = ((System.Drawing.Image)(resources.GetObject("LoginBtn.Image")));
-            this.LoginBtn.Location = new System.Drawing.Point(800, 128);
+            this.LoginBtn.Image = global::MovieTheater.Properties.Resources.Login_button;
+            this.LoginBtn.Location = new System.Drawing.Point(720, 128);
             this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(160, 32);
+            this.LoginBtn.Size = new System.Drawing.Size(240, 32);
             this.LoginBtn.TabIndex = 73;
             this.LoginBtn.TabStop = false;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
@@ -6679,10 +6682,10 @@
             // homeBtn
             // 
             this.homeBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
+            this.homeBtn.Image = global::MovieTheater.Properties.Resources.Home_button;
             this.homeBtn.Location = new System.Drawing.Point(0, 128);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(160, 32);
+            this.homeBtn.Size = new System.Drawing.Size(240, 32);
             this.homeBtn.TabIndex = 72;
             this.homeBtn.TabStop = false;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
@@ -6692,25 +6695,15 @@
             // browseBtn
             // 
             this.browseBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.browseBtn.Image = ((System.Drawing.Image)(resources.GetObject("browseBtn.Image")));
-            this.browseBtn.Location = new System.Drawing.Point(160, 128);
+            this.browseBtn.Image = global::MovieTheater.Properties.Resources.Browse_button;
+            this.browseBtn.Location = new System.Drawing.Point(240, 128);
             this.browseBtn.Name = "browseBtn";
-            this.browseBtn.Size = new System.Drawing.Size(160, 32);
+            this.browseBtn.Size = new System.Drawing.Size(240, 32);
             this.browseBtn.TabIndex = 71;
             this.browseBtn.TabStop = false;
             this.browseBtn.Click += new System.EventHandler(this.browseBtn_Click);
             this.browseBtn.MouseEnter += new System.EventHandler(this.browseBtn_MouseEnter);
             this.browseBtn.MouseLeave += new System.EventHandler(this.browseBtn_MouseLeave);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(320, 128);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox3.TabIndex = 70;
-            this.pictureBox3.TabStop = false;
             // 
             // NSPoster10
             // 
@@ -7492,30 +7485,20 @@
             // contactUsBtn
             // 
             this.contactUsBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.contactUsBtn.Image = ((System.Drawing.Image)(resources.GetObject("contactUsBtn.Image")));
-            this.contactUsBtn.Location = new System.Drawing.Point(640, 128);
+            this.contactUsBtn.Image = global::MovieTheater.Properties.Resources.Contact_us_button;
+            this.contactUsBtn.Location = new System.Drawing.Point(480, 128);
             this.contactUsBtn.Name = "contactUsBtn";
-            this.contactUsBtn.Size = new System.Drawing.Size(160, 32);
+            this.contactUsBtn.Size = new System.Drawing.Size(240, 32);
             this.contactUsBtn.TabIndex = 60;
             this.contactUsBtn.TabStop = false;
             this.contactUsBtn.Click += new System.EventHandler(this.contactUsBtn_Click);
             this.contactUsBtn.MouseEnter += new System.EventHandler(this.contactUsBtn_MouseEnter);
             this.contactUsBtn.MouseLeave += new System.EventHandler(this.contactUsBtn_MouseLeave);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(480, 128);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(160, 32);
-            this.pictureBox4.TabIndex = 59;
-            this.pictureBox4.TabStop = false;
-            // 
             // Header
             // 
             this.Header.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Header.Image = ((System.Drawing.Image)(resources.GetObject("Header.Image")));
+            this.Header.Image = global::MovieTheater.Properties.Resources.banner;
             this.Header.InitialImage = ((System.Drawing.Image)(resources.GetObject("Header.InitialImage")));
             this.Header.Location = new System.Drawing.Point(0, 0);
             this.Header.Name = "Header";
@@ -7523,13 +7506,45 @@
             this.Header.TabIndex = 57;
             this.Header.TabStop = false;
             // 
+            // AILogoutBtn
+            // 
+            this.AILogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AILogoutBtn.Location = new System.Drawing.Point(693, 543);
+            this.AILogoutBtn.Name = "AILogoutBtn";
+            this.AILogoutBtn.Size = new System.Drawing.Size(168, 36);
+            this.AILogoutBtn.TabIndex = 119;
+            this.AILogoutBtn.Text = "Logout";
+            this.AILogoutBtn.UseVisualStyleBackColor = true;
+            this.AILogoutBtn.Click += new System.EventHandler(this.AILogoutBtn_Click);
+            // 
+            // SSearchString
+            // 
+            this.SSearchString.AutoSize = true;
+            this.SSearchString.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SSearchString.Location = new System.Drawing.Point(166, 29);
+            this.SSearchString.Name = "SSearchString";
+            this.SSearchString.Size = new System.Drawing.Size(55, 18);
+            this.SSearchString.TabIndex = 138;
+            this.SSearchString.Text = "Search";
+            // 
+            // ALogoutBtn
+            // 
+            this.ALogoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ALogoutBtn.Location = new System.Drawing.Point(731, 88);
+            this.ALogoutBtn.Name = "ALogoutBtn";
+            this.ALogoutBtn.Size = new System.Drawing.Size(189, 139);
+            this.ALogoutBtn.TabIndex = 75;
+            this.ALogoutBtn.Text = "Logout";
+            this.ALogoutBtn.UseVisualStyleBackColor = true;
+            this.ALogoutBtn.Click += new System.EventHandler(this.ALogoutBtn_Click);
+            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1159, 733);
+            this.ClientSize = new System.Drawing.Size(1193, 733);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "homepage";
@@ -7574,7 +7589,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoginBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.browseBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NSPoster8)).EndInit();
@@ -7641,7 +7655,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundAI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
             this.ResumeLayout(false);
 
@@ -7656,9 +7669,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox contactUsBtn;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox browseBtn;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox homeBtn;
         private System.Windows.Forms.PictureBox LoginBtn;
         private System.Windows.Forms.Label AdminLabel;
@@ -8208,6 +8219,9 @@
         private System.Windows.Forms.Label SRelease2;
         private System.Windows.Forms.Label SReleaseLabel2;
         private System.Windows.Forms.PictureBox searchPictureBox;
+        private System.Windows.Forms.Button AILogoutBtn;
+        private System.Windows.Forms.Label SSearchString;
+        private System.Windows.Forms.Button ALogoutBtn;
 
     }
 }

@@ -125,6 +125,7 @@ namespace MovieTheater
             MDSynopsisLabel.Parent = backgroundMD;
 
             // Search page
+            SSearchString.Parent = backgroundS;
             STitleLabel1.Parent = backgroundS;
             STitleLabel2.Parent = backgroundS;
             STitleLabel3.Parent = backgroundS;
@@ -270,6 +271,9 @@ namespace MovieTheater
             AICCNumber.Parent = backgroundAI;
             AISecurityCode.Parent = backgroundAI;
             AIExpDate.Parent = backgroundAI;
+
+            homeLogged.Parent = Header;
+            checkLog.Parent = Header;
         }
 
         // get movie title from a label with a rating on it. utility function.
@@ -345,7 +349,11 @@ namespace MovieTheater
         /* Login button click */
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (logged)
+            if (adminLogged)
+            {
+                BodyTabControl.SelectedTab = AdminCtrl;
+            }
+             else if (logged)
             {
                 refreshAccountInfo();
                 BodyTabControl.SelectedTab = AccountInfoTab;
@@ -362,13 +370,27 @@ namespace MovieTheater
         /* Login button enter */
         private void LoginBtn_MouseEnter(object sender, EventArgs e)
         {
-            LoginBtn.Image = new Bitmap("../../Resources/login_button_hover.jpg");
+            if (logged || adminLogged)
+            {
+                LoginBtn.Image = new Bitmap("../../Resources/account_button_hover.jpg");
+            }
+            else
+            {
+                LoginBtn.Image = new Bitmap("../../Resources/login_button_hover.jpg");
+            }
         }
 
         /* Login button exit */
         private void LoginBtn_MouseLeave(object sender, EventArgs e)
         {
-            LoginBtn.Image = new Bitmap("../../Resources/login_button.jpg");
+            if (logged || adminLogged)
+            {
+                LoginBtn.Image = new Bitmap("../../Resources/account_button.jpg");
+            }
+            else
+            {
+                LoginBtn.Image = new Bitmap("../../Resources/login_button.jpg");
+            }
         }
 
         /* browse button click */
@@ -402,13 +424,13 @@ namespace MovieTheater
         /* Contact Us button enter */
         private void contactUsBtn_MouseEnter(object sender, EventArgs e)
         {
-            contactUsBtn.Image = new Bitmap("../../Resources/contactus_button_hover.jpg");
+            contactUsBtn.Image = new Bitmap("../../Resources/contact_us_button_hover.jpg");
         }
 
         /* Contact Us button exit */
         private void contactUsBtn_MouseLeave(object sender, EventArgs e)
         {
-            contactUsBtn.Image = new Bitmap("../../Resources/contactus_button.jpg");
+            contactUsBtn.Image = new Bitmap("../../Resources/contact_us_button.jpg");
         }
 
         //---------------------------------------------------------------------------------------------------------------------
@@ -1687,6 +1709,8 @@ namespace MovieTheater
             SGenre5.Visible = false;
             SGenre6.Visible = false;
 
+            SSearchString.Text = "\"" + search + "\"";
+
             // check if a file exists
             if (System.IO.File.Exists(MoviesPath))
             {
@@ -2545,6 +2569,8 @@ namespace MovieTheater
 
                         MessageBox.Show("Successfully signed in!");
                         logged = true;
+
+                        LoginBtn.Image = new Bitmap("../../Resources/account_button.jpg");
 
                         homeLogged.Visible = true;
                         checkLog.Visible = true;
@@ -4115,10 +4141,31 @@ namespace MovieTheater
 
         private void orderTicketsbtn_Click(object sender, EventArgs e)
         {
-            BodyTabControl.SelectedTab = Ticket;
             displayMovieTitle.Text = MDTitleLabel.Text.ToString();
             displayRating.Text = MDRatingLabel.Text.ToString();
             displayLength.Text = MDLengthLabel.Text.ToString();
+            BodyTabControl.SelectedTab = Ticket;
+        }
+
+        // log out stuff
+        private void AILogoutBtn_Click(object sender, EventArgs e)
+        {
+            logout();
+        }
+
+        public void logout()
+        {
+            MessageBox.Show("You have been logged out.");
+            logged = false;
+            adminLogged = false;
+            LoginBtn.Image = new Bitmap("../../Resources/login_button.jpg");
+            updateHomePage();
+            BodyTabControl.SelectedTab = HomeTab;
+        }
+
+        private void ALogoutBtn_Click(object sender, EventArgs e)
+        {
+            logout();
         }
 
         //-----------------------------------------------------------------------------------------------------
