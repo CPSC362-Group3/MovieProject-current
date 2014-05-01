@@ -316,4 +316,26 @@
     <Showtime8>10:20System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
     <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
   </Movie>
+  <Movie>
+    <Title>Oculus</Title>
+    <Length>104 min</Length>
+    <Synopsis>A woman tries to exonerate her brother, who was convicted of murder, by proving that the crime was committed by a supernatural phenomenon.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Horror</Genre>
+    <Rating>R</Rating>
+    <Actor>Karen Gillan, Brenton Thwaites, Katee Sackhoff, Rory Cochrane, Garret Ryan, Annalise Basso, James Laffetry</Actor>
+    <Director>Mike Flanagan</Director>
+    <ReleaseDate>04/11/2014</ReleaseDate>
+    <PosterPath>C:\Users\Leslie\Documents\GitHub\MovieProject-current\MovieTheater\Posters\oculus.jpg</PosterPath>
+    <Showtime1>12:30System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
+    <Showtime2> 1:40System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
+    <Showtime3> 3:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
+    <Showtime4> 5:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
+    <Showtime5>10:30System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
+    <Showtime6>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
+    <Showtime7>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
+    <Showtime8>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
+    <Showtime9>  :System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
+  </Movie>
 </Movies>
