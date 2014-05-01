@@ -6245,9 +6245,9 @@
             // 
             this.SeatticketLabel.BackColor = System.Drawing.Color.White;
             this.SeatticketLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeatticketLabel.Location = new System.Drawing.Point(380, 142);
+            this.SeatticketLabel.Location = new System.Drawing.Point(380, 147);
             this.SeatticketLabel.Name = "SeatticketLabel";
-            this.SeatticketLabel.Size = new System.Drawing.Size(135, 34);
+            this.SeatticketLabel.Size = new System.Drawing.Size(82, 24);
             this.SeatticketLabel.TabIndex = 9;
             this.SeatticketLabel.Text = "Seat";
             this.SeatticketLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
