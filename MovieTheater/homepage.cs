@@ -2494,9 +2494,57 @@ namespace MovieTheater
             lengthSeattxt.Text = MDLengthLabel.Text.ToString();
             ShowtimeSeattxt.Text = displayShowtimelbl.Text.ToString();
 
-
+            HasMovieTimePassed(displayShowtimelbl.Text);
 
         }
+
+
+        DateTime selectedDate = new DateTime();
+
+        private bool HasMovieTimePassed(string movieTime)
+        {
+            bool flag = false;
+            var currTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
+            int sentinel;
+
+            Console.Out.Write("Selected DateTimeObj: " + selectedDate.ToString() + "\n");
+            Console.Out.Write("Current  DateTimeObj: " + currTime.ToString() + "\n");
+
+            if (selectedDate != null)
+            {
+                sentinel = currTime.CompareTo(selectedDate);
+                if (sentinel > 0)
+                {
+                    flag = true;
+                }
+                else if (sentinel == 0)
+                {
+                    //CHECK TIME
+                }
+                else return flag;
+
+            }
+
+            //string currTime = DateTime.Now.ToString("h:mmtt").ToLower();
+            //string time = movieTime.ToLower();
+
+            //string currMeridian = currTime.Substring(currTime.Length - 2);
+            //string movMeridian = time.Substring(time.Length - 2);
+            ////after checking dates
+            //if (movMeridian == "am" && currMeridian == "pm")
+            //    flag = true;
+            //if (movMeridian == "pm" && currMeridian == "am")
+
+            return flag;
+
+        }
+
+
+
+
+
+
+
 
         //GLOBAL VARIABLES SO I CAN SAVE MY INFO FOR TIXS
         string time, date, movieTitle;
@@ -2999,6 +3047,7 @@ namespace MovieTheater
         private void showtimeDate_ValueChanged(object sender, EventArgs e)
         {
             displayDatelbl.Text = showtimeDate.Value.Date.ToLongDateString();
+            selectedDate = showtimeDate.Value.Date;
         }
 
         private void showtime1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
