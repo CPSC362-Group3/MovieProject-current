@@ -123,6 +123,16 @@ namespace MovieTheater.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coming_soon_div {
+            get {
+                object obj = ResourceManager.GetObject("coming_soon_div", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Contact_us_button {
             get {
                 object obj = ResourceManager.GetObject("Contact_us_button", resourceCulture);
@@ -156,6 +166,16 @@ namespace MovieTheater.Properties {
         internal static System.Drawing.Bitmap movie_information_div {
             get {
                 object obj = ResourceManager.GetObject("movie_information_div", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap now_showing_div {
+            get {
+                object obj = ResourceManager.GetObject("now_showing_div", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -114,6 +114,8 @@
     <None Include="Resources\Contact_us_button.jpg" />
     <None Include="Resources\login_button.jpg" />
     <None Include="Resources\banner.jpg" />
+    <None Include="Resources\coming_soon_div.jpg" />
+    <None Include="Resources\now_showing_div.jpg" />
     <Content Include="Resources\pictureofplace.Image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

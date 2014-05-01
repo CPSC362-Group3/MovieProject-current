@@ -49,22 +49,31 @@
     <Title>The Protector 2</Title>
     <Length>104 min</Length>
     <Synopsis>When the owner of a major elephant camp is murdered, Kham finds himself the number one suspect and on the run from both the police and the deceased's vengeful twin nieces. But luck is on Kham's side when he runs into an Interpol agent sent to Thailand on a secret mission.</Synopsis>
-    <Description></Description>
+    <Description>d</Description>
     <Genre>Action</Genre>
     <Rating>R</Rating>
     <Actor>Tony Jaa, RZA, Petchtai Wongkamlao, Jeeja Yanin, Marrese Crump, Yayaing Phongam, Kazo Patrick Tang</Actor>
     <Director>Prachya Pinkaew</Director>
     <ReleaseDate>Friday, May 9, 2014</ReleaseDate>
     <PosterPath>../../Posters/theprotector_019.jpg</PosterPath>
-    <Showtime1></Showtime1>
-    <Showtime2></Showtime2>
-    <Showtime3></Showtime3>
-    <Showtime4></Showtime4>
-    <Showtime5></Showtime5>
-    <Showtime6></Showtime6>
-    <Showtime7></Showtime7>
-    <Showtime8></Showtime8>
-    <Showtime9></Showtime9>
+    <Showtime1>
+    </Showtime1>
+    <Showtime2>
+    </Showtime2>
+    <Showtime3>
+    </Showtime3>
+    <Showtime4>
+    </Showtime4>
+    <Showtime5>
+    </Showtime5>
+    <Showtime6>
+    </Showtime6>
+    <Showtime7>
+    </Showtime7>
+    <Showtime8>
+    </Showtime8>
+    <Showtime9>
+    </Showtime9>
   </Movie>
   <Movie>
     <Title>Captain America: The Winter Soldier</Title>
@@ -106,117 +115,6 @@
     <Showtime4>  :</Showtime4>
     <Showtime5>  :</Showtime5>
     <Showtime6>  :</Showtime6>
-    <Showtime7>  :</Showtime7>
-    <Showtime8>  :</Showtime8>
-    <Showtime9>  :</Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Maleficent</Title>
-    <Length>98 min</Length>
-    <Synopsis>A vindictive fairy is driven to curse an infant princess only to realize the child may be the only one who can restore peace.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Adventure</Genre>
-    <Rating>PG</Rating>
-    <Actor>Angelina Jolie, Sharlto Copley, Elle Fanning, Sam Riley, Imelda Staunton, Juno Temple, Lesley Manville, Brenton Thwaites, Miranda Richardson</Actor>
-    <Director>Robert Stromberg</Director>
-    <ReleaseDate>Friday, May 30, 2014</ReleaseDate>
-    <PosterPath>../../Posters/maleficent.jpg</PosterPath>
-    <Showtime1>  :</Showtime1>
-    <Showtime2>  :</Showtime2>
-    <Showtime3>  :</Showtime3>
-    <Showtime4>  :</Showtime4>
-    <Showtime5>  :</Showtime5>
-    <Showtime6>  :</Showtime6>
-    <Showtime7>  :</Showtime7>
-    <Showtime8>  :</Showtime8>
-    <Showtime9>  :</Showtime9>
-  </Movie>
-  <Movie>
-    <Title>X-Men: Days of Future Past</Title>
-    <Length>130 min</Length>
-    <Synopsis>The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Action</Genre>
-    <Rating>PG-13</Rating>
-    <Actor>Hugh Jackman, James McAvoy, Michael Fassbender, Jennifer Lawrence, Nicholas Hoult, Patrick Stewart, Ian McKellen, Ellen Page, Anna Paquin, Halle Berry, Shawn Ashmore, Peter Dinklage</Actor>
-    <Director>Bryan Singer</Director>
-    <ReleaseDate>Friday, May 23, 2014</ReleaseDate>
-    <PosterPath>../../Posters/xmendofp.jpg</PosterPath>
-    <Showtime1>  :</Showtime1>
-    <Showtime2>  :</Showtime2>
-    <Showtime3>  :</Showtime3>
-    <Showtime4>  :</Showtime4>
-    <Showtime5>  :</Showtime5>
-    <Showtime6>  :</Showtime6>
-    <Showtime7>  :</Showtime7>
-    <Showtime8>  :</Showtime8>
-    <Showtime9>  :</Showtime9>
-  </Movie>
-    <Movie>
-    <Title>Godzilla</Title>
-    <Length>123 min</Length>
-    <Synopsis>The world's most famous monster is pitted against malevolent creatures who, bolstered by humanity's scientific arrogance, threaten our very existence.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Sci-Fi</Genre>
-    <Rating>PG-13</Rating>
-    <Actor>Aaron Johnson, Elizabeth Olsen, Bryan Cranston, Ken Watanabe, David Strathairn</Actor>
-    <Director>Gareth Edwards</Director>
-    <ReleaseDate>Friday, May 16, 2014</ReleaseDate>
-    <PosterPath>../../Posters/godzilla.jpg</PosterPath>
-      <Showtime1>  :</Showtime1>
-    <Showtime2>  :</Showtime2>
-    <Showtime3>  :</Showtime3>
-    <Showtime4>  :</Showtime4>
-    <Showtime5>  :</Showtime5>
-    <Showtime6>  :</Showtime6>
-    <Showtime7>  :</Showtime7>
-    <Showtime8>  :</Showtime8>
-    <Showtime9>  :</Showtime9>
-  </Movie>
-  </Movie>
-    <Movie>
-    <Title>A Million Ways to Die in the West</Title>
-    <Length>?? min</Length>
-    <Synopsis>As a cowardly farmer begins to fall for the mysterious new woman in town, he must put his new-found courage to the test when her husband, a notorious gun-slinger, announces his arrival</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Western</Genre>
-    <Rating>R</Rating>
-    <Actor>Seth MacFarlane, Charlize Theron, Liam Neeson, Amanda Seyfried, Sarah Silverman, Giovanni Ribisi, Neil Patrick Harris</Actor>
-    <Director>Seth MacFarlane</Director>
-    <ReleaseDate>Friday, May 30, 2014</ReleaseDate>
-    <PosterPath>../../Posters/amillionways.jpg</PosterPath>
-    <Showtime1>  :</Showtime1>
-    <Showtime2>  :</Showtime2>
-    <Showtime3>  :</Showtime3>
-    <Showtime4>  :</Showtime4>
-    <Showtime5>  :</Showtime5>
-    <Showtime6>  :</Showtime6>
-    <Showtime7>  :</Showtime7>
-    <Showtime8>  :</Showtime8>
-    <Showtime9>  :</Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Walk Of Shame</Title>
-    <Length>95 min</Length>
-    <Synopsis>A reporter's dream of becoming a news anchor is compromised after a one-night stand leaves her stranded in downtown L.A. without a phone, car, ID or money - and only 8 hours to make it to the most important job interview of her life.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Comedy</Genre>
-    <Rating>R</Rating>
-    <Actor>Elizabeth Banks, James Marsden, Gillian Jacobs, Sarah Wright, Ethan Suplee, Bill Burr, Ken Davitian, Lawrence Gilliard Jr., Alphonso McAuley, Da'Vone McDonld, Eric Etebari, Oliver Hudson</Actor>
-    <Director>Steven Brill</Director>
-    <ReleaseDate>Friday, May 2, 2014</ReleaseDate>
-    <PosterPath>../../Posters/walkofshame.jpg</PosterPath>
-    <Showtime1>  9:00AM</Showtime1>
-    <Showtime2>  11:30AM</Showtime2>
-    <Showtime3>  2:00PM</Showtime3>
-    <Showtime4>  4:30PM</Showtime4>
-    <Showtime5>  7:00PM</Showtime5>
-    <Showtime6>  9:30PM</Showtime6>
     <Showtime7>  :</Showtime7>
     <Showtime8>  :</Showtime8>
     <Showtime9>  :</Showtime9>
@@ -320,7 +218,7 @@
     <Director>Mark Webb</Director>
     <ReleaseDate>Friday, May 2, 2014</ReleaseDate>
     <PosterPath>../../Posters/spiderman2.jpg</PosterPath>
-    <Showtime1>9:20</Showtime1>
+    <Showtime1>92:0</Showtime1>
     <Showtime2>11:00</Showtime2>
     <Showtime3>14:0</Showtime3>
     <Showtime4>23:0</Showtime4>
@@ -329,6 +227,28 @@
     <Showtime7>60:0</Showtime7>
     <Showtime8>84:0</Showtime8>
     <Showtime9>10:30</Showtime9>
+  </Movie>
+  <Movie>
+    <Title>Walk Of Shame</Title>
+    <Length>95 min</Length>
+    <Synopsis>A reporter's dream of becoming a news anchor is compromised after a one-night stand leaves her stranded in downtown L.A. without a phone, car, ID or money - and only 8 hours to make it to the most important job interview of her life.</Synopsis>
+    <Description>
+    </Description>
+    <Genre>Comedy</Genre>
+    <Rating>R</Rating>
+    <Actor>Elizabeth Banks, James Marsden, Gillian Jacobs, Sarah Wright, Ethan Suplee, Bill Burr, Ken Davitian, Lawrence Gilliard Jr., Alphonso McAuley, Da'Vone McDonld, Eric Etebari, Oliver Hudson</Actor>
+    <Director>Steven Brill</Director>
+    <ReleaseDate>Friday, May 2, 2014</ReleaseDate>
+    <PosterPath>../../Posters/walkofshame.jpg</PosterPath>
+    <Showtime1>  :</Showtime1>
+    <Showtime2>  :</Showtime2>
+    <Showtime3>  :</Showtime3>
+    <Showtime4>  :</Showtime4>
+    <Showtime5>  :</Showtime5>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
     <Title>The Other Woman</Title>
@@ -375,179 +295,52 @@
     <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
-    <Title>Bears</Title>
-    <Length>78 min</Length>
-    <Synopsis>A documentary that follows an Alaskan bear family as its young cubs are taught life's most important lessons.</Synopsis>
+    <Title>213</Title>
+    <Length>sad</Length>
+    <Synopsis>ad</Synopsis>
     <Description>
     </Description>
-    <Genre>Documentary</Genre>
-    <Rating>G</Rating>
-    <Actor>John C. Reilly</Actor>
-    <Director>Alastair Fothergill, Keith Scholey</Director>
-    <ReleaseDate>Friday, 18 April 2014</ReleaseDate>
-    <PosterPath>../../Posters/bears.jpg</PosterPath>
+    <Genre>
+    </Genre>
+    <Rating>
+    </Rating>
+    <Actor>
+    </Actor>
+    <Director>
+    </Director>
+    <ReleaseDate>Wednesday, April 30, 2014</ReleaseDate>
+    <PosterPath>openFileDialog1</PosterPath>
     <Showtime1> 9:30AM</Showtime1>
-    <Showtime2> 11:30AM</Showtime2>
-    <Showtime3> 1:30PM</Showtime3>
-    <Showtime4> 3:30PM</Showtime4>
-    <Showtime5> 5:30PM</Showtime5>
-    <Showtime6> 7:30PM</Showtime6>
-    <Showtime7> 9:30PM:</Showtime7>
-    <Showtime8> :</Showtime8>
-    <Showtime9> :</Showtime9>
+    <Showtime2> 8:00PM</Showtime2>
+    <Showtime3>  :</Showtime3>
+    <Showtime4>  :</Showtime4>
+    <Showtime5>  :</Showtime5>
+    <Showtime6>  :</Showtime6>
+    <Showtime7>  :</Showtime7>
+    <Showtime8>  :</Showtime8>
+    <Showtime9>  :</Showtime9>
   </Movie>
   <Movie>
-    <Title>Heaven Is for Real</Title>
-    <Length>99 min</Length>
-    <Synopsis>A small-town father must find the courage and conviction to share his son's extraordinary, life-changing experience with the world.</Synopsis>
+    <Title>The Other Woman</Title>
+    <Length>109 min</Length>
+    <Synopsis>After discovering her boyfriend is married, Carly soon meets the wife he's been cheating on. And when yet another affair is discovered, all three women team up to plot mutual revenge on the three-timing SOB.</Synopsis>
     <Description>
     </Description>
-    <Genre>Drama</Genre>
-    <Rating>PG</Rating>
-    <Actor>Greg Kinnear, Kelly Reilly, Connor Corum, Thomas Haden Church, Margo Martindale, Jacob Vargas, Nancy Sorel, Lane Styles</Actor>
-    <Director>Randall Wallace</Director>
-    <ReleaseDate>Friday, 16 April 2014</ReleaseDate>
-    <PosterPath>../../Posters/heavenisforreal.jpg</PosterPath>
-    <Showtime1> 9:00AM</Showtime1>
-    <Showtime2> 11:30AM</Showtime2>
-    <Showtime3> 2:00PM</Showtime3>
-    <Showtime4> 4:30PM</Showtime4>
-    <Showtime5> 7:00PM</Showtime5>
-    <Showtime6> 9:30PM</Showtime6>
-    <Showtime7> </Showtime7>
-    <Showtime8> </Showtime8>
-    <Showtime9> </Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Brick Mansions</Title>
-    <Length>90 min</Length>
-    <Synopsis>An undercover Detroit cop navigates a dangerous neighborhood that's surrounded by a containment wall with the help of an ex-con in order to bring down a crime lord and his plot to devastate the entire city.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Action</Genre>
-    <Rating>PG-13</Rating>
-    <Actor>Paul Walker, David Belle, RZA</Actor>
-    <Director>Camille Delamarre</Director>
-    <ReleaseDate>Friday, April 25, 2014</ReleaseDate>
-    <PosterPath>../../Posters/brickmansions.jpg</PosterPath>
-    <Showtime1> 9:00AM</Showtime1>
-    <Showtime2> 11:00AM</Showtime2>
-    <Showtime3> 1:00PM</Showtime3>
-    <Showtime4> 3:00PM</Showtime4>
-    <Showtime5> 5:00PM</Showtime5>
-    <Showtime6> 7:00PM</Showtime6>
-    <Showtime7> 9:00PM</Showtime7>
-    <Showtime8> 11:00PM</Showtime8>
-    <Showtime9> </Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Cesar Chavez</Title>
-    <Length>102 min</Length>
-    <Synopsis>A biography of the civil-rights activist and labor organizer Cesar Chavez.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Biography</Genre>
-    <Rating>PG-13</Rating>
-    <Actor>Michael Peña, America Ferrera, Rosario Dawson, John Malkovich</Actor>
-    <Director>Diego Luna</Director>
-    <ReleaseDate>Friday, March 28, 2014</ReleaseDate>
-    <PosterPath>../../Posters/cesarchavez.jpg</PosterPath>
-    <Showtime1> 9:15AM</Showtime1>
-    <Showtime2> 11:20AM</Showtime2>
-    <Showtime3> 2:10pM</Showtime3>
-    <Showtime4> 4:45PM</Showtime4>
-    <Showtime5> </Showtime5>
-    <Showtime6> </Showtime6>
-    <Showtime7> </Showtime7>
-    <Showtime8> </Showtime8>
-    <Showtime9> </Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Bad Words</Title>
-    <Length>89 min</Length>
-    <Synopsis>A spelling bee loser sets out to exact revenge by finding a loophole and attempting to win as an adult.</Synopsis>
-    <Description></Description>
     <Genre>Comedy</Genre>
-    <Rating>R</Rating>
-    <Actor>Jason Bateman, Kathryn Hahn, Philip Baker Hall, Allison Janney, Ben Falcone</Actor>
-    <Director>Jason Bateman</Director>
-    <ReleaseDate>Friday, March 14, 2014</ReleaseDate>
-    <PosterPath>../../Posters/badwords.jpg</PosterPath>
-    <Showtime1> 10:00AM</Showtime1>
-    <Showtime2> 12:00PM</Showtime2>
-    <Showtime3> 2:00PM</Showtime3>
-    <Showtime4> 4:00PM</Showtime4>
-    <Showtime5> 6:00PM</Showtime5>
-    <Showtime6> 8:00PM</Showtime6>
-    <Showtime7></Showtime7>
-    <Showtime8></Showtime8>
-    <Showtime9></Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Mr. Peabody & Sherman</Title>
-    <Length>92 min</Length>
-    <Synopsis>The time-travelling adventures of an advanced canine and his adopted son, as they endeavor to fix a time rift they created.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Animation</Genre>
-    <Rating>PG</Rating>
-    <Actor>Ty Burrell, Stephen Colbert, Ariel Winter, Patrick Warburton, Stanley Tucci, Lake Bell, Leslie Mann, Mel Brooks, Allison Janney</Actor>
-    <Director>Rob Minkoff</Director>
-    <ReleaseDate>Friday, March 28, 2014</ReleaseDate>
-    <PosterPath>../../Posters/mrpeabodyandsherman.jpg</PosterPath>
-    <Showtime1> 9:45AM</Showtime1>
-    <Showtime2> 12:30PM</Showtime2>
-    <Showtime3> 3:05PM</Showtime3>
-    <Showtime4> 5:45PM</Showtime4>
-    <Showtime5> </Showtime5>
-    <Showtime6> </Showtime6>
-    <Showtime7> </Showtime7>
-    <Showtime8> </Showtime8>
-    <Showtime9> </Showtime9>
-  </Movie>
-  <Movie>
-    <Title>300: Rise of An Empire</Title>
-    <Length>102 min</Length>
-    <Synopsis>Greek general Themistokles leads the charge against invading Persian forces led by mortal-turned-god Xerxes and Artemisia, vengeful commander of the Persian navy.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Action</Genre>
-    <Rating>R</Rating>
-    <Actor>Sullivan Stapleton, Eva Green, Lena Headey, Rodrigo Santoro, Jack O'Connell, David Wenham</Actor>
-    <Director>Noam Murro</Director>
-    <ReleaseDate>Friday, March 7, 2014</ReleaseDate>
-    <PosterPath>../../Posters/300rise.jpg</PosterPath>
-    <Showtime1> 12:00PM</Showtime1>
-    <Showtime2> 2:20PM</Showtime2>
-    <Showtime3> 4:45PM</Showtime3>
-    <Showtime4> 7:00PM</Showtime4>
-    <Showtime5> 9:15PM</Showtime5>
-    <Showtime6> </Showtime6>
-    <Showtime7> </Showtime7>
-    <Showtime8> </Showtime8>
-    <Showtime9> </Showtime9>
-  </Movie>
-  <Movie>
-    <Title>Oculus</Title>
-    <Length>104 min</Length>
-    <Synopsis>A woman tries to exonerate her brother, who was convicted of murder, by proving that the crime was committed by a supernatural phenomenon.</Synopsis>
-    <Description>
-    </Description>
-    <Genre>Horror</Genre>
-    <Rating>R</Rating>
-    <Actor>Karen Gillan, Brenton Thwaites, Katee Sackhoff, Rory Cochrane</Actor>
-    <Director>Mike Flanagan</Director>
-    <ReleaseDate>Friday, April 11, 2014</ReleaseDate>
-    <PosterPath>../../Posters/oculus.jpg</PosterPath>
-    <Showtime1> 3:00PM</Showtime1>
-    <Showtime2> 5:00PM</Showtime2>
-    <Showtime3> 7:00PM</Showtime3>
-    <Showtime4> 9:00PM</Showtime4>
-    <Showtime5> 11:00PM</Showtime5>
-    <Showtime6> </Showtime6>
-    <Showtime7> </Showtime7>
-    <Showtime8> </Showtime8>
-    <Showtime9> </Showtime9>
+    <Rating>PG-13</Rating>
+    <Actor>Cameron Diaz, Leslie Mann, Don Johnson, Kate Upton, Taylor Kinney, Nicki Minaj, Kenneth Maharaj, Victor Cruz, Nikolaj Coster, David Thornton, Madison McKinley, Alyshia Ochse</Actor>
+    <Director>Nick Cassavetes</Director>
+    <ReleaseDate>04/25/2014</ReleaseDate>
+    <PosterPath>C:\Users\Nick\Documents\GitHub\MovieProject-current\MovieTheater\Posters\theotherwoman.jpg</PosterPath>
+    <Showtime1>10:0System.Windows.Forms.ComboBox, Items.Count: 2</Showtime1>
+    <Showtime2>11:10System.Windows.Forms.ComboBox, Items.Count: 2</Showtime2>
+    <Showtime3> 1:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime3>
+    <Showtime4> 2:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime4>
+    <Showtime5> 3:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime5>
+    <Showtime6> 3:45System.Windows.Forms.ComboBox, Items.Count: 2</Showtime6>
+    <Showtime7> 5:00System.Windows.Forms.ComboBox, Items.Count: 2</Showtime7>
+    <Showtime8> 7:40System.Windows.Forms.ComboBox, Items.Count: 2</Showtime8>
+    <Showtime9> 8:10System.Windows.Forms.ComboBox, Items.Count: 2</Showtime9>
   </Movie>
   <Movie>
     <Title>Walk Of Shame</Title>
