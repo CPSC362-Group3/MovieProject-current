@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheater", "MovieTheater\MovieTheater.csproj", "{CF8CBCD0-4731-47A8-8846-FFD9D4FD9619}"
 EndProject
-Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup1", "Setup1\Setup1.isproj", "{6545DBC1-5F2B-4D0F-8D96-D1C2F61D792C}"
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Theater_G3", "Setup1\Theater_G3.isproj", "{6545DBC1-5F2B-4D0F-8D96-D1C2F61D792C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{CF8CBCD0-4731-47A8-8846-FFD9D4FD9619} = {CF8CBCD0-4731-47A8-8846-FFD9D4FD9619}
 	EndProjectSection

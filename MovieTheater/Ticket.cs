@@ -8,11 +8,8 @@ namespace MovieTheatre
 {
     class Ticket
     {
-        private string time1;
-        private string date1;
         private string movieTitle;
-        private int ticketTotal;
-        private List<string> seatsSelected;
+  
 
         public string movie { get; set; } // i want this to be a pointer to a movie
 
@@ -46,7 +43,6 @@ namespace MovieTheatre
             XmlElement Type = xmlRoot.CreateElement("Type");
 
             proot.AppendChild(Ticket);
-            //xmlRoot.AppendChild(Ticket);
             Ticket.AppendChild(Movie);
             Ticket.AppendChild(Name);
             Ticket.AppendChild(Seat);
@@ -59,15 +55,6 @@ namespace MovieTheatre
             Date.InnerText = date;
             Type.InnerText = ticketType;
 
-
-            //string XmlString = "<Ticket>";
-            //XmlString += "<Movie>" + movieTitle + "</Movie>";
-            //XmlString += "<Name>" + name + "</Name>";
-            //XmlString += "<Seat>" + seat + "</Seat>";
-            //XmlString += "<Date>" + date + "</Date>";
-            //XmlString += "<Type>" + ticketType + "</Type>";
-            //XmlString += "</Ticket>";
-            //return XmlString;
         }
 
 

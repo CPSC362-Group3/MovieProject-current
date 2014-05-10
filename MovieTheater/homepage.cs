@@ -27,7 +27,6 @@ namespace MovieTheater
         bool editInfo = false;
         bool seatingChart = false;
         bool needslogin = false;
-        bool editMovie = false;
 
         //Int counters
         int browsePageNum = 1;
@@ -42,10 +41,10 @@ namespace MovieTheater
 
         //String file paths, xml related
         string MoviesPath = "xml/Movies.xml";
-
         string SeatingPath = "xml/Seats.xml";
         string AccountsPath = "xml/accountInfo.xml";
         string TransactionsPath = "xml/transactions.xml";
+
         XmlDocument MoviesDocument = new XmlDocument();
         XmlDocument TransactionsDocument = new XmlDocument();
         XmlDocument SeatingDocument = new XmlDocument();
@@ -64,9 +63,12 @@ namespace MovieTheater
             BodyTabControl.SizeMode = TabSizeMode.Fixed;
 
             setBackgrounds();
+
             displayDatelbl.Text = DateTime.Today.ToLongDateString();
-            //showtimeDate.MinDate = DateTime.Today;
-            //showtimeDate.MaxDate = DateTime.Today.AddDays(14.0);
+            showtimeDate.MinDate = DateTime.Today;
+            showtimeDate.MaxDate = DateTime.Today.AddDays(14.0);
+
+            CAExpirationCalendar.MinDate = DateTime.Today;
 
             updateHomePage();
 
@@ -298,8 +300,6 @@ namespace MovieTheater
             if (e.KeyCode == Keys.Enter)
             {
                 searchBtn_Click(this, e);
-                //e.Handled = true;
-                //e.SuppressKeyPress = true;
             }
         }
 
@@ -903,9 +903,9 @@ namespace MovieTheater
             }
         }
 
-        //---------------------------------------------------------------------------------------------------------------------
-        //Browse Movie page ///////////////////////////////////////////////////////////////////////////////////////////////////
-        //---------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
+//Browse Movie page ///////////////////////////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------------------------------------------------
 
         public void RefreshBrowse(int page)
         {
@@ -1288,7 +1288,6 @@ namespace MovieTheater
             AMILengthBox.Text = LengthElemList[index].InnerText;
             AMIRatingBox.Text = RatingElemList[index].InnerText;
             AMIGenreBox.Text = GenreElemList[index].InnerText;
-            //AMIReleaseDTPicker
         }
 
         private void BPoster1_Click(object sender, EventArgs e)
@@ -1501,9 +1500,9 @@ namespace MovieTheater
             updateMI();
         }
 
-        //---------------------------------------------------------------------------------------------------------------------
-        //Account Info page ///////////////////////////////////////////////////////////////////////////////////////////////////
-        //---------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
+//Account Info page ///////////////////////////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------------------------------------------------
 
         public void refreshAccountInfo()
         {
@@ -1580,7 +1579,6 @@ namespace MovieTheater
                 }
             }
             // security code
-            //AISecurity.Text = Security_Code[index].InnerText;
             AISecurity.Text = "***";
         }
 
@@ -1697,9 +1695,9 @@ namespace MovieTheater
             refreshAccountInfo();
         }
 
-        //---------------------------------------------------------------------------------------------------------------------
-        //Search Movie page ///////////////////////////////////////////////////////////////////////////////////////////////////
-        //---------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
+//Search Movie page ///////////////////////////////////////////////////////////////////////////////////////////////////
+//---------------------------------------------------------------------------------------------------------------------
 
         public void RefreshSearchMovies(string search)
         {
@@ -2194,9 +2192,14 @@ namespace MovieTheater
             BodyTabControl.SelectedTab = MovieDetailsTab;
         }
 
-        //---------------------------------------------------------------------------------------------------------------------------
-        //Movie Details/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        //--------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------
+//Movie Details/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//--------------------------------------------------------------------------------------------------------------------------
+        public void showMovieInfo()
+        {
+            movieSeattxt.Text = MDTitleLabel.Text;
+            lengthSeattxt.Text = MDLengthLabel.Text;
+        }
 
         private void checkValidtime(XmlNodeList show, int index, Label display)
         {
@@ -2422,9 +2425,112 @@ namespace MovieTheater
             updateMovieDetailsPage(GetMovieTitle(NSTitleLabel10.Text));
             updateMI();          
         }
-        //-------------------------------------------------------------------------------------------------------------------------
-        //Create Account Page//////////////////////////////////////////////////////////////////////////////////////////////////////
-        //-------------------------------------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------------------------------------------
+//Check Showtimes//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
+        DateTime selectedDate = new DateTime();
+
+        private bool HasMovieTimePassed(string movieTime)
+        {
+            bool flag = false;
+            var currDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
+            int sentinel;
+            var currTime = DateTime.Now.TimeOfDay;
+
+            if (selectedDate != null)
+            {
+                sentinel = currDate.CompareTo(selectedDate);
+                if (sentinel > 0)
+                {
+                    flag = true;
+                }
+                else if (sentinel == 0)
+                {
+                    int result = TimeSpan.Compare(currTime, ConvertToMilitaryTime(movieTime));
+                    if (result >= 0)
+                    {
+                        //CURRTIME AFTER CURRENT TIME
+                        flag = true;
+                    }
+                    else
+                        flag = false;
+
+                }
+                else return flag;
+
+            }
+            return flag;
+        }
+
+        //Note: This assumes a format of hh:mmtt which all showtimes follow
+        private TimeSpan ConvertToMilitaryTime(string time)
+        {
+            int colonIndex = time.IndexOf(':');
+            int hours = Convert.ToInt32(time.Substring(0, colonIndex));
+            int minutes = Convert.ToInt32(time.Substring(colonIndex + 1, 2));
+            string meridian = time.Substring(time.Length - 2).ToLower();
+            if (meridian == "pm" && hours != 12)
+                hours += 12;
+            if (meridian == "am" && hours == 12)
+                hours = 0;
+            var result = new TimeSpan(hours, minutes, 0);
+            return result;
+        }
+
+        private void showtimeDate_ValueChanged(object sender, EventArgs e)
+        {
+            displayDatelbl.Text = showtimeDate.Value.Date.ToLongDateString();
+            selectedDate = showtimeDate.Value.Date;
+        }
+
+        private void showtime1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime1.Text;
+        }
+
+        private void showtime2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime2.Text;
+        }
+
+        private void showtime3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime3.Text;
+        }
+
+        private void showtime4_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime4.Text;
+        }
+
+        private void showtime5_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime5.Text;
+        }
+
+        private void showtime6_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime6.Text;
+        }
+
+        private void showtime7_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime7.Text;
+        }
+
+        private void showtime8_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime8.Text;
+        }
+
+        private void showtime9_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            displayShowtimelbl.Text = showtime9.Text;
+        }
+//-------------------------------------------------------------------------------------------------------------------------
+//Create Account Page//////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
         private void button3_Click(object sender, EventArgs e) //Next button
         {
             if ((string.IsNullOrEmpty(AddrTxt.Text)) || (string.IsNullOrEmpty(CityTxt.Text))
@@ -2579,9 +2685,9 @@ namespace MovieTheater
         }
 
 
-        //-------------------------------------------------------------------------------------------------------------------------
-        //Login Page///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        //-------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------
+//Login Page///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
 
         private void label4_Click(object sender, EventArgs e) //Clicked Create Account label
         {
@@ -2632,14 +2738,13 @@ namespace MovieTheater
                         //MAKE SURE TO CHECK THAT EVERYTHING THEY ENTERED IS CORRECT
                         //VALIDATION
                         PurchaseCnum.Text = "****-****-****-" + acc.CHnum.Substring(12, 4);
-                        //PurchaseCnum.Text = "****-****-****-" + acc.CHnum.Substring(4, 12);
                         SC = acc.Sec;
 
 
                         MessageBox.Show("Successfully signed in!");
                         logged = true;
 
-                        LoginBtn.Image = new Bitmap("../../Resources/account_button.jpg");
+                        LoginBtn.Image = new Bitmap("Resources/account_button.jpg");
 
                         homeLogged.Visible = true;
                         checkLog.Visible = true;
@@ -2656,15 +2761,6 @@ namespace MovieTheater
             else
                 MessageBox.Show("Login in system temporarily unavailable, check back later.");
         }
-        //------------------------------------------------------------------------------------------------------------------------
-        //Movie Info and Showtimes Page//////////////////////////////////////////////////////////////////////////////////////////
-        //------------------------------------------------------------------------------------------------------------------------
-        public void showMovieInfo()
-        {
-            movieSeattxt.Text = MDTitleLabel.Text;
-            lengthSeattxt.Text = MDLengthLabel.Text;
-        }
-
 
         //--------------------------------------------------------------------------------------------------------------------------
         //Admin Controls////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2991,13 +3087,13 @@ namespace MovieTheater
         //Admin Clicks edit a movie
         private void adminEdit_Click(object sender, EventArgs e)
         {
-            editMovie = true;
             editInfo = true;
             AddBtn.Text = "Update Info";
             resetShowtimes();
             RefreshBrowse(1);
             BodyTabControl.SelectedTab = BrowseTab;
         }
+
         //Admin clicks upload poster on add/edit movie page
         private void uploadPosterbtn_Click_1(object sender, EventArgs e)
         {
@@ -3012,10 +3108,11 @@ namespace MovieTheater
             path = path + loc;
             AMIposterPathtxt.Text = path;
         }
-        //-------------------------------------------------------------------------------------------------------------------------
-        //Seating Page////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        //-------------------------------------------------------------------------------------------------------------------------
-        private void selected_Seats(Button select, int i)
+
+//-------------------------------------------------------------------------------------------------------------------------
+//Seating Page////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
+        private void selected_Seats(Button select, int i)//Displays which seats you selected
         {
             if (seats < totalseats)
             {
@@ -3407,10 +3504,276 @@ namespace MovieTheater
             selected_Seats(f_14, 71);
         }
 
-        //-----------------------------------------------------------------------------------------------------------------------
-        //BUY SEATING PAGE//////////////////////////////////////////////////////////////////////////////////////////////////////
-        //-----------------------------------------------------------------------------------------------------------------------
-        private void resetSeats()
+        //Removes seats that are already reserved
+        private void containsSeat(string seats)
+        {
+            if (seats.Contains("a1"))
+                a1.Visible = false;
+            if (seats.Contains("a2"))
+                a2.Visible = false;
+            if (seats.Contains("a3"))
+                a3.Visible = false;
+            if (seats.Contains("a4"))
+                a4.Visible = false;
+            if (seats.Contains("a5"))
+                a5.Visible = false;
+            if (seats.Contains("a6"))
+                a6.Visible = false;
+            if (seats.Contains("a7"))
+                a7.Visible = false;
+            if (seats.Contains("a8"))
+                a8.Visible = false;
+            if (seats.Contains("b1"))
+                b1.Visible = false;
+            if (seats.Contains("b2"))
+                b2.Visible = false;
+            if (seats.Contains("b3"))
+                b3.Visible = false;
+            if (seats.Contains("b4"))
+                b4.Visible = false;
+            if (seats.Contains("b5"))
+                b5.Visible = false;
+            if (seats.Contains("b6"))
+                b6.Visible = false;
+            if (seats.Contains("b7"))
+                b7.Visible = false;
+            if (seats.Contains("b8"))
+                b8.Visible = false;
+            if (seats.Contains("c1"))
+                c1.Visible = false;
+            if (seats.Contains("c2"))
+                c2.Visible = false;
+            if (seats.Contains("c3"))
+                c3.Visible = false;
+            if (seats.Contains("c4"))
+                c4.Visible = false;
+            if (seats.Contains("c5"))
+                c5.Visible = false;
+            if (seats.Contains("c6"))
+                c6.Visible = false;
+            if (seats.Contains("c7"))
+                c7.Visible = false;
+            if (seats.Contains("c8"))
+                c8.Visible = false;
+            if (seats.Contains("c9"))
+                c9.Visible = false;
+            if (seats.Contains("c_10"))
+                c_10.Visible = false;
+            if (seats.Contains("c_11"))
+                c_11.Visible = false;
+            if (seats.Contains("c_12"))
+                c_12.Visible = false;
+            if (seats.Contains("c_13"))
+                c_13.Visible = false;
+            if (seats.Contains("c_14"))
+                c_14.Visible = false;
+            if (seats.Contains("d1"))
+                d1.Visible = false;
+            if (seats.Contains("d2"))
+                d2.Visible = false;
+            if (seats.Contains("d3"))
+                d3.Visible = false;
+            if (seats.Contains("d4"))
+                d4.Visible = false;
+            if (seats.Contains("d5"))
+                d5.Visible = false;
+            if (seats.Contains("d6"))
+                d6.Visible = false;
+            if (seats.Contains("d7"))
+                d7.Visible = false;
+            if (seats.Contains("d8"))
+                d8.Visible = false;
+            if (seats.Contains("d9"))
+                d9.Visible = false;
+            if (seats.Contains("d_10"))
+                d_10.Visible = false;
+            if (seats.Contains("d_11"))
+                d_11.Visible = false;
+            if (seats.Contains("d_12"))
+                d_12.Visible = false;
+            if (seats.Contains("d_13"))
+                d_13.Visible = false;
+            if (seats.Contains("d_14"))
+                d_14.Visible = false;
+            if (seats.Contains("e1"))
+                e1.Visible = false;
+            if (seats.Contains("e2"))
+                e2.Visible = false;
+            if (seats.Contains("e3"))
+                e3.Visible = false;
+            if (seats.Contains("e4"))
+                e4.Visible = false;
+            if (seats.Contains("e5"))
+                e5.Visible = false;
+            if (seats.Contains("e6"))
+                e6.Visible = false;
+            if (seats.Contains("e7"))
+                e7.Visible = false;
+            if (seats.Contains("e8"))
+                e8.Visible = false;
+            if (seats.Contains("e9"))
+                e9.Visible = false;
+            if (seats.Contains("e_10"))
+                e_10.Visible = false;
+            if (seats.Contains("e_11"))
+                e_11.Visible = false;
+            if (seats.Contains("e_12"))
+                e_12.Visible = false;
+            if (seats.Contains("e_13"))
+                e_13.Visible = false;
+            if (seats.Contains("e_14"))
+                e_14.Visible = false;
+            if (seats.Contains("f1"))
+                f1.Visible = false;
+            if (seats.Contains("f2"))
+                f2.Visible = false;
+            if (seats.Contains("f3"))
+                f3.Visible = false;
+            if (seats.Contains("f4"))
+                f4.Visible = false;
+            if (seats.Contains("f5"))
+                f5.Visible = false;
+            if (seats.Contains("f6"))
+                f6.Visible = false;
+            if (seats.Contains("f7"))
+                f7.Visible = false;
+            if (seats.Contains("f8"))
+                f8.Visible = false;
+            if (seats.Contains("f9"))
+                f9.Visible = false;
+            if (seats.Contains("f_10"))
+                f_10.Visible = false;
+            if (seats.Contains("f_11"))
+                f_11.Visible = false;
+            if (seats.Contains("f_12"))
+                f_12.Visible = false;
+            if (seats.Contains("f_13"))
+                f_13.Visible = false;
+            if (seats.Contains("f_14"))
+                f_14.Visible = false;
+        }
+
+
+
+        private void updateSeats()//Updates the movie info according to admin edits
+        {
+            if (System.IO.File.Exists(SeatingPath))
+            {
+                SeatingDocument.Load(SeatingPath);
+
+                XmlNodeList TitleElemList = SeatingDocument.GetElementsByTagName("Title");
+                XmlNodeList DateElemList = SeatingDocument.GetElementsByTagName("Date");
+                XmlNodeList ShowtimeElemList = SeatingDocument.GetElementsByTagName("Showtime");
+                XmlNodeList seatsElemList = SeatingDocument.GetElementsByTagName("Reserved");
+
+                for (int i = 0; i < TitleElemList.Count; i++)
+                {
+                    if (displayMovieTitle.Text == TitleElemList[i].InnerText)
+                    {
+                        if (showtimeDate.Value.ToString("MM/dd/yyyy") == DateElemList[i].InnerText)
+                        {
+                            if (displayShowtimelbl.Text == ShowtimeElemList[i].InnerText)
+                            {
+                                seatingChart = true;
+                                seatInd = i;
+                                containsSeat(seatsElemList[seatInd].InnerText);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void seatsTaken()
+        {
+            XmlElement Root;
+
+            if (!System.IO.File.Exists(SeatingPath))
+            {
+                XmlDeclaration Declaration = SeatingDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
+                XmlComment Comment = SeatingDocument.CreateComment("SeatingInfo");
+                Root = SeatingDocument.CreateElement("Seats");
+
+                SeatingDocument.AppendChild(Declaration);
+                SeatingDocument.AppendChild(Comment);
+                SeatingDocument.AppendChild(Root);
+
+                XmlElement seating = SeatingDocument.CreateElement("Seats_taken");
+                XmlElement Title = SeatingDocument.CreateElement("Title");
+                XmlElement Date = SeatingDocument.CreateElement("Date");
+                XmlElement Showtime = SeatingDocument.CreateElement("Showtime");
+                XmlElement seats_taken = SeatingDocument.CreateElement("Reserved");
+
+                Root.AppendChild(seating);
+                seating.AppendChild(Title);
+                seating.AppendChild(Showtime);
+                seating.AppendChild(Date);
+                seating.AppendChild(seats_taken);
+
+                Title.InnerText = displayMovieTitle.Text;
+                Showtime.InnerText = displayShowtimelbl.Text;
+                Date.InnerText = showtimeDate.Value.ToString("MM/dd/yyyy");
+                List<string> list = new List<string>(
+                           selectedSeatstxt.Text.Split(new string[] { "\n" },
+                           StringSplitOptions.RemoveEmptyEntries));
+                seats_taken.InnerText = string.Join(",", list);
+
+                SeatingDocument.Save(SeatingPath);
+            }
+
+            else
+            {
+                if (seatingChart == false)
+                {
+                    SeatingDocument.Load(SeatingPath);
+                    Root = SeatingDocument.DocumentElement;
+                    // dont have to check if there is a movie file since you clicked on
+                    // a movie poster to get here. load the movie xml file.
+
+                    XmlElement seating = SeatingDocument.CreateElement("Seats_taken");
+                    XmlElement Title = SeatingDocument.CreateElement("Title");
+                    XmlElement Date = SeatingDocument.CreateElement("Date");
+                    XmlElement Showtime = SeatingDocument.CreateElement("Showtime");
+                    XmlElement seats_taken = SeatingDocument.CreateElement("Reserved");
+
+                    Root.AppendChild(seating);
+                    seating.AppendChild(Title);
+                    seating.AppendChild(Showtime);
+                    seating.AppendChild(Date);
+                    seating.AppendChild(seats_taken);
+
+                    Title.InnerText = displayMovieTitle.Text;
+                    Showtime.InnerText = displayShowtimelbl.Text;
+                    Date.InnerText = showtimeDate.Value.ToString("MM/dd/yyyy");
+                    List<string> list = new List<string>(
+                               selectedSeatstxt.Text.Split(new string[] { "\n" },
+                               StringSplitOptions.RemoveEmptyEntries));
+                    seats_taken.InnerText = string.Join(",", list);
+
+                    SeatingDocument.Save(SeatingPath);
+                }
+                else
+                {
+                    SeatingDocument.Load(SeatingPath);
+
+                    XmlNodeList seatsElemList = SeatingDocument.GetElementsByTagName("Reserved");
+
+                    List<string> list = new List<string>(
+                               selectedSeatstxt.Text.Split(new string[] { "\n" },
+                               StringSplitOptions.RemoveEmptyEntries));
+                    seatsElemList[seatInd].InnerText = seatsElemList[seatInd].InnerText + string.Join(",", list);
+
+                    SeatingDocument.Save(SeatingPath);
+                }
+
+            }
+        }
+
+//-----------------------------------------------------------------------------------------------------------------------
+//BUY SEATING PAGE//////////////////////////////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------------------------------------------------
+        private void resetSeats() //Returns seating page to starting condition once finished.
         {
             Array.Clear(track, 0, track.Length);
             selectedSeatstxt.Clear();
@@ -3682,61 +4045,6 @@ namespace MovieTheater
         }
 
 
-        DateTime selectedDate = new DateTime();
-
-        private bool HasMovieTimePassed(string movieTime)
-        {
-            bool flag = false;
-            var currDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, DateTime.Today.Hour, DateTime.Today.Minute, DateTime.Today.Second);
-            int sentinel;
-            var currTime = DateTime.Now.TimeOfDay;
-
-            if (selectedDate != null)
-            {
-                sentinel = currDate.CompareTo(selectedDate);
-                if (sentinel > 0)
-                {
-                    flag = true;
-                }
-                else if (sentinel == 0)
-                {
-                    int result = TimeSpan.Compare(currTime, ConvertToMilitaryTime(movieTime));
-                    if (result >= 0)
-                    {
-                        //CURRTIME AFTER CURRENT TIME
-                        flag = true;
-                    }
-                    else
-                        flag = false;
-                    
-                }
-                else return flag;
-
-            }
-            return flag;
-        }
-
-        //Note: This assumes a format of hh:mmtt which all showtimes follow
-        private TimeSpan ConvertToMilitaryTime(string time)
-        {
-            int colonIndex = time.IndexOf(':');
-            int hours = Convert.ToInt32(time.Substring(0, colonIndex));
-            int minutes = Convert.ToInt32(time.Substring(colonIndex + 1, 2));
-            string meridian = time.Substring(time.Length - 2).ToLower();
-            if (meridian == "pm" && hours != 12)
-                hours += 12;
-            if (meridian == "am" && hours == 12)
-                hours = 0;
-            var result = new TimeSpan(hours, minutes, 0);
-            return result;  
-        }
-
-
-
-
-
-
-
         //GLOBAL VARIABLES SO I CAN SAVE MY INFO FOR TIXS
         string time, date, movieTitle;
         int ticketTotal;
@@ -3759,7 +4067,6 @@ namespace MovieTheater
                     int num = tixCounter[type];
                     while (num > 0)
                     {
-                        //Console.Out.Write(type + " " + num.ToString());
                         TicketAdmissionLabel.Text = type;
                         TicketDateLabel.Text = date;
                         nameticketlabel.Text = name;
@@ -3773,7 +4080,6 @@ namespace MovieTheater
                         num--;
                         indexCounter++;
                     }
-                    //indexCounter++;
                 }
 
 
@@ -3794,270 +4100,6 @@ namespace MovieTheater
 
         }
 
-        private void containsSeat(string seats)
-        {
-            if (seats.Contains("a1"))
-                a1.Visible = false;
-            if (seats.Contains("a2"))
-                a2.Visible = false;
-            if (seats.Contains("a3"))
-                a3.Visible = false;
-            if (seats.Contains("a4"))
-                a4.Visible = false;
-            if (seats.Contains("a5"))
-                a5.Visible = false;
-            if (seats.Contains("a6"))
-                a6.Visible = false;
-            if (seats.Contains("a7"))
-                a7.Visible = false;
-            if (seats.Contains("a8"))
-                a8.Visible = false;
-            if (seats.Contains("b1"))
-                b1.Visible = false;
-            if (seats.Contains("b2"))
-                b2.Visible = false;
-            if (seats.Contains("b3"))
-                b3.Visible = false;
-            if (seats.Contains("b4"))
-                b4.Visible = false;
-            if (seats.Contains("b5"))
-                b5.Visible = false;
-            if (seats.Contains("b6"))
-                b6.Visible = false;
-            if (seats.Contains("b7"))
-                b7.Visible = false;
-            if (seats.Contains("b8"))
-                b8.Visible = false;
-            if (seats.Contains("c1"))
-                c1.Visible = false;
-            if (seats.Contains("c2"))
-                c2.Visible = false;
-            if (seats.Contains("c3"))
-                c3.Visible = false;
-            if (seats.Contains("c4"))
-                c4.Visible = false;
-            if (seats.Contains("c5"))
-                c5.Visible = false;
-            if (seats.Contains("c6"))
-                c6.Visible = false;
-            if (seats.Contains("c7"))
-                c7.Visible = false;
-            if (seats.Contains("c8"))
-                c8.Visible = false;
-            if (seats.Contains("c9"))
-                c9.Visible = false;
-            if (seats.Contains("c_10"))
-                c_10.Visible = false;
-            if (seats.Contains("c_11"))
-                c_11.Visible = false;
-            if (seats.Contains("c_12"))
-                c_12.Visible = false;
-            if (seats.Contains("c_13"))
-                c_13.Visible = false;
-            if (seats.Contains("c_14"))
-                c_14.Visible = false;
-            if (seats.Contains("d1"))
-                d1.Visible = false;
-            if (seats.Contains("d2"))
-                d2.Visible = false;
-            if (seats.Contains("d3"))
-                d3.Visible = false;
-            if (seats.Contains("d4"))
-                d4.Visible = false;
-            if (seats.Contains("d5"))
-                d5.Visible = false;
-            if (seats.Contains("d6"))
-                d6.Visible = false;
-            if (seats.Contains("d7"))
-                d7.Visible = false;
-            if (seats.Contains("d8"))
-                d8.Visible = false;
-            if (seats.Contains("d9"))
-                d9.Visible = false;
-            if (seats.Contains("d_10"))
-                d_10.Visible = false;
-            if (seats.Contains("d_11"))
-                d_11.Visible = false;
-            if (seats.Contains("d_12"))
-                d_12.Visible = false;
-            if (seats.Contains("d_13"))
-                d_13.Visible = false;
-            if (seats.Contains("d_14"))
-                d_14.Visible = false;
-            if (seats.Contains("e1"))
-                e1.Visible = false;
-            if (seats.Contains("e2"))
-                e2.Visible = false;
-            if (seats.Contains("e3"))
-                e3.Visible = false;
-            if (seats.Contains("e4"))
-                e4.Visible = false;
-            if (seats.Contains("e5"))
-                e5.Visible = false;
-            if (seats.Contains("e6"))
-                e6.Visible = false;
-            if (seats.Contains("e7"))
-                e7.Visible = false;
-            if (seats.Contains("e8"))
-                e8.Visible = false;
-            if (seats.Contains("e9"))
-                e9.Visible = false;
-            if (seats.Contains("e_10"))
-                e_10.Visible = false;
-            if (seats.Contains("e_11"))
-                e_11.Visible = false;
-            if (seats.Contains("e_12"))
-                e_12.Visible = false;
-            if (seats.Contains("e_13"))
-                e_13.Visible = false;
-            if (seats.Contains("e_14"))
-                e_14.Visible = false;
-            if (seats.Contains("f1"))
-                f1.Visible = false;
-            if (seats.Contains("f2"))
-                f2.Visible = false;
-            if (seats.Contains("f3"))
-                f3.Visible = false;
-            if (seats.Contains("f4"))
-                f4.Visible = false;
-            if (seats.Contains("f5"))
-                f5.Visible = false;
-            if (seats.Contains("f6"))
-                f6.Visible = false;
-            if (seats.Contains("f7"))
-                f7.Visible = false;
-            if (seats.Contains("f8"))
-                f8.Visible = false;
-            if (seats.Contains("f9"))
-                f9.Visible = false;
-            if (seats.Contains("f_10"))
-                f_10.Visible = false;
-            if (seats.Contains("f_11"))
-                f_11.Visible = false;
-            if (seats.Contains("f_12"))
-                f_12.Visible = false;
-            if (seats.Contains("f_13"))
-                f_13.Visible = false;
-            if (seats.Contains("f_14"))
-                f_14.Visible = false;
-        }
-
-
-
-        private void updateSeats()//Updates the movie info according to admin edits
-        {
-            if (System.IO.File.Exists(SeatingPath))
-            {
-                SeatingDocument.Load(SeatingPath);
-
-                XmlNodeList TitleElemList = SeatingDocument.GetElementsByTagName("Title");
-                XmlNodeList DateElemList = SeatingDocument.GetElementsByTagName("Date");
-                XmlNodeList ShowtimeElemList = SeatingDocument.GetElementsByTagName("Showtime");
-                XmlNodeList seatsElemList = SeatingDocument.GetElementsByTagName("Reserved");
-
-                for (int i = 0; i < TitleElemList.Count; i++)
-                {
-                    if (displayMovieTitle.Text == TitleElemList[i].InnerText)
-                    {
-                        if (showtimeDate.Value.ToString("MM/dd/yyyy") == DateElemList[i].InnerText)
-                        {
-                            if (displayShowtimelbl.Text == ShowtimeElemList[i].InnerText)
-                            {
-                                seatingChart = true;
-                                seatInd = i;
-                                containsSeat(seatsElemList[seatInd].InnerText);
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        private void seatsTaken()
-        {
-                XmlElement Root;
-
-                if (!System.IO.File.Exists(SeatingPath))
-                {
-                    XmlDeclaration Declaration = SeatingDocument.CreateXmlDeclaration("1.0", "UTF-8", "yes");
-                    XmlComment Comment = SeatingDocument.CreateComment("SeatingInfo");
-                    Root = SeatingDocument.CreateElement("Seats");
-
-                    SeatingDocument.AppendChild(Declaration);
-                    SeatingDocument.AppendChild(Comment);
-                    SeatingDocument.AppendChild(Root);
-
-                    XmlElement seating = SeatingDocument.CreateElement("Seats_taken");
-                    XmlElement Title = SeatingDocument.CreateElement("Title");
-                    XmlElement Date = SeatingDocument.CreateElement("Date");
-                    XmlElement Showtime = SeatingDocument.CreateElement("Showtime");
-                    XmlElement seats_taken = SeatingDocument.CreateElement("Reserved");
-
-                    Root.AppendChild(seating);
-                    seating.AppendChild(Title);
-                    seating.AppendChild(Showtime);
-                    seating.AppendChild(Date);
-                    seating.AppendChild(seats_taken);
-
-                    Title.InnerText = displayMovieTitle.Text;
-                    Showtime.InnerText = displayShowtimelbl.Text;
-                    Date.InnerText = showtimeDate.Value.ToString("MM/dd/yyyy");
-                    List<string> list = new List<string>(
-                               selectedSeatstxt.Text.Split(new string[] { "\n" },
-                               StringSplitOptions.RemoveEmptyEntries));
-                    seats_taken.InnerText = string.Join(",", list);
-
-                    SeatingDocument.Save(SeatingPath);
-                }
-
-                else
-                {
-                    if (seatingChart == false)
-                    {
-                        SeatingDocument.Load(SeatingPath);
-                        Root = SeatingDocument.DocumentElement;
-                        // dont have to check if there is a movie file since you clicked on
-                        // a movie poster to get here. load the movie xml file.
-
-                        XmlElement seating = SeatingDocument.CreateElement("Seats_taken");
-                        XmlElement Title = SeatingDocument.CreateElement("Title");
-                        XmlElement Date = SeatingDocument.CreateElement("Date");
-                        XmlElement Showtime = SeatingDocument.CreateElement("Showtime");
-                        XmlElement seats_taken = SeatingDocument.CreateElement("Reserved");
-
-                        Root.AppendChild(seating);
-                        seating.AppendChild(Title);
-                        seating.AppendChild(Showtime);
-                        seating.AppendChild(Date);
-                        seating.AppendChild(seats_taken);
-
-                        Title.InnerText = displayMovieTitle.Text;
-                        Showtime.InnerText = displayShowtimelbl.Text;
-                        Date.InnerText = showtimeDate.Value.ToString("MM/dd/yyyy");
-                        List<string> list = new List<string>(
-                                   selectedSeatstxt.Text.Split(new string[] { "\n" },
-                                   StringSplitOptions.RemoveEmptyEntries));
-                        seats_taken.InnerText = string.Join(",", list);
-
-                        SeatingDocument.Save(SeatingPath);
-                    }
-                    else
-                    {
-                        SeatingDocument.Load(SeatingPath);
-
-                        XmlNodeList seatsElemList = SeatingDocument.GetElementsByTagName("Reserved");
-
-                        List<string> list = new List<string>(
-                                   selectedSeatstxt.Text.Split(new string[] { "\n" },
-                                   StringSplitOptions.RemoveEmptyEntries));
-                        seatsElemList[seatInd].InnerText = seatsElemList[seatInd].InnerText + string.Join(",", list);
-
-                        SeatingDocument.Save(SeatingPath);
-                    }
-
-                }
-        }
 
 
         private void PurchaseTransaction(List<Ticket> trans)
@@ -4120,7 +4162,7 @@ namespace MovieTheater
                 {
                     g.CopyFromScreen(new Point(groupTicketBox.Left, groupTicketBox.Top), Point.Empty, bounds.Size);
                 }
-                bitmap.Save("../../Posters/test.jpg", ImageFormat.Jpeg);
+                bitmap.Save("Posters/test.jpg", ImageFormat.Jpeg);
             }
 
             PrintDocument doc = new PrintDocument();
@@ -4150,7 +4192,7 @@ namespace MovieTheater
                 {
                     g.CopyFromScreen(new Point(groupTicketBox.Left, groupTicketBox.Top), Point.Empty, bounds.Size);
                 }
-                bitmap.Save("../../Posters/test.jpg", ImageFormat.Jpeg);
+                bitmap.Save("Posters/test.jpg", ImageFormat.Jpeg);
             }
 
             //ACTUAL EMAIL CODE
@@ -4163,7 +4205,7 @@ namespace MovieTheater
                 mail.Subject = "Movie Ticket Purchase Confirmation";
                 mail.Body = " Hello, The movie ticket(s) you ordered have been sent and attached to this email! \n You can print them when you please. Just make sure to have them before entering the establishment.\n Regards, Pseudo Cinema";
 
-                string attachmentPath = @"../../Posters/test.jpg";
+                string attachmentPath = @"Posters/test.jpg";
                 Attachment inline = new Attachment(attachmentPath);
                 inline.ContentDisposition.Inline = true;
                 inline.ContentType.MediaType = "image/jpg";
@@ -4236,57 +4278,6 @@ namespace MovieTheater
 
         }
 
-        private void showtimeDate_ValueChanged(object sender, EventArgs e)
-        {
-            displayDatelbl.Text = showtimeDate.Value.Date.ToLongDateString();
-            selectedDate = showtimeDate.Value.Date;
-        }
-
-        private void showtime1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime1.Text;
-        }
-
-        private void showtime2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime2.Text;
-        }
-
-        private void showtime3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime3.Text;
-        }
-
-        private void showtime4_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime4.Text;
-        }
-
-        private void showtime5_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime5.Text;
-        }
-
-        private void showtime6_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime6.Text;
-        }
-
-        private void showtime7_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime7.Text;
-        }
-
-        private void showtime8_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime8.Text;
-        }
-
-        private void showtime9_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            displayShowtimelbl.Text = showtime9.Text;
-        }
-
 
         private void orderTicketsbtn_Click(object sender, EventArgs e)
         {
@@ -4296,7 +4287,9 @@ namespace MovieTheater
             BodyTabControl.SelectedTab = Ticket;
         }
 
-        // log out stuff
+//--------------------------------------------------------------------------------------------------------------------------
+//Logout///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------------------------------------------------------
         private void AILogoutBtn_Click(object sender, EventArgs e)
         {
             logout();
@@ -4307,7 +4300,7 @@ namespace MovieTheater
             MessageBox.Show("You have been logged out.");
             logged = false;
             adminLogged = false;
-            LoginBtn.Image = new Bitmap("../../Resources/login_button.jpg");
+            LoginBtn.Image = new Bitmap("Resources/login_button.jpg");
             updateHomePage();
             checkLog.Visible = false;
             homeLogged.Visible = false;
@@ -4318,13 +4311,6 @@ namespace MovieTheater
         private void ALogoutBtn_Click(object sender, EventArgs e)
         {
             logout();
-        }
-
-        private void homepage_Load(object sender, EventArgs e)
-        {
-            string pathway;
-            pathway = Directory.GetCurrentDirectory();
-            MessageBox.Show(pathway);
         }
 
         //-----------------------------------------------------------------------------------------------------

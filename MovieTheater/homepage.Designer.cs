@@ -269,6 +269,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.backgroundCA = new System.Windows.Forms.PictureBox();
             this.Seating = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.ticketcount = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -590,7 +591,6 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -660,6 +660,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backgroundCA)).BeginInit();
             this.Seating.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Purchase.SuspendLayout();
             this.Ticket.SuspendLayout();
             this.ContactUsTab.SuspendLayout();
@@ -686,7 +687,6 @@
             this.PaymentInfoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -724,7 +724,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-44, -12);
+            this.tabControl1.Location = new System.Drawing.Point(25, -12);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -3670,6 +3670,16 @@
             this.Seating.TabIndex = 6;
             this.Seating.Text = "Seating";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(240, 96);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(457, 175);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 89;
+            this.pictureBox3.TabStop = false;
+            // 
             // ticketcount
             // 
             this.ticketcount.AutoSize = true;
@@ -5355,7 +5365,7 @@
             // showtimeDate
             // 
             this.showtimeDate.Location = new System.Drawing.Point(430, 257);
-            this.showtimeDate.MaxDate = new System.DateTime(2014, 5, 9, 0, 0, 0, 0);
+            this.showtimeDate.MaxDate = new System.DateTime(2040, 8, 31, 0, 0, 0, 0);
             this.showtimeDate.MinDate = new System.DateTime(2014, 4, 24, 0, 0, 0, 0);
             this.showtimeDate.Name = "showtimeDate";
             this.showtimeDate.Size = new System.Drawing.Size(200, 20);
@@ -7519,16 +7529,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(240, 96);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(457, 175);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 89;
-            this.pictureBox3.TabStop = false;
-            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7540,7 +7540,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "homepage";
             this.Text = "Pseudo Cinema Ticket App";
-            this.Load += new System.EventHandler(this.homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox9)).EndInit();
@@ -7614,6 +7613,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.backgroundCA)).EndInit();
             this.Seating.ResumeLayout(false);
             this.Seating.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.Purchase.ResumeLayout(false);
             this.Purchase.PerformLayout();
             this.Ticket.ResumeLayout(false);
@@ -7648,7 +7648,6 @@
             this.PaymentInfoTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
