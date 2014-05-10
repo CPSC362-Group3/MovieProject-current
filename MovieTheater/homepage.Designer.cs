@@ -357,8 +357,6 @@
             this.label66 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.Purchase = new System.Windows.Forms.TabPage();
             this.PurchaseCnum = new System.Windows.Forms.Label();
             this.PurchaseLname = new System.Windows.Forms.Label();
@@ -592,6 +590,7 @@
             this.Header = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             pictureBox12 = new System.Windows.Forms.PictureBox();
             pictureBox11 = new System.Windows.Forms.PictureBox();
             pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -687,6 +686,7 @@
             this.PaymentInfoTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -724,7 +724,7 @@
             this.tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-36, -12);
+            this.tabControl1.Location = new System.Drawing.Point(-44, -12);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
@@ -3574,6 +3574,7 @@
             // Seating
             // 
             this.Seating.BackColor = System.Drawing.Color.Black;
+            this.Seating.Controls.Add(this.pictureBox3);
             this.Seating.Controls.Add(this.ticketcount);
             this.Seating.Controls.Add(this.label18);
             this.Seating.Controls.Add(this.label17);
@@ -3662,7 +3663,6 @@
             this.Seating.Controls.Add(this.label66);
             this.Seating.Controls.Add(this.label48);
             this.Seating.Controls.Add(this.button1);
-            this.Seating.Controls.Add(this.shapeContainer1);
             this.Seating.Location = new System.Drawing.Point(4, 22);
             this.Seating.Name = "Seating";
             this.Seating.Padding = new System.Windows.Forms.Padding(3);
@@ -4920,26 +4920,6 @@
             this.button1.Text = "Purchase Tickets";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(3, 3);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(956, 767);
-            this.shapeContainer1.TabIndex = 12;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // rectangleShape1
-            // 
-            this.rectangleShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rectangleShape1.BackgroundImage")));
-            this.rectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.rectangleShape1.FillGradientColor = System.Drawing.Color.Gainsboro;
-            this.rectangleShape1.Location = new System.Drawing.Point(208, 127);
-            this.rectangleShape1.Name = "rectangleShape1";
-            this.rectangleShape1.Size = new System.Drawing.Size(515, 147);
             // 
             // Purchase
             // 
@@ -7539,6 +7519,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(240, 96);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(457, 175);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 89;
+            this.pictureBox3.TabStop = false;
+            // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -7658,6 +7648,7 @@
             this.PaymentInfoTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactUsBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Header)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -7933,8 +7924,6 @@
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Button button1;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private System.Windows.Forms.TabPage Purchase;
         private System.Windows.Forms.Label PurchaseCnum;
         private System.Windows.Forms.Label PurchaseLname;
@@ -8224,6 +8213,7 @@
         private System.Windows.Forms.Button AILogoutBtn;
         private System.Windows.Forms.Label SSearchString;
         private System.Windows.Forms.Button ALogoutBtn;
+        private System.Windows.Forms.PictureBox pictureBox3;
 
     }
 }

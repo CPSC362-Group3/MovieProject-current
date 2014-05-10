@@ -1,148 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--SeatingInfo-->
-<Seats>
-  <Seats_taken>
-    <Title>A Haunted House 2</Title>
-    <Showtime> 2:00PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,b3,b4,b3,b4,c4,c5</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Captain America: The Winter Soldier</Title>
-    <Showtime>11:00am</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,a1,a2</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>The Other Woman</Title>
-    <Showtime> 2:00PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,c5,c6,c7d5,d6,d7,a4,a5,a6</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Rio 2</Title>
-    <Showtime> 7:30PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,c9,c10e8,e9,e7,e6</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Captain America: The Winter Soldier</Title>
-    <Showtime>12:00PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,c10,c11,c12,c4,e6,c9,d9,e9,f9,d4,d5,d6,c_12,c_13</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Captain America: The Winter Soldier</Title>
-    <Showtime>08:00PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,c9,c10,e7,e8,e9,e6,f5,f6,f7,f8,f9</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>The Quiet Ones</Title>
-    <Showtime> 7:25PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,c1,c2,c_11,c_12,d1</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Captain America: The Winter Soldier</Title>
-    <Showtime>09:00PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,c6,c7,c8,c9,c_10</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Captain America: The Winter Soldier</Title>
-    <Showtime>01:30PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>,c8,c9,d5,d6,d7</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Transcendence</Title>
-    <Showtime>05:00PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>c6,c7,c8,c9,c_10,d9,d8,d7,d_10,d6</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>The Other Woman</Title>
-    <Showtime>10:00PM</Showtime>
-    <Date>04/30/2014</Date>
-    <Reserved>b2,b4,c6,d6,e6,e8,d8,c8,c9</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Rio 2</Title>
-    <Showtime> 4:40PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>c7,c8f_10</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>A Haunted House 2</Title>
-    <Showtime> 9:40PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>f8</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Divergent</Title>
-    <Showtime> 6:20PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>d7</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Divergent</Title>
-    <Showtime> 9:20PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>c3e6a1,a2,a3,a4,a5,a6</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Draft Day</Title>
-    <Showtime>10:10PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>c_11</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>The Other Woman</Title>
-    <Showtime> 7:50PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>,f9</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Noah</Title>
-    <Showtime>02:20PM</Showtime>
-    <Date>05/15/2014</Date>
-    <Reserved>b2,c_10,b7,c9</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Draft Day</Title>
-    <Showtime> 7:45PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>,a2,a1</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Rio 2</Title>
-    <Showtime> 7:30PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>a7,a8,b8,b7</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Captain America: The Winter Soldier</Title>
-    <Showtime>09:00PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>a7,a8</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Captain America: The Winter Soldier</Title>
-    <Showtime>08:00PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>e5</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Rio 2</Title>
-    <Showtime>10:10PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>,e_13,d_13,c_13,c_14,d_14</Reserved>
-  </Seats_taken>
-  <Seats_taken>
-    <Title>Noah</Title>
-    <Showtime>07:00PM</Showtime>
-    <Date>05/01/2014</Date>
-    <Reserved>,c3,c4,c5,c6</Reserved>
-  </Seats_taken>
-</Seats>
