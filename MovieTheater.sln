@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheater", "MovieTheater\MovieTheater.csproj", "{CF8CBCD0-4731-47A8-8846-FFD9D4FD9619}"
 EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup1", "Setup1\Setup1.isproj", "{205E4169-1C62-489C-B359-722D629CEBBB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CF8CBCD0-4731-47A8-8846-FFD9D4FD9619} = {CF8CBCD0-4731-47A8-8846-FFD9D4FD9619}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
@@ -22,6 +27,16 @@ Global
 		{CF8CBCD0-4731-47A8-8846-FFD9D4FD9619}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF8CBCD0-4731-47A8-8846-FFD9D4FD9619}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
 		{CF8CBCD0-4731-47A8-8846-FFD9D4FD9619}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{205E4169-1C62-489C-B359-722D629CEBBB}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{205E4169-1C62-489C-B359-722D629CEBBB}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{205E4169-1C62-489C-B359-722D629CEBBB}.Debug|Any CPU.ActiveCfg = DVD-5
+		{205E4169-1C62-489C-B359-722D629CEBBB}.Debug|Any CPU.Build.0 = DVD-5
+		{205E4169-1C62-489C-B359-722D629CEBBB}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{205E4169-1C62-489C-B359-722D629CEBBB}.DVD-5|Any CPU.Build.0 = DVD-5
+		{205E4169-1C62-489C-B359-722D629CEBBB}.Release|Any CPU.ActiveCfg = SingleImage
+		{205E4169-1C62-489C-B359-722D629CEBBB}.Release|Any CPU.Build.0 = SingleImage
+		{205E4169-1C62-489C-B359-722D629CEBBB}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{205E4169-1C62-489C-B359-722D629CEBBB}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
