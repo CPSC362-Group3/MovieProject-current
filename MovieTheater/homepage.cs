@@ -41,11 +41,11 @@ namespace MovieTheater
         string currentUser, SC, currentemail;
 
         //String file paths, xml related
-        string MoviesPath = "../../xml/Movies.xml";
+        string MoviesPath = "xml/Movies.xml";
 
-        string SeatingPath = "../../xml/Seats.xml";
-        string AccountsPath = "../../xml/accountInfo.xml";
-        string TransactionsPath = "../../xml/transactions.xml";
+        string SeatingPath = "xml/Seats.xml";
+        string AccountsPath = "xml/accountInfo.xml";
+        string TransactionsPath = "xml/transactions.xml";
         XmlDocument MoviesDocument = new XmlDocument();
         XmlDocument TransactionsDocument = new XmlDocument();
         XmlDocument SeatingDocument = new XmlDocument();
@@ -65,8 +65,8 @@ namespace MovieTheater
 
             setBackgrounds();
             displayDatelbl.Text = DateTime.Today.ToLongDateString();
-            showtimeDate.MinDate = DateTime.Today;
-            showtimeDate.MaxDate = DateTime.Today.AddDays(14.0);
+            //showtimeDate.MinDate = DateTime.Today;
+            //showtimeDate.MaxDate = DateTime.Today.AddDays(14.0);
 
             updateHomePage();
 
@@ -343,13 +343,13 @@ namespace MovieTheater
         /* Home button enter */
         private void homeBtn_MouseEnter(object sender, EventArgs e)
         {
-            homeBtn.Image = new Bitmap("../../Resources/home_button_hover.jpg");
+            homeBtn.Image = new Bitmap("Resources/home_button_hover.jpg");
         }
 
         /* Home button exit */
         private void homeBtn_MouseLeave(object sender, EventArgs e)
         {
-            homeBtn.Image = new Bitmap("../../Resources/home_button.jpg");
+            homeBtn.Image = new Bitmap("Resources/home_button.jpg");
         }
 
         /* Login button click */
@@ -379,11 +379,11 @@ namespace MovieTheater
         {
             if (logged || adminLogged)
             {
-                LoginBtn.Image = new Bitmap("../../Resources/account_button_hover.jpg");
+                LoginBtn.Image = new Bitmap("Resources/account_button_hover.jpg");
             }
             else
             {
-                LoginBtn.Image = new Bitmap("../../Resources/login_button_hover.jpg");
+                LoginBtn.Image = new Bitmap("Resources/login_button_hover.jpg");
             }
         }
 
@@ -392,11 +392,11 @@ namespace MovieTheater
         {
             if (logged || adminLogged)
             {
-                LoginBtn.Image = new Bitmap("../../Resources/account_button.jpg");
+                LoginBtn.Image = new Bitmap("Resources/account_button.jpg");
             }
             else
             {
-                LoginBtn.Image = new Bitmap("../../Resources/login_button.jpg");
+                LoginBtn.Image = new Bitmap("Resources/login_button.jpg");
             }
         }
 
@@ -413,13 +413,13 @@ namespace MovieTheater
         /* browse button enter */
         private void browseBtn_MouseEnter(object sender, EventArgs e)
         {
-            browseBtn.Image = new Bitmap("../../Resources/browse_button_hover.jpg");
+            browseBtn.Image = new Bitmap("Resources/browse_button_hover.jpg");
         }
 
         /* browse button exit */
         private void browseBtn_MouseLeave(object sender, EventArgs e)
         {
-            browseBtn.Image = new Bitmap("../../Resources/browse_button.jpg");
+            browseBtn.Image = new Bitmap("Resources/browse_button.jpg");
         }
 
         /* Contact Us button click */
@@ -433,13 +433,13 @@ namespace MovieTheater
         /* Contact Us button enter */
         private void contactUsBtn_MouseEnter(object sender, EventArgs e)
         {
-            contactUsBtn.Image = new Bitmap("../../Resources/contact_us_button_hover.jpg");
+            contactUsBtn.Image = new Bitmap("Resources/contact_us_button_hover.jpg");
         }
 
         /* Contact Us button exit */
         private void contactUsBtn_MouseLeave(object sender, EventArgs e)
         {
-            contactUsBtn.Image = new Bitmap("../../Resources/contact_us_button.jpg");
+            contactUsBtn.Image = new Bitmap("Resources/contact_us_button.jpg");
         }
 
         //---------------------------------------------------------------------------------------------------------------------
@@ -3008,7 +3008,7 @@ namespace MovieTheater
             else
                 loc = openFileDialog1.SafeFileName;
 
-            string path = "../../Posters/";
+            string path = "Posters/";
             path = path + loc;
             AMIposterPathtxt.Text = path;
         }
