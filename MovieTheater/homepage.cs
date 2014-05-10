@@ -42,6 +42,7 @@ namespace MovieTheater
 
         //String file paths, xml related
         string MoviesPath = "../../xml/Movies.xml";
+
         string SeatingPath = "../../xml/Seats.xml";
         string AccountsPath = "../../xml/accountInfo.xml";
         string TransactionsPath = "../../xml/transactions.xml";
@@ -4317,6 +4318,13 @@ namespace MovieTheater
         private void ALogoutBtn_Click(object sender, EventArgs e)
         {
             logout();
+        }
+
+        private void homepage_Load(object sender, EventArgs e)
+        {
+            string pathway;
+            pathway = Directory.GetCurrentDirectory();
+            MessageBox.Show(pathway);
         }
 
         //-----------------------------------------------------------------------------------------------------
